@@ -1,0 +1,35 @@
+---
+permalink: um-manage/why-dont-i-see-all-the-volumes-on-the-remote-storage-array-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, volumes missing 
+summary: 'Quando si seleziona un volume secondario nell"array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.' 
+---
+= Perché non vengono visualizzati tutti i volumi sull'array di storage remoto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si seleziona un volume secondario nell'array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.
+
+I volumi non idonei per l'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è un volume standard, ad esempio un volume snapshot.
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Per il mirroring asincrono, gli attributi del thin volume tra il volume primario e il volume secondario non corrispondono.
+* Se si utilizza Data Assurance (da), il volume primario e il volume secondario devono avere le stesse impostazioni da.
++
+** Se il volume primario è abilitato da, il volume secondario deve essere abilitato da.
+** Se il volume primario non è abilitato da, il volume secondario non deve essere abilitato da.
+
+
+* Per il mirroring asincrono, il volume primario e il volume secondario devono avere le stesse funzionalità di Drive Security.
++
+** Se il volume primario è in grado di supportare FIPS, il volume secondario deve essere in grado di supportare FIPS.
+** Se il volume primario è compatibile con FDE, il volume secondario deve essere compatibile con FDE.
+** Se il volume primario non utilizza Drive Security, il volume secondario non deve utilizzare Drive Security.
+
+
+

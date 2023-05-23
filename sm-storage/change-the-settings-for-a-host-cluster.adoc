@@ -1,0 +1,50 @@
+---
+permalink: sm-storage/change-the-settings-for-a-host-cluster.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, host, cluster 
+summary: È possibile modificare il nome del cluster host oppure aggiungere o rimuovere host in un cluster host. 
+---
+= Modificare le impostazioni di un cluster host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il nome del cluster host oppure aggiungere o rimuovere host in un cluster host.
+
+.Fasi
+. Selezionare menu:Storage[Hosts] (Storage[host]).
+. Selezionare il cluster host che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
++
+Viene visualizzata una finestra di dialogo che mostra le impostazioni correnti del cluster host.
+
+. Modificare le impostazioni del cluster host in base alle esigenze.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Nome
+ a| 
+È possibile specificare il nome fornito dall'utente del cluster host. Specificare un nome per un cluster.
+
+
+
+ a| 
+Host associati
+ a| 
+Per aggiungere un host, fare clic sulla casella *Associated Hosts* (host associati), quindi selezionare un nome host dall'elenco a discesa. Non è possibile inserire manualmente un nome host.
+
+Per eliminare un host, fare clic sulla * X* accanto al nome host.
+
+|===
+====
+. Fare clic su *Save* (Salva).
+

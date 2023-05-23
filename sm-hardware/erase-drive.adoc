@@ -1,0 +1,64 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
+summary: 'È possibile utilizzare l"opzione Erase (Cancella) per preparare un"unità non assegnata per la rimozione dal sistema. Questa procedura rimuove in modo permanente i dati, garantendo che non possano essere letti di nuovo.' 
+---
+= Cancellare i dischi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'opzione Erase (Cancella) per preparare un'unità non assegnata per la rimozione dal sistema. Questa procedura rimuove in modo permanente i dati, garantendo che non possano essere letti di nuovo.
+
+.Prima di iniziare
+Il disco deve essere in uno stato non assegnato.
+
+.A proposito di questa attività
+Utilizzare l'opzione Erase (Cancella) solo se si desidera rimuovere in modo permanente tutti i dati presenti su un disco. Se il disco è abilitato alla protezione, l'opzione Erase (Cancella) esegue una cancellazione crittografica e ripristina gli attributi di sicurezza del disco su Secure-capable (abilitato alla protezione).
+
+[NOTE]
+====
+La funzione di cancellazione non supporta alcuni modelli di dischi meno recenti. Se si tenta di cancellare uno di questi modelli precedenti, viene visualizzato un messaggio di errore.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. In alternativa, è possibile utilizzare i campi di filtro per visualizzare tutti i dischi non assegnati nello shelf. Dall'elenco a discesa *Mostra unità che sono...*, selezionare *non assegnate*.
++
+La vista shelf mostra solo i dischi non assegnati; tutti gli altri sono disattivati.
+
+. Per aprire il menu di scelta rapida dell'unità, fare clic sull'unità che si desidera cancellare. Se si desidera selezionare più dischi, è possibile farlo nella finestra di dialogo Erase Drives (Cancella dischi).
++
+[CAUTION]
+====
+*Possibile perdita di dati* -- l'operazione di cancellazione non può essere annullata. Assicurarsi di selezionare le unità corrette durante la procedura.
+
+====
+. Dal menu di scelta rapida, selezionare *Erase* (Cancella).
++
+Viene visualizzata la finestra di dialogo Erase Drives (Cancella unità), che mostra tutte le unità idonee per un'operazione di cancellazione.
+
+. Se lo si desidera, selezionare altri dischi dalla tabella. Non è possibile selezionare _tutti_ dischi; assicurarsi che un disco rimanga deselezionato.
+. Confermare l'operazione digitando `erase`, Quindi fare clic su *Erase* (Cancella).
++
+[CAUTION]
+====
+Continuare con questa operazione. Una volta fatto clic su Yes (Sì) nella finestra di dialogo successiva, l'operazione non può essere interrotta.
+
+====
+. Nella finestra di dialogo Estimated Completion Time (tempo di completamento stimato), fare clic su *Yes* (Sì) per continuare con l'operazione di cancellazione.
+
+
+.Risultati
+L'operazione di cancellazione potrebbe richiedere alcuni minuti o diverse ore. È possibile visualizzare lo stato nel menu:Home[Visualizza operazioni in corso]. Al termine dell'operazione di cancellazione, i dischi sono disponibili per l'utilizzo in un altro gruppo di volumi o pool di dischi o in un altro array di storage.
+
+.Al termine
+Se si desidera utilizzare nuovamente il disco, è necessario inizializzarlo. A tale scopo, selezionare *Inizializza* dal menu di scelta rapida del disco.

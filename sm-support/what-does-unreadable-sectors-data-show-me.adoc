@@ -1,0 +1,89 @@
+---
+permalink: sm-support/what-does-unreadable-sectors-data-show-me.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unreadable, sectors, 
+summary: È possibile visualizzare dati dettagliati sui settori illeggibili rilevati sui dischi dello storage array. 
+---
+= Cosa mostrano i dati dei settori illeggibili?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare dati dettagliati sui settori illeggibili rilevati sui dischi dello storage array.
+
+Il registro dei settori illeggibili mostra prima il settore illeggibile più recente. Il registro contiene le seguenti informazioni sui volumi che contengono i settori illeggibili. I campi sono ordinabili.
+
+[cols="25h,~"]
+|===
+| Campo | Descrizione 
+
+
+ a| 
+Volume interessato
+ a| 
+Mostra l'etichetta del volume. Se un volume mancante contiene settori illeggibili, viene visualizzato il World Wide Identifier per il volume mancante.
+
+
+
+ a| 
+LUN (Logical Unit Number)
+ a| 
+Mostra il LUN del volume. Se il volume non dispone di un LUN, nella finestra di dialogo viene visualizzato NA.
+
+
+
+ a| 
+Assegnato a.
+ a| 
+Mostra gli host o i cluster di host che hanno accesso al volume. Se il volume non è accessibile da un host, da un cluster host o anche da un cluster predefinito, la finestra di dialogo mostra NA.
+
+|===
+Per visualizzare ulteriori informazioni sui settori illeggibili, fare clic sul segno più (+) accanto a un volume.
+
+[cols="25h,~"]
+|===
+| Campo | Descrizione 
+
+
+ a| 
+Data/ora
+ a| 
+Mostra la data e l'ora in cui è stato rilevato il settore illeggibile.
+
+
+
+ a| 
+Volume Logical Block Address (Indirizzo blocco logico volume)
+ a| 
+Mostra l'indirizzo logico del blocco (LBA) del volume.
+
+
+
+ a| 
+Posizione del disco
+ a| 
+Mostra lo shelf del disco, il cassetto (se lo shelf del disco dispone di cassetti) e la posizione dell'alloggiamento.
+
+
+
+ a| 
+Drive Logical Block Address (Indirizzo blocco logico unità)
+ a| 
+Mostra l'LBA del disco.
+
+
+
+ a| 
+Tipo di guasto
+ a| 
+Mostra uno dei seguenti tipi di errore:
+
+* *Fisico* -- errore del supporto fisico.
+* *Logico* -- un errore di lettura in un'altra parte dello stripe che causa dati illeggibili. Ad esempio, un settore illeggibile a causa di errori dei supporti in altre parti del volume.
+* *Incoerente* -- dati di ridondanza incoerenti.
+* *Data Assurance* -- errore di Data Assurance.
+
+
+|===

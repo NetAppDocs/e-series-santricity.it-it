@@ -1,0 +1,38 @@
+---
+permalink: sm-support/retrieve-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
+summary: 'È possibile rivedere un"immagine dello stato di salute del controller. Un"immagine di integrità è un dump di dati raw della memoria del processore del controller che il supporto tecnico può utilizzare per diagnosticare un problema con un controller.' 
+---
+= Recuperare l'immagine di integrità
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rivedere un'immagine dello stato di salute del controller. Un'immagine di integrità è un dump di dati raw della memoria del processore del controller che il supporto tecnico può utilizzare per diagnosticare un problema con un controller.
+
+.A proposito di questa attività
+Il firmware genera automaticamente un'immagine dello stato di salute quando rileva determinati errori. Una volta generata un'immagine di integrità, il controller che ha generato l'errore si riavvia e un evento viene registrato nel registro eventi.
+
+Se AutoSupport è attivato, l'immagine dello stato di salute viene inviata automaticamente al supporto tecnico. Se AutoSupport non è attivato, è necessario contattare il supporto tecnico per istruzioni su come recuperare l'immagine sanitaria e inviarla per l'analisi.
+
+[NOTE]
+====
+Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Recupera immagine salute*.
++
+Prima di scaricare il file, consultare la sezione dei dettagli per visualizzare le dimensioni dell'immagine sanitaria.
+
+. Fare clic su *Collect*.
++
+Il file viene salvato nella cartella Download del browser con il nome `health-image.7z`.
+
+. Seguire le istruzioni fornite dal supporto tecnico per inviare il file.
+

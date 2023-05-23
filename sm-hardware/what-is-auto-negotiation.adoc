@@ -1,0 +1,22 @@
+---
+permalink: sm-hardware/what-is-auto-negotiation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, auto, negotiation, network, interface, 
+summary: 'La negoziazione automatica è la capacità di un"interfaccia di rete di coordinare automaticamente i propri parametri di connessione (velocità e duplex) con un"altra interfaccia di rete.' 
+---
+= Che cos'è la negoziazione automatica?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La negoziazione automatica è la capacità di un'interfaccia di rete di coordinare automaticamente i propri parametri di connessione (velocità e duplex) con un'altra interfaccia di rete.
+
+La negoziazione automatica è solitamente l'impostazione preferita per la configurazione delle porte di gestione; tuttavia, se la negoziazione non riesce, le impostazioni dell'interfaccia di rete non corrispondenti possono influire notevolmente sulle prestazioni della rete. Nei casi in cui tale condizione non sia accettabile, impostare manualmente le impostazioni dell'interfaccia di rete su una configurazione corretta. La negoziazione automatica viene eseguita dalle porte di gestione Ethernet del controller. La negoziazione automatica non viene eseguita dagli adattatori bus host iSCSI.
+
+[NOTE]
+====
+Se la negoziazione automatica non riesce, il controller tenta di stabilire una connessione a 10BASE-T, half-duplex, che è il minimo comune denominatore.
+
+====

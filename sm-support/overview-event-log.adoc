@@ -1,0 +1,41 @@
+---
+permalink: sm-support/overview-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, event, log 
+summary: 'Utilizzare il registro eventi per visualizzare una cronologia delle modifiche e degli eventi verificatisi nell"array di storage.' 
+---
+= Panoramica del registro eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il registro eventi fornisce una cronologia degli eventi che si sono verificati sull'array di storage, che aiuta il supporto tecnico nella risoluzione dei problemi relativi agli eventi che hanno causato guasti.
+
+È possibile utilizzare il registro eventi come strumento diagnostico supplementare per il Recovery Guru per il tracciamento degli eventi degli array di storage. Fare sempre riferimento al Recovery Guru prima di tutto quando si tenta di eseguire il ripristino a seguito di guasti dei componenti nell'array di storage.
+
+
+
+== Categorie di eventi
+
+Gli eventi nel registro eventi sono classificati con stati diversi. Gli eventi sui quali è necessario intervenire hanno i seguenti stati:
+
+* Critico
+* Attenzione
+
+
+Gli eventi che sono informativi e non richiedono alcuna azione immediata sono i seguenti:
+
+* Informativo
+
+
+
+
+== Eventi critici
+
+Gli eventi critici indicano un problema con lo storage array. Se si risolve immediatamente l'evento critico, si potrebbe evitare la perdita di accesso ai dati.
+
+Quando si verifica un evento critico, questo viene registrato nel registro eventi. Tutti gli eventi critici vengono inviati alla console di gestione SNMP o al destinatario dell'e-mail configurato per la ricezione delle notifiche di avviso. Se l'ID dello shelf non è noto al momento dell'evento, l'ID dello shelf viene elencato come "Shelf unknown".
+
+Quando si riceve un evento critico, fare riferimento alla procedura Recovery Guru per una descrizione dettagliata dell'evento critico. Completare la procedura Recovery Guru per correggere l'evento critico. Per correggere alcuni eventi critici, potrebbe essere necessario contattare il supporto tecnico.

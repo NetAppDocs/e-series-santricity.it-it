@@ -1,0 +1,65 @@
+---
+permalink: um-manage/what-impact-does-synchronization-priority-have-on-synchronization-rates-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, synchronization, priority, rates 
+summary: La priorità di sincronizzazione definisce il tempo di elaborazione allocato per le attività di sincronizzazione in relazione alle prestazioni del sistema. 
+---
+= Qual è l'impatto della priorità di sincronizzazione sulle velocità di sincronizzazione?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La priorità di sincronizzazione definisce il tempo di elaborazione allocato per le attività di sincronizzazione in relazione alle prestazioni del sistema.
+
+Il proprietario del controller del volume primario esegue questa operazione in background. Allo stesso tempo, il proprietario del controller elabora le scritture i/o locali nel volume primario e le scritture remote associate nel volume secondario. Poiché la risincronizzazione distoglie le risorse di elaborazione del controller dall'attività di i/o, la risincronizzazione può avere un impatto sulle prestazioni dell'applicazione host.
+
+Tenere presenti queste linee guida per determinare il tempo necessario per una priorità di sincronizzazione e il modo in cui le priorità di sincronizzazione possono influire sulle prestazioni del sistema.
+
+Sono disponibili i seguenti tassi di priorità:
+
+* Più basso
+* Basso
+* Medio
+* Alto
+* Massimo
+
+
+Il tasso di priorità più basso supporta le prestazioni del sistema, ma la risincronizzazione richiede più tempo. Il tasso di priorità più elevato supporta la risincronizzazione, ma le prestazioni del sistema potrebbero essere compromesse.
+
+Queste linee guida approssimano le differenze tra le priorità.
+
+[cols="45h,~"]
+|===
+| Tasso di priorità per la sincronizzazione completa | Tempo trascorso rispetto alla massima velocità di sincronizzazione 
+
+
+ a| 
+Più basso
+ a| 
+Circa otto volte più a lungo rispetto al tasso di priorità più elevato.
+
+
+
+ a| 
+Basso
+ a| 
+Circa sei volte più a lungo rispetto al tasso di priorità più elevato.
+
+
+
+ a| 
+Medio
+ a| 
+Circa tre volte e mezzo fino al tasso di priorità più elevato.
+
+
+
+ a| 
+Alto
+ a| 
+Circa il doppio rispetto al tasso di priorità più elevato.
+
+|===
+Le dimensioni del volume e i carichi della velocità di i/o dell'host influiscono sui confronti dei tempi di sincronizzazione.

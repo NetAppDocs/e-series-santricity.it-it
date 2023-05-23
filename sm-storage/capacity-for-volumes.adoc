@@ -1,0 +1,104 @@
+---
+permalink: sm-storage/capacity-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
+summary: 'I dischi dell"array di storage forniscono la capacità fisica dello storage per i dati. Prima di iniziare a memorizzare i dati, è necessario configurare la capacità allocata in componenti logici noti come pool o gruppi di volumi. Questi oggetti storage vengono utilizzati per configurare, memorizzare, gestire e conservare i dati sull"array di storage.' 
+---
+= Come viene allocata la capacità per i volumi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I dischi dell'array di storage forniscono la capacità fisica dello storage per i dati. Prima di iniziare a memorizzare i dati, è necessario configurare la capacità allocata in componenti logici noti come pool o gruppi di volumi. Questi oggetti storage vengono utilizzati per configurare, memorizzare, gestire e conservare i dati sull'array di storage.
+
+
+
+== Utilizzo della capacità per creare ed espandere i volumi
+
+È possibile creare volumi dalla capacità non assegnata o dalla capacità libera in un pool o un gruppo di volumi.
+
+* Quando si crea un volume dalla capacità non assegnata, è possibile creare contemporaneamente un pool o un gruppo di volumi e il volume.
+* Quando si crea un volume dalla capacità libera, si crea un volume aggiuntivo su un pool o un gruppo di volumi già esistente.
+
+
+Dopo aver espanso la capacità del volume, è necessario aumentare manualmente le dimensioni del file system per ottenere la corrispondenza. Il modo in cui si esegue questa operazione dipende dal file system in uso. Per ulteriori informazioni, consultare la documentazione del sistema operativo host.
+
+
+
+== Tipi di capacità per volumi thick e thin
+
+È possibile creare volumi thick o thin. La capacità riportata e la capacità allocata sono le stesse per i volumi spessi, ma sono diverse per i volumi thin.
+
+* Per un volume denso, la capacità del volume riportata è uguale alla quantità di capacità dello storage fisico allocata. Deve essere presente l'intera quantità di capacità dello storage fisico. Lo spazio fisicamente allocato è uguale allo spazio riportato all'host.
++
+Di norma, si imposta la capacità riportata del volume spesso in modo che sia la capacità massima a cui si pensa che il volume crescerà. I volumi elevati offrono performance elevate e prevedibili per le applicazioni, soprattutto perché tutta la capacità dell'utente viene riservata e allocata al momento della creazione.
+
+* Per un volume thin, la capacità riportata è la capacità che viene segnalata agli host, mentre la capacità allocata è la quantità di spazio su disco attualmente allocato per la scrittura dei dati.
++
+La capacità riportata può essere superiore alla capacità allocata sull'array di storage. I thin volumi possono essere dimensionati per adattarsi alla crescita senza tenere conto delle risorse attualmente disponibili.
+
+
+
+[NOTE]
+====
+Gestore di sistema di SANtricity non fornisce un'opzione per creare volumi thin. Se si desidera creare volumi thin, utilizzare l'interfaccia della riga di comando (CLI).
+
+====
+
+
+== Limiti di capacità per i volumi spessi
+
+La capacità minima per un volume spesso è di 1 MiB e la capacità massima è determinata dal numero e dalla capacità delle unità nel pool o nel gruppo di volumi.
+
+Quando si aumenta la capacità riportata per un volume spesso, tenere presenti le seguenti linee guida:
+
+* È possibile specificare fino a tre cifre decimali (ad esempio, 65.375 GiB).
+* La capacità deve essere inferiore o uguale al massimo disponibile nel gruppo di volumi.
++
+Quando si crea un volume, viene preallocata una certa capacità aggiuntiva per la migrazione DSS (Dynamic Segment Size). La migrazione DSS è una funzione del software che consente di modificare le dimensioni dei segmenti di un volume.
+
+* Alcuni sistemi operativi host supportano volumi superiori a 2 TIB (la capacità massima indicata è determinata dal sistema operativo host). Infatti, alcuni sistemi operativi host supportano fino a 128 volumi TIB. Per ulteriori informazioni, consultare la documentazione del sistema operativo host.
+
+
+
+
+== Limiti di capacità per i volumi thin
+
+È possibile creare volumi thin con una grande capacità segnalata e una capacità allocata relativamente piccola, il che è vantaggioso per l'utilizzo e l'efficienza dello storage. I thin volumi possono contribuire a semplificare l'amministrazione dello storage, in quanto la capacità allocata può aumentare in base alle esigenze dell'applicazione, senza interrompere l'applicazione, consentendo un migliore utilizzo dello storage.
+
+Oltre alla capacità riportata e allocata, i thin volumi contengono anche capacità scritta. La capacità scritta è la quantità di capacità che è stata scritta dalla capacità riservata allocata per i thin volumi.
+
+La tabella seguente elenca i limiti di capacità per un volume sottile.
+
+[cols="3*"]
+|===
+| Tipo di capacità | Dimensione minima | Dimensione massima 
+
+
+ a| 
+Segnalato
+ a| 
+32 MiB
+ a| 
+256 TIB
+
+
+
+ a| 
+Allocato
+ a| 
+4 MiB
+ a| 
+64 TIB
+
+|===
+Per un volume sottile, se è stata raggiunta la capacità massima di 256 TIB, non è possibile aumentarla. Assicurarsi che la capacità riservata del volume thin sia impostata su una dimensione superiore alla capacità massima indicata.
+
+Il sistema espande automaticamente la capacità allocata in base al limite di capacità allocata. Il limite di capacità allocata consente di limitare la crescita automatica del thin volume al di sotto della capacità riportata. Quando la quantità di dati scritti si avvicina alla capacità allocata, è possibile modificare il limite di capacità allocata.
+
+Per modificare il limite di capacità allocata, selezionare menu:Storage[Volumes > Thin Volume Monitoring tab > Change Limit] (Storage[volumi > scheda monitoraggio volume sottile > Modifica limite]).
+
+Poiché System Manager non assegna la capacità completa quando crea un volume thin, nel pool potrebbe esistere una capacità libera insufficiente. Lo spazio insufficiente può bloccare le scritture nel pool, non solo per i volumi thin, ma anche per altre operazioni che richiedono capacità dal pool (ad esempio, immagini di snapshot o volumi di snapshot). Tuttavia, è comunque possibile eseguire operazioni di lettura dal pool. Se si verifica questa situazione, viene visualizzato un avviso relativo alla soglia.

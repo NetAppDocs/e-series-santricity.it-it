@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backing up, security, key, 
+summary: 'Se la chiave di sicurezza originale viene danneggiata e non si dispone di un backup, l"accesso ai dati sui dischi viene perso se vengono migrati da uno storage array a un altro.' 
+---
+= Cosa occorre sapere prima di eseguire il backup di una chiave di sicurezza?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se la chiave di sicurezza originale viene danneggiata e non si dispone di un backup, l'accesso ai dati sui dischi viene perso se vengono migrati da uno storage array a un altro.
+
+Prima di eseguire il backup di una chiave di sicurezza, tenere presenti le seguenti linee guida:
+
+* Assicurarsi di conoscere l'identificatore della chiave di sicurezza e la password del file della chiave originale.
++
+[NOTE]
+====
+Solo le chiavi interne utilizzano identificatori. Quando è stato creato l'identificatore, sono stati generati automaticamente caratteri aggiuntivi e aggiunti ad entrambe le estremità della stringa di identificazione. I caratteri generati garantiscono che l'identificatore sia univoco.
+
+====
+* Viene creata una nuova password per il backup. Questa password non deve corrispondere alla password utilizzata al momento della creazione o dell'ultima modifica della chiave originale. La password viene applicata solo al backup che si sta creando.
++
+[NOTE]
+====
+La password per Drive Security non deve essere confusa con la password Administrator dell'array di storage. La password per Drive Security protegge i backup di una chiave di sicurezza. La password Administrator protegge l'intero array di storage da accessi non autorizzati.
+
+====
+* Il file della chiave di sicurezza di backup viene scaricato nel client di gestione. Il percorso del file scaricato potrebbe dipendere dalla posizione di download predefinita del browser. Assicurarsi di registrare la posizione in cui sono memorizzate le informazioni della chiave di sicurezza.
+

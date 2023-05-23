@@ -1,0 +1,16 @@
+---
+permalink: sm-mirroring/why-is-it-recommended-to-use-a-manual-synchronization-policy.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manual, resynchronization 
+summary: La risincronizzazione manuale è consigliata perché consente di gestire il processo di risincronizzazione in modo da offrire la migliore opportunità di recupero dei dati. 
+---
+= Perché si consiglia di utilizzare una policy di sincronizzazione manuale?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La risincronizzazione manuale è consigliata perché consente di gestire il processo di risincronizzazione in modo da offrire la migliore opportunità di recupero dei dati.
+
+Se si utilizza un criterio di risincronizzazione automatica e si verificano problemi di comunicazione intermittente durante la risincronizzazione, i dati sul volume secondario potrebbero essere temporaneamente danneggiati. Una volta completata la risincronizzazione, i dati vengono corretti.

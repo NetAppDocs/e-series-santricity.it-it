@@ -1,0 +1,28 @@
+---
+permalink: um-manage/storage-array-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, storage, array, groups 
+summary: 'È possibile gestire l"infrastruttura fisica e virtualizzata raggruppando un set di storage array. È possibile raggruppare gli array di storage per semplificare l"esecuzione dei processi di monitoraggio o reporting.' 
+---
+= Gruppi di array di storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile gestire l'infrastruttura fisica e virtualizzata raggruppando un set di storage array. È possibile raggruppare gli array di storage per semplificare l'esecuzione dei processi di monitoraggio o reporting.
+
+
+
+== Tipi di gruppi di array di storage
+
+* *Tutti i gruppi*
++
+Il gruppo All (tutti) è il gruppo predefinito e include tutti gli array di storage rilevati nell'organizzazione. È possibile accedere al gruppo All dalla vista principale.
+
+* *Gruppo creato dall'utente*
++
+Un gruppo creato dall'utente include gli array di storage selezionati manualmente per aggiungerli a tale gruppo. È possibile accedere ai gruppi creati dall'utente dalla vista principale.
+
+

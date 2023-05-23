@@ -1,0 +1,21 @@
+---
+permalink: um-manage/why-dont-i-see-all-of-my-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, arrays missing 
+summary: 'Durante l"operazione Import Settings (Impostazioni di importazione), alcuni storage array potrebbero non essere disponibili nella finestra di dialogo di selezione della destinazione.' 
+---
+= Perché non vengono visualizzati tutti gli array di storage?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durante l'operazione Import Settings (Impostazioni di importazione), alcuni storage array potrebbero non essere disponibili nella finestra di dialogo di selezione della destinazione.
+
+Gli array di storage potrebbero non essere visualizzati per i seguenti motivi:
+
+* La versione del firmware è inferiore alla 8.50.
+* Lo storage array non è in linea.
+* Il sistema non è in grado di comunicare con tale array (ad esempio, l'array presenta problemi di certificato, password o rete).
+

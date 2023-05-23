@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/how-add-on-features-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, features, 
+summary: 'I componenti aggiuntivi sono funzionalità non incluse nella configurazione standard di System Manager e potrebbero richiedere una chiave per l"attivazione. Una funzione aggiuntiva può essere una singola funzionalità premium o un pacchetto di funzionalità.' 
+---
+= Come funzionano le funzionalità aggiuntive
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I componenti aggiuntivi sono funzionalità non incluse nella configurazione standard di System Manager e potrebbero richiedere una chiave per l'attivazione. Una funzione aggiuntiva può essere una singola funzionalità premium o un pacchetto di funzionalità.
+
+I seguenti passaggi forniscono una panoramica sull'attivazione di una funzionalità Premium o Feature Pack:
+
+. Ottenere le seguenti informazioni:
++
+** Numero di serie dello chassis e Feature Enable Identifier, che identificano l'array di storage per la funzione da installare. Questi elementi sono disponibili in System Manager.
+** Codice di attivazione della funzione, disponibile sul sito del supporto al momento dell'acquisto della funzione.
+
+
+. Per ottenere la chiave funzione, contattare il proprio provider di storage o accedere al sito di attivazione delle funzionalità Premium. Fornire il numero di serie dello chassis, l'identificatore di abilitazione e il codice funzione per l'attivazione.
+. Utilizzando System Manager, attivare la funzionalità Premium o il Feature Pack utilizzando il file delle chiavi funzione.
+

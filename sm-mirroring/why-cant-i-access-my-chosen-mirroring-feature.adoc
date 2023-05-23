@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirroring, access 
+summary: 'Il mirroring viene configurato nell"interfaccia di Unified Manager.' 
+---
+= Perché non è possibile accedere alla funzione di mirroring scelta?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il mirroring viene configurato nell'interfaccia di Unified Manager.
+
+[NOTE]
+====
+Il mirroring non è disponibile sullo storage array EF600 o EF300.
+
+====
+Per abilitare e configurare il mirroring tra due array, verificare quanto segue:
+
+* Il servizio Web Services Proxy deve essere in esecuzione. (Unified Manager viene installato su un sistema host insieme al proxy dei servizi Web).
+* Unified Manager deve essere in esecuzione sull'host locale tramite una connessione HTTPS.
+* I due array di storage che si desidera utilizzare per il mirroring devono essere rilevati in Unified Manager.
+* Unified Manager deve disporre di certificati SSL validi per gli array di storage. È possibile accettare un certificato autofirmato o installare certificati CA firmati da Unified Manager.
+
+
+Per istruzioni sulla configurazione, consultare quanto segue:
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Creazione di coppia asincrona con mirroring (in Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Creazione di una coppia sincrona con mirroring (in Unified Manager)"]
+

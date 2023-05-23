@@ -1,0 +1,75 @@
+---
+permalink: sm-mirroring/complete-mirrored-pair-for-primary-volumes-created-on-legacy-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
+summary: Se è stato creato un volume primario su un array di storage legacy che non può essere gestito da Gestore di sistema di SANtricity, è possibile creare il volume secondario su questo array con Gestore di sistema. 
+---
+= Coppia mirrorata completa per volumi primari creati su sistemi legacy
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stato creato un volume primario su un array di storage legacy che non può essere gestito da System Manager, è possibile creare il volume secondario su questo array con System Manager.
+
+.A proposito di questa attività
+È possibile eseguire il mirroring asincrono tra array legacy che utilizzano un'interfaccia diversa e array più recenti che possono essere gestiti da System Manager.
+
+* Se si esegue il mirroring tra due array di storage che utilizzano System Manager, è possibile ignorare questa attività perché la coppia mirrorata è già stata completata nella sequenza di creazione della coppia mirrorata.
+* Eseguire questa attività sull'array di storage remoto.
+
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *coppia mirrorata*.
++
+Viene visualizzata la tabella delle coppie mirrorate, che mostra tutte le coppie mirrorate associate all'array di storage.
+
+. Individuare il volume di coppia mirrorata con stato incomplete, quindi fare clic sul collegamento *complete mirrored pair* (Coppia mirrorata completa) visualizzato nella colonna Mirrored Pair (Coppia mirrorata).
+. Scegliere se si desidera completare la sequenza di creazione della coppia mirrorata automaticamente o manualmente selezionando uno dei seguenti pulsanti di opzione:
++
+** *Automatico* -- Crea un nuovo volume secondario.
++
+Accettare le impostazioni predefinite per il lato remoto della coppia mirrorata selezionando un pool o un gruppo di volumi esistente in cui si desidera creare il volume secondario. Utilizzare questa opzione consigliata per allocare la capacità riservata al volume secondario con le impostazioni predefinite.
+
+** *Manuale* -- selezionare un volume esistente.
++
+Definire i propri parametri per il volume secondario.
+
++
+... Fare clic su *Avanti* per selezionare il volume secondario.
+... Selezionare un volume esistente che si desidera utilizzare come volume secondario, quindi fare clic su *Avanti* per allocare la capacità riservata.
+... Allocare la capacità riservata. Effettuare una delle seguenti operazioni:
++
+**** Accettare le impostazioni predefinite.
++
+L'impostazione predefinita per la capacità riservata è il 20% della capacità del volume di base, e di solito questa capacità è sufficiente.
+
+**** Allocare le proprie impostazioni di capacità riservate per soddisfare le esigenze di storage dei dati relative al mirroring asincrono.
++
+La capacità richiesta varia in base alla frequenza e alle dimensioni delle scritture i/o nel volume primario e al tempo necessario per mantenere la capacità. In generale, scegliere una capacità più elevata per la capacità riservata se si verifica una o entrambe le seguenti condizioni:
+
++
+***** Si intende mantenere la coppia mirrorata per un lungo periodo di tempo.
+***** Una grande percentuale di blocchi di dati cambierà sul volume primario a causa dell'intensa attività di i/O. Utilizzare dati storici sulle performance o altre utility del sistema operativo per determinare l'attività i/o tipica del volume primario.
+
+
+
+
+
+
+
+
+. Selezionare *completo*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Crea il volume secondario sull'array di storage remoto e alloca la capacità riservata per il lato remoto della coppia mirrorata.
+* Avvia la sincronizzazione iniziale tra lo storage array locale e lo storage array remoto.
+* Se il volume sottoposto a mirroring è un volume sottile, solo i blocchi allocati vengono trasferiti al volume secondario durante la sincronizzazione iniziale. Questo trasferimento riduce la quantità di dati che devono essere trasferiti per completare la sincronizzazione iniziale.
+* Crea la capacità riservata per la coppia mirrorata sull'array di storage locale e sull'array di storage remoto.
+

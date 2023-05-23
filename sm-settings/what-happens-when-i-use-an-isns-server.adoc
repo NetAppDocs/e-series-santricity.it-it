@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-happens-when-i-use-an-isns-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, isns, server, registration, 
+summary: 'Quando si utilizzano le informazioni del server iSNS (Internet Storage Name Service), è possibile configurare gli host (iniziatori) in modo che interrogino il server iSNS per recuperare le informazioni dal server di destinazione (controller).' 
+---
+= Cosa accade quando si utilizza un server iSNS per la registrazione?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si utilizzano le informazioni del server iSNS (Internet Storage Name Service), è possibile configurare gli host (iniziatori) in modo che interrogino il server iSNS per recuperare le informazioni dal server di destinazione (controller).
+
+Questa registrazione fornisce al server iSNS le informazioni relative al nome qualificato iSCSI (IQN) e alla porta del controller e consente di eseguire query tra gli iniziatori (host iSCSI) e le destinazioni (controller).

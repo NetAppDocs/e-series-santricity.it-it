@@ -1,0 +1,356 @@
+---
+permalink: sm-interface/view-and-act-on-operations-in-progress.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, act, operations, progress, 
+summary: 'Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata, utilizzare la pagina Operations in Progress (operazioni in corso).' 
+---
+= Visualizzare e agire sulle operazioni in corso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata, utilizzare la pagina Operations in Progress (operazioni in corso).
+
+.A proposito di questa attività
+Per ciascuna operazione elencata nella pagina Operations in Progress (operazioni in corso), vengono visualizzate una percentuale di completamento e il tempo stimato rimanente per completare l'operazione. In alcuni casi, è possibile interrompere un'operazione o posizionarla con priorità più alta o più bassa. È inoltre possibile cancellare un'operazione di copia del volume completata dall'elenco.
+
+.Fasi
+. Nella pagina iniziale, selezionare *Mostra operazioni in corso*.
++
+Viene visualizzata la pagina Operations in Progress (operazioni in corso).
+
+. Se lo si desidera, utilizzare i collegamenti nella colonna Actions (azioni) per interrompere o modificare la priorità di un'operazione.
++
+[CAUTION]
+====
+Leggere tutto il testo di avviso fornito nelle finestre di dialogo, in particolare quando si interrompe un'operazione.
+
+====
++
+È possibile interrompere un'operazione di copia di un volume o modificarne la priorità.
+
+. Una volta completata l'operazione di copia di un volume, selezionare *Clear* per rimuoverlo dall'elenco.
++
+Al termine di un'operazione, nella parte superiore della pagina iniziale vengono visualizzati un messaggio informativo e l'icona della chiave gialla. Questo messaggio include un collegamento che consente di annullare l'operazione dalla pagina Operations in Progress (operazioni in corso).
+
+
+
+Le operazioni visualizzate nella pagina operazioni in corso includono quanto segue:
+
+[cols="1a,1a,1a"]
+|===
+| Operazione | Stato possibile dell'operazione | Azioni da intraprendere 
+
+
+ a| 
+Copia del volume
+ a| 
+Completato
+ a| 
+Chiaro
+
+
+
+ a| 
+Copia del volume
+ a| 
+In corso
+ a| 
+* Modificare la priorità
+* Arrestare
+
+
+
+
+ a| 
+Copia del volume
+ a| 
+In sospeso
+ a| 
+Chiaro
+
+
+
+ a| 
+Copia del volume
+ a| 
+Non riuscito
+ a| 
+* Chiaro
+* Copia di nuovo
+
+
+
+
+ a| 
+Copia del volume
+ a| 
+Interrotto
+ a| 
+* Chiaro
+* Copia di nuovo
+
+
+
+
+ a| 
+Creazione di volumi (solo volumi thick pool superiori a 64 TiB)
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Eliminazione del volume (solo volumi thick pool superiori a 64 TiB)
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Sincronizzazione iniziale del gruppo di mirror asincrono
+ a| 
+In corso
+ a| 
+Sospendere
+
+
+
+ a| 
+Sincronizzazione iniziale del gruppo di mirror asincrono
+ a| 
+Sospeso
+ a| 
+Riprendi
+
+
+
+ a| 
+Mirroring sincrono
+ a| 
+In corso
+ a| 
+Sospendere
+
+
+
+ a| 
+Mirroring sincrono
+ a| 
+Sospeso
+ a| 
+Riprendi
+
+
+
+ a| 
+Rollback dell'immagine Snapshot
+ a| 
+In corso
+ a| 
+Annulla
+
+
+
+ a| 
+Rollback dell'immagine Snapshot
+ a| 
+In sospeso
+ a| 
+Annulla
+
+
+
+ a| 
+Rollback dell'immagine Snapshot
+ a| 
+In pausa
+ a| 
+* Annulla
+* Riprendi
+
+
+
+
+ a| 
+Evacuazione del disco
+ a| 
+In corso
+ a| 
+Annulla (a seconda del tipo di evacuazione del disco)
+
+
+
+ a| 
+Aggiungere capacità al pool o al gruppo di volumi
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Modificare un livello RAID per un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Ridurre la capacità di un pool
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Recupero di volumi sottili
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Verificare il tempo rimanente per un'operazione con formato di disponibilità istantanea (IAF) per i volumi del pool
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Controllare la ridondanza dei dati di un gruppo di volumi
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Deframmentare un gruppo di volumi
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Inizializzare un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Aumentare la capacità di un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Modificare le dimensioni dei segmenti di un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Copia del disco
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Ricostruzione dei dati
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+CopyBack
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Cancellazione del disco
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+In corso
+ a| 
+* Modificare la priorità
+* Arrestare
+
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+Interrotto
+ a| 
+* Riprendi
+* Scollegare
+
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+Non riuscito
+ a| 
+* Riprendi
+* Scollegare
+
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+Completato
+ a| 
+Scollegare
+
+|===

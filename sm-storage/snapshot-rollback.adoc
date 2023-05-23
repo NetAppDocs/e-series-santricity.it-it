@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/snapshot-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
+summary: 'Un"operazione di rollback riporta un volume di base a uno stato precedente, determinato dallo snapshot selezionato.' 
+---
+= Rollback di Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un'operazione di rollback riporta un volume di base a uno stato precedente, determinato dallo snapshot selezionato.
+
+Per il rollback, è possibile selezionare un'immagine snapshot da una delle seguenti origini:
+
+* *Rollback dell'immagine Snapshot*, per un ripristino completo di un volume di base.
+* *Rollback del gruppo di coerenza Snapshot*, che può essere utilizzato per eseguire il rollback di uno o più volumi.
+
+
+Durante il rollback, la funzione Snapshot conserva tutte le immagini snapshot del gruppo. Consente inoltre all'host di accedere al volume di base durante questo processo, se necessario per le operazioni di i/O.
+
+Quando viene avviato un rollback, un processo in background esegue la ricerca degli indirizzi LBA (Logical Block Address) per il volume di base, quindi trova i dati copy-on-write nell'immagine snapshot di rollback da ripristinare. Poiché il volume di base è accessibile all'host per le operazioni di lettura e scrittura e tutti i dati precedentemente scritti sono immediatamente disponibili, il volume di capacità riservata deve essere sufficientemente grande da contenere tutte le modifiche durante l'elaborazione del rollback. Il trasferimento dei dati continua come operazione in background fino al completamento del rollback.
+
+image::../media/sam1130-dwg-snapshots-rollback-overview.gif[panoramica sul rollback delle snapshot di sam1130 dwg]
+
+^1^ Volume di base; ^2^ oggetti Snapshot in un gruppo; ^3^ capacità riservata del gruppo Snapshot

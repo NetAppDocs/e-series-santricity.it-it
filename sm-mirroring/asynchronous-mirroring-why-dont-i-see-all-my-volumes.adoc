@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, volumes 
+summary: Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei. 
+---
+= Mirroring asincrono - perché non vedo tutti i volumi?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei.
+
+I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Per i volumi thin, è necessario attivare l'espansione automatica.
+

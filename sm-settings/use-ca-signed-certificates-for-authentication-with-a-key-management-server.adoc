@@ -1,0 +1,85 @@
+---
+permalink: sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
+summary: Per comunicazioni sicure tra un server di gestione delle chiavi e i controller degli array di storage, è necessario configurare i set di certificati appropriati. 
+---
+= Utilizzare i certificati firmati CA per l'autenticazione con un server di gestione delle chiavi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per comunicazioni sicure tra un server di gestione delle chiavi e i controller degli array di storage, è necessario configurare i set di certificati appropriati.
+
+.Prima di iniziare
+È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni del certificato non vengono visualizzate.
+
+.A proposito di questa attività
+L'autenticazione tra i controller e un server di gestione delle chiavi è una procedura in due fasi.
+
+
+
+== Fase 1: Completare e inviare la CSR per l'autenticazione con un server di gestione delle chiavi
+
+È necessario innanzitutto generare un file CSR (Certificate Signing Request), quindi utilizzare la CSR per richiedere un certificato client firmato a un'autorità di certificazione (CA) attendibile dal server di gestione delle chiavi. È inoltre possibile creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR scaricato. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste del protocollo KMIP (Key Management Interoperability Protocol).
+
+.Fasi
+. Selezionare il menu:Impostazioni[certificati].
+. Dalla scheda Key Management (Gestione chiavi), selezionare *complete CSR* (completa CSR).
+. Inserire le seguenti informazioni:
++
+** *Nome comune* -- un nome che identifica questa CSR, ad esempio il nome dell'array di storage, che verrà visualizzato nei file di certificato.
+** *Organizzazione* -- il nome completo e legale della tua azienda o organizzazione. Includere i suffissi, ad esempio Inc. O Corp.
+** *Unità organizzativa (opzionale)* -- la divisione dell'organizzazione che gestisce il certificato.
+** *Città/Località* -- la città o la località in cui si trova l'organizzazione.
+** *Stato/Regione (opzionale)* -- Stato o regione in cui si trova l'organizzazione.
+** *Codice ISO Paese* -- Codice ISO (International Organization for Standardization) a due cifre, ad esempio USA, in cui si trova l'organizzazione.
+
+
+. Fare clic su *Download*.
++
+Un file CSR viene salvato nel sistema locale.
+
+. Richiedere un certificato client firmato a una CA attendibile dal server di gestione delle chiavi.
+. Se si dispone di un certificato client, visitare il sito Web all'indirizzo <<Fase 2: Importazione dei certificati per il server di gestione delle chiavi>>.
+
+
+
+
+== Fase 2: Importazione dei certificati per il server di gestione delle chiavi
+
+Come fase successiva, importare i certificati per l'autenticazione tra lo storage array e il server di gestione delle chiavi. Esistono due tipi di certificati: Il certificato client convalida i controller dello storage array, mentre il certificato del server di gestione delle chiavi convalida il server. È necessario caricare sia il file di certificato del client per i controller che il file di certificato del server per il server di gestione delle chiavi.
+
+.Prima di iniziare
+* Si dispone di un file di certificato client firmato (vedere <<Fase 1: Completare e inviare la CSR per l'autenticazione con un server di gestione delle chiavi>>) Ed è stato copiato sull'host in cui si accede a System Manager. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste del protocollo KMIP (Key Management Interoperability Protocol).
+* È necessario recuperare un file di certificato dal server di gestione delle chiavi, quindi copiarlo sull'host in cui si accede a System Manager. Un certificato del server di gestione delle chiavi convalida il server di gestione delle chiavi, in modo che lo storage array possa fidarsi del proprio indirizzo IP. È possibile utilizzare un certificato root, intermedio o server per il server di gestione delle chiavi.
++
+[NOTE]
+====
+Per ulteriori informazioni sul certificato del server, consultare la documentazione relativa al server di gestione delle chiavi.
+
+====
+
+
+.Fasi
+. Selezionare il menu:Impostazioni[certificati].
+. Dalla scheda Key Management (Gestione chiavi), selezionare *Import* (Importa).
++
+Viene visualizzata una finestra di dialogo per l'importazione dei file dei certificati.
+
+. Accanto a *Select client certificate* (Seleziona certificato client), fare clic sul pulsante *Browse* (Sfoglia) per selezionare il file di certificato client per i controller dell'array di storage.
++
+Il nome del file viene visualizzato nella finestra di dialogo.
+
+. Accanto a *Select key management server's server certificate*, fare clic sul pulsante *Browse* (Sfoglia) per selezionare il file di certificato del server per il server di gestione delle chiavi. È possibile scegliere un certificato root, intermedio o server per il server di gestione delle chiavi.
++
+Il nome del file viene visualizzato nella finestra di dialogo.
+
+. Fare clic su *Importa*.
++
+I file vengono caricati e validati.
+
+

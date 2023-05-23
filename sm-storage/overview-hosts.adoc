@@ -1,0 +1,56 @@
+---
+permalink: sm-storage/overview-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts 
+summary: È possibile configurare host e cluster di host, che definiscono le connessioni tra lo storage array e i server di dati. 
+---
+= Panoramica degli host e dei cluster di host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare host e cluster di host, che definiscono le connessioni tra lo storage array e i server di dati.
+
+
+
+== Cosa sono gli host e i cluster di host?
+
+Un _host_ è un server che invia i/o a un volume su un array di storage. Un _cluster di host_ è un gruppo di host che è possibile creare per assegnare gli stessi volumi a più host.
+
+Scopri di più:
+
+* link:host-terminology.html["Terminologia dell'host"]
+* link:access-volumes.html["Volumi di accesso"]
+* link:maximum-number-of-luns.html["Numero massimo di LUN"]
+
+
+
+
+== Come si configurano gli host e i cluster di host?
+
+Per definire le connessioni host, è possibile consentire a un HCA (host Context Agent) di rilevare automaticamente gli host oppure accedere al menu:Storage[hosts] per configurare manualmente l'host. Se si desidera che due o più host condividano l'accesso allo stesso set di volumi, è possibile definire un cluster e assegnare i volumi a tale cluster.
+
+Scopri di più:
+
+* link:automatic-versus-manual-host-creation.html["Creazione automatica e manuale degli host"]
+* link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Modalità di assegnazione dei volumi agli host e ai cluster di host"]
+* link:workflow-for-creating-hosts-and-assigning-volumes.html["Workflow per la creazione dell'host e l'assegnazione del volume"]
+* link:create-host-automatically.html["Crea host automaticamente"]
+* link:create-host-manually.html["Creare l'host manualmente"]
+* link:create-host-cluster.html["Creare un cluster host"]
+* link:assign-volumes.html["Assegnare volumi agli host"]
+
+
+
+
+== Informazioni correlate
+
+Scopri di più sulle attività relative agli host:
+
+* link:../sm-settings/set-automatic-load-balancing.html["Impostare il bilanciamento automatico del carico"]
+* link:../sm-settings/set-host-connectivity-reporting.html["Impostare il reporting sulla connettività host"]
+* link:../sm-settings/change-default-host-type.html["Modificare il tipo di host predefinito"]
+

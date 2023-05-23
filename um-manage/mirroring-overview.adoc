@@ -1,0 +1,76 @@
+---
+permalink: um-manage/mirroring-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring, 
+summary: Unified Manager include opzioni di configurazione per le funzionalità di mirroring di SANtricity, che consentono agli amministratori di replicare i dati tra due array di storage per la protezione dei dati. 
+---
+= Come funziona il mirroring
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager include opzioni di configurazione per le funzionalità di mirroring di SANtricity, che consentono agli amministratori di replicare i dati tra due array di storage per la protezione dei dati.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+
+
+== Tipi di mirroring
+
+Le applicazioni SANtricity includono due tipi di mirroring: Asincrono e sincrono.
+
+Il mirroring asincrono copia i volumi di dati su richiesta o in base a una pianificazione, riducendo al minimo o evitando i downtime che potrebbero derivare da danneggiamento o perdita dei dati. Il mirroring asincrono acquisisce lo stato del volume primario in un determinato momento e copia solo i dati modificati dall'ultima acquisizione dell'immagine. Il sito primario può essere aggiornato immediatamente e il sito secondario può essere aggiornato in base alla larghezza di banda. Le informazioni vengono memorizzate nella cache e inviate in un secondo momento, man mano che le risorse di rete diventano disponibili. Questo tipo di mirroring è ideale per processi periodici come backup e archiviazione.
+
+Il mirroring sincrono replica i volumi di dati in tempo reale per garantire una disponibilità continua. Lo scopo è quello di raggiungere un obiettivo RPO (Recovery Point Objective) di zero dati persi, grazie alla disponibilità di una copia dei dati importanti in caso di disastro su uno dei due storage array. La copia è identica ai dati di produzione in ogni momento perché ogni volta che viene eseguita una scrittura nel volume primario, viene eseguita una scrittura nel volume secondario. L'host non riceve una conferma che la scrittura è riuscita fino a quando il volume secondario non viene aggiornato con le modifiche apportate sul volume primario. Questo tipo di mirroring è ideale per scopi di business continuity come il disaster recovery.
+
+
+
+== Differenze tra i tipi di mirroring
+
+La seguente tabella descrive le principali differenze tra i due tipi di mirroring.
+
+[cols="1a,1a,1a"]
+|===
+| Attributo | Asincrono | Sincrono 
+
+
+ a| 
+Metodo di replica
+ a| 
+Point-in-time -- il mirroring viene eseguito su richiesta o automaticamente in base a una pianificazione definita dall'utente.
+ a| 
+Continuo -- il mirroring viene eseguito automaticamente in modo continuo, copiando i dati da ogni scrittura host.
+
+
+
+ a| 
+Distanza
+ a| 
+Supporta lunghe distanze tra gli array. In genere, la distanza è limitata solo dalle funzionalità della rete e dalla tecnologia di estensione del canale.
+ a| 
+Limitato a distanze più brevi tra gli array. In genere, la distanza deve essere entro circa 10 km (6.2 miglia) dallo storage array locale per soddisfare i requisiti di latenza e performance applicativa.
+
+
+
+ a| 
+Metodo di comunicazione
+ a| 
+Una rete IP o Fibre Channel standard.
+ a| 
+Solo rete Fibre Channel.
+
+
+
+ a| 
+Tipi di volume
+ a| 
+Standard o sottile.
+ a| 
+Solo standard.
+
+|===

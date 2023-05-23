@@ -1,0 +1,89 @@
+---
+permalink: um-admin/overview-interface-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, interface, GUI 
+summary: 'Unified Manager è un"interfaccia basata su web che consente di gestire più array di storage in una singola vista.' 
+---
+= Panoramica dell'interfaccia di Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager è un'interfaccia basata su web che consente di gestire più array di storage in una singola vista.
+
+
+
+== Pagina principale
+
+Quando si accede a Unified Manager, la pagina principale si apre su *Gestisci - tutto*. Da questa pagina è possibile scorrere un elenco degli array di storage rilevati nella rete, visualizzarne lo stato ed eseguire operazioni su un singolo array o su un gruppo di array.
+
+
+
+== Barra laterale di navigazione
+
+È possibile accedere alle funzioni e alle funzioni di Unified Manager dalla barra laterale di navigazione.
+
+[cols="25h,~"]
+|===
+| Area | Descrizione 
+
+
+ a| 
+Gestire
+ a| 
+Scopri gli array di storage nella tua rete, avvia Gestore di sistema SANtricity per un array, importa le impostazioni da un array a più array e gestisci i gruppi di array. Selezionare le caselle di controllo accanto ai nomi degli array per eseguire operazioni su di essi, ad esempio l'importazione delle impostazioni e la creazione di gruppi di array. I puntini di sospensione alla fine di ogni riga forniscono un menu in linea per le operazioni su un singolo array, ad esempio la ridenominazione.
+
+
+
+ a| 
+Operazioni
+ a| 
+Visualizzare l'avanzamento delle operazioni batch, ad esempio l'importazione delle impostazioni da un array all'altro.
+
+[NOTE]
+====
+Alcune operazioni non sono disponibili quando uno storage array ha uno stato non ottimale.
+
+====
+
+
+ a| 
+Gestione dei certificati
+ a| 
+Gestire i certificati per l'autenticazione tra browser e client.
+
+
+
+ a| 
+Gestione degli accessi
+ a| 
+Stabilire l'autenticazione dell'utente per l'interfaccia di Unified Manager.
+
+
+
+ a| 
+Supporto
+ a| 
+Visualizza le opzioni di supporto tecnico, le risorse e i contatti.
+
+|===
+
+
+== Impostazioni dell'interfaccia e guida
+
+Nella parte superiore destra dell'interfaccia, è possibile accedere alla Guida e ad altra documentazione. È inoltre possibile accedere alle opzioni di amministrazione, disponibili dal menu a discesa accanto al proprio nome di accesso.
+
+
+
+== Login e password degli utenti
+
+L'utente corrente che ha effettuato l'accesso al sistema viene visualizzato nella parte superiore destra dell'interfaccia.
+
+Per ulteriori informazioni su utenti e password, consulta:
+
+* link:administrator-password-protection-unified.html["Impostare la protezione della password amministratore"]
+* link:change-admin-password-unified.html["Modificare la password admin"]
+* link:../um-certificates/change-passwords-unified.html["Modificare le password per i profili utente locali"]
+

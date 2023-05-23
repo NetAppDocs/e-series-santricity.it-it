@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/turn-on-storage-array-locator-lights.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, locator, lights, 
+summary: Per individuare la posizione fisica di un array di storage in un cabinet, è possibile accendere i relativi indicatori LED. 
+---
+= Accendere le spie di localizzazione degli array di storage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per individuare la posizione fisica di un array di storage in un cabinet, è possibile accendere i relativi indicatori LED.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *General*, fare clic su *Turn on Storage Array Locator Lights*.
++
+Viene visualizzata la finestra di dialogo attiva indicatori Storage Array Locator e si accendono le spie di localizzazione dell'array di storage corrispondente.
+
+. Una volta individuato fisicamente lo storage array, tornare alla finestra di dialogo e selezionare *Spegni*.
+
+
+.Risultati
+Le luci di individuazione si spengono e la finestra di dialogo si chiude.

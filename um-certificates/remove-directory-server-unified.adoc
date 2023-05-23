@@ -1,0 +1,34 @@
+---
+permalink: um-certificates/remove-directory-server-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, remove, directory, server 
+summary: Per interrompere la connessione tra un server di directory e il proxy dei servizi Web, è possibile rimuovere le informazioni sul server dalla pagina Gestione accessi. È possibile eseguire questa attività se è stato configurato un nuovo server e si desidera rimuovere quello precedente. 
+---
+= Rimuovere il server di directory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per interrompere la connessione tra un server di directory e il proxy dei servizi Web, è possibile rimuovere le informazioni sul server dalla pagina Gestione accessi. È possibile eseguire questa attività se è stato configurato un nuovo server e si desidera rimuovere quello precedente.
+
+.Prima di iniziare
+È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+
+.A proposito di questa attività
+Una volta completata questa attività, tutte le sessioni utente attive vengono terminate. Viene conservata solo la sessione utente corrente.
+
+.Fasi
+. Selezionare *Access Management*.
+. Selezionare la scheda *Directory Services*.
+. Dall'elenco, selezionare il server di directory che si desidera eliminare.
+. Fare clic su *Rimuovi*.
++
+Viene visualizzata la finestra di dialogo Remove Directory Server (Rimuovi server di directory).
+
+. Tipo `remove` Nel campo, quindi fare clic su *Rimuovi*.
++
+Le impostazioni di configurazione del server di directory, le impostazioni dei privilegi e i mapping dei ruoli vengono rimossi. Gli utenti non possono più accedere con le credenziali da questo server.
+
+

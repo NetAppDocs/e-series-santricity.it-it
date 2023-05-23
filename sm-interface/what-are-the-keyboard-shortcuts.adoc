@@ -1,0 +1,200 @@
+---
+permalink: sm-interface/what-are-the-keyboard-shortcuts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, keyboard shortcuts 
+summary: È possibile navigare in System Manager utilizzando la sola tastiera. 
+---
+= Quali sono i tasti di scelta rapida?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile navigare in System Manager utilizzando la sola tastiera.
+
+
+
+== Navigazione generale
+
+[cols="1a,1a"]
+|===
+| Azione | Scelta rapida da tastiera 
+
+
+ a| 
+Passare all'elemento successivo.
+ a| 
+Scheda
+
+
+
+ a| 
+Consente di passare all'elemento precedente.
+ a| 
+Maiusc + Tab
+
+
+
+ a| 
+Selezionare un elemento.
+ a| 
+Invio
+
+
+
+ a| 
+Elenco a discesa - consente di passare all'elemento successivo o precedente.
+ a| 
+Freccia verso il basso o verso l'alto
+
+
+
+ a| 
+Casella di controllo--selezionare un elemento.
+ a| 
+Barra spaziatrice
+
+
+
+ a| 
+Pulsanti di opzione - consente di passare da un elemento all'altro.
+ a| 
+Freccia verso il basso o verso l'alto
+
+
+
+ a| 
+Testo espandibile: Consente di espandere o contrarre l'elemento.
+ a| 
+Invio
+
+|===
+
+
+== Navigazione nella tabella
+
+[cols="1a,1a"]
+|===
+| Azione | Scelta rapida da tastiera 
+
+
+ a| 
+Selezionare una riga.
+ a| 
+Per selezionare una riga, quindi premere Invio
+
+
+
+ a| 
+Scorrere verso l'alto o verso il basso.
+ a| 
+Freccia verso il basso/freccia verso l'alto o pagina verso il basso/pagina verso l'alto
+
+
+
+ a| 
+Modificare l'ordinamento di una colonna.
+ a| 
+Per selezionare un'intestazione di colonna, quindi premere Invio
+
+|===
+
+
+== Navigazione nel calendario
+
+[cols="1a,1a"]
+|===
+| Azione | Scelta rapida da tastiera 
+
+
+ a| 
+Passare al mese precedente.
+ a| 
+Pagina su
+
+
+
+ a| 
+Passare al mese successivo.
+ a| 
+Pagina giù
+
+
+
+ a| 
+Passare all'anno precedente.
+ a| 
+Ctrl + PagSu
+
+
+
+ a| 
+Passare all'anno successivo.
+ a| 
+Ctrl + pagina giù
+
+
+
+ a| 
+Aprire il selettore data, se chiuso.
+ a| 
+Control + Home
+
+
+
+ a| 
+Passare al mese corrente.
+ a| 
+Control / comando + Home
+
+
+
+ a| 
+Passare al giorno precedente.
+ a| 
+Control / comando + sinistra
+
+
+
+ a| 
+Passare al giorno successivo.
+ a| 
+Control / comando + destra
+
+
+
+ a| 
+Passare alla settimana precedente.
+ a| 
+Ctrl / comando + su
+
+
+
+ a| 
+Passare alla settimana successiva.
+ a| 
+Ctrl / comando + Giù
+
+
+
+ a| 
+Selezionare la data di riferimento.
+ a| 
+Invio
+
+
+
+ a| 
+Chiudere il selettore di data e cancellare la data.
+ a| 
+Control / comando + fine
+
+
+
+ a| 
+Chiudere il selettore di data senza selezionare.
+ a| 
+Fuga
+
+|===

@@ -1,0 +1,24 @@
+---
+permalink: sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Cannot, Access, Other, Controller 
+summary: 'Quando si eseguono determinate operazioni relative ai certificati CA (ad esempio, l"importazione di un certificato), potrebbe essere visualizzata una finestra di dialogo che richiede di accettare un certificato autofirmato per il secondo controller.' 
+---
+= Perché viene visualizzata la finestra di dialogo Impossibile accedere ad altri controller?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si eseguono determinate operazioni relative ai certificati CA (ad esempio, l'importazione di un certificato), potrebbe essere visualizzata una finestra di dialogo che richiede di accettare un certificato autofirmato per il secondo controller.
+
+Negli array di storage con due controller (configurazioni duplex), questa finestra di dialogo viene talvolta visualizzata se Gestione sistema SANtricity non riesce a comunicare con il secondo controller o se il browser non può accettare il certificato durante un determinato momento di un'operazione.
+
+Se viene visualizzata questa finestra di dialogo, fare clic su *Accetta certificato autofirmato* per continuare. Se viene richiesta una password da un'altra finestra di dialogo, immettere la password dell'amministratore utilizzata per accedere a System Manager.
+
+Se questa finestra di dialogo viene visualizzata di nuovo e non è possibile completare un'attività di certificazione, provare una delle seguenti procedure:
+
+* Utilizzare un tipo di browser diverso per accedere a questo controller, accettare il certificato e continuare.
+* Accedere al secondo controller con System Manager, accettare il certificato autofirmato, quindi tornare al primo controller e continuare.
+

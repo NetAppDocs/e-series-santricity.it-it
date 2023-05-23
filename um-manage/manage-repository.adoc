@@ -1,0 +1,58 @@
+---
+permalink: um-manage/manage-repository.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, software, repository 
+summary: Il repository software elenca tutti i file software associati al proxy dei servizi Web. 
+---
+= Gestire il repository software
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il repository software elenca tutti i file software associati al proxy dei servizi Web.
+
+Se il file che si desidera utilizzare non viene visualizzato, utilizzare l'opzione Gestisci repository software per importare uno o più file SANtricity OS nel sistema host in cui sono in esecuzione il proxy dei servizi Web e Unified Manager. Puoi anche scegliere di eliminare uno o più file SANtricity OS disponibili nel repository software.
+
+.Prima di iniziare
+Se si stanno aggiungendo file SANtricity OS, assicurarsi che i file del sistema operativo siano disponibili sul sistema locale.
+
+.Fasi
+. Dalla vista principale, selezionare *Gestisci*, quindi selezionare menu:Centro di aggiornamento[Gestisci repository software].
++
+Viene visualizzata la finestra di dialogo Manage Software Repository (Gestisci repository software).
+
+. Eseguire una delle seguenti operazioni:
++
+[cols="25h,~"]
+|===
+| Opzione | Eseguire questa operazione 
+
+
+ a| 
+Importa
+ a| 
+.. Fare clic su *Importa.*
+.. Fare clic su *Browse* (Sfoglia), quindi individuare il percorso in cui si trovano i file del sistema operativo che si desidera aggiungere.
++
+I file del sistema operativo hanno un nome file simile a. `N2800-830000-000.dlp`.
+
+.. Selezionare uno o più file del sistema operativo da aggiungere, quindi fare clic su *Importa*.
+
+
+
+
+ a| 
+Eliminare
+ a| 
+.. Selezionare uno o più file del sistema operativo che si desidera rimuovere dal repository software.
+.. Fare clic su *Delete* (Elimina).
+
+
+|===
+
+
+.Risultati
+Se è stata selezionata l'opzione di importazione, i file vengono caricati e validati. Se si seleziona Delete (Elimina), i file vengono rimossi dal repository software.

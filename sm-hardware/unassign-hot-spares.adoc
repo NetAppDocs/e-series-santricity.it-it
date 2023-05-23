@@ -1,0 +1,43 @@
+---
+permalink: sm-hardware/unassign-hot-spares.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
+summary: È possibile modificare un hot spare in un disco non assegnato. 
+---
+= Annulla assegnazione hot spare
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare un hot spare in un disco non assegnato.
+
+.Prima di iniziare
+Lo hot spare deve essere in stato ottimale, Standby.
+
+.A proposito di questa attività
+Non è possibile annullare l'assegnazione di un hot spare che sta assumendo il controllo di un disco guasto. Se lo hot spare non si trova in uno stato ottimale, seguire le procedure Recovery Guru per correggere eventuali problemi prima di tentare di annullare l'assegnazione del disco.
+
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Selezionare l'unità hot spare (visualizzata in rosa) che si desidera annullare l'assegnazione.
++
+Se nell'alloggiamento rosa sono presenti linee diagonali, l'hot spare è attualmente in uso e non può essere disassegnato.
+
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Dall'elenco a discesa del disco, selezionare *Annulla assegnazione hot spare*.
++
+La finestra di dialogo mostra tutti i gruppi di volumi interessati dalla rimozione di questa hot spare e se altri hot spare li proteggono.
+
+. Confermare l'operazione di annullamento dell'assegnazione.
+
+
+.Risultati
+Il disco viene riportato in Unassigned (non assegnato) (visualizzato in grigio).

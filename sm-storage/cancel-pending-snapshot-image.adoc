@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/cancel-pending-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
+summary: 'È possibile annullare un"immagine snapshot in sospeso prima del completamento. Gli snapshot vengono eseguiti in modo asincrono e lo stato dello snapshot rimane in sospeso fino al completamento dello snapshot. L"immagine snapshot viene completata al termine dell"operazione di sincronizzazione.' 
+---
+= Annulla l'immagine snapshot in sospeso
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile annullare un'immagine snapshot in sospeso prima del completamento. Gli snapshot vengono eseguiti in modo asincrono e lo stato dello snapshot rimane in sospeso fino al completamento dello snapshot. L'immagine snapshot viene completata al termine dell'operazione di sincronizzazione.
+
+.A proposito di questa attività
+Un'immagine snapshot si trova in uno stato in sospeso a causa delle seguenti condizioni simultanee:
+
+* Il volume di base per un gruppo di snapshot o uno o più volumi membri di un gruppo di coerenza che contiene questa immagine snapshot è membro di un gruppo di mirror asincrono.
+* Il volume o i volumi sono attualmente in un'operazione di sincronizzazione del mirroring asincrono.
+
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
+. Selezionare il gruppo di snapshot per il quale si desidera annullare un'immagine snapshot in sospeso, quindi fare clic su menu:attività non comuni[Annulla immagine snapshot in sospeso].
+. Fare clic su *Sì* per confermare che si desidera annullare l'immagine istantanea in sospeso.
+

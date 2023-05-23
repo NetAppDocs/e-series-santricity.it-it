@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/show-or-hide-component-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
+summary: È possibile visualizzare le descrizioni dello stato di dischi, controller, ventole e alimentatori. 
+---
+= Mostra o nasconde lo stato del componente
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare le descrizioni dello stato di dischi, controller, ventole e alimentatori.
+
+.Fasi
+. Selezionare *hardware*.
+. Per visualizzare i componenti posteriori o anteriori:
++
+** Se si desidera visualizzare i componenti del controller e del contenitore di alimentazione/ventola, ma i dischi sono visualizzati, fare clic su *Mostra retro dello shelf*.
+** Se si desidera visualizzare i dischi, ma vengono visualizzati i componenti del controller e del contenitore di alimentazione/ventola, fare clic su *Mostra parte anteriore dello shelf*.
+
+
+. Per visualizzare o nascondere le descrizioni dello stato a comparsa:
++
+** Se si desidera visualizzare una descrizione a comparsa delle icone di stato, fare clic su *Mostra dettagli icona di stato* in alto a destra nella vista dello shelf (selezionare la casella di controllo).
+** Per nascondere le descrizioni a comparsa, fare nuovamente clic su *Mostra dettagli icona stato* (deselezionare la casella di controllo).
+
+
+. Se si desidera visualizzare i dettagli completi dello stato, selezionare il componente nella vista shelf, quindi selezionare *View settings* (Visualizza impostazioni).
+. Per visualizzare le descrizioni dei componenti colorati, selezionare *Legenda*.
+

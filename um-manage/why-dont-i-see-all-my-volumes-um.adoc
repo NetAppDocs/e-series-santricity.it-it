@@ -1,0 +1,22 @@
+---
+permalink: um-manage/why-dont-i-see-all-my-volumes-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, volumes missing 
+summary: Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei. 
+---
+= Perché non vengono visualizzati tutti i volumi?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei.
+
+I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Per il mirroring sincrono, i volumi primario e secondario di una coppia mirrorata devono essere volumi standard. Non possono essere volumi thin o volumi snapshot.
+* Per il mirroring asincrono, i thin volumi devono avere l'espansione automatica abilitata.
+

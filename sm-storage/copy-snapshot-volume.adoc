@@ -1,0 +1,31 @@
+---
+permalink: sm-storage/copy-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, snapshot, volume 
+summary: È possibile eseguire un processo Copy Volume su un volume snapshot o su un volume snapshot di un gruppo di coerenza snapshot. 
+---
+= Copia del volume Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eseguire un processo Copy Volume su un volume snapshot o su un volume snapshot di un gruppo di coerenza snapshot.
+
+.A proposito di questa attività
+È possibile copiare un volume di snapshot nel volume di destinazione come avviene in una normale operazione Copy Volume. Tuttavia, i volumi Snapshot non possono rimanere online durante il processo di copia del volume.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Selezionare la scheda *Snapshot Volumes* (volumi snapshot).
++
+Viene visualizzata la tabella Snapshot Volumes (volumi snapshot) che mostra tutti i volumi snapshot associati all'array di storage.
+
+. Selezionare il volume di snapshot che si desidera copiare, quindi selezionare *Copy Volume* (Copia volume).
++
+Viene visualizzata la finestra di dialogo Copy Volume (Copia volume) che richiede di selezionare una destinazione.
+
+. Selezionare il volume di destinazione da utilizzare come destinazione della copia, quindi fare clic su *fine*.
+

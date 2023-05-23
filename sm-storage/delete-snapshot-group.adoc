@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/delete-snapshot-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, group 
+summary: 'Si elimina un gruppo di snapshot quando si desidera eliminarne definitivamente i dati e rimuoverlo dal sistema. L"eliminazione di un gruppo di snapshot consente di recuperare la capacità riservata per il riutilizzo nel pool o nel gruppo di volumi.' 
+---
+= Elimina gruppo di snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si elimina un gruppo di snapshot quando si desidera eliminarne definitivamente i dati e rimuoverlo dal sistema. L'eliminazione di un gruppo di snapshot consente di recuperare la capacità riservata per il riutilizzo nel pool o nel gruppo di volumi.
+
+.A proposito di questa attività
+Quando si elimina un gruppo di snapshot, vengono eliminate anche tutte le immagini snapshot del gruppo.
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
+. Selezionare il gruppo di snapshot che si desidera eliminare, quindi fare clic su menu:attività non comuni[Elimina gruppo di snapshot].
++
+Viene visualizzata la finestra di dialogo Confirm Delete Snapshot Group.
+
+. Tipo `delete` per confermare.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Elimina tutte le immagini snapshot associate al gruppo di snapshot.
+* Disattiva tutti i volumi di snapshot associati alle immagini del gruppo di snapshot.
+* Elimina la capacità riservata esistente per il gruppo di snapshot.
+

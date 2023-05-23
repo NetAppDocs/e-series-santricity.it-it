@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/enable-or-disable-legacy-management-interface.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
+summary: 'È possibile attivare o disattivare l"interfaccia di gestione legacy (Symbol), un metodo di comunicazione tra lo storage array e il client di gestione.' 
+---
+= Attivare o disattivare l'interfaccia di gestione legacy
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile attivare o disattivare l'interfaccia di gestione legacy (Symbol), un metodo di comunicazione tra lo storage array e il client di gestione.
+
+.A proposito di questa attività
+Per impostazione predefinita, l'interfaccia di gestione legacy è attiva. Se la si disattiva, l'array di storage e il client di gestione utilizzeranno un metodo di comunicazione più sicuro (API REST su https); tuttavia, alcuni strumenti e attività potrebbero risentirne se la funzione è disattivata.
+
+[NOTE]
+====
+Per il sistema storage EF600, questa funzione è disattivata per impostazione predefinita.
+
+====
+L'impostazione influisce sulle operazioni come segue:
+
+* *On* (impostazione predefinita) -- impostazione richiesta per la configurazione del mirroring con CLI e altri strumenti, come l'adattatore OCI.
+* *Off* -- impostazione richiesta per applicare la riservatezza nelle comunicazioni tra lo storage array e il client di gestione e per accedere a strumenti esterni. Impostazione consigliata per la configurazione di un server di directory (LDAP).
+
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *Additional Settings* (Impostazioni aggiuntive), quindi fare clic su *Change Management Interface* (interfaccia di gestione delle modifiche).
+. Nella finestra di dialogo, fare clic su *Sì* per continuare.
+

@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/change-cache-settings-for-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
+summary: 'Per tutti i volumi nell"array di storage, è possibile regolare le impostazioni della memoria cache per lo spurgo e le dimensioni dei blocchi.' 
+---
+= Modificare le impostazioni della cache per lo storage array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per tutti i volumi nell'array di storage, è possibile regolare le impostazioni della memoria cache per lo spurgo e le dimensioni dei blocchi.
+
+.A proposito di questa attività
+La memoria cache è un'area di storage volatile temporaneo sul controller, che ha un tempo di accesso più rapido rispetto ai supporti del disco. Per ottimizzare le prestazioni della cache, è possibile regolare le seguenti impostazioni:
+
+[cols="25h,~"]
+|===
+| Impostazione della cache | Descrizione 
+
+
+ a| 
+Avvia il vampate di cache a richiesta
+ a| 
+Start demand cache wlushing specifica la percentuale di dati non scritti nella cache che attiva un write-on della cache (scrittura su disco). Per impostazione predefinita, il vampate della cache viene avviato quando i dati non scritti raggiungono il 80% della capacità. Una percentuale più elevata è una buona scelta per gli ambienti con operazioni principalmente di scrittura, in modo che le nuove richieste di scrittura possano essere elaborate dalla cache senza dover accedere al disco. Le impostazioni più basse sono migliori in ambienti in cui l'i/o è irregolare (con burst di dati), in modo che il sistema scarichi frequentemente la cache tra burst di dati. Tuttavia, una percentuale iniziale inferiore al 80% può causare una riduzione delle performance.
+
+
+
+ a| 
+Dimensione del blocco della cache
+ a| 
+La dimensione del blocco della cache determina la dimensione massima di ciascun blocco della cache, che è un'unità organizzativa per la gestione della cache. Per impostazione predefinita, la dimensione del blocco è 32 KiB. Il sistema consente la dimensione del blocco della cache di 4, 8, 16 o 32 KiB. Le applicazioni utilizzano blocchi di dimensioni diverse, che hanno un impatto sulle performance dello storage. Una dimensione inferiore è una buona scelta per file system o applicazioni di database. Una dimensione maggiore è ideale per le applicazioni che generano i/o sequenziale, come ad esempio i contenuti multimediali.
+
+|===
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *Additional Settings* (Impostazioni aggiuntive), quindi fare clic su *Change cache Settings* (Modifica impostazioni cache).
++
+Viene visualizzata la finestra di dialogo Change cache Settings (Modifica impostazioni cache).
+
+. Regolare i seguenti valori:
++
+** *Start demand cache wlushing* -- scegliere una percentuale appropriata per l'i/o utilizzato nel proprio ambiente. Se si sceglie un valore inferiore al 80%, si potrebbe notare una riduzione delle performance.
+** **Dimensione blocco cache -- **Scegli una dimensione adatta alle tue applicazioni.
+
+
+. Fare clic su *Save* (Salva).
+

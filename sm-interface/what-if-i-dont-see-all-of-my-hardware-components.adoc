@@ -1,0 +1,16 @@
+---
+permalink: sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, verify hardware 
+summary: 'Se non vengono visualizzati tutti i componenti hardware nella finestra di dialogo verifica hardware, potrebbe essere necessario che uno shelf di dischi non sia collegato correttamente o che uno shelf incompatibile sia installato nell"array di storage.' 
+---
+= Cosa succede se non vengono visualizzati tutti i componenti hardware?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se non vengono visualizzati tutti i componenti hardware nella finestra di dialogo Verify hardware (verifica hardware), potrebbe indicare che uno shelf di dischi non è collegato correttamente o che uno shelf incompatibile è installato nell'array di storage.
+
+Verificare che tutti gli shelf di dischi siano collegati correttamente. In caso di dubbi sulla compatibilità degli shelf di dischi, contattare il supporto tecnico.

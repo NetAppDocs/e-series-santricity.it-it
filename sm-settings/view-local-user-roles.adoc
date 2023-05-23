@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/view-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
+summary: 'Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature dei profili utente ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nell"array di storage.' 
+---
+= Visualizzare i ruoli utente locali
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature dei profili utente ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nell'array di storage.
+
+.Prima di iniziare
+È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+
+.A proposito di questa attività
+I profili utente e le mappature non possono essere modificati. È possibile modificare solo le password.
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Selezionare la scheda *ruoli utente locali*.
++
+I profili utente sono mostrati nella tabella:
+
++
+** *Root admin* (admin) -- Super amministratore che ha accesso a tutte le funzioni del sistema. Questo profilo utente include tutti i ruoli.
+** *Storage admin* (storage) -- l'amministratore responsabile di tutto il provisioning dello storage. Questo profilo utente include i seguenti ruoli: Storage Admin, Support Admin e Monitor.
+** *Security admin* (sicurezza) -- l'utente responsabile della configurazione della sicurezza, inclusa la gestione degli accessi, la gestione dei certificati e le funzioni dei dischi abilitati alla sicurezza. Questo profilo utente include i seguenti ruoli: Security Admin e Monitor.
+** *Support admin* (support) -- l'utente responsabile delle risorse hardware, dei dati di guasto e degli aggiornamenti del firmware. Questo profilo utente include i seguenti ruoli: Support Admin e Monitor.
+** *Monitor* (monitor) -- utente con accesso in sola lettura al sistema. Questo profilo utente include solo il ruolo Monitor.
+
+
+

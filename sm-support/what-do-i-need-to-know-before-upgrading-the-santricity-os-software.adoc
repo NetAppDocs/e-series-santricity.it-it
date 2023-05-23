@@ -1,0 +1,55 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-upgrading-the-santricity-os-software.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrading, santricity, os, software 
+summary: Prima di aggiornare il software e il firmware del controller, tenere presente questi elementi. 
+---
+= Cosa occorre sapere prima di aggiornare il software SANtricity OS?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di aggiornare il software e il firmware del controller, tenere presente questi elementi.
+
+* Hai letto il documento e il `readme.txt` e hanno determinato che si desidera eseguire l'aggiornamento.
+* Si sa se si desidera aggiornare il firmware IOM.
++
+Di norma, è necessario aggiornare tutti i componenti contemporaneamente. Tuttavia, è possibile decidere di non aggiornare il firmware IOM se non si desidera aggiornarlo come parte dell'aggiornamento del software del controller del sistema operativo SANtricity o se il supporto tecnico ha richiesto di eseguire il downgrade del firmware IOM (è possibile eseguire il downgrade del firmware solo utilizzando l'interfaccia della riga di comando).
+
+* Si sa se si desidera aggiornare il file NVSRAM del controller.
++
+Di norma, è necessario aggiornare tutti i componenti contemporaneamente. Tuttavia, si potrebbe decidere di non aggiornare il file NVSRAM del controller se il file è stato patchato o è una versione personalizzata e non si desidera sovrascriverlo.
+
+* Si sa se si desidera attivare ora o in un secondo momento.
++
+I motivi per l'attivazione successiva potrebbero includere:
+
++
+** *Ora del giorno* -- l'attivazione del software e del firmware può richiedere molto tempo, quindi potrebbe essere necessario attendere che i carichi di i/o siano più leggeri. Il failover dei controller durante l'attivazione potrebbe risultare inferiore al solito fino al completamento dell'aggiornamento.
+** *Tipo di pacchetto* -- si consiglia di testare il nuovo software e firmware su un array di storage prima di aggiornare i file su altri array di storage.
+
+
+
+
+Questi componenti fanno parte dell'aggiornamento del software del controller del sistema operativo SANtricity:
+
+* *Software di gestione* -- System Manager è il software che gestisce lo storage array.
+* *Controller firmware* -- il firmware del controller gestisce l'i/o tra host e volumi.
+* *Controller NVSRAM* -- Controller NVSRAM è un file controller che specifica le impostazioni predefinite per i controller.
+* *IOM firmware* -- il firmware del modulo i/o (IOM) gestisce la connessione tra un controller e uno shelf di dischi. Inoltre, monitora lo stato dei componenti.
+* *Software di supervisore* -- il software di supervisore è la macchina virtuale su un controller in cui viene eseguito il software.
+
+
+Come parte del processo di aggiornamento, potrebbe essere necessario aggiornare anche il driver multipath/failover e/o HBA dell'host in modo che l'host possa interagire correttamente con i controller.
+
+[NOTE]
+====
+Per determinare se questo è il caso, consultare la https://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità NetApp"^].
+
+====
+Se l'array di storage contiene un solo controller o non si dispone di un driver multipath installato, interrompere l'attività i/o dell'array di storage per evitare errori dell'applicazione. Se lo storage array dispone di due controller e si dispone di un driver multipath installato, non è necessario interrompere l'attività di i/O.
+
+
+CAUTION: Non apportare modifiche allo storage array durante l'aggiornamento.

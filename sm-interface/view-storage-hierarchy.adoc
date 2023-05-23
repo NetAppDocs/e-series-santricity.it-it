@@ -1,0 +1,121 @@
+---
+permalink: sm-interface/view-storage-hierarchy.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, storage hierarchy 
+summary: 'La gerarchia di storage sull"interfaccia principale fornisce una vista organizzata dei vari componenti hardware e oggetti storage gestiti dall"array di storage.' 
+---
+= Visualizza la gerarchia dello storage
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La gerarchia di storage sull'interfaccia principale fornisce una vista organizzata dei vari componenti hardware e oggetti storage gestiti dall'array di storage.
+
+Per visualizzare la gerarchia dello storage, accedere alla home page e fare clic sulla freccia a discesa di un componente o di un oggetto storage dell'array di storage. Un array di storage è costituito da un insieme di componenti fisici e logici.
+
+
+
+== Componenti fisici
+
+I componenti fisici di un array di storage sono descritti in questa tabella.
+
+[cols="25h,~"]
+|===
+| Componente | Descrizione 
+
+
+ a| 
+Controller
+ a| 
+Un controller è costituito da una scheda, firmware e software. Controlla i dischi e implementa le funzioni di System Manager.
+
+
+
+ a| 
+Shelf
+ a| 
+Uno shelf è un enclosure installato in un cabinet o in un rack. Contiene i componenti hardware per lo storage array. Esistono due tipi di shelf: Uno shelf di controller e uno shelf di dischi. Uno shelf di controller include controller e dischi. Uno shelf di dischi include i moduli di input/output (IOM) e i dischi.
+
+[NOTE]
+====
+Se lo storage array contiene tipi di supporti diversi o tipi di interfaccia diversi, viene visualizzato uno shelf di dischi per ciascun tipo di disco.
+
+====
+
+
+ a| 
+Disco
+ a| 
+Un disco è un dispositivo elettromeccanico o un dispositivo di memoria a stato solido che fornisce il supporto di storage fisico per i dati.
+
+
+
+ a| 
+Host
+ a| 
+Un host è un server che invia i/o a un volume su un array di storage.
+
+
+
+ a| 
+HBA (host bus adapter)
+ a| 
+Un HBA (host bus adapter) è una scheda che risiede in un host e contiene una o più porte host.
+
+
+
+ a| 
+Porta host
+ a| 
+Una porta host è una porta di un HBA (host Bus Adapter) che fornisce la connessione fisica a un controller e viene utilizzata per le operazioni di i/O.
+
+
+
+ a| 
+Client di gestione
+ a| 
+Un client di gestione è il computer in cui è installato un browser per accedere a System Manager.
+
+|===
+
+
+== Componenti logici
+
+I dischi dell'array di storage forniscono la capacità fisica dello storage per i dati. Utilizzare System Manager per configurare la capacità fisica in componenti logici, come pool, gruppi di volumi e volumi. Questi componenti sono gli strumenti utilizzati per configurare, memorizzare, gestire e conservare i dati sull'array di storage. I componenti logici di un array di storage sono descritti in questa tabella.
+
+[cols="25h,~"]
+|===
+| Componente | Descrizione 
+
+
+ a| 
+Piscina
+ a| 
+Un pool è un insieme di dischi raggruppati in modo logico. È possibile utilizzare un pool per creare uno o più volumi accessibili a un host. I volumi vengono creati da un pool o da un gruppo di volumi.
+
+
+
+ a| 
+Gruppo di volumi
+ a| 
+Un gruppo di volumi è un contenitore per volumi con caratteristiche condivise. Un gruppo di volumi ha una capacità e un livello RAID definiti. È possibile utilizzare un gruppo di volumi per creare uno o più volumi accessibili a un host. I volumi vengono creati da un gruppo di volumi o da un pool.
+
+
+
+ a| 
+Volume
+ a| 
+Un volume è un container in cui applicazioni, database e file system memorizzano i dati. Si tratta del componente logico creato per consentire all'host di accedere allo storage sull'array di storage.
+
+
+
+ a| 
+LUN (Logical Unit Number)
+ a| 
+Un numero di unità logica (LUN) è il numero assegnato allo spazio di indirizzi utilizzato da un host per accedere a un volume. Il volume viene presentato all'host come capacità sotto forma di LUN.
+
+Ogni host dispone di un proprio spazio di indirizzi LUN. Pertanto, lo stesso LUN può essere utilizzato da host diversi per accedere a volumi diversi.
+
+|===

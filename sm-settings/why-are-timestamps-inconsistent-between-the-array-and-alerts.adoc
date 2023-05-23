@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/why-are-timestamps-inconsistent-between-the-array-and-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, timestamps, inconsistent, array, alerts, 
+summary: 'Quando lo storage array invia avvisi, non corregge il fuso orario del server o dell"host di destinazione che riceve gli avvisi. Invece, l"array di storage utilizza l"ora locale (GMT) per creare l"indicazione dell"ora utilizzata per il record di avviso. Di conseguenza, potrebbero verificarsi delle incoerenze tra i timestamp per lo storage array e il server o l"host che riceve un avviso.' 
+---
+= Perché i timestamp non sono coerenti tra l'array e gli avvisi?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando lo storage array invia avvisi, non corregge il fuso orario del server o dell'host di destinazione che riceve gli avvisi. Invece, l'array di storage utilizza l'ora locale (GMT) per creare l'indicazione dell'ora utilizzata per il record di avviso. Di conseguenza, potrebbero verificarsi delle incoerenze tra i timestamp per lo storage array e il server o l'host che riceve un avviso.
+
+Poiché l'array di storage non corregge il fuso orario durante l'invio degli avvisi, l'indicazione dell'ora sugli avvisi è relativa al GMT, con un offset del fuso orario pari a zero. Per calcolare un indicatore data e ora appropriato al fuso orario locale, è necessario determinare l'offset dell'ora dal GMT, quindi aggiungere o sottrarre tale valore dai contrassegni data e ora.
+
+[NOTE]
+====
+Per evitare questo problema, configurare il protocollo NTP (Network Time Protocol) sui controller degli array di storage. NTP garantisce che i controller siano sempre sincronizzati con l'ora corretta.
+
+====

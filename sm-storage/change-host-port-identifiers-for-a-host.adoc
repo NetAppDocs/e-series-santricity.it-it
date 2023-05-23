@@ -1,0 +1,78 @@
+---
+permalink: sm-storage/change-host-port-identifiers-for-a-host.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
+summary: 'Modificare gli identificatori della porta host quando si desidera modificare l"etichetta utente su un identificatore della porta host, aggiungere un nuovo identificatore della porta host all"host o eliminare un identificatore della porta host dall"host.' 
+---
+= Modificare gli identificatori delle porte host per un host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Modificare gli identificatori della porta host quando si desidera modificare l'etichetta utente su un identificatore della porta host, aggiungere un nuovo identificatore della porta host all'host o eliminare un identificatore della porta host dall'host.
+
+.A proposito di questa attività
+Quando si modificano gli identificatori delle porte host, tenere presenti le seguenti linee guida:
+
+* *Add* -- quando si aggiunge una porta host, si associa l'identificatore della porta host all'host creato per connettersi allo storage array. È possibile inserire manualmente le informazioni sulla porta utilizzando un'utility HBA (host bus adapter).
+* *Edit* -- è possibile modificare le porte host per spostare (associare) una porta host a un host diverso. È possibile che l'host bus adapter o l'iSCSI Initiator siano stati spostati in un host diverso, quindi è necessario spostare (associare) la porta host nel nuovo host.
+* *Delete* -- è possibile eliminare le porte host per rimuovere (disassociare) le porte host da un host.
+
+
+.Fasi
+. Selezionare menu:Storage[Hosts] (Storage[host]).
+. Selezionare l'host a cui associare le porte, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
++
+Se si desidera aggiungere porte a un host in un cluster di host, espandere il cluster di host e selezionare l'host desiderato. Non è possibile aggiungere porte a livello di cluster host.
+
++
+Viene visualizzata una finestra di dialogo che mostra le impostazioni correnti dell'host.
+
+. Fare clic sulla scheda *host Ports* (Porte host).
++
+La finestra di dialogo mostra gli identificatori di porta host correnti.
+
+. Modificare le impostazioni dell'identificatore della porta host in base alle esigenze.
++
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Porta host
+ a| 
+È possibile scegliere una delle seguenti opzioni:
+
+** *Add* -- utilizzare Add per associare un nuovo identificatore di porta host all'host. La lunghezza del nome dell'identificatore della porta host è determinata dalla tecnologia dell'interfaccia host. I nomi degli identificatori delle porte host Fibre Channel e Infiniband devono contenere 16 caratteri. I nomi degli identificatori delle porte host iSCSI hanno un massimo di 223 caratteri. La porta deve essere univoca. Un numero di porta già configurato non è consentito.
+** *Delete* -- utilizzare Delete per rimuovere (disassociare) un identificatore di porta host. L'opzione Delete (Elimina) non rimuove fisicamente la porta host. Questa opzione rimuove l'associazione tra la porta host e l'host. A meno che non si rimuovano host bus adapter o iSCSI Initiator, la porta host viene ancora riconosciuta dal controller.
++
+[NOTE]
+====
+Se si elimina un identificatore di porta host, questo non viene più associato a questo host. Inoltre, l'host perde l'accesso a uno qualsiasi dei volumi assegnati tramite questo identificatore di porta host.
+
+====
+
+
+
+
+ a| 
+Etichetta
+ a| 
+Per modificare il nome dell'etichetta della porta, fare clic sull'icona *Modifica* (matita). Il nome dell'etichetta della porta deve essere univoco. Un nome di etichetta già configurato non è consentito.
+
+
+
+ a| 
+Segreto CHAP
+ a| 
+Viene visualizzato solo per gli host iSCSI. È possibile impostare o modificare il segreto CHAP per gli iniziatori (host iSCSI).
+
+System Manager utilizza il metodo Challenge Handshake Authentication Protocol (CHAP), che convalida l'identità di destinazioni e iniziatori durante il collegamento iniziale. L'autenticazione si basa su una chiave di sicurezza condivisa chiamata CHAP secret (segreto CHAP).
+
+|===
+. Fare clic su *Save* (Salva).
+

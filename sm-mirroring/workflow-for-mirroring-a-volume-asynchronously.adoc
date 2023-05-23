@@ -1,0 +1,43 @@
+---
+permalink: sm-mirroring/workflow-for-mirroring-a-volume-asynchronously.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workflow, mirroring, asynchronously, 
+summary: Il mirroring asincrono viene configurato utilizzando il seguente flusso di lavoro. 
+---
+= Workflow per il mirroring asincrono di un volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il mirroring asincrono viene configurato utilizzando il seguente flusso di lavoro.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+. Eseguire la configurazione iniziale in Unified Manager:
++
+.. Selezionare lo storage array locale come origine per il trasferimento dei dati.
+.. Creare o selezionare un gruppo di coerenza mirror esistente, che è un contenitore per il volume primario sull'array locale e il volume secondario sull'array remoto. I volumi primario e secondario sono denominati "coppia mirrorata". Se si crea il gruppo di coerenza mirror per la prima volta, specificare se si desidera eseguire sincronizzazioni manuali o pianificate.
+.. Selezionare un volume primario dall'array di storage locale, quindi determinarne la capacità riservata. La capacità riservata è la capacità fisica allocata da utilizzare per l'operazione di copia.
+.. Selezionare un array di storage remoto come destinazione del trasferimento, un volume secondario, quindi determinarne la capacità riservata.
+.. Avviare il trasferimento iniziale dei dati dal volume primario al volume secondario. A seconda delle dimensioni del volume, il trasferimento iniziale potrebbe richiedere diverse ore.
+
+
+. Verificare l'avanzamento della sincronizzazione iniziale:
++
+.. In Unified Manager, avviare System Manager per l'array locale.
+.. In System Manager, visualizzare lo stato dell'operazione di mirroring. Una volta completato il mirroring, lo stato della coppia mirrorata è "ottimale".
+
+
+. *Opzionale:* è possibile riprogrammare o eseguire manualmente i trasferimenti di dati successivi in System Manager. Solo i blocchi nuovi e modificati vengono trasferiti dal volume primario al volume secondario.
++
+[NOTE]
+====
+Poiché la replica asincrona è periodica, il sistema può consolidare i blocchi modificati e conservare la larghezza di banda della rete. L'impatto sul throughput di scrittura e sulla latenza di scrittura è minimo.
+
+====
+

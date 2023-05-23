@@ -1,0 +1,152 @@
+---
+permalink: sm-settings/edit-directory-server-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, directory, server, settings, role, mappings, 
+summary: Se in precedenza è stato configurato un server di directory in Access Management, è possibile modificarne le impostazioni in qualsiasi momento. Le impostazioni includono le informazioni di connessione al server e i mapping gruppo-ruolo. 
+---
+= Modificare le impostazioni del server di directory e le mappature dei ruoli
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se in precedenza è stato configurato un server di directory in Access Management, è possibile modificarne le impostazioni in qualsiasi momento. Le impostazioni includono le informazioni di connessione al server e i mapping gruppo-ruolo.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+* È necessario definire un server di directory.
+
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Selezionare la scheda *Directory Services*.
+. Se sono stati definiti più server, selezionare il server che si desidera modificare dalla tabella.
+. Selezionare *Visualizza/Modifica impostazioni*.
++
+Viene visualizzata la finestra di dialogo Directory Server Settings (Impostazioni server directory).
+
+. Nella scheda Server Settings (Impostazioni server), modificare le impostazioni desiderate.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Impostazioni di configurazione*
+
+
+
+ a| 
+Dominio/i
+ a| 
+I nomi di dominio dei server LDAP. Per più domini, inserire i domini in un elenco separato da virgole. Il nome di dominio viene utilizzato nel login (_nome utente_@_dominio_) per specificare il server di directory da autenticare.
+
+
+
+ a| 
+URL del server
+ a| 
+L'URL per l'accesso al server LDAP nel formato `ldap[s]://host:port`.
+
+
+
+ a| 
+Account BIND (opzionale)
+ a| 
+L'account utente di sola lettura per le query di ricerca sul server LDAP e per la ricerca all'interno dei gruppi.
+
+
+
+ a| 
+Password bind (opzionale)
+ a| 
+La password per l'account BIND. (Questo campo viene visualizzato quando viene inserito un account BIND).
+
+
+
+ a| 
+Verificare la connessione al server prima di salvare
+ a| 
+Verifica che lo storage array possa comunicare con la configurazione del server LDAP. Il test si verifica dopo aver fatto clic su *Save* (Salva) nella parte inferiore della finestra di dialogo. Se questa casella di controllo è selezionata e il test non riesce, la configurazione non viene modificata. È necessario risolvere l'errore o deselezionare la casella di controllo per saltare il test e modificare nuovamente la configurazione.
+
+
+
+ a| 
+*Impostazioni dei privilegi*
+
+
+
+ a| 
+Ricerca DN base
+ a| 
+Il contesto LDAP per la ricerca degli utenti, in genere sotto forma di `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Attributo Username
+ a| 
+L'attributo associato all'ID utente per l'autenticazione. Ad esempio: `sAMAccountName`.
+
+
+
+ a| 
+Attributo/i di gruppo
+ a| 
+Un elenco di attributi di gruppo sull'utente, utilizzato per il mapping gruppo-ruolo. Ad esempio: `memberOf, managedObjects`.
+
+|===
+====
+. Nella scheda Role Mapping (mappatura ruolo), modificare la mappatura desiderata.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Mapping*
+
+
+
+ a| 
+DN gruppo
+ a| 
+Il nome di dominio del gruppo di utenti LDAP da mappare. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:[]{}()<>*+-=!?^|
+
+
+
+ a| 
+Ruoli
+ a| 
+Ruoli dell'array di storage da mappare al DN del gruppo. È necessario selezionare singolarmente ciascun ruolo che si desidera includere per questo gruppo. Il ruolo di monitoraggio è necessario in combinazione con gli altri ruoli per accedere a Gestore di sistema di SANtricity. I ruoli dell'array di storage includono:
+
+** *Storage admin* -- accesso completo in lettura/scrittura agli oggetti di storage (ad esempio, volumi e pool di dischi), ma nessun accesso alla configurazione di sicurezza.
+** *Security admin* -- accesso alla configurazione della sicurezza in Access Management, gestione dei certificati, gestione dei registri di controllo e possibilità di attivare o disattivare l'interfaccia di gestione legacy (Symbol).
+** *Support admin* -- accesso a tutte le risorse hardware dello storage array, dati di guasto, eventi MEL e aggiornamenti del firmware del controller. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+** *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+|===
+====
++
+[NOTE]
+====
+Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. System Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
+====
+. Se lo si desidera, fare clic su *Add another mapping* (Aggiungi un'altra mappatura) per immettere più mappature gruppo-ruolo.
+. Fare clic su *Save* (Salva).
+
+
+.Risultati
+Una volta completata questa attività, tutte le sessioni utente attive vengono terminate. Viene conservata solo la sessione utente corrente.

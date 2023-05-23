@@ -1,0 +1,59 @@
+---
+permalink: sm-mirroring/overview-mirroring-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
+summary: La funzione Synchronous Mirroring offre una replica dei dati online e in tempo reale tra array di storage su una distanza remota. 
+---
+= Panoramica del mirroring sincrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione Synchronous Mirroring offre una replica dei dati online e in tempo reale tra array di storage su una distanza remota.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+
+
+== Che cos'è il mirroring sincrono?
+
+_Mirroring sincrono_ replica i volumi di dati in tempo reale per garantire la disponibilità continua. I controller degli array di storage gestiscono l'operazione di mirroring, che è trasparente per i computer host e le applicazioni software.
+
+Questo tipo di mirroring è ideale per scopi di business continuity come il disaster recovery.
+
+Scopri di più:
+
+* link:how-synchronous-mirroring-works.html["Come funziona il mirroring sincrono"]
+* link:synchronous-mirroring-terminology.html["Terminologia del mirroring sincrono"]
+* link:synchronous-mirroring-status.html["Stato del mirroring sincrono"]
+* link:volume-ownership-sync.html["Proprietà del volume"]
+* link:role-change-of-volumes-in-a-mirrored-pair.html["Cambiamento di ruolo tra i volumi in una coppia mirrorata"]
+
+
+
+
+== Come si configura il mirroring sincrono?
+
+È necessario utilizzare l'interfaccia di Unified Manager per eseguire la configurazione iniziale del mirroring tra gli array. Una volta configurato, è possibile gestire le coppie mirrorate in System Manager.
+
+Scopri di più:
+
+* link:requirements-for-using-synchronous-mirroring.html["Requisiti per l'utilizzo del mirroring sincrono"]
+* link:workflow-for-mirroring-a-volume-synchronously.html["Workflow per il mirroring sincrono di un volume"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Creazione di una coppia sincrona con mirroring (in Unified Manager)"]
+
+
+
+
+== Informazioni correlate
+
+Scopri di più sui concetti relativi al mirroring sincrono:
+
+* link:synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html["Cosa occorre sapere prima di creare una coppia mirrorata"]
+* link:how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html["Differenze tra il mirroring asincrono e il mirroring sincrono"]
+

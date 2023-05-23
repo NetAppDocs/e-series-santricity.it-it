@@ -1,0 +1,118 @@
+---
+permalink: sm-support/overview-upgrade-center.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, center 
+summary: Utilizzare il Centro di aggiornamento per scaricare il software e il firmware più recenti e aggiornare lo storage array per le funzionalità e le correzioni dei bug più recenti. 
+---
+= Panoramica di Upgrade Center
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare il Centro di aggiornamento per scaricare il software e il firmware più recenti e per aggiornare i controller e le unità.
+
+
+
+== Panoramica sull'aggiornamento del controller
+
+È possibile aggiornare il software e il firmware dello storage array per ottenere le ultime funzionalità e correzioni di bug.
+
+
+
+=== Componenti inclusi nell'aggiornamento del controller del sistema operativo
+
+Diversi componenti dello storage array contengono software o hardware che è possibile aggiornare occasionalmente.
+
+* *Software di gestione* -- System Manager è il software che gestisce lo storage array.
+* *Controller firmware* -- il firmware del controller gestisce l'i/o tra host e volumi.
+* *Controller NVSRAM* -- Controller NVSRAM è un file controller che specifica le impostazioni predefinite per i controller.
+* *IOM firmware* -- il firmware del modulo i/o (IOM) gestisce la connessione tra un controller e uno shelf di dischi. Inoltre, monitora lo stato dei componenti.
+* *Software di supervisore* -- il software di supervisore è la macchina virtuale su un controller in cui viene eseguito il software.
+
+
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[posizioni del firmware di aggiornamento sam1130 dwg]
+
+^1^ shelf del controller; ^2^ shelf del disco; ^3^ Software, firmware del controller, NVSRAM del controller, Software del supervisore; ^4^ firmware del disco; ^5^ firmware IOM; ^6^ firmware del disco
+
+È possibile visualizzare le versioni software e firmware correnti nella finestra di dialogo Software and firmware Inventory (inventario software e firmware). Accedere al menu:Support[Upgrade Center], quindi fare clic sul collegamento *Software and firmware Inventory* (inventario software e firmware).
+
+Come parte del processo di aggiornamento, potrebbe essere necessario aggiornare anche il driver multipath/failover e/o HBA dell'host in modo che l'host possa interagire correttamente con i controller. Per determinare se questo è il caso, consultare la https://imt.netapp.com/matrix/#welcome["Tool di matrice di interoperabilità NetApp"^].
+
+
+
+=== Quando interrompere i/O.
+
+Se lo storage array contiene due controller e si dispone di un driver multipath installato, lo storage array può continuare l'elaborazione dell'i/o durante l'aggiornamento. Durante l'aggiornamento, il controller A esegue il failover di tutti i volumi nel controller B, esegue l'upgrade, recupera i volumi e tutti i volumi del controller B, quindi aggiorna il controller B.
+
+
+
+=== Verifica dello stato di salute prima dell'aggiornamento
+
+Durante il processo di aggiornamento viene eseguito un controllo dello stato di salute prima dell'aggiornamento. Il controllo dello stato di salute prima dell'aggiornamento valuta tutti i componenti dell'array di storage per assicurarsi che l'aggiornamento possa continuare. Le seguenti condizioni potrebbero impedire l'aggiornamento:
+
+* Dischi assegnati non riusciti
+* Hot spare in uso
+* Gruppi di volumi incompleti
+* Operazioni esclusive in esecuzione
+* Volumi mancanti
+* Controller in stato non ottimale
+* Numero eccessivo di eventi del registro eventi
+* Errore di convalida del database di configurazione
+* Dischi con versioni precedenti di DACstore
+
+
+È inoltre possibile eseguire il controllo dello stato di salute pre-aggiornamento separatamente senza eseguire un aggiornamento.
+
+
+
+== Panoramica sull'aggiornamento del disco
+
+Il firmware del disco controlla le caratteristiche operative di basso livello di un disco. Periodicamente, i produttori di dischi rilasciano aggiornamenti al firmware del disco per aggiungere nuove funzionalità, migliorare le prestazioni e correggere i difetti.
+
+
+
+=== Aggiornamenti del firmware del disco online e offline
+
+Esistono due tipi di metodi di aggiornamento del firmware del disco: Online e offline.
+
+
+
+==== Online
+
+Durante un aggiornamento online, i dischi vengono aggiornati in sequenza, uno alla volta. Lo storage array continua l'elaborazione dell'i/o durante l'aggiornamento. Non è necessario interrompere l'i/O. Se un disco è in grado di eseguire un aggiornamento online, il metodo online viene utilizzato automaticamente.
+
+I dischi che possono eseguire un aggiornamento online includono:
+
+* Dischi in un pool ottimale
+* Dischi in un gruppo ottimale di volumi ridondanti (RAID 1, RAID 5 e RAID 6)
+* Dischi non assegnati
+* Dischi hot spare in standby
+
+
+L'aggiornamento del firmware di un disco online può richiedere diverse ore per esporre l'array di storage a potenziali errori di volume. In questi casi si potrebbero verificare errori di volume:
+
+* In un gruppo di volumi RAID 1 o RAID 5, un disco si guasta mentre viene aggiornato un altro disco del gruppo di volumi.
+* In un pool o gruppo di volumi RAID 6, due dischi si guastano mentre viene aggiornato un altro disco del pool o gruppo di volumi.
+
+
+
+
+==== Offline (parallelo)
+
+Durante un aggiornamento offline, tutti i dischi dello stesso tipo di disco vengono aggiornati contemporaneamente. Questo metodo richiede l'interruzione dell'attività di i/o nei volumi associati ai dischi selezionati. Poiché è possibile aggiornare più dischi contemporaneamente (in parallelo), il downtime complessivo è notevolmente ridotto. Se un disco può eseguire solo un aggiornamento offline, il metodo offline viene utilizzato automaticamente.
+
+I seguenti dischi DEVONO utilizzare il metodo offline:
+
+* Dischi in un gruppo di volumi non ridondante (RAID 0)
+* Dischi in un pool o un gruppo di volumi non ottimali
+* Dischi nella cache SSD
+
+
+
+
+=== Compatibilità
+
+Ciascun file del firmware del disco contiene informazioni sul tipo di disco su cui viene eseguito il firmware. È possibile scaricare il file del firmware specificato solo su un'unità compatibile. System Manager verifica automaticamente la compatibilità durante il processo di aggiornamento.

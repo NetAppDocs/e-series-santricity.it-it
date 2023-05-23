@@ -1,0 +1,334 @@
+---
+permalink: sm-interface/operations-in-progress.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, operations in progress 
+summary: 'La pagina Operations in Progress (operazioni in corso) consente di visualizzare un elenco delle operazioni a esecuzione prolungata attualmente in esecuzione o in stato di sospensione, interruzione o errore. È possibile intervenire su alcuni tipi di operazioni.' 
+---
+= Pagina Operations in Progress (operazioni in corso)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina Operations in Progress (operazioni in corso) consente di visualizzare un elenco delle operazioni a esecuzione prolungata attualmente in esecuzione o in stato di sospensione, interruzione o errore. È possibile intervenire su alcuni tipi di operazioni.
+
+Le operazioni a esecuzione prolungata possono influire sulle prestazioni del sistema. Per alcune operazioni, è possibile interrompere l'operazione o modificarne la priorità in modo che le operazioni più importanti siano completate per prime.
+
+Le operazioni visualizzate nella pagina operazioni in corso includono quanto segue:
+
+[cols="1a,1a,1a"]
+|===
+| Operazione | Stato possibile dell'operazione | Azioni da intraprendere 
+
+
+ a| 
+Copia del volume
+ a| 
+Completato
+ a| 
+Chiaro
+
+
+
+ a| 
+Copia del volume
+ a| 
+In corso
+ a| 
+* Modificare la priorità
+* Arrestare
+
+
+
+
+ a| 
+Copia del volume
+ a| 
+In sospeso
+ a| 
+Chiaro
+
+
+
+ a| 
+Copia del volume
+ a| 
+Non riuscito
+ a| 
+* Chiaro
+* Copia di nuovo
+
+
+
+
+ a| 
+Copia del volume
+ a| 
+Interrotto
+ a| 
+* Chiaro
+* Copia di nuovo
+
+
+
+
+ a| 
+Creazione di volumi (solo volumi thick pool superiori a 64 TiB)
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Eliminazione del volume (solo volumi thick pool superiori a 64 TiB)
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Sincronizzazione iniziale del gruppo di mirror asincrono
+ a| 
+In corso
+ a| 
+Sospendere
+
+
+
+ a| 
+Sincronizzazione iniziale del gruppo di mirror asincrono
+ a| 
+Sospeso
+ a| 
+Riprendi
+
+
+
+ a| 
+Mirroring sincrono
+ a| 
+In corso
+ a| 
+Sospendere
+
+
+
+ a| 
+Mirroring sincrono
+ a| 
+Sospeso
+ a| 
+Riprendi
+
+
+
+ a| 
+Rollback dell'immagine Snapshot
+ a| 
+In corso
+ a| 
+Annulla
+
+
+
+ a| 
+Rollback dell'immagine Snapshot
+ a| 
+In sospeso
+ a| 
+Annulla
+
+
+
+ a| 
+Rollback dell'immagine Snapshot
+ a| 
+In pausa
+ a| 
+* Annulla
+* Riprendi
+
+
+
+
+ a| 
+Evacuazione del disco
+ a| 
+In corso
+ a| 
+Annulla (a seconda del tipo di evacuazione del disco)
+
+
+
+ a| 
+Aggiungere capacità al pool o al gruppo di volumi
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Modificare un livello RAID per un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Ridurre la capacità di un pool
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Recupero di volumi sottili
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Verificare il tempo rimanente per un'operazione con formato di disponibilità istantanea (IAF) per i volumi del pool
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Controllare la ridondanza dei dati di un gruppo di volumi
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Deframmentare un gruppo di volumi
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Inizializzare un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Aumentare la capacità di un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Modificare le dimensioni dei segmenti di un volume
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Copia del disco
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Ricostruzione dei dati
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+CopyBack
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Cancellazione del disco
+ a| 
+In corso
+ a| 
+_nessuno_
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+In corso
+ a| 
+* Modificare la priorità
+* Arrestare
+
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+Interrotto
+ a| 
+* Riprendi
+* Scollegare
+
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+Non riuscito
+ a| 
+* Riprendi
+* Scollegare
+
+
+
+
+ a| 
+Importazione dello storage remoto
+ a| 
+Completato
+ a| 
+Scollegare
+
+|===

@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-media-types-are-supported-for-a-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, media, types, supported, hdd, hard disk, ssd 
+summary: 'Sono supportati i seguenti tipi di supporti: Disco rigido (HDD) e disco a stato solido (SSD).' 
+---
+= Quali tipi di supporto sono supportati per un disco?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Sono supportati i seguenti tipi di supporti: Disco rigido (HDD) e disco a stato solido (SSD).

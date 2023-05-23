@@ -1,0 +1,59 @@
+---
+permalink: um-certificates/how-access-management-works-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, authentication, users, roles, access management 
+summary: 'Utilizzare la gestione degli accessi per stabilire l"autenticazione dell"utente in Gestione unificata di SANtricity.' 
+---
+= Come funziona Access Management
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare Access Management per stabilire l'autenticazione dell'utente in Unified Manager.
+
+
+
+== Workflow di configurazione
+
+La configurazione di Access Management funziona come segue:
+
+. Un amministratore effettua l'accesso a Unified Manager con un profilo utente che include le autorizzazioni di amministratore di sicurezza.
++
+[NOTE]
+====
+Per il primo accesso, il nome utente `admin` viene visualizzato automaticamente e non può essere modificato. Il `admin` l'utente ha accesso completo a tutte le funzioni del sistema. La password deve essere impostata al primo accesso.
+
+====
+. L'amministratore accede a Access Management nell'interfaccia utente, che include ruoli utente locali preconfigurati. Questi ruoli sono un'implementazione delle funzionalità RBAC (role-based access control).
+. L'amministratore configura uno o più dei seguenti metodi di autenticazione:
++
+** *Ruoli utente locali* -- l'autenticazione viene gestita tramite funzionalità RBAC. I ruoli utente locali includono utenti predefiniti e ruoli con autorizzazioni di accesso specifiche. Gli amministratori possono utilizzare questi ruoli utente locali come singolo metodo di autenticazione o in combinazione con un servizio di directory. Non è necessaria alcuna configurazione, ad eccezione dell'impostazione delle password per gli utenti.
+** *Servizi di directory* -- l'autenticazione viene gestita tramite un server LDAP (Lightweight Directory Access Protocol) e un servizio di directory, ad esempio Active Directory di Microsoft. Un amministratore si connette al server LDAP, quindi associa gli utenti LDAP ai ruoli utente locali.
+
+
+. L'amministratore fornisce agli utenti le credenziali di accesso per Unified Manager.
+. Gli utenti accedono al sistema inserendo le proprie credenziali. Durante l'accesso, il sistema esegue le seguenti attività in background:
++
+** Autentica il nome utente e la password rispetto all'account utente.
+** Determina le autorizzazioni dell'utente in base ai ruoli assegnati.
+** Fornisce all'utente l'accesso alle funzioni dell'interfaccia utente.
+** Visualizza il nome utente nel banner superiore.
+
+
+
+
+
+
+== Funzioni disponibili in Unified Manager
+
+L'accesso alle funzioni dipende dai ruoli assegnati a un utente, che includono:
+
+* *Storage admin* -- accesso completo in lettura/scrittura agli oggetti storage sugli array, ma nessun accesso alla configurazione di sicurezza.
+* *Security admin* -- accesso alla configurazione di sicurezza in Access Management e Certificate Management.
+* *Support admin* -- accesso a tutte le risorse hardware su storage array, dati di guasto ed eventi MEL. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+* *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+Una funzione non disponibile è disattivata o non viene visualizzata nell'interfaccia utente.

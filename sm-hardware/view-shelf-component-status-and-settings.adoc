@@ -1,0 +1,127 @@
+---
+permalink: sm-hardware/view-shelf-component-status-and-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
+summary: La pagina hardware fornisce lo stato e le impostazioni dei componenti dello shelf, inclusi alimentatori, ventole e batterie. 
+---
+= Visualizzare lo stato e le impostazioni dei componenti dello shelf
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina hardware fornisce lo stato e le impostazioni dei componenti dello shelf, inclusi alimentatori, ventole e batterie.
+
+.A proposito di questa attività
+I componenti disponibili dipendono dal tipo di shelf:
+
+* *Shelf di dischi* -- contiene un set di dischi, alimentatori/ventole, moduli di input/output (IOM) e altri componenti di supporto in un unico shelf.
+* *Ripiano controller* -- contiene un set di dischi, uno o due contenitori controller, contenitori di alimentazione/ventole e altri componenti di supporto in un unico shelf.
+
+
+.Fasi
+. Selezionare *hardware*.
+. Selezionare l'elenco a discesa per lo shelf del controller o lo shelf dell'unità, quindi selezionare *View Settings* (Visualizza impostazioni).
++
+Viene visualizzata la finestra di dialogo Shelf Components Settings (Impostazioni componenti shelf), con schede che mostrano lo stato e le impostazioni relative ai componenti dello shelf. A seconda del tipo di shelf selezionato, alcune schede descritte nella tabella potrebbero non essere visualizzate.
+
++
+[cols="25h,~"]
+|===
+| Scheda | Descrizione 
+
+
+ a| 
+Shelf
+ a| 
+La scheda *Shelf* mostra le seguenti proprietà:
+
+** *ID shelf* -- identifica in modo univoco uno shelf nell'array di storage. Il firmware del controller assegna questo numero, ma è possibile modificarlo selezionando menu:Shelf[Cambia ID].
+** *Ridondanza del percorso shelf* -- specifica se le connessioni tra lo shelf e il controller hanno metodi alternativi (Sì) o meno (No).
+** *Tipi di dischi correnti* -- Mostra il tipo di tecnologia integrata nei dischi (ad esempio, un disco SAS sicuro). Se è presente più di un tipo di disco, vengono visualizzate entrambe le tecnologie.
+** *Numero di serie* -- indica il numero di serie dello shelf.
+
+
+
+
+ a| 
+IOM (ESM)
+ a| 
+La scheda *IOM (ESM)* mostra lo stato del modulo di input/output (IOM), chiamato anche modulo di servizio ambientale (ESM). Monitora lo stato dei componenti in uno shelf di dischi e funge da punto di connessione tra il vassoio dell'unità e il controller.
+
+Lo stato può essere ottimale, non riuscito, ottimale (Miswire) o non certificato. Altre informazioni includono la versione del firmware e la versione delle impostazioni di configurazione.
+
+Selezionare *Mostra altre impostazioni* per visualizzare la velocità di trasferimento dati massima e corrente e lo stato della comunicazione della scheda (Sì o No).
+
+[NOTE]
+====
+È anche possibile visualizzare questo stato selezionando l'icona IOM image:../media/sam1130-ss-hardware-iom-icon.gif[""]Accanto all'elenco a discesa Shelf.
+
+====
+
+
+ a| 
+Alimentatori
+ a| 
+La scheda *alimentatori* mostra lo stato del contenitore dell'alimentatore e dell'alimentatore stesso. Lo stato può essere ottimale, non riuscito, rimosso o Sconosciuto. Mostra anche il codice dell'alimentatore.
+
+[NOTE]
+====
+Per visualizzare questo stato, selezionare l'icona Power Supply (alimentatore) image:../media/sam1130-ss-hardware-power-icon.gif[""]Accanto all'elenco a discesa Shelf.
+
+====
+
+
+ a| 
+Ventole
+ a| 
+La scheda *ventole* mostra lo stato del filtro a carboni attivi e della ventola stessa. Lo stato può essere ottimale, non riuscito, rimosso o Sconosciuto.
+
+[NOTE]
+====
+È possibile visualizzare questo stato anche selezionando l'icona ventola image:../media/sam1130-ss-hardware-fan-icon.gif[""]Accanto all'elenco a discesa Shelf.
+
+====
+
+
+ a| 
+Temperatura
+ a| 
+La scheda *temperatura* mostra lo stato della temperatura dei componenti dello shelf, come i sensori, i controller e i contenitori di alimentazione/ventola. Lo stato può essere ottimale, temperatura nominale superata, temperatura massima superata o sconosciuta.
+
+[NOTE]
+====
+È anche possibile visualizzare questo stato selezionando l'icona della temperatura image:../media/sam1130-ss-hardware-temp-icon.gif[""]Accanto all'elenco a discesa Shelf.
+
+====
+
+
+ a| 
+Batterie
+ a| 
+La scheda *batterie* mostra lo stato delle batterie del controller. Lo stato può essere ottimale, non riuscito, rimosso o Sconosciuto. Altre informazioni includono l'età della batteria, i giorni prima della sostituzione, i cicli di apprendimento e le settimane tra i cicli di apprendimento.
+
+[NOTE]
+====
+È possibile visualizzare questo stato anche selezionando l'icona delle batterie image:../media/sam1130-ss-hardware-battery-icon.gif[""]Accanto all'elenco a discesa Shelf.
+
+====
+
+
+ a| 
+SFP
+ a| 
+La scheda *SFP* mostra lo stato dei ricetrasmettitori SFP (Small Form-Factor Pluggable) sui controller. Lo stato può essere ottimale, non riuscito o Sconosciuto.
+
+Selezionare *Mostra altre impostazioni* per visualizzare il numero di parte, il numero di serie e il fornitore degli SFP.
+
+[NOTE]
+====
+È possibile visualizzare questo stato anche selezionando l'icona SFP image:../media/sam1130-ss-hardware-sfp-icon.gif[""]Accanto all'elenco a discesa Shelf.
+
+====
+|===
+. Fare clic su *Chiudi*.
+

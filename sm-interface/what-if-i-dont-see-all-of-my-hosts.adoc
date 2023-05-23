@@ -1,0 +1,22 @@
+---
+permalink: sm-interface/what-if-i-dont-see-all-of-my-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host detection 
+summary: Se gli host connessi non vengono visualizzati, il rilevamento automatico non è riuscito, gli host non sono collegati correttamente o non sono connessi host. 
+---
+= Cosa succede se non vengono visualizzati tutti gli host?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se gli host connessi non vengono visualizzati, il rilevamento automatico non è riuscito, gli host non sono collegati correttamente o non sono connessi host.
+
+Una volta completata la configurazione, è possibile configurare gli host in un secondo momento. È possibile creare gli host automaticamente o manualmente come segue:
+
+* Se è stato installato l'HCA (host Context Agent) sugli host, l'HCA invia le informazioni di configurazione dell'host all'array di storage. System Manager configura automaticamente questi host e li visualizza nell'installazione guidata iniziale. (HCA non si applica agli host NVMe over Fabrics).
+* È possibile creare manualmente gli host e associare gli identificatori di porta host appropriati accedendo al menu:Storage[hosts]. Gli host creati manualmente vengono visualizzati anche nella procedura guidata *Initial Setup*.
+* La destinazione e l'host devono essere configurati per il tipo di porta host (ad esempio, iSCSI o NVMe su RoCE) e una sessione per lo storage stabilita prima che il rilevamento automatico funzioni.
+

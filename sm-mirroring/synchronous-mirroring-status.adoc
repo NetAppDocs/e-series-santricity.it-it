@@ -1,0 +1,53 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
+summary: Lo stato di una coppia sincrona con mirroring indica se i dati sul volume primario e sul volume secondario sono sincronizzati. Lo stato di un mirror è indipendente dallo stato dei componenti dei volumi nella coppia mirrorata. 
+---
+= Stato del mirroring sincrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lo stato di una coppia sincrona con mirroring indica se i dati sul volume primario e sul volume secondario sono sincronizzati. Lo stato di un mirror è indipendente dallo stato dei componenti dei volumi nella coppia mirrorata.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+Le coppie sincrone mirrorate possono avere uno dei seguenti stati:
+
+* *Ottimale*
++
+Indica che i volumi nella coppia mirrorata sono sincronizzati, il che significa che la connessione fabric tra gli array di storage è operativa e ciascun volume si trova nella condizione operativa desiderata.
+
+* *Sincronizzazione*
++
+Mostra l'avanzamento della sincronizzazione dei dati tra le coppie mirrorate. Questo stato viene visualizzato anche durante la sincronizzazione iniziale.
+
++
+Dopo un'interruzione del collegamento di comunicazione, solo i blocchi di dati modificati sul volume primario durante l'interruzione del collegamento vengono copiati nel volume secondario.
+
+* *Non sincronizzato*
++
+Indica che l'array di storage del volume primario non è in grado di scrivere i dati in entrata nell'array remoto. L'host locale può continuare a scrivere nel volume primario, ma non vengono eseguite operazioni di scrittura remote. Condizioni diverse possono impedire all'array di storage del volume primario di scrivere i dati in entrata nel volume secondario, ad esempio:
+
++
+** Il volume secondario non è accessibile.
+** L'array di storage remoto non è accessibile.
+** La connessione fabric tra gli array di storage non è accessibile.
+** Impossibile aggiornare il volume secondario con un nuovo WWID (World Wide Identifier).
+
+
+* *Sospeso*
++
+Indica che l'operazione di mirroring sincrono è stata sospesa dall'utente. Quando una coppia mirrorata viene sospesa, non viene effettuato alcun tentativo di contatto con il volume secondario. Tutte le scritture nel volume primario vengono registrate in modo persistente nei volumi di capacità riservati del mirror.
+
+* *Non riuscito*
++
+Indica che l'operazione di mirroring sincrono non è in grado di funzionare normalmente a causa di un errore del volume primario, del volume secondario o della capacità riservata del mirror.
+
+

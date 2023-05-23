@@ -1,0 +1,28 @@
+---
+permalink: sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ipv6, stateless, address, auto, configuration, 
+summary: Con la configurazione automatica senza stato, gli host non ottengono indirizzi e altre informazioni di configurazione da un server. 
+---
+= Cos'è la configurazione automatica degli indirizzi IPv6 senza stato?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Con la configurazione automatica senza stato, gli host non ottengono indirizzi e altre informazioni di configurazione da un server.
+
+La configurazione automatica stateless in IPv6 offre indirizzi link-local, multicasting e il protocollo Nighbor Discovery (ND). IPv6 può generare l'ID dell'interfaccia di un indirizzo dall'indirizzo del data link Layer sottostante.
+
+La configurazione automatica stateless e la configurazione automatica stateful si integrano a vicenda. Ad esempio, l'host può utilizzare la configurazione automatica senza stato per configurare i propri indirizzi, ma utilizzare la configurazione automatica con stato per ottenere altre informazioni. La configurazione automatica con stato consente agli host di ottenere indirizzi e altre informazioni di configurazione da un server. Internet Protocol versione 6 (IPv6) definisce anche un metodo per rinumerare tutti gli indirizzi IP di una rete contemporaneamente. IPv6 definisce un metodo per i dispositivi in rete per configurare automaticamente il proprio indirizzo IP e altri parametri senza la necessità di un server.
+
+I dispositivi eseguono questa procedura quando utilizzano la configurazione automatica stateless:
+
+. *Generare un indirizzo link-local* -- il dispositivo genera un indirizzo link-local, che ha 10 bit, seguito da 54 zeri, e seguito dall'ID dell'interfaccia a 64 bit.
+. *Verificare l'univocità di un indirizzo link-local* -- il nodo verifica per assicurarsi che l'indirizzo link-local generato non sia già in uso sulla rete locale. Il nodo invia un messaggio di sollecitazione vicino utilizzando il protocollo ND. In risposta, la rete locale ascolta un messaggio pubblicitario vicino, che indica che un altro dispositivo sta già utilizzando l'indirizzo link-local. In tal caso, è necessario generare un nuovo indirizzo link-local oppure la configurazione automatica non riesce e utilizzare un altro metodo.
+. *Assegnazione di un indirizzo link-local* -- se il dispositivo supera il test di unicità, il dispositivo assegna l'indirizzo link-local alla propria interfaccia IP. L'indirizzo link-local può essere utilizzato per le comunicazioni sulla rete locale, ma non su Internet.
+. *Contattare il router* -- il nodo tenta di contattare un router locale per ulteriori informazioni su come continuare la configurazione. Questo contatto viene eseguito ascoltando i messaggi pubblicitari del router inviati periodicamente dai router o inviando un messaggio di richiesta specifico del router per chiedere a un router informazioni sulle operazioni successive.
+. *Fornire la direzione al nodo* -- il router fornisce la direzione al nodo su come procedere con la configurazione automatica. In alternativa, il router indica all'host come determinare l'indirizzo Internet globale.
+. *Configurare l'indirizzo globale* -- l'host si configura con il suo indirizzo Internet univoco a livello globale. Questo indirizzo è generalmente formato da un prefisso di rete fornito all'host dal router.
+

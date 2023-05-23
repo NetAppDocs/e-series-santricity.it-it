@@ -1,0 +1,20 @@
+---
+permalink: sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, 
+summary: 'L"indirizzo IP dell"array di storage remoto viene aggiornato quando l"indirizzo IP di una porta iSCSI cambia e l"array di storage locale non è in grado di comunicare con l"array di storage remoto.' 
+---
+= Perché aggiornare l'indirizzo IP del mio array di storage remoto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'indirizzo IP dell'array di storage remoto viene aggiornato quando l'indirizzo IP di una porta iSCSI cambia e l'array di storage locale non è in grado di comunicare con l'array di storage remoto.
+
+Quando si stabilisce una relazione di mirroring asincrono con una connessione iSCSI, gli array di storage locale e remoto memorizzano un record dell'indirizzo IP dell'array di storage remoto nella configurazione di mirroring asincrono. Se l'indirizzo IP di una porta iSCSI cambia, l'array di storage remoto che sta tentando di utilizzare tale porta rileva un errore di comunicazione.
+
+L'array di storage con l'indirizzo IP modificato invia un messaggio a ciascun array di storage remoto associato ai gruppi di coerenza mirror configurati per il mirroring su una connessione iSCSI. Gli array di storage che ricevono questo messaggio aggiornano automaticamente l'indirizzo IP di destinazione remota.
+
+Se lo storage array con l'indirizzo IP modificato non riesce a inviare il messaggio inter-array a uno storage array remoto, il sistema invia un avviso relativo al problema di connettività. Utilizzare l'opzione Update Remote IP Address (Aggiorna indirizzo IP remoto) per ristabilire la connessione con lo storage array locale.

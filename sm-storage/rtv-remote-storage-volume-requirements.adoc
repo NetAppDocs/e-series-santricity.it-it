@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/rtv-remote-storage-volume-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, volume, requirements 
+summary: I volumi utilizzati per le importazioni devono soddisfare i requisiti di dimensione, stato e altri criteri. 
+---
+= Requisiti del volume di storage remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I volumi utilizzati per le importazioni devono soddisfare i requisiti di dimensione, stato e altri criteri.
+
+
+
+== Volume di storage remoto
+
+Il volume di origine di un'importazione viene chiamato "volume di storage remoto". Questo volume deve soddisfare i seguenti criteri:
+
+* Non può far parte di un'altra importazione
+* Deve avere uno stato online
+
+
+Una volta avviata l'importazione, il firmware del controller crea un volume di storage remoto in background. A causa di questo processo in background, il volume di storage remoto non è gestibile in System Manager e può essere utilizzato solo per l'operazione di importazione.
+
+Una volta creato, il volume di storage remoto viene trattato come qualsiasi altro volume standard sul sistema e-Series con le seguenti eccezioni:
+
+* Può essere utilizzato come proxy per il dispositivo di storage remoto.
+* Non può essere utilizzato come candidato per altre copie di volumi o snapshot.
+* Impossibile modificare l'impostazione Data Assurance durante l'importazione.
+* Non può essere mappato ad alcun host, perché sono riservati esclusivamente per l'operazione di importazione.
+
+
+Ogni volume di storage remoto è associato a un solo oggetto di storage remoto; tuttavia, un oggetto di storage remoto può essere associato a più volumi di storage remoto. Il volume di storage remoto viene identificato in modo univoco utilizzando una combinazione di quanto segue:
+
+* Identificatore dell'oggetto storage remoto
+* Numero LUN del dispositivo di storage remoto
+
+
+
+
+== Candidati al volume di destinazione
+
+Il volume di destinazione è il volume di destinazione sul sistema e-Series locale. Il volume di destinazione deve soddisfare i seguenti criteri:
+
+* Deve essere un volume RAID/DDP.
+* Deve avere una capacità uguale o superiore al volume di storage remoto.
+* Deve avere una dimensione del blocco uguale a quella del volume di storage remoto.
+* Deve avere uno stato valido (ottimale).
+* Non è possibile avere alcuna delle seguenti relazioni: Copia del volume, copie Snapshot, mirroring asincrono o sincrono.
+* Non è possibile eseguire operazioni di riconfigurazione: Espansione dinamica del volume, espansione dinamica della capacità, dimensione dinamica dei segmenti, migrazione dinamica del RAID, riduzione dinamica della capacità, O deframmentazione.
+* Impossibile eseguire il mapping a un host prima dell'inizio dell'importazione (tuttavia, è possibile eseguire il mapping dopo il completamento dell'importazione).
+* Non è possibile attivare la funzione Flash Read cache (FRC).
+
+
+System Manager verifica automaticamente questi requisiti nell'ambito della procedura guidata di importazione dello storage remoto. Per la selezione del volume di destinazione vengono visualizzati solo i volumi che soddisfano tutti i requisiti.

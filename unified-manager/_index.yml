@@ -1,0 +1,41 @@
+---
+indexpage:
+  tiles:
+  - title: Configurazione
+    links:
+    - title: Panoramica dell'interfaccia di Unified Manager
+      url: "../um-admin/overview-interface-unified.html"
+    - title: Impostare la password admin
+      url: "../um-admin/administrator-password-protection-unified.html"
+  - title: Scopri gli array
+    links:
+    - title: Considerazioni sul rilevamento
+      url: "../um-manage/considerations-for-discovering-arrays.html"
+    - title: Array singolo
+      url: "../um-manage/discover-single-array.html"
+    - title: Array multipli
+      url: "../um-manage/discover-multiple-arrays.html"
+  - title: Gestire gli array
+    links:
+    - title: Gruppi di array di storage
+      url: "../um-manage/overview-manage-groups.html"
+    - title: Stato dello storage array
+      url: "../um-manage/storage-array-status.html"
+    - title: Aggiornare il software
+      url: "../um-manage/upgrade-controller-firmware.html"
+  - title: Gestire l'accesso
+    links:
+    - title: Accesso dell'utente
+      url: "../um-certificates/how-access-management-works-unified.html"
+    - title: Certificati
+      url: "../um-certificates/how-certificates-work-unified.html"
+    - title: Servizi di directory
+      url: "../um-certificates/access-management-with-directory-services-unified.html"
+  - title: Gestire le impostazioni
+    links:
+    - title: Importare le impostazioni
+      url: "../um-manage/how-import-settings-works.html"
+    - title: Modificare le impostazioni della password
+      url: "../um-certificates/change-local-user-passwords-settings-unified.html"
+    - title: Modificare le impostazioni del server di directory
+      url: "../um-certificates/edit-directory-server-settings-unified.html"

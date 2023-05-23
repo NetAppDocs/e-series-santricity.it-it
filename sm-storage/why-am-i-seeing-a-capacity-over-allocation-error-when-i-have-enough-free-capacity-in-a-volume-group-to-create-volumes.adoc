@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, over-allocation, error, 
+summary: 'Il gruppo di volumi selezionato potrebbe avere una o più aree a capacità libera. Un"area di capacità libera è la capacità libera che può derivare dall"eliminazione di un volume o dal mancato utilizzo di tutta la capacità disponibile durante la creazione del volume.' 
+---
+= Perché viene visualizzato un errore di overallocation della capacità quando si dispone di capacità libera sufficiente in un gruppo di volumi per creare volumi?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il gruppo di volumi selezionato potrebbe avere una o più aree a capacità libera. Un'area di capacità libera è la capacità libera che può derivare dall'eliminazione di un volume o dal mancato utilizzo di tutta la capacità disponibile durante la creazione del volume.
+
+Quando si crea un volume in un gruppo di volumi che dispone di una o più aree di capacità libera, la capacità del volume viene limitata alla maggiore area di capacità libera del gruppo di volumi. Ad esempio, se un gruppo di volumi ha una capacità libera totale di 15 GiB e l'area di capacità libera più grande è di 10 GiB, il volume più grande che è possibile creare è di 10 GiB.
+
+Se un gruppo di volumi dispone di aree di capacità libera, il grafico del gruppo di volumi contiene un link che indica il numero di aree di capacità libera esistenti. Selezionare il collegamento per visualizzare una finestra a comparsa che indica la capacità di ciascuna area.
+
+Consolidando la capacità libera, è possibile creare volumi aggiuntivi dalla quantità massima di capacità libera in un gruppo di volumi. È possibile consolidare la capacità libera esistente su un gruppo di volumi selezionato utilizzando uno dei seguenti metodi:
+
+* Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "consolidare la capacità libera" viene visualizzato nella home page dell'area di notifica. Fare clic sul collegamento *consolida capacità libera* per avviare la finestra di dialogo.
+* È inoltre possibile selezionare il menu:Pools & Volume Groups[Uncommon Tasks > consolida capacità libera del gruppo di volumi] per avviare la finestra di dialogo.
+
+
+Se si desidera utilizzare un'area di capacità libera specifica invece dell'area di capacità libera più grande, utilizzare l'interfaccia a riga di comando (CLI).

@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-is-a-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, health, images, controller, memory, processor 
+summary: 'Un"immagine di integrità è un dump di dati raw della memoria del processore del controller che il supporto tecnico può utilizzare per diagnosticare un problema con un controller.' 
+---
+= Che cos'è un'immagine sanitaria?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un'immagine di integrità è un dump di dati raw della memoria del processore del controller che il supporto tecnico può utilizzare per diagnosticare un problema con un controller.
+
+Il firmware genera automaticamente un'immagine dello stato di salute quando rileva determinati errori. In alcuni scenari di risoluzione dei problemi, il supporto tecnico potrebbe richiedere il recupero del file di immagine di integrità e l'invio.

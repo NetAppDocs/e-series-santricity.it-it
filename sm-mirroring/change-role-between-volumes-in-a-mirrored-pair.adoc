@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/change-role-between-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
+summary: 'È possibile eseguire un"inversione di ruolo tra i due volumi di una coppia mirrorata che partecipano al mirroring sincrono per scopi amministrativi o in caso di disastro sull"array di storage locale.' 
+---
+= Cambiare ruolo tra i volumi in una coppia mirrorata
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eseguire un'inversione di ruolo tra i due volumi di una coppia mirrorata che partecipano al mirroring sincrono. Questa attività potrebbe essere necessaria per scopi amministrativi o in caso di disastro sull'array di storage locale.
+
+.A proposito di questa attività
+È possibile ridurre il volume primario al ruolo secondario o promuovere il volume secondario al ruolo primario. Tutti gli host che accedono al volume primario dispongono dell'accesso in lettura/scrittura al volume. Quando il volume primario diventa un volume secondario, nel volume vengono scritte solo le scritture remote avviate dal controller primario.
+
+.Fasi
+. Selezionare menu:Storage[Synchronous Mirroring].
+. Selezionare la coppia mirrorata contenente i volumi per i quali si desidera modificare il ruolo, quindi selezionare menu:More[Change role] (Altro[Cambia ruolo]).
++
+Il sistema visualizza una conferma.
+
+. Confermare che si desidera modificare il ruolo dei volumi, quindi selezionare *Cambia ruolo*.
++
+[NOTE]
+====
+Se l'array di storage locale non riesce a comunicare con l'array di storage remoto, il sistema visualizza la finestra di dialogo Impossibile contattare l'array di storage quando viene richiesta una modifica del ruolo, ma non è possibile contattare l'array di storage remoto. Fare clic su *Sì* per forzare la modifica del ruolo.
+
+====
+
+
+.Risultati
+System Manager esegue la seguente azione:
+
+* Se è possibile contattare il volume associato nella coppia mirrorata, i ruoli tra i volumi cambiano. System Manager promuove il volume secondario nella coppia mirrorata nel ruolo primario o demotizza il volume primario nella coppia mirrorata nel ruolo secondario (a seconda della selezione effettuata).
+

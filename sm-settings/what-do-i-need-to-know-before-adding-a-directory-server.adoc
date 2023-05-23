@@ -1,0 +1,19 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-adding-a-directory-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, adding, directory, server, 
+summary: Prima di aggiungere un server di directory in Access Management, assicurarsi di soddisfare i seguenti requisiti. 
+---
+= Cosa occorre sapere prima di aggiungere un server di directory?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di aggiungere un server di directory in Access Management, assicurarsi di soddisfare i seguenti requisiti.
+
+* I gruppi di utenti devono essere definiti nel servizio di directory.
+* Le credenziali del server LDAP devono essere disponibili, inclusi il nome di dominio, l'URL del server e, facoltativamente, il nome utente e la password dell'account BIND.
+* Per i server LDAPS che utilizzano un protocollo sicuro, la catena di certificati del server LDAP deve essere installata sul computer locale.
+

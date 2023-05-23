@@ -1,0 +1,74 @@
+---
+permalink: sm-hardware/limit-the-drive-view.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
+summary: 'Se l"array di storage include dischi con diversi tipi di attributi fisici e logici, la pagina hardware fornisce campi di filtro che consentono di limitare la visualizzazione del disco e individuare dischi specifici.' 
+---
+= Limitare la vista del disco
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se l'array di storage include dischi con diversi tipi di attributi fisici e logici, la pagina hardware fornisce campi di filtro che consentono di limitare la visualizzazione del disco e individuare dischi specifici.
+
+.A proposito di questa attività
+I filtri dei dischi possono limitare la visualizzazione solo a determinati tipi di dischi fisici (ad esempio, tutte le unità SAS), con determinati attributi di sicurezza (ad esempio, con funzionalità di protezione), in determinate posizioni logiche (ad esempio, Gruppo di volumi 1). È possibile utilizzare questi filtri insieme o separatamente.
+
+[NOTE]
+====
+Se tutti i dischi condividono gli stessi attributi fisici, il campo di filtro *Mostra dischi che sono...* non viene visualizzato. Se tutti i dischi condividono gli stessi attributi logici, il campo *Anywhere in the storage array* filter non viene visualizzato.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Nel primo campo del filtro (sotto *Mostra unità...*), fare clic sulla freccia a discesa per visualizzare i tipi di unità disponibili e gli attributi di sicurezza.
++
+I tipi di dischi possono includere:
+
++
+** Tipo di disco (SSD, HDD)
+** Tipo di interfaccia del disco
+** Capacità del disco (dal più alto al più basso)
+** Velocità del disco (dalla più alta alla più bassa) gli attributi di sicurezza possono includere:
+** Sicuro
+** Abilitato alla sicurezza
+** Compatibile CON DA (Data Assurance)
+** Conforme a FIPS
+** Conforme a FIPS (FIPS 140-2)
+** Conforme a FIPS (FIPS 140-3)
++
+Se uno di questi attributi è lo stesso per tutti i dischi, non viene visualizzato nell'elenco a discesa. Ad esempio, se lo storage array include tutti i dischi SSD con interfacce SAS e velocità di 15000 rpm, ma alcuni SSD hanno capacità diverse, l'elenco a discesa visualizza solo le capacità come scelta di filtraggio.
+
++
+Quando si seleziona un'opzione dal campo, le unità che non corrispondono ai criteri di filtro vengono visualizzate in grigio nella vista grafica.
+
+
+
+. Nella seconda casella di filtro, fare clic sulla freccia a discesa per visualizzare le posizioni logiche disponibili per i dischi.
++
+[NOTE]
+====
+Se è necessario cancellare i criteri di filtro, selezionare *Clear* (Cancella) all'estrema destra delle caselle di filtro.
+
+====
++
+Le posizioni logiche possono includere:
+
++
+** Piscine
+** Gruppi di volumi
+** Hot spare
+** Cache SSD
+** Non assegnato
++
+Quando si seleziona un'opzione dal campo, le unità che non corrispondono ai criteri di filtro vengono visualizzate in grigio nella vista grafica.
+
+
+
+. In alternativa, è possibile selezionare *accendere le luci di individuazione* all'estrema destra dei campi dei filtri per attivare le luci di individuazione dei dischi visualizzati.
++
+Questa azione consente di individuare fisicamente le unità nell'array di storage.
+
+

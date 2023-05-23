@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/add-on-feature-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
+summary: Scopri in che modo i termini delle funzionalità aggiuntive si applicano al tuo storage array. 
+---
+= Terminologia delle funzionalità aggiuntive
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri in che modo i termini delle funzionalità aggiuntive si applicano al tuo storage array.
+
+[cols="25h,~"]
+|===
+| Termine | Descrizione 
+
+
+ a| 
+Identificatore di abilitazione della funzione
+ a| 
+Feature Enable Identifier è una stringa univoca che identifica lo storage array specifico. Questo identificatore garantisce che, quando si ottiene la funzionalità premium, venga associata solo a quel particolare array di storage. Questa stringa viene visualizzata sotto Add-Ons nella pagina System (sistema).
+
+
+
+ a| 
+File delle chiavi di funzione
+ a| 
+Un file Feature Key è un file ricevuto per lo sblocco e l'attivazione di una funzionalità Premium o Feature Pack.
+
+
+
+ a| 
+Feature Pack
+ a| 
+Un Feature Pack è un bundle che modifica gli attributi degli array di storage (ad esempio, la modifica del protocollo da Fibre Channel a iSCSI). I Feature Pack richiedono una chiave speciale per attivarli.
+
+
+
+ a| 
+Funzionalità Premium
+ a| 
+Una funzione premium è un'opzione aggiuntiva che richiede una chiave per attivarla. Non è incluso nella configurazione standard di System Manager.
+
+|===

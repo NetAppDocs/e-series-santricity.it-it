@@ -1,0 +1,64 @@
+---
+permalink: sm-settings/overview-drive-security.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, system, security, key, management, 
+summary: 'La gestione delle chiavi di sicurezza è disponibile nella pagina System (sistema).' 
+---
+= Panoramica sulla sicurezza del disco
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare Drive Security e la gestione delle chiavi dalla pagina Security Key Management.
+
+
+
+== Che cos'è Drive Security?
+
+_Drive Security_ è una funzione che impedisce l'accesso non autorizzato ai dati su dischi abilitati alla sicurezza quando vengono rimossi dallo storage array. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard). Quando i dischi FDE o FIPS vengono fisicamente rimossi dall'array, non possono funzionare fino a quando non vengono installati in un altro array. A questo punto, i dischi si trovano in uno stato di sicurezza bloccato fino a quando non viene fornita la chiave di sicurezza corretta. Una _chiave di sicurezza_ è una stringa di caratteri condivisa tra questi tipi di dischi e i controller di un array di storage.
+
+Scopri di più:
+
+* link:how-the-drive-security-feature-works.html["Funzionamento della funzione Drive Security"]
+* link:how-security-key-management-works.html["Come funziona la gestione delle chiavi di sicurezza"]
+* link:drive-security-terminology.html["Promuovere la terminologia in materia di sicurezza"]
+
+
+
+
+== Come si configura la gestione delle chiavi?
+
+Per implementare Drive Security, è necessario che nell'array siano installati dischi FDE o FIPS. Per configurare la gestione delle chiavi per questi dischi, accedere al menu:Impostazioni[sistema > Gestione delle chiavi di sicurezza] dove è possibile creare una chiave interna dalla memoria persistente del controller o una chiave esterna da un server di gestione delle chiavi. Infine, è possibile attivare Drive Security per pool e gruppi di volumi selezionando "Secure-capable" nelle impostazioni del volume.
+
+Scopri di più:
+
+* link:create-internal-security-key.html["Creare una chiave di sicurezza interna"]
+* link:create-external-security-key.html["Creare una chiave di sicurezza esterna"]
+* link:../sm-storage/create-pool-manually.html["Creare il pool manualmente"]
+* link:../sm-storage/create-volume-group.html["Creare gruppi di volumi"]
+
+
+
+
+== Come faccio a sbloccare i dischi?
+
+Se è stata configurata la gestione delle chiavi e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi.
+
+Scopri di più:
+
+* link:unlock-drives-using-an-internal-security-key.html["Sbloccare i dischi quando si utilizza la gestione interna delle chiavi"]
+* link:unlock-drives-using-an-external-security-key.html["Sbloccare i dischi quando si utilizza la gestione esterna delle chiavi"]
+
+
+
+
+== Informazioni correlate
+
+Scopri di più sulle attività correlate alla gestione delle chiavi:
+
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Utilizzare i certificati firmati CA per l'autenticazione con un server di gestione delle chiavi"]
+* link:back-up-security-key.html["Eseguire il backup della chiave di sicurezza"]
+

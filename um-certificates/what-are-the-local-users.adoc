@@ -1,0 +1,25 @@
+---
+permalink: um-certificates/what-are-the-local-users.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, local, users 
+summary: Gli utenti locali sono predefiniti nel sistema e includono autorizzazioni specifiche. 
+---
+= Quali sono gli utenti locali?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli utenti locali sono predefiniti nel sistema e includono autorizzazioni specifiche.
+
+Gli utenti locali includono:
+
+* *Admin* -- Amministratore eccellente che ha accesso a tutte le funzioni del sistema. Questo utente include tutti i ruoli. La password deve essere impostata al primo accesso.
+* *Storage* -- l'amministratore responsabile di tutto il provisioning dello storage. Questo utente include i seguenti ruoli: Storage Admin, Support Admin e Monitor. Questo account viene disattivato fino a quando non viene impostata una password.
+* *Security* -- l'utente responsabile della configurazione della sicurezza, inclusi Access Management e Certificate Management. Questo utente include i seguenti ruoli: Security Admin e Monitor. Questo account viene disattivato fino a quando non viene impostata una password.
+* *Support* -- l'utente responsabile delle risorse hardware, dei dati di guasto e degli aggiornamenti del firmware. Questo utente include i seguenti ruoli: Support Admin e Monitor. Questo account viene disattivato fino a quando non viene impostata una password.
+* *Monitor* -- un utente con accesso in sola lettura al sistema. Questo utente include solo il ruolo Monitor. Questo account viene disattivato fino a quando non viene impostata una password.
+* *rw* (lettura/scrittura) -- questo utente include i seguenti ruoli: Amministratore dello storage, amministratore del supporto e monitor. Questo account viene disattivato fino a quando non viene impostata una password.
+* *Ro* (sola lettura) -- questo utente include solo il ruolo Monitor. Questo account viene disattivato fino a quando non viene impostata una password.
+

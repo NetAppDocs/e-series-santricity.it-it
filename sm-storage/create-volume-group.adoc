@@ -1,0 +1,282 @@
+---
+permalink: sm-storage/create-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, volume, group 
+summary: 'Si utilizza un gruppo di volumi per creare uno o più volumi accessibili all"host. Un gruppo di volumi è un container per volumi con caratteristiche condivise, come il livello RAID e la capacità.' 
+---
+= Creare un gruppo di volumi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si utilizza un gruppo di volumi per creare uno o più volumi accessibili all'host. Un gruppo di volumi è un container per volumi con caratteristiche condivise, come il livello RAID e la capacità.
+
+Con dischi con capacità maggiore e la possibilità di distribuire volumi tra controller, la creazione di più di un volume per gruppo di volumi è un buon modo per sfruttare la capacità dello storage e proteggere i dati.
+
+.Prima di iniziare
+Prima di creare un gruppo di volumi, consultare le seguenti linee guida:
+
+* È necessario almeno un disco non assegnato.
+* Esistono limiti per il numero di dischi che è possibile utilizzare in un singolo gruppo di volumi. Questi limiti variano in base al livello RAID.
+* Per attivare la protezione contro la perdita di scaffali/cassetti, è necessario creare un gruppo di volumi che utilizzi dischi posizionati in almeno tre shelf o cassetti, a meno che non si utilizzi RAID 1, dove due shelf/cassetti sono il minimo.
+* Se si dispone di uno storage array EF600 o EF300 e si prevede di creare manualmente un gruppo di volumi, assicurarsi che ciascun controller abbia accesso a un numero uguale di dischi nei primi 12 slot e a un numero uguale di dischi negli ultimi 12 slot. Questa configurazione aiuta i controller a utilizzare entrambi i bus PCIe lato disco in modo più efficace. Attualmente, System Manager consente la selezione del disco nella funzione Advanced (Avanzate) quando si crea un gruppo di volumi.
+* Esaminare in che modo la scelta del livello RAID influisce sulla capacità risultante del gruppo di volumi:
++
+** Se si seleziona RAID 1, è necessario aggiungere due dischi alla volta per assicurarsi che sia selezionata una coppia mirrorata. Il mirroring e lo striping (noto come RAID 10 o RAID 1+0) si ottengono selezionando quattro o più dischi.
+** Se si seleziona RAID 5, è necessario aggiungere almeno tre dischi per creare il gruppo di volumi.
+** Se si seleziona RAID 6, è necessario aggiungere almeno cinque dischi per creare il gruppo di volumi.
+
+
+
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Fare clic sul menu:Create[Volume group] (Crea[gruppo di volumi]).
++
+Viene visualizzata la finestra di dialogo Create Volume Group (Crea gruppo di volumi).
+
+. Digitare un nome per il gruppo di volumi.
+. Seleziona il livello RAID che meglio soddisfa i tuoi requisiti di storage e protezione dei dati.
++
+Viene visualizzata la tabella dei candidati del gruppo di volumi che mostra solo i candidati che supportano il livello RAID selezionato.
+
+. *Opzionale:* se si dispone di più di un tipo di disco nell'array di storage, selezionare il tipo di disco che si desidera utilizzare.
++
+Viene visualizzata la tabella dei candidati del gruppo di volumi che mostra solo i candidati che supportano il tipo di disco e il livello RAID selezionati.
+
+. *Opzionale:* è possibile selezionare il metodo automatico o manuale per definire le unità da utilizzare nel gruppo di volumi. Il metodo automatico è la selezione predefinita.
++
+Per selezionare i dischi manualmente, fare clic sul collegamento *Manually Select drives (Advanced)* (Seleziona manualmente i dischi (avanzati)*). Quando si fa clic su di esso, viene visualizzato *Automatically Select drives (Advanced)*.
+
++
+Il metodo Manuale consente di selezionare le unità specifiche che compongono il gruppo di volumi. È possibile selezionare dischi non assegnati specifici per ottenere la capacità richiesta. Se l'array di storage contiene dischi con tipi di supporti diversi o tipi di interfaccia diversi, è possibile scegliere solo la capacità non configurata per un singolo tipo di disco per creare il nuovo gruppo di volumi.
+
++
+[NOTE]
+====
+Solo gli esperti che conoscono la ridondanza dei dischi e le configurazioni ottimali dei dischi devono utilizzare il metodo manuale.
+
+====
+. In base alle caratteristiche del disco visualizzate, selezionare le unità che si desidera utilizzare nel gruppo di volumi, quindi fare clic su *Create* (Crea).
++
+Le caratteristiche del disco visualizzate dipendono dalla selezione del metodo automatico o manuale.
+
++
+.Caratteristiche del drive di metodo automatico
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Caratteristica | Utilizzare 
+
+
+ a| 
+Capacità libera
+ a| 
+Mostra la capacità disponibile in GiB. Selezionare un gruppo di volumi candidato con la capacità adatta alle esigenze di storage dell'applicazione.
+
+
+
+ a| 
+Totale dischi
+ a| 
+Mostra il numero di dischi disponibili per questo gruppo di volumi. Selezionare un gruppo di volumi candidato con il numero di dischi desiderato.
+
+
+
+ a| 
+Dimensioni blocco unità (solo EF300 e EF600)
+ a| 
+Mostra la dimensione del blocco (dimensione del settore) che i dischi del gruppo possono scrivere. I valori possono includere:
+
+** 512 -- dimensione del settore di 512 byte.
+** 4K -- dimensione del settore di 4,096 byte.
+
+
+
+
+ a| 
+Sicuro
+ a| 
+Indica se questo gruppo di volumi candidato è composto interamente da dischi con funzionalità di protezione, che possono essere dischi con crittografia completa del disco (FDE) o dischi FIPS (Federal Information Processing Standard).
+
+** È possibile proteggere il gruppo di volumi con Drive Security, ma per utilizzare questa funzione è necessario che tutti i dischi siano protetti.
+** Se si desidera creare un gruppo di volumi solo FDE, cercare *Yes - FDE* nella colonna Secure-capable. Se si desidera creare un gruppo di volumi solo FIPS, cercare *Sì - FIPS* o *Sì - FIPS (misto)*. "Misto" indica una combinazione di dischi di livello 140-2 e 140-3. Se si utilizza una combinazione di questi livelli, tenere presente che il gruppo di volumi funzionerà con il livello di protezione inferiore (140-2).
+** È possibile creare un gruppo di volumi composto da dischi che potrebbero o non essere sicuri o che siano una combinazione di livelli di sicurezza. Se i dischi del gruppo di volumi includono dischi che non supportano la protezione, non è possibile rendere sicuro il gruppo di volumi.
+
+
+
+
+ a| 
+Abilitare la sicurezza?
+ a| 
+Fornisce l'opzione per attivare la funzione Drive Security con dischi sicuri. Se il gruppo di volumi supporta la protezione ed è stata impostata una chiave di sicurezza, è possibile attivare Drive Security selezionando la casella di controllo.
+
+
+NOTE: L'unico modo per rimuovere Drive Security dopo l'attivazione è eliminare il gruppo di volumi e cancellare i dischi.
+
+
+
+ a| 
+Compatibile CON DA
+ a| 
+Indica se Data Assurance (da) è disponibile per questo gruppo. Data Assurance (da) verifica e corregge gli errori che potrebbero verificarsi quando i dati vengono trasferiti attraverso i controller fino ai dischi.
+
+Se si desidera utilizzare da, selezionare un gruppo di volumi che supporti da. (Per i dischi compatibili con da, il da viene attivato automaticamente sui volumi creati nel pool).
+
+Un gruppo di volumi può contenere dischi che supportano da o non da, ma tutti i dischi devono essere in grado di utilizzare questa funzione.
+
+
+
+ a| 
+Funzionalità di provisioning delle risorse (solo EF300 e EF600)
+ a| 
+Mostra se il provisioning delle risorse è disponibile per questo gruppo. Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.
+
+
+
+ a| 
+Protezione contro la perdita di shelf
+ a| 
+Mostra se è disponibile la protezione contro la perdita di shelf. La protezione contro la perdita di shelf garantisce l'accessibilità ai dati sui volumi di un gruppo di volumi in caso di perdita totale di comunicazione con uno shelf.
+
+
+
+ a| 
+Protezione in caso di perdita del cassetto
+ a| 
+Mostra se è disponibile la protezione contro le perdite dei cassetti, fornita solo se si utilizza uno shelf di dischi che contiene cassetti. La protezione contro la perdita dei cassetti garantisce l'accessibilità ai dati sui volumi di un gruppo di volumi se si verifica una perdita totale di comunicazione con un singolo cassetto in uno shelf di dischi.
+
+
+
+ a| 
+Dimensioni dei blocchi di volume supportate (solo EF300 e EF600)
+ a| 
+Mostra le dimensioni del blocco che è possibile creare per i volumi nel gruppo:
+
+** 512n -- 512 byte nativi.
+** 512e -- 512 byte emulati.
+** 4K -- 4,096 byte.
+
+
+|===
+====
++
+.Caratteristiche del drive con metodo manuale
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Caratteristica | Utilizzare 
+
+
+ a| 
+Tipo di supporto
+ a| 
+Indica il tipo di supporto. Sono supportati i seguenti tipi di supporto:
+
+** Disco rigido
+** Solid state Disk (SSD)
+
+
+Tutti i dischi di un gruppo di volumi devono essere dello stesso tipo di supporto (tutti gli SSD o tutti i dischi rigidi). I gruppi di volumi non possono avere una combinazione di tipi di supporti o di tipi di interfaccia.
+
+
+
+ a| 
+Dimensioni blocco unità (solo EF300 e EF600)
+ a| 
+Mostra la dimensione del blocco (dimensione del settore) che i dischi del gruppo possono scrivere. I valori possono includere:
+
+** 512 -- dimensione del settore di 512 byte.
+** 4K -- dimensione del settore di 4,096 byte.
+
+
+
+
+ a| 
+Capacità del disco
+ a| 
+Indica la capacità del disco.
+
+** Se possibile, selezionare dischi con capacità uguale a quella dei dischi correnti del gruppo di volumi.
+** Se è necessario aggiungere dischi non assegnati con una capacità inferiore, tenere presente che la capacità utilizzabile di ciascun disco attualmente presente nel gruppo di volumi è ridotta. Pertanto, la capacità del disco è la stessa per il gruppo di volumi.
+** Se è necessario aggiungere dischi non assegnati con una capacità maggiore, tenere presente che la capacità utilizzabile dei dischi non assegnati aggiunti viene ridotta in modo che corrispondano alle capacità correnti dei dischi nel gruppo di volumi.
+
+
+
+
+ a| 
+Vassoio
+ a| 
+Indica la posizione del vassoio del disco.
+
+
+
+ a| 
+Slot
+ a| 
+Indica la posizione dello slot del disco.
+
+
+
+ a| 
+Velocità (giri/min)
+ a| 
+Indica la velocità del disco.
+
+
+
+ a| 
+Dimensione del settore logico
+ a| 
+Indica la dimensione e il formato del settore.
+
+
+
+ a| 
+Sicuro
+ a| 
+Indica se questo gruppo di volumi candidato è composto interamente da dischi con funzionalità di protezione, che possono essere dischi con crittografia completa del disco (FDE) o dischi FIPS (Federal Information Processing Standard).
+
+** È possibile proteggere il gruppo di volumi con Drive Security, ma per utilizzare questa funzione è necessario che tutti i dischi siano protetti.
+** Se si desidera creare un gruppo di volumi solo FDE, cercare *Yes - FDE* nella colonna Secure-capable. Se si desidera creare un gruppo di volumi solo FIPS, cercare *Sì - FIPS* o *Sì - FIPS (misto)*. "Misto" indica una combinazione di dischi di livello 140-2 e 140-3. Se si utilizza una combinazione di questi livelli, tenere presente che il gruppo di volumi funzionerà con il livello di protezione inferiore (140-2).
+** È possibile creare un gruppo di volumi composto da dischi che potrebbero o non essere sicuri o che siano una combinazione di livelli di sicurezza. Se i dischi del gruppo di volumi includono dischi che non supportano la protezione, non è possibile rendere sicuro il gruppo di volumi.
+
+
+
+
+ a| 
+Compatibile CON DA
+ a| 
+Indica se Data Assurance (da) è disponibile per questo gruppo. Data Assurance (da) verifica e corregge gli errori che potrebbero verificarsi quando i dati vengono comunicati ai dischi attraverso i controller.
+
+Se si desidera utilizzare da, selezionare un gruppo di volumi che supporti da. (Per i dischi compatibili con da, il da viene attivato automaticamente sui volumi creati nel pool).
+
+Un gruppo di volumi può contenere dischi che supportano da o non da, ma tutti i dischi devono essere in grado di utilizzare questa funzione.
+
+
+
+ a| 
+Dimensioni dei blocchi di volume supportate (solo EF300 e EF600)
+ a| 
+Mostra le dimensioni del blocco che è possibile creare per i volumi nel gruppo:
+
+** 512n -- 512 byte nativi.
+** 512e -- 512 byte emulati.
+** 4K -- 4,096 byte.
+
+
+
+
+ a| 
+Funzionalità di provisioning delle risorse (solo EF300 e EF600)
+ a| 
+Mostra se il provisioning delle risorse è disponibile per questo gruppo. Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.
+
+|===
+====
+

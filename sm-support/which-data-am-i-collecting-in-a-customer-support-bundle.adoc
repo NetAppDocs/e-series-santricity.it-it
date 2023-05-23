@@ -1,0 +1,16 @@
+---
+permalink: sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collection, autosupport, ASUP 
+summary: 'La funzionalità AutoSupport e la raccolta manuale dei dati di supporto consentono di raccogliere i dati in un pacchetto di assistenza clienti per la risoluzione dei problemi e l"analisi dei problemi in remoto da parte del supporto tecnico.' 
+---
+= Quali dati vengono raccolti?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzionalità AutoSupport e la raccolta manuale dei dati di supporto consentono di raccogliere i dati in un pacchetto di assistenza clienti per la risoluzione dei problemi e l'analisi dei problemi in remoto da parte del supporto tecnico.
+
+Il bundle di assistenza clienti raccoglie tutti i tipi di informazioni sull'array di storage in un singolo file compresso. Le informazioni raccolte comprendono la configurazione fisica, la configurazione logica, le informazioni sulla versione, gli eventi, i file di log, e dati sulle performance. Le informazioni vengono utilizzate solo dal supporto tecnico per risolvere i problemi relativi allo storage array.

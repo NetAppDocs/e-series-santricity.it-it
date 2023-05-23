@@ -1,0 +1,29 @@
+---
+permalink: sm-hardware/update-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
+summary: 'Un ciclo di apprendimento è un ciclo automatico per la calibrazione dell"indicatore della batteria Smart. I cicli vengono pianificati per avviarsi automaticamente, nello stesso giorno e ora, a intervalli di 8 settimane (per controller). Se si desidera impostare un programma diverso, è possibile regolare i cicli di apprendimento.' 
+---
+= Aggiornare i cicli di apprendimento della batteria
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un ciclo di apprendimento è un ciclo automatico per la calibrazione dell'indicatore della batteria Smart. I cicli vengono pianificati per avviarsi automaticamente, nello stesso giorno e ora, a intervalli di 8 settimane (per controller). Se si desidera impostare un programma diverso, è possibile regolare i cicli di apprendimento.
+
+.A proposito di questa attività
+L'aggiornamento dei cicli di apprendimento influisce su entrambe le batterie del controller.
+
+.Fasi
+. Selezionare *hardware*.
+. Selezionare l'elenco a discesa per lo shelf del controller, quindi selezionare *View settings* (Visualizza impostazioni).
+. Selezionare la scheda *batterie*.
+. Selezionare *Aggiorna cicli di apprendimento batteria*.
++
+Viene visualizzata la finestra di dialogo Update Battery Learn Cycles.
+
+. Dagli elenchi a discesa, selezionare un nuovo giorno e un'ora.
+. Fare clic su *Save* (Salva).
+

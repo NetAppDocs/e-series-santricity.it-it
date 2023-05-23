@@ -1,0 +1,30 @@
+---
+permalink: sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, mirrored, pair, volume, 
+summary: In genere, è necessario aumentare la capacità riservata quando si riceve un avviso che indica che la capacità riservata per una coppia mirrorata sta diventando piena. È possibile aumentare la capacità riservata solo con incrementi di 8 GiB. 
+---
+= Cosa devo sapere prima di aumentare la mia capacità riservata su un volume a coppia mirrorata?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In genere, è necessario aumentare la capacità riservata quando si riceve un avviso che indica che la capacità riservata per una coppia mirrorata sta diventando piena. È possibile aumentare la capacità riservata solo con incrementi di 8 GiB.
+
+Per le operazioni di mirroring asincrono, la capacità riservata è in genere il 20% del volume di base. Scegliere una capacità più ampia per la capacità riservata se si verifica una o entrambe le seguenti condizioni:
+
+* Si intende mantenere la coppia mirrorata per un lungo periodo di tempo.
+* Una grande percentuale di blocchi di dati cambierà sul volume primario a causa dell'intensa attività di i/O. Utilizzare dati storici sulle performance o altre utility del sistema operativo per determinare l'attività i/o tipica del volume primario.
+
+
+È possibile aumentare la capacità riservata per una coppia mirrorata eseguendo una delle seguenti operazioni:
+
+* Regolare la percentuale di capacità per un volume di coppia mirrorata selezionando menu:Storage[Pools and Volumes Groups] (Storage[gruppi di pool e volumi]), quindi facendo clic sulla scheda *Reserved Capacity* (capacità riservata).
+* Creare un nuovo volume utilizzando la capacità libera disponibile in un pool o in un gruppo di volumi.
++
+Se non esiste capacità libera in alcun pool o gruppo di volumi, è possibile aggiungere capacità non configurata sotto forma di unità inutilizzate a un pool o a un gruppo di volumi.
+
+

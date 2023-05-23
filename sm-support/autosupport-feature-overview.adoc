@@ -1,0 +1,55 @@
+---
+permalink: sm-support/autosupport-feature-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
+summary: La funzione AutoSupport monitora lo stato di salute di uno storage array e invia automaticamente i dispatches al supporto tecnico. 
+---
+= Panoramica delle funzionalità di AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione AutoSupport monitora lo stato di salute di uno storage array e invia automaticamente i dispatches al supporto tecnico.
+
+Il supporto tecnico utilizza i dati AutoSupport in modo proattivo per accelerare la diagnosi e la risoluzione dei problemi dei clienti e per rilevare ed evitare potenziali problemi.
+
+I dati AutoSupport includono informazioni sulla configurazione, lo stato, le performance e gli eventi di sistema di uno storage array. I dati AutoSupport non contengono dati utente. Le spedizioni possono essere inviate immediatamente o in base a una pianificazione (giornaliera e settimanale).
+
+
+
+== Vantaggi principali
+
+Alcuni dei vantaggi principali della funzione AutoSupport includono:
+
+* Tempi di risoluzione dei casi più rapidi
+* Monitoraggio sofisticato per una gestione più rapida degli incidenti
+* Creazione automatica di report in base a una pianificazione e generazione automatica di report sugli eventi critici
+* Richieste automatizzate di sostituzione dell'hardware per componenti selezionati, ad esempio dischi
+* Avvisi non intrusivi per notificare un problema e fornire informazioni al supporto tecnico per intraprendere azioni correttive
+* Strumenti di analisi AutoSupport che monitorano le spedizioni per problemi di configurazione noti
+
+
+
+
+== Funzionalità di Individual AutoSupport
+
+La funzione AutoSupport è composta da tre funzioni individuali che vengono attivate separatamente.
+
+* *Basic AutoSupport* -- consente allo storage array di raccogliere e inviare automaticamente i dati al supporto tecnico.
+* *AutoSupport OnDemand* -- consente al supporto tecnico di richiedere la ritrasmissione di un precedente dispatch AutoSupport quando necessario per la risoluzione di un problema. Tutte le trasmissioni vengono avviate dallo storage array, non dal server AutoSupport. Lo storage array esegue periodicamente il check-in con il server AutoSupport per determinare se sono presenti richieste di ritrasmissione in sospeso e risponde di conseguenza.
+* *Diagnostica remota* -- consente al supporto tecnico di richiedere una nuova spedizione AutoSupport aggiornata quando necessario per la risoluzione di un problema. Tutte le trasmissioni vengono avviate dallo storage array, non dal server AutoSupport. Lo storage array esegue periodicamente il check-in con il server AutoSupport per determinare se sono presenti nuove richieste in sospeso e risponde di conseguenza.
+
+
+
+
+== Differenza tra AutoSupport e Collect dati di supporto
+
+Nello storage array esistono due metodi per raccogliere i dati di supporto:
+
+* *Funzione AutoSupport* -- i dati vengono raccolti automaticamente.
+* *Opzione Collect Support Data* -- i dati devono essere raccolti e inviati manualmente.
+
+
+La funzione AutoSupport è più semplice da utilizzare perché i dati vengono raccolti e inviati automaticamente. I dati AutoSupport possono essere utilizzati in modo proattivo per prevenire i problemi prima che si verifichino. La funzione AutoSupport accelera la risoluzione dei problemi perché il supporto tecnico ha già accesso ai dati. Per questi motivi, la funzionalità AutoSupport è il metodo di raccolta dati preferito da utilizzare.

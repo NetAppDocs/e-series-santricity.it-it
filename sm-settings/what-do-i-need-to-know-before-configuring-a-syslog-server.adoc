@@ -1,0 +1,23 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuring, syslog, server, 
+summary: È possibile archiviare i registri di controllo su un server syslog esterno. 
+---
+= Cosa occorre sapere prima di configurare un server syslog?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile archiviare i registri di controllo su un server syslog esterno.
+
+Prima di configurare un server syslog, tenere presenti le seguenti linee guida.
+
+* Assicurarsi di conoscere l'indirizzo del server, il protocollo e il numero della porta. L'indirizzo del server può essere un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6.
+* Se il server utilizza un protocollo sicuro (ad esempio TLS), è necessario che nel sistema locale sia disponibile un certificato dell'autorità di certificazione (CA). I certificati CA identificano i proprietari dei siti Web per connessioni sicure tra server e client.
+* Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti.
+* Le impostazioni dei criteri di sovrascrittura (disponibili in *View/Edit Settings*) non influiscono sulla gestione dei registri con una configurazione del server syslog.
+* I registri di controllo seguono il formato di messaggistica RFC 5424.
+

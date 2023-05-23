@@ -1,0 +1,44 @@
+---
+permalink: sm-support/retrieve-recovery-support-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, recovery, support files 
+summary: Il supporto tecnico può utilizzare i file di supporto per il ripristino per risolvere i problemi. System Manager salva automaticamente questi file. 
+---
+= Recuperare i file di supporto per il ripristino
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il supporto tecnico può utilizzare i file di supporto per il ripristino per risolvere i problemi. System Manager salva automaticamente questi file.
+
+.Prima di iniziare
+Il supporto tecnico ha richiesto l'invio di file aggiuntivi per la risoluzione dei problemi.
+
+.A proposito di questa attività
+I file di supporto per il ripristino includono i seguenti tipi di file:
+
+* Supporto dei file di dati
+* Storia di AutoSupport
+* Log di AutoSupport
+* File di diagnostica SAS/RLS
+* Dati del profilo di recovery
+* File di acquisizione del database
+
+
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Recupera file di supporto ripristino*.
++
+Una finestra di dialogo elenca tutti i file di supporto per il ripristino raccolti dall'array di storage. Per trovare file specifici, è possibile ordinare qualsiasi colonna o digitare caratteri nella casella *Filter*.
+
+. Selezionare un file, quindi fare clic su *Download*.
++
+Il file viene salvato nella cartella Download del browser.
+
+. Se si desidera salvare altri file, ripetere il passaggio precedente.
+. Fare clic su *Chiudi*.
+. Seguire le istruzioni fornite dal supporto tecnico per inviare il file.
+

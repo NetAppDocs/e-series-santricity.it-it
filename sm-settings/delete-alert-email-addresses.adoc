@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/delete-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mail, server, email, addresses, alerts, 
+summary: È possibile rimuovere il server di posta precedentemente definito in modo che gli avvisi non vengano più inviati agli indirizzi di posta elettronica oppure rimuovere singoli indirizzi di posta elettronica. 
+---
+= Eliminare gli indirizzi e-mail o i server di posta per gli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere il server di posta precedentemente definito in modo che gli avvisi non vengano più inviati agli indirizzi di posta elettronica oppure rimuovere singoli indirizzi di posta elettronica.
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *Email*.
+. Dalla tabella, eseguire una delle seguenti operazioni:
++
+** Per rimuovere un server di posta in modo che gli avvisi non vengano più inviati agli indirizzi di posta elettronica, selezionare la riga del server di posta.
+** Per rimuovere un indirizzo e-mail in modo che gli avvisi non vengano più inviati a questo indirizzo, selezionare la riga dell'indirizzo e-mail che si desidera eliminare. Il pulsante *Delete* (Elimina) in alto a destra della tabella diventa disponibile per la selezione.
+
+
+. Fare clic su *Delete* (Elimina) e confermare l'operazione.
+

@@ -1,0 +1,47 @@
+---
+permalink: sm-storage/decrease-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
+summary: 'L"opzione Riduci capacità consente di ridurre la capacità riservata per i seguenti oggetti di storage: Gruppo di snapshot, volume di snapshot e volume membro del gruppo di coerenza. È possibile ridurre la capacità riservata solo della quantità utilizzata per aumentarla.' 
+---
+= Ridurre la capacità riservata
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'opzione Riduci capacità consente di ridurre la capacità riservata per i seguenti oggetti di storage: Gruppo di snapshot, volume di snapshot e volume membro del gruppo di coerenza. È possibile ridurre la capacità riservata solo della quantità utilizzata per aumentarla.
+
+.Prima di iniziare
+* L'oggetto di storage deve contenere più di un volume di capacità riservato.
+* L'oggetto di storage non deve essere un volume di coppia mirrorato.
+* Se l'oggetto di storage è un volume di snapshot, deve essere un volume di snapshot disattivato.
+* Se l'oggetto di storage è un gruppo di snapshot, non deve contenere alcuna immagine snapshot associata.
+
+
+.A proposito di questa attività
+Consultare le seguenti linee guida:
+
+* È possibile rimuovere i volumi a capacità riservata solo nell'ordine inverso rispetto a quello in cui sono stati aggiunti.
+* Non è possibile ridurre la capacità riservata per un volume snapshot di sola lettura perché non dispone di capacità riservata associata. Solo i volumi Snapshot in lettura/scrittura richiedono una capacità riservata.
+
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
+. Selezionare l'oggetto di storage per il quale si desidera ridurre la capacità riservata, quindi fare clic su *Riduci capacità*.
++
+Viene visualizzata la finestra di dialogo Riduci capacità riservata.
+
+. Selezionare la capacità di cui si desidera ridurre la capacità riservata, quindi fare clic su *Riduci*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Aggiorna la capacità dell'oggetto storage.
+* Visualizza la capacità riservata aggiornata per l'oggetto di storage.
+* Quando si riduce la capacità di un volume di snapshot, System Manager passa automaticamente il volume di snapshot a uno stato Disabled (Disattivato). Disattivato indica che il volume snapshot non è attualmente associato a un'immagine snapshot e, di conseguenza, non può essere assegnato a un host per i/O.
+

@@ -1,0 +1,21 @@
+---
+permalink: um-certificates/why-cant-i-log-in-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, log in, login 
+summary: Se si riceve un errore durante il tentativo di accesso, esaminare queste possibili cause. 
+---
+= Perché non riesco ad accedere?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si riceve un errore durante il tentativo di accesso, esaminare queste possibili cause.
+
+Gli errori di accesso possono verificarsi per uno dei seguenti motivi:
+
+* Il nome utente o la password immessi non sono corretti.
+* Privilegi insufficienti.
+* Si è tentato di accedere più volte senza successo, attivando la modalità di blocco. Attendere 10 minuti per eseguire nuovamente l'accesso.
+

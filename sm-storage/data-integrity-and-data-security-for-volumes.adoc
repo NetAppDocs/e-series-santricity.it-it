@@ -1,0 +1,59 @@
+---
+permalink: sm-storage/data-integrity-and-data-security-for-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
+summary: 'È possibile abilitare i volumi a utilizzare la funzione Data Assurance (da) e la funzione Drive Security. Queste funzionalità vengono presentate a livello di pool e gruppo di volumi.' 
+---
+= Integrità dei dati e sicurezza dei dati per i volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile abilitare i volumi a utilizzare la funzione Data Assurance (da) e la funzione Drive Security. Queste funzionalità vengono presentate a livello di pool e gruppo di volumi.
+
+
+
+== Data Assurance
+
+Data Assurance (da) implementa lo standard T10 Protection Information (PI), che aumenta l'integrità dei dati verificando e correggendo gli errori che potrebbero verificarsi quando i dati vengono trasferiti lungo il percorso di i/O. L'utilizzo tipico della funzione Data Assurance consente di controllare la parte del percorso i/o tra i controller e i dischi. Le funzionalità DA vengono presentate a livello di pool e gruppo di volumi.
+
+Quando questa funzione è attivata, l'array di storage aggiunge i codici di controllo degli errori (noti anche come CRC (Cyclic Redundancy Checks) a ciascun blocco di dati del volume. Dopo lo spostamento di un blocco di dati, l'array di storage utilizza questi codici CRC per determinare se si sono verificati errori durante la trasmissione. I dati potenzialmente corrotti non vengono scritti su disco né restituiti all'host. Se si desidera utilizzare la funzione da, selezionare un pool o un gruppo di volumi in grado di supportare da quando si crea un nuovo volume (cercare "Sì" accanto a "da" nella tabella dei candidati del gruppo di volumi e pool).
+
+
+
+== Sicurezza del disco
+
+Drive Security è una funzione che impedisce l'accesso non autorizzato ai dati su dischi abilitati alla sicurezza quando vengono rimossi dallo storage array. Questi dischi possono essere dischi con crittografia completa del disco (FDE) o dischi certificati per soddisfare gli standard di elaborazione delle informazioni federali 140-2 livello 2 (dischi FIPS).
+
+
+
+=== Funzionamento di Drive Security a livello di unità
+
+Un disco sicuro, FDE o FIPS, crittografa i dati durante la scrittura e decrta i dati durante la lettura. La crittografia e la decrittografia non influiscono sulle prestazioni o sul flusso di lavoro dell'utente. Ogni disco dispone di una propria chiave di crittografia univoca, che non può mai essere trasferita dal disco.
+
+
+
+=== Funzionamento di Drive Security a livello di volume
+
+Quando si crea un pool o un gruppo di volumi da dischi con funzionalità di protezione, è anche possibile attivare Drive Security per tali pool o gruppi di volumi. L'opzione Drive Security (protezione disco) rende sicuri i dischi e i gruppi di volumi e i pool associati-_enabled_. Un pool o un gruppo di volumi può contenere dischi sicuri e non sicuri, ma tutti i dischi devono essere sicuri per poter utilizzare le proprie funzionalità di crittografia.
+
+
+
+=== Come implementare Drive Security
+
+Per implementare Drive Security, attenersi alla seguente procedura.
+
+. Dotare lo storage array di dischi sicuri, sia FDE che FIPS. (Per i volumi che richiedono il supporto FIPS, utilizzare solo dischi FIPS. La combinazione di dischi FIPS e FDE in un gruppo di volumi o in un pool comporterà il trattamento di tutti i dischi come dischi FDE. Inoltre, un disco FDE non può essere aggiunto o utilizzato come spare in un gruppo di volumi o pool all-FIPS.
+. Creare una chiave di sicurezza, ovvero una stringa di caratteri condivisa dal controller e dalle unità per l'accesso in lettura/scrittura. È possibile creare una chiave interna dalla memoria persistente del controller o una chiave esterna da un server di gestione delle chiavi. Per la gestione esterna delle chiavi, è necessario stabilire l'autenticazione con il server di gestione delle chiavi.
+. Abilitare Drive Security per pool e gruppi di volumi:
++
+** Creare un pool o un gruppo di volumi (cercare *Sì* nella colonna *Secure-capable* della tabella dei candidati).
+** Selezionare un pool o un gruppo di volumi quando si crea un nuovo volume (cercare *Sì* accanto a *Secure-capable* nella tabella dei candidati del pool e del gruppo di volumi).
++
+Con la funzione Drive Security, è possibile creare una chiave di sicurezza condivisa tra i dischi e i controller abilitati alla protezione in un array di storage. Ogni volta che si spegne e si riaccende l'alimentazione dei dischi, i dischi abilitati alla protezione cambiano in uno stato di sicurezza bloccato fino a quando il controller non applica la chiave di sicurezza.
+
+
+
+

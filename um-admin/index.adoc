@@ -1,0 +1,12 @@
+---
+permalink: um-admin/index.html 
+sidebar: sidebar 
+keywords: santricity, unified, manager 5 
+summary: Gestore unificato SANtricity 5 
+---
+= Gestore unificato SANtricity 5
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

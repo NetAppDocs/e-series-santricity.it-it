@@ -1,0 +1,73 @@
+---
+permalink: sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, drawer, loss, protection 
+summary: Per mantenere la protezione dalle perdite di shelf/cassetto per un pool o un gruppo di volumi, utilizzare i criteri specificati nella tabella seguente. 
+---
+= Come posso mantenere la protezione contro le perdite di scaffali/cassetti?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per mantenere la protezione dalle perdite di shelf/cassetto per un pool o un gruppo di volumi, utilizzare i criteri specificati nella tabella seguente.
+
+[cols="1a,1a,1a"]
+|===
+| Livello | Criteri per la protezione contro le perdite di scaffali/cassetti | Numero minimo di ripiani/cassetti richiesti 
+
+
+ a| 
+Piscina
+ a| 
+Per gli shelf, il pool non deve contenere più di due dischi in un singolo shelf.
+
+Per i cassetti, il pool deve includere un numero uguale di unità da ciascun cassetto.
+ a| 
+6 per gli shelf
+
+5 per cassetti
+
+
+
+ a| 
+RAID 6
+ a| 
+Il gruppo di volumi non contiene più di due dischi in un singolo shelf o cassetto.
+ a| 
+3
+
+
+
+ a| 
+RAID 3 o RAID 5
+ a| 
+Ciascuna unità del gruppo di volumi si trova in uno shelf o in un cassetto separato.
+ a| 
+3
+
+
+
+ a| 
+RAID 1
+ a| 
+Ogni disco di una coppia mirrorata deve essere collocato in uno shelf o in un cassetto separato.
+ a| 
+2
+
+
+
+ a| 
+RAID 0
+ a| 
+Impossibile ottenere la protezione contro la perdita di scaffali/cassetti.
+ a| 
+Non applicabile
+
+|===
+[NOTE]
+====
+La protezione contro le perdite di shelf/cassetto non viene mantenuta se un disco si è già guastato nel pool o nel gruppo di volumi. In questa situazione, la perdita dell'accesso a uno shelf o a un cassetto di dischi e, di conseguenza, a un altro disco nel pool o nel gruppo di volumi causa la perdita di dati.
+
+====

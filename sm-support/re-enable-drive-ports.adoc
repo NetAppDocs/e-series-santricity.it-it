@@ -1,0 +1,26 @@
+---
+permalink: sm-support/re-enable-drive-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
+summary: 'È possibile indicare al controller che è stata intrapresa un"azione correttiva per il ripristino da una condizione di errato cablaggio.' 
+---
+= Riattivare le porte delle unità
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile indicare al controller che è stata intrapresa un'azione correttiva per il ripristino da una condizione di errato cablaggio.
+
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Riabilitare Drive Ports* e confermare che si desidera eseguire l'operazione.
++
+Questa opzione viene visualizzata solo quando le porte dei dischi sono disattivate per lo storage array.
+
++
+Il controller riattiva le porte SAS disabilitate quando viene rilevato un errore di cablaggio.
+
+

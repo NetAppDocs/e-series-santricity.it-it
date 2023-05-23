@@ -1,0 +1,126 @@
+---
+permalink: sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host operating system, type, 
+summary: 'Il campo host Operating System Type (tipo di sistema operativo host) contiene il sistema operativo dell"host. È possibile selezionare il tipo di host consigliato dall"elenco a discesa o consentire all"HCA (host Context Agent) di configurare l"host e il tipo di sistema operativo appropriato.' 
+---
+= Come si fa a sapere quale tipo di sistema operativo host è corretto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il campo host Operating System Type (tipo di sistema operativo host) contiene il sistema operativo dell'host. È possibile selezionare il tipo di host consigliato dall'elenco a discesa o consentire all'HCA (host Context Agent) di configurare l'host e il tipo di sistema operativo appropriato.
+
+I tipi di host visualizzati nell'elenco a discesa dipendono dal modello di array di storage e dalla versione del firmware. Le versioni più recenti visualizzano prima le opzioni più comuni, che sono le più probabili. L'aspetto in questo elenco non implica che l'opzione sia completamente supportata.
+
+[NOTE]
+====
+Per ulteriori informazioni sul supporto degli host, fare riferimento a. https://imt.netapp.com/matrix/#welcome["Tool di matrice di interoperabilità NetApp"^].
+
+====
+Alcuni dei seguenti tipi di host potrebbero essere visualizzati nell'elenco:
+
+[cols="35h,~"]
+|===
+| Tipo di sistema operativo host | Sistema operativo e driver multipath 
+
+
+ a| 
+Linux DM-MP (kernel 3.10 o successivo)
+ a| 
+Supporta i sistemi operativi Linux che utilizzano una soluzione di failover multipath di Device Mapper con kernel 3.10 o successivo.
+
+
+
+ a| 
+VMware ESXi
+ a| 
+Supporta i sistemi operativi VMware ESXi che eseguono l'architettura NMP (Native Multipathing Plug-in) utilizzando il modulo SATP_ALUA Storage Array Type Policy integrato da VMware.
+
+
+
+ a| 
+Windows (in cluster o non in cluster)
+ a| 
+Supporta configurazioni in cluster o non in cluster di Windows che non eseguono il driver di multipathing atto.
+
+
+
+ a| 
+ATTO Cluster (tutti i sistemi operativi)
+ a| 
+Supporta tutte le configurazioni del cluster utilizzando il driver multipathing della tecnologia atto, Inc.
+
+
+
+ a| 
+Linux (Veritas DMP)
+ a| 
+Supporta i sistemi operativi Linux che utilizzano una soluzione multipathing Veritas DMP.
+
+
+
+ a| 
+Linux (atto)
+ a| 
+Supporta i sistemi operativi Linux che utilizzano un driver multipathing per la tecnologia atto, Inc.
+
+
+
+ a| 
+Mac OS (atto)
+ a| 
+Supporta le versioni di Mac OS che utilizzano un driver multipathing per la tecnologia atto, Inc.
+
+
+
+ a| 
+Windows (atto)
+ a| 
+Supporta i sistemi operativi Windows che utilizzano un driver multipathing per la tecnologia atto, Inc.
+
+
+
+ a| 
+FlexArray (ALUA)
+ a| 
+Supporta un sistema NetApp FlexArray che utilizza ALUA per il multipathing.
+
+
+
+ a| 
+SVC IBM
+ a| 
+Supporta una configurazione IBM SAN Volume Controller.
+
+
+
+ a| 
+Impostazione predefinita di fabbrica
+ a| 
+Riservato all'avvio iniziale dello storage array. Se il tipo di sistema operativo host in uso è impostato su Factory Default, modificarlo in modo che corrisponda al sistema operativo host e al driver multipath in esecuzione sull'host connesso.
+
+
+
+ a| 
+Linux DM-MP (kernel 3.9 o precedente)
+ a| 
+Supporta i sistemi operativi Linux che utilizzano una soluzione di failover multipath di Device Mapper con kernel 3.9 o precedente.
+
+
+
+ a| 
+Cluster di finestre (obsoleto)
+ a| 
+Se il tipo di sistema operativo host è impostato su questo valore, utilizzare l'impostazione Windows (in cluster o non in cluster).
+
+|===
+Una volta installato l'HCA e collegato lo storage all'host, l'HCA invia la topologia host ai controller di storage attraverso il percorso i/O. In base alla topologia dell'host, i controller di storage definiscono automaticamente l'host e le porte host associate, quindi impostano il tipo di host.
+
+[NOTE]
+====
+Se l'HCA non seleziona il tipo di host consigliato, è necessario impostare manualmente il tipo di host.
+
+====

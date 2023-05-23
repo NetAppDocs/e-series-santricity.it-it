@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-kind-of-volumes-can-be-used-for-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, snapshots, thin, standard, base, images 
+summary: I volumi standard e i volumi thin sono gli unici tipi di volumi che è possibile utilizzare per memorizzare le immagini snapshot. Non è possibile utilizzare volumi non standard. Il volume di base può risiedere in un pool o in un gruppo di volumi. 
+---
+= Quali tipi di volumi possono essere utilizzati per le snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I volumi standard e i volumi thin sono gli unici tipi di volumi che è possibile utilizzare per memorizzare le immagini snapshot. Non è possibile utilizzare volumi non standard. Il volume di base può risiedere in un pool o in un gruppo di volumi.

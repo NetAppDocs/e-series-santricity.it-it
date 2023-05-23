@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/import-trusted-certificates-for-controllers-acting-as-client.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, import, certificates, 
+summary: 'Se il controller rifiuta una connessione perché non è in grado di convalidare la catena di trust per un server di rete, è possibile importare un certificato dalla scheda Trusted che consente al controller (che agisce come client) di accettare le comunicazioni da quel server.' 
+---
+= Importare i certificati per i controller quando agiscono come client
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se il controller rifiuta una connessione perché non è in grado di convalidare la catena di trust per un server di rete, è possibile importare un certificato dalla scheda Trusted che consente al controller (che agisce come client) di accettare le comunicazioni da quel server.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni del certificato non vengono visualizzate.
+* I file dei certificati vengono installati nel sistema locale.
+
+
+.A proposito di questa attività
+Se si desidera consentire a un altro server di contattare i controller (ad esempio, un server LDAP o un server syslog che utilizza TLS), potrebbe essere necessario importare i certificati dalla scheda Trusted.
+
+.Fasi
+. Selezionare il menu:Impostazioni[certificati].
+. Dalla scheda Trusted (attendibile), selezionare *Import* (Importa).
++
+Viene visualizzata una finestra di dialogo per l'importazione dei file di certificato attendibili.
+
+. Fare clic su *Browse* (Sfoglia) per selezionare i file di certificato per i controller.
++
+I nomi dei file vengono visualizzati nella finestra di dialogo.
+
+. Fare clic su *Importa*.
+
+
+.Risultati
+I file vengono caricati e validati.

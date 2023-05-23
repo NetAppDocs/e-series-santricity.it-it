@@ -1,0 +1,38 @@
+---
+permalink: sm-support/view-iscsi-statistics-packages-support.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages 
+summary: È possibile visualizzare i dati relativi alle connessioni iSCSI allo storage array. 
+---
+= Visualizzare i pacchetti di statistiche iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare i dati relativi alle connessioni iSCSI allo storage array.
+
+.A proposito di questa attività
+System Manager mostra questi tipi di statistiche iSCSI. Tutte le statistiche sono di sola lettura e non possono essere impostate.
+
+* *Ethernet MAC statistics* -- fornisce statistiche per il controllo dell'accesso ai supporti (MAC). MAC fornisce anche un meccanismo di indirizzamento chiamato indirizzo fisico o indirizzo MAC. L'indirizzo MAC è un indirizzo univoco assegnato a ciascun adattatore di rete. L'indirizzo MAC consente di inviare pacchetti di dati a una destinazione all'interno della sottorete.
+* *Ethernet TCP/IP statistics* -- fornisce le statistiche per TCP/IP, ovvero il protocollo TCP (Transmission Control Protocol) e il protocollo Internet (IP) per il dispositivo iSCSI. Con TCP, le applicazioni sugli host collegati in rete possono creare connessioni tra loro, attraverso le quali possono scambiare dati in pacchetti. L'IP è un protocollo orientato ai dati che comunica i dati attraverso una rete interconnessa a commutazione di pacchetto. Le statistiche IPv4 e IPv6 vengono visualizzate separatamente.
+* *Statistiche Local Target/Initiator (protocollo)* -- Mostra le statistiche per la destinazione iSCSI, che fornisce l'accesso a livello di blocco ai relativi supporti di storage, e mostra le statistiche iSCSI per lo storage array quando viene utilizzato come iniziatore nelle operazioni di mirroring asincrono.
+* *DCBX Statistiche degli stati operativi* -- Visualizza gli stati operativi delle varie funzioni Data Center Bridging Exchange (DCBX).
+* *LLDP TLV statistics* -- Visualizza le statistiche LLDP (link Layer Discovery Protocol) Type Length Value (TLV).
+* *DCBX TLV statistics* -- Visualizza le informazioni che identificano le porte host degli array di storage in un ambiente Data Center Bridging (DCB). Queste informazioni vengono condivise con i peer di rete per scopi di identificazione e funzionalità.
+
+
+È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline. Le statistiche raw sono tutte le statistiche raccolte dall'avvio dei controller. Le statistiche di riferimento sono statistiche point-in-time raccolte dall'ora di riferimento impostata.
+
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *View iSCSI Statistics Packages* (Visualizza pacchetti di statistiche iSCSI).
+. Fare clic su una scheda per visualizzare i diversi set di statistiche.
+. Per impostare la linea di base, fare clic su *Set new baseline* (Imposta nuova linea di base).
++
+L'impostazione della linea di base consente di impostare un nuovo punto di partenza per la raccolta delle statistiche. Per tutte le statistiche iSCSI viene utilizzata la stessa linea di base.
+
+

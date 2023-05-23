@@ -1,0 +1,102 @@
+---
+permalink: sm-settings/clear-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
+summary: 'Utilizzare l"operazione Clear Configuration (Cancella configurazione) per eliminare tutti i pool, i gruppi di volumi, i volumi, le definizioni degli host e le assegnazioni degli host dall"array di storage.' 
+---
+= Configurazione chiara degli array di storage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare l'operazione Clear Configuration (Cancella configurazione) per eliminare tutti i pool, i gruppi di volumi, i volumi, le definizioni degli host e le assegnazioni degli host dall'array di storage.
+
+.Prima di iniziare
+Prima di cancellare la configurazione dello storage array, eseguire il backup dei dati.
+
+.A proposito di questa attività
+Sono disponibili due opzioni di configurazione Clear Storage Array:
+
+* *Volume* -- in genere, è possibile utilizzare l'opzione Volume per riconfigurare un array di storage di test come array di storage di produzione. Ad esempio, è possibile configurare un array di storage per il test e, al termine del test, rimuovere la configurazione di test e configurare l'array di storage per un ambiente di produzione.
+* *Storage Array* - in genere, è possibile utilizzare l'opzione Storage Array per spostare uno storage array in un altro reparto o gruppo. Ad esempio, è possibile utilizzare uno storage array in Engineering e ora Engineering sta ottenendo un nuovo storage array, quindi si desidera spostare lo storage array corrente in Administration, dove verrà riconfigurato.
++
+L'opzione Storage Array elimina alcune impostazioni aggiuntive.
+
+
+
+[cols="1a,1a,1a"]
+|===
+|  | Volume | Array di storage 
+
+
+ a| 
+Elimina pool e gruppi di volumi
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina i volumi
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina host e cluster di host
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina le assegnazioni degli host
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina il nome dell'array di storage
+ a| 
+ a| 
+X
+
+
+
+ a| 
+Ripristina le impostazioni predefinite della cache dell'array di storage
+ a| 
+ a| 
+X
+
+|===
+[CAUTION]
+====
+*Rischio di perdita di dati* -- questa operazione elimina tutti i dati dall'array di storage. (Non esegue una cancellazione sicura). Non è possibile annullare questa operazione dopo l'avvio. Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. Selezionare *Clear Storage Array Configuration* (Cancella configurazione array di storage).
+. Nell'elenco a discesa, selezionare *Volume* o *Storage Array*.
+. *Opzionale:* se si desidera salvare la configurazione (non i dati), utilizzare i collegamenti nella finestra di dialogo.
+. Confermare che si desidera eseguire l'operazione.
+
+
+.Risultati
+* La configurazione corrente viene eliminata, distruggendo tutti i dati esistenti sull'array di storage.
+* Tutti i dischi non sono assegnati.
+

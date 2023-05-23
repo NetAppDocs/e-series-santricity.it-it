@@ -1,0 +1,56 @@
+---
+permalink: sm-settings/back-up-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backup, security, key, 
+summary: 'Dopo aver creato o modificato una chiave di sicurezza, è possibile creare una copia di backup del file delle chiavi nel caso in cui l"originale venga danneggiato.' 
+---
+= Eseguire il backup della chiave di sicurezza
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver creato o modificato una chiave di sicurezza, è possibile creare una copia di backup del file delle chiavi nel caso in cui l'originale venga danneggiato.
+
+.A proposito di questa attività
+Questa attività descrive come eseguire il backup di una chiave di sicurezza creata in precedenza. Durante questa procedura, viene creata una nuova passphrase per il backup. Questa password non deve corrispondere alla password utilizzata al momento della creazione o dell'ultima modifica della chiave originale. La password viene applicata solo al backup che si sta creando.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Backup key*.
++
+Viene visualizzata la finestra di dialogo Back Up Security Key (Esegui backup chiave di protezione).
+
+. Nei campi *Definisci password/Inserisci nuova password*, immettere e confermare una password per il backup.
++
+Il valore può contenere da 8 a 32 caratteri e deve includere ciascuno dei seguenti elementi:
+
++
+** Una lettera maiuscola (una o più lettere)
+** Un numero (uno o più)
+** Un carattere non alfanumerico, ad esempio !, *, @ (uno o più)
+
+
++
+[CAUTION]
+====
+*Assicurarsi di registrare i dati immessi per un utilizzo successivo*. Per accedere al backup di questa chiave di sicurezza, è necessaria la password.
+
+====
+. Fare clic su *Backup*.
++
+Viene scaricato un backup della chiave di sicurezza sull'host locale, quindi viene visualizzata la finestra di dialogo *Conferma/Registra backup chiave di sicurezza*.
+
++
+[NOTE]
+====
+Il percorso del file della chiave di sicurezza scaricato potrebbe dipendere dalla posizione di download predefinita del browser.
+
+====
+. Registrare la password in una posizione sicura, quindi fare clic su *Chiudi*.
+
+
+.Al termine
+È necessario convalidare la chiave di sicurezza per il backup.

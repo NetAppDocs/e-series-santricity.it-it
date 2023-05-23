@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/enable-feature-pack.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, feature, pack, 
+summary: 'Un Feature Pack è un bundle che modifica gli attributi degli array di storage (ad esempio, la modifica del protocollo da Fibre Channel a iSCSI). I Feature Pack richiedono una chiave speciale per l"abilitazione.' 
+---
+= Abilitare il Feature Pack
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un Feature Pack è un bundle che modifica gli attributi degli array di storage (ad esempio, la modifica del protocollo da Fibre Channel a iSCSI). I Feature Pack richiedono una chiave speciale per l'abilitazione.
+
+.Prima di iniziare
+* Sono state seguite le istruzioni appropriate che descrivono la conversione e la preparazione per i nuovi attributi dello storage array. Per istruzioni sulla conversione del protocollo host, consultare la guida alla manutenzione dell'hardware del modello di controller in uso.
+* Lo storage array non è in linea, quindi non vi accedono host o applicazioni.
+* Viene eseguito il backup di tutti i dati.
+* È stato ottenuto un file Feature Pack.
++
+Il file del Feature Pack viene caricato sul client di gestione (il sistema con un browser per l'accesso a System Manager).
+
+
+
+[NOTE]
+====
+È necessario pianificare una finestra di manutenzione del downtime e interrompere tutte le operazioni di i/o tra l'host e i controller. Inoltre, tenere presente che non è possibile accedere ai dati sull'array di storage fino a quando la conversione non è stata completata correttamente.
+
+====
+.A proposito di questa attività
+Questa attività descrive come utilizzare System Manager per attivare un Feature Pack. Al termine, riavviare lo storage array.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *componenti aggiuntivi*, selezionare *Cambia Feature Pack*.
+. Fare clic su *Browse*, quindi selezionare il file delle chiavi.
++
+Il nome del file viene visualizzato nella finestra di dialogo.
+
+. Tipo `change` sul campo.
+. Fare clic su *Cambia*.
++
+Viene avviata la migrazione dei Feature Pack e i controller vengono riavviati. I dati della cache non scritti vengono cancellati, il che garantisce l'assenza di attività i/O. Entrambi i controller si riavviano automaticamente per rendere effettivo il nuovo Feature Pack. Una volta completato il riavvio, lo storage array torna allo stato di risposta.
+
+

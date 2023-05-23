@@ -1,0 +1,41 @@
+---
+permalink: sm-mirroring/remove-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
+summary: 'Rimuovere una coppia mirrorata per rimuovere la relazione di mirroring dal volume primario sull"array di storage locale e dal volume secondario sull"array di storage remoto.' 
+---
+= Rimuovere la relazione di mirroring asincrona
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Rimuovere una coppia mirrorata per rimuovere la relazione di mirroring dal volume primario sull'array di storage locale e dal volume secondario sull'array di storage remoto.
+
+.A proposito di questa attività
+Esaminare le seguenti informazioni sulle coppie di mirroring orfane:
+
+* Esiste una coppia di mirroring orfani quando un volume membro di un gruppo di mirror di coerenza è stato rimosso da un lato (lato dell'array di storage locale o lato dell'array di storage remoto) ma non dall'altro.
+* Le coppie di mirroring orfane vengono rilevate quando viene ripristinata la comunicazione tra array e i due lati della configurazione di mirroring riconciliano i parametri di mirroring.
+* È possibile rimuovere una coppia mirrorata per correggere uno stato di coppia mirrorata orfana.
+
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *coppia mirrorata*.
++
+Viene visualizzata la tabella delle coppie mirrorate, che mostra tutte le coppie mirrorate associate all'array di storage.
+
+. Selezionare la coppia mirrorata che si desidera rimuovere, quindi fare clic su *Rimuovi*.
+. Confermare la rimozione della coppia mirrorata, quindi fare clic su *Rimuovi*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Rimuove la relazione di mirroring dal gruppo di coerenza di mirroring sull'array di storage locale e sull'array di storage remoto ed elimina la capacità riservata.
+* Restituisce il volume primario e il volume secondario a volumi non mirrorati accessibili all'host.
+* Aggiorna il riquadro di mirroring asincrono con la rimozione della coppia di mirroring asincrono.
+

@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/edit-user-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, user, settings, snmpv3, traps, 
+summary: È possibile modificare le definizioni utente per i trap SNMPv3. 
+---
+= Modificare le impostazioni utente per i trap SNMPv3
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le definizioni utente per i trap SNMPv3.
+
+.Prima di iniziare
+È necessario creare un utente per la trap SNMPv3.
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *SNMP*.
++
+Le destinazioni trap e i nomi utente vengono visualizzati nella tabella.
+
+. Per modificare una definizione utente, selezionare l'utente nella tabella, quindi fare clic su *Configura utenti*.
+. Nella finestra di dialogo, fare clic su *Visualizza/Modifica impostazioni*.
+. Modificare le seguenti informazioni:
++
+** *Nome utente* -- consente di modificare il nome che identifica l'utente, che può contenere fino a 31 caratteri.
+** *ID motore* -- selezionare l'ID motore, utilizzato per generare chiavi di autenticazione e crittografia per i messaggi, che deve essere univoco nel dominio amministrativo. Nella maggior parte dei casi, selezionare *locale*. Se si dispone di una configurazione non standard, selezionare *Custom*; viene visualizzato un altro campo in cui inserire l'ID del motore autorevole come stringa esadecimale, con un numero pari di caratteri compreso tra 10 e 32 caratteri.
+** *Authentication credentials* -- selezionare un protocollo di autenticazione che garantisca l'identità degli utenti. Quindi, inserire una password di autenticazione, necessaria quando si imposta o si modifica il protocollo di autenticazione. La password deve contenere da 8 a 128 caratteri.
+** *Privacy credentials* -- selezionare un protocollo per la privacy utilizzato per crittografare il contenuto dei messaggi. Quindi, inserire una password per la privacy, necessaria quando il protocollo per la privacy viene impostato o modificato. La password deve contenere da 8 a 128 caratteri.
+
+
+
+
+.Risultati
+La scheda SNMP della pagina Avvisi visualizza le impostazioni aggiornate.

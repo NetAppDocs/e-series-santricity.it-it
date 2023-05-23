@@ -1,0 +1,84 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, terms 
+summary: Scopri in che modo i termini del mirroring sincrono si applicano al tuo storage array. 
+---
+= Terminologia del mirroring sincrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri in che modo i termini del mirroring sincrono si applicano al tuo storage array.
+
+[cols="25h,~"]
+|===
+| Termine | Descrizione 
+
+
+ a| 
+Storage array locale
+ a| 
+L'array di storage locale è l'array di storage su cui si sta agendo.
+
+Quando nella colonna Local role (ruolo locale) viene visualizzato *Primary*, l'array di storage contiene il volume che detiene il ruolo primario nella relazione mirror. Quando nella colonna ruolo locale viene visualizzato *secondario*, l'array di storage contiene il volume che contiene il ruolo secondario nella relazione mirror.
+
+
+
+ a| 
+Coppia mirrorata
+ a| 
+Una coppia mirrorata è composta da due volumi, un volume primario e un volume secondario.
+
+
+
+ a| 
+Volume primario
+ a| 
+Il volume principale di una coppia mirrorata è il volume di origine da mirrorare.
+
+
+
+ a| 
+Recovery Point Objective (RPO) (obiettivo punto di ripristino)
+ a| 
+Recovery Point Objective (RPO) rappresenta un obiettivo che indica la differenza considerata accettabile tra il volume primario e il volume secondario in una coppia mirrorata. Un RPO pari a zero indica che non è possibile tollerare alcuna differenza tra il volume primario e il volume secondario. Un RPO maggiore di zero indica che il volume secondario è meno attuale o è indietro rispetto al volume primario.
+
+
+
+ a| 
+Storage array remoto
+ a| 
+L'array di storage remoto è generalmente designato come sito secondario, che di solito contiene una replica dei dati in una configurazione di mirroring.
+
+
+
+ a| 
+Capacità riservata
+ a| 
+La capacità riservata è la capacità fisica allocata utilizzata per qualsiasi operazione del servizio di copia e oggetto di storage. Non è direttamente leggibile dall'host.
+
+
+
+ a| 
+Cambiamento di ruolo
+ a| 
+Il cambiamento di ruolo consiste nell'assegnare il ruolo primario al volume secondario e viceversa.
+
+
+
+ a| 
+Volume secondario
+ a| 
+Il volume secondario di una coppia mirrorata si trova in genere in un sito secondario e contiene una replica dei dati.
+
+
+
+ a| 
+Sincronizzazione
+ a| 
+La sincronizzazione avviene alla sincronizzazione iniziale tra lo storage array locale e lo storage array remoto. La sincronizzazione si verifica anche quando i volumi primario e secondario non vengono sincronizzati dopo un'interruzione della comunicazione. Quando il collegamento di comunicazione funziona di nuovo, tutti i dati non replicati vengono sincronizzati con l'array di storage del volume secondario.
+
+|===

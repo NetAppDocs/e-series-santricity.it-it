@@ -1,0 +1,66 @@
+---
+permalink: sm-hardware/assign-hot-spares-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, assign, hot, spares, raid, 
+summary: 'È possibile assegnare un hot spare come unità di standby per una protezione dei dati aggiuntiva nei gruppi di volumi RAID 1, RAID 5 o RAID 6. Se un disco si guasta in uno di questi gruppi di volumi, il controller ricostruisce i dati dal disco guasto all"hot spare.' 
+---
+= Assegnare hot spare
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile assegnare un hot spare come unità di standby per una protezione dei dati aggiuntiva nei gruppi di volumi RAID 1, RAID 5 o RAID 6. Se un disco si guasta in uno di questi gruppi di volumi, il controller ricostruisce i dati dal disco guasto all'hot spare.
+
+.Prima di iniziare
+* È necessario creare gruppi di volumi RAID 1, RAID 5 o RAID 6. (Non è possibile utilizzare hot spare per i pool. Un pool utilizza invece la capacità di riserva all'interno di ogni disco per la protezione dei dati.
+* Deve essere disponibile un'unità che soddisfi i seguenti criteri:
++
+** Non assegnato, con stato ottimale.
+** Stesso tipo di supporto dei dischi nel gruppo di volumi (ad esempio, SSD).
+** Stesso tipo di interfaccia dei dischi nel gruppo di volumi (ad esempio, SAS).
+** Capacità uguale o superiore alla capacità utilizzata dei dischi nel gruppo di volumi.
+
+
+
+
+.A proposito di questa attività
+Questa attività descrive come assegnare manualmente un hot spare dalla pagina hardware. La copertura consigliata è di due hot spare per set di dischi.
+
+[NOTE]
+====
+È possibile assegnare hot spare anche dalla procedura guidata di installazione iniziale. È possibile determinare se le hot spare sono già assegnate cercando gli alloggiamenti per dischi indicati in rosa nella pagina hardware.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Selezionare un'unità non assegnata (visualizzata in grigio) che si desidera utilizzare come hot spare.
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Selezionare *Assegna hot spare*.
++
+Se l'unità è abilitata per la cancellazione sicura, viene visualizzata la finestra di dialogo. Per utilizzare un disco abilitato alla protezione come hot spare, è necessario eseguire un'operazione di cancellazione sicura per rimuovere tutti i dati e reimpostare gli attributi di sicurezza.
+
++
+[CAUTION]
+====
+*Possibile perdita di dati* -- assicurarsi di aver selezionato il disco corretto. Una volta completata l'operazione di cancellazione sicura, non è possibile ripristinare i dati.
+
+====
++
+Se il disco è abilitato *non* alla protezione, viene visualizzata la finestra di dialogo Confirm Assign Hot Spare Drive (Conferma assegnazione unità hot spare).
+
+. Esaminare il testo nella finestra di dialogo, quindi confermare l'operazione.
++
+Il disco viene visualizzato in rosa nella pagina hardware, che indica che si tratta di un disco hot spare.
+
+
+
+.Risultati
+Se un disco all'interno di un gruppo di volumi RAID 1, RAID 5 o RAID 6 si guasta, il controller utilizza automaticamente i dati di ridondanza per ricostruire i dati dal disco guasto all'hot spare.

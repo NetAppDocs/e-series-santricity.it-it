@@ -1,0 +1,64 @@
+---
+permalink: sm-hardware/replace-drive-logically-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, replace, drive, logically, 
+summary: 'Se un disco si guasta o si desidera sostituirlo per qualsiasi altro motivo e si dispone di un disco non assegnato nell"array di storage, è possibile sostituire logicamente il disco guasto con quello non assegnato. Se non si dispone di un disco non assegnato, è possibile sostituirlo fisicamente.' 
+---
+= Sostituire l'unità in modo logico
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se un disco si guasta o si desidera sostituirlo per qualsiasi altro motivo, è possibile sostituire logicamente il disco guasto con un disco non assegnato o un hot spare completamente integrato.
+
+.A proposito di questa attività
+Quando si sostituisce logicamente un disco, questo viene assegnato e diventa un membro permanente del pool o gruppo di volumi associato.
+
+Utilizzare l'opzione di sostituzione logica per sostituire i seguenti tipi di dischi:
+
+* Dischi guasti
+* Dischi mancanti
+* Dischi SSD che il Recovery Guru ti ha notificato che stanno per finire il loro ciclo di vita
+* Dischi rigidi che il Recovery Guru ha notificato che si è verificato un guasto imminente del disco
+* Dischi assegnati (disponibili solo per i dischi di un gruppo di volumi, non in un pool)
+
+
+.Prima di iniziare
+L'unità sostitutiva deve avere le seguenti caratteristiche:
+
+* Nello stato ottimale
+* Nello stato non assegnato
+* Gli stessi attributi del disco da sostituire (tipo di supporto, tipo di interfaccia e così via)
+* La stessa funzionalità FDE (consigliata, ma non richiesta)
+* La stessa funzionalità da (consigliata, ma non richiesta)
+
+
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Fare clic sull'unità che si desidera sostituire logicamente.
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Fare clic su *logicamente sostituire*.
+. *Opzionale:* selezionare la casella di controllo *disco guasto dopo la sostituzione* per eseguire il failover del disco originale dopo la sostituzione.
++
+Questa casella di controllo è attivata solo se l'unità assegnata originale non presenta guasti o è mancante.
+
+. Dalla tabella *Select a replacement drive* (selezionare un'unità sostitutiva), selezionare l'unità sostitutiva che si desidera utilizzare.
++
+La tabella elenca solo le unità compatibili con l'unità che si sta sostituendo. Se possibile, selezionare un'unità che mantenga la protezione contro la perdita di shelf e la protezione contro la perdita di cassetto.
+
+. Fare clic su *Sostituisci*.
++
+Se il disco originale è guasto o mancante, i dati vengono ricostruiti sul disco sostitutivo utilizzando le informazioni di parità. La ricostruzione inizia automaticamente. Gli indicatori luminosi di guasto del disco si spengono e gli indicatori luminosi di attività dei dischi nel pool o nel gruppo di volumi iniziano a lampeggiare.
+
++
+Se l'unità originale non presenta guasti o è mancante, i dati vengono copiati nell'unità sostitutiva. Questa operazione di copia viene avviata automaticamente. Una volta completata l'operazione di copia, il sistema passa allo stato non assegnato dell'unità originale o, se la casella di controllo è stata selezionata, allo stato non riuscito.
+
+

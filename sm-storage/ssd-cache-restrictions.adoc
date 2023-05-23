@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/ssd-cache-restrictions.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd, cache, restrictions 
+summary: 'Scopri le restrizioni relative all"utilizzo della cache SSD sull"array di storage.' 
+---
+= Limitazioni della cache SSD
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri le restrizioni relative all'utilizzo della cache SSD sull'array di storage.
+
+
+
+== Restrizioni
+
+* Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non è idoneo per un trasferimento automatico del bilanciamento del carico.
+* Attualmente, è supportata una sola cache SSD per array di storage.
+* La capacità massima di cache SSD utilizzabile su un array di storage è di 5 TB.
+* La cache SSD non è supportata sulle immagini Snapshot.
+* La cache SSD non è disponibile sul sistema storage EF600 o EF300.
+* Se si importano o esportano volumi con cache SSD attivata o disattivata, i dati memorizzati nella cache non vengono importati o esportati.
+* Non è possibile rimuovere l'ultimo disco in una cache SSD senza prima eliminare la cache SSD.
+
+
+
+
+== Restrizioni con Drive Security
+
+* È possibile attivare la sicurezza su SSD cache solo quando si crea la cache SSD. Non è possibile attivare la protezione in un secondo momento, come su un volume.
+* Se si utilizzano dischi che supportano la sicurezza con dischi che non sono sicuri in SSD cache, non è possibile attivare Drive Security per questi dischi.
+* I volumi abilitati per la sicurezza devono disporre di una cache SSD abilitata per la sicurezza.
+

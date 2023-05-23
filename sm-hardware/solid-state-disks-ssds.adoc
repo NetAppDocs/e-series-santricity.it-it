@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/solid-state-disks-ssds.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
+summary: 'I dischi a stato solido (SSD) sono dispositivi di storage che utilizzano la memoria a stato solido (flash) per memorizzare i dati in modo persistente. Gli SSD emulano i dischi rigidi convenzionali e sono disponibili con le stesse interfacce utilizzate dai dischi rigidi.' 
+---
+= Dischi a stato solido (SSD)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I dischi a stato solido (SSD) sono dispositivi di storage che utilizzano la memoria a stato solido (flash) per memorizzare i dati in modo persistente. Gli SSD emulano i dischi rigidi convenzionali e sono disponibili con le stesse interfacce utilizzate dai dischi rigidi.
+
+
+
+== Vantaggi degli SSD
+
+I vantaggi degli SSD rispetto ai dischi rigidi includono:
+
+* Avvio più rapido (senza spin up)
+* Latenza inferiore
+* IOPS (Higher i/o Operations per second)
+* Maggiore affidabilità con meno parti in movimento
+* Minore consumo di energia
+* Meno calore prodotto e meno raffreddamento richiesto
+
+
+
+
+== Identificazione degli SSD
+
+Dalla pagina hardware, è possibile individuare gli SSD nella vista dello shelf anteriore. Individuare gli alloggiamenti dei dischi che visualizzano l'icona di un fulmine che indica l'installazione di un SSD.
+
+
+
+== Gruppi di volumi
+
+Tutti i dischi di un gruppo di volumi devono essere dello stesso tipo di supporto (tutti gli SSD o tutti i dischi rigidi). I gruppi di volumi non possono avere una combinazione di tipi di supporti o di tipi di interfaccia.
+
+
+
+== Caching
+
+Il caching in scrittura del controller è sempre abilitato per gli SSD. Il caching in scrittura migliora le performance e prolunga la durata dell'SSD.
+
+Oltre alla cache del controller, è possibile implementare la funzione cache SSD per migliorare le prestazioni generali del sistema. Nella cache SSD, i dati vengono copiati dai volumi e memorizzati su due volumi RAID interni (uno per controller).

@@ -1,0 +1,42 @@
+---
+permalink: sm-support/what-type-of-data-is-collected-through-autosupport.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collected, autosupport, ASUP 
+summary: 'La funzione AutoSupport contiene tre tipi di spedizione standard: Spedizioni di eventi, spedizioni pianificate e spedizioni di diagnostica on-demand e remote.' 
+---
+= Che tipo di dati vengono raccolti tramite la funzione AutoSupport?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione AutoSupport contiene tre tipi di spedizione standard: Spedizioni di eventi, spedizioni pianificate e spedizioni di diagnostica on-demand e remote.
+
+I dati AutoSupport non contengono dati utente.
+
+* *Dispatch evento*
++
+Quando si verificano eventi nel sistema che richiedono una notifica proattiva al supporto tecnico, la funzione AutoSupport invia automaticamente un dispatch attivato dagli eventi.
+
++
+** Inviato quando si verifica un evento di supporto sull'array di storage gestito.
+** Include un'istantanea completa di ciò che stava accadendo con lo storage array al momento dell'evento.
+
+
+* *Spedizioni pianificate*
++
+La funzione AutoSupport invia automaticamente diverse spedizioni in base a una pianificazione regolare.
+
++
+** *Daily Dispatches* -- inviato una volta al giorno durante un intervallo di tempo configurabile dall'utente. Include i registri degli eventi di sistema correnti e i dati sulle prestazioni.
+** *Spedizioni settimanali* -- inviate una volta alla settimana durante un giorno e un intervallo di tempo configurabili dall'utente. Include informazioni sulla configurazione e sullo stato del sistema.
+
+
+* *Dispatches di AutoSupport OnDemand e diagnostica remota*
++
+** *AutoSupport OnDemand* -- consente al supporto tecnico di richiedere la ritrasmissione di un precedente dispatch AutoSupport quando necessario per la risoluzione di un problema. Tutte le trasmissioni vengono avviate dallo storage array, non dal server AutoSupport. Lo storage array esegue periodicamente il check-in con il server AutoSupport per determinare se sono presenti richieste di ritrasmissione in sospeso e risponde di conseguenza.
+** *Diagnostica remota* -- consente al supporto tecnico di richiedere una nuova spedizione AutoSupport aggiornata quando necessario per la risoluzione di un problema. Tutte le trasmissioni vengono avviate dallo storage array, non dal server AutoSupport. Lo storage array esegue periodicamente il check-in con il server AutoSupport per determinare se sono presenti nuove richieste in sospeso e risponde di conseguenza.
+
+
+

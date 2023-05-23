@@ -1,0 +1,22 @@
+---
+permalink: sm-hardware/when-should-i-refresh-the-port-configuration-or-the-isns-server-from-the-dhcp-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, port, configuration, isns, server, dhcp, server, 
+summary: 'Aggiornare il server DHCP ogni volta che il server viene modificato o aggiornato e le informazioni DHCP relative all"array di storage corrente e all"array di storage che si desidera utilizzare sono cambiate.' 
+---
+= Quando è necessario aggiornare la configurazione della porta o il server iSNS dal server DHCP?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggiornare il server DHCP ogni volta che il server viene modificato o aggiornato e le informazioni DHCP relative all'array di storage corrente e all'array di storage che si desidera utilizzare sono cambiate.
+
+In particolare, aggiornare la configurazione della porta o il server iSNS dal server DHCP quando si sa che il server DHCP assegnerà indirizzi diversi.
+
+[NOTE]
+====
+L'aggiornamento della configurazione di una porta è distruttivo per tutte le connessioni iSCSI su tale porta.
+
+====

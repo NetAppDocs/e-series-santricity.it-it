@@ -1,0 +1,47 @@
+---
+permalink: sm-mirroring/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, reserved, capacity, settings, mirrored, pair, volume, 
+summary: È possibile modificare le impostazioni di un volume di coppia mirrorata per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per un volume di coppia mirrorata è quasi piena. 
+---
+= Modificare le impostazioni di capacità riservata per un volume di coppia mirrorata
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni di un volume di coppia mirrorata per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per un volume di coppia mirrorata è quasi piena.
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Selezionare la scheda *capacità riservata*.
+. Selezionare il volume della coppia mirrorata che si desidera modificare, quindi fare clic su *Visualizza/Modifica impostazioni*.
++
+Viene visualizzata la finestra di dialogo Impostazioni capacità riservata volume coppia mirrorata.
+
+. Modificare le impostazioni di capacità riservata per il volume di coppia mirrorata in base alle esigenze.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Avvisami quando...
+ a| 
+Utilizzare la casella di selezione per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per una coppia mirrorata è quasi piena.
+
+Quando la capacità riservata per la coppia mirrorata supera la soglia specificata, System Manager invia un avviso, consentendo di aumentare la capacità riservata.
+
+
+NOTE: La modifica dell'impostazione Avviso per una coppia mirrorata modifica l'impostazione Avviso per tutte le coppie mirrorate che appartengono allo stesso gruppo di coerenza mirror.
+
+|===
+====
+. Fare clic su *Save* (Salva) per applicare le modifiche.
+

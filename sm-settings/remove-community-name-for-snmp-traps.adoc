@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/remove-community-name-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, communities, snmpv2c, traps, 
+summary: È possibile rimuovere un nome di comunità per i trap SNMPv2c. 
+---
+= Rimuovere le community per le trap SNMPv2c
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere un nome di comunità per i trap SNMPv2c.
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *SNMP*.
++
+Le destinazioni trap e i nomi di comunità vengono visualizzati nella pagina *Avvisi*.
+
+. Selezionare *Configura community*.
++
+Viene visualizzata la finestra di dialogo Configura comunità.
+
+. Selezionare il nome della community che si desidera eliminare, quindi fare clic sull'icona *Rimuovi* (X) all'estrema destra.
++
+Se le destinazioni trap sono associate a questo nome di comunità, la finestra di dialogo Conferma rimozione comunità mostra gli indirizzi di destinazione trap interessati.
+
+. Confermare l'operazione, quindi fare clic su *Rimuovi*.
+
+
+.Risultati
+Il nome di comunità e la destinazione trap associata vengono rimossi dalla pagina Avvisi.

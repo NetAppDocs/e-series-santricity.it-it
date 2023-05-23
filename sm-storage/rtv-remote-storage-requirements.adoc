@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/rtv-remote-storage-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
+summary: Prima di utilizzare la funzione di storage remoto, esaminare i seguenti requisiti e limitazioni. 
+---
+= Requisiti delle funzionalità dello storage remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di utilizzare la funzione di storage remoto, esaminare i seguenti requisiti e limitazioni.
+
+
+
+== Protocolli supportati
+
+Sono supportati i seguenti protocolli:
+
+* ISCSI
+* IPv4
+
+
+Per informazioni aggiornate sul supporto e-Series e sulla configurazione, consultare https://imt.netapp.com/matrix/#welcome["Tool di matrice di interoperabilità NetApp"^].
+
+
+
+== Requisiti hardware
+
+Il sistema storage e-Series deve includere:
+
+* Due controller (modalità duplex)
+* Connessioni iSCSI per i controller e-Series per comunicare con il sistema di storage remoto attraverso una o più connessioni iSCSI
+* SANtricity OS 11.71 o superiore
+* Funzione di storage remoto attivata nell'ID modello secondario (SMID)
+
+
+Il sistema remoto può essere un sistema storage e-Series o un sistema di un altro vendor. Deve includere:
+
+* Interfacce compatibili con iSCSI
+
+
+
+
+== Restrizioni
+
+La funzione di storage remoto presenta le seguenti restrizioni:
+
+* Il mirroring deve essere disattivato.
+* Il volume di destinazione sul sistema e-Series non deve disporre di snapshot.
+* Il volume di destinazione sul sistema e-Series non deve essere mappato ad alcun host prima dell'avvio dell'importazione.
+* Il provisioning delle risorse del volume di destinazione nel sistema e-Series deve essere disattivato.
+* I mapping diretti del volume di storage remoto a uno o più host non sono supportati.
+* Il proxy dei servizi Web non è supportato.
+* I segreti CHAP iSCSI non sono supportati.
+* SMcli non è supportato.
+* VMware Datastore non è supportato.
+* Quando è presente una coppia di importazione, è possibile aggiornare un solo sistema di storage alla volta nella coppia relazione/importazione.
+

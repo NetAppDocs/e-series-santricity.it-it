@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/switch-from-external-to-internal-key-management.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
+summary: 'È possibile modificare il metodo di gestione di Drive Security da un server di chiavi esterno al metodo interno utilizzato dall"array di storage. La chiave di sicurezza precedentemente definita per la gestione esterna delle chiavi viene quindi utilizzata per la gestione interna delle chiavi.' 
+---
+= Passare dalla gestione delle chiavi esterna a quella interna
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il metodo di gestione di Drive Security da un server di chiavi esterno al metodo interno utilizzato dall'array di storage. La chiave di sicurezza precedentemente definita per la gestione esterna delle chiavi viene quindi utilizzata per la gestione interna delle chiavi.
+
+.A proposito di questa attività
+In questa attività, si disattiva la gestione delle chiavi esterne e si scarica una nuova copia di backup sull'host locale. La chiave esistente viene ancora utilizzata per Drive Security, ma verrà gestita internamente nell'array di storage.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Disable External Key Management* (Disattiva gestione chiavi esterne).
++
+Viene visualizzata la finestra di dialogo Disattiva gestione chiavi esterne.
+
+. In *definire una passphrase/immettere nuovamente la passphrase*, inserire e confermare una passphrase per il backup della chiave. Il valore può contenere da 8 a 32 caratteri e deve includere ciascuno dei seguenti elementi:
++
+** Una lettera maiuscola (una o più lettere). Tenere presente che la password distingue tra maiuscole e minuscole.
+** Un numero (uno o più).
+** Un carattere non alfanumerico, ad esempio !, *, @ (uno o più).
+
+
++
+[CAUTION]
+====
+_Assicurarsi di registrare le voci per un utilizzo successivo_. Se è necessario spostare un'unità abilitata per la sicurezza dall'array di storage, è necessario conoscere l'identificatore e la password per sbloccare i dati dell'unità.
+
+====
+. Fare clic su *Disable* (Disattiva).
++
+La chiave di backup viene scaricata sull'host locale.
+
+. Registrare l'identificativo della chiave, la password e la posizione del file delle chiavi scaricato, quindi fare clic su *Chiudi*.
+
+
+.Risultati
+Drive Security è ora gestito internamente attraverso lo storage array.
+
+.Al termine
+È necessario convalidare la chiave di sicurezza per assicurarsi che il file delle chiavi non sia corrotto.

@@ -1,0 +1,30 @@
+---
+permalink: um-manage/what-do-i-need-to-know-before-creating-a-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, creating, mirrored, pair 
+summary: Prima di creare una coppia mirrorata, seguire queste linee guida. 
+---
+= Cosa occorre sapere prima di creare una coppia mirrorata?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di creare una coppia mirrorata, seguire queste linee guida.
+
+* È necessario disporre di due array di storage.
+* Ogni array di storage deve avere due controller.
+* I due storage array devono essere rilevati in Unified Manager.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* È necessario disporre di capacità libera sufficiente sull'array di storage remoto per creare un volume secondario uguale o superiore al volume primario che si desidera eseguire il mirroring.
+* Il mirroring asincrono è supportato sui controller con porte host Fibre Channel (FC) o iSCSI, mentre il mirroring sincrono è supportato solo sui controller con porte host FC.
+
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====

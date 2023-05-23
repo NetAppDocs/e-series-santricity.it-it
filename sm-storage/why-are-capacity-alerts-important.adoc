@@ -1,0 +1,23 @@
+---
+permalink: sm-storage/why-are-capacity-alerts-important.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, alerts, important 
+summary: Gli avvisi relativi alla capacità indicano quando aggiungere dischi a un pool. Un pool ha bisogno di capacità libera sufficiente per eseguire correttamente le operazioni degli array di storage. È possibile evitare interruzioni di queste operazioni configurando System Manager in modo che invii avvisi quando la capacità libera di un pool raggiunge o supera una determinata percentuale. 
+---
+= Perché gli avvisi di capacità sono importanti?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli avvisi relativi alla capacità indicano quando aggiungere dischi a un pool. Un pool ha bisogno di capacità libera sufficiente per eseguire correttamente le operazioni degli array di storage. È possibile evitare interruzioni di queste operazioni configurando System Manager in modo che invii avvisi quando la capacità libera di un pool raggiunge o supera una determinata percentuale.
+
+Questa percentuale viene impostata quando si crea un pool utilizzando l'opzione *Pool auto-Configuration* o l'opzione *Create pool*. Se si sceglie l'opzione automatica, le impostazioni predefinite determinano automaticamente quando si ricevono notifiche di avviso. Se si sceglie di creare manualmente il pool, è possibile determinare le impostazioni di notifica degli avvisi oppure, se si preferisce, è possibile accettare le impostazioni predefinite. È possibile regolare queste impostazioni in un secondo momento nel menu:Impostazioni[Avvisi].
+
+[NOTE]
+====
+Quando la capacità libera nel pool raggiunge la percentuale specificata, viene inviata una notifica di avviso utilizzando il metodo specificato nella configurazione di avviso.
+
+====

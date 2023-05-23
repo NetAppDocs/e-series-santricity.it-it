@@ -1,0 +1,56 @@
+---
+permalink: sm-settings/configure-snmp-mib-variables.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, mib, variables, 
+summary: 'Per gli avvisi SNMP, è possibile configurare facoltativamente le variabili MIB (Management Information base) che vengono visualizzate nei trap SNMP. Queste variabili possono restituire il nome dell"array di storage, la posizione dell"array e una persona di contatto.' 
+---
+= Configurare le variabili SNMP MIB
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per gli avvisi SNMP, è possibile configurare facoltativamente le variabili MIB (Management Information base) che vengono visualizzate nei trap SNMP. Queste variabili possono restituire il nome dell'array di storage, la posizione dell'array e una persona di contatto.
+
+.Prima di iniziare
+Il file MIB deve essere copiato e compilato sul server con l'applicazione di servizio SNMP.
+
+Se non si dispone di un file MIB, è possibile ottenerlo come segue:
+
+* Passare a. https://mysupport.netapp.com/site/global/dashboard["Supporto NetApp"^].
+* Fare clic su *Downloads*, quindi selezionare *Downloads*.
+* Fare clic su *Software controller OS SANtricity e-Series*.
+* Selezionare *Scarica ultima release*.
+* Effettuare l'accesso.
+* Accettare la dichiarazione di attenzione e il contratto di licenza.
+* Scorrere verso il basso fino a visualizzare il file MIB per il tipo di controller in uso, quindi fare clic sul collegamento per scaricare il file.
+
+
+.A proposito di questa attività
+Questa attività descrive come definire le variabili MIB per i trap SNMP. Queste variabili possono restituire i seguenti valori in risposta a SNMP GetRequests:
+
+* `sysName` (nome dell'array di storage)
+* `sysLocation` (posizione dello storage array)
+* `sysContact` (nome di un amministratore)
+
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *SNMP*.
+. Selezionare *Configure SNMP MIB variables* (Configura variabili SNMP MIB).
++
+Viene visualizzata la finestra di dialogo Configura variabili MIB SNMP.
+
+. Immettere uno o più dei seguenti valori, quindi fare clic su *Save* (Salva).
++
+** *Name* -- il valore per la variabile MIB `sysName`. Ad esempio, inserire un nome per l'array di storage.
+** *Location* -- il valore della variabile MIB `sysLocation`. Ad esempio, inserire una posizione dell'array di storage.
+** *Contatto* -- il valore della variabile MIB `sysContact`. Ad esempio, inserire un amministratore responsabile dello storage array.
+
+
+
+
+.Risultati
+Questi valori vengono visualizzati nei messaggi trap SNMP per gli avvisi degli array di storage.

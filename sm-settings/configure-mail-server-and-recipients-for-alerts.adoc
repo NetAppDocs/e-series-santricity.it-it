@@ -1,0 +1,77 @@
+---
+permalink: sm-settings/configure-mail-server-and-recipients-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
+summary: Per configurare gli avvisi e-mail, è necessario specificare un indirizzo del server di posta e gli indirizzi e-mail dei destinatari degli avvisi. Sono consentiti fino a 20 indirizzi e-mail. 
+---
+= Configurare il server di posta e i destinatari per gli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per configurare gli avvisi e-mail, è necessario specificare un indirizzo del server di posta e gli indirizzi e-mail dei destinatari degli avvisi. Sono consentiti fino a 20 indirizzi e-mail.
+
+.Prima di iniziare
+* L'indirizzo del server di posta deve essere disponibile. L'indirizzo può essere un indirizzo IPv4 o IPv6 o un nome di dominio completo.
++
+[NOTE]
+====
+Per utilizzare un nome di dominio completo, è necessario configurare un server DNS su entrambi i controller. È possibile configurare un server DNS dalla pagina hardware.
+
+====
+* L'indirizzo e-mail da utilizzare come mittente dell'avviso deve essere disponibile. Indirizzo visualizzato nel campo "da" del messaggio di avviso. Nel protocollo SMTP è richiesto un indirizzo mittente; senza di esso, si verifica un errore.
+* Gli indirizzi e-mail dei destinatari degli avvisi devono essere disponibili. Il destinatario è in genere un indirizzo per un amministratore di rete o di storage. È possibile inserire fino a 20 indirizzi e-mail.
+
+
+.A proposito di questa attività
+Questa attività descrive come configurare il server di posta, inserire gli indirizzi e-mail per il mittente e i destinatari e verificare tutti gli indirizzi e-mail immessi nella pagina Avvisi.
+
+[NOTE]
+====
+Gli avvisi e-mail possono essere configurati anche dalla procedura di installazione guidata iniziale.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *Email*.
++
+Se un server di posta elettronica non è ancora configurato, nella scheda e-mail viene visualizzato il messaggio "Configura server di posta".
+
+. Selezionare *Configura server di posta*.
++
+Viene visualizzata la finestra di dialogo Configura server di posta.
+
+. Immettere le informazioni sul server di posta, quindi fare clic su *Salva*.
++
+** *Indirizzo server di posta* -- immettere un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6 del server di posta.
++
+[NOTE]
+====
+Per utilizzare un nome di dominio completo, è necessario configurare un server DNS su entrambi i controller. È possibile configurare un server DNS dalla pagina hardware.
+
+====
+** *Indirizzo email mittente* -- Inserisci un indirizzo email valido da utilizzare come mittente del messaggio. Questo indirizzo viene visualizzato nel campo "da" del messaggio di posta elettronica.
+** *Encryption* -- se si desidera crittografare i messaggi, selezionare *SMTPS* o *STARTTLS* come tipo di crittografia, quindi selezionare il numero di porta per i messaggi crittografati. In caso contrario, selezionare *Nessuno*.
+** *Nome utente e password* -- se necessario, immettere un nome utente e una password per l'autenticazione con il mittente e il server di posta in uscita.
+** *Include contact information in email* -- per includere le informazioni di contatto del mittente nel messaggio di avviso, selezionare questa opzione, quindi inserire un nome e un numero di telefono.
++
+Dopo aver fatto clic su *Salva*, gli indirizzi e-mail vengono visualizzati nella scheda e-mail della pagina Avvisi.
+
+
+
+. Selezionare *Aggiungi email*.
++
+Viene visualizzata la finestra di dialogo Aggiungi e-mail.
+
+. Inserire uno o più indirizzi e-mail per i destinatari degli avvisi, quindi fare clic su *Aggiungi*.
++
+Gli indirizzi e-mail vengono visualizzati nella pagina Avvisi.
+
+. Se si desidera assicurarsi che gli indirizzi e-mail siano validi, fare clic su *Test all emails* (verifica tutte le e-mail) per inviare i messaggi di prova ai destinatari.
+
+
+.Risultati
+Dopo aver configurato gli avvisi e-mail, il monitor degli eventi invia messaggi e-mail ai destinatari specificati ogni volta che si verifica un evento verificabile.

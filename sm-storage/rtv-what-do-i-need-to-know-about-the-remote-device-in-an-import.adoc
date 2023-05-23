@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/rtv-what-do-i-need-to-know-about-the-remote-device-in-an-import.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, volume, import 
+summary: 'Quando si utilizza la funzione di storage remoto, tenere presente che il volume remoto è l"origine dei dati.' 
+---
+= Cosa occorre sapere sul volume remoto in un'importazione?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si utilizza la funzione di storage remoto, tenere presente che il volume remoto è l'origine dei dati.
+
+Quando l'importazione è in corso, i dati vengono trasferiti dal volume remoto al volume di destinazione sul sistema di storage di destinazione. Questi due volumi devono avere una dimensione di blocco corrispondente.

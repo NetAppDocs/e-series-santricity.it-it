@@ -1,0 +1,73 @@
+---
+permalink: sm-settings/unlock-drives-using-an-internal-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlock, drives, internal, key, management, 
+summary: Se è stata configurata la gestione interna delle chiavi e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi. 
+---
+= Sbloccare i dischi quando si utilizza la gestione interna delle chiavi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stata configurata la gestione interna delle chiavi e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi.
+
+.Prima di iniziare
+* Nell'array di origine (l'array in cui si rimuovono i dischi), sono stati esportati gruppi di volumi e rimossi i dischi. Nell'array di destinazione, i dischi sono stati reinstallati.
++
+
+NOTE: La funzione di esportazione/importazione non è supportata nell'interfaccia utente di System Manager; è necessario utilizzare l'interfaccia della riga di comando (CLI) per esportare/importare un gruppo di volumi in un array di storage diverso.
+
++
+Le istruzioni dettagliate per la migrazione di un gruppo di volumi sono fornite in https://kb.netapp.com/["Knowledge base di NetApp"^]. Seguire le istruzioni appropriate per gli array più recenti gestiti da System Manager o per i sistemi legacy.
+
+* La funzione Drive Security deve essere attivata. In caso contrario, viene visualizzata la finestra di dialogo Impossibile creare la chiave di protezione. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+* È necessario conoscere la chiave di sicurezza associata ai dischi che si desidera sbloccare.
+* Il file della chiave di sicurezza è disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager). Se si spostano i dischi in un array di storage gestito da un sistema diverso, è necessario spostare il file della chiave di sicurezza in quel client di gestione.
+
+
+.A proposito di questa attività
+Quando si utilizza la gestione interna delle chiavi, la chiave di sicurezza viene memorizzata localmente nell'array di storage. Una chiave di sicurezza è una stringa di caratteri condivisa dal controller e dai dischi per l'accesso in lettura/scrittura. Quando i dischi vengono fisicamente rimossi dall'array e installati in un altro, non possono funzionare fino a quando non si fornisce la chiave di sicurezza corretta.
+
+[NOTE]
+====
+È possibile creare una chiave interna dalla memoria persistente del controller o una chiave esterna da un server di gestione delle chiavi. Questo argomento descrive lo sblocco dei dati quando viene utilizzata la gestione delle chiavi _interne_. Se è stata utilizzata la gestione delle chiavi _external_, vedere link:unlock-drives-using-an-external-security-key.html["Sbloccare i dischi quando si utilizza la gestione esterna delle chiavi"]. Se si sta eseguendo un aggiornamento del controller e si stanno sostituendo tutti i controller con l'hardware più recente, è necessario seguire diversi passaggi come descritto nel centro di documentazione e-Series e SANtricity, in link:https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html["Sbloccare i dischi"].
+
+====
+Una volta reinstallati i dischi abilitati per la protezione in un altro array, questo rileva i dischi e visualizza una condizione di "attenzione necessaria" insieme allo stato "chiave di sicurezza necessaria". Per sbloccare i dati del disco, selezionare il file della chiave di sicurezza e immettere la password per la chiave. (Questa password non corrisponde alla password Administrator dell'array di storage).
+
+Se nel nuovo array di storage sono installate altre unità abilitate alla protezione, potrebbero utilizzare una chiave di sicurezza diversa da quella che si sta importando. Durante il processo di importazione, la vecchia chiave di sicurezza viene utilizzata solo per sbloccare i dati dei dischi che si stanno installando. Quando il processo di sblocco ha esito positivo, i dischi appena installati vengono reinseriti nella chiave di sicurezza dell'array di storage di destinazione.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Unlock Secure Drives*.
++
+Viene visualizzata la finestra di dialogo Unlock Secure Drives. Tutti i dischi che richiedono una chiave di sicurezza sono mostrati nella tabella.
+
+. *Opzionale:* posizionare il mouse su un numero di disco per visualizzare la posizione dell'unità (numero di shelf e numero di alloggiamento).
+. Fare clic su *Browse*, quindi selezionare il file della chiave di sicurezza corrispondente al disco che si desidera sbloccare.
++
+Il file delle chiavi selezionato viene visualizzato nella finestra di dialogo.
+
+. Inserire la password associata al file delle chiavi.
++
+I caratteri immessi vengono mascherati.
+
+. Fare clic su *Sblocca*.
++
+Se l'operazione di sblocco ha esito positivo, viene visualizzata la finestra di dialogo "i dischi protetti associati sono stati sbloccati".
+
+
+
+.Risultati
+Quando tutti i dischi sono bloccati e quindi sbloccati, ogni controller nell'array di storage viene riavviato. Tuttavia, se nell'array di storage di destinazione sono già presenti alcuni dischi sbloccati, i controller non verranno riavviati.
+
+.Al termine
+Nell'array di destinazione (l'array con i dischi appena installati), è ora possibile importare gruppi di volumi.
+
+
+NOTE: La funzione di esportazione/importazione non è supportata nell'interfaccia utente di System Manager; è necessario utilizzare l'interfaccia della riga di comando (CLI) per esportare/importare un gruppo di volumi in un array di storage diverso.
+
+Le istruzioni dettagliate per la migrazione di un gruppo di volumi sono fornite in https://kb.netapp.com/["Knowledge base di NetApp"^].

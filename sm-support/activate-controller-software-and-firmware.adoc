@@ -1,0 +1,53 @@
+---
+permalink: sm-support/activate-controller-software-and-firmware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, activate, controller, software, firmware 
+summary: È possibile scegliere di attivare i file di aggiornamento immediatamente o attendere fino a un momento più comodo. 
+---
+= Attivare il software e il firmware del controller
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile scegliere di attivare i file di aggiornamento immediatamente o attendere fino a un momento più comodo.
+
+.A proposito di questa attività
+È possibile scaricare e trasferire i file senza attivarli. È possibile scegliere di eseguire l'attivazione in un secondo momento per i seguenti motivi:
+
+* *Ora del giorno* -- l'attivazione del software e del firmware può richiedere molto tempo, quindi potrebbe essere necessario attendere che i carichi di i/o siano più leggeri. Il failover dei controller durante l'attivazione potrebbe risultare inferiore al solito fino al completamento dell'aggiornamento.
+* *Tipo di pacchetto* -- si consiglia di testare il nuovo software e firmware su un array di storage prima di aggiornare i file su altri array di storage.
+
+
+Se il software o il firmware è stato trasferito ma non attivato, viene visualizzata una notifica nell'area Notifiche della home page di System Manager e nella pagina Upgrade Center.
+
+[CAUTION]
+====
+Non è possibile interrompere il processo di attivazione dopo l'avvio.
+
+====
+.Fasi
+. Selezionare menu:Support[Upgrade Center].
+. Nell'area aggiornamento del software del controller del sistema operativo SANtricity, fare clic su *attiva* e confermare che si desidera eseguire l'operazione.
++
+È possibile annullare l'operazione durante il controllo dello stato di salute prima dell'aggiornamento, ma non durante l'attivazione.
+
++
+Viene avviato il controllo dello stato di salute prima dell'aggiornamento. Se il controllo dello stato di salute prima dell'aggiornamento viene superato, il processo di aggiornamento procede all'attivazione dei file. Se il controllo dello stato di salute prima dell'aggiornamento non riesce, utilizzare Recovery Guru o contattare il supporto tecnico per risolvere il problema. Per alcuni tipi di condizioni, il supporto tecnico potrebbe consigliare di continuare con l'aggiornamento nonostante gli errori selezionando la casella di controllo *Allow Upgrade* (Consenti aggiornamento).
+
++
+Una volta completato correttamente il controllo dello stato di salute prima dell'aggiornamento, si verifica l'attivazione. Il tempo necessario per l'attivazione dipende dalla configurazione dello storage array e dai componenti che si stanno attivando.
+
+. *Opzionale:* per visualizzare un elenco degli aggiornamenti, fare clic su *Salva registro*.
++
+Il file viene salvato nella cartella Download del browser con il nome `drive_upgrade_log-timestamp.txt`.
+
+
+
+.Al termine
+* Verificare che tutti i componenti siano visualizzati nella pagina hardware.
+* Verificare le nuove versioni software e firmware selezionando la finestra di dialogo Software and firmware Inventory (selezionare menu:Support[Upgrade Center], quindi fare clic sul collegamento *Software and firmware Inventory*).
+* Se IL controller NVSRAM è stato aggiornato, tutte le impostazioni personalizzate applicate all'NVSRAM esistente andranno perse durante il processo di attivazione. Al termine del processo di attivazione, è necessario applicare nuovamente le impostazioni personalizzate A NVSRAM.
+

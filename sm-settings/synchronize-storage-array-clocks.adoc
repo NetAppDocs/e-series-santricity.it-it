@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
+summary: 'Se il protocollo NTP (Network Time Protocol) non è attivato, è possibile impostare manualmente gli orologi sui controller in modo che siano sincronizzati con il client di gestione (il sistema utilizzato per eseguire il browser che accede a Gestore di sistema di SANtricity).' 
+---
+= Sincronizzare gli orologi degli array di storage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se il protocollo NTP (Network Time Protocol) non è attivato, è possibile impostare manualmente gli orologi sui controller in modo che siano sincronizzati con il client di gestione (il sistema utilizzato per eseguire il browser che accede a System Manager).
+
+.A proposito di questa attività
+La sincronizzazione garantisce che i timbri dell'ora dell'evento nel registro eventi corrispondano ai timestamp scritti nei file di registro dell'host. Durante il processo di sincronizzazione, i controller rimangono disponibili e operativi.
+
+[NOTE]
+====
+Se NTP è attivato in System Manager, non utilizzare questa opzione per sincronizzare gli orologi. Al contrario, NTP sincronizza automaticamente i clock con un host esterno utilizzando SNTP (Simple Network Time Protocol).
+
+====
+[NOTE]
+====
+Dopo la sincronizzazione, si potrebbe notare che le statistiche delle performance vengono perse o inclinate, che le pianificazioni vengono influenzate (ASUP, snapshot, ecc.) e che i timestamp nei dati del registro risultano inclinati. L'utilizzo di NTP evita questo problema.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *General*, fare clic su *Synchronize Storage Array Clocks* (Sincronizza blocchi array di storage).
++
+Viene visualizzata la finestra di dialogo Synchronize Storage Array Blocks (Sincronizza blocchi array di storage) Mostra la data e l'ora correnti dei controller e del computer utilizzato come client di gestione.
+
++
+[NOTE]
+====
+Per gli array di storage simplex, viene visualizzato un solo controller.
+
+====
+. Se gli orari visualizzati nella finestra di dialogo non corrispondono, fare clic su *Synchronize* (Sincronizza).
+
+
+.Risultati
+Una volta completata la sincronizzazione, i timestamp degli eventi sono gli stessi per il registro eventi e per i registri host.

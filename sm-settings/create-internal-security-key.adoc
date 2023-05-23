@@ -1,0 +1,87 @@
+---
+permalink: sm-settings/create-internal-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
+summary: 'Per utilizzare la funzione Drive Security, è possibile creare una chiave di sicurezza interna condivisa dai controller e dalle unità sicure nell"array di storage. Le chiavi interne vengono conservate nella memoria persistente del controller.' 
+---
+= Creare una chiave di sicurezza interna
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per utilizzare la funzione Drive Security, è possibile creare una chiave di sicurezza interna condivisa dai controller e dalle unità sicure nell'array di storage. Le chiavi interne vengono conservate nella memoria persistente del controller.
+
+.Prima di iniziare
+* Nello storage array devono essere installate unità sicure. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).
+* La funzione Drive Security deve essere attivata. In caso contrario, viene visualizzata la finestra di dialogo Impossibile creare la chiave di protezione. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+
+
+[NOTE]
+====
+Se nell'array di storage sono installati sia dischi FDE che FIPS, tutti condividono la stessa chiave di sicurezza.
+
+====
+.A proposito di questa attività
+In questa attività, si definiscono un identificatore e una passphrase da associare alla chiave di sicurezza interna.
+
+[NOTE]
+====
+La password per Drive Security è indipendente dalla password Administrator dell'array di storage.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Create Internal Key* (Crea chiave interna).
++
+Se non è stata ancora generata una chiave di protezione, viene visualizzata la finestra di dialogo Crea chiave di protezione.
+
+. Inserire le informazioni nei seguenti campi:
++
+** *Definire un identificatore della chiave di sicurezza* -- è possibile accettare il valore predefinito (nome dell'array di storage e data/ora, generato dal firmware del controller) o inserire un valore personalizzato. È possibile inserire fino a 189 caratteri alfanumerici senza spazi, punteggiatura o simboli.
++
+[NOTE]
+====
+I caratteri aggiuntivi vengono generati automaticamente, aggiunti a entrambe le estremità della stringa immessa. I caratteri generati garantiscono che l'identificatore sia univoco.
+
+====
+** *Definire una passphrase/immettere nuovamente la passphrase* -- inserire e confermare una passphrase. Il valore può contenere da 8 a 32 caratteri e deve includere ciascuno dei seguenti elementi:
++
+*** Una lettera maiuscola (una o più lettere). Tenere presente che la password distingue tra maiuscole e minuscole.
+*** Un numero (uno o più).
+*** Un carattere non alfanumerico, ad esempio !, *, @ (uno o più).
+
+
+
+
++
+[CAUTION]
+====
+*Assicurarsi di registrare le voci per un utilizzo successivo*. Se è necessario spostare un'unità abilitata per la sicurezza dall'array di storage, è necessario conoscere l'identificatore e la password per sbloccare i dati dell'unità.
+
+====
+. Fare clic su *Create* (Crea).
++
+La chiave di sicurezza viene memorizzata nel controller in una posizione non accessibile. Insieme alla chiave effettiva, è disponibile un file di chiavi crittografate che viene scaricato dal browser.
+
++
+[NOTE]
+====
+Il percorso del file scaricato potrebbe dipendere dalla posizione di download predefinita del browser.
+
+====
+. Registrare l'identificativo della chiave, la password e la posizione del file delle chiavi scaricato, quindi fare clic su *Chiudi*.
+
+
+.Risultati
+È ora possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.
+
+[NOTE]
+====
+Ogni volta che si spegne e si riaccende l'alimentazione dei dischi, tutti i dischi abilitati per la sicurezza vengono attivati in uno stato di sicurezza bloccata. In questo stato, i dati non sono accessibili finché il controller non applica la chiave di sicurezza corretta durante l'inizializzazione del disco. Se qualcuno rimuove fisicamente un disco bloccato e lo installa in un altro sistema, lo stato Security Locked impedisce l'accesso non autorizzato ai dati.
+
+====
+.Al termine
+È necessario convalidare la chiave di sicurezza per assicurarsi che il file delle chiavi non sia corrotto.

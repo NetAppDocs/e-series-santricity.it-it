@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-preferred-controller-ownership.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, preferred, controller, ownership 
+summary: 'Preferred controller ownership (proprietà preferita del controller): Definisce il controller designato come controller principale o proprietario del volume.' 
+---
+= Che cos'è la proprietà preferita del controller?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Preferred controller ownership (proprietà preferita del controller): Definisce il controller designato come controller principale o proprietario del volume.
+
+La proprietà del controller è molto importante e deve essere pianificata con attenzione. I controller devono essere bilanciati il più possibile per l'i/o totale.
+
+Ad esempio, se un controller legge principalmente grandi blocchi di dati sequenziali e l'altro controller ha piccoli blocchi di dati con letture e scritture frequenti, i carichi sono molto diversi. La conoscenza dei volumi che contengono il tipo di dati consente di bilanciare i trasferimenti di i/o in modo uniforme su entrambi i controller.

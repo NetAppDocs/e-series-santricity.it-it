@@ -1,0 +1,39 @@
+---
+permalink: sm-storage/delete-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, image 
+summary: 'Le immagini snapshot vengono eliminate per eliminare l"immagine snapshot meno recente da un gruppo di snapshot o da un gruppo di coerenza snapshot.' 
+---
+= Eliminare l'immagine istantanea
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le immagini snapshot vengono eliminate per eliminare l'immagine snapshot meno recente da un gruppo di snapshot o da un gruppo di coerenza snapshot.
+
+.A proposito di questa attività
+È possibile eliminare una singola immagine snapshot oppure le immagini snapshot da gruppi di coerenza snapshot che hanno lo stesso timestamp di creazione. È inoltre possibile eliminare le immagini snapshot da un gruppo di snapshot.
+
+Non è possibile eliminare un'immagine snapshot se non si tratta dell'immagine snapshot meno recente per il volume di base o il gruppo di coerenza snapshot associato.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Fare clic sulla scheda *Snapshot Images* (immagini istantanee).
+. Selezionare l'immagine istantanea che si desidera eliminare e confermare che si desidera eseguire l'operazione.
++
+Se è stata selezionata un'immagine snapshot di un gruppo di coerenza snapshot, selezionare ciascun volume membro che si desidera eliminare e confermare che si desidera eseguire l'operazione.
+
+. Fare clic su *Delete* (Elimina).
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Elimina l'immagine snapshot dall'array di storage.
+* Rilascia la capacità riservata per il riutilizzo all'interno del gruppo di snapshot o del gruppo di coerenza di snapshot.
+* Disattiva tutti i volumi snapshot associati esistenti per l'immagine snapshot eliminata.
+* Dall'eliminazione di un gruppo di coerenza snapshot, sposta qualsiasi volume membro associato all'immagine snapshot eliminata in uno stato interrotto.
+

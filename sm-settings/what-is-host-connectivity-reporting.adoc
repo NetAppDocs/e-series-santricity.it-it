@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/what-is-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host, connectivity, reporting, 
+summary: 'Quando il reporting sulla connettività host è attivato, lo storage array monitora continuamente la connessione tra i controller e gli host configurati, quindi avvisa l"utente in caso di interruzione della connessione.' 
+---
+= Che cos'è il reporting sulla connettività host?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando il reporting sulla connettività host è attivato, lo storage array monitora continuamente la connessione tra i controller e gli host configurati, quindi avvisa l'utente in caso di interruzione della connessione.
+
+In caso di cavi allentati, danneggiati o mancanti o di altri problemi con l'host, potrebbero verificarsi interruzioni della connessione. In queste situazioni, il sistema potrebbe aprire un messaggio Recovery Guru:
+
+* *Host Redundancy Lost* -- si apre se uno dei controller non riesce a comunicare con l'host.
+* *Host Type Incorrect (tipo host errato)* -- si apre se il tipo di host non è specificato correttamente nell'array di storage, con conseguenti problemi di failover.
+
+
+È possibile disattivare la funzione di reporting della connettività host in situazioni in cui il riavvio di un controller potrebbe richiedere più tempo del timeout di connessione. La disattivazione di questa funzione elimina i messaggi Recovery Gurus.
+
+[NOTE]
+====
+La disattivazione del reporting sulla connettività host disattiva anche il bilanciamento automatico del carico, che monitora e bilancia l'utilizzo delle risorse del controller. Tuttavia, se si riattiva il reporting sulla connettività host, la funzione di bilanciamento automatico del carico non viene riattivata automaticamente.
+
+====

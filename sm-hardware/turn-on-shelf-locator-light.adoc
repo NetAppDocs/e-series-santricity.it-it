@@ -1,0 +1,23 @@
+---
+permalink: sm-hardware/turn-on-shelf-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
+summary: Per individuare la posizione fisica di uno shelf mostrato nella pagina hardware, è possibile accendere la spia di posizionamento dello shelf. 
+---
+= Accendere la luce di posizionamento degli scaffali
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per individuare la posizione fisica di uno shelf mostrato nella pagina hardware, è possibile accendere la luce di localizzazione dello shelf.
+
+.Fasi
+. Selezionare *hardware*.
+. Selezionare l'elenco a discesa per lo shelf del controller o lo shelf dell'unità, quindi selezionare *accendere la luce di localizzazione*.
++
+La spia di posizionamento dello scaffale si accende.
+
+. Una volta posizionato lo shelf, tornare alla finestra di dialogo e selezionare *Spegni*.
+

@@ -1,0 +1,133 @@
+---
+permalink: sm-settings/use-ca-signed-certificates-for-controllers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, controllers, 
+summary: 'È possibile ottenere certificati con firma CA per comunicazioni sicure tra i controller e il browser utilizzato per l"accesso a System Manager.' 
+---
+= USA certificati firmati CA per i controller
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile ottenere certificati con firma CA per comunicazioni sicure tra i controller e il browser utilizzato per l'accesso a System Manager.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni del certificato non vengono visualizzate.
+* È necessario conoscere l'indirizzo IP o i nomi DNS di ciascun controller.
+
+
+.A proposito di questa attività
+L'utilizzo dei certificati firmati dalla CA è una procedura in tre fasi.
+
+
+
+== Fase 1: Completare gli CSR per i controller
+
+È necessario innanzitutto generare un file CSR (Certificate Signing Request) per ciascun controller dell'array di storage.
+
+.A proposito di questa attività
+Questa attività descrive come generare un file CSR da System Manager. La CSR fornisce informazioni sull'organizzazione e sull'indirizzo IP o il nome DNS del controller. Durante questa attività, viene generato un file CSR se l'array di storage ha un controller e due file CSR se ha due controller.
+
+[NOTE]
+====
+In alternativa, è possibile generare un file CSR utilizzando uno strumento come OpenSSL e passare a. <<Fase 2: Inviare i file CSR>>.
+
+====
+.Fasi
+. Selezionare il menu:Impostazioni[certificati].
+. Dalla scheda Array Management (Gestione array), selezionare *complete CSR* (completa CSR).
++
+[NOTE]
+====
+Se viene visualizzata una finestra di dialogo che richiede di accettare un certificato autofirmato per il secondo controller, fare clic su *Accetta certificato autofirmato* per continuare.
+
+====
+. Inserire le seguenti informazioni, quindi fare clic su *Avanti*:
++
+** *Organizzazione* -- il nome completo e legale della tua azienda o organizzazione. Includere i suffissi, ad esempio Inc. O Corp.
+** *Unità organizzativa (opzionale)* -- la divisione dell'organizzazione che gestisce il certificato.
+** *Città/Località* -- la città in cui si trova il tuo storage array o il tuo business.
+** *Stato/Regione (opzionale)* -- Stato o regione in cui si trova lo storage array o l'azienda.
+** *Codice ISO del Paese* -- Codice ISO (International Organization for Standardization) a due cifre del Paese, ad esempio USA.
+
+
++
+[CAUTION]
+====
+Alcuni campi potrebbero essere precompilati con le informazioni appropriate, ad esempio l'indirizzo IP del controller. Non modificare i valori prepopolati a meno che non si sia certi che siano errati. Ad esempio, se non è stata ancora completata una CSR, l'indirizzo IP del controller viene impostato su "`localhost`". In questo caso, è necessario modificare "`localhost`" con il nome DNS o l'indirizzo IP del controller.
+
+====
+. Verificare o inserire le seguenti informazioni sul controller A nell'array di storage:
++
+** *Controller A common name* -- per impostazione predefinita viene visualizzato l'indirizzo IP o il nome DNS del controller A. Assicurarsi che l'indirizzo sia corretto; deve corrispondere esattamente a quello immesso per accedere a System Manager nel browser. Il nome DNS non può iniziare con un carattere jolly.
+** *Controller A alternate IP addresses* -- se il nome comune è un indirizzo IP, è possibile inserire eventuali indirizzi IP o alias aggiuntivi per il controller A. Per più voci, utilizzare un formato delimitato da virgole.
+** *Controller A alternate DNS Names* -- se il nome comune è un nome DNS, inserire eventuali nomi DNS aggiuntivi per il controller A. Per più voci, utilizzare un formato delimitato da virgole. Se non sono presenti nomi DNS alternativi, ma è stato immesso un nome DNS nel primo campo, copiarlo qui. Il nome DNS non può iniziare con un carattere jolly. Se lo storage array dispone di un solo controller, il pulsante *Finish* è disponibile.
++
+Se lo storage array ha due controller, il pulsante *Next* (Avanti) è disponibile.
+
+
+
++
+[NOTE]
+====
+Non fare clic sul collegamento *Ignora questo passaggio* quando si crea una richiesta CSR. Questo collegamento viene fornito in situazioni di ripristino degli errori. In rari casi, una richiesta CSR potrebbe non riuscire su un controller, ma non sull'altro. Questo collegamento consente di saltare la fase per la creazione di una richiesta CSR sul controller A, se già definita, e passare alla fase successiva per la creazione di una richiesta CSR sul controller B.
+
+====
+. Se è presente un solo controller, fare clic su *fine*. Se sono presenti due controller, fare clic su *Avanti* per immettere le informazioni relative al controller B (come sopra), quindi fare clic su *fine*.
++
+Per un singolo controller, un file CSR viene scaricato nel sistema locale. Per i controller doppi, vengono scaricati due file CSR. La posizione della cartella del download dipende dal browser in uso.
+
+. Passare a. <<Fase 2: Inviare i file CSR>>.
+
+
+
+
+== Fase 2: Inviare i file CSR
+
+Dopo aver creato i file CSR (Certificate Signing Request), inviare i file a un'autorità di certificazione (CA). I sistemi e-Series richiedono il formato PEM (codifica ASCII Base64) per i certificati firmati, che include i seguenti tipi di file: pem, .crt, .cer o .key.
+
+.Fasi
+. Individuare i file CSR scaricati.
+. Inviare i file CSR a una CA (ad esempio, VeriSign o DigiCert) e richiedere certificati firmati in formato PEM.
++
+[CAUTION]
+====
+*Dopo aver inviato un file CSR alla CA, NON rigenerare un altro file CSR.* ogni volta che si genera una CSR, il sistema crea una coppia di chiavi privata e pubblica. La chiave pubblica fa parte della CSR, mentre la chiave privata viene conservata nell'archivio chiavi del sistema. Quando si ricevono i certificati firmati e li si importano, il sistema garantisce che sia la chiave privata che la chiave pubblica siano la coppia originale. Se le chiavi non corrispondono, i certificati firmati non funzioneranno ed è necessario richiedere nuovi certificati alla CA.
+
+====
+. Quando la CA restituisce i certificati firmati, passare a. <<Fase 3: Importazione dei certificati firmati per i controller>>.
+
+
+
+
+== Fase 3: Importazione dei certificati firmati per i controller
+
+Una volta ricevuti i certificati firmati dall'autorità di certificazione (CA), importare i file per i controller.
+
+.Prima di iniziare
+* La CA ha restituito file di certificato firmati. Questi file includono il certificato root, uno o più certificati intermedi e i certificati del server.
+* Se la CA ha fornito un file di certificato concatenato (ad esempio, un file .p7b), è necessario decomprimere il file concatenato in singoli file: Il certificato root, uno o più certificati intermedi e i certificati del server che identificano i controller. È possibile utilizzare Windows `certmgr` Utility per disimballare i file (fare clic con il pulsante destro del mouse e selezionare menu:All Tasks[Export]). Si consiglia la codifica base-64. Una volta completate le esportazioni, viene visualizzato un file CER per ciascun file di certificato nella catena.
+* I file dei certificati sono stati copiati nel sistema host in cui si accede a System Manager.
+
+
+.Fasi
+. Selezionare il menu:Impostazioni[certificati]
+. Dalla scheda Array Management (Gestione array), selezionare *Import* (Importa).
++
+Viene visualizzata una finestra di dialogo per l'importazione dei file di certificato.
+
+. Fare clic sui pulsanti *Browse* per selezionare prima i file dei certificati principali e intermedi, quindi selezionare ciascun certificato server per i controller. I file root e intermedi sono gli stessi per entrambi i controller. Solo i certificati server sono univoci per ciascun controller. Se la CSR è stata generata da uno strumento esterno, è necessario importare anche il file della chiave privata creato insieme alla CSR.
++
+I nomi dei file vengono visualizzati nella finestra di dialogo.
+
+. Fare clic su *Importa*.
++
+I file vengono caricati e validati.
+
+
+
+.Risultato
+La sessione viene terminata automaticamente. Per rendere effettive le certificazioni, è necessario effettuare nuovamente l'accesso. Quando si effettua nuovamente l'accesso, vengono utilizzati i nuovi certificati firmati dalla CA per la sessione.

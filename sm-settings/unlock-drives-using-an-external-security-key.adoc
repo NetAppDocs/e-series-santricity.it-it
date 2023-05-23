@@ -1,0 +1,82 @@
+---
+permalink: sm-settings/unlock-drives-using-an-external-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlock, drives, external, key, management, 
+summary: Se è stata configurata la gestione delle chiavi esterne e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi. 
+---
+= Sbloccare i dischi quando si utilizza la gestione esterna delle chiavi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stata configurata la gestione delle chiavi esterne e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi.
+
+.Prima di iniziare
+* Nell'array di origine (l'array in cui si rimuovono i dischi), sono stati esportati gruppi di volumi e rimossi i dischi. Nell'array di destinazione, i dischi sono stati reinstallati.
++
+
+NOTE: La funzione di esportazione/importazione non è supportata nell'interfaccia utente di System Manager; è necessario utilizzare l'interfaccia della riga di comando (CLI) per esportare/importare un gruppo di volumi in un array di storage diverso.
+
++
+Le istruzioni dettagliate per la migrazione di un gruppo di volumi sono fornite in https://kb.netapp.com/["Knowledge base di NetApp"^]. Seguire le istruzioni appropriate per gli array più recenti gestiti da System Manager o per i sistemi legacy.
+
+* La funzione Drive Security deve essere attivata. In caso contrario, viene visualizzata la finestra di dialogo Impossibile creare la chiave di protezione. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+* È necessario conoscere l'indirizzo IP e il numero di porta del server di gestione delle chiavi.
+* Si dispone di un file di certificato client firmato per i controller dell'array di storage ed è stato copiato nell'host in cui si accede a System Manager. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste del protocollo KMIP (Key Management Interoperability Protocol).
+* È necessario recuperare un file di certificato dal server di gestione delle chiavi, quindi copiarlo sull'host in cui si accede a System Manager. Un certificato del server di gestione delle chiavi convalida il server di gestione delle chiavi, in modo che lo storage array possa fidarsi del proprio indirizzo IP. È possibile utilizzare un certificato root, intermedio o server per il server di gestione delle chiavi.
+
+
+[NOTE]
+====
+Per ulteriori informazioni sul certificato del server, consultare la documentazione relativa al server di gestione delle chiavi.
+
+====
+.A proposito di questa attività
+Quando si utilizza la gestione esterna delle chiavi, la chiave di sicurezza viene memorizzata esternamente su un server progettato per proteggere le chiavi di sicurezza. Una chiave di sicurezza è una stringa di caratteri condivisa dal controller e dai dischi per l'accesso in lettura/scrittura. Quando i dischi vengono fisicamente rimossi dall'array e installati in un altro, non possono funzionare fino a quando non si fornisce la chiave di sicurezza corretta.
+
+[NOTE]
+====
+È possibile creare una chiave interna dalla memoria persistente del controller o una chiave esterna da un server di gestione delle chiavi. Questo argomento descrive lo sblocco dei dati quando viene utilizzata la gestione delle chiavi _esterne_. Se è stata utilizzata la gestione delle chiavi _interna_, vedere link:unlock-drives-using-an-internal-security-key.html["Sbloccare i dischi quando si utilizza la gestione interna delle chiavi"]. Se si sta eseguendo un aggiornamento del controller e si stanno sostituendo tutti i controller con l'hardware più recente, è necessario seguire diversi passaggi come descritto nel centro di documentazione e-Series e SANtricity, in link:https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html["Sbloccare i dischi"].
+
+====
+Una volta reinstallati i dischi abilitati per la protezione in un altro array, questo rileva i dischi e visualizza una condizione di "attenzione necessaria" insieme allo stato "chiave di sicurezza necessaria". Per sbloccare i dati del disco, importare il file della chiave di sicurezza e immettere la password per la chiave. (Questa password non corrisponde alla password Administrator dell'array di storage). Durante questo processo, l'array di storage viene configurato per l'utilizzo di un server di gestione delle chiavi esterno, quindi la chiave sicura sarà accessibile. È necessario fornire le informazioni di contatto del server per consentire all'array di storage di connettersi e recuperare la chiave di sicurezza.
+
+Se nel nuovo array di storage sono installate altre unità abilitate alla protezione, potrebbero utilizzare una chiave di sicurezza diversa da quella che si sta importando. Durante il processo di importazione, la vecchia chiave di sicurezza viene utilizzata solo per sbloccare i dati dei dischi che si stanno installando. Quando il processo di sblocco ha esito positivo, i dischi appena installati vengono reinseriti nella chiave di sicurezza dell'array di storage di destinazione.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Create External Key* (Crea chiave esterna).
+. Completare la procedura guidata con le informazioni di connessione e i certificati richiesti.
+. Fare clic su *Test Communication* (verifica comunicazione) per garantire l'accesso al server di gestione delle chiavi esterno.
+. Selezionare *Unlock Secure Drives*.
++
+Viene visualizzata la finestra di dialogo Unlock Secure Drives. Tutti i dischi che richiedono una chiave di sicurezza sono mostrati nella tabella.
+
+. *Opzionale:* posizionare il mouse su un numero di disco per visualizzare la posizione dell'unità (numero di shelf e numero di alloggiamento).
+. Fare clic su *Browse*, quindi selezionare il file della chiave di sicurezza corrispondente al disco che si desidera sbloccare.
++
+Il file delle chiavi selezionato viene visualizzato nella finestra di dialogo.
+
+. Inserire la password associata al file delle chiavi.
++
+I caratteri immessi vengono mascherati.
+
+. Fare clic su *Sblocca*.
++
+Se l'operazione di sblocco ha esito positivo, viene visualizzata la finestra di dialogo "i dischi protetti associati sono stati sbloccati".
+
+
+
+.Risultati
+Quando tutti i dischi sono bloccati e quindi sbloccati, ogni controller nell'array di storage viene riavviato. Tuttavia, se nell'array di storage di destinazione sono già presenti alcuni dischi sbloccati, i controller non verranno riavviati.
+
+.Al termine
+Nell'array di destinazione (l'array con i dischi appena installati), è ora possibile importare gruppi di volumi.
+
+
+NOTE: La funzione di esportazione/importazione non è supportata nell'interfaccia utente di System Manager; è necessario utilizzare l'interfaccia della riga di comando (CLI) per esportare/importare un gruppo di volumi in un array di storage diverso.
+
+Le istruzioni dettagliate per la migrazione di un gruppo di volumi sono fornite in https://kb.netapp.com/["Knowledge base di NetApp"^].

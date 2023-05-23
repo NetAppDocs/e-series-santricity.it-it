@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/ssd-cache-and-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd, cache, volumes 
+summary: 'È possibile aggiungere un volume alla cache SSD per migliorare le performance di sola lettura. La cache SSD è costituita da un set di dischi a stato solido (SSD) che vengono raggruppati logicamente nell"array di storage.' 
+---
+= Cache SSD e volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere un volume alla cache SSD per migliorare le performance di sola lettura. La cache SSD è costituita da un set di dischi a stato solido (SSD) che vengono raggruppati logicamente nell'array di storage.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+
+
+== Volumi
+
+Semplici meccanismi di i/o dei volumi vengono utilizzati per spostare i dati da e verso la cache SSD. Dopo che i dati sono stati memorizzati nella cache e memorizzati negli SSD, le successive letture di tali dati vengono eseguite sulla cache SSD, eliminando così la necessità di accedere al volume HDD.
+
+La cache SSD è una cache secondaria da utilizzare con la cache primaria nella DRAM (Dynamic Random-Access Memory) del controller.
+
+* Nella cache primaria, i dati vengono memorizzati nella DRAM dopo la lettura da parte di un host.
+* Nella cache SSD, i dati vengono copiati dai volumi e memorizzati su due volumi RAID interni (uno per controller) che vengono creati automaticamente quando si crea una cache SSD.
+
+
+I volumi RAID interni vengono utilizzati per l'elaborazione della cache interna. Questi volumi non sono accessibili o visualizzati nell'interfaccia utente. Tuttavia, questi due volumi vengono conteggiati rispetto al numero totale di volumi consentiti nell'array di storage.
+
+[NOTE]
+====
+Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non è idoneo per un trasferimento automatico del bilanciamento del carico.
+
+====
+
+
+== Funzione di protezione del disco
+
+Per utilizzare la cache SSD su un volume che utilizza anche Drive Security (è abilitato per la protezione), le funzionalità di protezione del disco del volume e della cache SSD devono corrispondere. Se non corrispondono, il volume non sarà abilitato alla protezione.

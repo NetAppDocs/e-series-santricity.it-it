@@ -1,0 +1,80 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
+summary: Modificare le impostazioni di un gruppo di coerenza snapshot quando si desidera modificarne il nome, le impostazioni di eliminazione automatica o il numero massimo di immagini snapshot consentite. 
+---
+= Modificare le impostazioni di un gruppo di coerenza snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Modificare le impostazioni di un gruppo di coerenza snapshot quando si desidera modificarne il nome, le impostazioni di eliminazione automatica o il numero massimo di immagini snapshot consentite.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Fare clic sulla scheda *gruppi di coerenza Snapshot*.
+. Selezionare il gruppo di coerenza snapshot che si desidera modificare, quindi fare clic su *Visualizza/Modifica impostazioni*.
++
+Viene visualizzata la finestra di dialogo Snapshot Consistency Group Setting.
+
+. Modificare le impostazioni del gruppo di coerenza snapshot in base alle esigenze.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Impostazioni del gruppo di coerenza Snapshot*
+
+
+
+ a| 
+Nome
+ a| 
+È possibile modificare il nome del gruppo di coerenza snapshot.
+
+
+
+ a| 
+Eliminazione automatica
+ a| 
+Mantenere la casella di controllo selezionata se si desidera eliminare automaticamente le immagini snapshot dopo il limite specificato; utilizzare la casella di selezione per modificare il limite. Se si deseleziona questa casella di controllo, la creazione dell'immagine snapshot si interrompe dopo 32 immagini.
+
+
+
+ a| 
+Limite dell'immagine Snapshot
+ a| 
+È possibile modificare il numero massimo di immagini snapshot consentite per un gruppo di snapshot.
+
+
+
+ a| 
+Calendario di Snapshot
+ a| 
+Questo campo indica se una pianificazione è associata al gruppo di coerenza snapshot.
+
+
+
+ a| 
+*Oggetti associati*
+
+
+
+ a| 
+Volumi dei membri
+ a| 
+È possibile visualizzare la quantità di volumi membri associati al gruppo di coerenza snapshot.
+
+|===
+====
+. Fare clic su *Save* (Salva).
+

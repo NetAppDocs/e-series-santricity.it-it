@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/take-action-on-a-copy-volume-operation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: 'È possibile visualizzare un"operazione Copy Volume (Copia volume) in corso e interrompere, modificare la priorità, eseguire nuovamente la copia o annullare un"operazione Copy Volume (Copia volume).' 
+---
+= Eseguire un'operazione di copia del volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare un'operazione Copy Volume (Copia volume) in corso e interrompere, modificare la priorità, eseguire nuovamente la copia o annullare un'operazione Copy Volume (Copia volume).
+
+.Fasi
+. Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso).
++
+Viene visualizzata la finestra di dialogo Operations in Progress (operazioni in corso).
+
+. Individuare l'operazione Copy Volume (Copia volume) su cui si desidera eseguire l'azione, quindi fare clic sul collegamento nella colonna *Actions* (azioni) per eseguire una delle seguenti operazioni.
++
+Leggere tutto il testo di avviso fornito nelle finestre di dialogo, in particolare quando si interrompe un'operazione.
+
++
+[cols="25h,~"]
+|===
+| Azione | Descrizione 
+
+
+ a| 
+Arrestare
+ a| 
+È possibile interrompere un'operazione Copy Volume (Copia volume) quando l'operazione ha lo stato in corso, Pending (in sospeso) o Failed (non riuscito).
+
+Quando il volume di copia viene arrestato, tutti gli host mappati hanno accesso in scrittura al volume di origine. Se i dati vengono scritti nel volume di origine, i dati nel volume di destinazione non corrispondono più ai dati nel volume di origine.
+
+
+
+ a| 
+Modificare la priorità
+ a| 
+È possibile modificare la priorità di un'operazione Copy Volume (Copia volume) mentre l'operazione ha lo stato in corso per selezionare la velocità di completamento dell'operazione Copy Volume (Copia volume).
+
+
+
+ a| 
+Copia di nuovo
+ a| 
+È possibile copiare di nuovo un volume quando si è interrotta un'operazione Copy Volume e si desidera avviarla di nuovo o quando un'operazione Copy Volume (Copia volume) non ha avuto esito positivo o si è interrotta. L'operazione Copy Volume (Copia volume) viene avviata dall'inizio.
+
+L'azione di ricopia sovrascrive i dati esistenti sul volume di destinazione e non riesce a tutti i volumi di snapshot associati al volume di destinazione, se presenti.
+
+
+
+ a| 
+Chiaro
+ a| 
+È possibile rimuovere l'operazione Copy Volume (Copia volume) quando l'operazione ha lo stato in corso, Pending (in sospeso) o Failed (non riuscito).
+
+[NOTE]
+====
+Assicurarsi di eseguire questa operazione prima di selezionare *Cancella*. Nessuna finestra di dialogo di conferma.
+
+====
+|===
+

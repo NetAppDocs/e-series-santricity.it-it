@@ -1,0 +1,19 @@
+---
+permalink: sm-support/what-do-the-autosupport-features-do.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, autosupport features, ASUP 
+summary: La funzione AutoSupport è composta da tre funzioni individuali che vengono attivate separatamente. 
+---
+= Quali sono le funzioni di AutoSupport?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione AutoSupport è composta da tre funzioni individuali che vengono attivate separatamente.
+
+* *Basic AutoSupport* -- consente allo storage array di raccogliere e inviare automaticamente i dati al supporto tecnico.
+* *AutoSupport OnDemand* -- consente al supporto tecnico di richiedere la ritrasmissione di un precedente dispatch AutoSupport quando necessario per la risoluzione di un problema. Tutte le trasmissioni vengono avviate dallo storage array, non dal server AutoSupport. Lo storage array esegue periodicamente il check-in con il server AutoSupport per determinare se sono presenti richieste di ritrasmissione in sospeso e risponde di conseguenza.
+* *Diagnostica remota* -- consente al supporto tecnico di richiedere una nuova spedizione AutoSupport aggiornata quando necessario per la risoluzione di un problema. Tutte le trasmissioni vengono avviate dallo storage array, non dal server AutoSupport. Lo storage array esegue periodicamente il check-in con il server AutoSupport per determinare se sono presenti nuove richieste in sospeso e risponde di conseguenza.
+

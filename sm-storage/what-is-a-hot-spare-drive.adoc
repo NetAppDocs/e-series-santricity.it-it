@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/what-is-a-hot-spare-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drive 
+summary: Le hot spare fungono da unità di standby nei gruppi di volumi RAID 1, RAID 5 o RAID 6. Si tratta di dischi completamente funzionanti che non contengono dati. Se un disco si guasta nel gruppo di volumi, il controller ricostruisce automaticamente i dati dal disco guasto a un hot spare. 
+---
+= Che cos'è un disco hot spare?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le hot spare fungono da unità di standby nei gruppi di volumi RAID 1, RAID 5 o RAID 6. Si tratta di dischi completamente funzionanti che non contengono dati. Se un disco si guasta nel gruppo di volumi, il controller ricostruisce automaticamente i dati dal disco guasto a un hot spare.
+
+Se un disco si guasta nell'array di storage, il disco hot spare viene sostituito automaticamente per il disco guasto senza richiedere uno swap fisico. Se il disco hot spare è disponibile quando si verifica un guasto, il controller utilizza i dati di ridondanza per ricostruire i dati dal disco guasto al disco hot spare.
+
+Un disco hot spare non è dedicato a un gruppo di volumi specifico. È invece possibile utilizzare un disco hot spare per qualsiasi disco guasto nell'array di storage con la stessa capacità o capacità inferiore. Un disco hot spare deve essere dello stesso tipo di supporto (HDD o SSD) dei dischi che protegge.
+
+[NOTE]
+====
+I dischi hot spare non sono supportati con i pool. Invece dei dischi hot spare, i pool utilizzano la capacità di conservazione all'interno di ogni disco che comprende il pool.
+
+====

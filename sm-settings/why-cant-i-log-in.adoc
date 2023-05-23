@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/why-cant-i-log-in.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, log, in, login 
+summary: Se si riceve un errore durante il tentativo di accesso a System Manager, esaminare queste possibili cause. 
+---
+= Perché non riesco ad accedere?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si riceve un errore durante il tentativo di accesso a System Manager, esaminare queste possibili cause.
+
+Gli errori di accesso a System Manager possono verificarsi per uno dei seguenti motivi:
+
+* Il nome utente o la password immessi non sono corretti.
+* Privilegi insufficienti.
+* Il server di directory (se configurato) potrebbe non essere disponibile. In questo caso, provare ad accedere con un ruolo utente locale.
+* Si è tentato di accedere più volte senza successo, attivando la modalità di blocco. Attendere 10 minuti per eseguire nuovamente l'accesso.
+* È stata attivata una condizione di blocco e il registro di controllo potrebbe essere pieno. Accedere a Gestione accessi ed eliminare i vecchi eventi dal registro di controllo.
+* L'autenticazione SAML è attivata. Aggiornare il browser per accedere.
+
+
+Gli errori di accesso a un array di storage remoto per le attività di mirroring possono verificarsi per uno dei seguenti motivi:
+
+* La password immessa non è corretta.
+* Si è tentato di accedere più volte senza successo, attivando la modalità di blocco. Attendere 10 minuti per effettuare nuovamente l'accesso.
+* È stato raggiunto il numero massimo di connessioni client utilizzate sul controller. Verificare la presenza di più utenti o client.
+

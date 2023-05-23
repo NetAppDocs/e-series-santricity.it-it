@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/cache-settings-and-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
+summary: 'La memoria cache è un"area di storage volatile temporaneo sul controller che ha un tempo di accesso più rapido rispetto ai supporti del disco.' 
+---
+= Performance e impostazioni della cache
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La memoria cache è un'area di storage volatile temporaneo sul controller che ha un tempo di accesso più rapido rispetto ai supporti del disco.
+
+Con il caching, le performance di i/o complessive possono essere aumentate come segue:
+
+* I dati richiesti dall'host per una lettura potrebbero essere già nella cache da un'operazione precedente, eliminando così la necessità di accesso al disco.
+* I dati di scrittura vengono scritti inizialmente nella cache, consentendo all'applicazione di continuare invece di attendere la scrittura dei dati sul disco.
+
+
+Le impostazioni predefinite della cache soddisfano i requisiti della maggior parte degli ambienti, ma è possibile modificarle se necessario.
+
+
+
+== Impostazioni della cache dell'array di storage
+
+Per tutti i volumi nell'array di storage, è possibile specificare i seguenti valori dalla pagina System (sistema):
+
+* *Valore iniziale per il flushing* -- la percentuale di dati non scritti nella cache che attiva un flush della cache (scrittura su disco). Quando la cache contiene la percentuale iniziale specificata di dati non scritti, viene attivato un flusso. Per impostazione predefinita, il controller avvia lo svuotamento della cache quando la cache raggiunge il 80% di memoria piena.
+* *Cache block size* -- dimensione massima di ciascun blocco di cache, un'unità organizzativa per la gestione della cache. La dimensione predefinita del blocco della cache è 8 KiB, ma può essere impostata su 4, 8, 16 o 32 KiB. Idealmente, la dimensione del blocco della cache dovrebbe essere impostata sulla dimensione i/o predominante delle applicazioni. I file system o le applicazioni di database utilizzano generalmente dimensioni inferiori, mentre le dimensioni maggiori sono adatte per le applicazioni che richiedono un trasferimento di dati di grandi dimensioni o l'i/o sequenziale
+
+
+
+
+== Impostazioni della cache del volume
+
+Per i singoli volumi in un array di storage, è possibile specificare i seguenti valori dalla pagina Volumes (menu:Storage[Volumes]):
+
+* *Read caching* -- la cache di lettura è un buffer che memorizza i dati letti dai dischi. I dati di un'operazione di lettura potrebbero essere già presenti nella cache di un'operazione precedente, eliminando così la necessità di accedere ai dischi. I dati rimangono nella cache di lettura fino a quando non vengono scaricati.
++
+** *Dynamic Read cache prefetch* -- Dynamic cache Read prefetch consente al controller di copiare ulteriori blocchi di dati sequenziali nella cache durante la lettura dei blocchi di dati da un disco alla cache. Questo caching aumenta la possibilità che le future richieste di dati possano essere compilate dalla cache. Il prefetch dinamico della lettura della cache è importante per le applicazioni multimediali che utilizzano l'i/o sequenziale La velocità e la quantità di dati precaricati nella cache vengono regolate automaticamente in base alla velocità e alle dimensioni della richiesta dell'host. L'accesso casuale non fa sì che i dati vengano precaricati nella cache. Questa funzione non si applica quando il caching in lettura è disattivato.
+
+
+* *Write caching* -- la cache di scrittura è un buffer che memorizza i dati dell'host che non sono ancora stati scritti sui dischi. I dati rimangono nella cache di scrittura fino a quando non vengono scritti sui dischi. Il caching in scrittura può aumentare le performance di i/O.
++
+[CAUTION]
+====
+*Possibile perdita di dati* -- se si attiva l'opzione *Write caching without batteries* e non si dispone di un alimentatore universale per la protezione, si potrebbero perdere i dati. Inoltre, è possibile perdere i dati se non si dispone di batterie del controller e si attiva l'opzione *Write caching without batteries*.
+
+====
++
+** *Write caching senza batterie* -- l'impostazione write caching senza batterie consente di continuare il caching in scrittura anche quando le batterie sono mancanti, guaste, completamente scariche o non completamente cariche. La scelta del caching in scrittura senza batterie non è generalmente consigliata, in quanto i dati potrebbero andare persi in caso di interruzione dell'alimentazione. In genere, il caching in scrittura viene disattivato temporaneamente dal controller fino a quando le batterie non vengono caricate o non viene sostituita una batteria guasta.
+** *Cache in scrittura con mirroring* -- il caching in scrittura con mirroring si verifica quando i dati scritti nella memoria cache di un controller vengono scritti anche nella memoria cache dell'altro controller. Pertanto, se un controller si guasta, l'altro può completare tutte le operazioni di scrittura in sospeso. Il mirroring della cache di scrittura è disponibile solo se il caching di scrittura è attivato e sono presenti due controller. Il caching in scrittura con mirroring è l'impostazione predefinita alla creazione del volume.
+
+
+

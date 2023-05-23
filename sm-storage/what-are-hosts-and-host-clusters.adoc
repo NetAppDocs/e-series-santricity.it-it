@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-are-hosts-and-host-clusters.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts, clusters, server, 
+summary: 'Un host è un server che invia i/o a un volume su un array di storage. Un cluster host è un gruppo di host. È possibile creare un cluster host per semplificare l"assegnazione degli stessi volumi a più host.' 
+---
+= Cosa sono gli host e i cluster di host?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un host è un server che invia i/o a un volume su un array di storage. Un cluster host è un gruppo di host. È possibile creare un cluster host per semplificare l'assegnazione degli stessi volumi a più host.
+
+Si definisce un host separatamente. Può essere un'entità indipendente o essere aggiunta a un cluster host. È possibile assegnare volumi a un singolo host oppure un host può far parte di un cluster di host che condivide l'accesso a uno o più volumi con altri host del cluster di host.
+
+Il cluster host è un'entità logica creata in Gestore di sistema di SANtricity. Prima di poter assegnare i volumi, è necessario aggiungere gli host al cluster host.

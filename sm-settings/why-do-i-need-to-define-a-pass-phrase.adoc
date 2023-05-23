@@ -1,0 +1,14 @@
+---
+permalink: sm-settings/why-do-i-need-to-define-a-pass-phrase.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, define, pass, phrase, 
+summary: La password viene utilizzata per crittografare e decrittare il file della chiave di sicurezza memorizzato nel client di gestione locale. Senza la passphrase, la chiave di sicurezza non può essere decifrata e utilizzata per sbloccare i dati da un disco abilitato alla sicurezza se viene reinstallata in un altro array di storage. 
+---
+= Perché è necessario definire una passphrase?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La password viene utilizzata per crittografare e decrittare il file della chiave di sicurezza memorizzato nel client di gestione locale. Senza la passphrase, la chiave di sicurezza non può essere decifrata e utilizzata per sbloccare i dati da un disco abilitato alla sicurezza se viene reinstallata in un altro array di storage.

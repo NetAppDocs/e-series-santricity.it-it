@@ -1,0 +1,43 @@
+---
+permalink: sm-mirroring/workflow-for-mirroring-a-volume-synchronously.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workflow, mirroring, synchronously, 
+summary: Il mirroring sincrono viene configurato utilizzando il seguente flusso di lavoro. 
+---
+= Workflow per il mirroring sincrono di un volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il mirroring sincrono viene configurato utilizzando il seguente flusso di lavoro.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+. Eseguire la configurazione iniziale in Unified Manager:
++
+.. Selezionare un array di storage locale come origine per il trasferimento dei dati.
+.. Selezionare un volume primario dall'array di storage locale.
+.. Selezionare un array di storage remoto come destinazione per il trasferimento dei dati, quindi selezionare un volume secondario.
+.. Selezionare le priorità di sincronizzazione e risincronizzazione.
+.. Avviare il trasferimento iniziale dei dati dal volume primario al volume secondario. A seconda delle dimensioni del volume, il trasferimento iniziale potrebbe richiedere diverse ore.
+
+
+. Verificare l'avanzamento della sincronizzazione iniziale:
++
+.. In Unified Manager, avviare System Manager per l'array locale.
+.. In System Manager, visualizzare lo stato dell'operazione di mirroring. Una volta completato il mirroring, lo stato della coppia mirrorata è "ottimale". I due array tentano di rimanere sincronizzati con le normali operazioni. Solo i blocchi nuovi e modificati vengono trasferiti dal volume primario al volume secondario.
+
+
+. *Opzionale:* è possibile modificare le impostazioni di sincronizzazione in System Manager.
++
+[NOTE]
+====
+Poiché la replica sincrona è continua, il collegamento di replica tra i due siti deve fornire funzionalità di larghezza di banda sufficienti.
+
+====
+

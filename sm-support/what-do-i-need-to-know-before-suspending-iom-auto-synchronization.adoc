@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-suspending-iom-auto-synchronization.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, iom, auto-synchronization 
+summary: 'La sospensione della sincronizzazione automatica IOM impedisce l"aggiornamento del firmware IOM al successivo aggiornamento del software del controller del sistema operativo SANtricity.' 
+---
+= Cosa occorre sapere prima di sospendere la sincronizzazione automatica IOM?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La sospensione della sincronizzazione automatica IOM impedisce l'aggiornamento del firmware IOM al successivo aggiornamento del software del controller del sistema operativo SANtricity.
+
+Normalmente, il software del controller e il firmware IOM vengono aggiornati come bundle. È possibile sospendere la sincronizzazione automatica IOM se si dispone di una speciale build del firmware IOM che si desidera conservare nell'enclosure. In caso contrario, al successivo aggiornamento del software del controller verrà ripristinato il firmware IOM in dotazione con il software del controller.

@@ -1,0 +1,135 @@
+---
+permalink: sm-hardware/drive-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, states, 
+summary: System Manager riporta diversi stati per i dischi. 
+---
+= stati del disco
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager riporta diversi stati per i dischi.
+
+
+
+== stati di accessibilità
+
+[cols="25h,~"]
+|===
+| Stato | Definizione 
+
+
+ a| 
+Ignorato
+ a| 
+Il disco è fisicamente presente, ma il controller non può comunicare con esso su entrambe le porte.
+
+
+
+ a| 
+Incompatibile
+ a| 
+Si verifica una delle seguenti condizioni:
+
+* Il disco non è certificato per l'utilizzo nello storage array.
+* Il disco ha dimensioni di settore diverse.
+* L'unità dispone di dati di configurazione inutilizzabili da una versione firmware precedente o più recente.
+
+
+
+
+ a| 
+Rimosso
+ a| 
+L'unità non è stata rimossa correttamente dall'array di storage.
+
+
+
+ a| 
+Presente
+ a| 
+Il controller può comunicare con il disco su entrambe le porte.
+
+
+
+ a| 
+Non risponde
+ a| 
+Il disco non risponde ai comandi.
+
+|===
+
+
+== stati dei ruoli
+
+[cols="25h,~"]
+|===
+| Stato | Definizione 
+
+
+ a| 
+Assegnato
+ a| 
+Il disco è membro di un pool o di un gruppo di volumi.
+
+
+
+ a| 
+Hot spare in uso
+ a| 
+Il disco viene attualmente utilizzato come sostituto di un disco guasto. Le hot spare vengono utilizzate solo nei gruppi di volumi, non nei pool.
+
+
+
+ a| 
+Hot spare in standby
+ a| 
+Il disco è pronto per essere utilizzato come sostituto di un disco guasto. Le hot spare vengono utilizzate solo nei gruppi di volumi, non nei pool.
+
+
+
+ a| 
+Non assegnato
+ a| 
+Il disco non è membro di un pool o di un gruppo di volumi.
+
+|===
+
+
+== stati di disponibilità
+
+[cols="25h,~"]
+|===
+| Stato | Definizione 
+
+
+ a| 
+Non riuscito
+ a| 
+Il disco non funziona. I dati sul disco non sono disponibili.
+
+
+
+ a| 
+Guasto imminente
+ a| 
+È stato rilevato che il disco potrebbe guastarsi presto. I dati sul disco sono ancora disponibili.
+
+
+
+ a| 
+Offline
+ a| 
+L'unità non è disponibile per la memorizzazione dei dati, in genere perché fa parte di un gruppo di volumi in fase di esportazione o è in fase di aggiornamento del firmware.
+
+
+
+ a| 
+Ottimale
+ a| 
+Il disco funziona normalmente.
+
+|===

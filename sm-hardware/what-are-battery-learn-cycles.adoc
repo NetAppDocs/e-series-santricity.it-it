@@ -1,0 +1,39 @@
+---
+permalink: sm-hardware/what-are-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, battery, learn, cycle, 
+summary: 'Un ciclo di apprendimento è un ciclo automatico per la calibrazione dell"indicatore della batteria Smart.' 
+---
+= Quali sono i cicli di apprendimento della batteria?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un ciclo di apprendimento è un ciclo automatico per la calibrazione dell'indicatore della batteria Smart.
+
+Un ciclo di apprendimento è costituito da queste fasi:
+
+* Scaricamento controllato della batteria
+* Periodo di riposo
+* Caricare
+
+
+Le batterie vengono scaricate a una soglia prestabilita. Durante questa fase, l'indicatore della batteria viene calibrato.
+
+Un ciclo di apprendimento richiede questi parametri:
+
+* Batterie completamente cariche
+* Nessuna batteria surriscaldata
+
+
+I cicli di apprendimento per i sistemi di controller duplex si verificano contemporaneamente. Per i controller con alimentazione di backup da più di una batteria o un set di celle della batteria, i cicli di apprendimento si verificano in sequenza.
+
+I cicli di apprendimento sono programmati per l'avvio automatico a intervalli regolari, alla stessa ora e nello stesso giorno della settimana. L'intervallo tra i cicli viene descritto in settimane.
+
+[NOTE]
+====
+Il completamento di un ciclo di apprendimento potrebbe richiedere diverse ore.
+
+====

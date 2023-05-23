@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-segment-sizing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, segment, size, storage, raid 
+summary: 'Un segmento è la quantità di dati in kilobyte (KiB) memorizzati su un disco prima che l"array di storage passi al disco successivo nello stripe (gruppo RAID). Le dimensioni dei segmenti si applicano solo ai gruppi di volumi, non ai pool.' 
+---
+= Che cos'è la dimensione del segmento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un segmento è la quantità di dati in kilobyte (KiB) memorizzati su un disco prima che l'array di storage passi al disco successivo nello stripe (gruppo RAID). Le dimensioni dei segmenti si applicano solo ai gruppi di volumi, non ai pool.
+
+La dimensione del segmento è definita dal numero di blocchi di dati in esso contenuti. Quando si determina la dimensione del segmento, è necessario conoscere il tipo di dati da memorizzare in un volume. Se un'applicazione utilizza generalmente IOPS (Random Read and Scritture) di piccole dimensioni, un segmento di dimensioni inferiori funziona meglio. In alternativa, se l'applicazione dispone di grandi letture e scritture sequenziali (throughput), una dimensione di segmento elevata è generalmente migliore.
+
+Sia che un'applicazione utilizzi piccole letture e scritture casuali o grandi letture e scritture sequenziali, l'array di storage offre prestazioni migliori se la dimensione del segmento è maggiore della dimensione tipica del blocco di dati. In genere, questo rende più semplice e rapido l'accesso dei dischi ai dati, il che è importante per migliorare le performance degli array di storage.
+
+
+
+== Ambienti in cui le performance IOPS sono importanti
+
+In un ambiente IOPS (i/o Operations per second), lo storage array offre prestazioni migliori se si utilizza una dimensione di segmento superiore alla dimensione tipica del blocco di dati ("`chunk`") che viene letta/scritta su un disco. In questo modo, ogni chunk viene scritto su un singolo disco.
+
+
+
+== Ambienti in cui il throughput è importante
+
+In un ambiente di throughput, la dimensione del segmento deve essere pari a una frazione del totale dei dischi per i dati e la dimensione tipica del blocco di dati (dimensione i/o). In questo modo, i dati vengono distribuiti come singolo stripe tra i dischi del gruppo di volumi, con conseguente velocità di lettura e scrittura.

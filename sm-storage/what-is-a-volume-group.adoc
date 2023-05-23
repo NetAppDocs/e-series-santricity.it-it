@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-is-a-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, group 
+summary: Un gruppo di volumi è un contenitore per volumi con caratteristiche condivise. Un gruppo di volumi ha una capacità e un livello RAID definiti. È possibile utilizzare un gruppo di volumi per creare uno o più volumi accessibili a un host. I volumi vengono creati da un gruppo di volumi o da un pool. 
+---
+= Che cos'è un gruppo di volumi?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un gruppo di volumi è un contenitore per volumi con caratteristiche condivise. Un gruppo di volumi ha una capacità e un livello RAID definiti. È possibile utilizzare un gruppo di volumi per creare uno o più volumi accessibili a un host. I volumi vengono creati da un gruppo di volumi o da un pool.

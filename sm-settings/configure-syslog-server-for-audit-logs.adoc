@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/configure-syslog-server-for-audit-logs.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
+summary: Se si desidera archiviare i registri di controllo su un server syslog esterno, è possibile configurare le comunicazioni tra tale server e lo storage array. Una volta stabilita la connessione, i registri di controllo vengono salvati automaticamente nel server syslog. 
+---
+= Configurare il server syslog per i registri di controllo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si desidera archiviare i registri di controllo su un server syslog esterno, è possibile configurare le comunicazioni tra tale server e lo storage array. Una volta stabilita la connessione, i registri di controllo vengono salvati automaticamente nel server syslog.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+* L'indirizzo del server syslog, il protocollo e il numero di porta devono essere disponibili. L'indirizzo del server può essere un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6.
+* Se il server utilizza un protocollo sicuro (ad esempio TLS), è necessario che nel sistema locale sia disponibile un certificato dell'autorità di certificazione (CA). I certificati CA identificano i proprietari dei siti Web per connessioni sicure tra server e client.
+
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Dalla scheda Registro di controllo, selezionare *Configura server Syslog*.
++
+Viene visualizzata la finestra di dialogo Configura server Syslog.
+
+. Fare clic su *Aggiungi*.
++
+Viene visualizzata la finestra di dialogo Add Syslog Server (Aggiungi server Syslog).
+
+. Inserire le informazioni relative al server, quindi fare clic su *Aggiungi*.
++
+** *Indirizzo server* -- immettere un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6.
+** *Protocol* (protocollo) -- selezionare un protocollo dall'elenco a discesa (ad esempio TLS, UDP o TCP).
+** *Carica certificato (opzionale)* -- se è stato selezionato il protocollo TLS e non è stato ancora caricato un certificato CA firmato, fare clic su *Sfoglia* per caricare un file di certificato. I registri di controllo non vengono archiviati in un server syslog senza un certificato attendibile.
++
+[NOTE]
+====
+Se il certificato diventa non valido in un secondo momento, l'handshake TLS avrà esito negativo. Di conseguenza, un messaggio di errore viene inviato al registro di controllo e i messaggi non vengono più inviati al server syslog. Per risolvere questo problema, è necessario correggere il certificato sul server syslog e accedere al menu:Impostazioni[Registro audit > Configura server Syslog > Test tutti].
+
+====
+** *Port* -- inserire il numero di porta del ricevitore syslog. Dopo aver fatto clic su *Add* (Aggiungi), viene visualizzata la finestra di dialogo Configure Syslog Servers (Configura server Syslog) e il server syslog configurato.
+
+
+. Per verificare la connessione del server con lo storage array, selezionare *Test All*.
+
+
+.Risultati
+Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti.

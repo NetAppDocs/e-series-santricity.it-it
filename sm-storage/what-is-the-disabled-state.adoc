@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-the-disabled-state.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disabled, state 
+summary: 'Un volume di snapshot nello stato Disabled (Disattivato) non è attualmente assegnato a un"immagine di snapshot. Per attivare il volume di snapshot, è necessario utilizzare l"operazione di ricreazione per assegnare una nuova immagine di snapshot al volume di snapshot disattivato.' 
+---
+= Che cos'è lo stato Disabled?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volume di snapshot nello stato Disabled (Disattivato) non è attualmente assegnato a un'immagine di snapshot. Per attivare il volume di snapshot, è necessario utilizzare l'operazione di ricreazione per assegnare una nuova immagine di snapshot al volume di snapshot disattivato.
+
+Le caratteristiche del volume di snapshot sono definite dall'immagine snapshot ad esso assegnata. L'attività di lettura/scrittura viene sospesa su un volume di snapshot in stato Disabled (Disattivato).

@@ -1,0 +1,93 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, settings, snapshot, volume 
+summary: 'È possibile modificare le impostazioni di un volume snapshot o di un volume snapshot di coerenza snapshot per rinominarlo, attivare o disattivare il caching SSD o modificare l"assegnazione di host, cluster host o LUN (Logical Unit Number).' 
+---
+= Modificare le impostazioni del volume per un volume di snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni di un volume snapshot o di un volume snapshot di coerenza snapshot per rinominarlo, attivare o disattivare il caching SSD o modificare l'assegnazione di host, cluster host o LUN (Logical Unit Number).
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Fare clic sulla scheda *Snapshot Volumes*.
+. Selezionare il volume di snapshot che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
++
+Viene visualizzata la finestra di dialogo Snapshot Volume Settings (Impostazioni volume snapshot).
+
+. Visualizzare o modificare le impostazioni per il volume di snapshot in base alle esigenze.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Volume Snapshot*
+
+
+
+ a| 
+Nome
+ a| 
+È possibile modificare il nome del volume di snapshot.
+
+
+
+ a| 
+Assegnato a.
+ a| 
+È possibile modificare l'assegnazione dell'host o del cluster host per il volume di snapshot.
+
+
+
+ a| 
+LUN
+ a| 
+È possibile modificare l'assegnazione del LUN per il volume snapshot.
+
+
+
+ a| 
+Cache SSD
+ a| 
+È possibile attivare/disattivare il caching in sola lettura sui dischi a stato solido (SSD).
+
+
+
+ a| 
+*Oggetti associati*
+
+
+
+ a| 
+Immagine Snapshot
+ a| 
+È possibile visualizzare le immagini Snapshot associate al volume Snapshot. Un'immagine snapshot è una copia logica dei dati del volume, acquisita in un determinato momento. Come un punto di ripristino, le immagini Snapshot consentono di eseguire il rollback a un set di dati sicuramente funzionante. Sebbene l'host possa accedere all'immagine snapshot, non può leggerla o scriverla direttamente.
+
+
+
+ a| 
+Volume di base
+ a| 
+È possibile visualizzare il volume di base associato al volume di snapshot. Un volume di base è l'origine da cui viene creata un'immagine snapshot. Può essere un volume spesso o sottile e viene in genere assegnato a un host. Il volume di base può risiedere in un gruppo di volumi o in un pool di dischi.
+
+
+
+ a| 
+Gruppo di snapshot
+ a| 
+È possibile visualizzare il gruppo di snapshot associato al volume di snapshot. Un gruppo di snapshot è una raccolta di immagini snapshot da un singolo volume di base.
+
+|===
+====
+

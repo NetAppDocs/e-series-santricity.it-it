@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/delete-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, schedule 
+summary: Se non si desidera più raccogliere immagini snapshot, è possibile eliminare una pianificazione snapshot esistente. 
+---
+= Elimina pianificazione snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se non si desidera più raccogliere immagini snapshot, è possibile eliminare una pianificazione snapshot esistente.
+
+.A proposito di questa attività
+Quando si elimina una pianificazione di snapshot, le immagini di snapshot associate non vengono eliminate insieme ad essa. Se si ritiene che la raccolta di immagini snapshot possa essere ripresa a un certo punto, è necessario sospendere la pianificazione delle istantanee piuttosto che eliminarla.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Fare clic sulla scheda *programmi*.
+. Selezionare il programma di snapshot che si desidera eliminare e confermare l'operazione.
+
+
+.Risultati
+Il sistema rimuove tutti gli attributi di pianificazione dal volume di base o dal gruppo di coerenza dello snapshot.

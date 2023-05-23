@@ -1,0 +1,30 @@
+---
+permalink: sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
+summary: 'È possibile visualizzare la quantità di dati non sincronizzati tra i gruppi di coerenza mirror sull"array di storage locale e sull"array di storage remoto. Mentre il gruppo di coerenza mirror si trova in uno stato non sincronizzato, non viene eseguita alcuna attività di mirroring.' 
+---
+= Visualizzare la quantità di dati non sincronizzati tra gruppi di coerenza mirror
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare la quantità di dati non sincronizzati tra i gruppi di coerenza mirror sull'array di storage locale e sull'array di storage remoto. Mentre il gruppo di coerenza mirror si trova in uno stato non sincronizzato, non viene eseguita alcuna attività di mirroring.
+
+.A proposito di questa attività
+È possibile eseguire questa attività quando il gruppo di coerenza mirror selezionato contiene coppie mirrorate e quando la sincronizzazione non è attualmente in corso.
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *Mirror Consistency Groups*.
++
+Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.
+
+. Fare clic sul menu:Altro[Visualizza quantità di dati non sincronizzati].
++
+Se esistono dati non sincronizzati, i valori della tabella lo riflettono. La colonna data amount (quantità dati) elenca la quantità di dati non sincronizzati in MiB.
+
+

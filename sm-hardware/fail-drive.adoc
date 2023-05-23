@@ -1,0 +1,49 @@
+---
+permalink: sm-hardware/fail-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, fail, drive, 
+summary: Se richiesto, è possibile eseguire il failover manuale di un disco. 
+---
+= Disco guasto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se richiesto, è possibile eseguire il failover manuale di un disco.
+
+.A proposito di questa attività
+System Manager monitora i dischi nell'array di storage. Quando rileva che un disco sta generando molti errori, il Recovery Guru ti notifica di un guasto imminente del disco. Se questo accade e si dispone di un disco sostitutivo, potrebbe essere necessario eseguire un'azione preventiva. Se non si dispone di un'unità sostitutiva, è possibile attendere il guasto dell'unità.
+
+[CAUTION]
+====
+*Possibile perdita dell'accesso ai dati* -- questa operazione potrebbe causare la perdita dei dati o la perdita della ridondanza dei dati. Eseguire questa operazione solo se richiesto dal supporto tecnico o dal Recovery Guru.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Fare clic sull'unità che si desidera guastare.
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Selezionare *Fail*.
+. Mantenere selezionata la casella di controllo *Copia contenuto disco prima di eseguire il guasto*.
++
+L'opzione di copia viene visualizzata solo per i dischi assegnati e per i gruppi di volumi non RAID 0.
+
++
+Prima di eseguire un guasto al disco, assicurarsi di copiare il contenuto del disco. A seconda della configurazione, è possibile perdere tutti i dati o la ridondanza dei dati sul pool o sul gruppo di volumi associato se non si copia prima il contenuto del disco.
+
++
+L'opzione di copia consente un ripristino più rapido del disco rispetto alla ricostruzione e riduce la possibilità di un errore del volume in caso di guasto di un altro disco durante l'operazione di copia.
+
+. Confermare che si desidera che il disco non sia in grado di funzionare correttamente.
++
+Una volta che il disco si è guastato, attendere almeno 30 secondi prima di rimuoverlo.
+
+

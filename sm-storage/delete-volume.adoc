@@ -1,0 +1,64 @@
+---
+permalink: sm-storage/delete-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, volume 
+summary: In genere, i volumi vengono eliminati se sono stati creati con parametri o capacità errati, se non soddisfano più le esigenze di configurazione dello storage o se si tratta di immagini snapshot non più necessarie per il backup o il test delle applicazioni. 
+---
+= Elimina volume
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In genere, i volumi vengono eliminati se sono stati creati con parametri o capacità errati, se non soddisfano più le esigenze di configurazione dello storage o se si tratta di immagini snapshot non più necessarie per il backup o il test delle applicazioni.
+
+L'eliminazione di un volume aumenta la capacità libera nel pool o nel gruppo di volumi. È possibile selezionare uno o più volumi da eliminare.
+
+.Prima di iniziare
+Sui volumi che si intende eliminare, assicurarsi di quanto segue:
+
+* Viene eseguito il backup di tutti i dati.
+* All Input/Output (i/o) viene interrotto.
+* Tutti i dispositivi e i file system vengono smontati.
+
+
+.A proposito di questa attività
+Non è possibile eliminare un volume che presenta una delle seguenti condizioni:
+
+* Il volume è in fase di inizializzazione.
+* Il volume è in fase di ricostruzione.
+* Il volume fa parte di un gruppo di volumi che contiene un disco sottoposto a un'operazione copyback.
+* Il volume sta subendo un'operazione di modifica, ad esempio una modifica delle dimensioni dei segmenti, a meno che il volume non sia ora nello stato Failed (guasto).
+* Il volume contiene qualsiasi tipo di prenotazione persistente.
+* Il volume è un volume di origine o un volume di destinazione in un volume di copia con stato Pending (in sospeso), in Progress (in corso) o Failed (non riuscito).
+
+
+[CAUTION]
+====
+L'eliminazione di un volume causa la perdita di tutti i dati presenti su tali volumi.
+
+====
+[NOTE]
+====
+Quando un volume supera una determinata dimensione (attualmente 128 TB), l'eliminazione viene eseguita in background e lo spazio liberato potrebbe non essere immediatamente disponibile.
+
+====
+.Fasi
+. Selezionare menu:Storage[Volumes] (Storage[volumi]).
+. Fare clic su *Delete* (Elimina).
++
+Viene visualizzata la finestra di dialogo Delete Volumes.
+
+. Selezionare uno o più volumi da eliminare e confermare che si desidera eseguire l'operazione.
+. Fare clic su *Delete* (Elimina).
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Elimina le immagini snapshot, le pianificazioni e i volumi di snapshot associati.
+* Rimuove le relazioni di mirroring.
+* Aumenta la capacità libera nel pool o nel gruppo di volumi.
+

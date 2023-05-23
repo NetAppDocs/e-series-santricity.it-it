@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/edit-syslog-server-settings-for-audit-log-records.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, syslog, server, settings, audit, log, records, 
+summary: 'È possibile modificare le impostazioni del server syslog utilizzato per l"archiviazione dei registri di controllo e caricare un nuovo certificato CA per il server.' 
+---
+= Modificare le impostazioni del server syslog per i record del registro di controllo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni del server syslog utilizzato per l'archiviazione dei registri di controllo e caricare un nuovo certificato CA per il server.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+* L'indirizzo del server syslog, il protocollo e il numero di porta devono essere disponibili. L'indirizzo del server può essere un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6.
+* Se si sta caricando un nuovo certificato CA, il certificato deve essere disponibile nel sistema locale.
+
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Dalla scheda Registro di controllo, selezionare *Configura server Syslog*.
++
+I server syslog configurati vengono visualizzati nella pagina.
+
+. Per modificare le informazioni sul server, selezionare l'icona *Edit* (matita) a destra del nome del server, quindi apportare le modifiche desiderate nei seguenti campi:
++
+** *Server Address* -- inserire un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6.
+** *Protocol* (protocollo) -- selezionare un protocollo dall'elenco a discesa (ad esempio TLS, UDP o TCP).
+** *Port* -- inserire il numero di porta del ricevitore syslog.
+
+
+. Se il protocollo è stato modificato nel protocollo TLS sicuro (da UDP o TCP), fare clic su *Import Trusted Certificate* (Importa certificato attendibile) per caricare un certificato CA.
+. Per verificare la nuova connessione con lo storage array, selezionare *Test All*.
+
+
+.Risultati
+Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti.

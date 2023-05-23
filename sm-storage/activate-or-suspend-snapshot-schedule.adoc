@@ -1,0 +1,34 @@
+---
+permalink: sm-storage/activate-or-suspend-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot schedule 
+summary: 'È possibile sospendere temporaneamente la raccolta pianificata di immagini snapshot quando è necessario risparmiare spazio di storage. Questo metodo è più efficiente dell"eliminazione e della successiva ricreazione della pianificazione di snapshot.' 
+---
+= Attivare e sospendere la pianificazione delle snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile sospendere temporaneamente la raccolta pianificata di immagini snapshot quando è necessario risparmiare spazio di storage. Questo metodo è più efficiente dell'eliminazione e della successiva ricreazione della pianificazione di snapshot.
+
+.A proposito di questa attività
+Lo stato della pianificazione snapshot rimane sospeso fino a quando non si utilizza l'opzione *Activate* per riprendere l'attività snapshot pianificata.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Se non è già visualizzato, fare clic sulla scheda *programmi*.
++
+I programmi sono elencati nella pagina.
+
+. Selezionare un programma di snapshot attivo che si desidera sospendere, quindi fare clic su *Activate/Suspend* (attiva/Sospendi).
++
+Lo stato della colonna state (Stato) diventa *Suspended* (sospeso) e la pianificazione delle istantanee interrompe la raccolta di tutte le immagini snapshot.
+
+. Per riprendere la raccolta delle immagini snapshot, selezionare la pianificazione delle istantanee sospese che si desidera riprendere, quindi fare clic su *Activate / Suspend* (attiva / Sospendi).
++
+Lo stato della colonna Stato diventa *attivo*.
+
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/why-would-i-disable-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
+summary: 'È possibile disattivare un volume di snapshot quando si desidera assegnare un volume di snapshot diverso all"immagine di snapshot. È possibile riservare il volume snapshot disattivato per un utilizzo successivo.' 
+---
+= Perché è necessario disattivare un volume di snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile disattivare un volume di snapshot quando si desidera assegnare un volume di snapshot diverso all'immagine di snapshot. È possibile riservare il volume snapshot disattivato per un utilizzo successivo.
+
+Se il volume snapshot o il volume snapshot del gruppo di coerenza non sono più necessari e non si intende ricrearlo in un secondo momento, eliminare il volume invece di disattivarlo.

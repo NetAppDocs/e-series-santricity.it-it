@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/delete-syslog-servers-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, syslog, servers, alerts, 
+summary: È possibile eliminare un server syslog in modo che non riceva più avvisi. 
+---
+= Eliminare i server syslog per gli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare un server syslog in modo che non riceva più avvisi.
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *Syslog*.
+. Selezionare un indirizzo del server syslog, quindi fare clic su *Remove* (Rimuovi) dall'alto a destra.
++
+Viene visualizzata la finestra di dialogo Conferma eliminazione server Syslog.
+
+. Confermare l'operazione, quindi fare clic su *Delete* (Elimina).
+
+
+.Risultati
+Il server rimosso non riceve più avvisi dal monitor eventi.

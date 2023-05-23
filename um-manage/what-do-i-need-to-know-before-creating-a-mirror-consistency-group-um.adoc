@@ -1,0 +1,38 @@
+---
+permalink: um-manage/what-do-i-need-to-know-before-creating-a-mirror-consistency-group-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirror, consistency, group 
+summary: Seguire queste linee guida prima di creare un gruppo di coerenza mirror. 
+---
+= Cosa è necessario sapere prima di creare un gruppo di coerenza mirror?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Seguire queste linee guida prima di creare un gruppo di coerenza mirror.
+
+Soddisfare i seguenti requisiti per Unified Manager:
+
+* Il servizio Web Services Proxy deve essere in esecuzione.
+* Unified Manager deve essere in esecuzione sull'host locale tramite una connessione HTTPS.
+* Unified Manager deve mostrare certificati SSL validi per lo storage array. È possibile accettare un certificato autofirmato o installare il proprio certificato di sicurezza utilizzando Unified Manager e accedere al menu:Certificate[Certificate Management] (Gestione certificati).
+
+
+Assicurarsi inoltre di soddisfare i seguenti requisiti per gli array di storage:
+
+* I due storage array devono essere rilevati in Unified Manager.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel o un'interfaccia iSCSI.
+
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====

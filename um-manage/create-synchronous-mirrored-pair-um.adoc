@@ -1,0 +1,148 @@
+---
+permalink: um-manage/create-synchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
+summary: 'Per configurare il mirroring sincrono, creare una coppia mirrorata che includa un volume primario sull"array locale e un volume secondario sull"array remoto.' 
+---
+= Creare una coppia sincrona con mirroring
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per configurare il mirroring sincrono, creare una coppia mirrorata che includa un volume primario sull'array locale e un volume secondario sull'array remoto.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+.Prima di iniziare
+Prima di creare una coppia mirrorata, soddisfare i seguenti requisiti per Unified Manager:
+
+* Il servizio Web Services Proxy deve essere in esecuzione.
+* Unified Manager deve essere in esecuzione sull'host locale tramite una connessione HTTPS.
+* Unified Manager deve mostrare certificati SSL validi per lo storage array. È possibile accettare un certificato autofirmato o installare il proprio certificato di sicurezza utilizzando Unified Manager e accedere al menu:Certificate[Certificate Management] (Gestione certificati).
+
+
+Assicurarsi inoltre di soddisfare i seguenti requisiti per gli array e i volumi di storage:
+
+* I due storage array che si intende utilizzare per il mirroring vengono rilevati in Unified Manager.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel.
+* Sono stati creati i volumi primario e secondario che si desidera utilizzare nella relazione di mirroring sincrono.
+* Il volume primario deve essere un volume standard. Non può essere un volume thin o un volume snapshot.
+* Il volume secondario deve essere un volume standard. Non può essere un volume thin o un volume snapshot.
+* Il volume secondario deve essere grande almeno quanto il volume primario.
+
+
+.A proposito di questa attività
+Il processo per creare coppie sincrone mirrorate è una procedura multi-step.
+
+
+
+== Fase 1: Selezionare il volume principale
+
+In questa fase, selezionare il volume primario da utilizzare nella relazione di mirroring sincrono. Quando si seleziona un volume primario sull'array di storage locale, il sistema visualizza un elenco di tutti i volumi idonei per la coppia mirrorata. I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. Il volume selezionato contiene il ruolo principale nella relazione mirror.
+
+.Fasi
+. Dalla pagina *Manage* (Gestisci), selezionare l'array di storage locale che si desidera utilizzare per l'origine.
+. Selezionare menu:azioni[Crea coppia sincrona con mirroring].
++
+Viene visualizzata la procedura guidata Create Synchronous Mirrored Pair.
+
+. Dall'elenco dei volumi idonei, selezionare un volume che si desidera utilizzare come volume principale nel mirror.
+. Selezionare *Avanti* e passare a. <<Fase 2: Selezionare il volume secondario>>.
+
+
+
+
+== Fase 2: Selezionare il volume secondario
+
+In questa fase, selezionare il volume secondario da utilizzare nella relazione di mirroring. Quando si seleziona un volume secondario sull'array di storage remoto, il sistema visualizza un elenco di tutti i volumi idonei per la coppia mirrorata. I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. Il volume selezionato avrà il ruolo secondario nella relazione mirror.
+
+.Fasi
+. Selezionare l'array di storage remoto su cui si desidera stabilire una relazione mirror con l'array di storage locale.
++
+[NOTE]
+====
+Se lo storage array remoto è protetto da password, il sistema richiede una password.
+
+====
++
+** Gli array di storage sono elencati in base al nome dell'array di storage. Se non si è nominato un array di storage, questo verrà elencato come "senza nome".
+** Se lo storage array che si desidera utilizzare non è presente nell'elenco, assicurarsi che sia stato rilevato in Unified Manager.
+
+
+. Dall'elenco dei volumi idonei, selezionare un volume che si desidera utilizzare come volume secondario nel mirror.
++
+[NOTE]
+====
+Se si sceglie un volume secondario con una capacità superiore a quella del volume primario, la capacità utilizzabile viene limitata alle dimensioni del volume primario.
+
+====
+. Fare clic su *Avanti* e passare a. <<Fase 3: Selezionare le impostazioni di sincronizzazione>>.
+
+
+
+
+== Fase 3: Selezionare le impostazioni di sincronizzazione
+
+In questa fase, selezionare le impostazioni che determinano la modalità di sincronizzazione dei dati dopo un'interruzione della comunicazione. È possibile impostare la priorità con cui il proprietario del controller del volume primario sincronizza i dati con il volume secondario dopo un'interruzione della comunicazione. È inoltre necessario selezionare il criterio di risincronizzazione, manuale o automatico.
+
+.Fasi
+. Utilizzare la barra di scorrimento per impostare la priorità di sincronizzazione.
++
+La priorità di sincronizzazione determina la quantità di risorse di sistema utilizzate per completare la sincronizzazione iniziale e l'operazione di risincronizzazione dopo un'interruzione della comunicazione rispetto alle richieste di i/o del servizio.
+
++
+La priorità impostata in questa finestra di dialogo si applica sia al volume primario che al volume secondario. È possibile modificare la velocità sul volume primario in un secondo momento accedendo a System Manager e selezionando il menu:Storage[Synchronous Mirroring > More > Edit Settings] (Storage[mirroring sincrono > Altro > Modifica impostazioni).
+
++
+Sono disponibili cinque tassi di priorità di sincronizzazione:
+
++
+** Più basso
+** Basso
+** Medio
+** Alto
+** Massimo
++
+Se la priorità di sincronizzazione è impostata sul tasso più basso, l'attività di i/o ha la priorità e l'operazione di risincronizzazione richiede più tempo. Se la priorità di sincronizzazione è impostata sulla velocità massima, l'operazione di risincronizzazione viene assegnata alla priorità, ma l'attività di i/o per l'array di storage potrebbe risentirne.
+
+
+
+. Scegliere se risincronizzare le coppie mirrorate sull'array di storage remoto manualmente o automaticamente.
++
+** *Manuale* (opzione consigliata) -- selezionare questa opzione per richiedere la ripresa manuale della sincronizzazione dopo il ripristino della comunicazione su una coppia mirrorata. Questa opzione offre la migliore opportunità per il ripristino dei dati.
+** *Automatico* -- selezionare questa opzione per avviare la risincronizzazione automaticamente dopo il ripristino della comunicazione su una coppia mirrorata.
++
+Per riprendere manualmente la sincronizzazione, accedere a System Manager e selezionare menu:Storage[Synchronous Mirroring], evidenziare la coppia mirrorata nella tabella e selezionare *Resume* sotto *More*.
+
+
+
+. Fare clic su *fine* per completare la sequenza di mirroring sincrono.
+
+
+.Risultati
+Una volta attivato il mirroring, il sistema esegue le seguenti operazioni:
+
+* Avvia la sincronizzazione iniziale tra lo storage array locale e lo storage array remoto.
+* Imposta la priorità di sincronizzazione e il criterio di risincronizzazione.
+* Riserva la porta con il numero più alto dell'HIC del controller per la trasmissione dei dati mirror.
++
+Le richieste di i/o ricevute su questa porta vengono accettate solo dal proprietario del controller preferito remoto del volume secondario nella coppia mirrorata. (Sono consentite prenotazioni sul volume primario).
+
+* Crea due volumi di capacità riservata, uno per ciascun controller, che vengono utilizzati per la registrazione delle informazioni di scrittura per il ripristino da ripristini del controller e altre interruzioni temporanee.
++
+La capacità di ciascun volume è di 128 MiB. Tuttavia, se i volumi sono collocati in un pool, 4 GiB saranno riservati per ogni volume.
+
+
+
+.Al termine
+Accedere a System Manager e selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione di mirroring sincrono. Questa operazione può essere lunga e può influire sulle prestazioni del sistema.

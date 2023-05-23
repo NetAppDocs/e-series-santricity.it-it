@@ -1,0 +1,42 @@
+---
+permalink: sm-mirroring/suspend-or-resume-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
+summary: 'È possibile sospendere o riprendere la sincronizzazione dei dati su tutte le coppie mirrorate all"interno di un gruppo di coerenza mirror, che è più efficiente della sospensione o della ripresa della sincronizzazione su singole coppie mirrorate.' 
+---
+= Sospendere o riprendere la sincronizzazione per il gruppo di coerenza mirror
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile sospendere o riprendere la sincronizzazione dei dati su tutte le coppie mirrorate all'interno di un gruppo di coerenza mirror, che è più efficiente della sospensione o della ripresa della sincronizzazione su singole coppie mirrorate.
+
+.A proposito di questa attività
+La sospensione e la ripresa della sincronizzazione sui gruppi contribuisce a ridurre l'impatto delle performance sull'applicazione host, che potrebbe verificarsi durante la copia di tutti i dati modificati sull'array di storage locale nell'array di storage remoto.
+
+Lo stato del gruppo di coerenza mirror e delle relative coppie mirrorate rimane sospeso fino a quando non si utilizza l'opzione Resume (Riprendi) per riprendere l'attività di sincronizzazione.
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *Mirror Consistency Groups*.
++
+Viene visualizzata la tabella Mirrored Consistency Group (Gruppo di coerenza mirrorato) che mostra tutti i gruppi di coerenza mirror associati all'array di storage.
+
+. Selezionare il gruppo di coerenza mirror che si desidera sospendere o riprendere, quindi selezionare menu:More[Suspend] o menu:More[Resume].
++
+Il sistema visualizza una conferma.
+
+. Selezionare *Sì* per confermare.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Sospende o riprende il trasferimento dei dati tra tutte le coppie mirrorate in un gruppo di coerenza mirror senza rimuovere la relazione mirror.
+* Registra tutti i dati scritti sul lato primario del gruppo di coerenza del mirror mentre il gruppo di mirroring è sospeso e scrive automaticamente i dati sul lato secondario del gruppo di coerenza del mirror quando il gruppo di mirroring viene ripristinato. Non è richiesta una sincronizzazione completa.
+* Per i gruppi di coerenza _sospesi_ mirror, visualizza *sospesi dall'utente* nella tabella Mirror Consistency Groups.
+* Per un gruppo di coerenza mirror _ripristinato_, i dati scritti nei volumi primari mentre il gruppo di coerenza mirror è stato sospeso vengono scritti immediatamente nei volumi secondari. La sincronizzazione periodica riprende se è stato impostato un intervallo di sincronizzazione automatico.
+

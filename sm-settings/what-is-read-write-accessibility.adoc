@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/what-is-read-write-accessibility.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, read/write, accessibility, 
+summary: 'La finestra Drive Settings (Impostazioni disco) contiene informazioni sugli attributi Drive Security (protezione disco). Lettura/scrittura accessibile è uno degli attributi che viene visualizzato se i dati di un disco sono stati bloccati.' 
+---
+= Che cos'è l'accessibilità in lettura/scrittura?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La finestra Drive Settings (Impostazioni disco) contiene informazioni sugli attributi Drive Security (protezione disco). "Read/Write Accessible" (lettura/scrittura accessibile) è uno degli attributi che viene visualizzato se i dati di un disco sono stati bloccati.
+
+Per visualizzare gli attributi Drive Security, accedere alla pagina hardware. Selezionare un'unità, fare clic su *Visualizza impostazioni*, quindi fare clic su *Mostra altre impostazioni*. Nella parte inferiore della pagina, il valore dell'attributo Read/Write Accessible (lettura/scrittura accessibile) è *Yes* (Sì) quando il disco è sbloccato. Il valore dell'attributo lettura/scrittura accessibile è *No, chiave di sicurezza non valida* quando l'unità è bloccata. È possibile sbloccare un'unità sicura importando una chiave di sicurezza (accedere a menu:Impostazioni[sistema > Sblocca unità protette]).

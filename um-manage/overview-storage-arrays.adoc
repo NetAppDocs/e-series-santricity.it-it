@@ -1,0 +1,42 @@
+---
+permalink: um-manage/overview-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
+summary: Per gestire le risorse di storage, è necessario prima rilevare gli array di storage nella rete. 
+---
+= Panoramica del rilevamento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per gestire le risorse di storage, è necessario prima rilevare gli array di storage nella rete.
+
+
+
+== Come si rilevano gli array?
+
+Utilizzare la pagina Add/Discover per trovare e aggiungere gli array di storage che si desidera gestire nella rete aziendale. È possibile rilevare più array o un singolo array. A tale scopo, immettere gli indirizzi IP di rete, quindi Unified Manager tenta di stabilire singole connessioni a ciascun indirizzo IP dell'intervallo.
+
+Scopri di più:
+
+* link:considerations-for-discovering-arrays.html["Considerazioni per il rilevamento degli array"]
+* link:discover-multiple-arrays.html["Scopri più array di storage"]
+* link:discover-single-array.html["Scopri un singolo array"]
+
+
+
+
+== Come si gestiscono gli array?
+
+Dopo aver individuato gli array, accedere alla pagina *Gestisci - tutto*. Da questa pagina è possibile scorrere un elenco degli array di storage rilevati nella rete, visualizzarne lo stato ed eseguire operazioni su un singolo array o su un gruppo di array.
+
+Se si desidera gestire un singolo array, selezionarlo e aprire System Manager.
+
+Scopri di più:
+
+* link:launch-considerations.html["Considerazioni sull'accesso a System Manager"]
+* link:launch-system-manager.html["Gestire un singolo array di storage"]
+* link:storage-array-status.html["Visualizzare lo stato degli array di storage"]
+

@@ -1,0 +1,110 @@
+---
+permalink: sm-storage/requirements-and-guidelines-for-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
+summary: Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e linee guida. 
+---
+= Requisiti e linee guida per le snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e linee guida.
+
+
+
+== Immagini Snapshot e gruppi di snapshot
+
+* Ogni immagine snapshot è associata esattamente a un gruppo di snapshot.
+* Un gruppo di snapshot viene creato la prima volta che si crea un'immagine snapshot pianificata o istantanea per un oggetto associato. In questo modo si crea capacità riservata.
++
+È possibile visualizzare i gruppi di snapshot dalla pagina Pools & Volume Groups.
+
+* Le immagini snapshot pianificate non si verificano quando lo storage array è offline o spento.
+* Se si elimina un gruppo di snapshot con una pianificazione di snapshot, viene eliminata anche la pianificazione di snapshot.
+* Se si dispone di un volume snapshot non più necessario, è possibile riutilizzarlo, insieme a qualsiasi capacità riservata associata, invece di eliminarlo. In questo modo viene creato un volume di snapshot diverso dello stesso volume di base. È possibile riassociare il volume di snapshot o il volume di snapshot del gruppo di coerenza di snapshot con la stessa immagine di snapshot o un'immagine di snapshot diversa, purché l'immagine di snapshot si trovi nello stesso volume di base.
+
+
+
+
+== Gruppo di coerenza Snapshot
+
+* Un gruppo di coerenza di snapshot contiene un gruppo di snapshot per ogni volume membro del gruppo di coerenza di snapshot.
+* È possibile associare un gruppo di coerenza snapshot a un solo programma.
+* Se si elimina un gruppo di coerenza snapshot con una pianificazione snapshot, viene eliminata anche la pianificazione snapshot.
+* Non è possibile gestire singolarmente un gruppo di snapshot associato a un gruppo di coerenza di snapshot. È invece necessario eseguire le operazioni di gestione (creazione di un'immagine snapshot, eliminazione di un'immagine snapshot o di un gruppo di snapshot e rollback dell'immagine snapshot) a livello di gruppo di coerenza snapshot.
+
+
+
+
+== Volume di base
+
+* Un volume Snapshot deve avere le stesse impostazioni di sicurezza e Data Assurance (da) del volume di base associato.
+* Non è possibile creare un volume di snapshot di un volume di base guasto.
+* Se il volume di base risiede in un gruppo di volumi, i volumi membri di qualsiasi gruppo di coerenza snapshot associato possono risiedere in un pool o in un gruppo di volumi.
+* Se un volume di base risiede in un pool, tutti i volumi membri di qualsiasi gruppo di coerenza snapshot associato devono risiedere nello stesso pool del volume di base.
+
+
+
+
+== Capacità riservata
+
+* La capacità riservata è associata a un solo volume di base.
+* L'utilizzo di una pianificazione può causare un gran numero di immagini snapshot. Assicurarsi di disporre di una capacità riservata sufficiente per gli snapshot pianificati.
+* Il volume di capacità riservata per un gruppo di coerenza snapshot deve avere le stesse impostazioni di sicurezza e Data Assurance (da) del volume di base associato per il volume membro del gruppo di coerenza snapshot.
+
+
+
+
+== Immagini snapshot in sospeso
+
+La creazione di un'immagine Snapshot potrebbe rimanere in sospeso nelle seguenti condizioni:
+
+* Il volume di base che contiene questa immagine snapshot è membro di un gruppo di mirror asincrono.
+* Il volume di base è attualmente in fase di sincronizzazione. La creazione dell'immagine snapshot viene completata non appena l'operazione di sincronizzazione viene completata.
+
+
+
+
+== Numero massimo di immagini snapshot
+
+* Se un volume è membro di un gruppo di coerenza snapshot, System Manager crea un gruppo di snapshot per quel volume membro. Questo gruppo di snapshot conta per il numero massimo consentito di gruppi di snapshot per volume di base.
+* Se si tenta di creare un'immagine snapshot su un gruppo di snapshot o un gruppo di coerenza snapshot, ma il gruppo associato ha raggiunto il numero massimo di immagini snapshot, sono disponibili due opzioni:
++
+** Abilitare l'eliminazione automatica per il gruppo di snapshot o il gruppo di coerenza di snapshot.
+** Eliminare manualmente una o più immagini di snapshot dal gruppo di snapshot o dal gruppo di coerenza di snapshot e riprovare l'operazione.
+
+
+
+
+
+
+== Eliminazione automatica
+
+Se il gruppo di snapshot o il gruppo di coerenza snapshot è abilitato per l'eliminazione automatica, System Manager elimina l'immagine snapshot meno recente quando il sistema ne crea una nuova per il gruppo.
+
+
+
+== Operazione di rollback
+
+* Non è possibile eseguire le seguenti azioni quando è in corso un'operazione di rollback:
++
+** Eliminare l'immagine snapshot utilizzata per il rollback.
+** Creare una nuova immagine snapshot per un volume di base che partecipa a un'operazione di rollback.
+** Modificare la policy Repository-Full del gruppo di snapshot associato.
+
+
+* Non è possibile avviare un'operazione di rollback quando è in corso una di queste operazioni:
++
+** Espansione della capacità (aggiunta di capacità a un pool o a un gruppo di volumi)
+** Espansione dei volumi (aumento della capacità di un volume)
+** Modifica del livello RAID per un gruppo di volumi
+** Modifica delle dimensioni dei segmenti per un volume
+
+
+* Non è possibile avviare un'operazione di rollback se il volume di base partecipa a una copia del volume.
+* Non è possibile avviare un'operazione di rollback se il volume base è un volume secondario in un mirror remoto.
+* Un'operazione di rollback non riesce se una delle capacità utilizzate nel volume di repository snapshot associato presenta settori illeggibili.
+

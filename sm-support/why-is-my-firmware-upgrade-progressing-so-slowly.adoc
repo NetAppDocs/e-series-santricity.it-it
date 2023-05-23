@@ -1,0 +1,16 @@
+---
+permalink: sm-support/why-is-my-firmware-upgrade-progressing-so-slowly.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, firmware, upgrade, slow 
+summary: 'L"avanzamento dell"aggiornamento del firmware dipende dal carico complessivo del sistema.' 
+---
+= Perché l'aggiornamento del firmware procede così lentamente?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'avanzamento dell'aggiornamento del firmware dipende dal carico complessivo del sistema.
+
+Durante un aggiornamento online del firmware del disco, se si verifica un trasferimento di volume durante il processo di ricostruzione rapida, il sistema avvia una ricostruzione completa sul volume trasferito. Questa operazione potrebbe richiedere molto tempo. Il tempo effettivo di ricostruzione completa dipende da diversi fattori, tra cui la quantità di attività i/o che si verifica durante l'operazione di ricostruzione, il numero di dischi nel gruppo di volumi, l'impostazione della priorità di ricostruzione e le prestazioni del disco.

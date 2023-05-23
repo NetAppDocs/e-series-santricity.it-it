@@ -1,0 +1,57 @@
+---
+permalink: um-manage/discover-single-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
+summary: 'Utilizzare l"opzione Add/Discover Single Storage Array (Aggiungi/rileva singolo array di storage) per rilevare e aggiungere manualmente un singolo array di storage alla rete aziendale.' 
+---
+= Scopri un singolo array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare l'opzione Add/Discover Single Storage Array (Aggiungi/rileva singolo array di storage) per rilevare e aggiungere manualmente un singolo array di storage alla rete aziendale.
+
+.Prima di iniziare
+* Lo storage array deve essere configurato e configurato correttamente.
+* Le password degli array di storage devono essere impostate utilizzando il riquadro Access Management di System Manager.
+
+
+.Fasi
+. Dalla pagina Gestisci, selezionare *Aggiungi/rileva*.
++
+Viene visualizzata la finestra di dialogo Add/Discover (Aggiungi/rileva).
+
+. Selezionare il pulsante di opzione *Discover a single storage array* (rileva un singolo array di storage).
+. Inserire l'indirizzo IP di uno dei controller nell'array di storage, quindi fare clic su *Avvia rilevamento*.
++
+La connessione di Unified Manager all'array di storage specificato può richiedere alcuni minuti.
+
++
+[NOTE]
+====
+Il messaggio Storage Array Not Accessible (Storage Array non accessibile) viene visualizzato quando la connessione all'indirizzo IP del controller specificato non riesce.
+
+====
+. Se richiesto, risolvere eventuali certificati autofirmati.
++
+Nell'ambito del processo di rilevamento, il sistema verifica che gli array di storage rilevati stiano utilizzando certificati da un'origine attendibile. Se non riesce a individuare un certificato digitale per un array di storage, richiede di risolvere il certificato non firmato da un'autorità di certificazione (CA) riconosciuta aggiungendo un'eccezione di protezione.
+
+. Se richiesto, risolvere eventuali certificati non attendibili.
++
+I certificati non attendibili si verificano quando uno storage array tenta di stabilire una connessione sicura a Unified Manager, ma la connessione non viene confermata come sicura. Risolvi i certificati non attendibili importando un certificato dell'autorità di certificazione (CA) emesso da una terza parte attendibile.
+
+. Fare clic su *Avanti*.
+. *Opzionale:* associare lo storage array rilevato a un gruppo: Dall'elenco a discesa, selezionare il gruppo desiderato da associare allo storage array.
++
+Il gruppo "tutti" è selezionato per impostazione predefinita.
+
+. Inserire la password dell'amministratore per lo storage array che si desidera aggiungere al dominio di gestione, quindi fare clic su *OK*.
+
+
+.Al termine
+L'array di storage viene aggiunto a Unified Manager e, se specificato, viene aggiunto anche al gruppo selezionato.
+
+Se è attivata la raccolta automatica dei dati di supporto, i dati di supporto vengono raccolti automaticamente per un array di storage aggiunto.

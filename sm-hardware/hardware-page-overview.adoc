@@ -1,0 +1,72 @@
+---
+permalink: sm-hardware/hardware-page-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
+summary: 'La pagina hardware fornisce una rappresentazione grafica dei componenti fisici dell"array di storage. Da qui, è possibile controllare lo stato dei componenti ed eseguire alcune funzioni correlate a tali componenti.' 
+---
+= Pagina hardware e componenti
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina hardware fornisce una rappresentazione grafica dei componenti fisici dell'array di storage. Da qui, è possibile controllare lo stato dei componenti ed eseguire alcune funzioni correlate a tali componenti.
+
+
+
+== Shelf
+
+Uno shelf è un componente che contiene l'hardware per lo storage array (controller, alimentatori/ventole e dischi). Esistono due tipi di shelf:
+
+* *Controller shelf* -- contiene i dischi, i contenitori di alimentazione/ventole e i controller.
+* *Shelf di dischi* (o *shelf di espansione*) -- contiene dischi, alimentatori/ventole e due moduli di input/output (IOM). Gli IOM, noti anche come ESM (Environmental Service Module), includono porte SAS che collegano lo shelf di dischi allo shelf di controller.
+
+
+Gli shelf sono disponibili in tre dimensioni per ospitare fino a 12, 24 o 60 dischi. Ogni shelf include un numero ID assegnato dal firmware del controller. L'ID viene visualizzato in alto a sinistra nella vista dello shelf.
+
+La vista shelf nella pagina hardware mostra i componenti anteriori o posteriori. È possibile passare da una vista all'altra selezionando *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'alto a destra della vista dello shelf. È inoltre possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano* dalla parte inferiore della pagina. Le viste anteriore e posteriore mostrano quanto segue:
+
+* *Componenti anteriori* -- dischi e alloggiamenti vuoti.
+* *Componenti posteriori* -- Controller e alimentatori/ventole (per shelf di controller) o IOM e alimentatori/ventole (per shelf di dischi).
+
+
+È possibile eseguire le seguenti funzioni relative agli shelf:
+
+* Accendere la luce di posizionamento dello shelf, in modo da individuare la posizione fisica dello shelf nel cabinet o nel rack.
+* Modificare il numero ID visualizzato in alto a sinistra nella vista dello shelf.
+* Visualizzare le impostazioni dello shelf, ad esempio i tipi di dischi installati e il numero di serie.
+* Spostare le viste dello shelf verso l'alto o verso il basso in modo che corrispondano al layout fisico dell'array di storage.
+
+
+
+
+== Controller
+
+Un controller è l'hardware e il firmware combinati che implementa le funzioni di storage array e gestione. Include la memoria cache, il supporto del disco e il supporto dell'interfaccia host.
+
+È possibile eseguire le seguenti funzioni relative ai controller:
+
+* Configurare le porte di gestione per gli indirizzi IP e la velocità.
+* Configurare le connessioni host iSCSI (se si dispone di host iSCSI).
+* Configurare un server NTP (Network Time Protocol) e un server DNS (Domain Name System).
+* Visualizzare lo stato e le impostazioni del controller.
+* Consentire agli utenti esterni alla rete locale di avviare una sessione SSH e modificare le impostazioni del controller.
+* Impostare il controller offline, online o in modalità di servizio.
+
+
+
+
+== Dischi
+
+Lo storage array può includere dischi rigidi (HDD) o dischi a stato solido (SSD). A seconda delle dimensioni dello shelf, è possibile installare fino a 12, 24 o 60 dischi nello shelf.
+
+È possibile eseguire le seguenti funzioni relative ai dischi:
+
+* Accendere la spia di localizzazione dell'unità, in modo da individuare la posizione fisica dell'unità nello shelf.
+* Visualizzare lo stato e le impostazioni del disco.
+* Riassegnare un disco (sostituire logicamente un disco guasto con un disco non assegnato) e ricostruire manualmente il disco, se necessario.
+* Eseguire manualmente il failover di un disco per poterlo sostituire. (Il guasto di un disco consente di copiare il contenuto del disco prima di sostituirlo).
+* Assegnare o annullare l'assegnazione di hot spare.
+* Cancellare i dischi.
+

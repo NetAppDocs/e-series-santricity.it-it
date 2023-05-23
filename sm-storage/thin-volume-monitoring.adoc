@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/thin-volume-monitoring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, thin, volume, monitoring 
+summary: È possibile monitorare lo spazio dei thin volumi e generare avvisi appropriati per evitare condizioni di capacità insufficiente. 
+---
+= Monitoraggio di volumi sottili
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile monitorare lo spazio dei thin volumi e generare avvisi appropriati per evitare condizioni di capacità insufficiente.
+
+Gli ambienti con thin provisioning possono allocare più spazio logico rispetto allo storage fisico sottostante. È possibile selezionare il menu:Storage[Volumes > Thin Volume Monitoring] (Storage[volumi > monitoraggio volume thin]) per monitorare la crescita dei volumi thin prima che raggiungano il limite massimo di capacità allocata.
+
+È possibile utilizzare la vista monitoraggio thin per eseguire le seguenti operazioni:
+
+* Definire il limite che limita la capacità allocata a cui un volume sottile può espandersi automaticamente.
+* Impostare il punto percentuale in cui un avviso (soglia di avviso superata) viene inviato all'area Notifiche della pagina iniziale quando un volume sottile si trova vicino al limite massimo di capacità allocata.
+
+
+Per aumentare la capacità di un volume sottile, aumentare la capacità riportata.
+
+[NOTE]
+====
+System Manager non offre un'opzione per creare volumi thin. Se si desidera creare volumi thin, utilizzare l'interfaccia della riga di comando (CLI).
+
+====
+[NOTE]
+====
+I thin volumi non sono disponibili sul sistema storage EF600 o EF300.
+
+====

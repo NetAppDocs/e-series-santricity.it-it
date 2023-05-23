@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ALB, automatic, load, balancing 
+summary: La funzione di bilanciamento automatico del carico fornisce un bilanciamento i/o automatizzato e garantisce che il traffico i/o in entrata dagli host sia gestito e bilanciato dinamicamente tra entrambi i controller. 
+---
+= Che cos'è il bilanciamento automatico del carico?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione di bilanciamento automatico del carico fornisce un bilanciamento i/o automatizzato e garantisce che il traffico i/o in entrata dagli host sia gestito e bilanciato dinamicamente tra entrambi i controller.
+
+La funzione di bilanciamento automatico del carico offre una migliore gestione delle risorse i/o, reagendo in modo dinamico alle variazioni di carico nel tempo e regolando automaticamente la proprietà dei controller di volume per correggere eventuali problemi di squilibrio del carico quando i carichi di lavoro si spostano tra i controller.
+
+Il carico di lavoro di ciascun controller viene costantemente monitorato e, grazie alla collaborazione dei driver multipath installati sugli host, può essere automaticamente bilanciato quando necessario. Quando il carico di lavoro viene riregolato automaticamente tra i controller, l'amministratore dello storage viene alleggerito dall'onere di regolare manualmente la proprietà del controller di volume per adattarsi alle modifiche di carico sull'array di storage.
+
+Quando il bilanciamento automatico del carico è attivato, esegue le seguenti funzioni:
+
+* Monitora e bilancia automaticamente l'utilizzo delle risorse dei controller.
+* Regola automaticamente la proprietà del controller del volume quando necessario, ottimizzando in tal modo la larghezza di banda i/o tra gli host e lo storage array.
+
+
+[NOTE]
+====
+Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non è idoneo per un trasferimento automatico del bilanciamento del carico.
+
+====

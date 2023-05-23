@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/delete-trap-destinations.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
+summary: 'È possibile eliminare un indirizzo di destinazione trap in modo che il monitor eventi dell"array di storage non invii più trap SNMP a tale indirizzo.' 
+---
+= Eliminare le destinazioni trap
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare un indirizzo di destinazione trap in modo che il monitor eventi dell'array di storage non invii più trap SNMP a tale indirizzo.
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *SNMP*.
++
+Gli indirizzi di destinazione trap vengono visualizzati nella tabella.
+
+. Selezionare una destinazione trap, quindi fare clic su *Delete* (Elimina) in alto a destra nella pagina.
+. Confermare l'operazione, quindi fare clic su *Delete* (Elimina).
++
+L'indirizzo di destinazione non viene più visualizzato nella pagina Avvisi.
+
+
+
+.Risultati
+La destinazione dei trap cancellati non riceve più trap SNMP dal monitor degli eventi dell'array di storage.

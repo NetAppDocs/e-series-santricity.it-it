@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/edit-key-management-server-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
+summary: Se è stata configurata la gestione esterna delle chiavi, è possibile visualizzare e modificare le impostazioni del server di gestione delle chiavi in qualsiasi momento. 
+---
+= Modificare le impostazioni del server di gestione delle chiavi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stata configurata la gestione esterna delle chiavi, è possibile visualizzare e modificare le impostazioni del server di gestione delle chiavi in qualsiasi momento.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *View/Edit Key Management Server Settings* (Visualizza/Modifica impostazioni del server di gestione delle chiavi).
+. Modificare le informazioni nei seguenti campi:
++
+** *Indirizzo del server di gestione delle chiavi* -- inserire il nome di dominio completo o l'indirizzo IP (IPv4 o IPv6) del server utilizzato per la gestione delle chiavi.
+** *Key management port number* -- inserire il numero di porta utilizzato per le comunicazioni KMIP (Key Management Interoperability Protocol).
++
+*Opzionale:* è possibile includere un altro server chiavi facendo clic su *Aggiungi server chiavi*.
+
+
+
+. Fare clic su *Save* (Salva).
+

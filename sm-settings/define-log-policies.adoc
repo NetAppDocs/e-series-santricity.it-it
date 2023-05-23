@@ -1,0 +1,71 @@
+---
+permalink: sm-settings/define-log-policies.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
+summary: È possibile modificare il criterio di sovrascrittura e i tipi di eventi registrati nel registro di controllo. 
+---
+= Definire i criteri del registro di controllo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il criterio di sovrascrittura e i tipi di eventi registrati nel registro di controllo.
+
+.Prima di iniziare
+È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+
+.A proposito di questa attività
+Questa attività descrive come modificare le impostazioni del registro di controllo, che includono il criterio per la sovrascrittura degli eventi precedenti e il criterio per la registrazione dei tipi di evento.
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Selezionare la scheda *Registro di controllo*.
+. Selezionare *Visualizza/Modifica impostazioni*.
++
+Viene visualizzata la finestra di dialogo Audit Log Settings (Impostazioni registro di controllo).
+
+. Modificare il criterio di sovrascrittura o i tipi di eventi registrati.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Sovrascrivere il criterio
+ a| 
+Determina il criterio per la sovrascrittura di eventi precedenti quando viene raggiunta la capacità massima:
+
+** *Consente di sovrascrivere gli eventi meno recenti nel registro di controllo quando il registro di controllo è pieno* -- sovrascrive gli eventi precedenti quando il registro di controllo raggiunge 50,000 record.
+** *Richiedere l'eliminazione manuale degli eventi del registro di controllo* -- specifica che gli eventi non verranno cancellati automaticamente; viene invece visualizzato un avviso di soglia in corrispondenza della percentuale impostata. Gli eventi devono essere cancellati manualmente.
++
+
+NOTE: Se il criterio di sovrascrittura è disattivato e le voci del registro di controllo raggiungono il limite massimo, l'accesso a System Manager viene negato agli utenti senza autorizzazioni di amministratore della sicurezza. Per ripristinare l'accesso al sistema agli utenti senza autorizzazioni di amministratore della sicurezza, un utente assegnato al ruolo di amministratore della protezione deve eliminare i vecchi record di eventi.
+
++
+
+NOTE: I criteri di sovrascrittura non si applicano se un server syslog è configurato per l'archiviazione dei registri di controllo.
+
+
+
+
+
+ a| 
+Livello di azioni da registrare
+ a| 
+Determina i tipi di eventi da registrare:
+
+** *Registra solo eventi di modifica* -- Mostra solo gli eventi in cui un'azione dell'utente comporta la modifica del sistema.
+** *Registra tutti gli eventi di modifica e di sola lettura* -- Mostra tutti gli eventi, inclusa un'azione dell'utente che comporta la lettura o il download delle informazioni.
+
+
+|===
+====
+. Fare clic su *Save* (Salva).
+

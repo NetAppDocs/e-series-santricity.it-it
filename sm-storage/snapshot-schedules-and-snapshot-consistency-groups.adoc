@@ -1,0 +1,38 @@
+---
+permalink: sm-storage/snapshot-schedules-and-snapshot-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
+summary: Utilizzare le pianificazioni per la raccolta di immagini snapshot e i gruppi di coerenza snapshot per gestire più volumi di base. 
+---
+= Pianificazioni di Snapshot e gruppi di coerenza di Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare le pianificazioni per la raccolta di immagini snapshot e i gruppi di coerenza snapshot per gestire più volumi di base.
+
+Per gestire facilmente le operazioni di snapshot per i volumi di base, è possibile utilizzare le seguenti funzionalità:
+
+* *Snapshot schedule* -- automatizza le snapshot per un singolo volume di base.
+* *Snapshot Consistency group* -- Gestisci più volumi di base come un'unica entità.
+
+
+
+
+== Calendario di Snapshot
+
+Se si desidera creare automaticamente snapshot per un volume di base, è possibile creare una pianificazione. Ad esempio, è possibile definire un programma che prenda le immagini snapshot ogni sabato a mezzanotte, il primo di ogni mese o in qualsiasi data e ora decida. Una volta raggiunto il numero massimo di 32 snapshot per una singola pianificazione, è possibile sospendere gli snapshot pianificati, creare una capacità più riservata o eliminare gli snapshot. Le istantanee possono essere eliminate manualmente o automatizzando il processo di eliminazione. Una volta eliminata un'immagine snapshot, è disponibile ulteriore capacità riservata per il riutilizzo.
+
+
+
+== Gruppo di coerenza Snapshot
+
+Si crea un gruppo di coerenza snapshot quando si desidera assicurarsi che le immagini snapshot vengano acquisite su più volumi contemporaneamente. Le azioni dell'immagine Snapshot vengono eseguite sull'intero gruppo di coerenza Snapshot. Ad esempio, è possibile pianificare snapshot sincronizzati di tutti i volumi con lo stesso indicatore data e ora. I gruppi di coerenza Snapshot sono ideali per le applicazioni che si estendono su più volumi, ad esempio le applicazioni di database che memorizzano i log su un volume e i file di database su un altro volume.
+
+I volumi inclusi in un gruppo di coerenza snapshot sono denominati volumi membri. Quando si aggiunge un volume a un gruppo di coerenza, System Manager crea automaticamente una nuova capacità riservata che corrisponde a quel volume membro. È possibile definire una pianificazione per creare automaticamente un'immagine snapshot di ciascun volume membro.
+
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[panoramica dei gruppi di coerenza delle snapshot sam1130 dwg]
+
+^1^ capacità riservata; ^2^ volume membro; ^3^ immagini snapshot del gruppo di coerenza

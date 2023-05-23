@@ -1,0 +1,35 @@
+---
+permalink: sm-support/collect-i-o-path-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
+summary: 'È possibile salvare il file delle statistiche del percorso i/o e inviarlo al supporto tecnico per l"analisi.' 
+---
+= Raccogliere le statistiche del percorso di i/O.
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile salvare il file delle statistiche del percorso i/o e inviarlo al supporto tecnico per l'analisi.
+
+.A proposito di questa attività
+Il supporto tecnico utilizza le statistiche del percorso i/o per diagnosticare i problemi di performance. I problemi di performance delle applicazioni possono essere causati dall'utilizzo della memoria, dall'utilizzo della CPU, dalla latenza di rete, dalla latenza di i/o o o da altri problemi. Le statistiche del percorso i/o vengono raccolte automaticamente durante la raccolta dei dati di supporto oppure è possibile raccoglierle manualmente. Inoltre, se AutoSupport è attivato, le statistiche del percorso i/o vengono raccolte automaticamente e inviate al supporto tecnico.
+
+I contatori delle statistiche del percorso i/o vengono ripristinati dopo aver confermato che si desidera raccogliere le statistiche del percorso i/O. I contatori vengono azzerati anche se successivamente si annulla l'operazione. I contatori vengono ripristinati anche quando il controller viene reimpostato (riavviato).
+
+[NOTE]
+====
+Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Collect i/o Path Statistics* (raccolta statistiche percorso i/o).
+. Confermare che si desidera eseguire l'operazione digitando `collect`, Quindi fare clic su *Collect*.
++
+Il file viene salvato nella cartella Download del browser con il nome file `io-path-statistics.7z`.
+
+. Seguire le istruzioni fornite dal supporto tecnico per inviare il file.
+

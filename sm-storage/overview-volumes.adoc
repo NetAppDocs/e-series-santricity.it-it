@@ -1,0 +1,55 @@
+---
+permalink: sm-storage/overview-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: 'È possibile creare un volume come container in cui applicazioni, database e file system memorizzano i dati. Quando si crea un volume, è anche possibile selezionare un carico di lavoro per personalizzare la configurazione dello storage array per un"applicazione specifica.' 
+---
+= Panoramica su volumi e carichi di lavoro
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare un volume come container in cui applicazioni, database e file system memorizzano i dati. Quando si crea un volume, è anche possibile selezionare un carico di lavoro per personalizzare la configurazione dello storage array per un'applicazione specifica.
+
+
+
+== Cosa sono i volumi e i carichi di lavoro?
+
+Un _volume_ è il componente logico creato con capacità specifica per l'accesso dell'host. Anche se un volume può essere costituito da più di un disco, un volume viene visualizzato come un componente logico per l'host. Una volta definito un volume, è possibile aggiungerlo a un workload. Un _workload_ è un oggetto storage che supporta un'applicazione, come SQL Server o Exchange, che è possibile utilizzare per ottimizzare lo storage per tale applicazione.
+
+Scopri di più:
+
+* link:how-volumes-work.html["Come funzionano i volumi"]
+* link:how-workloads-work.html["Come funzionano i carichi di lavoro"]
+* link:volume-terminology.html["Terminologia relativa ai volumi"]
+* link:capacity-for-volumes.html["Come viene allocata la capacità per i volumi"]
+* link:actions-you-can-perform-on-volumes.html["Azioni che è possibile eseguire sui volumi"]
+
+
+
+
+== Come crei volumi e carichi di lavoro?
+
+Innanzitutto, si crea un carico di lavoro. Accedere al menu:Storage[Volumes] (Storage[volumi]) e aprire una procedura guidata che ti guiderà attraverso i passaggi. Quindi, si crea un volume dalla capacità disponibile in un pool o in un gruppo di volumi, quindi si assegna il carico di lavoro creato.
+
+Scopri di più:
+
+* link:workflow-for-creating-volumes.html["Workflow per la creazione di volumi"]
+* link:create-workloads.html["Creare carichi di lavoro"]
+* link:create-volumes.html["Creare volumi"]
+* link:add-to-workload.html["Aggiungere volumi al carico di lavoro"]
+
+
+
+
+== Informazioni correlate
+
+Scopri di più sui concetti relativi ai volumi:
+
+* link:data-integrity-and-data-security-for-volumes.html["Integrità dei dati e sicurezza dei dati per i volumi"]
+* link:ssd-cache-and-volumes.html["Cache SSD e volumi"]
+* link:thin-volume-monitoring.html["Monitoraggio di volumi sottili"]
+

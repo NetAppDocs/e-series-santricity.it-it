@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/how-do-i-configure-snmp-or-syslog-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, syslog, alerts, 
+summary: 'Oltre agli avvisi via email, è possibile configurare gli avvisi in modo che vengano inviati tramite trap SNMP (Simple Network Management Protocol) o messaggi syslog.' 
+---
+= Come si configurano gli avvisi SNMP o syslog?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Oltre agli avvisi via email, è possibile configurare gli avvisi in modo che vengano inviati tramite trap SNMP (Simple Network Management Protocol) o messaggi syslog.
+
+Per configurare gli avvisi SNMP o syslog, accedere al menu:Impostazioni[Avvisi].

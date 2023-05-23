@@ -1,0 +1,38 @@
+---
+permalink: um-certificates/view-local-user-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, view, local, user, roles 
+summary: 'Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature degli utenti ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nel proxy dei servizi Web per il gestore unificato di SANtricity.' 
+---
+= Visualizzare i ruoli utente locali
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature degli utenti ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nel proxy dei servizi Web per Unified Manager.
+
+.Prima di iniziare
+È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+
+.A proposito di questa attività
+Gli utenti e le mappature non possono essere modificati. È possibile modificare solo le password.
+
+.Fasi
+. Selezionare *Access Management*.
+. Selezionare la scheda *ruoli utente locali*.
++
+Gli utenti sono mostrati nella tabella:
+
++
+** *Admin* -- Amministratore eccellente che ha accesso a tutte le funzioni del sistema. Questo utente include tutti i ruoli.
+** *Storage* -- l'amministratore responsabile di tutto il provisioning dello storage. Questo utente include i seguenti ruoli: Storage Admin, Support Admin e Monitor.
+** *Security* -- l'utente responsabile della configurazione della sicurezza, inclusi Access Management e Certificate Management. Questo utente include i seguenti ruoli: Security Admin e Monitor.
+** *Support* -- l'utente responsabile delle risorse hardware, dei dati di guasto e degli aggiornamenti del firmware. Questo utente include i seguenti ruoli: Support Admin e Monitor.
+** *Monitor* -- un utente con accesso in sola lettura al sistema. Questo utente include solo il ruolo Monitor.
+** *rw* (lettura/scrittura) -- questo utente include i seguenti ruoli: Amministratore dello storage, amministratore del supporto e monitor.
+** *Ro* (sola lettura) -- questo utente include solo il ruolo Monitor.
+
+
+

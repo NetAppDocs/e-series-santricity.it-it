@@ -1,0 +1,37 @@
+---
+permalink: um-manage/overview-manage-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, groups 
+summary: 'Dalla pagina Manage Groups (Gestisci gruppi), è possibile creare un set di gruppi di array di storage per una gestione più semplice.' 
+---
+= Panoramica dei gruppi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina Manage Groups (Gestisci gruppi), è possibile creare un set di gruppi di array di storage per una gestione più semplice.
+
+
+
+== Cosa sono i gruppi di array?
+
+È possibile gestire l'infrastruttura fisica e virtualizzata raggruppando un set di storage array. È possibile raggruppare gli array di storage per semplificare l'esecuzione dei processi di monitoraggio o reporting.
+
+Esistono due tipi di gruppi:
+
+* *Tutti i gruppi* -- il gruppo tutti è il gruppo predefinito e include tutti gli array di storage rilevati nell'organizzazione. È possibile accedere al gruppo All dalla vista principale.
+* *User-created group* -- Un gruppo creato dall'utente include gli array di storage che si selezionano manualmente per aggiungere a quel gruppo. È possibile accedere ai gruppi creati dall'utente dalla vista principale.
+
+
+
+
+== Come si configurano i gruppi?
+
+Dalla pagina Manage Groups (Gestisci gruppi), è possibile creare un gruppo e quindi aggiungere array a tale gruppo.
+
+Scopri di più:
+
+* link:create-storage-array-group.html["Configurare il gruppo di array di storage"]
+

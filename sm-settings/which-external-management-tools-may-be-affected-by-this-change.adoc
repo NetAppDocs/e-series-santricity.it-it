@@ -1,0 +1,38 @@
+---
+permalink: sm-settings/which-external-management-tools-may-be-affected-by-this-change.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, external, management, tools, 
+summary: 'Quando si apportano alcune modifiche in System Manager, ad esempio la commutazione dell"interfaccia di gestione o l"utilizzo di SAML per un metodo di autenticazione, l"utilizzo di alcuni strumenti e funzionalità esterni potrebbe essere limitato.' 
+---
+= Quali strumenti di gestione esterni potrebbero essere interessati da questa modifica?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si apportano alcune modifiche in System Manager, ad esempio la commutazione dell'interfaccia di gestione o l'utilizzo di SAML per un metodo di autenticazione, l'utilizzo di alcuni strumenti e funzionalità esterni potrebbe essere limitato.
+
+
+
+== Interfaccia di gestione
+
+Gli strumenti che comunicano direttamente con l'interfaccia di gestione legacy (Symbol), come il provider SMI-S SANtricity o OnCommand Insight (OCI), non funzionano se non è attivata l'impostazione dell'interfaccia di gestione legacy. Inoltre, non è possibile utilizzare i comandi CLI legacy o eseguire operazioni di mirroring se questa impostazione è disattivata.
+
+Per ulteriori informazioni, contatta il supporto tecnico.
+
+
+
+== Autenticazione SAML
+
+Quando SAML è attivato, i seguenti client non possono accedere ai servizi e alle risorse dell'array di storage:
+
+* Finestra Enterprise Management (EMW)
+* Interfaccia a riga di comando (CLI)
+* Client Software Developer Kit (SDK)
+* Client in-band
+* Client REST API per l'autenticazione di base HTTP
+* Effettuare l'accesso utilizzando l'endpoint REST API standard
+
+
+Per ulteriori informazioni, contatta il supporto tecnico.

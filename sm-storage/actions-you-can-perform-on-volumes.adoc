@@ -1,0 +1,135 @@
+---
+permalink: sm-storage/actions-you-can-perform-on-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: 'È possibile eseguire diverse azioni su un volume: Aumento della capacità, eliminazione, copia, inizializzazione, ridistribuzione, modifica della proprietà, modifica delle impostazioni della cache e modifica delle impostazioni di scansione dei supporti.' 
+---
+= Azioni che è possibile eseguire sui volumi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eseguire diverse azioni su un volume: Aumento della capacità, eliminazione, copia, inizializzazione, ridistribuzione, modifica della proprietà, modifica delle impostazioni della cache e modifica delle impostazioni di scansione dei supporti.
+
+
+
+== Aumentare la capacità
+
+È possibile espandere la capacità di un volume in due modi:
+
+* Utilizzare la capacità libera disponibile nel pool o nel gruppo di volumi.
++
+Per aggiungere capacità a un volume, selezionare il menu:Storage[Pools and Volume Groups > Add Capacity] (Storage[Pools and Volume Groups > Add Capacity]).
+
+* Aggiungere capacità non assegnata (sotto forma di unità inutilizzate) al pool o al gruppo di volumi del volume. Utilizzare questa opzione quando non esiste capacità libera nel pool o nel gruppo di volumi.
++
+Per aggiungere capacità non assegnata al pool o al gruppo di volumi, selezionare menu:Storage[Pool e gruppi di volumi > Add Capacity] (Aggiungi capacità).
+
++
+Se la capacità libera non è disponibile nel pool o nel gruppo di volumi, non è possibile aumentare la capacità del volume. È necessario aumentare prima le dimensioni del pool o del gruppo di volumi o eliminare i volumi inutilizzati.
+
+
+
+Dopo aver espanso la capacità del volume, è necessario aumentare manualmente le dimensioni del file system per ottenere la corrispondenza. Il modo in cui si esegue questa operazione dipende dal file system in uso. Per ulteriori informazioni, consultare la documentazione del sistema operativo host.
+
+
+
+== Eliminare
+
+In genere, i volumi vengono eliminati se sono stati creati con parametri o capacità errati, se non soddisfano più le esigenze di configurazione dello storage o se si tratta di immagini snapshot non più necessarie per il backup o il test delle applicazioni. L'eliminazione di un volume aumenta la capacità libera nel pool o nel gruppo di volumi.
+
+L'eliminazione dei volumi causa la perdita di tutti i dati su tali volumi. L'eliminazione di un volume comporta anche l'eliminazione di eventuali snapshot, pianificazioni e volumi snapshot associati e la rimozione di eventuali relazioni di mirroring.
+
+
+
+== Copia
+
+Quando si copiano i volumi, si crea una copia point-in-time di due volumi separati, il volume di origine e il volume di destinazione, sullo stesso array di storage. È possibile copiare i volumi selezionando il menu:Storage[Volumes > Copy Services > Copy volume].
+
+
+
+== Inizializzare
+
+L'inizializzazione di un volume cancella tutti i dati dal volume. Un volume viene inizializzato automaticamente quando viene creato per la prima volta. Tuttavia, il Recovery Guru potrebbe consigliare di inizializzare manualmente un volume per eseguire il ripristino in seguito a determinate condizioni di errore. Quando si inizializza un volume, il volume mantiene le impostazioni relative a WWN, assegnazioni host, capacità allocata e capacità riservata. Inoltre, mantiene le stesse impostazioni di sicurezza e di Data Assurance (da).
+
+È possibile inizializzare i volumi selezionando menu:Storage[Volumes > More > Initialize Volumes] (Storage[volumi > Altro > Inizializza volumi]).
+
+
+
+== Ridistribuire
+
+Ridistribuisci i volumi per spostarli di nuovo nei proprietari di controller preferiti. In genere, i driver multipath spostano i volumi dal proprietario del controller preferito quando si verifica un problema lungo il percorso dei dati tra l'host e l'array di storage.
+
+La maggior parte dei driver multipath host tenta di accedere a ciascun volume su un percorso verso il proprietario del controller preferito. Tuttavia, se questo percorso preferito non è disponibile, il driver multipath sull'host esegue il failover su un percorso alternativo. Questo failover potrebbe causare la modifica della proprietà del volume nel controller alternativo. Dopo aver risolto la condizione che ha causato il failover, alcuni host potrebbero spostare automaticamente la proprietà del volume nel proprietario del controller preferito, ma in alcuni casi potrebbe essere necessario ridistribuire manualmente i volumi.
+
+È possibile ridistribuire i volumi selezionando il menu:Storage[Volumes > More > redistribuisci volumi].
+
+
+
+== Modificare la proprietà del volume
+
+La modifica della proprietà di un volume modifica la proprietà preferita del controller del volume. Il proprietario preferito del controller di un volume è elencato in menu:Storage[Volumes > View/Edit Settings > Advanced tab] (Storage[volumi > Visualizza/Modifica impostazioni > scheda Advanced]).
+
+È possibile modificare la proprietà di un volume selezionando menu:Storage[Volumes > More > Change Ownership] (Storage[volumi > Altro > Modifica proprietà]).
+
+
+
+=== Mirroring e proprietà del volume
+
+Se il volume primario della coppia mirrorata è di proprietà del controller A, anche il volume secondario sarà di proprietà del controller A dell'array di storage remoto. La modifica del proprietario del volume primario modifica automaticamente il proprietario del volume secondario per garantire che entrambi i volumi siano di proprietà dello stesso controller. Le attuali modifiche di proprietà sul lato primario si propagano automaticamente alle corrispondenti modifiche di proprietà correnti sul lato secondario.
+
+Se un gruppo di coerenza mirror contiene un volume secondario locale e la proprietà del controller viene modificata, il volume secondario viene automaticamente ritrasferito al proprietario del controller originale alla prima operazione di scrittura. Non è possibile modificare la proprietà del controller di un volume secondario utilizzando l'opzione *Cambia proprietà*.
+
+
+
+=== Copia della proprietà di volumi e volumi
+
+Durante un'operazione di copia del volume, lo stesso controller deve possedere sia il volume di origine che il volume di destinazione. A volte, all'avvio dell'operazione di copia del volume, entrambi i volumi non dispongono dello stesso controller preferito. Pertanto, la proprietà del volume di destinazione viene automaticamente trasferita al controller preferito del volume di origine. Quando la copia del volume viene completata o interrotta, la proprietà del volume di destinazione viene ripristinata nel controller preferito.
+
+Se la proprietà del volume di origine viene modificata durante l'operazione di copia del volume, viene modificata anche la proprietà del volume di destinazione. In alcuni ambienti del sistema operativo, potrebbe essere necessario riconfigurare il driver host multipath prima di poter utilizzare un percorso i/O. Alcuni driver multipath richiedono una modifica per riconoscere il percorso i/O. Per ulteriori informazioni, consultare la documentazione del driver.
+
+
+
+== Modificare le impostazioni della cache
+
+La memoria cache è un'area di storage volatile temporaneo (RAM) sul controller che ha un tempo di accesso più rapido rispetto ai supporti del disco. Se si utilizza la memoria cache, è possibile aumentare le prestazioni di i/o complessive per i seguenti motivi:
+
+* I dati richiesti dall'host per una lettura potrebbero essere già nella cache da un'operazione precedente, eliminando così la necessità di accesso al disco.
+* I dati di scrittura vengono scritti inizialmente nella cache, consentendo all'applicazione di continuare invece di attendere la scrittura dei dati sul disco.
+
+
+Selezionare il menu:Storage[Volumes > More > Change cache settings] (Storage[volumi > Altro > Modifica impostazioni cache) per modificare le seguenti impostazioni della cache:
+
+* *Cache in lettura e scrittura* -- la cache in lettura è un buffer che memorizza i dati letti dai dischi. I dati di un'operazione di lettura potrebbero essere già presenti nella cache di un'operazione precedente, eliminando così la necessità di accedere ai dischi. I dati rimangono nella cache di lettura fino a quando non vengono scaricati.
++
+La cache di scrittura è un buffer che memorizza i dati dell'host che non sono ancora stati scritti sui dischi. I dati rimangono nella cache di scrittura fino a quando non vengono scritti sui dischi. Il caching in scrittura può aumentare le performance di i/O.
+
+* *Cache in scrittura con mirroring* -- il caching in scrittura con mirroring si verifica quando i dati scritti nella memoria cache di un controller vengono scritti anche nella memoria cache dell'altro controller. Pertanto, se un controller si guasta, l'altro può completare tutte le operazioni di scrittura in sospeso. Il mirroring della cache di scrittura è disponibile solo se il caching di scrittura è attivato e sono presenti due controller. Il caching in scrittura con mirroring è l'impostazione predefinita alla creazione del volume.
+* *Write caching senza batterie* -- l'impostazione write caching senza batterie consente di continuare il caching in scrittura anche quando le batterie sono mancanti, guaste, completamente scariche o non completamente cariche. La scelta del caching in scrittura senza batterie non è generalmente consigliata, in quanto i dati potrebbero andare persi in caso di interruzione dell'alimentazione. In genere, il caching in scrittura viene disattivato temporaneamente dal controller fino a quando le batterie non vengono caricate o non viene sostituita una batteria guasta.
++
+Questa impostazione è disponibile solo se è stato attivato il caching in scrittura. Questa impostazione non è disponibile per i volumi thin.
+
+* *Dynamic Read cache prefetch* -- Dynamic cache Read prefetch consente al controller di copiare ulteriori blocchi di dati sequenziali nella cache durante la lettura dei blocchi di dati da un disco alla cache. Questo caching aumenta la possibilità che le future richieste di dati possano essere compilate dalla cache. Il prefetch dinamico della lettura della cache è importante per le applicazioni multimediali che utilizzano l'i/o sequenziale La velocità e la quantità di dati precaricati nella cache vengono regolate automaticamente in base alla velocità e alle dimensioni della richiesta dell'host. L'accesso casuale non fa sì che i dati vengano precaricati nella cache. Questa funzione non si applica quando il caching in lettura è disattivato.
++
+Per un volume thin, il prefetch dinamico di lettura della cache è sempre disattivato e non può essere modificato.
+
+
+
+
+
+== Modificare le impostazioni di scansione dei supporti
+
+Le scansioni dei supporti rilevano e riparano gli errori dei supporti sui blocchi di dischi che vengono raramente letti dalle applicazioni. Questa scansione può impedire la perdita di dati in caso di guasto di altri dischi nel pool o nel gruppo di volumi, poiché i dati relativi ai dischi guasti vengono ricostruiti utilizzando informazioni di ridondanza e dati provenienti da altri dischi nel pool o nel gruppo di volumi.
+
+Le scansioni dei supporti vengono eseguite continuamente a una velocità costante in base alla capacità da sottoporre a scansione e alla durata della scansione. Le scansioni in background possono essere temporaneamente sospese da un'attività in background con priorità più alta (ad esempio, ricostruzione), ma vengono rieseguite alla stessa velocità costante.
+
+È possibile attivare e impostare la durata dell'esecuzione della scansione dei supporti selezionando menu:Storage[Volumes > More > Change media scan settings] (Menu:archiviazione[volumi > Altro > Modifica impostazioni scansione supporti]).
+
+La scansione di un volume viene eseguita solo quando l'opzione di scansione dei supporti è attivata per l'array di storage e per quel volume. Se è attivata anche la verifica della ridondanza per quel volume, le informazioni di ridondanza nel volume verranno controllate per verificarne la coerenza con i dati, a condizione che il volume disponga di ridondanza. La scansione dei supporti con controllo della ridondanza è attivata per impostazione predefinita per ciascun volume al momento della creazione.
+
+Se durante la scansione si verifica un errore irreversibile del supporto, i dati verranno riparati utilizzando le informazioni di ridondanza, se disponibili. Ad esempio, le informazioni di ridondanza sono disponibili in volumi RAID 5 ottimali o in volumi RAID 6 ottimali o con un solo disco guasto. Se l'errore irreversibile non può essere riparato utilizzando le informazioni di ridondanza, il blocco di dati viene aggiunto al registro del settore illeggibile. Nel registro eventi vengono riportati errori del supporto correggibili e non correggibili.
+
+Se il controllo di ridondanza rileva un'incoerenza tra i dati e le informazioni di ridondanza, viene riportato nel registro eventi.

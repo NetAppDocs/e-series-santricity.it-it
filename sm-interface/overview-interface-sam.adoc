@@ -1,0 +1,97 @@
+---
+permalink: sm-interface/overview-interface-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: 'Si naviga nell"interfaccia principale per accedere alle funzioni e alle attività di System Manager.' 
+---
+= Panoramica dell'interfaccia di System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager è un'interfaccia basata su Web che consente di gestire un array di storage in una singola vista.
+
+
+
+== Pagina iniziale
+
+La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a System Manager, viene visualizzata la prima pagina iniziale.
+
+La vista dashboard comprende quattro aree di riepilogo che contengono informazioni chiave sullo stato e lo stato dello storage array. Ulteriori informazioni sono disponibili nell'area di riepilogo.
+
+[cols="25h,~"]
+|===
+| Area | Descrizione 
+
+
+ a| 
+Notifiche
+ a| 
+L'area Notifiche visualizza le notifiche dei problemi che indicano lo stato dello storage array e dei relativi componenti. Inoltre, questo portlet visualizza avvisi automatici che consentono di risolvere i problemi prima che influiscano su altre aree dell'ambiente di storage.
+
+
+
+ a| 
+Performance
+ a| 
+L'area Performance (prestazioni) consente di confrontare e confrontare l'utilizzo delle risorse nel tempo. È possibile visualizzare le metriche delle performance di uno storage array per i tempi di risposta (IOPS), le velocità di trasferimento (MiB/s) e la quantità di capacità di elaborazione utilizzata (CPU).
+
+
+
+ a| 
+Capacità
+ a| 
+L'area Capacity (capacità) visualizza una vista a grafico della capacità allocata, della capacità di storage libera e della capacità di storage non assegnata nell'array di storage.
+
+
+
+ a| 
+Gerarchia dello storage
+ a| 
+L'area Storage Hierarchy (gerarchia di storage) offre una vista organizzata dei vari componenti hardware e oggetti storage gestiti dallo storage array. Fare clic sulla freccia a discesa per eseguire una determinata azione sul componente hardware o sull'oggetto di storage.
+
+|===
+
+
+== Impostazioni dell'interfaccia
+
+È possibile modificare le preferenze di visualizzazione e altre impostazioni dall'interfaccia principale.
+
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Visualizzare le preferenze
+ a| 
+Modificare i valori di capacità e i tempi dal menu a discesa Preferences (Preferenze) nell'angolo superiore destro dell'interfaccia.
+
+
+
+ a| 
+Timeout della sessione
+ a| 
+Configurare i timeout in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo.
+
+
+
+ a| 
+Aiuto
+ a| 
+Accedere alla documentazione della Guida e ad altre risorse dal menu a discesa nell'angolo superiore destro dell'interfaccia.
+
+|===
+
+
+== Login e password degli utenti
+
+L'utente corrente che ha effettuato l'accesso al sistema viene visualizzato nella parte superiore destra dell'interfaccia.
+
+Per ulteriori informazioni su utenti e password, consulta:
+
+* link:administrator-password-protection.html["Impostare la protezione della password amministratore"]
+* link:../sm-settings/change-passwords.html["Modificare le password"]
+

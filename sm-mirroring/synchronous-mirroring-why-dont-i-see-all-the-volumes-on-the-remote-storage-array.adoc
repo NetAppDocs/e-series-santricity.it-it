@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: 'Quando si seleziona un volume secondario nell"array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.' 
+---
+= Mirroring sincrono - perché non vengono visualizzati tutti i volumi sull'array di storage remoto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si seleziona un volume secondario nell'array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.
+
+I volumi non idonei per l'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è un volume standard, ad esempio un volume snapshot o un volume thin.
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Se si utilizza Data Assurance (da), il volume primario e il volume secondario devono avere le stesse impostazioni da.
++
+** Se il volume primario è abilitato da, il volume secondario deve essere abilitato da.
+** Se il volume primario non è abilitato da, il volume secondario non deve essere abilitato da.
+
+
+

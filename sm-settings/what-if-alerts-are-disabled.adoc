@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-if-alerts-are-disabled.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alerts, disabled, 
+summary: 'Se si desidera che gli amministratori ricevano notifiche su eventi importanti che si verificano nell"array di storage, è necessario configurare un metodo di avviso.' 
+---
+= Cosa fare se gli avvisi sono disattivati?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si desidera che gli amministratori ricevano notifiche su eventi importanti che si verificano nell'array di storage, è necessario configurare un metodo di avviso.
+
+Per gli array di storage gestiti con Gestore di sistema di SANtricity, è possibile configurare gli avvisi dalla pagina Avvisi. Le notifiche di avviso possono essere inviate tramite e-mail, trap SNMP o messaggi syslog. Inoltre, gli avvisi e-mail possono essere configurati dall'installazione guidata iniziale.

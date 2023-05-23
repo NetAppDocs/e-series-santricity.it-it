@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/how-do-i-configure-my-dhcp-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, dhcp, server, static, internet, protocol, 
+summary: 'È necessario configurare un server DHCP (Dynamic host Configuration Protocol) per utilizzare gli indirizzi IP (Internet Protocol) statici per i controller dell"array di storage.' 
+---
+= Come si configura il server DHCP?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È necessario configurare un server DHCP (Dynamic host Configuration Protocol) per utilizzare gli indirizzi IP (Internet Protocol) statici per i controller dell'array di storage.
+
+Gli indirizzi IP assegnati dal server DHCP sono in genere dinamici e possono essere modificati in quanto il periodo di lease scade. Alcuni dispositivi, ad esempio server e router, devono utilizzare indirizzi statici. I controller dello storage array richiedono anche indirizzi IP statici.
+
+Per informazioni su come assegnare indirizzi statici, consultare la documentazione relativa al server DHCP.

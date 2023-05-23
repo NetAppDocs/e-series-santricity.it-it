@@ -1,0 +1,42 @@
+---
+permalink: sm-settings/manage-session-timeouts-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
+summary: È possibile configurare i timeout in Gestore di sistema di SANtricity, in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo. 
+---
+= Gestire i timeout delle sessioni
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile configurare i timeout in System Manager, in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo.
+
+.A proposito di questa attività
+Per impostazione predefinita, il timeout della sessione per System Manager è di 30 minuti. È possibile regolare l'orario oppure disattivare completamente i timeout della sessione.
+
+[NOTE]
+====
+Se Access Management viene configurato utilizzando le funzionalità SAML (Security Assertion Markup Language) incorporate nell'array, potrebbe verificarsi un timeout di sessione quando la sessione SSO dell'utente raggiunge il limite massimo. Questo potrebbe verificarsi prima del timeout della sessione di System Manager.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. Nella sezione General (Generale), selezionare *Enable/Disable Session Timeout* (attiva/Disattiva timeout sessione).
++
+Viene visualizzata la finestra di dialogo attiva/Disattiva timeout sessione.
+
+. Utilizzare i comandi per aumentare o diminuire il tempo in minuti.
++
+Il timeout minimo che è possibile impostare per System Manager è di 15 minuti.
+
++
+[NOTE]
+====
+Per disattivare i timeout della sessione, deselezionare la casella di controllo *Imposta la durata...*.
+
+====
+. Fare clic su *Save* (Salva).
+

@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/reset-reboot-controller.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reset, reboot, controller 
+summary: 'Alcuni problemi richiedono un ripristino del controller (riavvio). È possibile ripristinare il controller anche se non si dispone dell"accesso fisico.' 
+---
+= Ripristinare (riavviare) il controller
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Alcuni problemi richiedono un ripristino del controller (riavvio). È possibile ripristinare il controller anche se non si dispone dell'accesso fisico.
+
+.Prima di iniziare
+* Lo storage array deve avere due controller. Il controller che non si sta reimpostando deve essere in linea (nello stato ottimale).
+* Assicurarsi che non siano in uso volumi o che su tutti gli host che utilizzano questi volumi sia installato un driver multipath.
+
+
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
+. Fare clic sul controller che si desidera ripristinare.
++
+Viene visualizzato il menu di scelta rapida del controller.
+
+. Selezionare *Reset* e confermare che si desidera eseguire l'operazione.
+

@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/place-controller-online.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, place, controller, online 
+summary: Se un controller è in stato offline o in modalità di servizio, è possibile ripristinarlo online. 
+---
+= Posizionare il controller online
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se un controller è in stato offline o in modalità di servizio, è possibile ripristinarlo online.
+
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
+. Fare clic su un controller in stato offline o in modalità di servizio.
++
+Viene visualizzato il menu di scelta rapida del controller.
+
+. Selezionare *Place online* (Esegui online) e confermare che si desidera eseguire l'operazione.
+
+
+.Risultati
+Il rilevamento di un percorso preferito ripristinato da parte del driver multipath può richiedere fino a 10 minuti.
+
+Tutti i volumi originariamente di proprietà di questo controller vengono automaticamente spostati di nuovo nel controller quando vengono ricevute richieste di i/o per ciascun volume. In alcuni casi, potrebbe essere necessario ridistribuire manualmente i volumi con il comando *redistribuisci volumi*.

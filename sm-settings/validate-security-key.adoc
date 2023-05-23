@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/validate-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity,System Manager, E-Series, validate, security, key, 
+summary: È possibile convalidare la chiave di sicurezza per assicurarsi che non sia stata danneggiata e per verificare di disporre di una password corretta. 
+---
+= Convalidare la chiave di sicurezza
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile convalidare la chiave di sicurezza per assicurarsi che non sia stata danneggiata e per verificare di disporre di una password corretta.
+
+.A proposito di questa attività
+Questa attività descrive come convalidare la chiave di sicurezza creata in precedenza. Si tratta di un passaggio importante per assicurarsi che il file delle chiavi non sia corrotto e che la password sia corretta, in modo da poter accedere in seguito ai dati delle unità se si sposta un disco abilitato alla sicurezza da un array di storage a un altro.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Validate Key* (convalida chiave).
++
+Viene visualizzata la finestra di dialogo Validate Security Key (convalida chiave di protezione).
+
+. Fare clic su *Browse*, quindi selezionare il file delle chiavi (ad esempio, `drivesecurity.slk`).
+. Inserire la password associata alla chiave selezionata.
++
+Quando si seleziona un file di chiavi e una password validi, il pulsante *convalida* diventa disponibile.
+
+. Fare clic su *Validate* (convalida).
++
+I risultati della convalida vengono visualizzati nella finestra di dialogo.
+
+. Se il risultato è "la chiave di sicurezza è stata convalidata correttamente", fare clic su *Chiudi*. Se viene visualizzato un messaggio di errore, seguire le istruzioni suggerite visualizzate nella finestra di dialogo.
+

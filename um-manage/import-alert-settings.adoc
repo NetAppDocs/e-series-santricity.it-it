@@ -1,0 +1,54 @@
+---
+permalink: um-manage/import-alert-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, alert, settings 
+summary: È possibile importare configurazioni di avviso da uno storage array ad altri storage array. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete. 
+---
+= Importare le impostazioni degli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile importare configurazioni di avviso da uno storage array ad altri storage array. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete.
+
+.Prima di iniziare
+* Gli avvisi sono configurati in System Manager per lo storage array che si desidera utilizzare come origine (menu:Impostazioni[Avvisi]).
+* Il backup della configurazione esistente per gli array di storage di destinazione viene eseguito in System Manager (menu:Impostazioni[sistema > Salva configurazione array di storage]).
+
+
+.A proposito di questa attività
+Per l'operazione di importazione, è possibile selezionare avvisi e-mail, SNMP o syslog. Le impostazioni importate includono:
+
+* *Avvisi via email* -- Indirizzo del server di posta e indirizzi email dei destinatari degli avvisi.
+* *Syslog alerts* -- un indirizzo del server syslog e una porta UDP.
+* *SNMP alerts* -- Nome di comunità e indirizzo IP per il server SNMP.
+
+
+.Fasi
+. Nella pagina Manage (Gestione), fare clic su *Import Settings* (Impostazioni importazione).
++
+Viene visualizzata la procedura guidata Import Settings (Impostazioni importazione).
+
+. Nella finestra di dialogo Select Settings (Seleziona impostazioni), selezionare *Email alerts* (Avvisi email), *SNMP alerts* (Avvisi SNMP) o *Syslog alerts* (Avvisi Syslog), quindi fare clic su *Next* (Avanti).
++
+Viene visualizzata una finestra di dialogo per la selezione dell'array di origine.
+
+. Nella finestra di dialogo Select Source (Seleziona origine), selezionare l'array con le impostazioni che si desidera importare, quindi fare clic su *Next* (Avanti).
+. Nella finestra di dialogo Select targets (Seleziona destinazioni), selezionare uno o più array per ricevere le nuove impostazioni.
++
+[NOTE]
+====
+Gli array di storage con firmware inferiore a 8.50 non sono disponibili per la selezione. Inoltre, un array non viene visualizzato in questa finestra di dialogo se Unified Manager non è in grado di comunicare con tale array (ad esempio, se non è in linea o se presenta problemi di certificato, password o rete).
+
+====
+. Fare clic su *fine*.
++
+La pagina Operations (operazioni) visualizza i risultati dell'operazione di importazione. Se l'operazione non riesce, fare clic sulla relativa riga per visualizzare ulteriori informazioni.
+
+
+
+.Risultati
+Gli array di storage di destinazione sono ora configurati per inviare avvisi agli amministratori tramite e-mail, SNMP o syslog.

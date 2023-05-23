@@ -1,0 +1,95 @@
+---
+permalink: sm-settings/automatic-load-balancing-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
+summary: Il bilanciamento automatico del carico offre una migliore gestione delle risorse di i/o reagendo in modo dinamico alle variazioni di carico nel tempo e regolando automaticamente la proprietà del controller del volume per correggere eventuali problemi di sbilanciamento del carico quando i carichi di lavoro si spostano tra i controller. 
+---
+= Panoramica del bilanciamento automatico del carico
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il bilanciamento automatico del carico offre una migliore gestione delle risorse di i/o reagendo in modo dinamico alle variazioni di carico nel tempo e regolando automaticamente la proprietà del controller del volume per correggere eventuali problemi di sbilanciamento del carico quando i carichi di lavoro si spostano tra i controller.
+
+Il carico di lavoro di ciascun controller viene costantemente monitorato e, grazie alla collaborazione dei driver multipath installati sugli host, può essere automaticamente bilanciato quando necessario. Quando il carico di lavoro viene riregolato automaticamente tra i controller, l'amministratore dello storage viene alleggerito dall'onere di regolare manualmente la proprietà del controller di volume per adattarsi alle modifiche di carico sull'array di storage.
+
+Quando il bilanciamento automatico del carico è attivato, esegue le seguenti funzioni:
+
+* Monitora e bilancia automaticamente l'utilizzo delle risorse dei controller.
+* Regola automaticamente la proprietà del controller del volume quando necessario, ottimizzando in tal modo la larghezza di banda i/o tra gli host e lo storage array.
+
+
+
+
+== Attivazione e disattivazione del bilanciamento automatico del carico
+
+Il bilanciamento automatico del carico è attivato per impostazione predefinita su tutti gli array di storage.
+
+È possibile disattivare il bilanciamento automatico del carico sull'array di storage per i seguenti motivi:
+
+* Non si desidera modificare automaticamente la proprietà del controller di un determinato volume per bilanciare il carico di lavoro.
+* Si opera in un ambiente altamente ottimizzato in cui la distribuzione del carico è appositamente configurata per ottenere una distribuzione specifica tra i controller.
+
+
+
+
+== Tipi di host che supportano la funzione di bilanciamento automatico del carico
+
+Anche se il bilanciamento automatico del carico è attivato a livello di array di storage, il tipo di host selezionato per un cluster di host o host ha un'influenza diretta sul funzionamento della funzione.
+
+Durante il bilanciamento del carico di lavoro dell'array di storage tra controller, la funzione di bilanciamento automatico del carico tenta di spostare volumi accessibili da entrambi i controller e mappati solo a un host o a un cluster host in grado di supportare la funzione di bilanciamento automatico del carico.
+
+Questo comportamento impedisce a un host di perdere l'accesso a un volume a causa del processo di bilanciamento del carico; tuttavia, la presenza di volumi mappati agli host che non supportano il bilanciamento automatico del carico influisce sulla capacità dell'array di storage di bilanciare il carico di lavoro. Per bilanciare il carico di lavoro, il driver multipath deve supportare TPGS e il tipo di host deve essere incluso nella tabella seguente.
+
+[NOTE]
+====
+Affinché un cluster host possa essere considerato in grado di eseguire il bilanciamento automatico del carico, tutti gli host del gruppo devono essere in grado di supportare il bilanciamento automatico del carico.
+
+====
+[cols="1a,1a"]
+|===
+| Tipo di host che supporta il bilanciamento automatico del carico | Con questo driver multipath 
+
+
+ a| 
+Windows o Windows Clustered
+ a| 
+MPIO con NetApp e-Series DSM
+
+
+
+ a| 
+Linux DM-MP (kernel 3.10 o successivo)
+ a| 
+DM-MP con `scsi_dh_alua` gestore di dispositivi
+
+
+
+ a| 
+VMware
+ a| 
+Plug-in multipathing nativo (NMP) con `VMW_SATP_ALUA Storage Array Type` plug-in
+
+|===
+[NOTE]
+====
+Con eccezioni minori, i tipi di host che non supportano il bilanciamento automatico del carico continuano a funzionare normalmente, indipendentemente dal fatto che la funzione sia attivata o meno. Un'eccezione è rappresentata dal fatto che se un sistema presenta un failover, gli array di storage spostano di nuovo i volumi non mappati o non assegnati al controller proprietario quando il percorso dei dati ritorna. Tutti i volumi mappati o assegnati a host con bilanciamento del carico non automatico non vengono spostati.
+
+====
+Vedere https://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità"^] Per informazioni sulla compatibilità di driver multipath specifici, livello di sistema operativo e supporto del vassoio del disco del controller.
+
+
+
+== Verifica della compatibilità del sistema operativo con la funzione di bilanciamento automatico del carico
+
+Verificare la compatibilità del sistema operativo con la funzione di bilanciamento automatico del carico prima di configurare un nuovo sistema (o di migrare un sistema esistente).
+
+. Accedere alla https://mysupport.netapp.com/matrix["Tool di matrice di interoperabilità"^] per trovare la soluzione e verificare il supporto.
++
+Se il sistema esegue Red Hat Enterprise Linux 6 o SUSE Linux Enterprise Server 11, contattare il supporto tecnico.
+
+. Aggiornare e configurare `/etc/multipath.conf file`.
+. Assicurarsi che entrambi `retain_attached_device_handler` e. `detect_prio` sono impostati su `yes` per il vendor e il prodotto applicabili, oppure utilizzare le impostazioni predefinite.
+

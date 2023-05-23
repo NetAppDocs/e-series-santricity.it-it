@@ -1,0 +1,29 @@
+---
+permalink: sm-settings/add-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, email, addresses, alerts, 
+summary: È possibile aggiungere fino a 20 destinatari per gli avvisi e-mail. 
+---
+= Aggiungere indirizzi e-mail per gli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere fino a 20 destinatari per gli avvisi e-mail.
+
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *Email*.
+. Selezionare *Aggiungi email*.
++
+Viene visualizzata la finestra di dialogo Aggiungi e-mail.
+
+. Nel campo vuoto, immettere un nuovo indirizzo e-mail. Se si desidera aggiungere più indirizzi, selezionare *Aggiungi un'altra e-mail* per aprire un altro campo.
+. Fare clic su *Aggiungi*.
+
+
+.Risultati
+Nella scheda Email della pagina Alerts (Avvisi) vengono visualizzati i nuovi indirizzi e-mail.

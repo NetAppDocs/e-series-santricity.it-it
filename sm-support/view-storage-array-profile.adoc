@@ -1,0 +1,107 @@
+---
+permalink: sm-support/view-storage-array-profile.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
+summary: Il profilo dello storage array fornisce una descrizione di tutti i componenti e le proprietà dello storage array. 
+---
+= Visualizza il profilo dello storage array
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il profilo dello storage array fornisce una descrizione di tutti i componenti e le proprietà dello storage array.
+
+.A proposito di questa attività
+È possibile utilizzare il profilo dello storage array come ausilio durante il ripristino o come panoramica della configurazione corrente dello storage array. È possibile salvare una copia del profilo dello storage array sul client di gestione e conservare una copia cartacea del profilo dello storage array con lo storage array. Creare una nuova copia del profilo dello storage array se la configurazione cambia.
+
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Support Resources].
+. Scorrere fino a *Launch Detailed storage array information*, quindi selezionare *Storage Array Profile*.
++
+Il report viene visualizzato sullo schermo.
+
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Sezione | Descrizione 
+
+
+ a| 
+Array di storage
+ a| 
+Mostra tutte le opzioni che è possibile configurare e le opzioni statiche di sistema per lo storage array. Queste opzioni includono il numero di controller, shelf di dischi, dischi, pool di dischi, gruppi di volumi, Volumi e dischi hot spare; il numero massimo di shelf di dischi, dischi a stato solido (SSD) e volumi consentiti; il numero di gruppi di snapshot, immagini snapshot, volumi di snapshot e gruppi di coerenza; informazioni sulle funzionalità; informazioni sulle versioni del firmware; informazioni sul numero di serie dello chassis; informazioni sullo stato AutoSupport e sulla pianificazione AutoSupport; Le impostazioni per la raccolta automatica dei dati di supporto e la raccolta pianificata dei dati di supporto, l'ID WWID (World-Wide Identifier) dell'array di storage e le impostazioni di cache e scansione dei supporti.
+
+
+
+ a| 
+Storage
+ a| 
+Mostra un elenco di tutti i dispositivi di storage nell'array di storage. A seconda della configurazione dell'array di storage, la sezione Storage (archiviazione) potrebbe visualizzare queste sottosezioni.
+
+** *Disk Pools* -- Mostra un elenco di tutti i pool di dischi nell'array di storage.
+** *Volume Groups* -- Mostra un elenco di tutti i gruppi di volumi nell'array di storage. I volumi e la capacità libera sono elencati nell'ordine in cui sono stati creati.
+** *Volumes* -- Mostra un elenco di tutti i volumi nell'array di storage. Le informazioni elencate includono il nome del volume, lo stato del volume, la capacità, il livello RAID, il gruppo di volumi o il pool di dischi, il tipo di disco e ulteriori dettagli.
+** *Volumi mancanti* -- Mostra un elenco di tutti i volumi nell'array di storage che attualmente hanno uno stato mancante. Le informazioni elencate includono il WWID (World Wide Identifier) per ciascun volume mancante.
+
+
+
+
+ a| 
+Servizi di copia
+ a| 
+Mostra un elenco di tutti i servizi di copia utilizzati per l'array di storage. A seconda della configurazione dello storage array, la sezione Copy Services (servizi di copia) potrebbe visualizzare le seguenti sottosezioni:
+
+** *Volume Copies* -- Mostra un elenco di tutte le coppie di copie nell'array di storage. Le informazioni elencate includono il numero di copie, i nomi delle coppie di copie, lo stato, l'indicatore data e ora di inizio e ulteriori dettagli.
+** *Snapshot Groups* -- Mostra un elenco di tutti i gruppi di snapshot nell'array di storage.
+** *Snapshot Images* -- Mostra un elenco di tutti gli snapshot nell'array di storage.
+** *Snapshot Volumes* -- Mostra un elenco di tutti i volumi di snapshot nell'array di storage.
+** *Consistency Groups* -- Mostra un elenco di tutti i gruppi di coerenza nell'array di storage.
+** *Member Volumes* -- Mostra un elenco di tutti i volumi membri del gruppo di coerenza nell'array di storage.
+** *Mirror Groups* -- Mostra un elenco di tutti i volumi mirrorati.
+** *Reserved Capacity* -- Mostra un elenco di tutti i volumi di capacità riservati nell'array di storage.
+
+
+
+
+ a| 
+Assegnazioni host
+ a| 
+Mostra un elenco delle assegnazioni degli host nell'array di storage. Le informazioni elencate includono il nome del volume, il numero di unità logica (LUN), l'ID del controller, il nome host o il nome del cluster host e lo stato del volume. Le informazioni aggiuntive elencate includono le definizioni della topologia e dei tipi di host.
+
+
+
+ a| 
+Hardware
+ a| 
+Mostra un elenco di tutto l'hardware dell'array di storage. A seconda della configurazione dello storage array, la sezione hardware potrebbe visualizzare queste sottosezioni.
+
+** *Controller* -- Mostra un elenco di tutti i controller nell'array di storage e include la posizione, lo stato e la configurazione del controller. Inoltre, include informazioni sul canale del disco, informazioni sul canale host e informazioni sulla porta Ethernet.
+** *Drives* -- Mostra un elenco di tutti i dischi dell'array di storage. I dischi sono elencati in ordine di ID shelf, ID cassetto e ID slot. Le informazioni elencate includono l'ID dello shelf, l'ID del cassetto, l'ID dello slot, lo stato, la capacità raw, Il tipo di supporto, il tipo di interfaccia, la velocità di trasferimento dati corrente, l'ID del prodotto e la versione del firmware per ciascun disco. La sezione Drive include anche informazioni sul canale dei dischi, informazioni sulla copertura hot spare e informazioni sulla durata dell'utilizzo (solo per i dischi SSD). Le informazioni sulla durata includono la durata percentuale utilizzata, ovvero la quantità di dati scritti finora sui dischi SSD, divisa per il limite teorico di scrittura totale per i dischi.
+** *Drive Channels* -- Mostra le informazioni per tutti i canali del disco nello storage array. Le informazioni elencate includono lo stato del canale, lo stato del collegamento (se applicabile), il numero di dischi e il numero di errori cumulativi.
+** *Shelves* -- Mostra le informazioni per tutti gli shelf dell'array di storage. Le informazioni elencate includono i tipi di unità e le informazioni di stato per ciascun componente dello shelf. I componenti dello shelf possono includere batterie, ricetrasmettitori SFP (Small Form-Factor Pluggable), contenitori per ventole di alimentazione o contenitori per moduli di input/output (IOM). La sezione hardware mostra anche l'identificatore della chiave di sicurezza se viene utilizzata una chiave di sicurezza dall'array di storage.
+
+
+
+
+ a| 
+Caratteristiche
+ a| 
+Mostra un elenco dei Feature Pack installati e il numero massimo consentito di gruppi di snapshot, snapshot (legacy) e volumi per host o cluster host. Le informazioni contenute nella sezione caratteristiche includono anche Drive Security, vale a dire se lo storage array è abilitato alla sicurezza o disattivato.
+
+|===
+====
+. Per cercare il profilo dello storage array, digitare un termine di ricerca nella casella di testo *Find*, quindi fare clic su *Find*.
++
+Vengono evidenziati tutti i termini corrispondenti. Per scorrere tutti i risultati uno alla volta, continuare a fare clic su *Find* (trova).
+
+. Per salvare il profilo dello storage array, fare clic su *Save* (Salva).
++
+Il file viene salvato nella cartella Download del browser con il nome `storage-array-profile.txt`.
+
+

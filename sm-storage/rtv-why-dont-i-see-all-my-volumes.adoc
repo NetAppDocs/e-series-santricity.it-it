@@ -1,0 +1,29 @@
+---
+permalink: sm-storage/rtv-why-dont-i-see-all-my-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, destination, array 
+summary: 'Quando si configura un"importazione per la funzione di storage remoto, alcuni volumi potrebbero non essere visualizzati nell"elenco dei candidati di destinazione a causa delle dimensioni del blocco, della capacità o della disponibilità del volume.' 
+---
+= Perché non vengono visualizzati tutti i volumi sull'array di destinazione?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si configura un'importazione per la funzione di storage remoto, alcuni volumi potrebbero non essere visualizzati nell'elenco dei candidati di destinazione a causa delle dimensioni del blocco, della capacità o della disponibilità del volume.
+
+Per apparire nell'elenco, i candidati al volume devono avere:
+
+* Capacità uguale o superiore al volume remoto.
+* Dimensione del blocco uguale al volume remoto.
+* Stato corrente di ottimale.
+
+
+I volumi candidati sono esclusi dall'elenco se hanno:
+
+* Una delle seguenti relazioni: Copia del volume, snapshot o mirroring.
+* Operazione di riconfigurazione in corso.
+* Mappatura a un altro dispositivo (host o cluster host).
+* Cache flash di lettura attivata.
+

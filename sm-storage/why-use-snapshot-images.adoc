@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/why-use-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, images 
+summary: È possibile utilizzare le snapshot per proteggere e consentire il ripristino da perdite o danneggiamenti accidentali o dannosi dei dati. 
+---
+= Perché utilizzare le immagini Snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare le snapshot per proteggere e consentire il ripristino da perdite o danneggiamenti accidentali o dannosi dei dati.
+
+Selezionare un volume di base o un gruppo di volumi di base, denominato gruppo di coerenza snapshot, quindi acquisire le immagini snapshot in uno o più dei seguenti modi:
+
+* È possibile creare un'immagine snapshot di un singolo volume di base o di un gruppo di coerenza snapshot costituito da più volumi di base.
+* È possibile acquisire snapshot manualmente o creare una pianificazione per un volume di base o un gruppo di coerenza snapshot per acquisire automaticamente immagini snapshot periodiche.
+* È possibile creare un volume di snapshot accessibile dall'host di un'immagine snapshot.
+* È possibile eseguire un'operazione di rollback per ripristinare un'immagine snapshot.
+
+
+Il sistema conserva più immagini Snapshot come punti di ripristino che è possibile utilizzare per eseguire il rollback a set di dati sicuramente funzionanti in specifici momenti del tempo. La possibilità di eseguire il rollback offre protezione contro l'eliminazione accidentale dei dati e la corruzione dei dati.

@@ -1,0 +1,20 @@
+---
+permalink: um-manage/why-would-i-change-this-percentage-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, change, percentage 
+summary: 'La capacità riservata corrisponde in genere al 20% del volume di base per le operazioni di mirroring asincrono. Di solito questa capacità è sufficiente.' 
+---
+= Perché dovrei modificare questa percentuale?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacità riservata corrisponde in genere al 20% del volume di base per le operazioni di mirroring asincrono. Di solito questa capacità è sufficiente.
+
+La capacità necessaria varia in base alla frequenza e alle dimensioni delle scritture i/o nel volume di base e alla durata dell'utilizzo del servizio di copia dell'oggetto di storage. In generale, scegliere una percentuale maggiore per la capacità riservata se sussistono una o entrambe le seguenti condizioni:
+
+* Se la durata di un'operazione di copia del servizio di un oggetto di storage specifico sarà molto lunga.
+* Se una grande percentuale di blocchi di dati cambia sul volume di base a causa di un'intensa attività di i/O. Utilizza dati storici sulle performance o altre utility del sistema operativo per determinare l'attività i/o tipica del volume di base.
+

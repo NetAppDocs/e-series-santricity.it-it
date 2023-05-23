@@ -1,0 +1,24 @@
+---
+permalink: sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, perform 
+summary: È possibile scegliere il tipo di aggiornamento da eseguire sul disco in base allo stato del pool o del gruppo di volumi. 
+---
+= Come si sceglie il tipo di aggiornamento da eseguire?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile scegliere il tipo di aggiornamento da eseguire sul disco in base allo stato del pool o del gruppo di volumi.
+
+* *Online*
++
+Se il pool o il gruppo di volumi supporta la ridondanza ed è ottimale, è possibile utilizzare il metodo online per aggiornare il firmware del disco. Il metodo Online scarica il firmware _mentre lo storage array sta elaborando i/o_ nei volumi associati utilizzando questi dischi. Non è necessario interrompere l'i/o dei volumi associati utilizzando questi dischi. Questi dischi vengono aggiornati uno alla volta ai volumi associati ai dischi. Se l'unità non è assegnata a un pool o a un gruppo di volumi, il relativo firmware può essere aggiornato con il metodo Online o Offline. Le prestazioni del sistema potrebbero risentire dell'utilizzo del metodo online per l'aggiornamento del firmware del disco.
+
+* *Non in linea*
++
+Se il pool o il gruppo di volumi non supporta la ridondanza (RAID 0) o è degradato, è necessario utilizzare il metodo offline per aggiornare il firmware del disco. Il metodo offline aggiornerà il firmware _solo quando l'attività di i/o viene interrotta_ ai volumi associati che utilizzano questi dischi. È necessario arrestare tutti i i/o per tutti i volumi associati che utilizzano questi dischi. Se l'unità non è assegnata a un pool o a un gruppo di volumi, il relativo firmware potrebbe essere aggiornato con il metodo Online o Offline.
+
+

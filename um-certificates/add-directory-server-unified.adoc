@@ -1,0 +1,168 @@
+---
+permalink: um-certificates/add-directory-server-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, add, directory, server 
+summary: 'Per configurare l"autenticazione per la gestione degli accessi, è necessario stabilire le comunicazioni tra un server LDAP e l"host che esegue il proxy dei servizi Web per la gestione unificata di SANtricity. Quindi, associare i gruppi di utenti LDAP ai ruoli utente locali.' 
+---
+= Aggiungere il server di directory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per configurare l'autenticazione per la gestione degli accessi, è necessario stabilire le comunicazioni tra un server LDAP e l'host che esegue il proxy dei servizi Web per Unified Manager. Quindi, associare i gruppi di utenti LDAP ai ruoli utente locali.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+* I gruppi di utenti devono essere definiti nel servizio di directory.
+* Le credenziali del server LDAP devono essere disponibili, inclusi il nome di dominio, l'URL del server e, facoltativamente, il nome utente e la password dell'account BIND.
+* Per i server LDAPS che utilizzano un protocollo sicuro, la catena di certificati del server LDAP deve essere installata sul computer locale.
+
+
+.A proposito di questa attività
+L'aggiunta di un server di directory è un processo in due fasi. Immettere innanzitutto il nome di dominio e l'URL. Se il server utilizza un protocollo sicuro, è necessario caricare anche un certificato CA per l'autenticazione se è firmato da un'autorità di firma non standard. Se si dispone delle credenziali per un account BIND, è anche possibile immettere il nome e la password dell'account utente. Quindi, mappare i gruppi di utenti del server LDAP ai ruoli utente locali.
+
+.Fasi
+. Selezionare *Access Management*.
+. Dalla scheda *Directory Services*, selezionare *Add Directory Server* (Aggiungi server di directory).
++
+Viene visualizzata la finestra di dialogo Add Directory Server (Aggiungi server di directory).
+
+. Nella scheda *Server Settings* (Impostazioni server), immettere le credenziali per il server LDAP.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Impostazioni di configurazione*
+
+
+
+ a| 
+Dominio/i
+ a| 
+Immettere il nome di dominio del server LDAP. Per più domini, inserire i domini in un elenco separato da virgole. Il nome di dominio viene utilizzato nel login (_nome utente_@_dominio_) per specificare il server di directory da autenticare.
+
+
+
+ a| 
+URL del server
+ a| 
+Immettere l'URL per l'accesso al server LDAP nel formato `ldap[s]://*host*:*port*`.
+
+
+
+ a| 
+Carica certificato (opzionale)
+ a| 
+
+NOTE: Questo campo viene visualizzato solo se è stato specificato un protocollo LDAPS nel campo URL server sopra riportato.
+
+Fare clic su *Browse* (Sfoglia) e selezionare un certificato CA da caricare. Si tratta del certificato attendibile o della catena di certificati utilizzata per l'autenticazione del server LDAP.
+
+
+
+ a| 
+Account BIND (opzionale)
+ a| 
+Inserire un account utente di sola lettura per le query di ricerca sul server LDAP e per la ricerca all'interno dei gruppi. Immettere il nome dell'account in formato LDAP. Ad esempio, se l'utente bindacct è chiamato "bindacct", è possibile immettere un valore come `CN=bindacct,CN=Users,DC=cpoc,DC=local`.
+
+
+
+ a| 
+Password bind (opzionale)
+ a| 
+
+NOTE: Questo campo viene visualizzato quando si immette un account BIND.
+
+Immettere la password per l'account BIND.
+
+
+
+ a| 
+Verificare la connessione al server prima di aggiungerli
+ a| 
+Selezionare questa casella di controllo per assicurarsi che il sistema possa comunicare con la configurazione del server LDAP immessa. Il test si verifica dopo aver fatto clic su *Add* (Aggiungi) nella parte inferiore della finestra di dialogo.
+
+Se questa casella di controllo è selezionata e il test non riesce, la configurazione non viene aggiunta. È necessario risolvere l'errore o deselezionare la casella di controllo per saltare il test e aggiungere la configurazione.
+
+
+
+ a| 
+*Impostazioni dei privilegi*
+
+
+
+ a| 
+Ricerca DN base
+ a| 
+Immettere il contesto LDAP per la ricerca degli utenti, in genere sotto forma di `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Attributo Username
+ a| 
+Inserire l'attributo associato all'ID utente per l'autenticazione. Ad esempio: `sAMAccountName`.
+
+
+
+ a| 
+Attributo/i di gruppo
+ a| 
+Inserire un elenco di attributi di gruppo nell'utente, che viene utilizzato per il mapping gruppo-ruolo. Ad esempio: `memberOf, managedObjects`.
+
+|===
+====
+. Fare clic sulla scheda *mappatura ruolo*.
+. Assegnare i gruppi LDAP ai ruoli predefiniti. Un gruppo può avere più ruoli assegnati.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Mapping*
+
+
+
+ a| 
+DN gruppo
+ a| 
+Specificare il nome distinto del gruppo (DN) per il gruppo di utenti LDAP da mappare. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata ({}) se non fanno parte di un modello di espressione regolare:[]()<>*+-=!?^|
+
+
+
+ a| 
+Ruoli
+ a| 
+Fare clic nel campo e selezionare uno dei ruoli utente locali da mappare al DN del gruppo. È necessario selezionare singolarmente ciascun ruolo che si desidera includere per questo gruppo. Il ruolo di monitoraggio è necessario in combinazione con gli altri ruoli per accedere a Gestione unificata di SANtricity. I ruoli mappati includono le seguenti autorizzazioni:
+
+** *Storage admin* -- accesso completo in lettura/scrittura agli oggetti storage sugli array, ma nessun accesso alla configurazione di sicurezza.
+** *Security admin* -- accesso alla configurazione di sicurezza in Access Management e Certificate Management.
+** *Support admin* -- accesso a tutte le risorse hardware su storage array, dati di guasto ed eventi MEL. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+** *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+|===
+====
++
+
+NOTE: Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore.
+
+. Se lo si desidera, fare clic su *Add another mapping* (Aggiungi un'altra mappatura) per immettere più mappature gruppo-ruolo.
+. Al termine delle mappature, fare clic su *Aggiungi*.
++
+Il sistema esegue una convalida, assicurandosi che lo storage array e il server LDAP possano comunicare. Se viene visualizzato un messaggio di errore, selezionare le credenziali inserite nella finestra di dialogo e, se necessario, immettere nuovamente le informazioni.
+
+

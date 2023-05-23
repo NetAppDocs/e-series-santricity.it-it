@@ -1,0 +1,69 @@
+---
+permalink: sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, zero, graphs, table 
+summary: 'Quando viene visualizzato uno zero per un punto dati nei grafici e nella tabella, significa che non esiste alcuna attività i/o per l"oggetto per quel punto nel tempo. Questa situazione potrebbe verificarsi perché l"host non sta avviando l"i/o per quell"oggetto o potrebbe essere un problema con l"oggetto stesso.' 
+---
+= Perché i dati vengono visualizzati come zero nei grafici e nella tabella?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando viene visualizzato uno zero per un punto dati nei grafici e nella tabella, significa che non esiste alcuna attività i/o per l'oggetto per quel punto nel tempo. Questa situazione potrebbe verificarsi perché l'host non sta avviando l'i/o per quell'oggetto o potrebbe essere un problema con l'oggetto stesso.
+
+I dati storici dell'oggetto sono ancora disponibili per la visualizzazione. I grafici e la tabella mostrano dati diversi da zero una volta che inizia l'attività di i/o per l'oggetto.
+
+La tabella seguente elenca i motivi più comuni per cui un valore di punto dati potrebbe essere zero per un determinato oggetto.
+
+[cols="25h,~"]
+|===
+| Tipo di oggetto a livello di array | I dati del motivo vengono visualizzati come zero 
+
+
+ a| 
+Volume
+ a| 
+* Il volume non ha assegnato host.
+
+
+
+
+ a| 
+Gruppo di volumi
+ a| 
+* Importazione del gruppo di volumi in corso.
+* Il gruppo di volumi non contiene un volume assegnato a un host, il gruppo di volumi *_and_* non contiene alcuna capacità riservata.
+
+
+
+
+ a| 
+Disco
+ a| 
+* Il disco è guasto.
+* Il disco è stato rimosso.
+* Il disco si trova in uno stato sconosciuto.
+
+
+
+
+ a| 
+Controller
+ a| 
+* Controller offline.
+* Controller guasto.
+* Il controller è stato rimosso.
+* Il controller si trova in uno stato sconosciuto.
+
+
+
+
+ a| 
+Array di storage
+ a| 
+* Lo storage array non contiene volumi.
+
+
+|===

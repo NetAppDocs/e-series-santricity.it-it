@@ -1,0 +1,19 @@
+---
+permalink: sm-storage/is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, number, pool, drive, 
+summary: System Manager definisce i limiti per il numero di dischi che è possibile rimuovere da un pool. 
+---
+= Esiste un limite al numero di dischi che è possibile rimuovere da un pool?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager definisce i limiti per il numero di dischi che è possibile rimuovere da un pool.
+
+* Non è possibile ridurre il numero di dischi in un pool a meno di 11 dischi.
+* Non è possibile rimuovere le unità se nel pool non è disponibile una capacità libera sufficiente per contenere i dati delle unità rimosse quando tali dati vengono ridistribuiti alle altre unità del pool.
+* È possibile rimuovere un massimo di 60 dischi alla volta. Se si selezionano più di 60 dischi, l'opzione Rimuovi dischi viene disattivata. Se è necessario rimuovere più di 60 dischi, ripetere l'operazione di rimozione dei dischi.
+

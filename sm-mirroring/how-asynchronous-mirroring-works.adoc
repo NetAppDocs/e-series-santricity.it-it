@@ -1,0 +1,90 @@
+---
+permalink: sm-mirroring/how-asynchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
+summary: Il mirroring asincrono copia i volumi di dati su richiesta o in base a una pianificazione, riducendo al minimo o evitando i downtime che potrebbero derivare da danneggiamento o perdita dei dati. 
+---
+= Come funziona il mirroring asincrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il mirroring asincrono copia i volumi di dati su richiesta o in base a una pianificazione, riducendo al minimo o evitando i downtime che potrebbero derivare da danneggiamento o perdita dei dati.
+
+[NOTE]
+====
+Il mirroring non è disponibile sullo storage array EF600 o EF300.
+
+====
+Il mirroring asincrono acquisisce lo stato del volume primario in un determinato momento e copia solo i dati modificati dall'ultima acquisizione dell'immagine. Il sito primario può essere aggiornato immediatamente e il sito secondario può essere aggiornato in base alla larghezza di banda. Le informazioni vengono memorizzate nella cache e inviate in un secondo momento, man mano che le risorse di rete diventano disponibili.
+
+Questo tipo di mirroring è ideale per soddisfare la richiesta di operazioni non-stop e, in generale, è molto più efficiente in termini di rete per processi periodici, come backup e archiviazione. I motivi per cui si utilizza il mirroring asincrono sono i seguenti:
+
+* Consolidamento del backup remoto.
+* Protezione da disastri locali o su vasta area.
+* Sviluppo e test delle applicazioni su un'immagine point-in-time dei dati live.
+
+
+
+
+== Sessione di mirroring asincrono
+
+Il mirroring asincrono acquisisce lo stato del volume primario in un determinato momento e copia solo i dati modificati dall'ultima acquisizione dell'immagine. Il mirroring asincrono consente l'aggiornamento immediato del sito primario e l'aggiornamento del sito secondario in base alla larghezza di banda. Le informazioni vengono memorizzate nella cache e inviate in un secondo momento, man mano che le risorse di rete diventano disponibili.
+
+Una sessione di mirroring asincrono attiva prevede quattro passaggi principali.
+
+image::../media/sam-1130-dwg-async-mirroring-session.gif[sessione di mirroring async dwg sam 1130]
+
+. Un'operazione di scrittura viene eseguita per prima cosa sull'array di storage del volume primario.
+. Lo stato dell'operazione viene restituito all'host.
+. Tutte le modifiche apportate al volume principale vengono registrate e monitorate.
+. Tutte le modifiche vengono inviate all'array di storage del volume secondario come processo in background.
+
+
+Questi passi vengono ripetuti in base agli intervalli di sincronizzazione definiti oppure i passi possono essere ripetuti manualmente se non sono definiti intervalli.
+
+Il mirroring asincrono trasferisce i dati al sito remoto solo a intervalli prestabiliti, in modo che l'i/o locale non venga influenzato quasi tanto dalle connessioni di rete lente. Poiché questo trasferimento non è legato all'i/o locale, non influisce sulle prestazioni dell'applicazione. Pertanto, il mirroring asincrono può utilizzare connessioni più lente, come iSCSI, e funzionare su distanze più lunghe tra i sistemi storage locali e remoti.
+
+Gli array di storage devono disporre di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+
+
+
+== Mirrorare gruppi di coerenza e coppie mirrorate
+
+Si crea un gruppo di coerenza mirror per stabilire la relazione di mirroring tra l'array di storage locale e l'array di storage remoto. La relazione di mirroring asincrono consiste in una coppia mirrorata: Un volume primario su un array di storage e un volume secondario su un altro array di storage.
+
+L'array di storage contenente il volume primario si trova in genere nel sito primario e serve gli host attivi. L'array di storage contenente il volume secondario si trova in genere in un sito secondario e contiene una replica dei dati. Il volume secondario in genere contiene una copia di backup dei dati e viene utilizzato per il disaster recovery.
+
+
+
+== Impostazioni di sincronizzazione
+
+Quando si crea una coppia mirrorata, si definiscono anche la priorità di sincronizzazione e il criterio di risincronizzazione utilizzati dalla coppia mirrorata per completare l'operazione di risincronizzazione dopo un'interruzione della comunicazione.
+
+Quando si crea un gruppo di coerenza mirror, si definiscono anche la priorità di sincronizzazione e il criterio di risincronizzazione per tutte le coppie mirrorate all'interno del gruppo. Le coppie mirrorate utilizzano la priorità di sincronizzazione e il criterio di risincronizzazione per completare l'operazione di risincronizzazione dopo un'interruzione della comunicazione.
+
+I volumi primari e secondari di una coppia mirrorata possono non essere sincronizzati quando l'array di storage del volume primario non è in grado di scrivere i dati nel volume secondario. Questa condizione può essere causata dai seguenti problemi:
+
+* Problemi di rete tra gli array di storage locali e remoti.
+* Un volume secondario guasto.
+* La sincronizzazione viene sospesa manualmente sulla coppia mirrorata.
+* Conflitto di ruoli del gruppo mirror.
+
+
+È possibile sincronizzare i dati sull'array di storage remoto manualmente o automaticamente.
+
+
+
+== Capacità riservata e mirroring asincrono
+
+La capacità riservata viene utilizzata per tenere traccia delle differenze tra il volume primario e il volume secondario quando la sincronizzazione non avviene. Tiene inoltre traccia delle statistiche di sincronizzazione per ogni coppia mirrorata.
+
+Ogni volume in una coppia mirrorata richiede una propria capacità riservata.
+
+
+
+== Configurazione e gestione
+
+Per abilitare e configurare il mirroring tra due array, è necessario utilizzare l'interfaccia di Unified Manager. Una volta attivato il mirroring, è possibile gestire le coppie mirrorate e le impostazioni di sincronizzazione in System Manager.

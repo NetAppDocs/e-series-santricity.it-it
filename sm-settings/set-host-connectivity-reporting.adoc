@@ -1,0 +1,38 @@
+---
+permalink: sm-settings/set-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
+summary: 'È possibile attivare il reporting della connettività host in modo che lo storage array monitoraggi continuamente la connessione tra i controller e gli host configurati, quindi avvisa l"utente in caso di interruzione della connessione. Questa funzione è attivata per impostazione predefinita.' 
+---
+= Impostare il reporting sulla connettività host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile attivare il reporting della connettività host in modo che lo storage array monitoraggi continuamente la connessione tra i controller e gli host configurati, quindi avvisa l'utente in caso di interruzione della connessione. Questa funzione è attivata per impostazione predefinita.
+
+.A proposito di questa attività
+Se si disattiva il reporting sulla connettività host, il sistema non monitora più i problemi di connettività o di driver multipath con un host collegato allo storage array.
+
+[NOTE]
+====
+La disattivazione del reporting sulla connettività host disattiva anche il bilanciamento automatico del carico, che monitora e bilancia l'utilizzo delle risorse del controller.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *Additional Settings* (Impostazioni aggiuntive), quindi fare clic su *Enable/Disable host Connectivity Reporting* (attiva/Disattiva report connettività host).
++
+Il testo sotto questa opzione indica se è attivata o disattivata.
+
++
+Viene visualizzata una finestra di dialogo di conferma.
+
+. Fare clic su *Sì* per continuare.
++
+Selezionando questa opzione, è possibile attivare o disattivare la funzione.
+
+

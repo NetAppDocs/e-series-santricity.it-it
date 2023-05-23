@@ -1,0 +1,45 @@
+---
+permalink: sm-settings/enable-certificate-revocation-checking.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, certificate, revocation checking, 
+summary: 'È possibile attivare i controlli automatici dei certificati revocati, in modo che un server OCSP (Online Certificate Status Protocol) blocchi gli utenti da connessioni non sicure.' 
+---
+= Attiva il controllo della revoca del certificato
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile attivare i controlli automatici dei certificati revocati, in modo che un server OCSP (Online Certificate Status Protocol) blocchi gli utenti da connessioni non sicure.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni del certificato non vengono visualizzate.
+* Su entrambi i controller viene configurato un server DNS, che consente di utilizzare un nome di dominio completo per il server OCSP. Questa attività è disponibile nella pagina hardware.
+* Se si desidera specificare il proprio server OCSP, è necessario conoscere l'URL di tale server.
+
+
+.A proposito di questa attività
+Il controllo automatico della revoca è utile nei casi in cui la CA ha emesso un certificato in modo errato o una chiave privata è compromessa.
+
+Durante questa attività, è possibile configurare un server OCSP o utilizzare il server specificato nel file del certificato. Il server OCSP determina se la CA ha revocato i certificati prima della data di scadenza pianificata, quindi impedisce all'utente di accedere a un sito se il certificato viene revocato.
+
+.Fasi
+. Selezionare il menu:Impostazioni[certificati].
+. Selezionare la scheda *Trusted*.
++
+[NOTE]
+====
+È inoltre possibile attivare il controllo delle revoche dalla scheda *Gestione chiavi*.
+
+====
+. Fare clic su *attività non comuni*, quindi selezionare *attiva verifica revoca* dal menu a discesa.
+. Selezionare *i want to enable revocation checking*, in modo che nella casella di controllo venga visualizzato un segno di spunta e che nella finestra di dialogo vengano visualizzati altri campi.
+. Nel campo *OCSP responder address* (Indirizzo responder OCSP), è possibile inserire un URL per un server responder OCSP. Se non si immette un indirizzo, il sistema utilizza l'URL del server OCSP dal file del certificato.
+. Fare clic su *Test Address* per verificare che il sistema possa stabilire una connessione all'URL specificato.
+. Fare clic su *Save* (Salva).
+
+
+.Risultati
+Se lo storage array tenta di connettersi a un server con un certificato revocato, la connessione viene negata e viene registrato un evento.

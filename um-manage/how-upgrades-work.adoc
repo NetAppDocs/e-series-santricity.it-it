@@ -1,0 +1,70 @@
+---
+permalink: um-manage/how-upgrades-work.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, upgrades, 
+summary: È possibile utilizzare Unified Manager per aggiornare il software SANtricity OS su più array di storage dello stesso tipo a una versione più recente. 
+---
+= Come funzionano gli aggiornamenti
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare Unified Manager per aggiornare il software SANtricity OS su più array di storage dello stesso tipo a una versione più recente.
+
+
+
+== Workflow di upgrade
+
+I seguenti passaggi forniscono un workflow di alto livello per l'esecuzione degli aggiornamenti software:
+
+. È possibile scaricare il file software SANtricity OS più recente dal sito del supporto (un collegamento è disponibile da Unified Manager nella pagina *supporto*). Salvare il file sul sistema host di gestione (l'host in cui si accede a Unified Manager in un browser), quindi decomprimere il file.
+. In Unified Manager, caricare il file del software del sistema operativo SANtricity e IL file NVSRAM nel repository (un'area del server proxy dei servizi Web in cui sono memorizzati i file). È possibile aggiungere file dal menu:Centro aggiornamenti[Aggiorna software SANtricity OS o dal Centro aggiornamenti > Gestisci repository software].
+. Una volta caricati i file nel repository, è possibile selezionare il file da utilizzare nell'aggiornamento. Dalla pagina Aggiorna software SANtricity OS (menu:Centro aggiornamenti[Aggiorna software SANtricity OS]), selezionare il file del software SANtricity OS e IL file NVSRAM. Dopo aver selezionato un file software, in questa pagina viene visualizzato un elenco di array di storage compatibili. Selezionare quindi gli array di storage che si desidera aggiornare con il nuovo software. (Non è possibile selezionare array incompatibili).
+. È quindi possibile avviare un trasferimento e un'attivazione software immediati oppure scegliere di preparare i file per l'attivazione in un secondo momento. Durante il processo di aggiornamento, Unified Manager esegue le seguenti attività:
++
+.. Esegue un controllo dello stato degli array di storage per determinare se esistono condizioni che potrebbero impedire il completamento dell'aggiornamento. Se un array non supera il controllo dello stato di salute, è possibile saltare tale array e continuare l'aggiornamento per gli altri oppure interrompere l'intero processo e risolvere i problemi degli array che non hanno superato il test.
+.. Trasferisce i file di aggiornamento a ciascun controller.
+.. Riavvia i controller e attiva il nuovo software SANtricity OS, un controller alla volta. Durante l'attivazione, il file SANtricity OS esistente viene sostituito con il nuovo file.
++
+[NOTE]
+====
+È inoltre possibile specificare che il software venga attivato in un secondo momento.
+
+====
+
+
+
+
+
+
+== Upgrade immediato o a fasi
+
+È possibile attivare l'aggiornamento immediatamente o eseguirlo in un secondo momento. È possibile scegliere di eseguire l'attivazione in un secondo momento per i seguenti motivi:
+
+* *Ora del giorno* -- l'attivazione del software può richiedere molto tempo, quindi potrebbe essere necessario attendere che i carichi di i/o siano più leggeri. A seconda del carico di i/o e delle dimensioni della cache, il completamento di un aggiornamento del controller può richiedere da 15 a 25 minuti. I controller si riavviano e si eseguono il failover durante l'attivazione, pertanto le prestazioni potrebbero essere inferiori al solito fino al completamento dell'aggiornamento.
+* *Tipo di pacchetto* -- si consiglia di testare il nuovo software e firmware su un array di storage prima di aggiornare i file su altri array di storage.
+
+
+Per attivare il software in fasi, andare al menu:supporto[Centro di aggiornamento] e fare clic su *attiva* nell'area denominata aggiornamento del software del controller del sistema operativo SANtricity.
+
+
+
+== Controllo dello stato di salute
+
+Un controllo dello stato di salute viene eseguito come parte del processo di aggiornamento, ma è anche possibile eseguire un controllo dello stato di salute separatamente prima di iniziare (andare al menu:Upgrade Center[Pre-Upgrade Health Check]).
+
+Il controllo dello stato di salute valuta tutti i componenti del sistema di storage per assicurarsi che l'aggiornamento possa continuare. Le seguenti condizioni potrebbero impedire l'aggiornamento:
+
+* Dischi assegnati non riusciti
+* Hot spare in uso
+* Gruppi di volumi incompleti
+* Operazioni esclusive in esecuzione
+* Volumi mancanti
+* Controller in stato non ottimale
+* Numero eccessivo di eventi del registro eventi
+* Errore di convalida del database di configurazione
+* Dischi con versioni precedenti di DACstore
+

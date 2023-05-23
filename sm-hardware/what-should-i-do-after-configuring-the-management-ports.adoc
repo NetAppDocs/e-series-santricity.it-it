@@ -1,0 +1,19 @@
+---
+permalink: sm-hardware/what-should-i-do-after-configuring-the-management-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, management, ports, 
+summary: 'Se è stato modificato l"indirizzo IP per lo storage array, potrebbe essere necessario aggiornare la vista dell"array globale in Gestione unificata di SANtricity.' 
+---
+= Cosa devo fare dopo aver configurato le porte di gestione?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stato modificato l'indirizzo IP per lo storage array, potrebbe essere necessario aggiornare la vista globale dell'array in Unified Manager.
+
+Per aggiornare la vista array globale in Unified Manager, aprire l'interfaccia e accedere al menu:Manage[Discover].
+
+Se si utilizza ancora Gestione storage SANtricity, accedere alla finestra Gestione aziendale, dove è necessario rimuovere e aggiungere nuovamente il nuovo indirizzo IP.

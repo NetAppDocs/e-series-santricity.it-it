@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-the-optimal-drive-positioning-for-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, optimal, drive, positioning, pools, volume groups 
+summary: Quando si creano pool e gruppi di volumi, assicurarsi di bilanciare la selezione del disco tra gli slot superiori e inferiori. 
+---
+= Qual è il posizionamento ottimale del disco per pool e gruppi di volumi?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si creano pool e gruppi di volumi, assicurarsi di bilanciare la selezione del disco tra gli slot superiori e inferiori.
+
+Per i controller EF600 e EF300, gli slot 0-11 sono collegati a un bridge PCI, mentre gli slot 12-23 sono collegati a un bridge PCI diverso. Per ottenere prestazioni ottimali, è necessario bilanciare la selezione del disco in modo da includere un numero quasi uguale di dischi dagli slot superiore e inferiore. Questo posizionamento garantisce che i volumi non raggiungano un limite di larghezza di banda prima del necessario.

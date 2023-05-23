@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity 
+summary: La capacità riservata è la capacità allocata fisicamente che memorizza i dati per gli oggetti del servizio di copia come immagini snapshot, volumi membri del gruppo di coerenza e volumi di coppia mirrorati. 
+---
+= Che cos'è la capacità riservata?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacità riservata è la capacità allocata fisicamente che memorizza i dati per gli oggetti del servizio di copia come immagini snapshot, volumi membri del gruppo di coerenza e volumi di coppia mirrorati.
+
+Il volume di capacità riservata associato a un'operazione di servizio di copia risiede in un pool o in un gruppo di volumi. La capacità riservata viene creata da un pool o da un gruppo di volumi.

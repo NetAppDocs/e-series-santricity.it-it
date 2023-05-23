@@ -1,0 +1,26 @@
+---
+permalink: sm-mirroring/why-cant-i-increase-reserved-capacity-with-my-requested-amount.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, increase, reserved, capacity, 
+summary: È possibile aumentare la capacità riservata solo con incrementi di 4 GiB. 
+---
+= Perché non è possibile aumentare la capacità riservata con l'importo richiesto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aumentare la capacità riservata solo con incrementi di 4 GiB.
+
+Consultare le seguenti linee guida:
+
+* È necessario disporre di una capacità libera sufficiente nel pool o nel gruppo di volumi in modo da poterla espandere, se necessario.
++
+Se non esiste capacità libera in alcun pool o gruppo di volumi, è possibile aggiungere capacità non assegnata sotto forma di unità inutilizzate a un pool o a un gruppo di volumi.
+
+* Il volume nel pool o nel gruppo di volumi deve avere uno stato ottimale e non deve essere in alcun stato di modifica.
+* La capacità libera deve essere presente nel pool o nel gruppo di volumi che si desidera utilizzare per aumentare la capacità.
+
+
+Per le operazioni di mirroring asincrono, la capacità riservata è in genere il 20% del volume di base. Utilizzare una percentuale più elevata se si ritiene che il volume di base subirà molte modifiche o se la durata prevista per l'operazione di copia del servizio di un oggetto di storage sarà molto lunga.

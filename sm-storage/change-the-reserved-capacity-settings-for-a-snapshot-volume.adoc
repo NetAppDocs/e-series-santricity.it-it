@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, volume 
+summary: È possibile modificare le impostazioni di un volume di snapshot per regolare il punto percentuale in cui il sistema invia una notifica di avviso quando la capacità riservata di un volume di snapshot è quasi piena. 
+---
+= Modificare le impostazioni di capacità riservata per un volume di snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare le impostazioni di un volume di snapshot per regolare il punto percentuale in cui il sistema invia una notifica di avviso quando la capacità riservata di un volume di snapshot è quasi piena.
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
+. Selezionare il volume di snapshot che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
++
+Viene visualizzata la finestra di dialogo Snapshot Volume Reserved Capacity Settings (Impostazioni capacità riservata volume snapshot).
+
+. Modificare le impostazioni di capacità riservata per il volume di snapshot in base alle esigenze.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Avvisami quando...
+ a| 
+Utilizzare la casella di selezione per regolare il punto percentuale in cui il sistema invia una notifica di avviso quando la capacità riservata per un volume membro è quasi piena.
+
+Quando la capacità riservata per il volume di snapshot supera la soglia specificata, il sistema invia un avviso, consentendo di aumentare la capacità riservata o di eliminare oggetti non necessari.
+
+|===
+====
+. Fare clic su *Save* (Salva) per applicare le modifiche alle impostazioni della capacità riservata del volume di snapshot.
+

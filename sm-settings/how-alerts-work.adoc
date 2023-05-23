@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/how-alerts-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alarm, alerts, 
+summary: Gli avvisi informano gli amministratori degli eventi importanti che si verificano sullo storage array. Gli avvisi possono essere inviati tramite e-mail, trap SNMP e syslog. 
+---
+= Come funzionano gli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gli avvisi informano gli amministratori degli eventi importanti che si verificano sullo storage array. Gli avvisi possono essere inviati tramite e-mail, trap SNMP e syslog.
+
+Il processo di notifica funziona come segue:
+
+. Un amministratore configura uno o più dei seguenti metodi di avviso in System Manager:
++
+** *Email* -- i messaggi vengono inviati agli indirizzi email.
+** *SNMP* -- i trap SNMP vengono inviati a un server SNMP.
+** *Syslog* -- i messaggi vengono inviati a un server syslog.
+
+
+. Quando il monitor degli eventi dello storage array rileva un problema, scrive le informazioni relative a tale problema nel registro eventi (disponibile dal menu:Support[Event Log]). Ad esempio, i problemi possono includere eventi come un guasto alla batteria, un componente che passa da ottimale a offline o errori di ridondanza nel controller.
+. Se il monitor degli eventi determina che l'evento è "allertabile", invia una notifica utilizzando i metodi di avviso configurati (e-mail, SNMP e/o syslog). Tutti gli eventi critici sono considerati "allertabili", insieme ad alcuni eventi di avviso e informativi.
+
+
+
+
+== Configurazione degli avvisi
+
+È possibile configurare gli avvisi dalla configurazione guidata iniziale (solo per gli avvisi e-mail) o dalla pagina Avvisi. Per verificare la configurazione corrente, accedere al menu:Impostazioni[Avvisi].
+
+Il riquadro Avvisi visualizza la configurazione degli avvisi, che può essere una delle seguenti:
+
+* Non configurato.
+* Configurato; è impostato almeno un metodo di avviso. Per determinare quali metodi di avviso sono configurati, puntare il cursore sul riquadro.
+
+
+
+
+== Informazioni sugli avvisi
+
+Gli avvisi possono includere i seguenti tipi di informazioni:
+
+* Nome dell'array di storage.
+* Tipo di errore di evento correlato a una voce del registro eventi.
+* Data e ora in cui si è verificato l'evento.
+* Breve descrizione dell'evento.
+
+
+[NOTE]
+====
+Gli avvisi syslog seguono lo standard di messaggistica RFC 5424.
+
+====

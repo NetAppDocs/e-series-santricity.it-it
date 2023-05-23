@@ -1,0 +1,37 @@
+---
+permalink: sm-hardware/initialize-format-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
+summary: 'Se si spostano le unità assegnate da un array di storage a un altro, è necessario inizializzare (formattare) le unità prima di poterli utilizzare nel nuovo array di storage.' 
+---
+= Inizializzare (formattare) il disco
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si spostano le unità assegnate da un array di storage a un altro, è necessario inizializzare (formattare) le unità prima di poterli utilizzare nel nuovo array di storage.
+
+.A proposito di questa attività
+L'inizializzazione rimuove le informazioni di configurazione precedenti da un disco e le riporta allo stato non assegnato. L'unità è quindi disponibile per l'aggiunta a un nuovo pool o gruppo di volumi nel nuovo array di storage.
+
+Utilizzare l'operazione di inizializzazione del disco quando si sposta un singolo disco. Non è necessario inizializzare le unità se si sposta un intero gruppo di volumi da un array di storage a un altro.
+
+[CAUTION]
+====
+*Possibile perdita di dati* -- quando si inizializza un disco, tutti i dati sul disco vengono persi. Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Fare clic sull'unità che si desidera inizializzare.
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Selezionare *Inizializza* e confermare che si desidera eseguire l'operazione.
+

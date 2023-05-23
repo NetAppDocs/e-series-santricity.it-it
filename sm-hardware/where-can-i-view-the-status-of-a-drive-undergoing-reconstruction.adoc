@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, reconstruction, 
+summary: 'È possibile visualizzare lo stato di ricostruzione del disco dalla dashboard Operations in Progress (operazioni in corso).' 
+---
+= Dove è possibile visualizzare lo stato di un disco in fase di ricostruzione?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare lo stato di ricostruzione del disco dalla dashboard Operations in Progress (operazioni in corso).
+
+Nella pagina iniziale, fare clic sul collegamento *View Operations in Progress* (Visualizza operazioni in corso) in alto a destra.
+
+A seconda del disco, la ricostruzione completa potrebbe richiedere molto tempo. Se la proprietà di un volume è cambiata, potrebbe essere eseguita una ricostruzione completa invece della ricostruzione rapida.

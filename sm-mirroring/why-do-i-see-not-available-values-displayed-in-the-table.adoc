@@ -1,0 +1,16 @@
+---
+permalink: sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Not Available 
+summary: 'La tabella elenca i valori non disponibili quando i dati presenti nell"array di storage remoto non sono disponibili per la visualizzazione.' 
+---
+= Perché nella tabella vengono visualizzati i valori non disponibili?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La tabella elenca i valori non disponibili quando i dati presenti nell'array di storage remoto non sono disponibili per la visualizzazione.
+
+Per visualizzare i dati dell'array di storage remoto, avviare System Manager da Unified Manager.

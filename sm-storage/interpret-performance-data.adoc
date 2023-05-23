@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/interpret-performance-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, performance data 
+summary: I dati sulle performance possono aiutarti a ottimizzare le performance del tuo storage array. 
+---
+= Interpretare i dati delle performance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I dati sulle performance possono aiutarti a ottimizzare le performance del tuo storage array.
+
+Quando si interpretano i dati sulle performance, tenere presente che diversi fattori influiscono sulle performance dello storage array. La seguente tabella descrive le aree principali da considerare.
+
+[cols="25h,~"]
+|===
+| Dati sulle performance | Implicazioni per l'ottimizzazione delle performance 
+
+
+ a| 
+Latenza (millisecondi o ms)
+ a| 
+Monitorare l'attività di i/o di un oggetto specifico.
+
+Identificare potenzialmente gli oggetti che sono colli di bottiglia:
+
+* Se un gruppo di volumi viene condiviso tra diversi volumi, i singoli volumi potrebbero aver bisogno di gruppi di volumi propri per migliorare le performance sequenziali dei dischi e ridurre la latenza.
+* Con i pool, vengono introdotte latenze maggiori e potrebbero esistere carichi di lavoro irregolari tra i dischi, rendendo i valori di latenza meno significativi e, in generale, più elevati.
+* Il tipo di disco e la velocità influenzano la latenza. Con l'i/o casuale, i dischi a rotazione più rapida trascorrono meno tempo a spostarsi da e verso diverse posizioni del disco.
+* Un numero eccessivo di dischi determina un maggior numero di comandi in coda e un periodo di tempo maggiore per l'elaborazione del comando da parte del disco, aumentando la latenza generale del sistema.
+* I/o più grandi hanno una maggiore latenza grazie al tempo aggiuntivo richiesto per il trasferimento dei dati.
+* Una latenza maggiore potrebbe indicare che il modello di i/o è casuale. I dischi con i/o random avranno una latenza maggiore rispetto a quelli con flussi sequenziali.
+* Una disparità di latenza tra dischi o volumi di un gruppo di volumi comune potrebbe indicare un disco lento.
+
+
+
+
+ a| 
+IOPS
+ a| 
+I fattori che influiscono sulle operazioni di input/output al secondo (IOPS o iOS/sec) includono i seguenti elementi:
+
+* Schema di accesso (casuale o sequenziale)
+* Dimensione i/O.
+* Livello RAID
+* Dimensione del blocco della cache
+* Se il caching in lettura è attivato
+* Se il caching in scrittura è attivato
+* Prefetch di lettura della cache dinamica
+* Dimensione del segmento
+* Il numero di dischi nei gruppi di volumi o nell'array di storage
+
+
+Maggiore è il tasso di hit della cache, maggiori saranno i tassi di i/O. Con il caching in scrittura attivato si riscontrano velocità di i/o in scrittura più elevate rispetto a quelle disattivate. Per decidere se attivare il caching in scrittura per un singolo volume, esaminare gli IOPS correnti e il numero massimo di IOPS. Per i modelli di i/o sequenziali dovrebbero essere visualizzate velocità più elevate rispetto ai modelli di i/o random. Indipendentemente dal modello di i/o, abilitare il caching in scrittura per massimizzare la velocità di i/o e ridurre i tempi di risposta dell'applicazione.
+
+È possibile vedere i miglioramenti delle performance causati dalla modifica delle dimensioni dei segmenti nelle statistiche IOPS di un volume. Provare a determinare la dimensione ottimale del segmento oppure utilizzare la dimensione del file system o del blocco del database.
+
+
+
+ a| 
+MIB/s
+ a| 
+Le velocità di trasferimento o di throughput sono determinate dalla dimensione i/o dell'applicazione e dalla velocità di i/O. In genere, le richieste di i/o delle applicazioni di piccole dimensioni comportano una velocità di trasferimento inferiore, ma forniscono una velocità di i/o più rapida e tempi di risposta più brevi. Con richieste di i/o applicative più ampie, è possibile ottenere velocità di throughput più elevate.
+
+La comprensione dei modelli di i/o tipici delle applicazioni consente di determinare le velocità massime di trasferimento i/o per uno specifico array di storage.
+
+
+
+ a| 
+CPU
+ a| 
+Questo valore è una percentuale della capacità di elaborazione utilizzata.
+
+Si potrebbe notare una disparità nell'utilizzo della CPU degli stessi tipi di oggetti. Ad esempio, l'utilizzo della CPU di un controller è pesante o aumenta nel tempo, mentre quello dell'altro controller è più leggero o più stabile. In questo caso, è possibile modificare la proprietà del controller di uno o più volumi nel controller con la percentuale di CPU inferiore.
+
+Si consiglia di monitorare la CPU nell'array di storage. Se la CPU continua ad aumentare nel tempo mentre le performance delle applicazioni diminuiscono, potrebbe essere necessario aggiungere array di storage. Aggiungendo array di storage alla tua azienda, puoi continuare a soddisfare le esigenze applicative a un livello di performance accettabile.
+
+
+
+ a| 
+Spazio di crescita
+ a| 
+Per spazio di crescita si intende la capacità di performance residua dei controller, dei canali host del controller e dei canali del disco del controller. Questo valore viene espresso in percentuale e rappresenta il divario tra le massime performance possibili che questi oggetti sono in grado di offrire e i livelli di performance correnti.
+
+* Per i controller, lo spazio di crescita è una percentuale degli IOPS massimi possibili.
+* Per i canali, lo spazio di crescita è una percentuale del throughput massimo, o MiB/s. Il throughput in lettura, il throughput in scrittura e il throughput bidirezionale sono inclusi nel calcolo.
+
+
+|===

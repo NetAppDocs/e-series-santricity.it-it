@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/edit-mail-server-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
+summary: 'È possibile modificare l"indirizzo del server e-mail e l"indirizzo del mittente utilizzati per gli avvisi e-mail.' 
+---
+= Modificare il server di posta per gli avvisi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare l'indirizzo del server e-mail e l'indirizzo del mittente utilizzati per gli avvisi e-mail.
+
+.Prima di iniziare
+L'indirizzo del server di posta che si sta modificando deve essere disponibile. L'indirizzo può essere un indirizzo IPv4 o IPv6 o un nome di dominio completo.
+
+[NOTE]
+====
+Per utilizzare un nome di dominio completo, è necessario configurare un server DNS su entrambi i controller. È possibile configurare un server DNS dalla pagina hardware.
+
+====
+.Fasi
+. Selezionare menu:Impostazioni[Avvisi].
+. Selezionare la scheda *Email*.
+. Selezionare *Configura server di posta*.
++
+Viene visualizzata la finestra di dialogo Configura server di posta.
+
+. Modificare l'indirizzo del server di posta, le informazioni sul mittente e le informazioni di contatto.
++
+** *Indirizzo del server di posta* -- consente di modificare il nome di dominio completo, l'indirizzo IPv4 o l'indirizzo IPv6 del server di posta.
++
+[NOTE]
+====
+Per utilizzare un nome di dominio completo, è necessario configurare un server DNS su entrambi i controller. È possibile configurare un server DNS dalla pagina hardware.
+
+====
+** *Email sender address* -- Modifica l'indirizzo email da utilizzare come mittente del messaggio. Questo indirizzo viene visualizzato nel campo "da" del messaggio di posta elettronica.
+** *Include contact information in email* -- per modificare le informazioni di contatto del mittente, selezionare questa opzione, quindi modificare il nome e il numero di telefono.
+
+
+. Fare clic su *Save* (Salva).
+

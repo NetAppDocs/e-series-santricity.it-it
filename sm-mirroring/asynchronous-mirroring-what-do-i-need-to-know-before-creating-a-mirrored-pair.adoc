@@ -1,0 +1,28 @@
+---
+permalink: sm-mirroring/asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
+summary: 'Le coppie mirrorate vengono configurate nell"interfaccia di Unified Manager e quindi gestite in System Manager.' 
+---
+= Mirroring asincrono - cosa occorre sapere prima di creare una coppia mirrorata?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le coppie mirrorate vengono configurate nell'interfaccia di Unified Manager e quindi gestite in System Manager.
+
+Prima di creare una coppia mirrorata, seguire queste linee guida.
+
+* È necessario disporre di due array di storage.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel o un'interfaccia iSCSI.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* È necessario disporre di capacità libera sufficiente sull'array di storage remoto per creare un volume secondario uguale o superiore al volume primario che si desidera eseguire il mirroring.
+* Sono stati installati Web Services Proxy e Unified Manager. Le coppie mirrorate vengono configurate nell'interfaccia di Unified Manager.
+* I due array di storage vengono rilevati in Unified Manager.
+* L'array di storage deve contenere almeno un gruppo di coerenza mirror. È possibile creare un gruppo di coerenza in Unified Manager nella procedura guidata Crea coppie mirrorate.
+

@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/what-does-the-mib-s-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mibs, graph, 
+summary: 'Il grafico MiB/s visualizza le statistiche della velocità di trasferimento in megibyte al secondo. Nella pagina iniziale, questo grafico visualizza le statistiche per l"array di storage. Nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro) del riquadro Performance (prestazioni), questo grafico visualizza le statistiche per array di storage, volumi, gruppi di volumi, pool, applicazioni, e carichi di lavoro.' 
+---
+= Cosa mostra il grafico MiB/s?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico MiB/s visualizza le statistiche della velocità di trasferimento in megibyte al secondo. Nella pagina iniziale, questo grafico visualizza le statistiche per l'array di storage. Nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro) del riquadro Performance (prestazioni), questo grafico visualizza le statistiche per array di storage, volumi, gruppi di volumi, pool, applicazioni, e carichi di lavoro.
+
+MIB/s è l'abbreviazione di _mebibytes per second_ o 1,048,576 byte per secondo. Spostare il cursore su un punto del grafico per visualizzare i seguenti valori per quel punto temporale:
+
+* La quantità di dati letti.
+* La quantità di dati scritti.
+* La quantità totale combinata di dati letti e scritti.
+

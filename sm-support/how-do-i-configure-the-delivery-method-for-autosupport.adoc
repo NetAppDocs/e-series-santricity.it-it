@@ -1,0 +1,66 @@
+---
+permalink: sm-support/how-do-i-configure-the-delivery-method-for-autosupport.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, delivery, method, autosupport, 
+summary: 'La funzione AutoSupport supporta i protocolli HTTPS, HTTP e SMTP per l"invio di AutoSupport al supporto tecnico.' 
+---
+= Come si configura il metodo di consegna per la funzione AutoSupport?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione AutoSupport supporta i protocolli HTTPS, HTTP e SMTP per l'invio di AutoSupport al supporto tecnico.
+
+.Prima di iniziare
+* La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella pagina AutoSupport.
+* Nella rete deve essere installato e configurato un server DNS. L'indirizzo del server DNS deve essere configurato in System Manager (questa attività è disponibile nella pagina hardware).
+
+
+.A proposito di questa attività
+Esaminare i diversi protocolli:
+
+* *HTTPS* -- consente di connettersi direttamente al server di supporto tecnico di destinazione utilizzando HTTPS. Se si desidera attivare AutoSupport OnDemand o Diagnostica remota, il metodo di erogazione AutoSupport deve essere impostato su HTTPS.
+* *HTTP* -- consente di connettersi direttamente al server di supporto tecnico di destinazione utilizzando HTTP.
+* *E-mail* -- consente di utilizzare un server e-mail come metodo di recapito per l'invio di messaggi AutoSupport.
+
+
+[NOTE]
+====
+*Differenze tra i metodi HTTPS/HTTP ed e-mail*. Il metodo di recapito della posta elettronica, che utilizza SMTP, presenta alcune importanti differenze rispetto ai metodi di recapito HTTPS e HTTP. Innanzitutto, le dimensioni delle spedizioni per il metodo e-mail sono limitate a 5 MB, il che significa che alcune raccolte di dati ASUP non verranno inviate. In secondo luogo, la funzione AutoSupport OnDemand è disponibile solo sui metodi HTPP e HTTPS.
+
+====
+.Fasi
+. Selezionare menu:scheda supporto[Centro di supporto > AutoSupport].
+. Selezionare *Configura metodo di erogazione AutoSupport*.
++
+Viene visualizzata una finestra di dialogo in cui sono elencati i metodi di consegna dell'invio.
+
+. Selezionare il metodo di erogazione desiderato, quindi selezionare i parametri per il metodo di erogazione. Effettuare una delle seguenti operazioni:
++
+** Se si seleziona HTTPS o HTTP, selezionare uno dei seguenti parametri di erogazione:
++
+*** *Direttamente* -- questo parametro di erogazione è la selezione predefinita. Questa opzione consente di connettersi direttamente al sistema di supporto tecnico di destinazione utilizzando il protocollo HTTPS o HTTP.
+*** *Via Proxy server* -- questa opzione consente di specificare i dettagli del server proxy HTTP necessari per stabilire la connessione con il sistema di supporto tecnico di destinazione. Specificare l'indirizzo host e il numero di porta. Tuttavia, è necessario immettere solo i dettagli di autenticazione dell'host (nome utente e password), se necessario.
+*** *Tramite PAC (Proxy Auto-Configuration script)* -- specificare la posizione di un file PAC (Proxy Auto-Configuration) script. Un file PAC consente al sistema di scegliere automaticamente il server proxy appropriato per stabilire una connessione con il sistema di supporto tecnico di destinazione.
+
+
+** Se è stata selezionata l'opzione e-mail, immettere le seguenti informazioni:
++
+*** Indirizzo del server di posta come nome di dominio completo, indirizzo IPv4 o indirizzo IPv6.
+*** L'indirizzo e-mail visualizzato nel campo da del messaggio e-mail di spedizione AutoSupport.
+*** *Opzionale; se si desidera eseguire un test di configurazione.* l'indirizzo e-mail a cui viene inviata una conferma quando il sistema AutoSupport riceve l'invio del test.
+*** Se si desidera crittografare i messaggi, selezionare *SMTPS* o *STARTTLS* come tipo di crittografia, quindi selezionare il numero di porta per i messaggi crittografati. In caso contrario, selezionare *Nessuno*.
+*** Se necessario, immettere un nome utente e una password per l'autenticazione con il mittente e il server di posta in uscita.
+
+
+
+
+. Fare clic su *Test Configuration* (verifica configurazione) per verificare la connessione al server del supporto tecnico utilizzando i parametri di consegna specificati. Se è stata attivata la funzione AutoSupport on-Demand, il sistema verificherà anche la connessione per l'erogazione del dispatch AutoSupport on-Demand.
++
+Se il test di configurazione non riesce, controllare le impostazioni di configurazione ed eseguire nuovamente il test. Se il test continua a non riuscire, contattare il supporto tecnico.
+
+. Fare clic su *Save* (Salva).
+

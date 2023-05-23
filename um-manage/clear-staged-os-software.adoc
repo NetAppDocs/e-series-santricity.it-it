@@ -1,0 +1,28 @@
+---
+permalink: um-manage/clear-staged-os-software.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
+summary: È possibile rimuovere il software del sistema operativo in fasi per assicurarsi che una versione in sospeso non venga attivata inavvertitamente in un secondo momento. La rimozione del software del sistema operativo in fasi non influisce sulla versione corrente in esecuzione sugli array di storage. 
+---
+= Software per sistemi operativi chiari e staged
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere il software del sistema operativo in fasi per assicurarsi che una versione in sospeso non venga attivata inavvertitamente in un secondo momento. La rimozione del software del sistema operativo in fasi non influisce sulla versione corrente in esecuzione sugli array di storage.
+
+.Fasi
+. Dalla vista principale, selezionare *Gestisci*, quindi selezionare menu:Upgrade Center[Cancella software sistema operativo in fasi].
++
+Viene visualizzata la finestra di dialogo Clear Staged OS Software (Cancella software per sistemi operativi in fasi) che elenca tutti i sistemi storage rilevati con software o NVSRAM in sospeso.
+
+. Se necessario, filtrare o ordinare i sistemi di storage nell'elenco, in modo da poter visualizzare tutti i sistemi che dispongono di software in fasi.
+. Selezionare le caselle di controllo relative ai sistemi storage con software in sospeso che si desidera eliminare.
+. Fare clic su *Cancella*.
++
+Lo stato dell'operazione viene visualizzato nella finestra di dialogo.
+
+

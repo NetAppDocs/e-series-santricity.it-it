@@ -1,0 +1,131 @@
+---
+permalink: sm-storage/copy-volume-function.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: 'La funzione Copy Volume (Copia volume) consente di creare una copia point-in-time di un volume creando due volumi separati, il volume di origine e il volume di destinazione, sullo stesso array di storage.' 
+---
+= Panoramica del volume di copia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione Copy Volume (Copia volume) consente di creare una copia point-in-time di un volume creando due volumi separati, il volume di origine e il volume di destinazione, sullo stesso array di storage.
+
+Questa funzione esegue una copia byte per byte dal volume di origine al volume di destinazione, rendendo i dati sul volume di destinazione identici ai dati sul volume di origine.
+
+
+
+== Copia dei dati per un maggiore accesso
+
+Con la modifica dei requisiti di storage per un volume, è possibile utilizzare la funzione Copy Volume (Copia volume) per copiare i dati da pool o gruppi di volumi che utilizzano dischi di capacità inferiore in pool o gruppi di volumi che utilizzano dischi di capacità superiore. Ad esempio, è possibile utilizzare la funzione Copy Volume (Copia volume) per effettuare le seguenti operazioni:
+
+* Spostare i dati su dischi più grandi.
+* Passare a dischi con una velocità di trasferimento dei dati superiore.
+* Passa ai dischi utilizzando nuove tecnologie per ottenere performance superiori.
+* Modificare un volume sottile in un volume spesso.
+
+
+
+
+== Modificare un volume sottile in un volume spesso
+
+Se si desidera modificare un volume thin in un volume thick, utilizzare l'operazione Copy Volume (Copia volume) per creare una copia del volume thin. La destinazione di un'operazione Copy Volume è sempre un volume spesso.
+
+[NOTE]
+====
+System Manager non offre un'opzione per creare volumi thin. Se si desidera creare volumi thin, utilizzare l'interfaccia della riga di comando (CLI).
+
+====
+
+
+== Dati di backup
+
+La funzione Copy Volume consente di eseguire il backup di un volume copiando i dati da un volume a un altro nello stesso array di storage. È possibile utilizzare il volume di destinazione come backup per il volume di origine, per il test del sistema o per eseguire il backup su un altro dispositivo, ad esempio un'unità a nastro.
+
+
+
+== Ripristinare i dati del volume Snapshot nel volume di base
+
+Se è necessario ripristinare i dati nel volume di base dal volume snapshot associato, è possibile utilizzare la funzione Copy Volume (Copia volume) per copiare i dati dal volume snapshot al volume di base. È possibile creare una copia del volume dei dati sul volume di snapshot, quindi copiare i dati nel volume di base.
+
+
+
+== Volumi di origine e di destinazione
+
+La tabella seguente specifica i tipi di volumi che è possibile utilizzare per i volumi di origine e di destinazione con la funzione Copy Volume (Copia volume).
+
+[cols="1a,1a,1a,1a"]
+|===
+| Tipo di volume | Volume di origine della copia del volume offline | Volume online di origine della copia del volume | Volume di destinazione online e offline 
+
+
+ a| 
+Volume denso in un pool
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Volume spesso in un gruppo di volumi
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Volume sottile
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+ a| 
+Volume Snapshot
+ a| 
+Sì^1^
+ a| 
+No
+ a| 
+No
+
+
+
+ a| 
+Volume di base Snapshot
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+ a| 
+Volume primario mirror remoto
+ a| 
+Sì^2^
+ a| 
+No
+ a| 
+Sì
+
+|===
+^1^ non è possibile utilizzare la copia del volume snapshot fino al completamento dell'operazione di copia online.
+
+^2^ se il volume di origine è un volume primario, la capacità del volume di destinazione deve essere uguale o superiore alla capacità utilizzabile del volume di origine.

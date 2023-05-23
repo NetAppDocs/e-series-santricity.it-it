@@ -1,0 +1,167 @@
+---
+permalink: sm-support/view-events-using-the-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, events, 
+summary: È possibile visualizzare il registro eventi, che fornisce un record storico degli eventi che si sono verificati sullo storage array. 
+---
+= Visualizzare gli eventi utilizzando il registro eventi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare il registro eventi, che fornisce un record storico degli eventi che si sono verificati sullo storage array.
+
+.Fasi
+. Selezionare menu:Support[Event Log] (supporto[Registro eventi]).
++
+Viene visualizzata la pagina Registro eventi.
+
++
+.Dettagli della pagina
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Elemento | Descrizione 
+
+
+ a| 
+Campo View All (Visualizza tutto)
+ a| 
+Consente di alternare tra tutti gli eventi e solo quelli critici e di avviso.
+
+
+
+ a| 
+Campo del filtro
+ a| 
+Filtra gli eventi. Utile per visualizzare solo gli eventi correlati a un componente specifico, a un evento specifico e così via
+
+
+
+ a| 
+Selezionare l'icona delle colonne.
+ a| 
+Consente di selezionare altre colonne da visualizzare. Altre colonne forniscono informazioni aggiuntive sull'evento.
+
+
+
+ a| 
+Caselle di controllo
+ a| 
+Consente di selezionare gli eventi da salvare. La casella di controllo nell'intestazione della tabella seleziona tutti gli eventi.
+
+
+
+ a| 
+Colonna Data/ora
+ a| 
+La data e l'ora dell'evento, in base all'orologio del controller.
+
+
+NOTE: Il registro eventi ordina inizialmente gli eventi in base al numero di sequenza. Di solito, questa sequenza corrisponde alla data e all'ora. Tuttavia, i due clock dei controller nell'array di storage potrebbero non essere sincronizzati. In questo caso, alcune incongruenze percepite potrebbero apparire nel registro eventi in relazione agli eventi e alla data e all'ora visualizzate.
+
+
+
+ a| 
+Colonna Priority (priorità)
+ a| 
+Questi valori di priorità esistono:
+
+** *Critico* -- si è verificato un problema con lo storage array. Tuttavia, se si esegue un'azione immediata, si potrebbe impedire la perdita di accesso ai dati. Gli eventi critici vengono utilizzati per le notifiche degli avvisi. Tutti gli eventi critici vengono inviati a qualsiasi client di gestione della rete (tramite trap SNMP) o al destinatario di posta elettronica configurato.
+** *Attenzione* -- si è verificato un errore che ha degradato le prestazioni e la capacità dello storage array di ripristinare da un altro errore.
+** *Informazionale* -- informazioni non critiche relative allo storage array.
+
+
+
+
+ a| 
+Colonna Component Type (tipo di componente)
+ a| 
+Il componente interessato dall'evento. Il componente potrebbe essere hardware, ad esempio un disco o un controller, oppure software, ad esempio il firmware del controller.
+
+
+
+ a| 
+Colonna Component Location (posizione componente)
+ a| 
+La posizione fisica del componente nell'array di storage.
+
+
+
+ a| 
+Colonna Description (Descrizione)
+ a| 
+Una descrizione dell'evento.
+
+*Esempio* -- `Drive write failure - retries exhausted`
+
+
+
+ a| 
+Colonna Sequence Number
+ a| 
+Un numero a 64 bit che identifica in modo univoco una voce di log specifica per un array di storage. Questo numero aumenta di uno ad ogni nuova voce del registro eventi. Per visualizzare queste informazioni, fare clic sull'icona *Select columns* (Seleziona colonne).
+
+
+
+ a| 
+Colonna tipo di evento
+ a| 
+Un numero di 4 cifre che identifica ciascun tipo di evento registrato. Per visualizzare queste informazioni, fare clic sull'icona *Select columns* (Seleziona colonne).
+
+
+
+ a| 
+Colonna codici specifici evento
+ a| 
+Queste informazioni vengono utilizzate dal supporto tecnico. Per visualizzare queste informazioni, fare clic sull'icona *Select columns* (Seleziona colonne).
+
+
+
+ a| 
+Colonna Categoria evento
+ a| 
+** **Guasto** – Un componente dell'array di storage si è guastato, ad esempio un guasto al disco o alla batteria.
+** **Modifica di stato**: Un elemento dell'array di storage che ha cambiato stato; ad esempio, un volume è passato allo stato ottimale o un controller è passato allo stato offline.
+** **Interno** – operazioni interne del controller che non richiedono un'azione da parte dell'utente; ad esempio, il controller ha completato l'inizio della giornata.
+** **Comando** – un comando che è stato inviato all'array di storage; ad esempio, è stato assegnato un hot spare.
+** **Errore** – è stata rilevata una condizione di errore sull'array di storage; ad esempio, un controller non è in grado di sincronizzare e svuotare la cache oppure viene rilevato un errore di ridondanza sull'array di storage.
+** **Generale** – qualsiasi evento che non si adatti bene ad altre categorie. Per visualizzare queste informazioni, fare clic sull'icona **Seleziona colonne**.
+
+
+
+
+ a| 
+Registrato per colonna
+ a| 
+Il nome del controller che ha registrato l'evento. Per visualizzare queste informazioni, fare clic sull'icona **Seleziona colonne**.
+
+|===
+====
+. Per recuperare nuovi eventi dallo storage array, fare clic su **Refresh**.
++
+La registrazione e la visualizzazione di un evento nella pagina Registro eventi possono richiedere alcuni minuti.
+
+. Per salvare il registro eventi in un file:
++
+.. Selezionare la casella di controllo accanto a ciascun evento che si desidera salvare.
+.. Fare clic su *Save* (Salva).
++
+Il file viene salvato nella cartella Download del browser con il nome `major-event-log-timestamp.log`.
+
+
+
+. Per cancellare gli eventi dal registro eventi:
++
+Il registro eventi memorizza circa 8,000 eventi prima di sostituire un evento con un nuovo evento. Se si desidera conservare gli eventi, è possibile salvarli e cancellarli dal registro eventi.
+
++
+.. Innanzitutto, salvare il registro eventi.
+.. Fare clic su *Clear All* (Cancella tutto) e confermare che si desidera eseguire l'operazione.
+
+
+

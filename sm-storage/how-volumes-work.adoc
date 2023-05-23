@@ -1,0 +1,65 @@
+---
+permalink: sm-storage/how-volumes-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, copy, 
+summary: 'I volumi sono container di dati che gestiscono e organizzano lo spazio di storage sull"array di storage.' 
+---
+= Come funzionano i volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+I volumi sono container di dati che gestiscono e organizzano lo spazio di storage sull'array di storage.
+
+È possibile creare volumi dalla capacità di storage disponibile sull'array di storage e semplificare l'organizzazione e l'utilizzo delle risorse del sistema. Questo concetto è simile all'utilizzo di cartelle/directory su un computer per organizzare i file per un accesso semplice e rapido.
+
+I volumi sono l'unico livello di dati visibile agli host. In un ambiente SAN, i volumi vengono mappati ai LUN (Logical Unit Number), visibili agli host. I LUN conservano i dati utente accessibili mediante uno o più protocolli di accesso host supportati dallo storage array, tra cui FC, iSCSI e SAS.
+
+
+
+== Tipi di volume che è possibile creare da pool e gruppi di volumi
+
+I volumi traggono la propria capacità da pool o gruppi di volumi. È possibile creare i seguenti tipi di volumi dai pool o dai gruppi di volumi presenti nell'array di storage.
+
+* *Dai pool* -- è possibile creare volumi da un pool come _volumi con provisioning completo (thick)_ o _volumi con thin provisioning._
++
+[NOTE]
+====
+L'interfaccia di System Manager non fornisce un'opzione per creare volumi thin. Se si desidera creare volumi thin, utilizzare l'interfaccia della riga di comando (CLI).
+
+====
+* *Da gruppi di volumi* -- è possibile creare volumi da un gruppo di volumi solo come _volumi con provisioning completo (thick)_.
+
+
+I volumi spessi e i volumi thin traggono la capacità dall'array di storage in diversi modi:
+
+* La capacità di un volume spesso viene allocata al momento della creazione del volume.
+* La capacità di un volume thin viene allocata come dati quando viene scritta nel volume.
+
+
+Il thin provisioning consente di evitare sprechi di capacità allocata e consente alle aziende di risparmiare sui costi iniziali dello storage. Tuttavia, il provisioning completo offre il vantaggio di una minore latenza, poiché tutto lo storage viene allocato contemporaneamente quando vengono creati volumi spessi.
+
+[NOTE]
+====
+I sistemi storage EF600 e EF300 non supportano il thin provisioning.
+
+====
+
+
+== Caratteristiche dei volumi
+
+Ciascun volume di un pool o di un gruppo di volumi può avere le proprie caratteristiche individuali in base al tipo di dati che verranno memorizzati in esso. Alcune di queste caratteristiche includono:
+
+* *Dimensione segmento* -- Un segmento è la quantità di dati in kilobyte (KiB) che viene memorizzata su un disco prima che lo storage array passi al disco successivo nello stripe (gruppo RAID). La dimensione del segmento è uguale o inferiore alla capacità del gruppo di volumi. La dimensione del segmento è fissa e non può essere modificata per i pool.
+* *Capacità* -- consente di creare un volume dalla capacità libera disponibile in un pool o in un gruppo di volumi. Prima di creare un volume, il pool o il gruppo di volumi deve già esistere e disporre di capacità libera sufficiente per creare il volume.
+* *Controller ownership* -- tutti gli storage array possono avere uno o due controller. Su un array a controller singolo, il carico di lavoro di un volume viene gestito da un singolo controller. Su un array a controller doppio, un volume avrà un controller preferito (A o B) che "`possiede`" il volume. In una configurazione a controller doppio, la proprietà del volume viene regolata automaticamente utilizzando la funzione di bilanciamento automatico del carico per correggere eventuali problemi di bilanciamento del carico quando i carichi di lavoro si spostano tra i controller. Il bilanciamento automatico del carico fornisce il bilanciamento automatizzato del carico di lavoro i/o e garantisce che il traffico i/o in entrata dagli host sia gestito dinamicamente e bilanciato tra entrambi i controller.
+* *Assegnazione del volume* -- è possibile consentire agli host di accedere a un volume sia quando si crea il volume che in un secondo momento. Tutti gli accessi host vengono gestiti tramite un numero di unità logica (LUN). Gli host rilevano le LUN che, a loro volta, sono assegnate ai volumi. Se si assegna un volume a più host, utilizzare il software di clustering per assicurarsi che il volume sia disponibile per tutti gli host.
++
+Il tipo di host può avere limiti specifici sul numero di volumi a cui l'host può accedere. Tenere presente questa limitazione quando si creano volumi per l'utilizzo da parte di un determinato host.
+
+* *Descrivi name* -- puoi assegnare un nome a un volume qualsiasi, ma ti consigliamo di renderlo descrittivo.
+
+
+Durante la creazione del volume, a ciascun volume viene allocata la capacità e viene assegnato un nome, una dimensione del segmento (solo gruppi di volumi), una proprietà del controller e un'assegnazione volume-a-host. I dati dei volumi vengono automaticamente bilanciati in base alle esigenze dei controller.

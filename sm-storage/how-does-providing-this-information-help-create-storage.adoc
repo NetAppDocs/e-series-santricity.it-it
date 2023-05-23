@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/how-does-providing-this-information-help-create-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload 
+summary: 'Le informazioni sul carico di lavoro vengono utilizzate per ottimizzare le caratteristiche del volume, ad esempio il tipo di i/o, la dimensione del segmento e la cache di lettura/scrittura per il carico di lavoro selezionato. Queste caratteristiche ottimizzate determinano il modo in cui il carico di lavoro interagisce con i componenti dell"array di storage.' 
+---
+= In che modo fornire queste informazioni aiuta a creare storage?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le informazioni sul carico di lavoro vengono utilizzate per ottimizzare le caratteristiche del volume, ad esempio il tipo di i/o, la dimensione del segmento e la cache di lettura/scrittura per il carico di lavoro selezionato. Queste caratteristiche ottimizzate determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage.
+
+In base alle informazioni sul carico di lavoro fornite, System Manager crea i volumi appropriati e li inserisce nei pool o nei gruppi di volumi disponibili attualmente nel sistema. Il sistema crea i volumi e ne ottimizza le caratteristiche in base alle Best practice correnti per il carico di lavoro selezionato.
+
+Prima di completare la creazione dei volumi per un determinato carico di lavoro, è possibile rivedere la configurazione del volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche raccomandati dal sistema utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
+
+Per informazioni sulle Best practice, consultare la documentazione specifica dell'applicazione.

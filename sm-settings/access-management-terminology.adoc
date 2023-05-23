@@ -1,0 +1,96 @@
+---
+permalink: sm-settings/access-management-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, terms 
+summary: Scopri come si applicano i termini di Access Management al tuo storage array. 
+---
+= Terminologia per la gestione degli accessi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri come si applicano i termini di Access Management al tuo storage array.
+
+[cols="25h,~"]
+|===
+| Termine | Descrizione 
+
+
+ a| 
+Token di accesso
+ a| 
+I token di accesso vengono utilizzati per autenticare con l'API REST o l'interfaccia della riga di comando (CLI) al posto di un nome utente e di una password. I token sono associati a un utente specifico (inclusi gli utenti LDAP) e includono un set di autorizzazioni e una scadenza.
+
+
+
+ a| 
+Active Directory
+ a| 
+Active Directory (ad) è un servizio di directory Microsoft che utilizza LDAP per le reti di dominio Windows.
+
+
+
+ a| 
+Binding
+ a| 
+Le operazioni BIND vengono utilizzate per autenticare i client nel server di directory. Il binding in genere richiede credenziali di account e password, ma alcuni server consentono operazioni di binding anonime.
+
+
+
+ a| 
+CIRCA
+ a| 
+Un'autorità di certificazione (CA) è un'entità attendibile che emette documenti elettronici, denominati certificati digitali, per la sicurezza di Internet. Questi certificati identificano i proprietari dei siti Web, consentendo connessioni sicure tra client e server.
+
+
+
+ a| 
+Certificato
+ a| 
+Un certificato identifica il proprietario di un sito per motivi di sicurezza, impedendo agli autori degli attacchi di impersonare il sito. Il certificato contiene informazioni sul proprietario del sito e l'identità dell'entità attendibile che certifica (firma) queste informazioni.
+
+
+
+ a| 
+IDP
+ a| 
+Un provider di identità (IdP) è un sistema esterno utilizzato per richiedere le credenziali a un utente e per determinare se tale utente è autenticato correttamente. È possibile configurare IdP in modo da fornire l'autenticazione a più fattori e utilizzare qualsiasi database utente, ad esempio Active Directory. Il tuo team di sicurezza è responsabile della manutenzione dell'IdP.
+
+
+
+ a| 
+LDAP
+ a| 
+LDAP (Lightweight Directory Access Protocol) è un protocollo applicativo per l'accesso e la manutenzione dei servizi informativi di directory distribuiti. Questo protocollo consente a numerose applicazioni e servizi diversi di connettersi al server LDAP per la convalida degli utenti.
+
+
+
+ a| 
+RBAC
+ a| 
+RBAC (role-based access control) è un metodo per regolare l'accesso alle risorse di computer o di rete in base ai ruoli dei singoli utenti. I controlli RBAC vengono applicati all'array di storage e includono ruoli predefiniti.
+
+
+
+ a| 
+SAML
+ a| 
+SAML (Security Assertion Markup Language) è uno standard basato su XML per l'autenticazione e l'autorizzazione tra due entità. SAML consente l'autenticazione a più fattori, in cui gli utenti devono fornire due o più elementi per dimostrare la propria identità (ad esempio, una password e un'impronta digitale). La funzionalità SAML integrata dello storage array è conforme a SAML2.0 per l'asserzione, l'autenticazione e l'autorizzazione dell'identità.
+
+
+
+ a| 
+SP
+ a| 
+Un service provider (SP) è un sistema che controlla l'autenticazione e l'accesso degli utenti. Quando Access Management è configurato con SAML, lo storage array agisce come service provider per richiedere l'autenticazione al provider di identità.
+
+
+
+ a| 
+SSO
+ a| 
+SSO (Single Sign-on) è un servizio di autenticazione che consente a un set di credenziali di accesso di accedere a più applicazioni.
+
+|===

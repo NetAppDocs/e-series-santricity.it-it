@@ -1,0 +1,87 @@
+---
+permalink: sm-settings/change-saml-role-mappings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, saml, role, mappings, 
+summary: 'Se in precedenza è stato configurato SAML per Access Management, è possibile modificare le mappature dei ruoli tra i gruppi IdP e i ruoli predefiniti dell"array di storage.' 
+---
+= Modificare le mappature dei ruoli SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se in precedenza è stato configurato SAML per Access Management, è possibile modificare le mappature dei ruoli tra i gruppi IdP e i ruoli predefiniti dell'array di storage.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+* Un amministratore IdP ha configurato gli attributi utente e l'appartenenza al gruppo nel sistema IdP.
+* SAML è configurato e abilitato.
+
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Selezionare la scheda *SAML*.
+. Selezionare *mappatura ruolo*.
++
+Viene visualizzata la finestra di dialogo mappatura ruoli.
+
+. Assegnare gli attributi e i gruppi degli utenti IdP ai ruoli predefiniti. Un gruppo può avere più ruoli assegnati.
++
+[CAUTION]
+====
+Prestare attenzione a non rimuovere le autorizzazioni mentre SAML è attivato, altrimenti si perde l'accesso a System Manager.
+
+====
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Mapping*
+
+
+
+ a| 
+Attributo dell'utente
+ a| 
+Specificare l'attributo (ad esempio, "membro di") per il gruppo SAML da mappare.
+
+
+
+ a| 
+Valore dell'attributo
+ a| 
+Specificare il valore dell'attributo per il gruppo da mappare.
+
+
+
+ a| 
+Ruoli
+ a| 
+Fare clic nel campo e selezionare uno dei ruoli dell'array di storage da mappare all'attributo. È necessario selezionare singolarmente ciascun ruolo che si desidera includere per questo gruppo. Il ruolo Monitor è necessario in combinazione con gli altri ruoli per accedere a System Manager. Un ruolo di amministratore della sicurezza deve essere assegnato ad almeno un gruppo. I ruoli mappati includono le seguenti autorizzazioni:
+
+** *Storage admin* -- accesso completo in lettura/scrittura agli oggetti di storage (ad esempio, volumi e pool di dischi), ma nessun accesso alla configurazione di sicurezza.
+** *Security admin* -- accesso alla configurazione della sicurezza in Access Management, gestione dei certificati, gestione dei registri di controllo e possibilità di attivare o disattivare l'interfaccia di gestione legacy (Symbol).
+** *Support admin* -- accesso a tutte le risorse hardware dello storage array, dati di guasto, eventi MEL e aggiornamenti del firmware del controller. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+** *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+|===
+====
++
+
+NOTE: Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. System Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
+. Facoltativamente, fare clic su *Add another mapping* (Aggiungi un'altra mappatura) per immettere più mappature gruppo-ruolo.
+. Fare clic su *Save* (Salva).
+
+
+.Risultati
+Una volta completata questa attività, tutte le sessioni utente attive vengono terminate. Viene conservata solo la sessione utente corrente.

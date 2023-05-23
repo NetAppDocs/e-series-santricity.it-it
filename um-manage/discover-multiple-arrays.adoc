@@ -1,0 +1,129 @@
+---
+permalink: um-manage/discover-multiple-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
+summary: Vengono rilevati più array per rilevare tutti gli array di storage nella subnet in cui risiede il server di gestione e aggiungere automaticamente gli array rilevati al dominio di gestione. 
+---
+= Scopri più array di storage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vengono rilevati più array per rilevare tutti gli array di storage nella subnet in cui risiede il server di gestione e aggiungere automaticamente gli array rilevati al dominio di gestione.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore della sicurezza.
+* Lo storage array deve essere configurato e configurato correttamente.
+* Le password degli array di storage devono essere impostate utilizzando il riquadro Access Management di System Manager.
+* Per risolvere i certificati non attendibili, è necessario disporre di file di certificati attendibili provenienti da un'autorità di certificazione (CA) e che i file di certificati siano disponibili nel sistema locale.
+
+
+Il rilevamento degli array è una procedura multi-step.
+
+
+
+== Fase 1: Inserire l'indirizzo di rete
+
+Immettere un intervallo di indirizzi di rete per la ricerca nella sottorete locale. Qualsiasi array di storage raggiunto correttamente viene visualizzato nella pagina Discover e potrebbe essere aggiunto al dominio di gestione.
+
+Per interrompere l'operazione di rilevamento per qualsiasi motivo, fare clic su *Stop Discovery* (Interrompi rilevamento).
+
+.Fasi
+. Dalla pagina Gestisci, selezionare *Aggiungi/rileva*.
++
+Viene visualizzata la finestra di dialogo Add/Discover (Aggiungi/rileva).
+
+. Selezionare il pulsante di opzione *Scopri tutti gli array di storage all'interno di un intervallo di rete*.
+. Inserire l'indirizzo di rete iniziale e quello finale per la ricerca nella sottorete locale, quindi fare clic su *Avvia rilevamento*.
++
+Viene avviato il processo di rilevamento. Il completamento di questo processo di rilevamento può richiedere alcuni minuti. La tabella nella pagina Discover viene popolata durante il rilevamento degli array di storage.
+
++
+[NOTE]
+====
+Se non vengono rilevati array gestibili, verificare che gli array di storage siano collegati correttamente alla rete e che gli indirizzi assegnati rientrino nell'intervallo. Fare clic su *New Discovery Parameters* (nuovi parametri di rilevamento) per tornare alla pagina Add/Discover (Aggiungi/rileva).
+
+====
+. Esaminare l'elenco degli array di storage rilevati.
+. Selezionare la casella di controllo accanto a un array di storage che si desidera aggiungere al dominio di gestione, quindi fare clic su *Avanti*.
++
+Unified Manager esegue un controllo delle credenziali su ciascun array che si sta aggiungendo al dominio di gestione. Potrebbe essere necessario risolvere eventuali certificati autofirmati e non attendibili associati a tale array.
+
+. Fare clic su *Avanti* per passare alla fase successiva della procedura guidata.
+
+
+
+
+== Fase 2: Risoluzione dei certificati autofirmati durante il rilevamento
+
+Nell'ambito del processo di rilevamento, il sistema verifica che gli array di storage stiano utilizzando certificati da un'origine attendibile.
+
+.Fasi
+. Effettuare una delle seguenti operazioni:
++
+** Se le connessioni agli array di storage rilevati sono attendibili, passare alla scheda successiva della procedura guidata. I certificati autofirmati verranno contrassegnati come attendibili e gli array di storage verranno aggiunti a Unified Manager.
+** Se le connessioni agli array di storage non sono attendibili, selezionare *Annulla* e convalidare la strategia di certificato di sicurezza di ciascun array di storage prima di aggiungerne una a Unified Manager.
+
+
+. Fare clic su *Avanti* per passare alla fase successiva della procedura guidata.
+
+
+
+
+== Fase 3: Risoluzione dei certificati non attendibili durante il rilevamento
+
+I certificati non attendibili si verificano quando uno storage array tenta di stabilire una connessione sicura a Unified Manager, ma la connessione non viene confermata come sicura. Durante il processo di rilevamento dell'array, è possibile risolvere i certificati non attendibili importando un certificato CA (Certificate Authority) (o certificato firmato da CA) emesso da una terza parte attendibile.
+
+Potrebbe essere necessario installare altri certificati CA attendibili se si verifica una delle seguenti condizioni:
+
+* Di recente è stato aggiunto uno storage array.
+* Uno o entrambi i certificati sono scaduti.
+* Uno o entrambi i certificati vengono revocati.
+* Uno o entrambi i certificati non dispongono di un certificato root o intermedio.
+
+
+.Fasi
+. Selezionare la casella di controllo accanto a qualsiasi array di storage per cui si desidera risolvere i certificati non attendibili, quindi selezionare il pulsante **Importa**.
++
+Viene visualizzata una finestra di dialogo per l'importazione dei file di certificato attendibili.
+
+. Fare clic su *Browse* (Sfoglia) per selezionare i file di certificato per gli array di storage.
++
+I nomi dei file vengono visualizzati nella finestra di dialogo.
+
+. Fare clic su *Importa*.
++
+I file vengono caricati e validati.
+
++
+[NOTE]
+====
+Qualsiasi array di storage con problemi di certificato non attendibili che non sono stati risolti non verrà aggiunto a Unified Manager.
+
+====
+. Fare clic su *Avanti* per passare alla fase successiva della procedura guidata.
+
+
+
+
+== Fase 4: Fornire le password
+
+È necessario immettere le password per gli array di storage che si desidera aggiungere al dominio di gestione.
+
+.Fasi
+. Inserire la password per ciascun array di storage che si desidera aggiungere a Unified Manager.
+. *Opzionale:* Associa gli array di storage a un gruppo: Dall'elenco a discesa, seleziona il gruppo desiderato da associare agli array di storage selezionati.
+. Fare clic su *fine*.
+
+
+.Al termine
+Gli array di storage vengono aggiunti al dominio di gestione e associati al gruppo selezionato (se specificato).
+
+[NOTE]
+====
+La connessione di Unified Manager agli array di storage specificati può richiedere alcuni minuti.
+
+====

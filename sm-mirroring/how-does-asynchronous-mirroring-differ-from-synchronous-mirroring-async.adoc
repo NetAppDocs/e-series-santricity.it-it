@@ -1,0 +1,105 @@
+---
+permalink: sm-mirroring/how-does-asynchronous-mirroring-differ-from-synchronous-mirroring-async.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asysnchronous, mirroring, differ, synchronous, mirroring, 
+summary: 'La funzione di mirroring asincrono si differenzia dalla funzione di mirroring sincrono in un modo essenziale: Acquisisce lo stato del volume di origine in un determinato momento e copia solo i dati modificati dall"ultima acquisizione dell"immagine.' 
+---
+= In che modo il mirroring asincrono differisce dal mirroring sincrono?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione di mirroring asincrono si differenzia dalla funzione di mirroring sincrono in un modo essenziale: Acquisisce lo stato del volume di origine in un determinato momento e copia solo i dati modificati dall'ultima acquisizione dell'immagine.
+
+Con il mirroring sincrono, lo stato del volume primario non viene acquisito in un determinato momento, ma riflette tutte le modifiche apportate sul volume primario al volume secondario. Il volume secondario è identico al volume primario in ogni momento perché, con questo tipo di mirror, ogni volta che viene eseguita una scrittura nel volume primario, viene eseguita una scrittura nel volume secondario. L'host non riceve una conferma che la scrittura è riuscita fino a quando il volume secondario non viene aggiornato correttamente con le modifiche apportate sul volume primario.
+
+Con il mirroring asincrono, l'array di storage remoto non è completamente sincronizzato con l'array di storage locale, quindi se l'applicazione deve passare all'array di storage remoto a causa di una perdita dell'array di storage locale, alcune transazioni potrebbero andare perse.
+
+Confronto tra le funzionalità di mirroring:
+
+[cols="1a,1a"]
+|===
+| Mirroring asincrono | Mirroring sincrono 
+
+
+ a| 
+*Metodo di replica*
+
+
+
+ a| 
+* *Point-in-Time*
++
+Il mirroring viene eseguito su richiesta o automaticamente in base a una pianificazione definita dall'utente. Le pianificazioni possono essere definite in base alla granularità dei minuti. Il tempo minimo tra le sincronizzazioni è di 10 minuti.
+
+
+ a| 
+* *Continuo*
++
+Il mirroring viene eseguito automaticamente in modo continuo, copiando i dati da ogni scrittura host.
+
+
+
+
+
+ a| 
+*Capacità riservata*
+
+
+
+ a| 
+* *Multiplo*
++
+Per ogni coppia mirrorata è necessario un volume di capacità riservato.
+
+
+ a| 
+* *Singolo*
++
+Per tutti i volumi mirrorati è necessario un singolo volume di capacità riservata.
+
+
+
+
+
+ a| 
+*Comunicazione*
+
+
+
+ a| 
+* *ISCSI e Fibre Channel*
++
+Supporta interfacce iSCSI e Fibre Channel tra array di storage.
+
+
+ a| 
+* *Fibre Channel*
++
+Supporta solo interfacce Fibre Channel tra array di storage.
+
+
+
+
+
+ a| 
+*Distanza*
+
+
+
+ a| 
+* *Senza limiti*
++
+Supporto di distanze virtualmente illimitate tra lo storage array locale e lo storage array remoto, con la distanza generalmente limitata solo dalle funzionalità della rete e dalla tecnologia di estensione del canale.
+
+
+ a| 
+* *Limitato*
++
+In genere, per soddisfare i requisiti di latenza e performance delle applicazioni, è necessario che l'array di storage locale si trovi entro circa 10 km (6.2 miglia).
+
+
+
+|===

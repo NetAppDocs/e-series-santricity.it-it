@@ -1,0 +1,43 @@
+---
+permalink: sm-support/clear-recovery-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
+summary: 'Dopo aver ripristinato la configurazione di un array di storage, utilizzare l"operazione Clear Recovery Mode per ripristinare l"i/o sullo storage array e ripristinare le normali operazioni.' 
+---
+= Cancellare la modalità di recovery
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dopo aver ripristinato la configurazione di un array di storage, utilizzare l'operazione Clear Recovery Mode per ripristinare l'i/o sullo storage array e ripristinare le normali operazioni.
+
+.Prima di iniziare
+* Se si desidera ripristinare una configurazione precedente dello storage array, è necessario ripristinare la configurazione dal backup prima di cancellare la modalità di ripristino.
+* Per assicurarsi che il ripristino sia stato eseguito correttamente, è necessario eseguire controlli di convalida o rivolgersi al supporto tecnico. Una volta stabilito che il ripristino è stato eseguito correttamente, è possibile cancellare la modalità di ripristino.
+
+
+.A proposito di questa attività
+L'array di storage contiene un database di configurazione che include un record della relativa configurazione logica (pool, gruppi di volumi, volumi e così via). Se si cancella intenzionalmente la configurazione dello storage array o se il database di configurazione viene danneggiato, lo storage array entra in modalità di recovery. La modalità Recovery (Recovery) interrompe l'i/o e blocca il database di configurazione, consentendo di eseguire una delle seguenti operazioni:
+
+* Ripristinare la configurazione dal backup automatico memorizzato nei dispositivi flash del controller. A tale scopo, è necessario contattare il supporto tecnico.
+* Ripristinare la configurazione da un'operazione precedente di salvataggio del database di configurazione. Le operazioni di salvataggio del database di configurazione vengono eseguite tramite l'interfaccia a riga di comando (CLI).
+* Riconfigurare lo storage array da zero.
+
+
+Dopo aver ripristinato o ridefinito la configurazione dello storage array e aver verificato che tutto sia in buone buone modi, è necessario cancellare manualmente la modalità di recovery.
+
+[NOTE]
+====
+Non è possibile annullare l'operazione Clear Recovery Mode dopo l'avvio. La cancellazione della modalità di ripristino può richiedere molto tempo. Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Clear Recovery Mode* (Cancella modalità di ripristino) e confermare che si desidera eseguire questa operazione.
++
+Questa opzione viene visualizzata solo se lo storage array è in modalità di ripristino.
+
+

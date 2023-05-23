@@ -1,0 +1,177 @@
+---
+permalink: sm-storage/view-performance-data-graphical.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, graphical, performance, 
+summary: È possibile visualizzare i dati delle performance grafiche per oggetti logici, oggetti fisici, applicazioni e carichi di lavoro. 
+---
+= Visualizzare i dati delle performance grafiche
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile visualizzare i dati delle performance grafiche per oggetti logici, oggetti fisici, applicazioni e carichi di lavoro.
+
+.A proposito di questa attività
+I grafici delle performance mostrano i dati storici e i dati in tempo reale attualmente acquisiti. Una linea verticale sul grafico, denominata Live Updating, distingue i dati storici dai dati in tempo reale.
+
+*Vista home page*
+
+La home page contiene un grafico che mostra le performance a livello di array di storage. Da questa vista è possibile selezionare metriche limitate oppure fare clic su *View Performance Details* (Visualizza dettagli performance) per selezionare tutte le metriche disponibili.
+
+*Vista dettagliata*
+
+I grafici disponibili nella vista delle performance dettagliate sono disposti in tre schede:
+
+* *Vista logica* -- Visualizza i dati delle performance per gli oggetti logici raggruppati per gruppi di volumi e pool. Gli oggetti logici includono gruppi di volumi, pool e volumi.
+* *Physical View* -- Visualizza i dati relativi alle performance per controller, canali host, canali di dischi e dischi.
+* *Visualizzazione applicazioni e carichi di lavoro* -- Visualizza un elenco di oggetti logici (volumi) raggruppati in base ai tipi di applicazioni e ai carichi di lavoro definiti.
+
+
+.Fasi
+. Selezionare *Home*.
+. Per selezionare una vista a livello di array, fare clic sul pulsante IOPS, MiB/s o CPU.
+. Per ulteriori informazioni, fare clic su *Visualizza dettagli sulle prestazioni*.
+. Selezionare la scheda *Vista logica*, la scheda *Vista fisica* o la scheda *Vista applicazioni e carichi di lavoro*.
++
+A seconda del tipo di oggetto, in ciascuna scheda vengono visualizzati diversi grafici.
+
++
+[cols="25h,~"]
+|===
+| Visualizza schede | Dati relativi alle performance visualizzati per ciascun tipo di oggetto 
+
+
+ a| 
+Vista logica
+ a| 
+** *Storage array*: IOPS, MiB/s.
+** *Pools*: Latenza, IOPS, MiB/s.
+** *Gruppi di volumi*: Latenza, IOPS, MiB/s.
+** *Volumi*: Latenza, IOPS, MiB/s.
+
+
+
+
+ a| 
+Vista fisica
+ a| 
+** *Controller*: IOPS, MiB/s, CPU, spazio di crescita
+** *Canali host*: Latenza, IOPS, MiB/s, spazio di crescita
+** *Drive channels*: Latenza, IOPS, MiB/s.
+** *Dischi*: Latenza, IOPS, MiB/s.
+
+
+
+
+ a| 
+Applicazioni e carichi di lavoro Visualizza
+ a| 
+** *Storage array*: IOPS, MiB/s.
+** *Applicazioni*: Latenza, IOPS, MiB/s.
+** *Carichi di lavoro*: Latenza, IOPS, MiB/s.
+** *Volumi*: Latenza, IOPS, MiB/s.
+
+
+|===
+. Utilizzare le opzioni per visualizzare gli oggetti e le informazioni necessarie.
++
+.Opzioni
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Opzioni per la visualizzazione degli oggetti | Descrizione 
+
+
+ a| 
+Espandere un cassetto per visualizzare l'elenco degli oggetti.
+ a| 
+I _cassetti di navigazione_ contengono oggetti di storage, come pool, gruppi di volumi e unità.
+
+Fare clic sul cassetto per visualizzare l'elenco degli oggetti nel cassetto.
+
+
+
+ a| 
+Selezionare gli oggetti da visualizzare.
+ a| 
+Selezionare la casella di controllo a sinistra di ciascun oggetto per scegliere i dati delle prestazioni da visualizzare.
+
+
+
+ a| 
+Utilizzare Filter per trovare nomi di oggetti o nomi parziali.
+ a| 
+Nella casella Filter (filtro), immettere il nome o un nome parziale degli oggetti per elencare solo gli oggetti presenti nel cassetto.
+
+
+
+ a| 
+Fare clic su *Aggiorna grafici* dopo aver selezionato gli oggetti.
+ a| 
+Dopo aver selezionato gli oggetti dai cassetti, selezionare *Aggiorna grafici* per visualizzare i dati grafici degli elementi selezionati.
+
+
+
+ a| 
+Nascondere o mostrare il grafico
+ a| 
+Selezionare il titolo del grafico per nasconderlo o visualizzarlo.
+
+|===
+====
+. Se necessario, utilizzare le opzioni aggiuntive per visualizzare i dati delle performance.
++
+.Opzioni aggiuntive
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Opzione | Descrizione 
+
+
+ a| 
+Intervallo di tempo
+ a| 
+Selezionare il periodo di tempo che si desidera visualizzare (5 minuti, 1 ora, 8 ore, 1 giorno, 7 giorni, o 30 giorni). L'impostazione predefinita è 1 ora.
+
+
+NOTE: Il caricamento dei dati delle performance per un periodo di 30 giorni può richiedere diversi minuti. Non allontanarsi dalla pagina Web, aggiornare la pagina Web o chiudere il browser durante il caricamento dei dati.
+
+
+
+ a| 
+Dettagli dei data point
+ a| 
+Posizionare il cursore del mouse sul grafico per visualizzare le metriche relative a un particolare punto dati.
+
+
+
+ a| 
+Barra di scorrimento
+ a| 
+Utilizzare la barra di scorrimento sotto il grafico per visualizzare un intervallo di tempo precedente o successivo.
+
+
+
+ a| 
+Barra di zoom
+ a| 
+Sotto il grafico, trascinare le maniglie della barra di zoom per ridurre l'intervallo di tempo. Più ampia è la barra di zoom, meno granulari sono i dettagli del grafico.
+
+Per ripristinare il grafico, selezionare una delle opzioni relative all'intervallo di tempo.
+
+
+
+ a| 
+Trascinare e rilasciare
+ a| 
+Sul grafico, trascinare il cursore da un punto temporale all'altro per ingrandire un intervallo di tempo.
+
+Per ripristinare il grafico, selezionare una delle opzioni relative all'intervallo di tempo.
+
+|===
+====
+

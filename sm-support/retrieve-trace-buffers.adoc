@@ -1,0 +1,37 @@
+---
+permalink: sm-support/retrieve-trace-buffers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, trace, buffers 
+summary: 'È possibile recuperare i buffer di traccia dai controller e inviare il file al supporto tecnico per l"analisi.' 
+---
+= Recuperare i buffer di traccia
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile recuperare i buffer di traccia dai controller e inviare il file al supporto tecnico per l'analisi.
+
+.A proposito di questa attività
+Il firmware utilizza i buffer di traccia per registrare l'elaborazione, in particolare le condizioni di eccezione, che potrebbero essere utili per il debug. È possibile recuperare i buffer di traccia senza interrompere il funzionamento dello storage array e con un effetto minimo sulle performance.
+
+[NOTE]
+====
+Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Recupera buffer traccia*.
+. Selezionare la casella di controllo accanto a ciascun controller per il quale si desidera recuperare i buffer di traccia.
++
+È possibile selezionare uno o entrambi i controller. Se il messaggio di stato del controller a destra di una casella di controllo è Failed (guasto) o Disabled (Disattivato), la casella di controllo è disattivata.
+
+. Fare clic su *Sì*.
++
+Il file viene salvato nella cartella Download del browser con il nome file `trace-buffers.7z`.
+
+. Seguire le istruzioni fornite dal supporto tecnico per inviare il file.
+

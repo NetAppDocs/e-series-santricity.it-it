@@ -1,0 +1,71 @@
+---
+permalink: sm-storage/how-reserved-capacity-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
+summary: La capacità riservata viene creata automaticamente quando vengono fornite le operazioni del servizio di copia, ad esempio snapshot o operazioni di mirroring asincrono, per i volumi. 
+---
+= Come funziona la capacità riservata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La capacità riservata viene creata automaticamente quando vengono fornite le operazioni del servizio di copia, ad esempio snapshot o operazioni di mirroring asincrono, per i volumi.
+
+Lo scopo della capacità riservata è memorizzare le modifiche dei dati su questi volumi, in caso di problemi. Analogamente ai volumi, la capacità riservata viene creata da pool o gruppi di volumi.
+
+
+
+== Copiare gli oggetti del servizio che utilizzano la capacità riservata
+
+La capacità riservata è il meccanismo di storage sottostante utilizzato dai seguenti oggetti del servizio di copia:
+
+* Gruppi di snapshot
+* Volumi snapshot di lettura/scrittura
+* Volumi membri del gruppo di coerenza
+* Volumi di coppia mirrorati
+
+
+Quando si creano o si espandono questi oggetti del servizio di copia, è necessario creare una nuova capacità riservata da un pool o da un gruppo di volumi. La capacità riservata corrisponde in genere al 40% del volume di base per le operazioni di snapshot e al 20% del volume di base per le operazioni di mirroring asincrono. Tuttavia, la capacità riservata varia in base al numero di modifiche apportate ai dati originali.
+
+
+
+== Thin volumi e capacità riservata
+
+Per un volume sottile, se è stata raggiunta la capacità massima di 256 TIB, non è possibile aumentarla. Assicurarsi che la capacità riservata del volume thin sia impostata su una dimensione superiore alla capacità massima indicata. (Un thin volume viene sempre sottoposto a thin provisioning, il che significa che la capacità viene allocata durante la scrittura dei dati nel volume).
+
+Se si crea capacità riservata utilizzando un volume thin in un pool, esaminare le seguenti azioni e i risultati sulla capacità riservata:
+
+* Se la capacità riservata di un volume thin non funziona, il volume thin stesso non passa automaticamente allo stato Failed (non riuscito). Tuttavia, poiché tutte le operazioni di i/o su un volume thin richiedono l'accesso al volume di capacità riservato, le operazioni di i/o restituiranno sempre una condizione di controllo all'host richiedente. Se il problema sottostante con il volume di capacità riservata può essere risolto, il volume di capacità riservato viene riportato a uno stato ottimale e il volume sottile diventa nuovamente funzionale.
+* Se si utilizza un thin volume esistente per completare una coppia di mirroring asincrono, tale thin volume viene reinizializzato con un nuovo volume a capacità riservata. Durante il processo di sincronizzazione iniziale vengono trasferiti solo i blocchi con provisioning sul lato primario.
+
+
+
+
+== Avvisi di capacità
+
+L'oggetto del servizio di copia dispone di un avviso di capacità configurabile e di una soglia di avviso, nonché di una risposta configurabile quando la capacità riservata è piena.
+
+Quando la capacità riservata di un volume di oggetto del servizio di copia si avvicina al punto di riempimento, viene emesso un avviso all'utente. Per impostazione predefinita, questo avviso viene visualizzato quando il volume di capacità riservato è pieno al 75%; tuttavia, è possibile regolare questo punto di avviso verso l'alto o verso il basso in base alle necessità. Se si riceve questo avviso, è possibile aumentare la capacità del volume di capacità riservato in quel momento. A questo proposito, ciascun oggetto del servizio di copia può essere configurato in modo indipendente.
+
+
+
+== Volumi di capacità riservati orfani
+
+Un volume di capacità riservata orfano è un volume che non memorizza più i dati per le operazioni del servizio di copia in quanto l'oggetto del servizio di copia associato è stato eliminato. Quando l'oggetto del servizio di copia è stato eliminato, anche il volume di capacità riservata doveva essere eliminato. Tuttavia, non è stato possibile eliminare il volume con capacità riservata.
+
+Poiché i volumi di capacità riservati orfani non sono accessibili da alcun host, sono candidati per la richiesta di recupero. Eliminare manualmente il volume di capacità riservata orfano in modo da poterne utilizzare la capacità per altre operazioni.
+
+System Manager avvisa l'utente dei volumi di capacità riservati orfani con un messaggio "recuperare capacità inutilizzata" nell'area Notifiche della home page. È possibile fare clic su *recuperare capacità inutilizzata* per visualizzare la finestra di dialogo recuperare capacità inutilizzata, in cui è possibile eliminare il volume di capacità riservata orfano.
+
+
+
+== Caratteristiche della capacità riservata
+
+* La capacità allocata alla capacità riservata deve essere presa in considerazione durante la creazione del volume per mantenere una capacità libera sufficiente.
+* La capacità riservata può essere inferiore al volume di base (la dimensione minima è 8 MiB).
+* Una parte dello spazio viene consumata dai metadati, ma è molto piccola (192 KiB), quindi non è necessario che venga presa in considerazione quando si determina la dimensione del volume di capacità riservata.
+* La capacità riservata non è direttamente leggibile o scrivibile da un host.
+* Esiste una capacità riservata per ogni volume snapshot di lettura/scrittura, gruppo di snapshot, volume membro del gruppo di coerenza e volume coppia mirrorata.
+

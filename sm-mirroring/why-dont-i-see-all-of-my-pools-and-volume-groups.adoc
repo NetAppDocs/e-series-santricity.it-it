@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, secondary, volume, 
+summary: 'Quando si crea un volume secondario per la coppia con mirroring asincrono, il sistema visualizza un elenco di tutti i pool e gruppi di volumi idonei per la coppia con mirroring asincrono. Qualsiasi pool o gruppo di volumi non idoneo all"utilizzo non viene visualizzato nell"elenco.' 
+---
+= Perché non vengono visualizzati tutti i pool e i gruppi di volumi?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si crea un volume secondario per la coppia con mirroring asincrono, il sistema visualizza un elenco di tutti i pool e gruppi di volumi idonei per la coppia con mirroring asincrono. Qualsiasi pool o gruppo di volumi non idoneo all'utilizzo non viene visualizzato nell'elenco.
+
+I pool o i gruppi di volumi potrebbero non essere idonei per uno dei seguenti motivi.
+
+* Le funzionalità di sicurezza di un pool o di un gruppo di volumi non corrispondono.
+* Un pool o un gruppo di volumi non si trova in uno stato ottimale.
+* La capacità di un pool o di un gruppo di volumi è troppo ridotta.
+

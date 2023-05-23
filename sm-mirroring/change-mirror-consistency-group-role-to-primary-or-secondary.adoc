@@ -1,0 +1,44 @@
+---
+permalink: sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
+summary: 'È possibile modificare il ruolo tra gruppi di coerenza mirror a scopo amministrativo o in caso di disastro nell"array di storage locale.' 
+---
+= Impostare il ruolo del gruppo di coerenza mirror su primario o secondario
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il ruolo tra gruppi di coerenza mirror a scopo amministrativo o in caso di disastro nell'array di storage locale.
+
+.A proposito di questa attività
+I gruppi di coerenza mirror creati sull'array di storage locale ricopriscono il ruolo principale. I gruppi di coerenza mirror creati sull'array di storage remoto ricopriscono il ruolo secondario. È possibile declassare il gruppo di coerenza mirror locale in un ruolo secondario o promuovere il gruppo di coerenza mirror remoto in un ruolo primario.
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *Mirror Consistency Groups*.
++
+Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.
+
+. Selezionare il gruppo di coerenza mirror per il quale si desidera modificare il ruolo, quindi selezionare il menu:More[Change role to <Primary | Secondary>]*>*.
++
+Il sistema visualizza una conferma.
+
+. Confermare che si desidera modificare il ruolo del gruppo di coerenza mirror, quindi fare clic su *Cambia ruolo*.
++
+[NOTE]
+====
+Il sistema visualizza la finestra di dialogo Cannot Contact Storage Array (Impossibile contattare lo storage array) quando viene richiesta una modifica del ruolo, ma non è possibile contattare lo storage array remoto. Fare clic su *Sì* per forzare la modifica del ruolo.
+
+====
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* La tabella Mirror Consistency Group visualizza lo stato "in sospeso" o "in corso" accanto al gruppo di coerenza mirror sottoposto alla modifica del ruolo. È possibile annullare un'operazione di modifica del ruolo in sospeso facendo clic sul collegamento *Annulla* nella cella della tabella.
+* Se è possibile contattare il gruppo di coerenza mirror associato, i ruoli tra i gruppi di coerenza mirror cambiano. System Manager promuove il gruppo di coerenza del mirror secondario in un ruolo primario o demotizza il gruppo di coerenza del mirror primario in un ruolo secondario (a seconda della selezione effettuata). La modifica del ruolo influisce su tutte le coppie mirrorate all'interno del gruppo di coerenza mirror selezionato.
+

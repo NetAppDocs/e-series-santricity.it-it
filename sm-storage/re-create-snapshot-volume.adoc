@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/re-create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
+summary: È possibile ricreare un volume di snapshot o un volume di snapshot del gruppo di coerenza snapshot precedentemente disattivato. La ricreazione di un volume snapshot richiede meno tempo rispetto alla creazione di un nuovo volume. 
+---
+= Ricreare il volume di snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile ricreare un volume di snapshot o un volume di snapshot del gruppo di coerenza snapshot precedentemente disattivato. La ricreazione di un volume snapshot richiede meno tempo rispetto alla creazione di un nuovo volume.
+
+.Prima di iniziare
+* Lo stato del volume snapshot deve essere ottimale o Disattivato.
+* Tutti i volumi snapshot membri devono essere in uno stato Disabled (Disattivato) prima di poter ricreare il volume snapshot del gruppo di coerenza snapshot.
+
+
+.A proposito di questa attività
+Non è possibile ricreare un singolo volume snapshot membro; è possibile ricreare solo il volume snapshot del gruppo di coerenza snapshot generale.
+
+[NOTE]
+====
+Se il volume snapshot o il volume snapshot del gruppo di coerenza snapshot fa parte di una relazione di copia online, non è possibile eseguire l'opzione di ricreazione sul volume.
+
+====
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Selezionare la scheda *Snapshot Volumes* (volumi snapshot).
++
+Viene visualizzata la tabella Snapshot Volumes (volumi snapshot) che mostra tutti i volumi snapshot associati all'array di storage.
+
+. Selezionare il volume di snapshot che si desidera ricreare, quindi selezionare menu:Uncommon Tasks[Recreate].
++
+Viene visualizzata la finestra di dialogo Recreate Snapshot Volume.
+
+. Selezionare una delle seguenti opzioni:
++
+** *Immagine snapshot esistente creata dal volume <name>*
++
+Selezionare questa opzione per indicare un'immagine snapshot esistente da cui ricreare il volume di snapshot.
+
+** *Una nuova immagine istantanea del volume <name>*
++
+Selezionare questa opzione per creare una nuova immagine snapshot da cui ricreare il volume snapshot.
+
+
+
+. Fare clic su *Ricrea*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Elimina tutto `write` dati su qualsiasi volume di repository di snapshot associato.
+* I parametri del volume snapshot o del volume snapshot Consistency Group Snapshot rimangono gli stessi dei parametri del volume precedentemente disattivati.
+* Conserva i nomi originali del volume snapshot o del volume snapshot del gruppo di coerenza snapshot.
+

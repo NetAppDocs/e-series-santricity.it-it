@@ -1,0 +1,114 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, setup wizard 
+summary: Utilizzare la procedura guidata di installazione per configurare lo storage array, inclusi hardware, host, applicazioni, carichi di lavoro, Pool, avvisi e AutoSupport. 
+---
+= Panoramica dell'installazione guidata
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la procedura guidata di installazione per configurare lo storage array, inclusi hardware, host, applicazioni, carichi di lavoro, Pool, avvisi e AutoSupport.
+
+
+
+== Configurazione iniziale
+
+Quando si apre System Manager per la prima volta, viene avviata l'installazione guidata. L'installazione guidata richiede di eseguire le attività di configurazione di base, ad esempio assegnare un nome allo storage array, configurare gli host, selezionare le applicazioni e creare pool di storage.
+
+
+NOTE: Prima di continuare con la configurazione iniziale, accedere al Centro aggiornamenti (menu:supporto[Centro aggiornamenti]) e assicurarsi che il software del sistema operativo SANtricity sia aggiornato. Se necessario, eseguire l'aggiornamento alla versione più recente e aggiornare il browser per continuare la configurazione. Per ulteriori informazioni, vedere link:../sm-support/overview-upgrade-center.html["Panoramica di Upgrade Center"].
+
+Se si annulla la procedura guidata, non è possibile avviarla di nuovo manualmente. La procedura guidata viene riavviata automaticamente quando si apre System Manager o si aggiorna il browser e viene soddisfatta almeno una delle seguenti condizioni:
+
+* Non vengono rilevati pool e gruppi di volumi.
+* Nessun carico di lavoro rilevato.
+* Nessuna notifica configurata.
+
+
+
+
+== Terminologia
+
+L'installazione guidata utilizza i seguenti termini.
+
+[cols="25h,~"]
+|===
+| Termine | Descrizione 
+
+
+ a| 
+Applicazione
+ a| 
+Un'applicazione è un programma software, ad esempio Microsoft SQL Server o Microsoft Exchange.
+
+
+
+ a| 
+Avviso
+ a| 
+Gli avvisi informano gli amministratori degli eventi importanti che si verificano sugli array di storage. Gli avvisi possono essere inviati tramite e-mail, trap SNMP o syslog.
+
+
+
+ a| 
+AutoSupport
+ a| 
+La funzione AutoSupport monitora lo stato di salute di uno storage array e invia automaticamente i dispatches al supporto tecnico.
+
+
+
+ a| 
+Hardware
+ a| 
+L'hardware del sistema storage include array di storage, controller e dischi.
+
+
+
+ a| 
+Host
+ a| 
+Un host è un server che invia i/o a un volume su un array di storage.
+
+
+
+ a| 
+Oggetto
+ a| 
+Un oggetto è qualsiasi componente di storage logico o fisico. Gli oggetti logici includono gruppi di volumi, pool e volumi. Gli oggetti fisici includono lo storage array, gli array controller, gli host e i dischi.
+
+
+
+ a| 
+Piscina
+ a| 
+Un pool è un insieme di dischi raggruppati in modo logico. È possibile utilizzare un pool per creare uno o più volumi accessibili a un host. I volumi vengono creati da un pool o da un gruppo di volumi.
+
+
+
+ a| 
+Volume
+ a| 
+Un volume è un container in cui applicazioni, database e file system memorizzano i dati. Si tratta del componente logico creato per consentire all'host di accedere allo storage sull'array di storage.
+
+Un volume viene creato dalla capacità disponibile in un pool o in un gruppo di volumi. Un volume ha una capacità definita. Anche se un volume può essere costituito da più di un disco, un volume viene visualizzato come un componente logico per l'host.
+
+
+
+ a| 
+Gruppo di volumi
+ a| 
+Un gruppo di volumi è un contenitore per volumi con caratteristiche condivise. Un gruppo di volumi ha una capacità e un livello RAID definiti. È possibile utilizzare un gruppo di volumi per creare uno o più volumi accessibili a un host. I volumi vengono creati da un gruppo di volumi o da un pool.
+
+
+
+ a| 
+Carico di lavoro
+ a| 
+Un workload è un oggetto storage che supporta un'applicazione. È possibile definire uno o più carichi di lavoro o istanze per applicazione. Per alcune applicazioni, il sistema configura il carico di lavoro in modo che contenga volumi con caratteristiche di volume sottostanti simili. Queste caratteristiche dei volumi sono ottimizzate in base al tipo di applicazione supportata dal carico di lavoro. Ad esempio, se si crea un carico di lavoro che supporta un'applicazione Microsoft SQL Server e successivamente si creano volumi per tale carico di lavoro, le caratteristiche del volume sottostante sono ottimizzate per supportare Microsoft SQL Server.
+
+|===

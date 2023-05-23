@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/volume-ownership-sync.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, ownership, sync, change, preferred, controller, owner, mirrored, pair, 
+summary: È possibile modificare il proprietario del controller preferito in una coppia mirrorata. 
+---
+= Proprietà del volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il proprietario del controller preferito in una coppia mirrorata.
+
+[NOTE]
+====
+Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+
+====
+Se il volume primario della coppia mirrorata è di proprietà del controller A, anche il volume secondario sarà di proprietà del controller A dell'array di storage remoto. La modifica del proprietario del volume primario modifica automaticamente il proprietario del volume secondario per garantire che entrambi i volumi siano di proprietà dello stesso controller. Le attuali modifiche di proprietà sul lato primario si propagano automaticamente alle corrispondenti modifiche di proprietà correnti sul lato secondario.
+
+Ad esempio, un volume primario è di proprietà del controller A, quindi si cambia il proprietario del controller in controller B. In questo caso, la successiva scrittura remota modifica il proprietario del controller del volume secondario da controller A a B. Poiché le modifiche alla proprietà dei controller sul lato secondario sono controllate dal lato primario, non richiedono alcun intervento speciale da parte dell'amministratore dello storage.
+
+
+
+== Il controller viene ripristinato
+
+Una reimpostazione del controller determina una modifica della proprietà del volume sul lato primario, dal proprietario del controller preferito al controller alternativo nell'array di storage.
+
+A volte, una scrittura remota viene interrotta da un ripristino del controller o da un ciclo di alimentazione dello storage array prima di poter essere scritta sul volume secondario. In questo caso, il controller non deve eseguire una sincronizzazione completa della coppia mirrorata.
+
+Quando una scrittura remota è stata interrotta durante un ripristino del controller, il nuovo proprietario del controller sul lato primario legge le informazioni memorizzate in un file di log nel volume di capacità riservata del proprietario del controller preferito. Il nuovo proprietario del controller copia quindi i blocchi di dati interessati dal problema dal volume primario al volume secondario, eliminando la necessità di una sincronizzazione completa dei volumi mirrorati.

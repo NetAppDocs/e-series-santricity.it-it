@@ -1,0 +1,55 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-mapping-storage-array-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mapping, roles, 
+summary: Prima di mappare i gruppi ai ruoli, consultare le seguenti linee guida. 
+---
+= Cosa occorre sapere sulla mappatura dei ruoli degli array di storage?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Prima di mappare i gruppi ai ruoli, consultare le seguenti linee guida.
+
+Le funzionalità RBAC (role-based access control) integrate dello storage array includono i seguenti ruoli:
+
+* *Storage admin* -- accesso completo in lettura/scrittura agli oggetti di storage (ad esempio, volumi e pool di dischi), ma nessun accesso alla configurazione di sicurezza.
+* *Security admin* -- accesso alla configurazione della sicurezza in Access Management, gestione dei certificati, gestione dei registri di controllo e possibilità di attivare o disattivare l'interfaccia di gestione legacy (Symbol).
+* *Support admin* -- accesso a tutte le risorse hardware dello storage array, dati di guasto, eventi MEL e aggiornamenti del firmware del controller. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+* *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+
+
+== Servizi di directory
+
+Se si utilizza un server LDAP (Lightweight Directory Access Protocol) e servizi di directory, assicurarsi che:
+
+* Un amministratore ha definito i gruppi di utenti nel servizio di directory.
+* Si conoscono i nomi di dominio del gruppo per i gruppi di utenti LDAP. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. System Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
+
+
+
+== SAML
+
+Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) integrate nell'array di storage, assicurarsi che:
+
+* Un amministratore del provider di identità (IdP) ha configurato gli attributi utente e l'appartenenza al gruppo nel sistema IdP.
+* Conosci i nomi dei membri del gruppo.
+* Si conosce il valore dell'attributo per il gruppo da mappare. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. System Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+

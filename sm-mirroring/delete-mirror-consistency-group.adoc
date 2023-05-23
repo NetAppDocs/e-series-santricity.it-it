@@ -1,0 +1,41 @@
+---
+permalink: sm-mirroring/delete-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
+summary: 'È possibile eliminare gruppi di coerenza mirror che non sono più necessari sull"array di storage locale e sull"array di storage remoto.' 
+---
+= Elimina gruppo di coerenza mirror
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eliminare gruppi di coerenza mirror che non sono più necessari sull'array di storage locale e sull'array di storage remoto.
+
+.Prima di iniziare
+Tutte le coppie mirrorate devono essere rimosse dal gruppo di coerenza mirror.
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *Mirror Consistency Groups*.
++
+Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.
+
+. Selezionare il gruppo di coerenza mirror che si desidera eliminare, quindi selezionare menu:attività non comuni[Elimina].
++
+Il sistema visualizza una conferma.
+
+. Selezionare *Sì* per eliminare il gruppo di coerenza mirror.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Elimina prima il gruppo di coerenza mirror sull'array di storage locale, quindi elimina il gruppo di coerenza mirror sull'array di storage remoto.
+* Rimuove il gruppo di coerenza mirror dalla tabella Mirror Consistency Group.
+
+
+.Al termine
+In alcuni casi, il gruppo di coerenza mirror potrebbe essere cancellato correttamente dall'array di storage locale, ma un errore di comunicazione impedisce l'eliminazione del gruppo di coerenza mirror dall'array di storage remoto. In questo caso, è necessario accedere all'array di storage remoto per eliminare il gruppo di coerenza mirror corrispondente.

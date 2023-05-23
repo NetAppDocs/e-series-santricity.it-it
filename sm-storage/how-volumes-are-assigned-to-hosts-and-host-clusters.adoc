@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/how-volumes-are-assigned-to-hosts-and-host-clusters.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
+summary: 'Affinché un host o un cluster host invii i/o a un volume, è necessario assegnare il volume all"host o al cluster host.' 
+---
+= Modalità di assegnazione dei volumi agli host e ai cluster di host
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Affinché un host o un cluster host invii i/o a un volume, è necessario assegnare il volume all'host o al cluster host.
+
+È possibile selezionare un host o un cluster di host quando si crea un volume oppure assegnare un volume a un host o cluster di host in un secondo momento. Un cluster host è un gruppo di host. È possibile creare un cluster host per semplificare l'assegnazione degli stessi volumi a più host.
+
+L'assegnazione di volumi agli host è flessibile e consente di soddisfare le esigenze di storage specifiche.
+
+* *Host standalone, non parte di un cluster di host* -- è possibile assegnare un volume a un singolo host. È possibile accedere al volume solo da un host.
+* *Cluster di host* -- è possibile assegnare un volume a un cluster di host. Tutti gli host del cluster host possono accedere al volume.
+* *Host all'interno di un cluster di host* -- è possibile assegnare un volume a un singolo host che fa parte di un cluster di host. Anche se l'host fa parte di un cluster di host, è possibile accedere al volume solo dal singolo host e non da altri host del cluster di host.
+
+
+Quando vengono creati i volumi, i LUN (Logical Unit Number) vengono assegnati automaticamente. Il LUN funge da "indirizzo" tra l'host e il controller durante le operazioni di i/O. Una volta creato il volume, è possibile modificare i LUN.

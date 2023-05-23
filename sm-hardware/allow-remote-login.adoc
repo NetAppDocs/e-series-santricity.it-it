@@ -1,0 +1,69 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, login, 
+summary: 'L"accesso remoto consente agli utenti esterni alla rete locale di avviare una sessione SSH e modificare le impostazioni del controller.' 
+---
+= Configurare l'accesso remoto (SSH)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Attivando l'accesso remoto, gli utenti esterni alla rete locale possono avviare una sessione SSH e accedere alle impostazioni del controller.
+
+Per SANtricity versione 11.74 e successive, è anche possibile configurare l'autorizzazione multifattore (MFA) richiedendo agli utenti di inserire una chiave SSH e/o una password SSH. Per le versioni 11.73 e precedenti di SANtricity, questa funzione _non_ include un'opzione per l'autorizzazione a più fattori con chiavi SSH e password.
+
+[CAUTION]
+====
+*Rischi per la sicurezza* -- per motivi di sicurezza, solo il personale di supporto tecnico deve utilizzare la funzione di accesso remoto.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
+. Fare clic sul controller per il quale si desidera configurare l'accesso remoto.
++
+Viene visualizzato il menu di scelta rapida del controller.
+
+. Selezionare *Configura accesso remoto (SSH)*. (Per SANtricity versione 11.73 e precedenti, questa voce di menu è *Modifica accesso remoto*.)
++
+Viene visualizzata la finestra di dialogo per l'abilitazione dell'accesso remoto.
+
+. Selezionare la casella di controllo *Enable remote login* (attiva accesso remoto).
++
+Questa impostazione fornisce l'accesso remoto con tre opzioni per l'autorizzazione:
+
++
+** *Solo password*. Per questa opzione, fare clic su *Save* (Salva). Se si dispone di un sistema duplex, è possibile attivare l'accesso remoto sul secondo controller seguendo la procedura precedente.
+** *Chiave SSH o password*. Per questa opzione, passare alla fase successiva.
+** *Sia password che chiave SSH*. Per questa opzione, selezionare la casella di controllo *Richiedi chiave pubblica autorizzata e password per l'accesso remoto* e passare alla fase successiva.
+
+
+. Compilare il campo *Authorized public key* (chiave pubblica autorizzata). Questo campo contiene un elenco di chiavi pubbliche autorizzate, nel formato del file OpenSSH *authized_keys*.
++
+Durante la compilazione del campo *Authorized public key*, tenere presenti le seguenti linee guida:
+
++
+** Il campo *Authorized public key* (chiave pubblica autorizzata) si applica a entrambi i controller e deve essere configurato solo sul primo controller.
+** Il file *authized_keys* deve contenere una sola chiave per riga. Le righe che iniziano con n. e vuote vengono ignorate. Per ulteriori informazioni sul formato del file, vedere link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Configurazione delle chiavi autorizzate per OpenSSH"^].
+** Un file *authized_keys* dovrebbe avere un aspetto simile al seguente esempio:
++
+[listing]
+----
+ssh-rsa
+AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg+1CpNq76WSqmQBmoG9jgbcAB5ABGdswdeMQZHilJcu29iJ3OKKv6SlCulAj1tHymwtbdhPuipd2wIDAQAB
+----
+
+
+. Al termine, fare clic su *Save* (Salva).
+. Per i sistemi duplex, è possibile attivare l'accesso remoto sul secondo controller seguendo la procedura descritta in precedenza. Se si sta configurando l'opzione sia per una password che per una chiave SSH, assicurarsi di selezionare nuovamente la casella di controllo *Richiedi chiave pubblica autorizzata e password per l'accesso remoto*.
+. Al termine della risoluzione dei problemi, è possibile disattivare l'accesso remoto tornando alla finestra di dialogo Configura accesso remoto e deselezionando la casella di controllo *attiva accesso remoto*. Se l'accesso remoto è attivato su un secondo controller, viene visualizzata una finestra di dialogo di conferma che consente di disattivare l'accesso remoto anche sul secondo controller.
++
+La disattivazione dell'accesso remoto termina tutte le sessioni SSH correnti e rifiuta le nuove richieste di accesso.
+
+

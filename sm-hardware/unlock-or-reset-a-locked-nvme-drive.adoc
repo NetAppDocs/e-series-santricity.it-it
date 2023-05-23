@@ -1,0 +1,64 @@
+---
+permalink: sm-hardware/unlock-or-reset-a-locked-nvme-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlock, reset, locked, fips, nvme, drives, 
+summary: 'Se si inseriscono una o più unità NVMe o FIPS bloccate in un array di storage, è possibile sbloccare i dati dell"unità aggiungendo il file della chiave di sicurezza associato alle unità. Se non si dispone di una chiave di sicurezza, è possibile eseguire un ripristino su ciascuna unità bloccata inserendo il proprio ID di sicurezza fisico (PSID) per ripristinare i propri attributi di sicurezza e cancellare i dati dell"unità.' 
+---
+= Sbloccare o ripristinare i dischi NVMe o FIPS bloccati
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si inseriscono una o più unità NVMe o FIPS bloccate in un array di storage, è possibile sbloccare i dati dell'unità aggiungendo il file della chiave di sicurezza associato alle unità. Se non si dispone di una chiave di sicurezza, è possibile eseguire un ripristino su ciascuna unità bloccata inserendo il proprio ID di sicurezza fisico (PSID) per ripristinare i propri attributi di sicurezza e cancellare i dati dell'unità.
+
+.Prima di iniziare
+* Per l'opzione Unlock (Sblocca), assicurarsi che il file della chiave di sicurezza (con un'estensione di `.slk`) È disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager). È inoltre necessario conoscere la password associata alla chiave.
+* Per l'opzione Reset (Ripristina), è necessario trovare il PSID su ciascun disco che si desidera reimpostare. Per individuare il PSID, rimuovere fisicamente l'unità e individuare la stringa PSID (massimo 32 caratteri) sull'etichetta dell'unità, quindi reinstallare l'unità.
+
+
+.A proposito di questa attività
+Questa attività descrive come sbloccare i dati nei dischi NVMe o FIPS importando un file di chiave di sicurezza nell'array di storage. Per le situazioni in cui la chiave di sicurezza non è disponibile, questa attività descrive anche come eseguire un ripristino su un disco bloccato.
+
+[NOTE]
+====
+Se il disco è stato bloccato utilizzando un server di gestione delle chiavi esterno, selezionare menu:Impostazioni[sistema > Gestione delle chiavi di sicurezza] in System Manager per configurare la gestione delle chiavi esterne e sbloccare il disco.
+
+====
+È possibile accedere alla funzione di sblocco dalla pagina hardware o dal menu:Impostazioni[sistema > Gestione chiavi di sicurezza]. L'attività seguente fornisce istruzioni dalla pagina hardware.
+
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Selezionare l'unità NVMe o FIPS che si desidera sbloccare o ripristinare.
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Selezionare *Unlock* (sblocco) per applicare il file della chiave di sicurezza o *Reset* (Ripristino) se non si dispone di un file della chiave di sicurezza.
++
+Queste opzioni vengono visualizzate solo se si seleziona un disco NVMe o FIPS bloccato.
+
++
+[CAUTION]
+====
+Durante un'operazione di ripristino, tutti i dati vengono cancellati. Eseguire un ripristino solo se non si dispone di una chiave di sicurezza. La reimpostazione di un disco bloccato rimuove in modo permanente tutti i dati presenti sul disco e ripristina i relativi attributi di sicurezza su "sicuro", ma non abilitato. *Questa operazione non è reversibile.*
+
+====
+. Effettuare una delle seguenti operazioni:
++
+.. *Unlock*: Nella finestra di dialogo *Unlock Secure Drive*, fare clic su *Browse*, quindi selezionare il file della chiave di sicurezza corrispondente al disco che si desidera sbloccare. Quindi, immettere la password, quindi fare clic su *Unlock* (Sblocca).
+.. *Reset*: Nella finestra di dialogo *Reset Locked Drive*, immettere la stringa PSID nel campo, quindi digitare `RESET` per confermare. Fare clic su *Reset* (Ripristina).
++
+Per un'operazione di sblocco, è necessario eseguire questa operazione una sola volta per sbloccare tutti i dischi NVMe o FIPS. Per eseguire un'operazione di ripristino, è necessario selezionare singolarmente ogni disco che si desidera ripristinare.
+
+
+
+
+
+.Risultati
+L'unità è ora disponibile per l'utilizzo in un altro gruppo di volumi o pool di dischi o in un altro array di storage.

@@ -1,0 +1,84 @@
+---
+permalink: sm-hardware/hot-spare-drives.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
+summary: Le hot spare fungono da unità di standby in gruppi di volumi RAID 1, RAID 5 o RAID 6 per System Manager. 
+---
+= Panoramica dei dischi hot spare
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le hot spare fungono da unità di standby in gruppi di volumi RAID 1, RAID 5 o RAID 6 per System Manager.
+
+Si tratta di dischi completamente funzionanti che non contengono dati. Se un disco si guasta nel gruppo di volumi, il controller ricostruisce automaticamente i dati dal disco guasto a un disco assegnato come hot spare.
+
+Le hot spare non sono dedicate a gruppi di volumi specifici. Possono essere utilizzati per qualsiasi disco guasto nell'array di storage, purché l'hot spare e l'unità condividano questi attributi:
+
+* Capacità uguale (o maggiore capacità per l'hot spare)
+* Stesso tipo di supporto (ad esempio HDD o SSD)
+* Stesso tipo di interfaccia (ad esempio, SAS)
+
+
+
+
+== Come identificare le hot spare
+
+È possibile assegnare hot spare tramite l'installazione guidata iniziale o dalla pagina hardware. Per determinare se sono assegnati hot spare, andare alla pagina hardware e cercare eventuali alloggiamenti per unità indicati in rosa.
+
+
+
+== Come funziona la copertura hot spare
+
+La copertura hot spare funziona come segue:
+
+* È possibile riservare un disco non assegnato come hot spare per i gruppi di volumi RAID 1, RAID 5 o RAID 6.
++
+[NOTE]
+====
+Le hot spare non possono essere utilizzate per i pool che hanno un metodo diverso di protezione dei dati. Invece di riservare un disco aggiuntivo, i pool riservano la capacità di riserva (chiamata _capacità di conservazione_) all'interno di ogni disco del pool. Se un disco si guasta in un pool, il controller ricostruisce i dati in quella capacità di riserva.
+
+====
+* Se un disco all'interno di un gruppo di volumi RAID 1, RAID 5 o RAID 6 si guasta, il controller utilizza automaticamente i dati di ridondanza per ricostruire i dati dal disco guasto. Il disco hot spare viene sostituito automaticamente per il disco guasto senza richiedere uno swap fisico.
+* Una volta sostituito fisicamente il disco guasto, viene eseguita un'operazione copyback dall'unità hot spare all'unità sostituita. Se l'unità hot spare è stata designata come membro permanente di un gruppo di volumi, l'operazione copyback non è necessaria.
+* La disponibilità della protezione in caso di perdita dei vassoi e della protezione in caso di perdita dei cassetti per un gruppo di volumi dipende dalla posizione delle unità che compongono il gruppo di volumi. La protezione contro la perdita dei vassoi e la perdita dei cassetti potrebbe andare persa a causa di un disco guasto e della posizione dell'unità hot spare. Per assicurarsi che la protezione contro la perdita di vassoio e la protezione contro la perdita di cassetto non siano compromesse, è necessario sostituire un disco guasto per avviare il processo copyback.
+* Il volume dell'array di storage rimane online e accessibile durante la sostituzione del disco guasto, poiché il disco hot spare viene sostituito automaticamente per il disco guasto.
+
+
+
+
+== Considerazioni sulla capacità del disco hot spare
+
+Selezionare un'unità con una capacità uguale o superiore alla capacità totale dell'unità che si desidera proteggere. Ad esempio, se si dispone di un disco da 18 GB con capacità configurata di 8 GB, è possibile utilizzare un disco da 9 GB o superiore come hot spare. In genere, non assegnare un disco come hot spare a meno che la sua capacità non sia uguale o superiore alla capacità del disco più grande dell'array di storage.
+
+[NOTE]
+====
+Se non sono disponibili hot spare con la stessa capacità fisica, è possibile utilizzare un disco con capacità inferiore come hot spare se la "capacità utilizzata" del disco è uguale o inferiore alla capacità del disco hot spare.
+
+====
+
+
+== Considerazioni sui tipi di supporti e di interfaccia
+
+L'unità utilizzata come hot spare deve condividere lo stesso tipo di supporto e tipo di interfaccia delle unità che proteggerà. Ad esempio, un'unità HDD non può fungere da hot spare per le unità SSD.
+
+
+
+== Considerazioni per dischi sicuri
+
+Un disco sicuro, come FDE o FIPS, può fungere da hot spare per dischi con o senza funzionalità di sicurezza. Tuttavia, un disco non sicuro non può fungere da hot spare per dischi con funzionalità di sicurezza.
+
+Quando si seleziona un'unità sicura da utilizzare per un hot spare, System Manager richiede di eseguire una cancellazione sicura prima di procedere. La cancellazione sicura ripristina gli attributi di sicurezza dell'unità su Secure-capable, ma non Secure-enabled.
+
+[NOTE]
+====
+Quando si attiva la funzione Drive Security e si crea un pool o un gruppo di volumi da dischi sicuri, i dischi diventano _sicuri-abilitati_. L'accesso in lettura e scrittura è disponibile solo attraverso un controller configurato con la chiave di sicurezza corretta. Questa sicurezza aggiuntiva impedisce l'accesso non autorizzato ai dati su un disco che viene fisicamente rimosso dallo storage array.
+
+====
+
+
+== Numero consigliato di dischi hot spare
+
+Se si è utilizzata l'installazione guidata iniziale per creare automaticamente hot spare, System Manager crea un hot spare ogni 30 dischi di un tipo di supporto e di interfaccia specifici. In caso contrario, è possibile creare manualmente dischi hot spare tra i gruppi di volumi nell'array di storage.

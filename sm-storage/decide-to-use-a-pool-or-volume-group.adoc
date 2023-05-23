@@ -1,0 +1,355 @@
+---
+permalink: sm-storage/decide-to-use-a-pool-or-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool, volume group 
+summary: È possibile creare volumi utilizzando un pool o un gruppo di volumi. La scelta migliore dipende principalmente dai principali requisiti di storage, come il carico di lavoro i/o previsto, i requisiti di performance e i requisiti di protezione dei dati. 
+---
+= Decidere se utilizzare un pool o un gruppo di volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare volumi utilizzando un pool o un gruppo di volumi. La scelta migliore dipende principalmente dai principali requisiti di storage, come il carico di lavoro i/o previsto, i requisiti di performance e i requisiti di protezione dei dati.
+
+
+
+== Motivi per scegliere un pool o un gruppo di volumi
+
+*Scegliere un pool*
+
+* Se hai bisogno di una ricostruzione più rapida dei dischi e di un'amministrazione dello storage semplificata, richiedono volumi thin e/o un carico di lavoro altamente casuale.
+* Se si desidera distribuire i dati per ciascun volume in modo casuale su un set di dischi che compongono il pool.
++
+Non è possibile impostare o modificare il livello RAID dei pool o dei volumi nei pool. I pool utilizzano il livello RAID 6.
+
+
+
+*Scegliere un gruppo di volumi*
+
+* Se hai bisogno della massima larghezza di banda del sistema, della possibilità di ottimizzare le impostazioni dello storage e di un carico di lavoro altamente sequenziale.
+* Se si desidera distribuire i dati tra i dischi in base a un livello RAID. È possibile specificare il livello RAID quando si crea il gruppo di volumi.
+* Se si desidera scrivere i dati per ciascun volume in sequenza nel set di dischi che compongono il gruppo di volumi.
+
+
+[NOTE]
+====
+Poiché i pool possono coesistere con i gruppi di volumi, un array di storage può contenere sia pool che gruppi di volumi.
+
+====
+
+
+== Differenze di funzionalità tra pool e gruppi di volumi
+
+Nella tabella seguente viene fornito un confronto delle funzionalità tra gruppi di volumi e pool.
+
+[cols="1a,1a,1a"]
+|===
+| Utilizzare | Piscina | Gruppo di volumi 
+
+
+ a| 
+Carico di lavoro casuale
+ a| 
+Meglio
+ a| 
+Bene
+
+
+
+ a| 
+Carico di lavoro sequenziale
+ a| 
+Bene
+ a| 
+Meglio
+
+
+
+ a| 
+Tempo di ricostruzione del disco
+ a| 
+Più veloce
+ a| 
+Più lento
+
+
+
+ a| 
+Performance (modalità ottimale)
+ a| 
+Buona: Ideale per piccoli blocchi, carichi di lavoro casuali.
+ a| 
+Buona: Ideale per carichi di lavoro sequenziali a blocchi di grandi dimensioni
+
+
+
+ a| 
+Performance (modalità di ricostruzione del disco)
+ a| 
+Migliore: Di solito migliore di RAID 6
+ a| 
+Degradato: Calo delle performance fino al 40%
+
+
+
+ a| 
+Guasti a più dischi
+ a| 
+Maggiore protezione dei dati: Ricostruzioni più rapide e prioritarie
+ a| 
+Minore protezione dei dati: Ricostruzioni lente, maggiore rischio di perdita dei dati
+
+
+
+ a| 
+Aggiunta di unità
+ a| 
+Più veloce: Aggiungi al pool in tempo reale
+ a| 
+Più lento: Richiede un'operazione di espansione dinamica della capacità
+
+
+
+ a| 
+Supporto di thin volumi
+ a| 
+Sì
+ a| 
+No
+
+
+
+ a| 
+Supporto di Solid state Disk (SSD)
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Amministrazione semplificata
+ a| 
+Sì: Nessuna hot spare o impostazioni RAID da configurare
+ a| 
+No: È necessario allocare hot spare, configurare RAID
+
+
+
+ a| 
+Performance sintonizzabili
+ a| 
+No
+ a| 
+Sì
+
+|===
+
+
+== Confronto funzionale di pool e gruppi di volumi
+
+La funzione e lo scopo di un pool e di un gruppo di volumi sono identici. Entrambi gli oggetti sono un insieme di dischi raggruppati logicamente in un array di storage e vengono utilizzati per creare volumi ai quali un host può accedere.
+
+La seguente tabella consente di decidere se un pool o un gruppo di volumi si adatta meglio alle proprie esigenze di storage.
+
+[cols="1a,1a,1a"]
+|===
+| Funzione | Piscina | Gruppo di volumi 
+
+
+ a| 
+Supporto di diversi livelli RAID
+ a| 
+No Sempre RAID 6 in System Manager.
+ a| 
+Sì. RAID 0, 1, 10, 5 e 6 disponibili.
+
+
+
+ a| 
+Supporto di thin volumi
+ a| 
+Sì
+ a| 
+No
+
+
+
+ a| 
+Crittografia completa del disco (FDE) supportata
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Data Assurance (da) supportato
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Protezione contro la perdita di shelf supportata
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Protezione contro le perdite di cassetto supportata
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Supporto di velocità di dischi miste
+ a| 
+Consigliato per essere lo stesso, ma non richiesto. Il disco più lento determina la velocità di tutti i dischi.
+ a| 
+Consigliato per essere lo stesso, ma non richiesto. Il disco più lento determina la velocità di tutti i dischi.
+
+
+
+ a| 
+Capacità di dischi misti supportata
+ a| 
+Consigliato per essere lo stesso, ma non richiesto. Il disco più piccolo determina la capacità di tutti i dischi.
+ a| 
+Consigliato per essere lo stesso, ma non richiesto. Il disco più piccolo determina la capacità di tutti i dischi.
+
+
+
+ a| 
+Numero minimo di dischi
+ a| 
+11
+ a| 
+Dipende dal livello RAID. RAID 0 richiede 1. RAID 1 o 10 richiede 2 (richiede un numero pari). RAID 5 è minimo 3. RAID 6 è minimo 5.
+
+
+
+ a| 
+Numero massimo di dischi
+ a| 
+Fino al limite massimo per lo storage array
+ a| 
+RAID 1 e 10 - fino al limite massimo di dischi RAID 5, 6-30 dello storage array
+
+
+
+ a| 
+Possibilità di scegliere singoli dischi durante la creazione di un volume
+ a| 
+No
+ a| 
+Sì
+
+
+
+ a| 
+Può specificare le dimensioni del segmento durante la creazione di un volume
+ a| 
+Sì. 128K supportato.
+ a| 
+Sì
+
+
+
+ a| 
+Consente di specificare le caratteristiche di i/o durante la creazione di un volume
+ a| 
+No
+ a| 
+Sì. Supporto di file system, database, contenuti multimediali e personalizzati.
+
+
+
+ a| 
+Protezione dai guasti del disco
+ a| 
+Utilizza la capacità di conservazione su ogni disco del pool, rendendo più rapida la ricostruzione.
+ a| 
+Utilizza un disco hot spare. La ricostruzione è limitata dagli IOPS del disco.
+
+
+
+ a| 
+Avviso quando si raggiunge il limite di capacità
+ a| 
+Sì. Può impostare un avviso quando la capacità utilizzata raggiunge una percentuale della capacità massima.
+ a| 
+No
+
+
+
+ a| 
+Migrazione a un array storage diverso supportata
+ a| 
+No Richiede prima la migrazione a un gruppo di volumi.
+ a| 
+Sì
+
+
+
+ a| 
+Dimensione dinamica dei segmenti (DSS)
+ a| 
+No
+ a| 
+Sì
+
+
+
+ a| 
+Può modificare il livello RAID
+ a| 
+No
+ a| 
+Sì
+
+
+
+ a| 
+Espansione dei volumi (aumento della capacità)
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Espansione della capacità (aggiunta di capacità)
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Riduzione della capacità
+ a| 
+Sì
+ a| 
+No
+
+|===
+[NOTE]
+====
+I tipi di dischi misti (HDD, SSD) non sono supportati per pool o gruppi di volumi.
+
+====

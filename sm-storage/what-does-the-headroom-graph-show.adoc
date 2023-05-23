@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-headroom-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, headroom, graph, show, performance, capability 
+summary: Il grafico dello spazio di crescita è relativo alle restanti funzionalità delle performance per i controller degli array di storage. Questo grafico è visibile nella pagina iniziale e nella scheda Vista fisica del riquadro prestazioni. 
+---
+= Cosa mostra il grafico headroom?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico dello spazio di crescita è relativo alle restanti funzionalità delle performance per i controller degli array di storage. Questo grafico è visibile nella pagina iniziale e nella scheda Vista fisica del riquadro prestazioni.
+
+Il grafico dello spazio di crescita mostra le restanti capacità di performance degli oggetti fisici nel sistema di storage. Spostare il cursore su un punto del grafico per visualizzare le percentuali di capacità IOPS e MIB/s rimanenti per il controller A e per il controller B.

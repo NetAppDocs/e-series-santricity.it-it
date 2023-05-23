@@ -1,0 +1,48 @@
+---
+permalink: sm-storage/base-volumes-reserved-capacity-and-snapshot-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, base volumes, reserved capacity, snapshot groups 
+summary: La funzione Snapshot utilizza volumi di base, capacità riservata e gruppi di snapshot. 
+---
+= Volumi di base, capacità riservata e gruppi di snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione Snapshot utilizza volumi di base, capacità riservata e gruppi di snapshot.
+
+
+
+== Volumi di base
+
+Un _volume base_ è il volume utilizzato come origine per un'immagine snapshot. Un volume di base può essere un volume spesso o un volume sottile e può risiedere in un pool o in un gruppo di volumi.
+
+Per creare snapshot del volume di base, è possibile creare un'immagine istantanea in qualsiasi momento oppure automatizzare il processo definendo una pianificazione regolare per gli snapshot.
+
+La figura seguente mostra la relazione tra gli oggetti snapshot e il volume di base.
+
+image::../media/sam1130-dwg-snapshots-images-overview.gif[panoramica delle immagini snapshot sam1130 dwg]
+
+^1^ Volume di base; ^2^ oggetti Snapshot nel gruppo (immagini e capacità riservata); ^3^ capacità riservata per il gruppo di snapshot.
+
+
+
+== Capacità riservata e gruppi di snapshot
+
+System Manager organizza le immagini snapshot in _gruppi di snapshot_. Quando System Manager stabilisce il gruppo di snapshot, crea automaticamente la _capacità riservata_ associata per conservare le immagini snapshot per il gruppo e tenere traccia delle modifiche successive apportate agli snapshot aggiuntivi.
+
+Se il volume di base risiede in un gruppo di volumi, la capacità riservata può trovarsi in un pool o in un gruppo di volumi. Se il volume di base risiede in un pool, la capacità riservata deve trovarsi nello stesso pool del volume di base.
+
+I gruppi di snapshot non richiedono alcuna azione da parte dell'utente, ma è possibile regolare la capacità riservata di un gruppo di snapshot in qualsiasi momento. Inoltre, potrebbe essere richiesto di creare capacità riservata quando vengono soddisfatte le seguenti condizioni:
+
+* Ogni volta che si crea uno snapshot di un volume di base che non dispone ancora di un gruppo di snapshot, System Manager crea automaticamente un gruppo di snapshot. Questa azione crea inoltre capacità riservata per il volume di base utilizzato per memorizzare le immagini snapshot successive.
+* Ogni volta che si crea una pianificazione di snapshot per un volume di base, System Manager crea automaticamente un gruppo di snapshot.
+
+
+
+
+== Eliminazione automatica
+
+Quando si lavora con gli snapshot, utilizzare l'opzione predefinita per attivare l'eliminazione automatica. L'eliminazione automatica elimina automaticamente l'immagine snapshot meno recente quando il gruppo di snapshot raggiunge il limite di 32 immagini. Se si disattiva l'eliminazione automatica, i limiti del gruppo di snapshot vengono superati e si devono eseguire azioni manuali per configurare le impostazioni del gruppo di snapshot e gestire la capacità riservata.

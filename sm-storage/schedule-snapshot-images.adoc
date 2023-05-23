@@ -1,0 +1,223 @@
+---
+permalink: sm-storage/schedule-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
+summary: Viene creata una pianificazione di snapshot per abilitare il ripristino in caso di problemi con il volume di base ed eseguire backup pianificati. È possibile creare snapshot di volumi di base o gruppi di coerenza snapshot in base a una pianificazione giornaliera, settimanale o mensile, in qualsiasi momento della giornata. 
+---
+= Programmare le immagini snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Viene creata una pianificazione di snapshot per abilitare il ripristino in caso di problemi con il volume di base ed eseguire backup pianificati. È possibile creare snapshot di volumi di base o gruppi di coerenza snapshot in base a una pianificazione giornaliera, settimanale o mensile, in qualsiasi momento della giornata.
+
+.Prima di iniziare
+Il volume di base deve essere ottimale.
+
+.A proposito di questa attività
+Questa attività descrive come creare una pianificazione di snapshot per un gruppo di coerenza di snapshot o un volume di base esistente.
+
+[NOTE]
+====
+È inoltre possibile creare una pianificazione di snapshot contemporaneamente alla creazione di un'immagine di snapshot di un volume di base o di un gruppo di coerenza di snapshot.
+
+====
+.Fasi
+. Eseguire una delle seguenti operazioni per creare una pianificazione di snapshot:
++
+** Selezionare menu:Storage[Volumes] (Storage[volumi]).
++
+Selezionare l'oggetto (volume o gruppo di coerenza snapshot) per questa pianificazione snapshot, quindi selezionare menu:Copy Services[Create snapshot schedule].
+
+** Selezionare menu:Storage[Snapshot].
++
+Selezionare la scheda *programmi*, quindi fare clic su *Crea*.
+
+
+
+. Selezionare l'oggetto (volume o gruppo di coerenza dello snapshot) per questa pianificazione dello snapshot, quindi fare clic su *Avanti*.
++
+Viene visualizzata la finestra di dialogo Crea pianificazione snapshot.
+
+. Eseguire una delle seguenti operazioni:
++
+** *Utilizzare una pianificazione precedentemente definita da un altro oggetto snapshot*.
++
+Assicurarsi che vengano visualizzate le opzioni avanzate. Fare clic su *Mostra altre opzioni*. Fare clic su *Importa pianificazione*, selezionare l'oggetto con la pianificazione che si desidera importare, quindi fare clic su *Importa*.
+
+** *Modificare le opzioni di base o avanzate*.
++
+Nella parte superiore destra della finestra di dialogo, fare clic su *Mostra altre opzioni* per visualizzare tutte le opzioni, quindi fare riferimento alla seguente tabella.
+
+
+
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descrizione 
+
+
+ a| 
+*Impostazioni di base*
+
+
+
+ a| 
+Selezionare i giorni
+ a| 
+Selezionare i singoli giorni della settimana per le immagini snapshot.
+
+
+
+ a| 
+Ora di inizio
+ a| 
+Dall'elenco a discesa, selezionare una nuova ora di inizio per le istantanee giornaliere (le selezioni vengono fornite in incrementi di mezz'ora). Per impostazione predefinita, l'ora di inizio è mezz'ora prima dell'ora corrente.
+
+
+
+ a| 
+Fuso orario
+ a| 
+Dall'elenco a discesa, selezionare il fuso orario dell'array.
+
+
+
+ a| 
+*Impostazioni avanzate*
+
+
+
+ a| 
+Giorno / mese
+ a| 
+Scegliere una delle seguenti opzioni:
+
+** *Daily / Weekly* -- Seleziona i singoli giorni per gli snapshot di sincronizzazione. È inoltre possibile selezionare la casella di controllo *Select All days* (Seleziona tutti i giorni) in alto a destra se si desidera una pianificazione giornaliera.
+** *Mensile / annuale* -- selezionare i singoli mesi per le snapshot di sincronizzazione. Nel campo *on day(s)*, immettere i giorni del mese per le sincronizzazioni da eseguire. Le voci valide sono da *1* a *31* e *Last*. È possibile separare più giorni con una virgola o un punto e virgola. Utilizzare un trattino per le date inclusive. Ad esempio: 1,3,4,10-15,ultimo. Se si desidera una pianificazione mensile, è anche possibile selezionare la casella di controllo *Seleziona tutti i mesi* in alto a destra.
+
+
+
+
+ a| 
+Ora di inizio
+ a| 
+Dall'elenco a discesa, selezionare una nuova ora di inizio per le istantanee giornaliere (le selezioni vengono fornite in incrementi di mezz'ora). Per impostazione predefinita, l'ora di inizio è mezz'ora prima dell'ora corrente.
+
+
+
+ a| 
+Fuso orario
+ a| 
+Dall'elenco a discesa, selezionare il fuso orario dell'array.
+
+
+
+ a| 
+Snapshot al giorno/ora tra snapshot
+ a| 
+Selezionare il numero di immagini snapshot da creare al giorno. Se si selezionano più immagini, selezionare anche il tempo tra le immagini snapshot. Per più immagini snapshot, assicurarsi di disporre di una capacità riservata adeguata.
+
+
+
+ a| 
+Creare subito un'immagine snapshot?
+ a| 
+Selezionare questa casella di controllo per creare un'immagine istantanea oltre alle immagini automatiche che si stanno pianificando.
+
+
+
+ a| 
+Data di inizio/fine o Nessuna data di fine
+ a| 
+Inserire la data di inizio delle sincronizzazioni. Inserire anche una data di fine o selezionare *Nessuna data di fine*.
+
+|===
+====
+. Eseguire una delle seguenti operazioni:
++
+** Se l'oggetto è un gruppo di coerenza snapshot, fare clic su *Create* per accettare le impostazioni e creare la pianificazione.
+** Se l'oggetto è un volume, fare clic su *Avanti* per allocare la capacità riservata per le immagini snapshot.
++
+La tabella dei candidati al volume visualizza solo i candidati che supportano la capacità riservata specificata. La capacità riservata è la capacità fisica allocata utilizzata per qualsiasi operazione del servizio di copia e oggetto di storage. Non è direttamente leggibile dall'host.
+
+
+
+. Utilizzare la casella di selezione per allocare la capacità riservata per le immagini snapshot. Eseguire una delle seguenti operazioni:
++
+** *Accettare le impostazioni predefinite.*
++
+Utilizzare questa opzione consigliata per allocare la capacità riservata per le immagini snapshot con le impostazioni predefinite.
+
+** *Allocare le proprie impostazioni di capacità riservate per soddisfare le esigenze di storage dei dati.*
++
+Se si modifica l'impostazione predefinita della capacità riservata, fare clic su *Refresh Candidates* (Aggiorna candidati) per aggiornare l'elenco dei candidati per la capacità riservata specificata.
+
++
+Allocare la capacità riservata utilizzando le seguenti linee guida:
+
++
+*** L'impostazione predefinita per la capacità riservata è il 40% della capacità del volume di base. Di solito questa capacità è sufficiente.
+*** La capacità necessaria varia in base alla frequenza e alle dimensioni delle scritture i/o nei volumi, alla quantità e alla durata della raccolta di immagini snapshot.
+
+
+
+
+. Fare clic su *Avanti*.
++
+Viene visualizzata la finestra di dialogo Edit Settings (Modifica impostazioni).
+
+. Modificare le impostazioni per la pianificazione snapshot in base alle esigenze, quindi fare clic su *fine*.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Limite immagine Snapshot*
+
+
+
+ a| 
+Attiva l'eliminazione automatica delle immagini snapshot quando...
+ a| 
+Mantenere la casella di controllo selezionata se si desidera eliminare automaticamente le immagini snapshot dopo il limite specificato; utilizzare la casella di selezione per modificare il limite. Se si deseleziona questa casella di controllo, la creazione dell'immagine snapshot si interrompe dopo 32 immagini.
+
+
+
+ a| 
+*Impostazioni di capacità riservate*
+
+
+
+ a| 
+Avvisami quando...
+ a| 
+Utilizzare la casella di selezione per regolare il punto percentuale in cui il sistema invia una notifica di avviso quando la capacità riservata per una pianificazione è quasi piena.
+
+Quando la capacità riservata per la pianificazione supera la soglia specificata, utilizzare l'avviso anticipato per aumentare la capacità riservata o eliminare gli oggetti non necessari prima che lo spazio rimanente si esaurisca.
+
+
+
+ a| 
+Policy per la capacità massima riservata
+ a| 
+Scegliere una delle seguenti policy:
+
+** *Rimuovi l'immagine snapshot meno recente* -- il sistema rimuove automaticamente l'immagine snapshot meno recente, rilasciando la capacità riservata dell'immagine snapshot per poterla riutilizzare all'interno del gruppo di snapshot.
+** *Rifiuta scritture nel volume base* -- quando la capacità riservata raggiunge la massima percentuale definita, il sistema rifiuta qualsiasi richiesta di scrittura i/o nel volume base che ha attivato l'accesso alla capacità riservata.
+
+
+|===
+====
+

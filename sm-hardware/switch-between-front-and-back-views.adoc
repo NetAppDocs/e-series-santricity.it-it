@@ -1,0 +1,30 @@
+---
+permalink: sm-hardware/switch-between-front-and-back-views.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, front, back, views, shelves 
+summary: La pagina hardware può mostrare la vista frontale o posteriore degli scaffali. 
+---
+= Consente di passare dalla vista anteriore a quella posteriore e viceversa
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina hardware può mostrare la vista frontale o posteriore degli scaffali.
+
+.A proposito di questa attività
+La vista posteriore mostra i controller/IOM e i contenitori delle ventole di alimentazione. La vista frontale mostra i dischi.
+
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. In alternativa, è possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano*, nella parte inferiore della pagina.
+

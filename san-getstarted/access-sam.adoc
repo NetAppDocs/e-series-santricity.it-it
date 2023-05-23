@@ -1,0 +1,59 @@
+---
+permalink: san-getstarted/access-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access System Manager 
+summary: 'Per accedere all"interfaccia utente di System Manager, puntare un browser verso l"indirizzo IP del controller. L"installazione guidata consente di iniziare a configurare il sistema.' 
+---
+= Accedere a System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per accedere all'interfaccia utente di System Manager, puntare un browser verso l'indirizzo IP del controller. L'installazione guidata consente di iniziare a configurare il sistema.
+
+.Prima di iniziare
+* Installare e configurare l'hardware, come descritto in una delle guide di configurazione rapide:
++
+** https://docs.netapp.com/us-en/e-series/config-linux/index.html["Configurazione di Linux Express"^]
+** https://docs.netapp.com/us-en/e-series/config-vmware/index.html["Configurazione di VMware Express"^]
+** https://docs.netapp.com/us-en/e-series/config-windows/index.html["Configurazione di Windows Express"^]
+
+
+* Configurare una stazione di gestione che soddisfi i seguenti requisiti:
++
+** Connesso a una rete a 1 Gbps o più veloce.
+** Collegato alla stessa subnet delle porte di gestione dello storage.
+** Utilizzato come stazione separata, anziché come host (i/o collegato) utilizzato per la gestione dei dati.
+** Configurazione per la gestione out-of-band, in cui una stazione di gestione dello storage invia comandi al sistema di storage attraverso le connessioni Ethernet al controller.
+** Configurazione con un browser supportato. Vedere link:supported-browsers-os.html["Browser e sistemi operativi supportati"].
+
+
+
+
+.Fasi
+. Dal browser, immettere il seguente URL: `+https://<IPAddress>+`
++
+`IPAddress` è l'indirizzo di uno dei controller degli array di storage.
+
++
+La prima volta che System Manager viene aperto su un array non configurato, viene visualizzato il prompt Set Administrator Password (Imposta password amministratore).
+
+. Immettere la password di System Manager per il ruolo di amministratore nei campi Set Administrator Password (Imposta password amministratore) e Confirm Password (Conferma password), quindi fare clic su *Set Password* (Imposta password).
++
+L'installazione guidata viene avviata al primo accesso.
+
+. Utilizzare l'installazione guidata per eseguire le seguenti operazioni:
++
+** *Verifica dell'hardware (controller e dischi)* -- verifica del numero di controller e dischi nell'array di storage. Assegnare un nome all'array.
+** *Verifica di host e sistemi operativi* -- verifica dei tipi di host e sistemi operativi a cui lo storage array può accedere.
+** *Accept Pools* -- accettare la configurazione del pool consigliata per il metodo di installazione rapida. Un pool è un gruppo logico di dischi.
+** *Configura avvisi* -- consente a System Manager di ricevere notifiche automatiche quando si verifica un problema con lo storage array.
+** *Enable AutoSupport* -- monitora automaticamente lo stato dello storage array e invia le spedizioni al supporto tecnico.
+
+
+
+
+Per ulteriori informazioni sull'installazione guidata, vedere link:../sm-interface/setup-wizard-overview.html["Panoramica dell'installazione guidata"].

@@ -1,0 +1,33 @@
+---
+permalink: sm-support/schedule-autosupport-dispatches.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
+summary: System Manager crea automaticamente una pianificazione predefinita per le spedizioni AutoSupport. Se preferisci, puoi specificare la tua pianificazione. 
+---
+= Pianifica le spedizioni AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager crea automaticamente una pianificazione predefinita per le spedizioni AutoSupport. Se preferisci, puoi specificare la tua pianificazione.
+
+.Prima di iniziare
+La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella pagina AutoSupport.
+
+.A proposito di questa attività
+* *Daily Time* -- le spedizioni giornaliere vengono raccolte e inviate ogni giorno durante l'intervallo di tempo specificato. System Manager seleziona un tempo casuale durante l'intervallo. Tutti gli orari sono in UTC (Coordinated Universal Time), che potrebbe essere diverso dall'ora locale dello storage array. È necessario convertire l'ora locale dell'array di storage in UTC.
+* *Giorno settimanale* -- le spedizioni settimanali vengono raccolte e inviate una volta alla settimana. System Manager seleziona un giorno casuale tra i giorni specificati. Deselezionare tutti i giorni in cui non si desidera consentire l'invio settimanale. System Manager seleziona un giorno casuale tra i giorni consentiti.
+* *Weekly Time* -- le spedizioni settimanali vengono raccolte e inviate una volta alla settimana durante l'intervallo di tempo specificato. System Manager seleziona un tempo casuale durante l'intervallo. Tutti gli orari sono in UTC (Coordinated Universal Time), che potrebbe essere diverso dall'ora locale dello storage array. È necessario convertire l'ora locale dell'array di storage in UTC.
+
+
+.Fasi
+. Selezionare menu:scheda supporto[Centro di supporto > AutoSupport].
+. Selezionare *Schedule AutoSupport Dispatches*.
++
+Viene visualizzata la procedura guidata Schedule AutoSupport Dispatches.
+
+. Seguire i passaggi della procedura guidata.
+

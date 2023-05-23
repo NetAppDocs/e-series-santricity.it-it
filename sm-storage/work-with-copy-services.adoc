@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/work-with-copy-services.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, services 
+summary: È possibile utilizzare i servizi di copia per copiare i volumi e intraprendere altre azioni sui volumi. 
+---
+= Utilizzo dei servizi di copia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare i servizi di copia per copiare i volumi e intraprendere altre azioni sui volumi.

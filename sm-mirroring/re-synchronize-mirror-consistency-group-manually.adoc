@@ -1,0 +1,35 @@
+---
+permalink: sm-mirroring/re-synchronize-mirror-consistency-group-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
+summary: 'È possibile avviare manualmente la risincronizzazione per tutte le coppie mirrorate all"interno di un gruppo di coerenza mirror.' 
+---
+= Risincronizzare manualmente il gruppo di coerenza mirror
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile avviare manualmente la risincronizzazione per tutte le coppie mirrorate all'interno di un gruppo di coerenza mirror.
+
+.Fasi
+. Selezionare menu:Storage[Mirroring asincrono].
+. Selezionare la scheda *Mirror Consistency Groups*.
++
+Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.
+
+. Selezionare il gruppo di coerenza mirror che si desidera risincronizzare, quindi selezionare menu:More[Manually resincronize] (Altro[risincronizzare manualmente]).
++
+Il sistema visualizza una conferma.
+
+. Selezionare *Sì* per confermare.
+
+
+.Risultati
+Il sistema esegue le seguenti operazioni:
+
+* Avvia la risincronizzazione dei dati su tutte le coppie mirrorate all'interno del gruppo di coerenza del mirror selezionato.
+* Aggiorna i dati modificati dall'array di storage locale all'array di storage remoto.
+

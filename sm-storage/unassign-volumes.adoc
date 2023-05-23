@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/unassign-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unassign, volumes 
+summary: 'Annullare l"assegnazione dei volumi dagli host o dai cluster di host se non è più necessario l"accesso i/o a tale volume dall"host o dal cluster di host.' 
+---
+= Annullare l'assegnazione dei volumi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Annullare l'assegnazione dei volumi dagli host o dai cluster di host se non è più necessario l'accesso i/o a tale volume dall'host o dal cluster di host.
+
+.A proposito di questa attività
+Tenere presenti queste linee guida quando si annulla l'assegnazione di un volume:
+
+* Se si rimuove l'ultimo volume assegnato da un cluster host e il cluster host dispone anche di host con volumi assegnati specifici, assicurarsi di rimuovere o spostare tali assegnazioni prima di rimuovere l'ultima assegnazione per il cluster host.
+* Se un cluster host, un host o una porta host viene assegnata a un volume registrato nel sistema operativo, è necessario annullare la registrazione prima di poter rimuovere questi nodi.
+
+
+.Fasi
+. Selezionare menu:Storage[Hosts] (Storage[host]).
+. Selezionare l'host o il cluster host che si desidera modificare, quindi fare clic su *Annulla assegnazione volumi*.
++
+Viene visualizzata una finestra di dialogo che mostra tutti i volumi attualmente assegnati.
+
+. Selezionare la casella di controllo accanto a ciascun volume che si desidera annullare l'assegnazione oppure selezionare la casella di controllo nell'intestazione della tabella per selezionare tutti i volumi.
+. Fare clic su *Annulla assegnazione*.
+
+
+.Risultati
+* I volumi non assegnati sono disponibili per una nuova assegnazione.
+* Fino a quando le modifiche non vengono configurate sull'host, il volume viene ancora riconosciuto dal sistema operativo host.
+

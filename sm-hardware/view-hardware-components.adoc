@@ -1,0 +1,71 @@
+---
+permalink: sm-hardware/view-hardware-components.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, hardware, components, filtering, 
+summary: La pagina hardware offre funzioni di ordinamento e filtraggio che semplificano la ricerca dei componenti. 
+---
+= Visualizza i componenti hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La pagina hardware offre funzioni di ordinamento e filtraggio che semplificano la ricerca dei componenti.
+
+.Fasi
+. Selezionare *hardware*.
+. Utilizzare le funzioni descritte nella seguente tabella per visualizzare i componenti hardware.
+
+
+[cols="25h,~"]
+|===
+| Funzione | Descrizione 
+
+
+ a| 
+Vista dello shelf anteriore e posteriore
+ a| 
+Per passare dalla vista anteriore a quella posteriore dello shelf, selezionare *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'estrema destra (il link visualizzato dipende dalla vista corrente). La vista frontale mostra i dischi e gli eventuali alloggiamenti vuoti. La vista posteriore mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano*.
+
+
+
+ a| 
+Filtri per la vista su disco
+ a| 
+Se lo storage array contiene dischi con diversi tipi di attributi fisici e logici, la pagina *hardware* include i filtri di visualizzazione del disco. Questi campi di filtro consentono di individuare rapidamente unità specifiche limitando i tipi di unità visualizzati nella pagina. Sotto *Mostra dischi che sono...*, fare clic sul campo del filtro a sinistra (per impostazione predefinita, mostra *qualsiasi tipo di disco*) per visualizzare un elenco a discesa degli attributi fisici (ad esempio capacità e velocità). Fare clic sul campo del filtro a destra (per impostazione predefinita, mostra *in qualsiasi punto dello storage array*) per visualizzare un elenco a discesa degli attributi logici (ad esempio, l'assegnazione dei gruppi di volumi). È possibile utilizzare questi filtri insieme o separatamente.
+
+[NOTE]
+====
+Se l'array di storage contiene dischi che condividono tutti gli stessi attributi fisici, il campo *qualsiasi tipo di disco* a sinistra non viene visualizzato. Se i dischi si trovano tutti nella stessa posizione logica, il campo *Anywhere in the storage array* (qualsiasi punto dell'array di storage) a destra non viene visualizzato.
+
+====
+
+
+ a| 
+Legenda
+ a| 
+I componenti vengono visualizzati in determinati colori per illustrare i rispettivi stati di ruolo. Per espandere e comprimere le descrizioni di questi stati, fare clic su *Legenda*.
+
+
+
+ a| 
+Mostra i dettagli dell'icona di stato
+ a| 
+Gli indicatori di stato possono includere descrizioni di testo per gli stati di disponibilità. Fare clic su *Show status icon details* (Mostra dettagli icona stato) per visualizzare o nascondere il testo dello stato.
+
+
+
+ a| 
+Icone di shelf/shelf
+ a| 
+Ogni vista shelf fornisce un elenco di comandi correlati, oltre a proprietà e stato. Fare clic su *Shelf* per visualizzare un elenco a discesa dei comandi. È inoltre possibile selezionare una delle icone in alto per visualizzare lo stato e le proprietà dei singoli componenti: Controller, IOM (ESM), alimentatori, ventole, temperatura, Batterie e SFP.
+
+
+
+ a| 
+Ordine di shelf
+ a| 
+Gli shelf possono essere riorganizzati nella pagina hardware. Utilizzare le frecce su e giù nella parte superiore destra di ciascuna vista dello shelf per modificare l'ordine superiore/inferiore degli shelf.
+
+|===

@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, network, configuration, gateway, 
+summary: 'Quando si utilizza la gestione out-of-band, è necessario impostare la configurazione di rete per ciascun controller (indirizzo IP, Internet Protocol), subnet mask (subnet mask) e gateway.' 
+---
+= Perché è necessario modificare la configurazione di rete del controller?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quando si utilizza la gestione fuori banda, è necessario impostare la configurazione di rete per ciascun controller (indirizzo IP (Internet Protocol), subnet mask (subnet mask) e gateway).
+
+È possibile impostare la configurazione di rete utilizzando un server DHCP (Dynamic host Configuration Protocol). Se non si utilizza un server DHCP, è necessario immettere manualmente la configurazione di rete.

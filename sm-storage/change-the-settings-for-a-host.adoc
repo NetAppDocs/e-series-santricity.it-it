@@ -1,0 +1,60 @@
+---
+permalink: sm-storage/change-the-settings-for-a-host.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, host 
+summary: È possibile modificare il nome, il tipo di sistema operativo host e i cluster host associati per un host. 
+---
+= Modificare le impostazioni di un host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare il nome, il tipo di sistema operativo host e i cluster host associati per un host.
+
+.Fasi
+. Selezionare menu:Storage[Hosts] (Storage[host]).
+. Selezionare l'host che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
++
+Viene visualizzata una finestra di dialogo che mostra le impostazioni correnti dell'host.
+
+. Se non è già selezionata, fare clic sulla scheda *Proprietà*.
+. Modificare le impostazioni in base alle esigenze.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Nome
+ a| 
+È possibile modificare il nome dell'host fornito dall'utente. Specificare un nome per l'host.
+
+
+
+ a| 
+Cluster host associato
+ a| 
+È possibile scegliere una delle seguenti opzioni:
+
+** *None* -- l'host rimane un host standalone. Se l'host è stato associato a un cluster host, il sistema rimuove l'host dal cluster.
+** *<Host Cluster>* -- il sistema associa l'host al cluster selezionato.
+
+
+
+
+ a| 
+Tipo di sistema operativo host
+ a| 
+È possibile modificare il tipo di sistema operativo in esecuzione sull'host definito.
+
+|===
+====
+. Fare clic su *Save* (Salva).
+

@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/what-does-the-latency-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, latency, graph, show, statistics, 
+summary: 'Il grafico della latenza fornisce statistiche di latenza, in millisecondi (ms), per volumi, gruppi di volumi, pool, applicazioni e carichi di lavoro. Questo grafico viene visualizzato nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro).' 
+---
+= Cosa mostra il grafico della latenza?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il grafico della latenza fornisce statistiche di latenza, in millisecondi (ms), per volumi, gruppi di volumi, pool, applicazioni e carichi di lavoro. Questo grafico viene visualizzato nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro).
+
+La latenza si riferisce a qualsiasi ritardo che si verifica durante la lettura o la scrittura dei dati. Spostare il cursore su un punto del grafico per visualizzare i seguenti valori, in millisecondi (ms), per quel momento:
+
+* Tempo di lettura.
+* Tempo di scrittura.
+* Dimensione i/o media.
+

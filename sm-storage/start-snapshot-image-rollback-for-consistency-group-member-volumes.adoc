@@ -1,0 +1,102 @@
+---
+permalink: sm-storage/start-snapshot-image-rollback-for-consistency-group-member-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
+summary: 'È possibile eseguire un"operazione di rollback per modificare il contenuto dei volumi membri del gruppo di coerenza snapshot in modo che corrisponda al contenuto salvato in un"immagine snapshot.' 
+---
+= Avviare il rollback dell'immagine snapshot per i volumi membri del gruppo di coerenza snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile eseguire un'operazione di rollback per modificare il contenuto dei volumi membri del gruppo di coerenza snapshot in modo che corrisponda al contenuto salvato in un'immagine snapshot.
+
+L'operazione di rollback non modifica il contenuto delle immagini snapshot associate al gruppo di coerenza snapshot.
+
+.Prima di iniziare
+* È disponibile una capacità riservata sufficiente per avviare un'operazione di rollback.
+* L'immagine snapshot selezionata è ottimale e il volume selezionato è ottimale.
+* Il volume selezionato non dispone di un'operazione di rollback già in corso.
+
+
+.A proposito di questa attività
+La sequenza di avvio del rollback consente di avviare il rollback su un'immagine snapshot di un gruppo di coerenza snapshot, fornendo al contempo opzioni per aggiungere capacità di storage. Non è possibile avviare più di un'operazione di rollback per un gruppo di coerenza snapshot alla volta.
+
+[NOTE]
+====
+L'host ha accesso immediato ai nuovi volumi di rollback, ma i volumi membri esistenti non consentono più l'accesso in lettura/scrittura all'host dopo l'avvio del rollback. È possibile creare un'immagine snapshot dei volumi membro appena prima di iniziare il rollback per conservare i volumi di base pre-rollback a scopo di recovery.
+
+====
+Il processo per avviare il rollback di un'immagine snapshot di un gruppo di coerenza snapshot è una procedura multi-step.
+
+
+
+== Fase 1: Selezionare i membri
+
+È necessario selezionare i volumi membro da ripristinare.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Selezionare la scheda *Snapshot Images* (immagini istantanee).
+. Selezionare l'immagine snapshot del gruppo di coerenza snapshot, quindi selezionare menu:Rollback[Start].
++
+Viene visualizzata la finestra di dialogo Avvia ripristino.
+
+. Selezionare il volume membro o i volumi.
+. Fare clic su *Avanti* ed eseguire una delle seguenti operazioni:
++
+** Se uno qualsiasi dei volumi membro selezionati è associato a più di un oggetto di capacità riservata che memorizza immagini snapshot, viene visualizzata la finestra di dialogo Review Capacity (capacità di revisione). Passare a. <<Fase 2: Rivedere la capacità>>.
+** Se nessuno dei volumi membro selezionati è associato a più di un oggetto di capacità riservata che memorizza immagini snapshot, viene visualizzata la finestra di dialogo Edit Priority (Modifica priorità). Passare a. <<Fase 3: Modificare la priorità>>.
+
+
+
+
+
+
+== Fase 2: Rivedere la capacità
+
+Se sono stati selezionati volumi membro associati a più di un oggetto di capacità riservata, come un gruppo di snapshot e un volume di capacità riservata, è possibile rivedere e aumentare la capacità riservata per i volumi di rollback.
+
+.Fasi
+. Accanto a qualsiasi volume membro con capacità riservata molto bassa (o zero), fare clic sul collegamento *aumento capacità* nella colonna *Modifica*.
++
+Viene visualizzata la finestra di dialogo aumenta capacità riservata.
+
+. Utilizzare la casella di selezione per regolare la percentuale di capacità, quindi fare clic su *aumento*.
++
+Se la capacità libera non esiste nel pool o nel gruppo di volumi che contiene l'oggetto di storage selezionato e l'array di storage dispone di capacità non assegnata, è possibile aggiungere capacità. È possibile creare un nuovo pool o gruppo di volumi e riprovare a eseguire questa operazione utilizzando la nuova capacità libera di tale pool o gruppo di volumi.
+
+. Fare clic su *Avanti* e passare a. <<Fase 3: Modificare la priorità>>.
++
+Viene visualizzata la finestra di dialogo Edit Priority (Modifica priorità).
+
+
+
+
+
+== Fase 3: Modificare la priorità
+
+Se necessario, è possibile modificare la priorità dell'operazione di rollback.
+
+.A proposito di questa attività
+La priorità di rollback determina quante risorse di sistema sono dedicate all'operazione di rollback a scapito delle prestazioni del sistema.
+
+.Fasi
+. Utilizzare il dispositivo di scorrimento per regolare la priorità di rollback in base alle esigenze.
+. Confermare l'operazione, quindi fare clic su *fine*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Ripristina i volumi dei membri del gruppo di coerenza snapshot con il contenuto salvato nell'immagine snapshot selezionata.
+* Rende i volumi rollback immediatamente disponibili per l'accesso all'host. Non è necessario attendere il completamento dell'operazione di rollback.
+
+
+.Al termine
+Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione di rollback.
+
+Se l'operazione di rollback non riesce, l'operazione viene interrotta. È possibile riprendere l'operazione in pausa e, se il problema persiste, seguire la procedura Recovery Guru per risolvere il problema o contattare il supporto tecnico.

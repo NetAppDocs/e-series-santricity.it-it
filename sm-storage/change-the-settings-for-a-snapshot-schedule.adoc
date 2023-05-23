@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
+summary: Per una pianificazione snapshot, è possibile modificare gli orari di raccolta automatica o la frequenza di raccolta. 
+---
+= Modificare le impostazioni per una pianificazione snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per una pianificazione snapshot, è possibile modificare gli orari di raccolta automatica o la frequenza di raccolta.
+
+.A proposito di questa attività
+È possibile importare le impostazioni da una pianificazione di snapshot esistente oppure modificarle in base alle esigenze.
+
+Poiché una pianificazione di snapshot è associata a un gruppo di snapshot o a un gruppo di coerenza di snapshot, la capacità riservata potrebbe essere influenzata dalle modifiche alle impostazioni di pianificazione.
+
+.Fasi
+. Selezionare menu:Storage[Snapshot].
+. Fare clic sulla scheda *programmi*.
+. Selezionare il programma di snapshot che si desidera modificare, quindi fare clic su *Edit* (Modifica).
++
+Viene visualizzata la finestra di dialogo Modifica pianificazione snapshot.
+
+. Effettuare una delle seguenti operazioni:
++
+** *Utilizzare un programma definito in precedenza da un altro oggetto di snapshot* -- fare clic su *Importa pianificazione*, selezionare l'oggetto con il programma che si desidera importare, quindi fare clic su *Importa*.
+** *Modificare le impostazioni del programma* -- fare riferimento ai dettagli dei campi riportati di seguito.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+Giorno / mese
+ a| 
+Scegliere una delle seguenti opzioni:
+
+*** *Daily / Weekly* -- Seleziona i singoli giorni per gli snapshot di sincronizzazione. È inoltre possibile selezionare la casella di controllo *Select All days* (Seleziona tutti i giorni) in alto a destra se si desidera una pianificazione giornaliera.
+*** *Mensile / annuale* -- selezionare i singoli mesi per le snapshot di sincronizzazione. Nel campo *on day(s)*, immettere i giorni del mese per le sincronizzazioni da eseguire. Le voci valide sono da *1* a *31* e *Last*. È possibile separare più giorni con una virgola o un punto e virgola. Utilizzare un trattino per le date inclusive. Ad esempio: 1,3,4,10-15,ultimo. Se si desidera una pianificazione mensile, è anche possibile selezionare la casella di controllo *Seleziona tutti i mesi* in alto a destra.
+
+
+
+
+ a| 
+Ora di inizio
+ a| 
+Dall'elenco a discesa, selezionare una nuova ora di inizio per le istantanee giornaliere. Le selezioni sono disponibili con incrementi di mezz'ora. Per impostazione predefinita, l'ora di inizio è mezz'ora prima dell'ora corrente.
+
+
+
+ a| 
+Fuso orario
+ a| 
+Dall'elenco a discesa, selezionare il fuso orario dell'array di storage.
+
+
+
+ a| 
+Snapshot al giorno
+
+Tempo tra le snapshot
+ a| 
+Selezionare il numero di immagini snapshot da creare al giorno.
+
+Se si selezionano più punti, selezionare anche l'intervallo di tempo tra i punti di ripristino. Per più punti di ripristino, assicurarsi di disporre di una capacità riservata adeguata.
+
+
+
+ a| 
+Data di inizio
+
+Data di fine
+
+Nessuna data di fine
+ a| 
+Inserire la data di inizio delle sincronizzazioni. Inserire anche una data di fine o selezionare *Nessuna data di fine*.
+
+|===
+====
+
+
+. Fare clic su *Save* (Salva).
+

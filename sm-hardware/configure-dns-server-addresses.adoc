@@ -1,0 +1,60 @@
+---
+permalink: sm-hardware/configure-dns-server-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, dns, server, addresses, 
+summary: 'DNS (Domain Name System) viene utilizzato per risolvere i nomi di dominio completi per i controller e un server NTP (Network Time Protocol). Le porte di gestione dello storage array supportano contemporaneamente i protocolli IPv4 o IPv6.' 
+---
+= Configurare gli indirizzi del server DNS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+DNS (Domain Name System) viene utilizzato per risolvere i nomi di dominio completi per i controller e un server NTP (Network Time Protocol). Le porte di gestione dello storage array supportano contemporaneamente i protocolli IPv4 o IPv6.
+
+.Prima di iniziare
+* Nella rete deve essere installato e configurato un server DNS.
+* Si conosce l'indirizzo del server DNS primario e di un server DNS di backup opzionale. Questi indirizzi possono essere indirizzi IPv4 o IPv6.
+
+
+.A proposito di questa attività
+Questa procedura descrive come specificare un indirizzo del server DNS primario e di backup. Il server DNS di backup può essere configurato in modo opzionale per l'utilizzo in caso di guasto di un server DNS primario.
+
+[NOTE]
+====
+Se le porte di gestione dello storage array sono già state configurate con il protocollo DHCP (Dynamic host Configuration Protocol) e si dispone di uno o più server DNS o NTP associati alla configurazione DHCP, non è necessario configurare manualmente DNS o NTP. In questo caso, lo storage array avrebbe già ottenuto automaticamente gli indirizzi del server DNS/NTP. Tuttavia, seguire le istruzioni riportate di seguito per aprire la finestra di dialogo e assicurarsi che vengano rilevati gli indirizzi corretti.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
+. Selezionare il controller da configurare.
++
+Viene visualizzato il menu di scelta rapida del controller.
+
+. Selezionare *Configura server DNS*.
++
+Viene visualizzata la finestra di dialogo Configura server DNS (Domain Name System).
+
+. Selezionare una delle seguenti opzioni:
++
+** *Ottieni automaticamente gli indirizzi del server DNS dal server DHCP* -- vengono visualizzati gli indirizzi del server DNS rilevati.
++
+[NOTE]
+====
+Se lo storage array è impostato per utilizzare un indirizzo DNS statico, non viene visualizzato alcun server DNS.
+
+====
+** *Specificare manualmente gli indirizzi del server DNS* -- inserire un indirizzo del server DNS primario e un indirizzo del server DNS di backup. Il server di backup è opzionale. (Questi campi vengono visualizzati dopo aver selezionato il pulsante di opzione). Questi indirizzi possono essere indirizzi IPv4 o IPv6.
+
+
+. Fare clic su *Save* (Salva).
+. Ripetere questa procedura per l'altro controller.
+
+
+.Risultati
+La configurazione DNS viene visualizzata nella scheda delle impostazioni del controller, *DNS / NTP*.

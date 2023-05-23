@@ -1,0 +1,30 @@
+---
+permalink: sm-hardware/turn-on-drive-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
+summary: 'Dalla pagina hardware, è possibile accendere la spia di localizzazione per individuare la posizione fisica di un"unità nell"array di storage.' 
+---
+= Accendere la spia di individuazione del disco
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dalla pagina hardware, è possibile accendere la spia di localizzazione per individuare la posizione fisica di un'unità nell'array di storage.
+
+.A proposito di questa attività
+È possibile individuare singoli dischi o più dischi visualizzati nella pagina hardware.
+
+.Fasi
+. Selezionare *hardware*.
+. Per individuare una o più unità, effettuare una delle seguenti operazioni:
++
+** *Disco singolo* -- dal grafico dello shelf, individuare il disco che si desidera individuare fisicamente nell'array. (Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*). Fare clic sull'unità per visualizzarne il menu di scelta rapida, quindi selezionare *attiva indicatore di posizione*.
++
+La spia di localizzazione del disco si accende. Una volta individuato il disco, tornare alla finestra di dialogo e selezionare *Spegni*.
+
+** *Dischi multipli* -- nei campi dei filtri, selezionare un tipo di disco fisico dall'elenco a discesa a sinistra e un tipo di disco logico dall'elenco a discesa a destra. Il numero di dischi che corrispondono ai criteri specificati viene visualizzato all'estrema destra dei campi. Quindi, è possibile fare clic su *accendere le luci di individuazione* o selezionare *individuare tutte le unità filtrate* dal menu di scelta rapida. Una volta individuati i dischi, tornare alla finestra di dialogo e selezionare *Spegni*.
+
+
+

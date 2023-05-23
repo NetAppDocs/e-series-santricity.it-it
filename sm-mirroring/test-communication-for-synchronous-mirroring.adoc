@@ -1,0 +1,34 @@
+---
+permalink: sm-mirroring/test-communication-for-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
+summary: È possibile testare la comunicazione tra un array di storage locale e un array di storage remoto per diagnosticare possibili problemi di comunicazione per una coppia mirrorata che partecipa al mirroring sincrono. 
+---
+= Verifica della comunicazione per il mirroring sincrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile testare la comunicazione tra un array di storage locale e un array di storage remoto per diagnosticare possibili problemi di comunicazione per una coppia mirrorata che partecipa al mirroring sincrono.
+
+.A proposito di questa attività
+Vengono eseguiti due diversi test:
+
+* *Comunicazione* -- verifica che i due array di storage dispongano di un percorso di comunicazione. Il test di comunicazione verifica che l'array di storage locale possa comunicare con l'array di storage remoto e che il volume secondario associato alla coppia mirrorata esista sull'array di storage remoto.
+* *Latency* -- Invia un comando SCSI test unit al volume secondario sull'array di storage remoto associato alla coppia mirrorata per verificare la latenza minima, media e massima.
+
+
+.Fasi
+. Selezionare menu:Storage[Synchronous Mirroring].
+. Selezionare la coppia mirrorata che si desidera verificare, quindi selezionare *Test Communication* (verifica comunicazione).
+. Esaminare le informazioni visualizzate nella finestra dei risultati e, se necessario, seguire l'azione correttiva indicata.
++
+[NOTE]
+====
+Se il test di comunicazione non riesce, il test continua a essere eseguito dopo la chiusura di questa finestra di dialogo fino a quando non viene ripristinata la comunicazione tra la coppia mirrorata.
+
+====
+

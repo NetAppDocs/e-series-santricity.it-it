@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/why-would-i-logically-replace-a-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, logically, replace, drive, 
+summary: 'Se un disco si guasta o si desidera sostituirlo per qualsiasi altro motivo e si dispone di un disco non assegnato nell"array di storage, è possibile sostituire logicamente il disco guasto con quello non assegnato. Se non si dispone di un disco non assegnato, è possibile sostituirlo fisicamente.' 
+---
+= Perché dovrei sostituire logicamente un disco?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se un disco si guasta o si desidera sostituirlo per qualsiasi altro motivo e si dispone di un disco non assegnato nell'array di storage, è possibile sostituire logicamente il disco guasto con quello non assegnato. Se non si dispone di un disco non assegnato, è possibile sostituirlo fisicamente.
+
+I dati dell'unità originale vengono copiati o ricostruiti sull'unità sostitutiva.

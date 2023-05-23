@@ -1,0 +1,82 @@
+---
+permalink: sm-storage/rtv-what-do-i-need-to-know-before-starting-a-remote-storage-import.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, import 
+summary: La funzione di storage remoto consente di copiare i dati da un sistema di storage remoto a un volume su un sistema di storage e-Series locale. Prima di utilizzare questa funzione, consultare le seguenti linee guida. 
+---
+= Cosa occorre sapere prima di avviare un'importazione dello storage remoto?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La funzione di storage remoto consente di copiare i dati da un sistema di storage remoto a un volume su un sistema di storage e-Series locale. Prima di utilizzare questa funzione, consultare le seguenti linee guida.
+
+
+
+== Configurazione
+
+Prima di creare l'importazione dello storage remoto, è necessario completare le seguenti azioni e verificare le seguenti condizioni:
+
+* Assicurarsi che ciascun controller del sistema storage locale e-Series disponga di una connessione iSCSI al sistema storage remoto.
+* Nel sistema storage e-Series locale, creare un volume di destinazione per l'operazione di importazione. Assicurarsi che il volume abbia una capacità uguale o superiore al volume di origine, abbia una dimensione del blocco corrispondente al volume di origine e non sia mappato. Vedere link:create-volumes.html["Creare volumi"].
+* Configurare il sistema storage e-Series locale come host sul sistema remoto utilizzando il nome iSCSI qualificato (IQN). È possibile visualizzare l'IQN dal menu:Impostazioni[sistema > Impostazioni iSCSI > IQN di destinazione]. Inoltre, assicurarsi di impostare il tipo di host appropriato in base al sistema in uso.
+* Arrestare tutti i sistemi i/o, smontare i file system e rimuovere eventuali assegnazioni agli host o alle applicazioni per il volume selezionato sul sistema di storage remoto.
+* Assegnare il volume al sistema di storage remoto all'host del sistema di storage e-Series locale appena creato.
+* Raccogliere le seguenti informazioni dal sistema di storage remoto in modo da poter creare l'importazione:
++
+** Nome qualificato iSCSI (IQN)
+** Indirizzo IP iSCSI
+** Il numero LUN del dispositivo di storage remoto, in cui provengono i dati di origine
+
+
+* Una volta avviato il processo di importazione, l'intero volume di destinazione locale viene sovrascritto con i dati copiati. I nuovi dati scritti nel volume di destinazione locale vengono propagati al volume sul dispositivo di storage remoto dopo la creazione dell'importazione. Pertanto, si consiglia di eseguire il backup dei volumi sul sistema di storage remoto prima di avviare il processo di importazione.
+
+
+
+
+== Processo di importazione
+
+La procedura seguente illustra il processo di importazione.
+
+. Accedere all'interfaccia di System Manager, quindi alla pagina *Remote Storage*. Selezionare *Importa* per avviare una nuova creazione di importazione. Per istruzioni dettagliate, vedere link:rtv-import-remote-storage.html["Importa storage remoto"].
++
+Se si desidera eseguire un'importazione offline, non mappare il volume di destinazione fino al completamento dell'importazione.
+
+. Monitorare l'avanzamento dell'importazione.
++
+Una volta avviata l'importazione, è possibile mappare il volume di destinazione. Il tempo necessario per completare l'operazione di importazione dipende dalle dimensioni del dispositivo di storage remoto (volume di origine), dall'impostazione della priorità per l'importazione e dalla quantità di carico i/o sui sistemi storage e sui volumi associati.
+
++
+Al termine dell'importazione, il volume di destinazione è un duplicato dell'origine.
+
+. Quando si è pronti a interrompere la relazione di mappatura, eseguire un'operazione *Disconnect* sull'oggetto di importazione dal pannello *Operations in Progress* (operazioni in corso).
+
+
+Una volta disconnessa l'importazione, le prestazioni della destinazione locale tornano alla normalità e non sono più influenzate dalla connessione remota.
+
+
+
+== Restrizioni
+
+La funzione di storage remoto presenta le seguenti restrizioni:
+
+* Il mirroring deve essere disattivato.
+* Il volume di destinazione sul sistema e-Series non deve disporre di snapshot.
+* Il volume di destinazione sul sistema e-Series non deve essere mappato ad alcun host prima dell'avvio dell'importazione.
+* Il provisioning delle risorse del volume di destinazione nel sistema e-Series deve essere disattivato.
+* I mapping diretti del volume di storage remoto a uno o più host non sono supportati.
+* Il proxy dei servizi Web non è supportato.
+* I segreti CHAP iSCSI non sono supportati.
+* SMcli non è supportato.
+* VMware Datastore non è supportato.
+* Quando è presente una coppia di importazione, è possibile aggiornare un solo sistema di storage alla volta nella coppia relazione/importazione.
+
+
+
+
+== Ulteriori informazioni
+
+Per ulteriori informazioni sulla funzione di storage remoto, visitare il sito https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Report tecnico sullo storage remoto"^].

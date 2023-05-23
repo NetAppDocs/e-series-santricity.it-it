@@ -1,0 +1,62 @@
+---
+permalink: sm-storage/increase-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, increase, reserved, capacity 
+summary: È possibile aumentare la capacità riservata, ovvero la capacità fisicamente allocata utilizzata per qualsiasi operazione di servizio di copia su un oggetto di storage. 
+---
+= Aumentare la capacità riservata
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aumentare la capacità riservata, ovvero la capacità fisicamente allocata utilizzata per qualsiasi operazione di servizio di copia su un oggetto di storage.
+
+Per le operazioni di snapshot, si tratta in genere del 40% del volume di base; per le operazioni di mirroring asincrono si tratta in genere del 20% del volume di base. In genere, si aumenta la capacità riservata quando si riceve un avviso che indica che la capacità riservata dell'oggetto di storage sta diventando piena.
+
+.Prima di iniziare
+* Il volume nel pool o nel gruppo di volumi deve avere uno stato ottimale e non deve essere in alcun stato di modifica.
+* La capacità libera deve essere presente nel pool o nel gruppo di volumi che si desidera utilizzare per aumentare la capacità.
++
+Se non esiste capacità libera in alcun pool o gruppo di volumi, è possibile aggiungere capacità non assegnata sotto forma di unità inutilizzate a un pool o a un gruppo di volumi.
+
+
+
+.A proposito di questa attività
+È possibile aumentare la capacità riservata solo con incrementi di 8 GiB per i seguenti oggetti di storage:
+
+* Gruppo di snapshot
+* Volume Snapshot
+* Volume membro del gruppo di coerenza
+* Volume di coppia mirrorato
+
+
+Utilizzare una percentuale elevata se si ritiene che il volume primario subirà molte modifiche o se la durata di una determinata operazione di servizio di copia sarà molto lunga.
+
+[NOTE]
+====
+Non è possibile aumentare la capacità riservata per un volume di snapshot di sola lettura. Solo i volumi Snapshot in lettura/scrittura richiedono una capacità riservata.
+
+====
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Selezionare la scheda *capacità riservata*.
+. Selezionare l'oggetto di storage per il quale si desidera aumentare la capacità riservata, quindi fare clic su *aumenta capacità*.
++
+Viene visualizzata la finestra di dialogo aumenta capacità riservata.
+
+. Utilizzare la casella di selezione per regolare la percentuale di capacità.
++
+Se la capacità libera non esiste nel pool o nel gruppo di volumi che contiene l'oggetto di storage selezionato e l'array di storage dispone di capacità non assegnata, è possibile creare un nuovo pool o gruppo di volumi. È quindi possibile riprovare a eseguire questa operazione utilizzando la nuova capacità libera del pool o del gruppo di volumi.
+
+. Fare clic su *aumenta*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Aumenta la capacità riservata per l'oggetto di storage.
+* Visualizza la capacità riservata aggiunta di recente.
+

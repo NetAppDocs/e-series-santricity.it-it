@@ -1,0 +1,22 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-unlocking-secure-drives.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unlocking, secure, drives, 
+summary: Per sbloccare i dati da un disco abilitato alla protezione, è necessario importarne la chiave di sicurezza. 
+---
+= Cosa devo sapere prima di sbloccare dischi sicuri?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per sbloccare i dati da un disco abilitato alla protezione, è necessario importarne la chiave di sicurezza.
+
+Prima di sbloccare dischi sicuri, tenere presenti le seguenti linee guida:
+
+* Lo storage array deve già disporre di una chiave di sicurezza. I dischi migrati verranno ridimitati nell'array di storage di destinazione.
+* Per i dischi che si stanno migrando, è necessario conoscere l'identificatore della chiave di sicurezza e la passphrase che corrisponde al file della chiave di sicurezza.
+* Il file della chiave di sicurezza deve essere disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager).
+* Se si sta reimpostando un disco NVMe bloccato, è necessario inserire l'ID di sicurezza del disco. Per individuare l'ID di sicurezza, rimuovere fisicamente l'unità e individuare la stringa PSID (massimo 32 caratteri) sull'etichetta dell'unità. Assicurarsi che il disco sia reinstallato prima di avviare l'operazione.
+

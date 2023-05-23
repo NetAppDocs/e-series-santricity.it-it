@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/remove-synchronous-mirror-relationship.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, synchronous, mirror, relationship, 
+summary: 'Rimuovere una coppia mirrorata per rimuovere la relazione di mirroring dal volume primario sull"array di storage locale e dal volume secondario sull"array di storage remoto.' 
+---
+= Rimuovere la relazione di mirroring sincrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Rimuovere una coppia mirrorata per rimuovere la relazione di mirroring dal volume primario sull'array di storage locale e dal volume secondario sull'array di storage remoto.
+
+.A proposito di questa attività
+È inoltre possibile rimuovere una coppia mirrorata per correggere uno stato di coppia mirrorata orfana. Esaminare le seguenti informazioni sulle coppie di mirroring orfane:
+
+* Esiste una coppia di mirroring orfano quando un volume membro è stato rimosso da un lato (locale/remoto) ma non dall'altro.
+* Le coppie di mirroring orfane vengono rilevate quando viene ripristinata la comunicazione tra array.
+
+
+.Fasi
+. Selezionare menu:Storage[Synchronous Mirroring].
+. Selezionare la coppia mirrorata che si desidera rimuovere, quindi selezionare il menu:operazioni non comuni[Rimuovi].
++
+Viene visualizzata la finestra di dialogo Rimuovi relazione mirror.
+
+. Confermare la rimozione della coppia mirrorata, quindi fare clic su *Rimuovi*.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Rimuove la relazione di mirroring dalla coppia mirrorata sull'array di storage locale e sull'array di storage remoto.
+* Restituisce il volume primario e il volume secondario a volumi non mirrorati accessibili all'host.
+* Aggiorna il riquadro Synchronous Mirroring con la rimozione della coppia di mirroring sincrono.
+

@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/overview-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, 
+summary: 'È possibile utilizzare System Manager per creare CSR (Certificate Signing Request), importare certificati e gestire i certificati esistenti.' 
+---
+= Panoramica dei certificati
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare System Manager per creare CSR (Certificate Signing Request), importare certificati e gestire i certificati esistenti.
+
+
+
+== Cosa sono i certificati?
+
+I _certificati_ sono file digitali che identificano entità online, come siti Web e server, per comunicazioni sicure su Internet. Esistono due tipi di certificati: Un _certificato firmato_ viene validato da un'autorità di certificazione (CA) e un _certificato autofirmato_ viene validato dal proprietario dell'entità anziché da una terza parte.
+
+Scopri di più:
+
+* link:how-certificates-work-sam.html["Come funzionano i certificati"]
+* link:certificate-terminology.html["Terminologia del certificato"]
+
+
+
+
+== Come si configurano i certificati firmati?
+
+Si genera prima una richiesta di firma da System Manager, quindi si invia il file a una CA. Una volta che la CA restituisce i file di certificato, è possibile importarli utilizzando System Manager.
+
+Scopri di più:
+
+* link:use-ca-signed-certificates-for-controllers.html["USA certificati firmati CA per i controller"]
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Utilizzare i certificati firmati CA per l'autenticazione con un server di gestione delle chiavi"]
+
+
+
+
+== Informazioni correlate
+
+Scopri di più sulle attività correlate ai certificati:
+
+* link:view-imported-certificates.html["Visualizzare le informazioni sul certificato importato"]
+* link:enable-certificate-revocation-checking.html["Attiva il controllo della revoca del certificato"]
+

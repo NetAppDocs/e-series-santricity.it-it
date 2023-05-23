@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/what-is-controller-cache.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, cache, 
+summary: 'La cache del controller è uno spazio di memoria fisica che ottimizza due tipi di operazioni di i/o (input/output): Tra controller e host e tra controller e dischi.' 
+---
+= Che cos'è la cache del controller?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La cache del controller è uno spazio di memoria fisica che ottimizza due tipi di operazioni di i/o (input/output): Tra controller e host e tra controller e dischi.
+
+Per i trasferimenti di dati in lettura e scrittura, gli host e i controller comunicano tramite connessioni ad alta velocità. Tuttavia, le comunicazioni dal back-end del controller ai dischi sono più lente, perché i dischi sono dispositivi relativamente lenti.
+
+Quando la cache del controller riceve i dati, il controller riconosce alle applicazioni host che i dati sono ora memorizzati. In questo modo, le applicazioni host non devono attendere che l'i/o venga scritto su disco. Le applicazioni possono invece continuare a lavorare. I dati memorizzati nella cache sono facilmente accessibili anche dalle applicazioni server, eliminando la necessità di letture aggiuntive del disco per accedere ai dati.
+
+La cache del controller influisce sulle prestazioni complessive dello storage array in diversi modi:
+
+* La cache funge da buffer, in modo che i trasferimenti di dati su host e disco non debbano essere sincronizzati.
+* I dati per un'operazione di lettura o scrittura dall'host potrebbero trovarsi nella cache di un'operazione precedente, eliminando così la necessità di accedere al disco.
+* Se viene utilizzato il caching in scrittura, l'host può inviare comandi di scrittura successivi prima che i dati di un'operazione di scrittura precedente vengano scritti su disco.
+* Se il prefetch della cache è attivato, l'accesso in lettura sequenziale è ottimizzato. Il prefetch della cache rende più probabile che un'operazione di lettura trovi i propri dati nella cache, invece di leggere i dati dal disco.
+
+
+[CAUTION]
+====
+*Possibile perdita di dati* -- se si attiva l'opzione *Write caching without batteries* e non si dispone di un alimentatore universale per la protezione, si potrebbero perdere i dati. Inoltre, è possibile perdere i dati se non si dispone di batterie del controller e si attiva l'opzione *Write caching without batteries*.
+
+====

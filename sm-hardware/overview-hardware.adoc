@@ -1,0 +1,55 @@
+---
+permalink: sm-hardware/overview-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, 
+summary: È possibile controllare lo stato dei componenti nella pagina hardware ed eseguire alcune funzioni correlate a tali componenti. 
+---
+= Panoramica dei componenti hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile controllare lo stato dei componenti nella pagina hardware ed eseguire alcune funzioni correlate a tali componenti.
+
+
+
+== Quali componenti posso gestire?
+
+È possibile controllare lo stato dei componenti ed eseguire alcune funzioni correlate a questi componenti:
+
+* **Shelf** -- Un _shelf_ è un componente che contiene l'hardware per lo storage array (controller, alimentatori/ventole e dischi). Gli shelf sono disponibili in tre dimensioni per ospitare fino a 12, 24 o 60 dischi.
+* **Controller** -- Un _controller_ è l'hardware e il firmware combinati che implementa le funzioni di storage array e gestione. Include la memoria cache, il supporto del disco e le porte per le connessioni host.
+* **Dischi** -- Un _disco_ può essere un disco rigido (HDD) o un disco a stato solido (SSD). A seconda delle dimensioni dello shelf, è possibile installare fino a 12, 24 o 60 dischi nello shelf.
+
+
+Scopri di più:
+
+* link:hardware-page-overview.html["Pagina hardware"]
+* link:hardware-terminology.html["Terminologia hardware"]
+
+
+
+
+== Come si visualizzano i componenti hardware?
+
+Accedere alla pagina hardware, che fornisce una rappresentazione grafica dei componenti fisici dell'array di storage. È possibile passare dalla vista anteriore a quella posteriore degli shelf degli array selezionando *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'alto a destra della vista dello shelf.
+
+Scopri di più:
+
+* link:view-shelf-component-status-and-settings.html["Visualizzare lo stato e le impostazioni dei componenti dello shelf"]
+* link:view-controller-settings.html["Visualizzare le impostazioni del controller"]
+* link:view-drive-status-and-settings.html["Visualizzare lo stato e le impostazioni del disco"]
+
+
+
+
+= Informazioni correlate
+
+Scopri di più sui concetti relativi all'hardware:
+
+* link:controller-states.html["stati del controller"]
+* link:drive-states.html["stati del disco"]
+* link:what-is-shelf-loss-protection-and-drawer-loss-protection.html["Protezione contro la perdita di scaffali e protezione contro la perdita di cassetti"]
+

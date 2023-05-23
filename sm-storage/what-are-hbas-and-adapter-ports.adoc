@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-are-hbas-and-adapter-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hbas, adapter, ports 
+summary: 'Un HBA (host bus adapter) è una scheda che risiede in un host e contiene una o più porte host. Una porta host è una porta di un HBA (host Bus Adapter) che fornisce la connessione fisica a un controller e viene utilizzata per le operazioni di i/O.' 
+---
+= Cosa sono gli HBA e le porte dell'adattatore?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un HBA (host bus adapter) è una scheda che risiede in un host e contiene una o più porte host. Una porta host è una porta di un HBA (host Bus Adapter) che fornisce la connessione fisica a un controller e viene utilizzata per le operazioni di i/O.
+
+Le porte dell'adattatore sull'HBA sono denominate porte host. La maggior parte degli HBA dispone di una o due porte host. L'HBA dispone di un WWID (World Wide Identifier) univoco e ogni porta host HBA dispone di un WWID univoco. Gli identificatori delle porte host vengono utilizzati per associare l'HBA appropriato all'host fisico quando si crea manualmente l'host tramite Gestore di sistema SANtricity o si crea automaticamente l'host utilizzando l'agente di contesto host.

@@ -1,0 +1,89 @@
+---
+permalink: sm-settings/alerts-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alerts, terms, 
+summary: Scopri in che modo i termini degli avvisi si applicano al tuo array di storage. 
+---
+= Terminologia degli avvisi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri in che modo i termini degli avvisi si applicano al tuo array di storage.
+
+[cols="25h,~"]
+|===
+| Componente | Descrizione 
+
+
+ a| 
+Monitoraggio degli eventi
+ a| 
+Il monitor degli eventi risiede nell'array di storage e viene eseguito come attività in background. Quando il monitor degli eventi rileva anomalie sull'array di storage, scrive informazioni sui problemi nel registro eventi. I problemi possono includere eventi come guasti alla batteria, spostamento di un componente da ottimale a offline o errori di ridondanza nel controller. Se il monitor degli eventi determina che l'evento è "allertabile", invia una notifica utilizzando i metodi di avviso configurati (e-mail, SNMP e/o syslog). Tutti gli eventi critici sono considerati "allertabili", insieme ad alcuni eventi di avviso e informativi.
+
+
+
+ a| 
+Server di posta
+ a| 
+Il server di posta viene utilizzato per inviare e ricevere avvisi e-mail. Il server utilizza il protocollo SMTP (Simple Mail Transfer Protocol).
+
+
+
+ a| 
+SNMP
+ a| 
+SNMP (Simple Network Management Protocol) è un protocollo standard Internet utilizzato per la gestione e la condivisione delle informazioni tra dispositivi su reti IP.
+
+
+
+ a| 
+Trap SNMP
+ a| 
+Un trap SNMP è una notifica inviata a un server SNMP. La trap contiene informazioni su problemi significativi con l'array di storage.
+
+
+
+ a| 
+Destinazione trap SNMP
+ a| 
+Una destinazione trap SNMP è un indirizzo IPv4 o IPv6 del server che esegue un servizio SNMP.
+
+
+
+ a| 
+Nome di comunità
+ a| 
+Un nome di comunità è una stringa che agisce come una password per i server di rete in un ambiente SNMP.
+
+
+
+ a| 
+File MIB
+ a| 
+Il file MIB (Management Information base) definisce i dati monitorati e gestiti nell'array di storage. Deve essere copiato e compilato sul server con l'applicazione del servizio SNMP. Questo file MIB è disponibile con il software System Manager sul sito del supporto.
+
+
+
+ a| 
+Variabili MIB
+ a| 
+Le variabili MIB (Management Information base) possono restituire valori come il nome dell'array di storage, la posizione dell'array e una persona di contatto in risposta a SNMP GetRequests.
+
+
+
+ a| 
+Syslog
+ a| 
+Syslog è un protocollo utilizzato dalle periferiche di rete per inviare messaggi di evento a un server di registrazione.
+
+
+
+ a| 
+UDP
+ a| 
+User Datagram Protocol (UDP) è un protocollo di livello di trasporto che specifica un numero di porta di origine e di destinazione nelle intestazioni dei pacchetti.
+
+|===

@@ -1,0 +1,40 @@
+---
+permalink: sm-mirroring/suspend-and-resume-synchronization-for-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirrored, pair, 
+summary: 'È possibile utilizzare l"opzione Sospendi e l"opzione Riprendi per controllare quando sincronizzare i dati sul volume primario e sul volume secondario in una coppia mirrorata.' 
+---
+= Sospendere e riprendere la sincronizzazione per una coppia mirrorata
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile utilizzare l'opzione Sospendi e l'opzione Riprendi per controllare quando sincronizzare i dati sul volume primario e sul volume secondario in una coppia mirrorata.
+
+.A proposito di questa attività
+Se una coppia mirrorata viene sospesa manualmente, la coppia mirrorata non viene sincronizzata fino a quando non viene ripresa manualmente.
+
+.Fasi
+. Selezionare menu:Storage[Synchronous Mirroring].
+. Selezionare la coppia mirrorata che si desidera sospendere o riprendere, quindi selezionare menu:More[Suspend] (Altro[sospensione]) o menu:More[Resume] (Altro[Riprendi]).
++
+Il sistema visualizza una conferma.
+
+. Selezionare *Sì* per confermare.
+
+
+.Risultati
+System Manager esegue le seguenti operazioni:
+
+* Sospende o riprende il trasferimento dei dati tra la coppia mirrorata senza rimuovere la relazione di mirroring.
+* Per una coppia di mirroring _sospesa_:
++
+** Visualizza *sospeso* nella tabella delle coppie mirrorate.
+** Registra tutti i dati scritti nel volume primario della coppia mirrorata mentre la sincronizzazione viene sospesa.
+
+
+* Per una coppia con mirroring _ripresa_, scrive automaticamente i dati nel volume secondario della coppia con mirroring al ripristino della sincronizzazione. Non è richiesta una sincronizzazione completa.
+
