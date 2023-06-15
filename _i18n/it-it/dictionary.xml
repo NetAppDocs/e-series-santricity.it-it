@@ -8712,4 +8712,6 @@
   <block id="1ee329323d69a8ee4fb262351ae2bb47" category="sidebar">In che modo il mirroring sincrono differisce dal mirroring asincrono?</block>
   <block id="7948b47687c25969b744a950d4151812" category="sidebar">Mirroring sincrono - perché non vengono visualizzati tutti i volumi?</block>
   <block id="389d3a8b3a5730bc57f7f4d0b4d48716" category="sidebar">Mirroring sincrono - perché non vengono visualizzati tutti i volumi sull'array di storage remoto?</block>
+  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">Nuove funzionalità della versione 11.75</block>
+  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">Per eseguire l'aggiornamento alla versione 11.80.x o successiva, è necessario che i sistemi eseguano la versione 11.70.5.</block>
 </blocks>

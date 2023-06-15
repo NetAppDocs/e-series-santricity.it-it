@@ -16,6 +16,12 @@ La seguente tabella descrive le nuove funzionalità di Gestione di sistema di SA
 
 
 
+== Nuove funzionalità della versione 11.75
+
+Per eseguire l'aggiornamento alla versione 11.80.x o successiva, è necessario che i sistemi eseguano la versione 11.70.5.
+
+
+
 == Nuove funzionalità della versione 11.74
 
 [cols="35h,~"]
