@@ -12,7 +12,7 @@ summary: Nuove funzionalità di SANtricity OS.
 
 
 [role="lead"]
-La seguente tabella descrive le nuove funzionalità di Gestione sistemi SANtricity 11,8x.
+La seguente tabella descrive le nuove funzionalità di Gestione di sistema di SANtricity 11.8.
 
 
 

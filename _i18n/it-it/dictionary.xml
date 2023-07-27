@@ -8681,7 +8681,6 @@
   <block id="25e21eea77a06faadbc2ce2007dfd8fa" category="paragraph">Prestare attenzione a non rimuovere le autorizzazioni mentre SAML è attivato, altrimenti si perde l'accesso a Unified Manager.</block>
   <block id="bdf60d91552728cd5d2f943df141631b" category="paragraph">Fare clic nel campo e selezionare uno dei ruoli dell'array di storage da mappare all'attributo. È necessario selezionare singolarmente ciascun ruolo che si desidera includere per questo gruppo. Per accedere a Unified Manager, è necessario il ruolo di monitoraggio in combinazione con gli altri ruoli. Un ruolo di amministratore della sicurezza deve essere assegnato ad almeno un gruppo. I ruoli mappati includono le seguenti autorizzazioni:</block>
   <block id="84f60aaee7374184081d849821cae03b" category="doc">Novità di SANtricity OS 11.80</block>
-  <block id="ee178cd31372157b6b4ef199f32f28e6" category="paragraph">La seguente tabella descrive le nuove funzionalità di Gestione sistemi SANtricity 11,8x.</block>
   <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">Nuove funzionalità della versione 11.80</block>
   <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">Enhanced Volume Parity Scan (scansione parity volume avanzata)</block>
   <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">La scansione della parità del volume può ora essere avviata come processo in background tramite l'API REST o tramite CLI. La scansione di parità risultante viene eseguita in background per tutto il tempo necessario per completare l'operazione di scansione. Le operazioni di scansione sopravvivono ai riavvii del controller e alle operazioni di failover.</block>
@@ -8716,7 +8715,6 @@
   <block id="1c0cc3436484a2d69e30cbe7f637d3ed" category="paragraph">Identificatore della porta</block>
   <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">Il monitor degli eventi invia avvisi al server syslog ogni volta che si verifica un evento verificabile. Per configurare ulteriormente le impostazioni syslog per i registri di controllo, vedere<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
   <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti. Per configurare ulteriormente le impostazioni syslog per gli avvisi, vedere<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
-  <block id="4bc4384815b2cb7cd1edee10550e5472" category="list-text">_Da definire per le note di rilascio del 11.80_</block>
   <block id="c76b2a182c36f1230239bad4c28112a3" category="doc">Documentazione del software SANtricity 11.80</block>
   <block id="3260e793a72a8ad4c6f8b10665ca25ac" category="doc">Gestione di array multipli con Unified Manager 6</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager - interfaccia basata su Web utilizzata per gestire un singolo array di storage nella rete.</block>
@@ -8725,4 +8723,7 @@
   <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Viste di dischi, controller e componenti</block>
   <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Per passare dalla vista anteriore a quella posteriore, selezionare *Drives* (unità) o *Controllers &amp; Components* (Controller e componenti) dall'estrema destra (il collegamento visualizzato dipende dalla vista corrente). La vista *Drives* mostra i dischi e gli eventuali alloggiamenti vuoti. La vista *Controller &amp; Components* mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutti i dischi*.</block>
   <block id="a26b62aaf12a1354ed2f5726f1a44f96" category="sidebar">Documenti di SANtricity 11.8</block>
+  <block id="d10baea6d3a0d4c1b494ce57d94cdadb" category="paragraph">La seguente tabella descrive le nuove funzionalità di Gestione di sistema di SANtricity 11.8.</block>
+  <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11.80 Note di rilascio</block>
+  <block id="b1aa5c2649b826498df008931f57355f" category="list-text"><block ref="b1aa5c2649b826498df008931f57355f" category="inline-link-rx"></block></block>
 </blocks>
