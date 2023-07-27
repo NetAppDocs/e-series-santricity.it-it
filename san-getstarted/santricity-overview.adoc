@@ -15,12 +15,12 @@ I sistemi e-Series includono il software SANtricity per il provisioning dello st
 
 Questo sito descrive come utilizzare le seguenti interfacce di gestione SANtricity:
 
-* System Manager -- interfaccia basata su web utilizzata per gestire un controller in un array di storage.
+* System Manager - interfaccia basata su Web utilizzata per gestire un singolo array di storage nella rete.
 * Unified Manager: Interfaccia basata su web utilizzata per visualizzare e gestire tutti gli array di storage della rete.
 
 
 
-NOTE: Gli storage array EF600 e EF300 non supportano funzionalità di mirroring, thin volumi o SSD cache.
+NOTE: Gli storage array EF600 e EF300 non supportano il mirroring sincrono o i thin volumi.
 
 
 

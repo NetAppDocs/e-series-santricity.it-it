@@ -86,7 +86,7 @@ Sì
  a| 
 Volume sottile
  a| 
-Sì
+Sì^1^
  a| 
 Sì
  a| 
@@ -97,7 +97,7 @@ No
  a| 
 Volume Snapshot
  a| 
-Sì^1^
+Sì^2^
  a| 
 No
  a| 
@@ -119,13 +119,15 @@ No
  a| 
 Volume primario mirror remoto
  a| 
-Sì^2^
+Sì^3^
  a| 
 No
  a| 
 Sì
 
 |===
-^1^ non è possibile utilizzare la copia del volume snapshot fino al completamento dell'operazione di copia online.
+^1^ il volume di destinazione deve avere una capacità uguale o superiore alla capacità del volume sottile riportata.
 
-^2^ se il volume di origine è un volume primario, la capacità del volume di destinazione deve essere uguale o superiore alla capacità utilizzabile del volume di origine.
+^2^ non è possibile utilizzare la copia del volume snapshot fino al completamento dell'operazione di copia online.
+
+^3^ se il volume di origine è un volume primario, la capacità del volume di destinazione deve essere uguale o superiore alla capacità utilizzabile del volume di origine.

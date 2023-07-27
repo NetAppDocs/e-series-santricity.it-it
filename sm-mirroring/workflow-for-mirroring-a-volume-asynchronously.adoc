@@ -13,11 +13,6 @@ summary: Il mirroring asincrono viene configurato utilizzando il seguente flusso
 [role="lead"]
 Il mirroring asincrono viene configurato utilizzando il seguente flusso di lavoro.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 . Eseguire la configurazione iniziale in Unified Manager:
 +
 .. Selezionare lo storage array locale come origine per il trasferimento dei dati.

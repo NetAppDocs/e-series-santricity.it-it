@@ -160,11 +160,6 @@ La capacità riservata è la capacità fisica allocata utilizzata per qualsiasi 
  a| 
 Cache SSD
  a| 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 SSD cache è un insieme di dischi a stato solido (SSD) che vengono raggruppati logicamente nel vostro array di storage. La funzione SSD cache memorizza nella cache i dati più utilizzati (dati "hot") su unità SSD a latenza inferiore per accelerare dinamicamente i carichi di lavoro delle applicazioni.
 
 

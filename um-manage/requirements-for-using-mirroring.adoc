@@ -29,7 +29,7 @@ Se si prevede di configurare il mirroring, tenere presenti i seguenti requisiti.
 
 [NOTE]
 ====
-Il mirroring non è disponibile sullo storage array EF600 o EF300.
+Il mirroring sincrono non è disponibile sull'array di storage EF600 o EF300.
 
 ====
 * È necessario disporre di due array di storage.
@@ -77,6 +77,10 @@ La comunicazione tra controller iSCSI deve utilizzare una porta di connessione h
 == Volumi mirrorati candidati
 
 * Il livello RAID, i parametri di caching e le dimensioni dei segmenti possono essere diversi sui volumi primari e secondari di una coppia mirrorata.
++
+
+NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia asincrona con mirroring devono corrispondere allo stesso protocollo, livello di vassoio, dimensione del segmento, tipo di sicurezza e livello RAID. Le coppie mirrorate asincrone non idonee non vengono visualizzate nell'elenco dei volumi disponibili.
+
 * Il volume secondario deve essere grande almeno quanto il volume primario.
 * Un volume può partecipare a una sola relazione di mirroring.
 * Per una coppia sincrona con mirroring, i volumi primario e secondario devono essere volumi standard. Non possono essere volumi thin o volumi snapshot.

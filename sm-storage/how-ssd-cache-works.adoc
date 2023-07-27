@@ -13,11 +13,6 @@ summary: 'La funzionalità SSD cache è una soluzione basata su controller che m
 [role="lead"]
 La funzionalità SSD cache è una soluzione basata su controller che memorizza nella cache i dati più utilizzati (dati "hot") su unità a stato solido (SSD) a bassa latenza per accelerare dinamicamente le prestazioni del sistema. La cache SSD viene utilizzata esclusivamente per le letture host.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 
 
 == Cache SSD rispetto alla cache primaria

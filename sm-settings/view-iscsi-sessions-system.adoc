@@ -94,7 +94,7 @@ Un nome univoco per una connessione all'interno della sessione tra l'iniziatore 
 
 
  a| 
-Identificatore della porta Ethernet
+Identificatore della porta
  a| 
 La porta del controller associata alla connessione.
 

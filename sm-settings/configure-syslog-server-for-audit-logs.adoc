@@ -48,4 +48,4 @@ Se il certificato diventa non valido in un secondo momento, l'handshake TLS avr√
 
 
 .Risultati
-Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti.
+Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti. Per configurare ulteriormente le impostazioni syslog per gli avvisi, vedere https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-alerts.html["Configurare il server syslog per gli avvisi"].

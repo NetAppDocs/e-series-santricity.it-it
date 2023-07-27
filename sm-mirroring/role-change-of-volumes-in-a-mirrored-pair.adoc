@@ -15,7 +15,7 @@ summary: È possibile modificare il ruolo tra i volumi in una coppia mirrorata. 
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Il mirroring sincrono non è disponibile sul sistema storage EF600 o EF300.
 
 ====
 Esaminare le seguenti informazioni sull'operazione di cambiamento di ruolo:

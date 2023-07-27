@@ -14,11 +14,6 @@ summary: È possibile modificare il nome della cache SSD e visualizzarne lo stat
 [role="lead"]
 È possibile modificare il nome della cache SSD e visualizzarne lo stato, la capacità massima e corrente, lo stato di Drive Security e Data Assurance e i volumi e i dischi associati.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 .Fasi
 . Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
 . Selezionare la cache SSD che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).

@@ -19,3 +19,6 @@ I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi 
 * Il volume sta già partecipando a una relazione di mirroring.
 * Per i volumi thin, è necessario attivare l'espansione automatica.
 
+
+
+NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia asincrona con mirroring devono corrispondere allo stesso protocollo, livello di vassoio, dimensione del segmento, tipo di sicurezza e livello RAID. Le coppie mirrorate asincrone non idonee non vengono visualizzate nell'elenco dei volumi disponibili.

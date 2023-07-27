@@ -13,11 +13,6 @@ summary: 'È possibile aggiungere un volume alla cache SSD per migliorare le per
 [role="lead"]
 È possibile aggiungere un volume alla cache SSD per migliorare le performance di sola lettura. La cache SSD è costituita da un set di dischi a stato solido (SSD) che vengono raggruppati logicamente nell'array di storage.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 
 
 == Volumi

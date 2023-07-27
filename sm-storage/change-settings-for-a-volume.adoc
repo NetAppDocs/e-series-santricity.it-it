@@ -17,6 +17,9 @@ summary: 'È possibile modificare le impostazioni di un volume, ad esempio il no
 .Prima di iniziare
 Il volume che si desidera modificare si trova nello stato ottimale.
 
+
+NOTE: Alcune operazioni potrebbero non essere disponibili mentre sono in corso modifiche alle impostazioni del volume
+
 .Fasi
 . Selezionare menu:Storage[Volumes] (Storage[volumi]).
 . Selezionare il volume che si desidera modificare, quindi selezionare *Visualizza/Modifica impostazioni*.
@@ -163,9 +166,6 @@ Mostra l'impostazione del caching, che è possibile modificare per influire sull
  a| 
 Cache SSD
  a| 
-
-NOTE: Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
 Mostra l'impostazione della cache SSD, che è possibile attivare sui volumi compatibili per migliorare le prestazioni di sola lettura. I volumi sono compatibili se condividono le stesse funzionalità di Drive Security e Data Assurance.
 
 *La funzione SSD cache utilizza uno o più dischi a stato solido (SSD) per implementare una cache di lettura*. Le performance applicative sono migliorate grazie ai tempi di lettura più rapidi per gli SSD. Poiché la cache di lettura si trova nell'array di storage, il caching viene condiviso tra tutte le applicazioni che utilizzano l'array di storage. È sufficiente selezionare il volume che si desidera memorizzare nella cache, quindi il caching è automatico e dinamico.

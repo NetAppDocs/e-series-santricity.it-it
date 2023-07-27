@@ -23,42 +23,28 @@ Sono supportati i seguenti browser e versioni.
  a| 
 Google Chrome
  a| 
-79
+89
 
 
 
  a| 
 Mozilla Firefox
  a| 
-70
+80
 
 
 
  a| 
 Safari
  a| 
-12
+14
 
 
 
  a| 
 Microsoft Edge
  a| 
-79
-
-
-
- a| 
-Legacy di Microsoft Edge
- a| 
-18
-
-
-
- a| 
-Microsoft Internet Explorer (MSIE)
- a| 
-11
+90
 
 |===
 [NOTE]

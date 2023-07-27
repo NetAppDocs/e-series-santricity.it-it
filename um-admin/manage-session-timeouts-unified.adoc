@@ -16,6 +16,9 @@ summary: È possibile configurare i timeout per Gestione unificata di SANtricity
 .A proposito di questa attività
 Per impostazione predefinita, il timeout della sessione di Unified Manager è di 30 minuti. È possibile regolare l'orario oppure disattivare completamente i timeout della sessione.
 
+
+NOTE: Se Access Management viene configurato utilizzando le funzionalità SAML (Security Assertion Markup Language) incorporate nell'array, potrebbe verificarsi un timeout di sessione quando la sessione SSO dell'utente raggiunge il limite massimo. Questo potrebbe verificarsi prima del timeout della sessione di System Manager.
+
 .Fasi
 . Dalla barra dei menu, selezionare la freccia a discesa accanto al nome di accesso utente.
 . Selezionare *Enable/Disable session timeout* (attiva/Disattiva timeout sessione).

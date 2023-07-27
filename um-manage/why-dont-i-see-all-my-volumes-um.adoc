@@ -20,3 +20,6 @@ I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi 
 * Per il mirroring sincrono, i volumi primario e secondario di una coppia mirrorata devono essere volumi standard. Non possono essere volumi thin o volumi snapshot.
 * Per il mirroring asincrono, i thin volumi devono avere l'espansione automatica abilitata.
 
+
+
+NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia asincrona con mirroring devono corrispondere allo stesso protocollo, livello di vassoio, dimensione del segmento, tipo di sicurezza e livello RAID. Le coppie mirrorate asincrone non idonee non vengono visualizzate nell'elenco dei volumi disponibili.

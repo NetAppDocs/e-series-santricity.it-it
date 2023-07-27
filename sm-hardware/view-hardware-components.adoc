@@ -24,9 +24,9 @@ La pagina hardware offre funzioni di ordinamento e filtraggio che semplificano l
 
 
  a| 
-Vista dello shelf anteriore e posteriore
+Viste di dischi, controller e componenti
  a| 
-Per passare dalla vista anteriore a quella posteriore dello shelf, selezionare *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'estrema destra (il link visualizzato dipende dalla vista corrente). La vista frontale mostra i dischi e gli eventuali alloggiamenti vuoti. La vista posteriore mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano*.
+Per passare dalla vista anteriore a quella posteriore, selezionare *Drives* (unità) o *Controllers & Components* (Controller e componenti) dall'estrema destra (il collegamento visualizzato dipende dalla vista corrente). La vista *Drives* mostra i dischi e gli eventuali alloggiamenti vuoti. La vista *Controller & Components* mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutti i dischi*.
 
 
 

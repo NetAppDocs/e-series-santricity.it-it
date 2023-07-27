@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SANtricity 11.7
+  name: SANtricity 11.8
   internal:
     pdf_enabled: true
   prod:
@@ -10,17 +10,17 @@ settings:
   versions:
   - name: Software SANtricity
     url: "/e-series-santricity"
+    version-number: '11.8'
+  - name: Software SANtricity
+    url: "/e-series-santricity-117"
     version-number: '11.7'
   - name: Software SANtricity
     url: "/e-series-santricity-116"
     version-number: '11.6'
-  - name: Software SANtricity
-    url: "/e-series-santricity-115"
-    version-number: '11.5'
   langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: Documenti di SANtricity 11.7
+  - title: Documenti di SANtricity 11.8
     url: "/index.html"
   - title: Note di rilascio
     entries:
@@ -1471,6 +1471,8 @@ sidebar:
           url: "/um-certificates/access-management-with-local-user-roles-unified.html"
         - title: Servizi di directory
           url: "/um-certificates/access-management-with-directory-services-unified.html"
+        - title: SAML
+          url: "/um-certificates/access-management-with-saml.html"
       - title: Utilizzare ruoli utente locali
         entries:
         - title: Visualizzare i ruoli utente locali
@@ -1488,6 +1490,14 @@ sidebar:
           url: "/um-certificates/edit-directory-server-settings-unified.html"
         - title: Rimuovere il server di directory
           url: "/um-certificates/remove-directory-server-unified.html"
+      - title: Utilizzare SAML
+        entries:
+        - title: Configurare SAML
+          url: "/um-certificates/configure-saml.html"
+        - title: Modificare le mappature dei ruoli SAML
+          url: "/um-certificates/change-saml-role-mappings.html"
+        - title: Esportare i file del provider di servizi SAML
+          url: "/um-certificates/export-saml-service-provider-files.html"
       - title: FAQ
         entries:
         - title: Perché non riesco ad accedere?
@@ -1496,6 +1506,8 @@ sidebar:
           url: "/um-certificates/what-do-i-need-to-know-before-adding-a-directory-server-unified.html"
         - title: Cosa occorre sapere sulla mappatura dei ruoli degli array di storage?
           url: "/um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html"
+        - title: Cosa occorre sapere prima di configurare e abilitare SAML?
+          url: "/um-certificates/what-do-i-need-to-know-before-configuring-and-enabling-saml.html"
         - title: Quali sono gli utenti locali?
           url: "/um-certificates/what-are-the-local-users.html"
   - title: Versioni precedenti

@@ -244,8 +244,6 @@
   <block id="e019e27b0206a9a09525ee3c5ea9abd6" category="doc">Visualizza i componenti hardware</block>
   <block id="9595c9bf4a677eeb685d28aab9324b1e" category="list-text">Utilizzare le funzioni descritte nella seguente tabella per visualizzare i componenti hardware.</block>
   <block id="86408593c34af77fdd90df932f8b5261" category="cell">Funzione</block>
-  <block id="0297aff6f18d14fbeb4d8ce7aceb5e2e" category="paragraph">Vista dello shelf anteriore e posteriore</block>
-  <block id="2cb0af9002c804177e2f091e253e25ce" category="paragraph">Per passare dalla vista anteriore a quella posteriore dello shelf, selezionare *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'estrema destra (il link visualizzato dipende dalla vista corrente). La vista frontale mostra i dischi e gli eventuali alloggiamenti vuoti. La vista posteriore mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano*.</block>
   <block id="dd9eb8795a8b5c8464b7a3d3ca7b6909" category="paragraph">Filtri per la vista su disco</block>
   <block id="c68b13d5571aa4148d77bafcf9db91a8" category="paragraph">Se lo storage array contiene dischi con diversi tipi di attributi fisici e logici, la pagina *hardware* include i filtri di visualizzazione del disco. Questi campi di filtro consentono di individuare rapidamente unità specifiche limitando i tipi di unità visualizzati nella pagina. Sotto *Mostra dischi che sono...*, fare clic sul campo del filtro a sinistra (per impostazione predefinita, mostra *qualsiasi tipo di disco*) per visualizzare un elenco a discesa degli attributi fisici (ad esempio capacità e velocità). Fare clic sul campo del filtro a destra (per impostazione predefinita, mostra *in qualsiasi punto dello storage array*) per visualizzare un elenco a discesa degli attributi logici (ad esempio, l'assegnazione dei gruppi di volumi). È possibile utilizzare questi filtri insieme o separatamente.</block>
   <block id="47233d56b660bb9d545f03a3019cc00a" category="paragraph">Se l'array di storage contiene dischi che condividono tutti gli stessi attributi fisici, il campo *qualsiasi tipo di disco* a sinistra non viene visualizzato. Se i dischi si trovano tutti nella stessa posizione logica, il campo *Anywhere in the storage array* (qualsiasi punto dell'array di storage) a destra non viene visualizzato.</block>
@@ -982,15 +980,9 @@
   <block id="ef15fd2f45e6bb5ce57587895ba64f93" category="cell">Browser</block>
   <block id="d0a2e00895462c37efe5227c5b94faae" category="cell">Versione minima</block>
   <block id="76868ae832f6c6bd26cadc7d7c269986" category="paragraph">Google Chrome</block>
-  <block id="d1fe173d08e959397adf34b1d77e88d7" category="paragraph">79</block>
   <block id="c70af508e72e2dc32d72f3765abb21b9" category="paragraph">Mozilla Firefox</block>
-  <block id="7cbbc409ec990f19c78c75bd1e06f215" category="paragraph">70</block>
   <block id="50de9bc68c93dc32d8c7c90593471760" category="paragraph">Safari</block>
-  <block id="c20ad4d76fe97759aa27a0c99bff6710" category="paragraph">12</block>
   <block id="a5c41f715c1b8a880253846c025624e9" category="paragraph">Microsoft Edge</block>
-  <block id="0d5633564f2e86c474c8e4f8c9a8d533" category="paragraph">Legacy di Microsoft Edge</block>
-  <block id="6f4922f45568161a8cdf4ad2299f6d23" category="paragraph">18</block>
-  <block id="cede765df61358635d71c56c97dfc628" category="paragraph">Microsoft Internet Explorer (MSIE)</block>
   <block id="6512bd43d9caa6e02c990b0a82652dca" category="paragraph">11</block>
   <block id="24bfb1beabc66d9a6a219a39706480f0" category="paragraph">Il proxy dei servizi Web deve essere installato e disponibile nel browser.</block>
   <block id="c905ab540cd89c88f522731c7c764a87" category="summary">È possibile modificare la password admin utilizzata per accedere a Gestione unificata di SANtricity.</block>
@@ -1045,7 +1037,6 @@
   <block id="eec5524fce50cee0c258abee17cd7455" category="list-text">Dalla pagina Manage (Gestione), selezionare uno o più array di storage.</block>
   <block id="e5d29807b71c6680617647dafa4db722" category="list-text">Selezionare menu:operazioni non comuni[fornire password array di storage].</block>
   <block id="b6deb366a7ea029beae2c06ae5edbee7" category="list-text">Immettere la password o le password per ciascun array di storage, quindi fare clic su *Save* (Salva).</block>
-  <block id="0ce99b430e0880d9c5b01d46d038d4dd" category="summary">Gestore unificato SANtricity 5</block>
   <block id="1b89afe60c3c3728ebb581ee0aac3506" category="summary">Unified Manager è un'interfaccia basata su web che consente di gestire più array di storage in una singola vista.</block>
   <block id="4dce3cdc79e2e44c19e0286c8128e182" category="doc">Panoramica dell'interfaccia di Unified Manager</block>
   <block id="8f8d2783d036ec8dbe4b6b9c1d0fed0d" category="section-title">Pagina principale</block>
@@ -1385,9 +1376,7 @@
   <block id="33f269cc4cd9098419c158473cffe9e4" category="summary">I sistemi e-Series includono il software SANtricity per il provisioning dello storage e altre attività.</block>
   <block id="75a9a7dc8aca16de32b785f0f7b9bc1d" category="doc">Panoramica del software SANtricity</block>
   <block id="ba3a0fdc8434a7821716045b35ac5b56" category="paragraph">Questo sito descrive come utilizzare le seguenti interfacce di gestione SANtricity:</block>
-  <block id="43a99cf5380d48020dfc1071e466e3eb" category="list-text">System Manager -- interfaccia basata su web utilizzata per gestire un controller in un array di storage.</block>
   <block id="4c8fa256f7bb6a36c0dff2d7c9f2a7d3" category="list-text">Unified Manager: Interfaccia basata su web utilizzata per visualizzare e gestire tutti gli array di storage della rete.</block>
-  <block id="63c27446cbc875ce50da9011ea68f5d7" category="admonition">Gli storage array EF600 e EF300 non supportano funzionalità di mirroring, thin volumi o SSD cache.</block>
   <block id="0472921e1ddce2239a2bd92ea276d1c2" category="section-title">Gestore di sistema di SANtricity</block>
   <block id="12491fe4846acc1919e62f4155149b40" category="paragraph">System Manager è un software di gestione basato su web integrato in ciascun controller. Per accedere all'interfaccia utente, puntare un browser verso l'indirizzo IP del controller. L'installazione guidata consente di iniziare a configurare il sistema.</block>
   <block id="e6f420d96363bcc9439b0954a152e61f" category="paragraph">System Manager offre una vasta gamma di funzionalità di gestione, tra cui:</block>
@@ -1408,7 +1397,6 @@
   <block id="977cf952b67f04593161910be13ac423" category="paragraph"><block ref="a6a7b63c3e542eaa546ff069c241f75d" category="inline-image-macro-rx" type="image"></block> *Supporto*</block>
   <block id="7c7aa1597492a4229481882a3be47b81" category="paragraph">Visualizza i dati diagnostici, gestisci gli aggiornamenti e configura AutoSupport, che monitora lo stato di salute di uno storage array e invia automaticamente i dispatches al supporto tecnico.</block>
   <block id="93abfbfe31ac8cb67502c94e622ee8a8" category="section-title">Gestore unificato SANtricity</block>
-  <block id="1a3e4ccf2425125b19b4d5b3b8b17da4" category="paragraph">Unified Manager è un software basato sul web utilizzato per gestire l'intero dominio. Da una vista centrale, è possibile visualizzare lo stato di tutti gli array e-Series ed EF-Series più recenti, come E2800, EF280, EF300, E5700, EF570, E EF600. È inoltre possibile eseguire operazioni batch su array di storage selezionati.</block>
   <block id="290c862dcfeff5fefc8c9503485b46d9" category="paragraph">Unified Manager viene installato su un server di gestione insieme al proxy dei servizi Web. Per accedere a Unified Manager, aprire un browser e immettere l'URL che punta al server in cui è installato il proxy dei servizi Web.</block>
   <block id="95a409858014f8a46f2239633494b0b4" category="paragraph">Unified Manager offre una vasta gamma di funzionalità di gestione, tra cui:</block>
   <block id="ec15df373d2a99afa12ee47320a598ac" category="paragraph"><block ref="8d2259f5e99b0f05cb6565c4c3a18f32" category="inline-image-macro-rx" type="image"></block> *Rilevare gli array di storage*</block>
@@ -1464,7 +1452,6 @@
   <block id="16772c8f2d067bf8a0138a1b1b952b1d" category="inline-link">Scaricare e installare il file proxy dei servizi Web</block>
   <block id="214875cbbc52587429f7cbcd2420fe1e" category="list-text"><block ref="214875cbbc52587429f7cbcd2420fe1e" category="inline-link-rx"></block></block>
   <block id="b0e20a5b05a72022c8f53f4a8d3aea80" category="summary">La documentazione del software SANtricity consente di installare, configurare e gestire lo storage array.</block>
-  <block id="6328cfb48c2111f6991ccd01603442ab" category="doc">Gestione di un singolo array con System Manager 11.7</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Note legali</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
@@ -1481,7 +1468,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">Avviso per i sistemi operativi SANtricity e-Series/EF-Series</block>
   <block id="2dae7f81af3097152530b0bc519d7eb1" category="paragraph"><block ref="2dae7f81af3097152530b0bc519d7eb1" category="inline-link-rx"></block></block>
-  <block id="33fac5e50dba9d05a49bb949dbec339e" category="doc">Gestione di array multipli con Unified Manager 5.3</block>
   <block id="43e6e021e35a985054c90dd5f40bbae5" category="summary">Utilizzare l'opzione consolida capacità libera per consolidare le estensioni libere esistenti su un gruppo di volumi selezionato. Eseguendo questa azione, è possibile creare volumi aggiuntivi dalla quantità massima di capacità libera in un gruppo di volumi.</block>
   <block id="fff6b694dc99f82180aa3d3025a7a5c8" category="doc">Consolidare la capacità libera per un gruppo di volumi</block>
   <block id="c65fcb1eaf23fd299f2b340424dd1413" category="list-text">Il gruppo di volumi deve contenere almeno un'area di capacità libera.</block>
@@ -1592,7 +1578,6 @@
   <block id="8c4610952d549ec3ac128d217f6d1a1d" category="paragraph">La cache SSD funziona in modo diverso dalla cache primaria:</block>
   <block id="b1811dec2d9e4fc056f1220e1d68ac6a" category="list-text">Per la cache primaria, ogni operazione di i/o deve eseguire lo stage dei dati nella cache per eseguire l'operazione.</block>
   <block id="26d2b96dd7443f264e7a55b9451bb7eb" category="paragraph">Nella cache primaria, i dati vengono memorizzati nella DRAM dopo la lettura da parte di un host.</block>
-  <block id="28d2b37b49d1a77bcd91b18d5ebb4833" category="list-text">La cache SSD viene utilizzata solo se è utile inserire i dati nella cache per migliorare le prestazioni generali del sistema.</block>
   <block id="d99cc0acc73a7c8ff099957560c4d59d" category="paragraph">Nella cache SSD, i dati vengono copiati dai volumi e memorizzati su due volumi RAID interni (uno per controller) che vengono creati automaticamente quando si crea una cache SSD.</block>
   <block id="32d0b19e304b07708aa992ca7eeb8536" category="paragraph">I volumi RAID interni vengono utilizzati per l'elaborazione della cache interna. Questi volumi non sono accessibili o visualizzati nell'interfaccia utente. Tuttavia, questi due volumi vengono conteggiati rispetto al numero totale di volumi consentiti nell'array di storage.</block>
   <block id="588aff6b35571bdbf372cbe1fbf8f57b" category="section-title">Come viene utilizzata la cache SSD</block>
@@ -1852,9 +1837,7 @@
   <block id="80f1844d851eb214289c81e17bd44a14" category="doc">Limitazioni della cache SSD</block>
   <block id="e3e16bb73c0250a6a229fb457b4f957e" category="section-title">Restrizioni</block>
   <block id="9d72037d37d97e866a871742350e2716" category="list-text">Attualmente, è supportata una sola cache SSD per array di storage.</block>
-  <block id="ff5b4e80fe614d519f02e8f224dc2de7" category="list-text">La capacità massima di cache SSD utilizzabile su un array di storage è di 5 TB.</block>
   <block id="97b9c6e578c0883e20aadb4f02c00a1e" category="list-text">La cache SSD non è supportata sulle immagini Snapshot.</block>
-  <block id="d21445fece9edf99aa401b679ab88404" category="list-text">La cache SSD non è disponibile sul sistema storage EF600 o EF300.</block>
   <block id="e22e0c1392518c21faad5c9ac78068af" category="list-text">Se si importano o esportano volumi con cache SSD attivata o disattivata, i dati memorizzati nella cache non vengono importati o esportati.</block>
   <block id="293009b86e54802418f98f60625ac2a7" category="list-text">Non è possibile rimuovere l'ultimo disco in una cache SSD senza prima eliminare la cache SSD.</block>
   <block id="9cc197508cad9634df67cf7b0b11d0bd" category="section-title">Restrizioni con Drive Security</block>
@@ -3301,8 +3284,6 @@
   <block id="982dc39a81f4c08c243979992140a5ae" category="paragraph">Volume di base Snapshot</block>
   <block id="0f785d041eee7b7907327cd693370cf7" category="paragraph">Volume primario mirror remoto</block>
   <block id="d3e800228af9a7ced9cadbe31f21cf71" category="paragraph">Sì^2^</block>
-  <block id="e0918d282f1e0cdbd13a7b9a760e60fa" category="paragraph">^1^ non è possibile utilizzare la copia del volume snapshot fino al completamento dell'operazione di copia online.</block>
-  <block id="9a068d1705273de62c0ad27947835884" category="paragraph">^2^ se il volume di origine è un volume primario, la capacità del volume di destinazione deve essere uguale o superiore alla capacità utilizzabile del volume di origine.</block>
   <block id="1045c0a24c9aaad2175ff995e0b9542a" category="summary">Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.</block>
   <block id="72ac4d3b5f851bd084b3de1f3e95a925" category="doc">Quali sono le funzionalità di provisioning delle risorse?</block>
   <block id="84f89fc32eda5be9a17ee2bd540a8082" category="paragraph">Un volume con provisioning di risorse è un volume denso in un gruppo di volumi o pool SSD, in cui la capacità del disco viene allocata (assegnata al volume) quando viene creato il volume, ma i blocchi disco vengono disallocati (non mappati). Per confronto, in un volume thick tradizionale, tutti i blocchi di dischi vengono mappati o allocati durante un'operazione di inizializzazione del volume in background per inizializzare i campi di informazioni di protezione Data Assurance e rendere i dati e la parità RAID coerenti in ogni stripe RAID. Con un volume con provisioning di risorse, non è prevista alcuna inizializzazione in background con time-bound. Al contrario, ogni stripe RAID viene inizializzata alla prima scrittura su un blocco di volume nello stripe.</block>
@@ -4128,7 +4109,6 @@
   <block id="1057d2d359811cab2659d02796e6fb5b" category="paragraph">*Impostazioni del volume Snapshot*</block>
   <block id="8f780a4ba90241ab0c838a7800a89097" category="paragraph">Specificare il nome del volume di snapshot.</block>
   <block id="3a35ff2046f8d1617d34b0b0237b9943" category="paragraph">Abilitare la cache SSD</block>
-  <block id="f89aa75edf68b6cc7c33cb56fcd0571e" category="paragraph">Scegliere questa opzione per abilitare il caching in sola lettura sugli SSD. NOTA: Questa funzione non è disponibile sui sistemi storage EF600 o EF300.</block>
   <block id="89228fb03fdbc0521cd8249cd8368145" category="paragraph">*Viene visualizzato solo per un volume snapshot di lettura/scrittura*.</block>
   <block id="1d66532a5990ea3c938903ec37256dc8" category="list-text">Esaminare la configurazione del volume di snapshot. Fare clic su *Indietro* per apportare le modifiche desiderate.</block>
   <block id="6be75b87c417c9d3fef58c3d1051e937" category="list-text">Quando si è soddisfatti della configurazione del volume snapshot, fare clic su *fine*.</block>
@@ -4346,8 +4326,6 @@
   <block id="71c81db35fb18aa830a01c8148b7fd9b" category="doc">Creazione della cache SSD</block>
   <block id="a6d73d9dc7f4e71c912136bc15d8eebf" category="paragraph">Per accelerare dinamicamente le performance del sistema, puoi utilizzare la funzione SSD cache per memorizzare nella cache i dati più utilizzati (dati "hot") su unità a stato solido (SSD) a latenza inferiore. La cache SSD viene utilizzata esclusivamente per le letture host.</block>
   <block id="a2c0f0ef572025e49612def6abf4cfdb" category="paragraph">L'array di storage deve contenere alcune unità SSD.</block>
-  <block id="173bba3aad3086588981b6c7bec3a84d" category="paragraph">Quando crei una cache SSD, puoi utilizzare una o più unità. Poiché la cache di lettura si trova nell'array di storage, il caching viene condiviso tra tutte le applicazioni che utilizzano l'array di storage. Selezionare i volumi che si desidera memorizzare nella cache, quindi il caching viene automaticamente e dinamico.</block>
-  <block id="45860ebbd64c6433eec904e6800eee62" category="paragraph">Per creare la cache SSD, seguire queste linee guida.</block>
   <block id="5d8c9d67963d87b710730ac7aa1ce1c8" category="list-text">È possibile attivare la sicurezza sulla cache SSD solo quando viene creata, non in un secondo momento.</block>
   <block id="8b7f5cbf32b250b85fce451c90b76efd" category="list-text">È supportata una sola cache SSD per array di storage.</block>
   <block id="00a32f960b42cd5c1477c219d9776117" category="list-text">La capacità massima di cache SSD utilizzabile su un array di storage dipende dalla capacità della cache primaria del controller.</block>
@@ -5673,7 +5651,6 @@
   <block id="ebed1c095df061a9c27a3a3a99521ad7" category="summary">Quando lo storage array invia avvisi, non corregge il fuso orario del server o dell'host di destinazione che riceve gli avvisi. Invece, l'array di storage utilizza l'ora locale (GMT) per creare l'indicazione dell'ora utilizzata per il record di avviso. Di conseguenza, potrebbero verificarsi delle incoerenze tra i timestamp per lo storage array e il server o l'host che riceve un avviso.</block>
   <block id="562004c4c73569c2c6fbe088e31b2662" category="doc">Perché i timestamp non sono coerenti tra l'array e gli avvisi?</block>
   <block id="c0ff0a62dfeb02bb133249ac90eaec17" category="paragraph">Poiché l'array di storage non corregge il fuso orario durante l'invio degli avvisi, l'indicazione dell'ora sugli avvisi è relativa al GMT, con un offset del fuso orario pari a zero. Per calcolare un indicatore data e ora appropriato al fuso orario locale, è necessario determinare l'offset dell'ora dal GMT, quindi aggiungere o sottrarre tale valore dai contrassegni data e ora.</block>
-  <block id="e569fca48e28303fa5a664a87dd0ea63" category="paragraph">Per evitare questo problema, configurare il protocollo NTP (Network Time Protocol) sui controller degli array di storage. NTP garantisce che i controller siano sempre sincronizzati con l'ora corretta.</block>
   <block id="71ad225b31854ff5826b9a489d0011e2" category="summary">È possibile archiviare i registri di controllo su un server syslog esterno.</block>
   <block id="cca115a15c9a188ea060d539ef93824f" category="doc">Cosa occorre sapere prima di configurare un server syslog?</block>
   <block id="63c1a5e5241de42e50763b281b143157" category="paragraph">Prima di configurare un server syslog, tenere presenti le seguenti linee guida.</block>
@@ -6328,7 +6305,6 @@
   <block id="0613a4fbdd66f6e5178cec2b660cefb8" category="list-text">Inserire le informazioni relative a uno o più server syslog (massimo cinque), quindi fare clic su *Aggiungi*.</block>
   <block id="30f8e0c6ba6693951068d665bf2d3173" category="list-text">*UDP Port* -- in genere, la porta UDP per syslog è 514. Nella tabella vengono visualizzati i server syslog configurati.</block>
   <block id="85d48bc46b15b6483d2233aa0f95dca0" category="list-text">Per inviare un avviso di test agli indirizzi del server, selezionare *Test All Syslog Servers* (verifica tutti i server Syslog).</block>
-  <block id="5cc10b9f3b813b06de10682b6d0012bb" category="paragraph">Il monitor degli eventi invia avvisi al server syslog ogni volta che si verifica un evento verificabile.</block>
   <block id="f2ebc677a5b447998da1a046adcc46f0" category="summary">Il controller dello storage array organizza la cache in blocchi, che sono blocchi di memoria che possono essere di 8, 16, 32 KiB. Tutti i volumi sul sistema storage condividono lo stesso spazio cache; pertanto, i volumi possono avere una sola dimensione del blocco cache.</block>
   <block id="16fa5803900906142586eefc2643c7e8" category="doc">Che cos'è la dimensione del blocco della cache?</block>
   <block id="e49b598ec0d819934f021980302ed36e" category="paragraph">Il controller dell'array di storage organizza la cache in "blocchi", ovvero blocchi di memoria che possono essere di 8, 16, 32 KiB. Tutti i volumi sul sistema storage condividono lo stesso spazio cache; pertanto, i volumi possono avere una sola dimensione del blocco cache.</block>
@@ -6480,73 +6456,8 @@
   <block id="536f38e388f0e686eaac049b4bfaf373" category="paragraph">I ruoli forniscono agli utenti l'accesso alle attività, come segue:</block>
   <block id="730a090cd84a0ce605e346fc4d569c15" category="paragraph">Se un utente non dispone delle autorizzazioni per una determinata attività, tale attività viene visualizzata in grigio o non viene visualizzata nell'interfaccia utente.</block>
   <block id="90e8ac6688c66ac3fc81de93ba27235a" category="summary">Gestore di sistema SANtricity e Gestore unificato</block>
-  <block id="e66485fdc97bafe46eca656f0d146144" category="doc">Documentazione del software SANtricity 11.7</block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">Nuove funzionalità di SANtricity OS.</block>
-  <block id="6defcbe1a602cf38299438f5eeae8697" category="doc">Novità di SANtricity OS 11.7</block>
-  <block id="38069ae65990ed9bd66b090a8754bcb1" category="paragraph">La seguente tabella descrive le nuove funzionalità di Gestione di sistema di SANtricity 11.7.</block>
-  <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">Nuove funzionalità della versione 11.74</block>
   <block id="824a3a83a007a97494ec5981cebf67a5" category="cell">Nuova funzionalità</block>
-  <block id="158083b77acf87778347dd8cf3138b12" category="paragraph">Supporto per FIPS 140-3</block>
-  <block id="93752d0e76882be98725c8b860259db3" category="paragraph">FIPS 140-3 è ora supportato su alcuni dischi per SSD SAS e basati su NVMe. I dischi SSD FIPS a 140-3 livelli possono coesistere con i dischi SSD FIPS a 140-2 livelli, a condizione che siano tutti basati su NVMe o tutti basati su SAS. Quando si utilizza una combinazione di questi livelli in gruppi di volumi e pool di dischi, tenere presente che il gruppo o il pool funzionerà con il livello di sicurezza inferiore (140-2).</block>
-  <block id="3f470942a1817eaa19da47ff83fd59ca" category="paragraph">Supporto MFA e SSH</block>
-  <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">Per SANtricity versione 11.74 e successive, la funzione di accesso remoto consente di configurare l'autorizzazione multifattore (MFA) richiedendo agli utenti di inserire una chiave SSH e/o una password SSH. L'opzione di menu nella sezione hardware è stata modificata da *Cambia accesso remoto* a *Configura accesso remoto (SSH)*.</block>
-  <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">Questa release include una nuova funzionalità per la creazione di token di accesso. Questi token consentono di eseguire l'autenticazione con l'API REST o l'interfaccia della riga di comando (CLI), senza esporre nomi utente e password. Questa funzione è disponibile nella sezione Gestione degli accessi.</block>
-  <block id="09ebea90b63074ba83d2ad844e89d70c" category="section-title">Nuove funzionalità della versione 11.73</block>
-  <block id="36349de7ac0eb86303bed03895c1dcc2" category="paragraph">Provisioning delle risorse e supporto DULBE</block>
-  <block id="16fb65d0cddfe2d4c247fdab06b8cc43" category="paragraph">Le funzionalità di provisioning delle risorse e i dischi DULBE sono ora completamente supportati in questa versione. Questo supporto include la possibilità di utilizzare più ampiamente UNMAP diretto all'host su volumi con provisioning di risorse.</block>
-  <block id="e3b2852f4ef13c9d9eb1a41a50d744b5" category="paragraph">EF600 SAS (512e)</block>
-  <block id="299fb5bbb23387835d58bf5165cddeba" category="paragraph">Questa versione fornisce il supporto per l'espansione alle enclosure SAS-3 per il sistema storage EF600. Con questa espansione, gli SSD NVMe a blocchi da 4 KiB possono coesistere con SSD e HDD SAS da 512 E. Tuttavia, non è possibile configurare dischi con blocchi di dimensioni diverse nello stesso pool o gruppo di volumi.</block>
-  <block id="c73d7f2c67532a6b036251cdeb908f76" category="paragraph">Supporto SSD QLC</block>
-  <block id="e7049769f502b79dadcc8c63383bd373" category="paragraph">Questa versione supporta l'attuale generazione di SSD QLC con funzionalità ONTAP impostate nel firmware del disco ma che non dispongono del set completo di funzionalità specifiche di e-Series. I dischi QLC (solo NVMe) sono a costi inferiori, ma hanno prestazioni di scrittura inferiori e una resistenza inferiore, pertanto non devono essere utilizzati con carichi di lavoro che richiedono un utilizzo intensivo di scrittura.</block>
-  <block id="854da640a0760b1616bb0284c5ac42aa" category="paragraph">Supporto TLS 1.3</block>
-  <block id="a1ebc729e73cec123d0c98336b6e1c01" category="paragraph">TLS 1.3 è ora supportato per la gestione integrata. Questo supporto si applica a System Manager e ai servizi Web incorporati, con la possibilità di attivarlo o disattivarlo. (Il supporto TLS 1.3 è stato aggiunto in una release precedente per Web Services Proxy e Unified Manager).</block>
-  <block id="f1f2fd644d915b365b5abb8c91c74bfa" category="paragraph">DDP RAID 1 con un minimo di 8 dischi</block>
-  <block id="7b17410dd494661b52f2ac79eab0c721" category="paragraph">Con questa release, RAID 1 DDP non richiede più un minimo di 11 SSD in un pool. Il minimo ora consente pool di SSD a 8 dischi se nel pool vengono creati solo volumi RAID 1.</block>
-  <block id="8b4b67bab63907548f025722a3d981e6" category="paragraph">Eliminazione della chiave EKMS</block>
-  <block id="7aaef9b529c633049aca22e386a95abc" category="paragraph">Un amministratore dello storage può ora richiedere a un server di gestione delle chiavi esterno (EKMS) di eliminare una vecchia chiave. L'eliminazione della chiave avviene solo durante un processo di re-key dopo che i dischi installati hanno la nuova chiave.</block>
-  <block id="1a75366a6d4c821ee7e455bce4cffa25" category="section-title">Nuove funzionalità della versione 11.72</block>
-  <block id="28b46397fb020adcaf0b119cbfa693b5" category="paragraph">Supporto SNMPv3</block>
-  <block id="a9ed1ee525d0d08488f9de3235270743" category="paragraph">SNMPv3 è ora supportato per le notifiche degli avvisi, configurabile nel menu:Impostazioni[Avvisi]. SNMPv3 offre sicurezza grazie a un'autenticazione avanzata e alla crittografia dei dati.</block>
-  <block id="c2e4a04d91c5a3b8fe7446de157eb681" category="paragraph">Supporto della replica delle chiavi su più server di chiavi</block>
-  <block id="292510d91cd4366627aba2eec79ec942" category="paragraph">Per la gestione delle chiavi esterne per dischi con crittografia automatica, la finestra di dialogo Create External Key Management (Crea gestione chiavi esterne) include una nuova opzione per l'aggiunta di più server di chiavi.</block>
-  <block id="68a7548c04bd5ae4d9d965b924cc722e" category="paragraph">Versioni aggiornate del browser</block>
-  <block id="2d7d47101a0ad5c71e2101ebb7e5f475" category="paragraph">Le versioni minime del browser di System Manager sono state aggiornate.</block>
-  <block id="3c7e7b17dae4906b0da9248a0e7f39e2" category="section-title">Nuove funzionalità della versione 11.71</block>
-  <block id="9f498a936b91eb825293b845ab4c4a34" category="paragraph">Espansione EF300</block>
-  <block id="4cd824b82861a81d3a34355af5534978" category="cell">Questa versione fornisce il supporto per l'espansione alle enclosure SAS-3 per il sistema storage EF300. Con questa espansione, gli SSD NVMe a blocchi da 4 KiB possono coesistere con SSD e HDD SAS da 512 E. Tuttavia, non è possibile configurare dischi con blocchi di dimensioni diverse nello stesso pool o gruppo di volumi.</block>
-  <block id="e26cc7c9038cf4d3175e8bf30d816d86" category="paragraph">Opzione della modalità FEC nella configurazione iSCSI</block>
-  <block id="96d538d953209d533cee6c90da4de1a1" category="paragraph">Per gli array di storage che utilizzano la scheda di interfaccia host iSCSI da 25 GB, è disponibile una nuova opzione per impostare la modalità FEC (Forward Error Correction) quando si configurano le porte iSCSI.</block>
-  <block id="ea9c177239be0bc55bf551920e73ec9e" category="paragraph">Volumi di storage remoti</block>
-  <block id="4c46d61572ef34b4dbdbc7690d745c3d" category="paragraph">La funzione opzionale Remote Storage Volumes consente di importare volumi da un sistema storage remoto a un sistema storage e- Series locale utilizzando una connessione iSCSI. Lo storage remoto può essere dello stesso marchio del sistema e-Series o di un altro vendor di storage, purché sia accessibile tramite iSCSI.</block>
-  <block id="ae376d8e855c99ce33d3f6e542edc956" category="paragraph">Funzionalità di sanificazione (cancellazione) aggiunta per i dischi non FDE</block>
-  <block id="7113199ede26393de60c4e8d5222d08d" category="paragraph">La funzione di sanificazione del disco ora include dischi non FDE nella procedura. Dalla pagina hardware, è possibile aprire il menu di scelta rapida dell'unità e selezionare "Erase" (Cancella) (in precedenza, questa selezione era "Secure Erase").</block>
-  <block id="e85e5cd7a142a229a3e8752a4502bb6a" category="paragraph">Connessione sicura per avvisi e-mail</block>
-  <block id="50c890918fa832fcbdebb84798840bcc" category="paragraph">Per attivare le notifiche e-mail crittografate, è possibile configurare facoltativamente le e-mail in uscita (avvisi, spedizioni ASUP) per fornire le credenziali di autenticazione. I tipi di crittografia includono SMTPS e STARTTLS.</block>
-  <block id="a98e92b119d04e5ca0c2e3a8c6cc6159" category="paragraph">Aggiunte di AutoSupport</block>
-  <block id="31d5de0104fd289863adccff1475589e" category="paragraph">Quando AutoSupport non è attivato, viene visualizzato un avviso nell'area Notifiche.</block>
-  <block id="5994d3724fb50db3bc66184d3f47b830" category="paragraph">Modifica del formato degli avvisi syslog</block>
-  <block id="6972891f094c169717c1d2cc01a9c332" category="paragraph">Il formato di avviso Syslog ora supporta RFC 5424.</block>
-  <block id="c91b20af8c08d49b519596d358be5e0f" category="section-title">Nuove funzionalità della versione 11.70</block>
-  <block id="fd6d564757d9bebb4afdcbc6e49ae663" category="paragraph">Nuovo modello di sistema storage – EF300</block>
-  <block id="1d9b013014a7b904368939502c5b6aad" category="paragraph">Questa release introduce il sistema storage all-NVMe-flash EF300 a basso costo. Il sistema EF300 include 24 unità SSD NVME e una singola scheda di interfaccia host (HIC) per controller. Le interfacce host NVMe over Fabrics supportate includono NVMe over IB, NVMe over RoCE e NVMe over FC. Le interfacce SCSI supportate includono FC, IB su iSER e IB su SRP. Unified Manager consente di visualizzare e gestire più sistemi storage EF300 e altri sistemi storage e-Series.</block>
-  <block id="c3164ba2335231fad0057dbe03d6e8dc" category="paragraph">Nuova funzionalità di provisioning delle risorse (solo EF300 e EF600)</block>
-  <block id="43fc15888e6c15a34af56dfc2d49240a" category="paragraph">La funzionalità Resource Provisioning è una novità per i sistemi storage EF300 ed EF600. I volumi con provisioning delle risorse possono essere utilizzati immediatamente senza alcun processo di inizializzazione in background.</block>
-  <block id="86fffc443dc49ef49131fe738b172a29" category="paragraph">Aggiunta dell'opzione di dimensione del blocco 512e (solo EF300 e EF600)</block>
-  <block id="34e8ca8f8da7ea96f1b8450def8131aa" category="paragraph">Per i sistemi storage EF300 e EF600, è possibile impostare un volume in modo che supporti una dimensione di blocco di 512 byte o 4 KiB. La funzionalità 512e è stata aggiunta per consentire il supporto dell'interfaccia host iSCSI e del sistema operativo VMware. Se possibile, System Manager suggerisce il valore predefinito appropriato.</block>
-  <block id="97815730af7a32b4bee2bd50133bcc3b" category="paragraph">Nuova opzione per l'invio di AutoSupport Dispatches on-demand</block>
-  <block id="caf318d779d33bdcaf1cb8e5ddefea9d" category="paragraph">Una nuova funzione di invio di AutoSupport consente di inviare i dati al supporto tecnico senza dover attendere un dispatch pianificato. Questa opzione è disponibile nella scheda AutoSupport del Centro di assistenza.</block>
-  <block id="7648787a2f72ca73c563621d8f772039" category="paragraph">Miglioramenti di External Key Management Server</block>
-  <block id="d71804131a489a34d629405530d25a01" category="paragraph">La funzionalità per la connessione a un server di gestione delle chiavi esterno include i seguenti miglioramenti:</block>
-  <block id="5ce158a574155a1dbf2c52d1112ea5c9" category="list-text">Ignorare la funzione per la creazione di una chiave di backup.</block>
-  <block id="a83cf593b4f7f5cb340b9eb8c9b13daa" category="list-text">Scegliere un certificato intermedio per il server di gestione delle chiavi, oltre ai certificati client e server.</block>
-  <block id="a41ead92ad6d32095eee6328103a4c8f" category="paragraph">Miglioramenti dei certificati</block>
-  <block id="734830643da23e9370e728f64d10f308" category="paragraph">Questa versione consente di utilizzare uno strumento esterno come OpenSSL per generare una richiesta di firma del certificato (CSR), che richiede anche l'importazione di un file di chiave privata insieme al certificato firmato.</block>
-  <block id="0d3d43e6247ef530e5466168527ca61c" category="paragraph">Nuova funzionalità di inizializzazione offline per i gruppi di volumi</block>
-  <block id="428d905bdf1b0c959591111aad19309d" category="paragraph">Per la creazione di un volume, System Manager fornisce un metodo per ignorare la fase di assegnazione dell'host in modo che i volumi appena creati vengano inizializzati offline. Questa funzionalità è applicabile solo ai gruppi di volumi RAID su dischi SAS (ad esempio, non ai pool di dischi dinamici o agli SSD NVMe inclusi nei sistemi storage EF300 e EF600). Questa funzionalità è adatta ai carichi di lavoro che devono avere i volumi alle massime performance quando inizia l'utilizzo, piuttosto che eseguire l'inizializzazione in background.</block>
-  <block id="0587e4aa2345855c1a604c02193816de" category="paragraph">Nuova funzione Collect Configuration Data (raccolta dati di configurazione)</block>
-  <block id="3caef3194845d0349b1fde3b790187bf" category="paragraph">Questa nuova funzione consente di salvare i dati di configurazione RAID dal controller, che include tutti i dati per i gruppi di volumi e i pool di dischi (le stesse informazioni del comando CLI per<block ref="b96920e1014b7cbceaadad722bfc943c" prefix=" " category="inline-code"></block>). Questa funzionalità è stata aggiunta per supportare il supporto tecnico e si trova nella scheda Diagnostics (Diagnostica) del Support Center.</block>
-  <block id="fa255949f43078f9547e0b38d42d3df0" category="paragraph">Modificare la capacità di conservazione predefinita per i pool di dischi nel caso di 12 dischi</block>
-  <block id="5a4dc582c4bbb046fe16599fb3458522" category="paragraph">In precedenza, è stato creato un pool di dischi da 12 dischi con una capacità di conservazione (spare) sufficiente a coprire due dischi. Il valore predefinito viene ora modificato per gestire un guasto a un singolo disco per offrire un valore predefinito di piccolo pool più conveniente.</block>
   <block id="d18c8b00e80b505406982d1c60493e63" category="summary">È possibile rimuovere uno o più array di storage se non si desidera più gestirli da Gestione unificata di SANtricity.</block>
   <block id="bc54c8923d2e900bc8b88d98dcd843d0" category="doc">Rimuovere gli array di storage da Gestione unificata di SANtricity</block>
   <block id="0c9f801d60084ecd96df66d961171ed0" category="paragraph">È possibile rimuovere uno o più array di storage se non si desidera più gestirli da Unified Manager.</block>
@@ -6873,7 +6784,6 @@
   <block id="271ed0f0d6c4fd15be04b6303109c7ba" category="summary">Se si prevede di configurare il mirroring, tenere presenti i seguenti requisiti.</block>
   <block id="85f73dd16ea214346164b0deea26773b" category="section-title">Unified Manager</block>
   <block id="a390959c210a5bb0121c5a6ddb212a48" category="section-title">Storage array</block>
-  <block id="253a07b9e0ccd486d8afabdf8e58cd10" category="paragraph">Il mirroring non è disponibile sullo storage array EF600 o EF300.</block>
   <block id="77495e745fe2123250999bee6aa73027" category="section-title">Requisiti di connettività</block>
   <block id="8955427b4f7945bf09fafb78555e9ad5" category="paragraph">Il mirroring tramite un'interfaccia FC (asincrona o sincrona) richiede quanto segue:</block>
   <block id="3818a7e23bb33bd1f5c65d5ec1f46995" category="list-text">Ogni controller dello storage array dedica la porta host FC con il numero più alto alle operazioni di mirroring.</block>
@@ -7457,7 +7367,6 @@
   <block id="60d7e2cd5292c4fbff9e9a4350dcfbbf" category="summary">Se si prevede di utilizzare il mirroring sincrono, tenere presenti i seguenti requisiti.</block>
   <block id="2a725af5072b79ed4540db7d30333d19" category="doc">Requisiti per l'utilizzo del mirroring sincrono</block>
   <block id="8427b577ad639d745bd851e645973c7a" category="paragraph">Per abilitare e configurare il mirroring tra due array, è necessario utilizzare l'interfaccia di Unified Manager. Unified Manager viene installato su un sistema host insieme al proxy dei servizi Web.</block>
-  <block id="74386b26c331181b6a5eadec21dbabdb" category="paragraph">Il mirroring non è disponibile sullo storage array EF300 o EF600.</block>
   <block id="5c71edab15c242731b943605daa10d86" category="section-title">Connessioni supportate</block>
   <block id="27d2299651367750033b7027a7ecc725" category="paragraph">La comunicazione per il mirroring sincrono è supportata solo sui controller con porte host Fibre Channel (FC).</block>
   <block id="997916cd9c2054e70af916414c1f152b" category="paragraph">Il mirroring sincrono utilizza la porta host con il numero più alto su ciascun controller sia sull'array di storage locale che sull'array di storage remoto. La porta host 4 dell'HBA (Controller host Bus Adapter) è in genere riservata alla trasmissione di dati mirror.</block>
@@ -7939,7 +7848,6 @@
   <block id="5f6ad552ed5fab1f4cbc8e121147c715" category="summary">Per interrompere la connessione tra un server di directory e il proxy dei servizi Web, è possibile rimuovere le informazioni sul server dalla pagina Gestione accessi. È possibile eseguire questa attività se è stato configurato un nuovo server e si desidera rimuovere quello precedente.</block>
   <block id="7ed1c23fd5825fcffa42b8277d75a176" category="summary">È possibile ripristinare lo stato originale autofirmato del certificato di gestione.</block>
   <block id="f8da35c36c426cc6f5e85f3b036b8c22" category="paragraph">Questa attività elimina il certificato di gestione corrente dal sistema host in cui sono installati Web Services Proxy e Unified Manager. Una volta ripristinato il certificato, il sistema host torna a utilizzare il certificato autofirmato.</block>
-  <block id="67c0c3e428d8acbf90125bc09eda87d9" category="list-text">Dalla scheda Management (Gestione), selezionare *Reset* (Ripristina).</block>
   <block id="4c670df3c34ee6fe770985c68d612b00" category="paragraph">Viene visualizzata la finestra di dialogo Conferma ripristino certificato di gestione.</block>
   <block id="0d976dc17b4640ed74e2e82306ff7154" category="paragraph">Il sistema torna a utilizzare il certificato autofirmato dal server. Di conseguenza, il sistema richiede agli utenti di accettare manualmente il certificato autofirmato per le sessioni.</block>
   <block id="9bff0a52d07123acc65d79466ad99166" category="summary">È possibile intervenire sullo stato corrente dello storage array esaminando il log dei settori illeggibili, riabilitando le porte dei dischi e deselezionando la modalità di ripristino.</block>
@@ -8605,7 +8513,6 @@
   <block id="974ad78dc53c253ebfe5b2b8b376f353" category="sidebar">Strumenti e supporto</block>
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ (accesso richiesto)</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">Download di e-Series/SANtricity (accesso richiesto)</block>
-  <block id="3a269e7025c0f60568d7f845d390ff21" category="sidebar">Documenti di SANtricity 11.7</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Panoramica</block>
   <block id="be4486cc26282ba3c22a297f83977dbe" category="sidebar">Browser e sistemi operativi supportati</block>
@@ -8712,6 +8619,110 @@
   <block id="1ee329323d69a8ee4fb262351ae2bb47" category="sidebar">In che modo il mirroring sincrono differisce dal mirroring asincrono?</block>
   <block id="7948b47687c25969b744a950d4151812" category="sidebar">Mirroring sincrono - perché non vengono visualizzati tutti i volumi?</block>
   <block id="389d3a8b3a5730bc57f7f4d0b4d48716" category="sidebar">Mirroring sincrono - perché non vengono visualizzati tutti i volumi sull'array di storage remoto?</block>
-  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">Nuove funzionalità della versione 11.75</block>
-  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">Per eseguire l'aggiornamento alla versione 11.80.x o successiva, è necessario che i sistemi eseguano la versione 11.70.5.</block>
+  <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity versione 11.7</block>
+  <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
+  <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
+  <block id="7647966b7343c29048673252e490f736" category="paragraph">89</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="paragraph">80</block>
+  <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
+  <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
+  <block id="1cf9153cf0b1bfe4b703e41b4509763e" category="summary">Gestore unificato SANtricity 6</block>
+  <block id="d1b1ed9561d588b34b9b60028f6966b9" category="admonition">Se Access Management viene configurato utilizzando le funzionalità SAML (Security Assertion Markup Language) incorporate nell'array, potrebbe verificarsi un timeout di sessione quando la sessione SSO dell'utente raggiunge il limite massimo. Questo potrebbe verificarsi prima del timeout della sessione di System Manager.</block>
+  <block id="cd038504338f9921b8afe6d5ed6c6232" category="paragraph">Il mirroring sincrono non è disponibile sul sistema storage EF600 o EF300.</block>
+  <block id="b84bb83d3d8cd48ddc066fe0c6d41ead" category="paragraph">Il mirroring sincrono non è disponibile sull'array di storage EF600 o EF300.</block>
+  <block id="56bdcfc544aad0bd6521d9f11a6f56dd" category="admonition">Per i controller EF600 e EF300, i volumi primari e secondari di una coppia asincrona con mirroring devono corrispondere allo stesso protocollo, livello di vassoio, dimensione del segmento, tipo di sicurezza e livello RAID. Le coppie mirrorate asincrone non idonee non vengono visualizzate nell'elenco dei volumi disponibili.</block>
+  <block id="2df1194323f38bb1b30fdb6a9b3d4da3" category="paragraph">Questa funzione non è disponibile per il mirroring sincrono sul sistema storage EF600 o EF300.</block>
+  <block id="050910c569f1cb9044086ceee795e2f8" category="doc">Gestore di sistema di SANtricity 11.8</block>
+  <block id="ada2454c6d83cd46018f8d1e49aa4123" category="paragraph">Il mirroring sincrono non è disponibile sull'array di storage EF300 o EF600.</block>
+  <block id="f0d12aaffd9cd7456b0d7640f7b6a727" category="list-text">La capacità massima di cache SSD utilizzabile su un array di storage è di 8 TB.</block>
+  <block id="ecd6161dde3044403e9aa37dc3bc6ee3" category="paragraph">Sì^3^</block>
+  <block id="770594fef329f8bc4364a508f0a7d73a" category="paragraph">^1^ il volume di destinazione deve avere una capacità uguale o superiore alla capacità del volume sottile riportata.</block>
+  <block id="b7c484278db16efdf320efb752c9d501" category="paragraph">^2^ non è possibile utilizzare la copia del volume snapshot fino al completamento dell'operazione di copia online.</block>
+  <block id="8f5c6f3af41eb39849fa6729edd34ef4" category="paragraph">^3^ se il volume di origine è un volume primario, la capacità del volume di destinazione deve essere uguale o superiore alla capacità utilizzabile del volume di origine.</block>
+  <block id="fd3f2a4b95649434788760531c5a248c" category="paragraph">Quando si crea una nuova cache SSD, è possibile utilizzare un disco singolo o più dischi. Poiché la cache di lettura si trova nell'array di storage, il caching viene condiviso tra tutte le applicazioni che utilizzano l'array di storage. Selezionare i volumi che si desidera memorizzare nella cache, quindi il caching viene automaticamente e dinamico.</block>
+  <block id="305cbf1b2e94d5aa38ef0a8ea818a2b4" category="paragraph">Per creare una nuova cache SSD, seguire queste linee guida.</block>
+  <block id="4a9c782fd503d7426a829b5c98040866" category="list-text">Se solo un volume ha la cache SSD attivata, l'intera cache SSD verrà assegnata al controller proprietario di quel volume.</block>
+  <block id="9e6fb4471f8afc13fc87e4a085a3babb" category="admonition">Alcune operazioni potrebbero non essere disponibili mentre sono in corso modifiche alle impostazioni del volume</block>
+  <block id="fd00f06afe550f6cfb8040bc3764c3f4" category="list-text">La cache SSD viene utilizzata solo se è utile inserire i dati nella cache per migliorare le prestazioni generali del sistema.</block>
+  <block id="b2e269fa841df7525e9667d4a248ed9a" category="paragraph">Scegliere questa opzione per abilitare il caching in sola lettura sugli SSD.</block>
+  <block id="319de80f12a723289ba5d8bb3571caa8" category="doc">Gestione di un singolo array con System Manager 11.8</block>
+  <block id="4da78d22f1b5a94a1c267b5b01354570" category="summary">Se necessario, è possibile esportare i metadati del service provider per l'array di storage e reimportare il file nel sistema IdP (Identity Provider).</block>
+  <block id="59fbf0c7e58119d248743b557a6f57e7" category="paragraph">In questa attività, si esportano i metadati dal controller. L'IdP ha bisogno di questi metadati per stabilire una relazione di trust con il controller ed elaborare le richieste di autenticazione. Il file include informazioni come il nome di dominio del controller o l'indirizzo IP che IdP può utilizzare per l'invio delle richieste.</block>
+  <block id="7050266ad7bc7b4de9d49fa25a2e04d7" category="list-text">Fare clic su *Export* (Esporta) per salvare il file di metadati nel sistema locale.</block>
+  <block id="4b09b699877612f901bc1067fb675519" category="paragraph">Il campo del nome di dominio è di sola lettura.</block>
+  <block id="f12f2a18a7e07620fad6228a36b64f3c" category="list-text">Dal sistema locale, individuare il file di metadati del Service Provider in formato XML esportato.</block>
+  <block id="075d83a0abd972ce69ef61db38da29be" category="list-text">Dal server IdP, importare il file di metadati del provider di servizi. È possibile importare il file direttamente o inserire manualmente le informazioni del controller.</block>
+  <block id="7c4628a811708cf3294dac2de4c5f97f" category="list-text">Selezionare *Impostazioni &gt; certificati*.</block>
+  <block id="a450e680be3e9f05356e4a72d3b2fd9f" category="list-text">Selezionare la scheda *Array Management*, quindi selezionare *Reset*.</block>
+  <block id="90322e9b8e628209c77e7fcaddff0eb5" category="list-text">È necessario conoscere l'indirizzo IP o il nome di dominio del controller nell'array di storage.</block>
+  <block id="a8f3d1d2c981da6e0da6bfa7f0083639" category="list-text">Un amministratore ha garantito la sincronizzazione del clock del controller e del server IdP (tramite un server NTP o regolando le impostazioni del clock del controller).</block>
+  <block id="edb063373054a388d66a9ea66cad93ff" category="list-text">Un file di metadati IdP viene scaricato dal sistema IdP ed è disponibile sul sistema locale utilizzato per accedere a Unified Manager.</block>
+  <block id="65c75e5e9737f39188dd8f950fd7e294" category="paragraph">*SAML e Directory Services*. Se si attiva SAML quando Directory Services è configurato come metodo di autenticazione, SAML sostituisce Directory Services in Unified Manager. Se si disattiva SAML in un secondo momento, la configurazione dei servizi di directory torna alla configurazione precedente.</block>
+  <block id="e24e654c7d8f8545ef57e030be7b8cf7" category="paragraph">Per fornire allo storage array le informazioni di connessione IdP, importare i metadati IdP in Unified Manager. Il sistema IdP ha bisogno di questi metadati per reindirizzare le richieste di autenticazione all'URL corretto e per validare le risposte ricevute.</block>
+  <block id="874ff81f90fcd240dd1737943885d51f" category="paragraph">Per stabilire una relazione di trust tra IdP e l'array di storage, importare i metadati del service provider nell'IdP. L'IdP ha bisogno di questi metadati per stabilire una relazione di trust con il controller ed elaborare le richieste di autorizzazione. Il file include informazioni come il nome di dominio del controller o l'indirizzo IP, in modo che l'IdP possa comunicare con i service provider.</block>
+  <block id="3226d8289a8deb232229d8d7f28969a4" category="list-text">Inserire l'indirizzo IP o il nome DNS del controller nel campo *Controller A*, quindi fare clic su *Export* per salvare il file di metadati nel sistema locale.</block>
+  <block id="11bb3a019b1d97c8d2090b7bd6cc865b" category="list-text">Dal server IdP, importare il file di metadati del provider di servizi per stabilire la relazione di trust. È possibile importare il file direttamente o inserire manualmente le informazioni del controller dal file.</block>
+  <block id="9c00debc07d6ffc23d63eccb2ad1b46a" category="paragraph">Per fornire agli utenti l'autorizzazione e l'accesso a Unified Manager, è necessario mappare gli attributi utente IdP e le appartenenze ai gruppi ai ruoli predefiniti dell'array di storage.</block>
+  <block id="57650de481abdd3e6984ef575f0d065b" category="list-text">Il file di metadati IdP viene importato in Unified Manager.</block>
+  <block id="a87844e0bca403edea7d155f83d77bbe" category="list-text">Un file di metadati del service provider per il controller viene importato nel sistema IdP per la relazione di trust.</block>
+  <block id="3cfa359f6717b966ae713cf6fa57377c" category="list-text">Fare clic sul collegamento *mapping dei ruoli di Unified Manager*.</block>
+  <block id="366b335b6c23fde50ab01044a850659a" category="paragraph">Fare clic nel campo e selezionare uno dei ruoli dell'array di storage da mappare all'attributo. È necessario selezionare singolarmente ciascun ruolo da includere. Per accedere a Unified Manager, è necessario il ruolo di monitoraggio in combinazione con gli altri ruoli. Il ruolo Security Admin è richiesto anche per almeno un gruppo.</block>
+  <block id="0d22cf04fa574536d6a7e4e17da41aa7" category="paragraph">Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. Unified Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.</block>
+  <block id="ea9355b3b1f3ea6d2bc8bcc028f51b03" category="list-text">L'indirizzo del controller nei file di metadati SP è corretto.</block>
+  <block id="2d0730c519bced2c7da242ac46c546fa" category="list-text">Un amministratore effettua l'accesso a Unified Manager con un profilo utente che include le autorizzazioni Security Admin.</block>
+  <block id="308792f40a61d176822c0c11a84aa062" category="list-text">Un amministratore configura le comunicazioni con il provider di identità (IdP). Un IdP è un sistema esterno utilizzato per richiedere le credenziali a un utente e determinare se l'utente è autenticato correttamente. Per configurare le comunicazioni con lo storage array, l'amministratore scarica il file di metadati IdP dal sistema IdP, quindi utilizza Unified Manager per caricare il file nello storage array.</block>
+  <block id="db63c0cda0fb44873a76612cd703df33" category="list-text">Un amministratore stabilisce una relazione di trust tra il service provider e l'IdP. Un service provider controlla l'autorizzazione dell'utente; in questo caso, il controller nell'array di storage agisce come service provider. Per configurare le comunicazioni, l'amministratore utilizza Unified Manager per esportare un file di metadati del provider di servizi per il controller. Dal sistema IdP, l'amministratore importa il file di metadati nell'IdP.</block>
+  <block id="a5eff1c83fd4e372756275d4ff8c9e36" category="list-text">L'amministratore associa i ruoli dell'array di storage agli attributi dell'utente definiti nell'IdP. A tale scopo, l'amministratore utilizza Unified Manager per creare le mappature.</block>
+  <block id="bfdf20194c6c147257ae9470515b761a" category="list-text">Da Unified Manager, l'amministratore abilita SAML per lo storage array.</block>
+  <block id="eae9067e764c22587680b3bd3f81d25b" category="paragraph">Quando SAML è attivato, gli utenti non possono rilevare o gestire lo storage per quell'array dall'interfaccia precedente di Storage Manager.</block>
+  <block id="c4ed98793479ae08990cae4236b9d508" category="list-text">Un file di metadati IdP viene scaricato dal sistema IdP e disponibile sul sistema locale utilizzato per accedere a Unified Manager.</block>
+  <block id="b1a127861a67e404225a243a453effd3" category="list-text">Si conosce l'indirizzo IP o il nome di dominio del controller nell'array di storage.</block>
+  <block id="8fced73c31ae4d255ba5500bd98c8d76" category="paragraph">SAML (Security Assertion Markup Language) è uno standard basato su XML per l'autenticazione e l'autorizzazione tra due entità. SAML consente l'autenticazione a più fattori, in cui gli utenti devono fornire due o più elementi per dimostrare la propria identità (ad esempio, una password e un'impronta digitale). La funzionalità SAML integrata dello storage array è conforme a SAML2.0 per l'asserzione, l'autenticazione e l'autorizzazione dell'identità.</block>
+  <block id="25e21eea77a06faadbc2ce2007dfd8fa" category="paragraph">Prestare attenzione a non rimuovere le autorizzazioni mentre SAML è attivato, altrimenti si perde l'accesso a Unified Manager.</block>
+  <block id="bdf60d91552728cd5d2f943df141631b" category="paragraph">Fare clic nel campo e selezionare uno dei ruoli dell'array di storage da mappare all'attributo. È necessario selezionare singolarmente ciascun ruolo che si desidera includere per questo gruppo. Per accedere a Unified Manager, è necessario il ruolo di monitoraggio in combinazione con gli altri ruoli. Un ruolo di amministratore della sicurezza deve essere assegnato ad almeno un gruppo. I ruoli mappati includono le seguenti autorizzazioni:</block>
+  <block id="84f60aaee7374184081d849821cae03b" category="doc">Novità di SANtricity OS 11.80</block>
+  <block id="ee178cd31372157b6b4ef199f32f28e6" category="paragraph">La seguente tabella descrive le nuove funzionalità di Gestione sistemi SANtricity 11,8x.</block>
+  <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">Nuove funzionalità della versione 11.80</block>
+  <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">Enhanced Volume Parity Scan (scansione parity volume avanzata)</block>
+  <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">La scansione della parità del volume può ora essere avviata come processo in background tramite l'API REST o tramite CLI. La scansione di parità risultante viene eseguita in background per tutto il tempo necessario per completare l'operazione di scansione. Le operazioni di scansione sopravvivono ai riavvii del controller e alle operazioni di failover.</block>
+  <block id="b9a173a4a6a7b368e4cd4fde15879372" category="paragraph">Supporto SAML per Unified Manager</block>
+  <block id="dc505118a542aefe283668ff60bf1633" category="paragraph">Unified Manager ora supporta SAML (Security Assertion Markup Language). Una volta abilitato SAML per Unified Manager, gli utenti devono utilizzare l'autenticazione a più fattori rispetto al provider di identità per interagire con l'interfaccia utente. Una volta abilitato SAML su Unified Manager, l'API REST non può essere utilizzata senza passare attraverso IdP per autenticare le richieste.</block>
+  <block id="43a12a9165de329d02388e8e878f20ca" category="paragraph">Funzione di configurazione automatica</block>
+  <block id="ef6a29a31f9fb810c02278975cd6cd39" category="paragraph">Ora supporta la possibilità di impostare il parametro delle dimensioni del blocco del volume da utilizzare con la funzione di configurazione automatica per la configurazione iniziale dell'array. Questa funzione è disponibile nella CLI solo come parametro "blocksize".</block>
+  <block id="017965dda869643c4d632c18853208a2" category="paragraph">Firma crittografica del firmware del controller</block>
+  <block id="f9b1cc083f0890b8fff17a83a0360f47" category="paragraph">Il firmware del controller è firmato crittograficamente. Le firme vengono controllate durante il download iniziale e ad ogni avvio del controller. Nessun impatto previsto per l'utente finale. Le firme sono supportate da un certificato Extended Validation emesso dalla CA.</block>
+  <block id="637780f8b22fe474ce198ef516dd7d6f" category="paragraph">Firma crittografica del firmware del disco</block>
+  <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">Il firmware del disco è firmato crittograficamente. Le firme vengono controllate durante il download iniziale e supportate da un certificato Extended Validation emesso dalla CA. Il contenuto del firmware del disco viene ora fornito come file ZIP, che contiene il firmware precedente non firmato e il nuovo firmware firmato. L'utente deve scegliere il file appropriato in base alla versione di rilascio del codice in esecuzione sul sistema di destinazione.</block>
+  <block id="3c65e3636111523111e45a49a80face3" category="paragraph">Gestione server chiavi esterne - dimensione chiave certificato</block>
+  <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">La nuova chiave di certificato predefinita è di 3072 bit (da 2048). Sono supportate dimensioni delle chiavi fino a 4096 bit. Un bit NVSRAM deve essere modificato per supportare le dimensioni delle chiavi non predefinite.</block>
+  <block id="710e42f1cedbf3e670aace3815d6e451" category="paragraph">Supporto per pool di dischi dinamici di dimensioni maggiori utilizzando dischi con blocchi di dimensioni 512b</block>
+  <block id="7a4f6b11e091466663e9c7d3c9480717" category="paragraph">I clienti che utilizzano il tipo di versione del pool versione 1 possono ora disporre di un pool di dischi di dimensioni massime pari a 48 TB. La versione precedente supporta pool di dischi fino a 24 TB. Se i pool di dischi esistenti devono essere convertiti in dimensioni maggiori, è necessario rimuovere prima tutti i volumi. Un'operazione di downgrade è limitata quando esiste un pool di dischi versione 1.</block>
+  <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">System Manager e Unified Manager non verranno lanciati a meno che non vengano soddisfatti i requisiti minimi del browser</block>
+  <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">È necessaria una versione minima del browser prima dell'avvio di System Manager o di Unified Manager. Di seguito sono riportate le versioni minime supportate:</block>
+  <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox versione minima 80</block>
+  <block id="773389fc57f11b52dbe4c622adc51a3b" category="list-text">Chrome versione minima 89</block>
+  <block id="2ac44b1b15c0ea01cbb812f5c6cf9b1e" category="list-text">Edge versione minima 90</block>
+  <block id="3534d42485ecd595e87248bbb2c6fb1b" category="list-text">Safari versione minima 14</block>
+  <block id="bb4e0c918ecc32e775e010bc9f6eff59" category="paragraph">Supporto per unità SSD FIPS 140-3 NVMe</block>
+  <block id="eca8285b82a553e8fbe1803bfdeced3e" category="paragraph">Sono ora supportati i dischi SSD NVMe FIPS 140-3 certificati NetApp. Verranno identificati correttamente come tali nel profilo dello storage array e in System Manager.</block>
+  <block id="fb8aaa0a635cb460bcf41d9303fca571" category="paragraph">Supporto della cache di lettura SSD su EF300 e EF600</block>
+  <block id="14d2cdc88c041d0313b6c691ee27338f" category="paragraph">La cache di lettura SSD è ora supportata sui controller EF300 e EF600 che utilizzano HDD con un'espansione SAS.</block>
+  <block id="8a00db0b101a6946d9caffef7979d8c4" category="paragraph">Supporto del mirroring remoto asincrono iSCSI e Fibre Channel su EF300 e EF600</block>
+  <block id="8ea61c04007ddc1b703be50a63a1b3ee" category="paragraph">Il mirroring remoto asincrono (ARVM) è ora supportato sui controller EF300 e EF600 con volumi basati su NVMe e SAS.</block>
+  <block id="d99731ca7d5c671cea9d584100385335" category="paragraph">Supporto di EF300 e EF600 senza unità sul vassoio di base</block>
+  <block id="65c8d39e2e73985a77ff0c8a61c30608" category="paragraph">Sono ora supportate le configurazioni dei controller EF300 e EF600 senza unità NVMe sul vassoio di base.</block>
+  <block id="248bd33e5007bccdca76e9d0459df99c" category="paragraph">Porte USB disattivate per tutte le piattaforme</block>
+  <block id="3ea3899fea5b85d0cc4b9b3bf6291d51" category="paragraph">Le porte USB sono ora disabilitate su tutte le piattaforme.</block>
+  <block id="1c0cc3436484a2d69e30cbe7f637d3ed" category="paragraph">Identificatore della porta</block>
+  <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">Il monitor degli eventi invia avvisi al server syslog ogni volta che si verifica un evento verificabile. Per configurare ulteriormente le impostazioni syslog per i registri di controllo, vedere<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
+  <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti. Per configurare ulteriormente le impostazioni syslog per gli avvisi, vedere<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
+  <block id="4bc4384815b2cb7cd1edee10550e5472" category="list-text">_Da definire per le note di rilascio del 11.80_</block>
+  <block id="c76b2a182c36f1230239bad4c28112a3" category="doc">Documentazione del software SANtricity 11.80</block>
+  <block id="3260e793a72a8ad4c6f8b10665ca25ac" category="doc">Gestione di array multipli con Unified Manager 6</block>
+  <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager - interfaccia basata su Web utilizzata per gestire un singolo array di storage nella rete.</block>
+  <block id="9cd5d105b8b19ef4ba01cc21ecc14cdc" category="admonition">Gli storage array EF600 e EF300 non supportano il mirroring sincrono o i thin volumi.</block>
+  <block id="c717e9da08557631ce6af0db7935e837" category="paragraph">Unified Manager è un software basato sul web utilizzato per gestire l'intero dominio. Da una vista centrale, è possibile visualizzare lo stato di tutti gli array e-Series ed EF-Series più recenti, come E2800, EF280, EF300, E5700, EF570, E EF600. È inoltre possibile eseguire operazioni batch su array di storage selezionati.</block>
+  <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Viste di dischi, controller e componenti</block>
+  <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Per passare dalla vista anteriore a quella posteriore, selezionare *Drives* (unità) o *Controllers &amp; Components* (Controller e componenti) dall'estrema destra (il collegamento visualizzato dipende dalla vista corrente). La vista *Drives* mostra i dischi e gli eventuali alloggiamenti vuoti. La vista *Controller &amp; Components* mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutti i dischi*.</block>
+  <block id="a26b62aaf12a1354ed2f5726f1a44f96" category="sidebar">Documenti di SANtricity 11.8</block>
 </blocks>

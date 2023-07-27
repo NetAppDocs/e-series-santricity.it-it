@@ -4,7 +4,7 @@ sidebar: sidebar
 permalink: system-manager/index.html 
 summary: La documentazione del software SANtricity consente di installare, configurare e gestire lo storage array. 
 ---
-= Gestione di un singolo array con System Manager 11.7
+= Gestione di un singolo array con System Manager 11.8
 :hardbreaks:
 :allow-uri-read: 
 :linkattrs: 

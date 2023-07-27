@@ -13,11 +13,6 @@ summary: La funzione di mirroring asincrono offre un meccanismo basato su firmwa
 [role="lead"]
 La funzione di mirroring asincrono offre un meccanismo basato su firmware a livello di controller per la replica dei dati tra uno storage array locale e uno storage array remoto.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 
 
 == Che cos'è il mirroring asincrono?

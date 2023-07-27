@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Gestore unificato SANtricity 5
+= Gestore unificato SANtricity 6
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

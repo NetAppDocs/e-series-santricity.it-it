@@ -13,11 +13,6 @@ summary: È possibile modificare il proprietario del controller preferito in una
 [role="lead"]
 È possibile modificare il proprietario del controller preferito in una coppia mirrorata.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 Se il volume primario della coppia mirrorata è di proprietà del controller A, anche il volume secondario sarà di proprietà del controller A dell'array di storage remoto. La modifica del proprietario del volume primario modifica automaticamente il proprietario del volume secondario per garantire che entrambi i volumi siano di proprietà dello stesso controller. Le attuali modifiche di proprietà sul lato primario si propagano automaticamente alle corrispondenti modifiche di proprietà correnti sul lato secondario.
 
 Ad esempio, un volume primario è di proprietà del controller A, quindi si cambia il proprietario del controller in controller B. In questo caso, la successiva scrittura remota modifica il proprietario del controller del volume secondario da controller A a B. Poiché le modifiche alla proprietà dei controller sul lato secondario sono controllate dal lato primario, non richiedono alcun intervento speciale da parte dell'amministratore dello storage.

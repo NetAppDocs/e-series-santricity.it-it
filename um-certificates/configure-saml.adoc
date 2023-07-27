@@ -1,0 +1,219 @@
+---
+permalink: um-certificates/configure-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, configure, saml, 
+summary: 'Per configurare l"autenticazione per Access Management, è possibile utilizzare le funzionalità SAML (Security Assertion Markup Language) integrate nell"array di storage. Questa configurazione stabilisce una connessione tra un provider di identità e lo storage provider.' 
+---
+= Configurare SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per configurare l'autenticazione per Access Management, è possibile utilizzare le funzionalità SAML (Security Assertion Markup Language) integrate nell'array di storage. Questa configurazione stabilisce una connessione tra un provider di identità e lo storage provider.
+
+.Prima di iniziare
+* È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
+* È necessario conoscere l'indirizzo IP o il nome di dominio del controller nell'array di storage.
+* Un amministratore IdP ha configurato un sistema IdP.
+* Un amministratore IdP ha garantito che IdP supporti la capacità di restituire un ID nome all'autenticazione.
+* Un amministratore ha garantito la sincronizzazione del clock del controller e del server IdP (tramite un server NTP o regolando le impostazioni del clock del controller).
+* Un file di metadati IdP viene scaricato dal sistema IdP ed è disponibile sul sistema locale utilizzato per accedere a Unified Manager.
+
+
+.A proposito di questa attività
+Un provider di identità (IdP) è un sistema esterno utilizzato per richiedere le credenziali a un utente e per determinare se tale utente è autenticato correttamente. È possibile configurare IdP in modo da fornire l'autenticazione a più fattori e utilizzare qualsiasi database utente, ad esempio Active Directory. Il tuo team di sicurezza è responsabile della manutenzione dell'IdP. Un service provider (SP) è un sistema che controlla l'autenticazione e l'accesso degli utenti. Quando Access Management è configurato con SAML, lo storage array agisce come service provider per richiedere l'autenticazione al provider di identità. Per stabilire una connessione tra IdP e lo storage array, è necessario condividere i file di metadati tra queste due entità. Quindi, mappare le entità utente IdP ai ruoli degli array di storage. Infine, prima di attivare SAML, è necessario verificare la connessione e gli accessi SSO.
+
+[NOTE]
+====
+*SAML e Directory Services*. Se si attiva SAML quando Directory Services è configurato come metodo di autenticazione, SAML sostituisce Directory Services in Unified Manager. Se si disattiva SAML in un secondo momento, la configurazione dei servizi di directory torna alla configurazione precedente.
+
+====
+[CAUTION]
+====
+*Modifica e disattivazione.* una volta abilitato SAML, non è possibile disattivarlo tramite l'interfaccia utente, né modificare le impostazioni IdP. Se è necessario disattivare o modificare la configurazione SAML, contattare il supporto tecnico per assistenza.
+
+====
+La configurazione dell'autenticazione SAML è una procedura multi-step.
+
+
+
+== Fase 1: Caricare il file di metadati IdP
+
+Per fornire allo storage array le informazioni di connessione IdP, importare i metadati IdP in Unified Manager. Il sistema IdP ha bisogno di questi metadati per reindirizzare le richieste di autenticazione all'URL corretto e per validare le risposte ricevute.
+
+.Fasi
+. Selezionare menu:Impostazioni[Gestione accessi].
+. Selezionare la scheda *SAML*.
++
+La pagina visualizza una panoramica delle fasi di configurazione.
+
+. Fare clic sul collegamento *Import Identity Provider (IdP) file*.
++
+Viene visualizzata la finestra di dialogo Importa file provider di identità.
+
+. Fare clic su *Browse* (Sfoglia) per selezionare e caricare il file di metadati IdP copiato nel sistema locale.
++
+Dopo aver selezionato il file, viene visualizzato l'ID entità IdP.
+
+. Fare clic su *Importa*.
+
+
+
+
+== Fase 2: Esportare i file del provider di servizi
+
+Per stabilire una relazione di trust tra IdP e l'array di storage, importare i metadati del service provider nell'IdP. L'IdP ha bisogno di questi metadati per stabilire una relazione di trust con il controller ed elaborare le richieste di autorizzazione. Il file include informazioni come il nome di dominio del controller o l'indirizzo IP, in modo che l'IdP possa comunicare con i service provider.
+
+.Fasi
+. Fare clic sul collegamento *Export Service Provider Files*.
++
+Viene visualizzata la finestra di dialogo Esporta file provider di servizi.
+
+. Inserire l'indirizzo IP o il nome DNS del controller nel campo *Controller A*, quindi fare clic su *Export* per salvare il file di metadati nel sistema locale.
++
+Dopo aver fatto clic su *Esporta*, i metadati del provider di servizi vengono scaricati nel sistema locale. Prendere nota della posizione in cui è memorizzato il file.
+
+. Dal sistema locale, individuare il file di metadati del Service Provider in formato XML esportato.
+. Dal server IdP, importare il file di metadati del provider di servizi per stabilire la relazione di trust. È possibile importare il file direttamente o inserire manualmente le informazioni del controller dal file.
+
+
+
+
+== Fase 3: Mappare i ruoli
+
+Per fornire agli utenti l'autorizzazione e l'accesso a Unified Manager, è necessario mappare gli attributi utente IdP e le appartenenze ai gruppi ai ruoli predefiniti dell'array di storage.
+
+.Prima di iniziare
+* Un amministratore IdP ha configurato gli attributi utente e l'appartenenza al gruppo nel sistema IdP.
+* Il file di metadati IdP viene importato in Unified Manager.
+* Un file di metadati del service provider per il controller viene importato nel sistema IdP per la relazione di trust.
+
+
+.Fasi
+. Fare clic sul collegamento *mapping dei ruoli di Unified Manager*.
++
+Viene visualizzata la finestra di dialogo mappatura ruoli.
+
+. Assegnare gli attributi e i gruppi degli utenti IdP ai ruoli predefiniti. Un gruppo può avere più ruoli assegnati.
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Impostazione | Descrizione 
+
+
+ a| 
+*Mapping*
+
+
+
+ a| 
+Attributo dell'utente
+ a| 
+Specificare l'attributo (ad esempio, "membro di") per il gruppo SAML da mappare.
+
+
+
+ a| 
+Valore dell'attributo
+ a| 
+Specificare il valore dell'attributo per il gruppo da mappare. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:[]{}()<>*+-=!?^|
+
+
+
+ a| 
+Ruoli
+ a| 
+Fare clic nel campo e selezionare uno dei ruoli dell'array di storage da mappare all'attributo. È necessario selezionare singolarmente ciascun ruolo da includere. Per accedere a Unified Manager, è necessario il ruolo di monitoraggio in combinazione con gli altri ruoli. Il ruolo Security Admin è richiesto anche per almeno un gruppo.
+
+I ruoli mappati includono le seguenti autorizzazioni:
+
+** *Storage admin* -- accesso completo in lettura/scrittura agli oggetti di storage (ad esempio, volumi e pool di dischi), ma nessun accesso alla configurazione di sicurezza.
+** *Security admin* -- accesso alla configurazione della sicurezza in Access Management, gestione dei certificati, gestione dei registri di controllo e possibilità di attivare o disattivare l'interfaccia di gestione legacy (Symbol).
+** *Support admin* -- accesso a tutte le risorse hardware dello storage array, dati di guasto, eventi MEL e aggiornamenti del firmware del controller. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+** *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+|===
+====
++
+[NOTE]
+====
+Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. Unified Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
+====
+. Se lo si desidera, fare clic su *Add another mapping* (Aggiungi un'altra mappatura) per immettere più mappature gruppo-ruolo.
++
+[NOTE]
+====
+I mapping dei ruoli possono essere modificati dopo l'attivazione di SAML.
+
+====
+. Una volta completate le mappature, fare clic su *Save* (Salva).
+
+
+
+
+== Fase 4: Verifica dell'accesso SSO
+
+Per garantire che il sistema IdP e lo storage array possano comunicare, è possibile eseguire un test di accesso SSO. Questo test viene eseguito anche durante la fase finale per l'abilitazione di SAML.
+
+.Prima di iniziare
+* Il file di metadati IdP viene importato in Unified Manager.
+* Un file di metadati del service provider per il controller viene importato nel sistema IdP per la relazione di trust.
+
+
+.Fasi
+. Selezionare il collegamento *Test SSO Login*.
++
+Viene visualizzata una finestra di dialogo per l'immissione delle credenziali SSO.
+
+. Immettere le credenziali di accesso per un utente con permessi di amministratore della sicurezza e di monitoraggio.
++
+Viene visualizzata una finestra di dialogo durante il test dell'accesso.
+
+. Cercare il messaggio Test Successful (Test riuscito). Se il test viene completato correttamente, passare alla fase successiva per l'abilitazione di SAML.
++
+Se il test non viene completato correttamente, viene visualizzato un messaggio di errore con ulteriori informazioni. Assicurarsi che:
+
++
+** L'utente appartiene a un gruppo con autorizzazioni per Security Admin e Monitor.
+** I metadati caricati per il server IdP sono corretti.
+** L'indirizzo del controller nei file di metadati SP è corretto.
+
+
+
+
+
+
+== Fase 5: Abilitare SAML
+
+Il passaggio finale consiste nel completare la configurazione SAML per l'autenticazione dell'utente. Durante questo processo, il sistema richiede anche di verificare un accesso SSO. Il processo di test di accesso SSO è descritto nel passaggio precedente.
+
+.Prima di iniziare
+* Il file di metadati IdP viene importato in Unified Manager.
+* Un file di metadati del service provider per il controller viene importato nel sistema IdP per la relazione di trust.
+* È stata configurata almeno una mappatura dei ruoli Monitor e Security Admin.
+
+
+[CAUTION]
+====
+*Modifica e disattivazione.* una volta abilitato SAML, non è possibile disattivarlo tramite l'interfaccia utente, né modificare le impostazioni IdP. Se è necessario disattivare o modificare la configurazione SAML, contattare il supporto tecnico per assistenza.
+
+====
+.Fasi
+. Dalla scheda *SAML*, selezionare il collegamento *Enable SAML* (attiva SAML).
++
+Viene visualizzata la finestra di dialogo Conferma abilitazione SAML.
+
+. Tipo `enable`, Quindi fare clic su *Enable* (attiva).
+. Immettere le credenziali utente per un test di accesso SSO.
+
+
+.Risultati
+Una volta attivato SAML, il sistema termina tutte le sessioni attive e inizia l'autenticazione degli utenti tramite SAML.

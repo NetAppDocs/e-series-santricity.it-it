@@ -13,11 +13,6 @@ summary: Lo stato del mirror definisce lo stato dei gruppi di coerenza mirror e 
 [role="lead"]
 Lo stato del mirror definisce lo stato dei gruppi di coerenza mirror e delle coppie di volumi mirrorati.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 
 
 == Stato dei gruppi di coerenza mirror

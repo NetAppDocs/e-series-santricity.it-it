@@ -15,7 +15,7 @@ summary: È possibile modificare il proprietario del controller preferito in una
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Questa funzione non è disponibile per il mirroring sincrono sul sistema storage EF600 o EF300.
 
 ====
 Se il volume primario della coppia mirrorata è di proprietà del controller A, anche il volume secondario sarà di proprietà del controller A dell'array di storage remoto. La modifica del proprietario del volume primario modifica automaticamente il proprietario del volume secondario per garantire che entrambi i volumi siano di proprietà dello stesso controller. Le attuali modifiche di proprietà sul lato primario si propagano automaticamente alle corrispondenti modifiche di proprietà correnti sul lato secondario.

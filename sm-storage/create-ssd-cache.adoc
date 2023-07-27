@@ -17,18 +17,14 @@ Per accelerare dinamicamente le performance del sistema, puoi utilizzare la funz
 .Prima di iniziare
 L'array di storage deve contenere alcune unità SSD.
 
-[NOTE]
-====
-La cache SSD non è disponibile sul sistema storage EF600 o EF300.
-
-====
 .A proposito di questa attività
-Quando crei una cache SSD, puoi utilizzare una o più unità. Poiché la cache di lettura si trova nell'array di storage, il caching viene condiviso tra tutte le applicazioni che utilizzano l'array di storage. Selezionare i volumi che si desidera memorizzare nella cache, quindi il caching viene automaticamente e dinamico.
+Quando si crea una nuova cache SSD, è possibile utilizzare un disco singolo o più dischi. Poiché la cache di lettura si trova nell'array di storage, il caching viene condiviso tra tutte le applicazioni che utilizzano l'array di storage. Selezionare i volumi che si desidera memorizzare nella cache, quindi il caching viene automaticamente e dinamico.
 
-Per creare la cache SSD, seguire queste linee guida.
+Per creare una nuova cache SSD, seguire queste linee guida.
 
 * È possibile attivare la sicurezza sulla cache SSD solo quando viene creata, non in un secondo momento.
 * È supportata una sola cache SSD per array di storage.
+* Se solo un volume ha la cache SSD attivata, l'intera cache SSD verrà assegnata al controller proprietario di quel volume.
 * La capacità massima di cache SSD utilizzabile su un array di storage dipende dalla capacità della cache primaria del controller.
 * La cache SSD non è supportata sulle immagini Snapshot.
 * Se si importano o esportano volumi con cache SSD attivata o disattivata, i dati memorizzati nella cache non vengono importati o esportati.

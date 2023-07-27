@@ -16,7 +16,7 @@ Seguire queste linee guida prima di creare un gruppo di coerenza mirror.
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Il mirroring sincrono non è disponibile sul sistema storage EF600 o EF300.
 
 ====
 È possibile creare un gruppo di coerenza in Unified Manager nella procedura guidata Crea coppie mirrorate.

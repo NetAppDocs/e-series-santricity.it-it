@@ -13,11 +13,6 @@ summary: È possibile modificare il ruolo tra coppie mirrorate in un gruppo di c
 [role="lead"]
 È possibile modificare il ruolo tra coppie mirrorate in un gruppo di coerenza mirror. A tale scopo, è possibile eseguire il declassamento del gruppo di coerenza del mirror primario al ruolo secondario o promuovere il gruppo di coerenza del mirror secondario al ruolo primario.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 Esaminare le seguenti informazioni sull'operazione di cambiamento di ruolo:
 
 * La modifica del ruolo influisce su tutte le coppie mirrorate all'interno del gruppo di coerenza mirror selezionato.

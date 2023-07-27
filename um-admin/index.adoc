@@ -1,10 +1,10 @@
 ---
 permalink: um-admin/index.html 
 sidebar: sidebar 
-keywords: santricity, unified, manager 5 
-summary: Gestore unificato SANtricity 5 
+keywords: santricity, unified, manager 6 
+summary: Gestore unificato SANtricity 6 
 ---
-= Gestore unificato SANtricity 5
+= Gestore unificato SANtricity 6
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

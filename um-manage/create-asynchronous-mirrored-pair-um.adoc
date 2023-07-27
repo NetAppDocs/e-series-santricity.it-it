@@ -14,11 +14,6 @@ summary: 'Per configurare il mirroring asincrono, si crea una coppia mirrorata c
 [role="lead"]
 Per configurare il mirroring asincrono, si crea una coppia mirrorata che include un volume primario sull'array locale e un volume secondario sull'array remoto.
 
-[NOTE]
-====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
-
-====
 .Prima di iniziare
 Prima di creare una coppia mirrorata, soddisfare i seguenti requisiti per Unified Manager:
 

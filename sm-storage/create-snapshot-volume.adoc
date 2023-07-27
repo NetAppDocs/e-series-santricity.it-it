@@ -163,7 +163,7 @@ Specificare il nome del volume di snapshot.
  a| 
 Abilitare la cache SSD
  a| 
-Scegliere questa opzione per abilitare il caching in sola lettura sugli SSD. NOTA: Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Scegliere questa opzione per abilitare il caching in sola lettura sugli SSD.
 
 
 

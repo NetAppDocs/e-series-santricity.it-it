@@ -15,7 +15,7 @@ Il mirroring viene configurato nell'interfaccia di Unified Manager.
 
 [NOTE]
 ====
-Il mirroring non è disponibile sullo storage array EF600 o EF300.
+Il mirroring sincrono non è disponibile sull'array di storage EF600 o EF300.
 
 ====
 Per abilitare e configurare il mirroring tra due array, verificare quanto segue:

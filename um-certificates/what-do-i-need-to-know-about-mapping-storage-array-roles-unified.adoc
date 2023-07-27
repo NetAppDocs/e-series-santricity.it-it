@@ -31,3 +31,20 @@ Se si utilizza un server LDAP (Lightweight Directory Access Protocol) e servizi 
 * Un amministratore ha definito i gruppi di utenti nel servizio di directory.
 * Si conoscono i nomi di dominio del gruppo per i gruppi di utenti LDAP.
 
+
+
+
+== SAML
+
+Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) integrate nell'array di storage, assicurarsi che:
+
+* Un amministratore del provider di identità (IdP) ha configurato gli attributi utente e l'appartenenza al gruppo nel sistema IdP.
+* Conosci i nomi dei membri del gruppo.
+* Si conosce il valore dell'attributo per il gruppo da mappare. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. Unified Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
