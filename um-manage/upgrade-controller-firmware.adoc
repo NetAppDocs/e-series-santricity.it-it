@@ -27,6 +27,9 @@ Aggiorna uno o più storage array con il software più recente e NVSRAM per assi
 
 
 
+
+IMPORTANT: Per eseguire l'aggiornamento alla versione 11.80.x o successiva, i sistemi devono disporre di SANtricity OS 11.70.5.
+
 .A proposito di questa attività
 ++ ++
 
