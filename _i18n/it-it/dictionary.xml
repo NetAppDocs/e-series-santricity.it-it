@@ -85,7 +85,6 @@
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Utilizzare i certificati host di gestione</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Utilizzare certificati array</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Gestire i certificati</block>
-  <block id="c62c395ffcd8aa3e5d38fe7155d2f510" category="sidebar">Software SANtricity</block>
   <block id="a17762f337c98887e39143e5f585147f" category="summary">È possibile visualizzare informazioni su un controller, ad esempio lo stato delle interfacce host, delle interfacce disco e delle porte di gestione.</block>
   <block id="4e960806d66346b6be5c334d5b0cdc47" category="doc">Visualizzare le impostazioni del controller</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Fasi</block>
@@ -8484,7 +8483,6 @@
   <block id="6005f32a6b0b2eff40beaf1834123d4d" category="sidebar">Importare le impostazioni</block>
   <block id="cccfa6d40938251810b757bc66c5e95b" category="sidebar">Modificare le impostazioni della password</block>
   <block id="b5cd1001d92abd67712f605c8e770d14" category="sidebar">Modificare le impostazioni del server di directory</block>
-  <block id="589c6e07e079f4086ec279a5e83c238d" category="sidebar">Il software SANtricity consente di ottenere le massime prestazioni e utilizzo degli array all-flash ibridi e EF-Series per applicazioni con carichi di lavoro elevati, tra cui analisi dei dati, videosorveglianza, backup e recovery.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Inizia subito</block>
   <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interfaccia di System Manager</block>
   <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Interfaccia di Unified Manager</block>
@@ -8741,4 +8739,5 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">Miglioramenti dei pool di dischi</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">I pool di dischi creati con i controller che eseguono la versione 11,80 o superiore saranno _pool versione 1_ anziché _pool versione 0_. Un'operazione di downgrade è limitata quando esiste un pool di dischi _versione 1_.</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">La versione di un pool di dischi può essere identificata nel profilo dell'array di storage.</block>
+  <block id="e7ad6d421850c5694f6bdc4321ac3507" category="sidebar">Il software SANtricity 11,80 ti consente di ottenere performance ottimali e utilizzare al meglio i flash array ibridi e-Series e gli array all-flash EF-Series usando applicazioni caratterizzate da carichi di lavoro intensi, tra cui data analytics, videosorveglianza, backup e recovery.</block>
 </blocks>
