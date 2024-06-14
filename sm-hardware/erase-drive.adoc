@@ -27,7 +27,7 @@ La funzione di cancellazione non supporta alcuni modelli di dischi meno recenti.
 ====
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
+. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
 

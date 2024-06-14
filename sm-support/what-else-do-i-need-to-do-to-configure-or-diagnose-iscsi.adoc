@@ -41,7 +41,7 @@ Gestire le impostazioni iSCSI
 Configurare le porte iSCSI
  a| 
 . Selezionare *hardware*.
-. Selezionare *Mostra retro dello shelf*.
+. Selezionare la scheda *Controller e componenti*.
 . Selezionare un controller.
 . Selezionare *Configure iSCSI ports* (Configura porte iSCSI).
 

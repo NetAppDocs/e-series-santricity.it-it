@@ -34,7 +34,7 @@ Scopri di più:
 
 == Come si visualizzano i componenti hardware?
 
-Accedere alla pagina hardware, che fornisce una rappresentazione grafica dei componenti fisici dell'array di storage. È possibile passare dalla vista anteriore a quella posteriore degli shelf degli array selezionando *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'alto a destra della vista dello shelf.
+Accedere alla pagina hardware, che fornisce una rappresentazione grafica dei componenti fisici dell'array di storage. È possibile passare dalla vista frontale a quella posteriore degli scaffali dell'array selezionando la scheda *Drives* (unità) o *Controllers* (Controller) in alto a destra della vista degli scaffali.
 
 Scopri di più:
 

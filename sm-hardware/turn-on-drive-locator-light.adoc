@@ -20,7 +20,7 @@ Dalla pagina hardware, è possibile accendere la spia di localizzazione per indi
 . Selezionare *hardware*.
 . Per individuare una o più unità, effettuare una delle seguenti operazioni:
 +
-** *Disco singolo* -- dal grafico dello shelf, individuare il disco che si desidera individuare fisicamente nell'array. (Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*). Fare clic sull'unità per visualizzarne il menu di scelta rapida, quindi selezionare *attiva indicatore di posizione*.
+** *Disco singolo* -- dal grafico dello shelf, individuare il disco che si desidera individuare fisicamente nell'array. (Se la figura mostra i controller, fare clic sulla scheda *Drives*.) Fare clic sull'unità per visualizzare il relativo menu di scelta rapida, quindi selezionare *attiva luce localizzatore*.
 +
 La spia di localizzazione del disco si accende. Una volta individuato il disco, tornare alla finestra di dialogo e selezionare *Spegni*.
 

@@ -34,7 +34,7 @@ L'unità sostitutiva deve avere le seguenti caratteristiche:
 
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
+. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
 

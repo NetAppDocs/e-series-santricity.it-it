@@ -28,7 +28,7 @@ Le impostazioni NVMe over RoCE sono disponibili solo se il controller dello stor
 Configurare NVMe sulle porte RoCE
  a| 
 . Selezionare *hardware*.
-. Selezionare *Mostra retro dello shelf*.
+. Selezionare la scheda *Controller e componenti*.
 . Selezionare un controller.
 . Selezionare *Configure NVMe over RoCE ports* (Configura NVMe su porte RoCE).
 

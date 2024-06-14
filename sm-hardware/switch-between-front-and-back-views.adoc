@@ -18,11 +18,11 @@ La vista posteriore mostra i controller/IOM e i contenitori delle ventole di ali
 
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.
 
-. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
+. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
 

@@ -20,7 +20,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico o dal Recovery
 ====
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
+. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
 

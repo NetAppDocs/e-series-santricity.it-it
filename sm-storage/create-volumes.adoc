@@ -344,8 +344,8 @@ System Manager crea i nuovi volumi nei pool e nei gruppi di volumi selezionati, 
 
 .Al termine
 * Eseguire tutte le modifiche del sistema operativo necessarie sull'host dell'applicazione in modo che le applicazioni possano utilizzare il volume.
-* Eseguire il sistema basato su host `hot_add` o un'utility specifica del sistema operativo (disponibile presso un fornitore di terze parti), quindi eseguire `SMdevices` utility per correlare i nomi dei volumi con i nomi degli array di storage host.
+* Eseguire l'utilità specifica del sistema operativo (disponibile presso un fornitore di terze parti), quindi eseguire il comando SMcli `-identifyDevices` per correlare i nomi dei volumi con i nomi degli array di archiviazione host.
 +
-Il `hot_add` e a. `SMdevices` le utility sono incluse nel `SMutils` pacchetto. Il `SMutils` il pacchetto è un insieme di utility per verificare ciò che l'host vede dall'array di storage. È incluso nell'installazione del software SANtricity.
+SMcli è disponibile direttamente tramite il Gestore di sistema di SANtricity. Questa versione scaricabile di SMcli è disponibile su EF600, EF300, E5700, EF570, E2800, E EF280. Per scaricare SMcli in Gestione sistema di SANtricity, selezionare *Impostazioni* > *sistema* e *componenti aggiuntivi* > *interfaccia riga di comando* .
 
 

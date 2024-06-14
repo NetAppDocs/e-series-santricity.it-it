@@ -28,7 +28,7 @@ Le impostazioni di iSER su InfiniBand sono disponibili solo se il controller del
 Configurare iSER su porte InfiniBand
  a| 
 . Selezionare *hardware*.
-. Selezionare *Mostra retro dello shelf*.
+. Selezionare la scheda *Controller e componenti*.
 . Selezionare un controller.
 . Selezionare *Configura iSER su porte InfiniBand*.
 

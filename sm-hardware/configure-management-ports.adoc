@@ -24,7 +24,7 @@ Non utilizzare la porta 2 su entrambi i controller. La porta 2 è riservata al s
 ====
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.
 

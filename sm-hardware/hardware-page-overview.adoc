@@ -25,7 +25,7 @@ Uno shelf è un componente che contiene l'hardware per lo storage array (control
 
 Gli shelf sono disponibili in tre dimensioni per ospitare fino a 12, 24 o 60 dischi. Ogni shelf include un numero ID assegnato dal firmware del controller. L'ID viene visualizzato in alto a sinistra nella vista dello shelf.
 
-La vista shelf nella pagina hardware mostra i componenti anteriori o posteriori. È possibile passare da una vista all'altra selezionando *Mostra retro dello shelf* o *Mostra parte anteriore dello shelf* dall'alto a destra della vista dello shelf. È inoltre possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano* dalla parte inferiore della pagina. Le viste anteriore e posteriore mostrano quanto segue:
+La vista shelf nella pagina hardware mostra i componenti anteriori o posteriori. È possibile passare da una vista all'altra selezionando le schede *Drives* (unità) o *Controller* (Controller) nella parte superiore destra della vista scaffale. È inoltre possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano* dalla parte inferiore della pagina. Le viste anteriore e posteriore mostrano quanto segue:
 
 * *Componenti anteriori* -- dischi e alloggiamenti vuoti.
 * *Componenti posteriori* -- Controller e alimentatori/ventole (per shelf di controller) o IOM e alimentatori/ventole (per shelf di dischi).

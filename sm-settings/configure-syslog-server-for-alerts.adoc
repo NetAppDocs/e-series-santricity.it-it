@@ -43,3 +43,6 @@ Viene visualizzata la finestra di dialogo Add Syslog Server (Aggiungi server Sys
 
 .Risultati
 Il monitor degli eventi invia avvisi al server syslog ogni volta che si verifica un evento verificabile. Per configurare ulteriormente le impostazioni syslog per i registri di controllo, vedere https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-audit-logs.html["Configurare il server syslog per i registri di controllo"].
+
+
+NOTE: Se sono configurati più server syslog, tutti i server syslog configurati riceveranno un registro di controllo.

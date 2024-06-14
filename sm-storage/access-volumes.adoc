@@ -13,9 +13,8 @@ summary: 'Un volume di accesso è un volume configurato in fabbrica sull"array d
 [role="lead"]
 Un volume di accesso è un volume configurato in fabbrica sull'array di storage utilizzato per la comunicazione con l'array di storage e l'host attraverso la connessione i/o dell'host. Il volume di accesso richiede un LUN (Logical Unit Number).
 
-Il volume di accesso viene utilizzato in due istanze:
+Il volume di accesso viene utilizzato nella seguente istanza:
 
-* *Automatic host Creation* -- il volume di accesso viene utilizzato dall'utility host Context Agent (HCA) per inviare informazioni host (nome, porte, tipo di host) a System Manager per la creazione automatica dell'host.
 * *Gestione in-band* -- il volume di accesso viene utilizzato per una connessione in-band per gestire lo storage array. Questa operazione può essere eseguita solo se si gestisce lo storage array con l'interfaccia a riga di comando (CLI).
 +
 [NOTE]

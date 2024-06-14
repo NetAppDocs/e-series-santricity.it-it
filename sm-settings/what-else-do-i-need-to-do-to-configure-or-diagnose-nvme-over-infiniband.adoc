@@ -28,7 +28,7 @@ Le impostazioni NVMe over InfiniBand sono disponibili solo se il controller dell
 Configurare NVMe sulle porte InfiniBand
  a| 
 . Selezionare *hardware*.
-. Selezionare *Mostra retro dello shelf*.
+. Selezionare la scheda *Controller e componenti*.
 . Selezionare un controller.
 . Selezionare *Configura NVMe su porte InfiniBand*.
 

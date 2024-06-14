@@ -129,12 +129,17 @@ Indica se il disco dispone dell'opzione Deallocated (disallocato) o Unwritten Lo
 Se si aggiungono unità a un pool o a un gruppo di volumi, viene visualizzata una finestra di dialogo di conferma se si seleziona un'unità che impedisce al pool o al gruppo di volumi di avere uno o più dei seguenti attributi:
 
 +
-** Protezione contro la perdita di shelf
-** Protezione in caso di perdita del cassetto
+** Protezione contro la perdita degli scaffali ^*^
+** Protezione contro la perdita del cassetto ^*^
 ** Funzionalità di crittografia completa del disco
 ** Funzionalità Data Assurance
 ** Funzionalità DULBE
 
+
+
+
+
+NOTE: ^*^ attualmente, la finestra di dialogo di conferma non viene visualizzata quando si aggiungono unità a un pool con protezione contro la perdita di shelf o la perdita di cassetti.
 
 . Per continuare, fare clic su *Sì*; in caso contrario, fare clic su *Annulla*.
 

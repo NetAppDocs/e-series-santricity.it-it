@@ -25,7 +25,7 @@ Le impostazioni e le funzioni NVMe over InfiniBand vengono visualizzate solo se 
 ====
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.
 

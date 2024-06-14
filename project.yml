@@ -378,8 +378,8 @@ sidebar:
           url: "/sm-storage/host-terminology.html"
         - title: Workflow per la creazione dell'host e l'assegnazione del volume
           url: "/sm-storage/workflow-for-creating-hosts-and-assigning-volumes.html"
-        - title: Creazione automatica e manuale degli host
-          url: "/sm-storage/automatic-versus-manual-host-creation.html"
+        - title: Creazione manuale dell'host
+          url: "/sm-storage/manual-host-creation.html"
         - title: Modalità di assegnazione dei volumi
           url: "/sm-storage/how-volumes-are-assigned-to-hosts-and-host-clusters.html"
         - title: Volumi di accesso
@@ -390,8 +390,6 @@ sidebar:
           url: "/sm-settings/default-host-operating-system-type.html"
       - title: Configurare l'accesso all'host
         entries:
-        - title: Crea host automaticamente
-          url: "/sm-storage/create-host-automatically.html"
         - title: Creare l'host manualmente
           url: "/sm-storage/create-host-manually.html"
         - title: Creare un cluster host

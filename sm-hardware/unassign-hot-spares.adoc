@@ -21,7 +21,7 @@ Non è possibile annullare l'assegnazione di un hot spare che sta assumendo il c
 
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
+. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
 

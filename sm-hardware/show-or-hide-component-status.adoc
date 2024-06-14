@@ -17,8 +17,8 @@ summary: È possibile visualizzare le descrizioni dello stato di dischi, control
 . Selezionare *hardware*.
 . Per visualizzare i componenti posteriori o anteriori:
 +
-** Se si desidera visualizzare i componenti del controller e del contenitore di alimentazione/ventola, ma i dischi sono visualizzati, fare clic su *Mostra retro dello shelf*.
-** Se si desidera visualizzare i dischi, ma vengono visualizzati i componenti del controller e del contenitore di alimentazione/ventola, fare clic su *Mostra parte anteriore dello shelf*.
+** Se si desidera visualizzare i componenti del controller e del filtro dell'alimentazione/ventola, ma le unità sono visualizzate, fare clic sulla scheda *Controller e componenti*.
+** Se si desidera visualizzare le unità, ma vengono visualizzati il controller e i componenti del contenitore di alimentazione/ventola, fare clic sulla scheda *Drives* (unità).
 
 
 . Per visualizzare o nascondere le descrizioni dello stato a comparsa:

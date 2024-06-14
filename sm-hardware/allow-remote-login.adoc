@@ -22,7 +22,7 @@ Per SANtricity versione 11.74 e successive, è anche possibile configurare l'aut
 ====
 .Fasi
 . Selezionare *hardware*.
-. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.
 

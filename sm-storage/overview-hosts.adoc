@@ -31,14 +31,13 @@ Scopri di più:
 
 == Come si configurano gli host e i cluster di host?
 
-Per definire le connessioni host, è possibile consentire a un HCA (host Context Agent) di rilevare automaticamente gli host oppure accedere al menu:Storage[hosts] per configurare manualmente l'host. Se si desidera che due o più host condividano l'accesso allo stesso set di volumi, è possibile definire un cluster e assegnare i volumi a tale cluster.
+Per definire le connessioni host, è possibile andare al menu:Storage[hosts] per configurare manualmente l'host. Se si desidera che due o più host condividano l'accesso allo stesso set di volumi, è possibile definire un cluster e assegnare i volumi a tale cluster.
 
 Scopri di più:
 
-* link:automatic-versus-manual-host-creation.html["Creazione automatica e manuale degli host"]
+* link:manual-host-creation.html["Creazione manuale dell'host"]
 * link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Modalità di assegnazione dei volumi agli host e ai cluster di host"]
 * link:workflow-for-creating-hosts-and-assigning-volumes.html["Workflow per la creazione dell'host e l'assegnazione del volume"]
-* link:create-host-automatically.html["Crea host automaticamente"]
 * link:create-host-manually.html["Creare l'host manualmente"]
 * link:create-host-cluster.html["Creare un cluster host"]
 * link:assign-volumes.html["Assegnare volumi agli host"]
