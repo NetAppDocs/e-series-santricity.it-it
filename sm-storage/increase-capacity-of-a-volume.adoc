@@ -21,6 +21,9 @@ summary: 'È possibile aumentare la capacità riportata (la capacità riportata 
 * Nel volume non sono in uso dischi hot spare. (Si applica solo ai volumi nei gruppi di volumi).
 
 
+
+NOTE: È possibile espandere la capacità di volume solo fino a 128 TiB alla volta.
+
 .A proposito di questa attività
 Tenere presente eventuali requisiti di capacità futuri per altri volumi in questo pool o gruppo di volumi. Assicurarsi di disporre di una capacità libera sufficiente per creare immagini snapshot, volumi snapshot o mirror remoti.
 
