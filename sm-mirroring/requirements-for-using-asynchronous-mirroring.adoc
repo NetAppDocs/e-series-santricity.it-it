@@ -103,6 +103,7 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 ** Se il volume primario non utilizza Drive Security, il volume secondario non deve utilizzare Drive Security.
 
 
+* I volumi primari e secondari devono condividere lo stesso tipo di disco. La combinazione di dischi NVMe e SAS tra volumi primari e secondari non è supportata.
 
 
 
@@ -111,6 +112,12 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 
 * Un volume a capacità riservata è necessario per un volume primario e per un volume secondario in una coppia mirrorata per la registrazione delle informazioni di scrittura per il ripristino da ripristini del controller e altre interruzioni temporanee.
 * Poiché sia il volume primario che il volume secondario di una coppia mirrorata richiedono ulteriore capacità riservata, è necessario assicurarsi di disporre di capacità libera su entrambi gli array di storage nella relazione mirror.
+* Il volume di capacità riservato deve condividere lo stesso tipo di disco dei volumi mirror associati.
++
+** Se il volume di capacità riservata viene creato sui dischi NVMe, i suoi volumi mirror devono anche essere creati sui dischi NVMe.
+** Se il volume di capacità riservata viene creato sui dischi SAS, i relativi volumi mirror devono essere creati anche sui dischi SAS.
+
+
 
 
 
