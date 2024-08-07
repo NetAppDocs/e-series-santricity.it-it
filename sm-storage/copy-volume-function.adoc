@@ -110,7 +110,7 @@ Volume di base Snapshot
  a| 
 Sì
  a| 
-No
+Sì
  a| 
 No
 
@@ -121,9 +121,9 @@ Volume primario mirror remoto
  a| 
 Sì^3^
  a| 
-No
- a| 
 Sì
+ a| 
+No
 
 |===
 ^1^ il volume di destinazione deve avere una capacità uguale o superiore alla capacità del volume sottile riportata.
