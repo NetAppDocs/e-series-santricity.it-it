@@ -33,6 +33,15 @@ L'opzione Storage Array elimina alcune impostazioni aggiuntive.
 
 
  a| 
+Disattiva ARVM
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
 Elimina pool e gruppi di volumi
  a| 
 X
