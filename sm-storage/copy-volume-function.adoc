@@ -27,6 +27,14 @@ Con la modifica dei requisiti di storage per un volume, è possibile utilizzare 
 * Modificare un volume sottile in un volume spesso.
 
 
+I volumi di origine e di destinazione della copia devono avere le stesse dimensioni del blocco logico/indirizzabile dall'host segnalate (dimensioni del settore).
+
+Le dimensioni dei blocchi di volume riportate sono:
+
+* *Dimensione blocco nativo* – le dimensioni blocco del volume corrispondono alle dimensioni blocco dell'unità, 512 o 4K.
+* *Dimensione blocco 512 emulato* - le unità sono 4K ma le dimensioni blocco riportate sono 512.
+
+
 
 
 == Modificare un volume sottile in un volume spesso

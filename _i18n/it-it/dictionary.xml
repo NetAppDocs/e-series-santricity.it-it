@@ -8741,4 +8741,8 @@
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Maggiore lunghezza della chiave per i nuovi certificati di gestione autofirmati e con firma CA.</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">La lunghezza della chiave del certificato di gestione per il certificato autofirmato delle applicazioni SANtricity System Manager e Unified Manager è stata modificata da 2048 a 3072 bit. La modifica si applica ai certificati autofirmati e con firma CA generati di recente dalle applicazioni SANtricity. La lunghezza della chiave è fissa e non è influenzata dalle definizioni delle dimensioni della chiave predefinite in NVSRAM.</block>
   <block id="56ef6aeb1657a77ed998f95bff3a67c0" category="paragraph">Disattiva ARVM</block>
+  <block id="bb81ad14bd710a498f194a6ac67fea61" category="paragraph">I volumi di origine e di destinazione della copia devono avere le stesse dimensioni del blocco logico/indirizzabile dall'host segnalate (dimensioni del settore).</block>
+  <block id="56ce420df3a94d675f30cc6b382c3082" category="paragraph">Le dimensioni dei blocchi di volume riportate sono:</block>
+  <block id="6451d4e0b30d3e2a2b45dc3de85ffe6d" category="list-text">*Dimensione blocco nativo* – le dimensioni blocco del volume corrispondono alle dimensioni blocco dell'unità, 512 o 4K.</block>
+  <block id="7de7e0688d2ed2bd02ab78f61c88a723" category="list-text">*Dimensione blocco 512 emulato* - le unità sono 4K ma le dimensioni blocco riportate sono 512.</block>
 </blocks>
