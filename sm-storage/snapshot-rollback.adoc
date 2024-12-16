@@ -23,6 +23,6 @@ Durante il rollback, la funzione Snapshot conserva tutte le immagini snapshot de
 
 Quando viene avviato un rollback, un processo in background esegue la ricerca degli indirizzi LBA (Logical Block Address) per il volume di base, quindi trova i dati copy-on-write nell'immagine snapshot di rollback da ripristinare. Poiché il volume di base è accessibile all'host per le operazioni di lettura e scrittura e tutti i dati precedentemente scritti sono immediatamente disponibili, il volume di capacità riservata deve essere sufficientemente grande da contenere tutte le modifiche durante l'elaborazione del rollback. Il trasferimento dei dati continua come operazione in background fino al completamento del rollback.
 
-image::../media/sam1130-dwg-snapshots-rollback-overview.gif[panoramica sul rollback delle snapshot di sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-rollback-overview.gif[Panoramica del rollback degli snapshot]
 
 ^1^ Volume di base; ^2^ oggetti Snapshot in un gruppo; ^3^ capacità riservata del gruppo Snapshot

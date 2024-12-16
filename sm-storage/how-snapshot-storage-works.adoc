@@ -30,7 +30,7 @@ Man mano che vengono create le snapshot, la funzione Snapshot memorizza i dati d
 * Quando viene creata un'immagine snapshot, questa corrisponde esattamente al volume di base. La funzione Snapshot utilizza la tecnologia copy-on-write. Una volta eseguita la snapshot, la prima scrittura su qualsiasi blocco o gruppo di blocchi sul volume di base causa la copia dei dati originali nella capacità riservata prima di scrivere i nuovi dati nel volume di base.
 * Le snapshot successive includono solo blocchi di dati modificati. Prima che i dati vengano sovrascritti sul volume di base, la funzione Snapshot utilizza la tecnologia copy-on-write per salvare le immagini richieste dei settori interessati nella capacità riservata di snapshot.
 +
-image::../media/sam1130-dwg-snapshots-cow-overview.gif[panoramica di sam1130 dwg snapshot cow]
+image::../media/sam1130-dwg-snapshots-cow-overview.gif[Panoramica istantanea]
 
 
 

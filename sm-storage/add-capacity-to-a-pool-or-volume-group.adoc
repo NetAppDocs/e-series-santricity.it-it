@@ -25,7 +25,7 @@ L'espansione consente di includere ulteriore capacità libera nel pool o nel gru
 +
 ** 2,048 volumi (serie EF600 ed E5700)
 ** 1,024 volumi (EF300)
-** 512 volumi (serie E2800)
+** 512 volumi (serie E4000 ed E2800)
 
 
 * Se il pool o il gruppo di volumi contiene tutti i dischi con funzionalità di protezione, aggiungere solo i dischi in grado di protezione per continuare a utilizzare le funzionalità di crittografia dei dischi con funzionalità di protezione.

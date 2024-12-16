@@ -21,7 +21,7 @@ L'hardware fisico viene fornito in componenti logici in modo che i dati possano 
 
 I pool e i gruppi di volumi sono le unità di storage di livello superiore in un array di storage: Suddividono la capacità dei dischi in divisioni gestibili. All'interno di queste divisioni logiche si trovano i singoli volumi o LUN in cui sono memorizzati i dati. La figura seguente illustra questo concetto.
 
-image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[sam1130 dwg volumes drive structure pools e gruppi di volumi]
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[Struttura di pool e gruppi di volumi]
 
 ^1^ LUN host; ^2^ volumi; ^3^ gruppi di volumi o pool; ^4^ dischi HDD o SSD
 

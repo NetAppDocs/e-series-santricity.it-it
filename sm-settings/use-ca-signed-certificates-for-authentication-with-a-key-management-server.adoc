@@ -26,12 +26,15 @@ L'autenticazione tra i controller e un server di gestione delle chiavi è una pr
 
 È necessario innanzitutto generare un file CSR (Certificate Signing Request), quindi utilizzare la CSR per richiedere un certificato client firmato a un'autorità di certificazione (CA) attendibile dal server di gestione delle chiavi. È inoltre possibile creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR scaricato. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste del protocollo KMIP (Key Management Interoperability Protocol).
 
+
+NOTE: I file CSR generati esternamente tramite coppie di chiavi private e pubbliche possono essere importati tramite la finestra di dialogo Crea chiave di protezione esterna. Per ulteriori informazioni sull'importazione di un file CSR generato esternamente, vedere https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Fase 2: Importazione dei certificati per il server di gestione delle chiavi"].
+
 .Fasi
 . Selezionare il menu:Impostazioni[certificati].
 . Dalla scheda Key Management (Gestione chiavi), selezionare *complete CSR* (completa CSR).
 . Inserire le seguenti informazioni:
 +
-** *Nome comune* -- un nome che identifica questa CSR, ad esempio il nome dell'array di storage, che verrà visualizzato nei file di certificato.
+** *Nome comune* -- Un nome che identifica il client. È pratica comune abbinare ciò che è nel nome comune ai requisiti del server KMS per le convenzioni di denominazione dei certificati client. Il nome comune in genere aiuta il KMS a identificare il certificato del client quando viene presentato durante un handshake.
 ** *Organizzazione* -- il nome completo e legale della tua azienda o organizzazione. Includere i suffissi, ad esempio Inc. O Corp.
 ** *Unità organizzativa (opzionale)* -- la divisione dell'organizzazione che gestisce il certificato.
 ** *Città/Località* -- la città o la località in cui si trova l'organizzazione.
@@ -43,7 +46,11 @@ L'autenticazione tra i controller e un server di gestione delle chiavi è una pr
 +
 Un file CSR viene salvato nel sistema locale.
 
-. Richiedere un certificato client firmato a una CA attendibile dal server di gestione delle chiavi.
+. Richiedere alla CA un certificato client firmato attendibile dal server di gestione delle chiavi.
++
+
+NOTE: È comune che il server di gestione delle chiavi disponga di una struttura che genera direttamente i certificati firmati, poiché funziona come una propria CA.
+
 . Se si dispone di un certificato client, visitare il sito Web all'indirizzo <<Fase 2: Importazione dei certificati per il server di gestione delle chiavi>>.
 
 
@@ -71,6 +78,10 @@ Per ulteriori informazioni sul certificato del server, consultare la documentazi
 Viene visualizzata una finestra di dialogo per l'importazione dei file dei certificati.
 
 . Accanto a *Select client certificate* (Seleziona certificato client), fare clic sul pulsante *Browse* (Sfoglia) per selezionare il file di certificato client per i controller dell'array di storage.
++
+Il nome del file viene visualizzato nella finestra di dialogo.
+
+. Se un file di certificato è stato generato esternamente utilizzando una coppia di chiavi private e pubbliche, fare clic sul pulsante *Browse* accanto a *Select private key file* per selezionare il file di certificato per i controller dell'array di archiviazione.
 +
 Il nome del file viene visualizzato nella finestra di dialogo.
 

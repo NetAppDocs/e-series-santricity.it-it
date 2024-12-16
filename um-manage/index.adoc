@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Gestore unificato SANtricity 6
+= Gestore unificato SANtricity 7
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+È possibile configurare le impostazioni utilizzate tramite SANtricity Unified Manager.

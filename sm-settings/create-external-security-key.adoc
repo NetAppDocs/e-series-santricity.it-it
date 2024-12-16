@@ -60,7 +60,8 @@ Viene visualizzata la finestra di dialogo Crea chiave di protezione esterna.
 NOTE: Viene utilizzato un solo server di chiavi alla volta. Se lo storage array non riesce a raggiungere il server principale delle chiavi, l'array contatterà il server delle chiavi di backup. Tenere presente che è necessario mantenere la parità su entrambi i server; in caso contrario, potrebbero verificarsi errori.
 
 ** *Select client certificate* -- fare clic sul primo pulsante *Browse* (Sfoglia) per selezionare il file di certificato per i controller dell'array di storage.
-** *Selezionare il certificato del server del server di gestione delle chiavi* -- fare clic sul secondo pulsante *Sfoglia* per selezionare il file di certificato per il server di gestione delle chiavi. È possibile scegliere un certificato root, intermedio o server per il server di gestione delle chiavi.
+** *Selezionare il file della chiave privata* -- se necessario, fare clic sul secondo pulsante *Browse* per selezionare un file della chiave privata per i controller dell'array di archiviazione.
+** *Selezionare il certificato del server di gestione delle chiavi* -- fare clic sul terzo pulsante *Browse* per selezionare il file di certificato per il server di gestione delle chiavi. È possibile scegliere un certificato root, intermedio o server per il server di gestione delle chiavi.
 
 
 . Fare clic su *Avanti*.

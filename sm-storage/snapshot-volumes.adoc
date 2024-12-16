@@ -17,6 +17,6 @@ Quando si crea un volume snapshot, è possibile designarlo come __Read-onl__y o 
 
 Quando si creano volumi snapshot di sola lettura, non è necessario aggiungere capacità riservata. Quando si creano volumi snapshot di lettura/scrittura, è necessario aggiungere capacità riservata per fornire l'accesso in scrittura.
 
-image::../media/sam1130-dwg-snapshots-volumes-overview.gif[panoramica sui volumi di snapshot sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Panoramica dei volumi Snapshot]
 
 ^1^ Volume base; ^2^ host; ^3^ Volume snapshot di sola lettura; ^4^ Volume snapshot di lettura/scrittura; ^5^ capacità riservata

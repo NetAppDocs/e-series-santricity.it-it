@@ -13,4 +13,4 @@ summary: In Gestore di sistema di SANtricity, è possibile aggiornare il softwar
 [role="lead"]
 In Gestore di sistema di SANtricity, è possibile aggiornare il software e il firmware del controller seguendo questa procedura.
 
-image::../media/sam1130-flw-firmware-upgrade.gif[aggiornamento del firmware sam1130 flw]
+image::../media/sam1130-flw-firmware-upgrade.gif[Flusso di lavoro di aggiornamento del software e del firmware del controller]

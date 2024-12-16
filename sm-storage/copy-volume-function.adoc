@@ -31,8 +31,8 @@ I volumi di origine e di destinazione della copia devono avere le stesse dimensi
 
 Le dimensioni dei blocchi di volume riportate sono:
 
-* *Dimensione blocco nativo* – le dimensioni blocco del volume corrispondono alle dimensioni blocco dell'unità, 512 o 4K.
-* *Dimensione blocco 512 emulato* - le unità sono 4K ma le dimensioni blocco riportate sono 512.
+* *Dimensione blocco nativo* – le dimensioni del blocco del volume corrispondono alle dimensioni del blocco dell'unità, 512 o 4K.
+* *Dimensione blocco 512 emulato* - le unità sono 4K ma la dimensione blocco riportata è 512.
 
 
 

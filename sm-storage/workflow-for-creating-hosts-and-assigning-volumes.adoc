@@ -13,4 +13,4 @@ summary: 'La figura seguente illustra come configurare l"accesso all"host.'
 [role="lead"]
 La figura seguente illustra come configurare l'accesso all'host.
 
-image::../media/sam1130-flw-hosts-create-host.gif[gli host sam1130 flw creano l'host]
+image::../media/sam1130-flw-hosts-create-host.gif[Configurare il flusso di lavoro dell'host]

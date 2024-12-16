@@ -14,4 +14,4 @@ summary: Per accedere alle attività di configurazione per i metodi di erogazion
 [role="lead"]
 Per accedere alle attività di configurazione per i metodi di erogazione AutoSupport, accedere al menu:supporto[Centro di assistenza], quindi fare clic sulla scheda *AutoSupport*.
 
-Sono supportati i seguenti protocolli: HTTPS, HTTP e SMTP.
+Sono supportati i seguenti protocolli: HTTPS e SMTP.

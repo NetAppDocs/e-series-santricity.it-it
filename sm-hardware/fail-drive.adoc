@@ -44,6 +44,6 @@ L'opzione di copia consente un ripristino più rapido del disco rispetto alla ri
 
 . Confermare che si desidera che il disco non sia in grado di funzionare correttamente.
 +
-Una volta che il disco si è guastato, attendere almeno 30 secondi prima di rimuoverlo.
+Una volta che il disco si è guastato, attendere almeno 60 secondi prima di rimuoverlo.
 
 

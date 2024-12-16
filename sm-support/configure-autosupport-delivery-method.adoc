@@ -2,7 +2,7 @@
 permalink: sm-support/configure-autosupport-delivery-method.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, configure, autosupport, ASUP, delivery, method 
-summary: 'La funzione AutoSupport supporta i protocolli HTTPS, HTTP e SMTP per l"invio delle spedizioni al supporto tecnico.' 
+summary: La funzione AutoSupport supporta i protocolli HTTPS e SMTP per la distribuzione delle spedizioni al supporto tecnico. 
 ---
 = Configurare il metodo di erogazione AutoSupport
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'La funzione AutoSupport supporta i protocolli HTTPS, HTTP e SMTP per l
 
 
 [role="lead"]
-La funzione AutoSupport supporta i protocolli HTTPS, HTTP e SMTP per l'invio delle spedizioni al supporto tecnico.
+La funzione AutoSupport supporta i protocolli HTTPS e SMTP per la distribuzione delle spedizioni al supporto tecnico.
 
 .Prima di iniziare
 * La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella pagina AutoSupport.
@@ -23,13 +23,12 @@ La funzione AutoSupport supporta i protocolli HTTPS, HTTP e SMTP per l'invio del
 Esaminare i diversi protocolli:
 
 * *HTTPS* -- consente di connettersi direttamente al server di supporto tecnico di destinazione utilizzando HTTPS. Se si desidera attivare AutoSupport OnDemand o Diagnostica remota, il metodo di erogazione AutoSupport deve essere impostato su HTTPS.
-* *HTTP* -- consente di connettersi direttamente al server di supporto tecnico di destinazione utilizzando HTTP.
 * *E-mail* -- consente di utilizzare un server e-mail come metodo di recapito per l'invio di messaggi AutoSupport.
 
 
 [NOTE]
 ====
-*Differenze tra i metodi HTTPS/HTTP ed e-mail*. Il metodo di recapito della posta elettronica, che utilizza SMTP, presenta alcune importanti differenze rispetto ai metodi di recapito HTTPS e HTTP. Innanzitutto, le dimensioni delle spedizioni per il metodo e-mail sono limitate a 5 MB, il che significa che alcune raccolte di dati ASUP non verranno inviate. In secondo luogo, la funzione AutoSupport OnDemand è disponibile solo sui metodi HTPP e HTTPS.
+*Differenze tra i metodi HTTPS e Email*. Il metodo di recapito della posta elettronica, che utilizza SMTP, presenta alcune differenze importanti rispetto al metodo di recapito HTTPS. Innanzitutto, le dimensioni delle spedizioni per il metodo e-mail sono limitate a 5 MB, il che significa che alcune raccolte di dati ASUP non verranno inviate. In secondo luogo, la funzione AutoSupport OnDemand è disponibile solo sul metodo di distribuzione HTTPS.
 
 ====
 .Fasi
@@ -40,9 +39,9 @@ Viene visualizzata una finestra di dialogo in cui sono elencati i metodi di cons
 
 . Selezionare il metodo di erogazione desiderato, quindi selezionare i parametri per il metodo di erogazione. Effettuare una delle seguenti operazioni:
 +
-** Se si seleziona HTTPS o HTTP, selezionare uno dei seguenti parametri di erogazione:
+** Se è stato selezionato HTTPS, selezionare uno dei seguenti parametri di consegna:
 +
-*** *Direttamente* -- questo parametro di erogazione è la selezione predefinita. Questa opzione consente di connettersi direttamente al sistema di supporto tecnico di destinazione utilizzando il protocollo HTTPS o HTTP.
+*** *Direttamente* -- questo parametro di erogazione è la selezione predefinita. La scelta di questa opzione consente di connettersi direttamente al sistema di supporto tecnico di destinazione utilizzando il protocollo HTTPS.
 *** *Via Proxy server* -- questa opzione consente di specificare i dettagli del server proxy HTTP necessari per stabilire la connessione con il sistema di supporto tecnico di destinazione. Specificare l'indirizzo host e il numero di porta. Tuttavia, è necessario immettere solo i dettagli di autenticazione dell'host (nome utente e password), se necessario.
 *** *Tramite PAC (Proxy Auto-Configuration script)* -- specificare la posizione di un file PAC (Proxy Auto-Configuration) script. Un file PAC consente al sistema di scegliere automaticamente il server proxy appropriato per stabilire una connessione con il sistema di supporto tecnico di destinazione.
 

@@ -25,13 +25,6 @@ summary: È possibile aggiornare il firmware dei dischi per assicurarsi di dispo
 .Fasi
 . Selezionare menu:Support[Upgrade Center].
 . Scaricare i nuovi file dal sito Support sul client di gestione.
-+
-.. In aggiornamento del firmware del disco, fare clic su *NetApp Support*.
-.. Sul sito Web del supporto NetApp, fare clic sulla scheda *Downloads*.
-.. Selezionare *Disk Drive & firmware Matrix* (matrice disco e firmware).
-.. Seguire le istruzioni rimanenti.
-
-
 . In aggiornamento del firmware del disco, fare clic su *Avvia aggiornamento*.
 +
 Viene visualizzata una finestra di dialogo che elenca i file del firmware del disco attualmente in uso.

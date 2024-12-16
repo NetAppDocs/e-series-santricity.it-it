@@ -25,28 +25,28 @@ System Manager utilizza queste icone per indicare lo stato dello storage array e
 
 
  a| 
-image:../media/sam1130-ss-icon-status-success.gif[""]
+image:../media/sam1130-ss-icon-status-success.gif["Ottimale"]
  a| 
 Ottimale
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-failure.gif[""]
+image:../media/sam1130-ss-icon-status-failure.gif["Non ottimale o non riuscito"]
  a| 
 Non ottimale o non riuscito
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-service.gif[""]
+image:../media/sam1130-ss-icon-status-service.gif["Richiede attenzione o riparazione"]
  a| 
 Richiede attenzione o riparazione
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-caution.gif[""]
+image:../media/sam1130-ss-icon-status-caution.gif["Attenzione"]
  a| 
 Attenzione
 

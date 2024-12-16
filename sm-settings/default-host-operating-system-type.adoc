@@ -27,8 +27,3 @@ Ad esempio, se si connettono otto host diversi all'array di storage e sei di que
 Ad esempio, se si collegano otto host diversi all'array di storage e due di questi host eseguono un sistema operativo Windows, tre eseguono un sistema operativo VMware, Altri tre sistemi operativi Linux sono in esecuzione, è necessario selezionare Factory Default (predefinito) come tipo di sistema operativo host predefinito.
 
 
-
-[]
-====
-
-====

@@ -21,4 +21,4 @@ Per accedere a System Manager, è necessario disporre di:
 * Connessione out-of-band a un client di gestione della rete con un browser Web.
 
 
-image::../media/single2800.gif[single2800]
+image::../media/single2800.gif[Connessione out-of-band al client di gestione della rete con un browser Web.]

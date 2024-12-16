@@ -30,7 +30,7 @@ Il mirroring asincrono acquisisce lo stato del volume primario in un determinato
 
 Una sessione di mirroring asincrono attiva prevede quattro passaggi principali.
 
-image::../media/sam-1130-dwg-async-mirroring-session.gif[sessione di mirroring async dwg sam 1130]
+image::../media/sam-1130-dwg-async-mirroring-session.gif[Sessione di mirroring asincrono]
 
 . Un'operazione di scrittura viene eseguita per prima cosa sull'array di storage del volume primario.
 . Lo stato dell'operazione viene restituito all'host.

@@ -41,7 +41,7 @@ Controller 2 (port 2): IP Address: 192.168.129.102
 Quando si assegnano indirizzi IP:
 
 * Riservare la porta 2 sui controller per l'utilizzo da parte del supporto clienti. Non modificare le impostazioni di rete predefinite (DHCP attivato).
-* Per impostare gli indirizzi IP statici per i controller E2800 e E5700, utilizzare Gestione di sistema di SANtricity. Per impostare gli indirizzi IP statici per i controller E2700 e E5600, utilizzare Gestione storage SANtricity. Dopo aver configurato un indirizzo IP statico, questo rimane impostato attraverso tutti gli eventi link down/up.
+* Per impostare indirizzi IP statici per i controller E4000, E2800 e E5700, utilizzare Gestione sistema SANtricity. Per impostare gli indirizzi IP statici per i controller E2700 e E5600, utilizzare Gestione storage SANtricity. Dopo aver configurato un indirizzo IP statico, questo rimane impostato attraverso tutti gli eventi link down/up.
 * Per utilizzare DHCP per assegnare l'indirizzo IP del controller, collegare il controller a una rete in grado di elaborare le richieste DHCP. Utilizzare un lease DHCP permanente.
 +
 [NOTE]

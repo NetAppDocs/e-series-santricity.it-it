@@ -33,7 +33,7 @@ Diversi componenti dello storage array contengono software o hardware che è pos
 * *Software di supervisore* -- il software di supervisore è la macchina virtuale su un controller in cui viene eseguito il software.
 
 
-image::../media/sam1130-dwg-upgrade-firmware-locations.gif[posizioni del firmware di aggiornamento sam1130 dwg]
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Aggiornare le posizioni del firmware]
 
 ^1^ shelf del controller; ^2^ shelf del disco; ^3^ Software, firmware del controller, NVSRAM del controller, Software del supervisore; ^4^ firmware del disco; ^5^ firmware IOM; ^6^ firmware del disco
 

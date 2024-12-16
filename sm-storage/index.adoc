@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Gestore di sistema di SANtricity 11.8
+= Gestore di sistema di SANtricity 11.9
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Puoi gestire lo storage del sistema tramite Gestione sistema di SANtricity.

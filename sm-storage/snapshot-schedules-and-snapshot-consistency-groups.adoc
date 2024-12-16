@@ -33,6 +33,6 @@ Si crea un gruppo di coerenza snapshot quando si desidera assicurarsi che le imm
 
 I volumi inclusi in un gruppo di coerenza snapshot sono denominati volumi membri. Quando si aggiunge un volume a un gruppo di coerenza, System Manager crea automaticamente una nuova capacità riservata che corrisponde a quel volume membro. È possibile definire una pianificazione per creare automaticamente un'immagine snapshot di ciascun volume membro.
 
-image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[panoramica dei gruppi di coerenza delle snapshot sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[Panoramica del gruppo di coerenza degli snapshot]
 
 ^1^ capacità riservata; ^2^ volume membro; ^3^ immagini snapshot del gruppo di coerenza

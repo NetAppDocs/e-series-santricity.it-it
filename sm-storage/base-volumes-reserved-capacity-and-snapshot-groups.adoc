@@ -23,7 +23,7 @@ Per creare snapshot del volume di base, è possibile creare un'immagine istantan
 
 La figura seguente mostra la relazione tra gli oggetti snapshot e il volume di base.
 
-image::../media/sam1130-dwg-snapshots-images-overview.gif[panoramica delle immagini snapshot sam1130 dwg]
+image::../media/sam1130-dwg-snapshots-images-overview.gif[Oggetti Snapshot e volume base]
 
 ^1^ Volume di base; ^2^ oggetti Snapshot nel gruppo (immagini e capacità riservata); ^3^ capacità riservata per il gruppo di snapshot.
 

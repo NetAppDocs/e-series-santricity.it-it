@@ -34,7 +34,7 @@ Una relazione di mirroring sincrono è costituita da un volume primario e da un 
 
 Il processo di configurazione del mirroring sincrono prevede la configurazione dei volumi in coppie. Dopo aver creato una coppia mirrorata, costituita da un volume primario su un array di storage e da un volume secondario su un altro array di storage, è possibile avviare il mirroring sincrono. Di seguito sono illustrate le fasi del mirroring sincrono.
 
-image::../media/sam-1130-dwg-sync-mirroring-session.gif[sessione di mirroring di sincronizzazione dwg sam 1130]
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[Sessione di mirroring sincrono]
 
 . Una scrittura proviene dall'host.
 . La scrittura viene inviata al volume primario, propagata al sistema remoto e quindi inviata al volume secondario.

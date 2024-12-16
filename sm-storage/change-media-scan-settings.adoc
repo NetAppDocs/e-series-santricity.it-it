@@ -28,6 +28,9 @@ Se il controllo di ridondanza rileva un'incoerenza tra i dati e le informazioni 
 
 
 
+
+NOTE: Il periodo di scansione predefinito dei supporti è impostato su 120 giorni.
+
 .A proposito di questa attività
 Le scansioni dei supporti rilevano e riparano gli errori dei supporti sui blocchi di dischi che vengono raramente letti dalle applicazioni. Ciò può impedire la perdita di dati in caso di guasto di un disco, poiché i dati dei dischi guasti vengono ricostruiti utilizzando le informazioni di ridondanza e i dati di altri dischi nel gruppo di volumi o nel pool.
 

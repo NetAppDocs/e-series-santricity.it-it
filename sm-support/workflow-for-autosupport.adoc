@@ -13,4 +13,4 @@ summary: In Gestore di sistema di SANtricity, configurare la funzione AutoSuppor
 [role="lead"]
 In Gestore di sistema, configurare la funzione AutoSupport seguendo questa procedura.
 
-image::../media/sam1130-flw-support-asup-setup.gif[sam1130 flw supporta la configurazione]
+image::../media/sam1130-flw-support-asup-setup.gif[Flusso di lavoro AutoSupport]

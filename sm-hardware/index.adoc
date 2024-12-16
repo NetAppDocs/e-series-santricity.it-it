@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Gestore di sistema di SANtricity 11.8
+= Gestore di sistema di SANtricity 11.9
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+È possibile controllare lo stato dei componenti nella pagina hardware ed eseguire alcune funzioni correlate a tali componenti.

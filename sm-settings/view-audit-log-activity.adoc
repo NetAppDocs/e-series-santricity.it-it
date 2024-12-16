@@ -81,7 +81,7 @@ Selezionare *Elimina* per aprire una finestra di dialogo che consente di rimuove
  a| 
 Mostra/Nascondi colonne
  a| 
-Fare clic sull'icona della colonna *Mostra/Nascondi* image:../media/sam-1140-ss-access-columns.gif[""] per selezionare colonne aggiuntive da visualizzare nella tabella. Le colonne aggiuntive includono:
+Fare clic sull'icona *Mostra/Nascondi* colonna image:../media/sam-1140-ss-access-columns.gif["Mostra/Nascondi colonna"]per selezionare altre colonne da visualizzare nella tabella. Le colonne aggiuntive includono:
 
 ** *Method* -- il metodo HTTP (AD esempio, POST, GET, DELETE, ecc.).
 ** *Comando CLI eseguito* -- comando CLI (grammatica) eseguito per richieste CLI sicure.
@@ -99,14 +99,14 @@ Fare clic sull'icona della colonna *Mostra/Nascondi* image:../media/sam-1140-ss-
  a| 
 Attiva/disattiva filtri colonna
  a| 
-Fare clic sull'icona *Alterna* image:../media/sam-1140-ss-access-toggle.gif[""] per aprire i campi di filtraggio per ciascuna colonna. Immettere i caratteri all'interno di un campo colonna per limitare gli eventi visualizzati da tali caratteri. Fare nuovamente clic sull'icona per chiudere i campi di filtraggio.
+Fare clic sull'icona *Alterna* image:../media/sam-1140-ss-access-toggle.gif["Attiva/Disattiva"]per aprire i campi di filtraggio per ciascuna colonna. Immettere i caratteri all'interno di un campo colonna per limitare gli eventi visualizzati da tali caratteri. Fare nuovamente clic sull'icona per chiudere i campi di filtraggio.
 
 
 
  a| 
 Annulla le modifiche
  a| 
-Fare clic sull'icona *Annulla* image:../media/sam-1140-ss-access-undo.gif[""] per ripristinare la configurazione predefinita della tabella.
+Fare clic sull'icona *Annulla* image:../media/sam-1140-ss-access-undo.gif["Annulla"]per ripristinare la configurazione predefinita della tabella.
 
 
 
