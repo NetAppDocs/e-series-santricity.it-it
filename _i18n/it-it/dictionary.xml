@@ -8697,4 +8697,29 @@
   <block id="877f007e3f321618e24a9962b07e63fa" category="sidebar">Gestione di un singolo array con System Manager 11.9</block>
   <block id="9c2cbf0c1a7244ea333628422695d560" category="sidebar">Gestione di array multipli con Unified Manager 7</block>
   <block id="12256f91aad97dd547dda71e221d63ce" category="sidebar">Documenti di SANtricity 11.9</block>
+  <block id="320344fc6d13f7639d2b2c90f55506fa" category="sidebar">Il software SANtricity 11,90 ti consente di ottenere performance ottimali e utilizzare al meglio i flash array ibridi e-Series e gli array all-flash EF-Series usando applicazioni caratterizzate da carichi di lavoro intensi, tra cui data analytics, videosorveglianza, backup e recovery.</block>
+  <block id="b26c3f1c1c8d9eb65323b2750c4c349d" category="sidebar">Documentazione del software SANtricity 11.90</block>
+  <block id="90e8ac6688c66ac3fc81de93ba27235a" category="sidebar">Gestore di sistema SANtricity e Gestore unificato</block>
+  <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interfaccia di System Manager</block>
+  <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Interfaccia di Unified Manager</block>
+  <block id="e95315401141b931451e32ea694b6d92" category="sidebar">Scheda informativa sul software SANtricity</block>
+  <block id="421eeeca306bdf1873654f04f6d8e61e" category="sidebar">Documenti e-Series</block>
+  <block id="b00771a05354ff5b2df1b388cfb6c874" category="sidebar">Documentazione sui sistemi e-Series</block>
+  <block id="06e7eb701ce804d46bd8c25ab5b395f0" category="sidebar">Riferimento dell'interfaccia della riga di comando (CLI)</block>
+  <block id="8a47162648ffc3ff0cf630036d36f2d6" category="sidebar">API SANtricity</block>
+  <block id="92850b78bdc20bc1df259e9c026d1744" category="sidebar">Servizi Web</block>
+  <block id="e925850eee1d36b9012f5887fe6721da" category="sidebar">Plug-in per vCenter</block>
+  <block id="b7d21f40b4f600f6d264e065bfc2ef45" category="sidebar">Provider SMI-S.</block>
+  <block id="4ad3ac8fcad31828ef9c8a0f6e3612d1" category="sidebar">App e add-on per le performance</block>
+  <block id="340bde3d9f9d57bac1774835ed1203cb" category="sidebar">App SANtricity per Splunk Enterprise</block>
+  <block id="a9a95fb3e7f3ac479078e21d446253a8" category="sidebar">Add-on con tecnologia Splunk per SANtricity</block>
+  <block id="bb86e40f418d08cd8d7bbeec844246ad" category="sidebar">Analizzatore delle performance con e-Series + Grafana</block>
+  <block id="78108480bada28e46fb2b45e1f33a4db" category="sidebar">Blog su e-Series Performance Analyzer</block>
+  <block id="958ff83dbf7d0240d610b02eded954cd" category="sidebar">Per il SES</block>
+  <block id="181d79a3e511e53525d453c7bfd76b1e" category="sidebar">Formazione tecnica e-Series/EF-Series (accesso richiesto)</block>
+  <block id="5274593635fc2a3195c85eefd393e7e6" category="sidebar">Panoramica e dettagli tecnici di EF300 (accesso obbligatorio)</block>
+  <block id="b7d6c20f0b34e1cb56ec4c6629bb1d94" category="sidebar">NetApp Fusion (accesso richiesto)</block>
+  <block id="974ad78dc53c253ebfe5b2b8b376f353" category="sidebar">Strumenti e supporto</block>
+  <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ (accesso richiesto)</block>
+  <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">Download di e-Series/SANtricity (accesso richiesto)</block>
 </blocks>
