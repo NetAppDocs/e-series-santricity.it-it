@@ -12,7 +12,7 @@ summary: È possibile modificare le impostazioni di un volume di coppia mirrorat
 
 
 [role="lead"]
-È possibile modificare le impostazioni di un volume di coppia mirrorata per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per un volume di coppia mirrorata è quasi piena.
+È possibile modificare le impostazioni di un volume di coppia di mirroring per regolare il punto percentuale in cui SANtricity System Manager invia una notifica di avviso quando la capacità riservata per un volume di coppia di mirroring si sta avvicinando al completo.
 
 .Fasi
 . Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])

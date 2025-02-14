@@ -12,7 +12,7 @@ summary: 'Le funzionalità RBAC (role-based access control) applicate all"array 
 
 
 [role="lead"]
-Le funzionalità RBAC (role-based access control) applicate all'array di storage includono profili utente predefiniti con uno o più ruoli mappati. Ogni ruolo include le autorizzazioni per l'accesso alle attività in System Manager.
+Le funzionalità RBAC (role-based access control) applicate all'array di storage includono profili utente predefiniti con uno o più ruoli mappati. Ogni ruolo include le autorizzazioni per l'accesso alle attività in Gestore di sistema di SANtricity.
 
 I profili utente e i ruoli mappati sono accessibili dal menu:Impostazioni[Gestione accessi > ruoli utente locali] nell'interfaccia utente di System Manager.
 

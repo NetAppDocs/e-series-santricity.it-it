@@ -12,7 +12,7 @@ summary: Se è stato creato un volume primario su un array di storage legacy che
 
 
 [role="lead"]
-Se è stato creato un volume primario su un array di storage legacy che non può essere gestito da System Manager, è possibile creare il volume secondario su questo array con System Manager.
+Se è stato creato un volume primario su un array di storage legacy che non può essere gestito da Gestore di sistema di SANtricity, è possibile creare il volume secondario su questo array con Gestore di sistema di SANtricity.
 
 .A proposito di questa attività
 È possibile eseguire il mirroring asincrono tra array legacy che utilizzano un'interfaccia diversa e array più recenti che possono essere gestiti da System Manager.

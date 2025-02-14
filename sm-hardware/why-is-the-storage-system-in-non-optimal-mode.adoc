@@ -11,7 +11,7 @@ summary: Un sistema storage in modalità non ottimale è dovuto a uno stato di c
 
 
 [role="lead"]
-Un sistema storage in modalità non ottimale è dovuto a uno stato di configurazione del sistema non valido. Nonostante questo stato, il normale accesso i/o ai volumi esistenti è completamente supportato; tuttavia, System Manager proibirà alcune operazioni.
+Un sistema storage in modalità non ottimale è dovuto a uno stato di configurazione del sistema non valido. Nonostante questo stato, il normale accesso i/o ai volumi esistenti è completamente supportato; tuttavia, Gestione di sistema di SANtricity proibirà alcune operazioni.
 
 Un sistema storage potrebbe passare a una configurazione di sistema non valida per uno dei seguenti motivi:
 

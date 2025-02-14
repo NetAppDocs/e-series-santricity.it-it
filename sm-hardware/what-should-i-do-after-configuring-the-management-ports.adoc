@@ -12,7 +12,7 @@ summary: 'Se è stato modificato l"indirizzo IP per lo storage array, potrebbe e
 
 
 [role="lead"]
-Se è stato modificato l'indirizzo IP per lo storage array, potrebbe essere necessario aggiornare la vista globale dell'array in Unified Manager.
+Se è stato modificato l'indirizzo IP per lo storage array, potrebbe essere necessario aggiornare la vista dell'array globale in Gestione unificata di SANtricity.
 
 Per aggiornare la vista array globale in Unified Manager, aprire l'interfaccia e accedere al menu:Manage[Discover].
 

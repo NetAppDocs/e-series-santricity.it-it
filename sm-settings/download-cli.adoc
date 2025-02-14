@@ -12,7 +12,7 @@ summary: 'Da System Manager è possibile scaricare il pacchetto dell"interfaccia
 
 
 [role="lead"]
-Da System Manager, è possibile scaricare il pacchetto dell'interfaccia a riga di comando (CLI).
+Da Gestione sistema di SANtricity, è possibile scaricare il pacchetto CLI (Command Line Interface).
 
 La CLI fornisce un metodo basato su testo per la configurazione e il monitoraggio degli array di storage. Comunica tramite https e utilizza la stessa sintassi della CLI disponibile nel pacchetto software di gestione installato esternamente. Non è richiesta alcuna chiave per scaricare la CLI.
 

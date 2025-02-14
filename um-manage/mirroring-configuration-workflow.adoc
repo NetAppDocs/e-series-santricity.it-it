@@ -11,7 +11,7 @@ summary: È possibile configurare il mirroring asincrono o sincrono in Unified M
 
 
 [role="lead"]
-È possibile configurare il mirroring asincrono o sincrono in Unified Manager, quindi utilizzare System Manager per gestire le sincronizzazioni.
+È possibile configurare il mirroring asincrono o sincrono in SANtricity Unified Manager e utilizzare SANtricity System Manager per gestire le sincronizzazioni.
 
 
 

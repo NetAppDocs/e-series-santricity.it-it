@@ -12,7 +12,7 @@ summary: È possibile creare un banner di accesso che viene presentato agli uten
 
 
 [role="lead"]
-È possibile creare un banner di accesso che viene presentato agli utenti prima di stabilire le sessioni in System Manager. Il banner può includere un avviso e un messaggio di consenso.
+È possibile creare un banner di accesso che viene presentato agli utenti prima di stabilire le sessioni in Gestore di sistema di SANtricity. Il banner può includere un avviso e un messaggio di consenso.
 
 .A proposito di questa attività
 Quando si crea un banner, questo viene visualizzato prima della schermata di accesso in una finestra di dialogo.

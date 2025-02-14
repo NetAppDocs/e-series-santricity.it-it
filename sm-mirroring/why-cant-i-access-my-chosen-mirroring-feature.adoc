@@ -11,7 +11,7 @@ summary: 'Il mirroring viene configurato nell"interfaccia di Unified Manager.'
 
 
 [role="lead"]
-Il mirroring viene configurato nell'interfaccia di Unified Manager.
+Il mirroring è configurato nell'interfaccia di SANtricity Unified Manager.
 
 [NOTE]
 ====

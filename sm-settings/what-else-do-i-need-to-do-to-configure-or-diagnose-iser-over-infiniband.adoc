@@ -12,7 +12,7 @@ summary: La seguente tabella elenca le funzioni di System Manager che è possibi
 
 
 [role="lead"]
-La seguente tabella elenca le funzioni di System Manager che è possibile utilizzare per configurare e gestire le sessioni iSER su InfiniBand.
+La tabella seguente elenca le funzioni di Gestione di sistema di SANtricity che è possibile utilizzare per configurare e gestire le sessioni iSER su InfiniBand.
 
 [NOTE]
 ====

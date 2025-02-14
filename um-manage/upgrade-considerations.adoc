@@ -11,7 +11,7 @@ summary: 'Prima di utilizzare Unified Manager per l"aggiornamento di più array 
 
 
 [role="lead"]
-Prima di utilizzare Unified Manager per l'aggiornamento di più array di storage, esaminare le considerazioni principali come parte della pianificazione.
+Prima di utilizzare Unified Manager di SANtricity per aggiornare più array di storage, esaminare le considerazioni principali come parte della pianificazione.
 
 
 

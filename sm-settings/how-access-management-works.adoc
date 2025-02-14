@@ -11,7 +11,7 @@ summary: 'La gestione degli accessi è un metodo per stabilire l"autenticazione 
 
 
 [role="lead"]
-Access Management è un metodo per stabilire l'autenticazione dell'utente in System Manager.
+La gestione degli accessi è un metodo per stabilire l'autenticazione dell'utente in Gestione di sistema di SANtricity.
 
 La configurazione e l'autenticazione dell'utente funzionano come segue:
 

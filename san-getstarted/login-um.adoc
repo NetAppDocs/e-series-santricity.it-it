@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, log in Unified Manager 
 summary: Accesso e accesso a Unified Manager. 
 ---
-= Accedi a Unified Manager
+= Accedi a SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Dopo aver installato Web Services Proxy, è possibile accedere a Unified Manager per gestire più sistemi storage in un'interfaccia basata su web.
+Dopo aver installato il proxy dei servizi Web, puoi accedere a SANtricity Unified Manager per gestire più sistemi di storage in un'interfaccia basata su web.
 
 
 NOTE: Per i browser supportati, vedere link:supported-browsers-os.html["Browser e sistemi operativi supportati"].

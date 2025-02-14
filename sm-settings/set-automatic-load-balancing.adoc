@@ -12,7 +12,7 @@ summary: La funzione di bilanciamento automatico del carico garantisce che il tr
 
 
 [role="lead"]
-La funzione di bilanciamento automatico del carico garantisce che il traffico i/o in entrata dagli host sia gestito e bilanciato dinamicamente tra entrambi i controller. Questa funzione è attivata per impostazione predefinita, ma è possibile disattivarla da System Manager.
+La funzione di bilanciamento automatico del carico garantisce che il traffico i/o in entrata dagli host sia gestito e bilanciato dinamicamente tra entrambi i controller. Questa funzione è attivata per impostazione predefinita, ma è possibile disattivarla dal Gestore di sistema di SANtricity.
 
 .A proposito di questa attività
 Quando il bilanciamento automatico del carico è attivato, esegue le seguenti funzioni:

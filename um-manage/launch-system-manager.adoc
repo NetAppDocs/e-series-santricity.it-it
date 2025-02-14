@@ -11,7 +11,7 @@ summary: 'È possibile utilizzare l"opzione di avvio per aprire il Gestore di si
 
 
 [role="lead"]
-È possibile utilizzare l'opzione Launch per aprire System Manager basato su browser per uno o più array di storage quando si desidera eseguire operazioni di gestione.
+È possibile utilizzare l'opzione di avvio per aprire il Gestore di sistema SANtricity basato su browser per uno o più array di storage quando si desidera eseguire operazioni di gestione.
 
 .Fasi
 . Dalla pagina Manage (Gestione), selezionare uno o più array di storage che si desidera gestire.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
 summary: 'Per la gestione esterna delle chiavi, vengono importati due tipi di certificati per l"autenticazione tra lo storage array e il server di gestione delle chiavi in modo che le due entità possano fidarsi l"una dell"altra.' 
 ---
-= Come è possibile sapere quali certificati devono essere caricati in System Manager per la gestione esterna delle chiavi?
+= Come è possibile sapere quali certificati devono essere caricati in Gestione sistema di SANtricity per la gestione delle chiavi esterne?
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

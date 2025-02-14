@@ -11,7 +11,7 @@ summary: 'È possibile utilizzare Unified Manager per importare le impostazioni 
 
 
 [role="lead"]
-È possibile utilizzare Unified Manager per importare le impostazioni da un array di storage a più array di storage. La funzione Import Settings (Impostazioni di importazione) è un'operazione batch che consente di risparmiare tempo quando è necessario configurare più array nella rete.
+È possibile utilizzare Gestione unificata di SANtricity per importare le impostazioni da un array di storage a più array di storage. La funzione Import Settings (Impostazioni di importazione) è un'operazione batch che consente di risparmiare tempo quando è necessario configurare più array nella rete.
 
 
 

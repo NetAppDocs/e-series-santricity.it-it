@@ -11,7 +11,7 @@ summary: 'Utilizzare la gestione degli accessi per stabilire l"autenticazione de
 
 
 [role="lead"]
-Utilizzare Access Management per stabilire l'autenticazione dell'utente in Unified Manager.
+Utilizzare la gestione degli accessi per stabilire l'autenticazione dell'utente in Gestione unificata di SANtricity.
 
 
 

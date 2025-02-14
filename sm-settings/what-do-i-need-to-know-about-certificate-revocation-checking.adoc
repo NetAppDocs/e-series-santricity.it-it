@@ -11,7 +11,7 @@ summary: 'System Manager consente di controllare i certificati revocati utilizza
 
 
 [role="lead"]
-System Manager consente di controllare i certificati revocati utilizzando un server OCSP (Online Certificate Status Protocol), invece di caricare gli elenchi di revoca dei certificati (CRL).
+Gestione di sistema di SANtricity consente di controllare i certificati revocati utilizzando un server OCSP (Online Certificate Status Protocol), anziché caricare gli elenchi di revoche di certificati (CRL).
 
 I certificati revocati non devono più essere attendibili. Un certificato potrebbe essere revocato per diversi motivi; ad esempio, se l'autorità di certificazione (CA) ha emesso il certificato in modo errato, una chiave privata è stata compromessa o l'entità identificata non è conforme ai requisiti dei criteri.
 

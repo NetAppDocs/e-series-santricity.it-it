@@ -11,7 +11,7 @@ summary: System Manager supporta queste versioni del browser.
 
 
 [role="lead"]
-System Manager supporta queste versioni del browser.
+SANtricity System Manager supporta queste versioni del browser.
 
 [cols="1a,1a"]
 |===

@@ -11,6 +11,6 @@ summary: Quando si identificano le applicazioni, System Manager consiglia automa
 
 
 [role="lead"]
-Quando si identificano le applicazioni, System Manager consiglia automaticamente una configurazione del volume che ottimizza lo storage in base al tipo di applicazione.
+Quando identifichi le applicazioni, SANtricity System Manager consiglia automaticamente una configurazione del volume che ottimizza lo storage in base al tipo di applicazione.
 
 L'ottimizzazione dei volumi per applicazione può rendere più efficienti le operazioni di storage dei dati. Caratteristiche come il tipo di i/o, la dimensione del segmento, la proprietà del controller e la cache di lettura e scrittura sono incluse nella configurazione del volume. Inoltre, è possibile visualizzare i dati delle performance per applicazione e per carico di lavoro per valutare la latenza, gli IOPS e i MiB/s delle applicazioni e i carichi di lavoro associati.

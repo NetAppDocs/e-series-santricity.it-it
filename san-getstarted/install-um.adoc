@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Unified Manager installation 
 summary: 'Panoramica dell"installazione di Unified Manager' 
 ---
-= Installare Unified Manager
+= Installazione di SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Unified Manager è incluso nel proxy dei servizi Web, un server API RESTful installato separatamente su un sistema host per gestire i sistemi storage NetApp e-Series.
+SANtricity Unified Manager è incluso nel proxy dei servizi web, un server API RESTful installato separatamente su un sistema host per la gestione dei sistemi storage NetApp e-Series.
 
 Per installare il proxy dei servizi Web e Unified Manager, consultare le seguenti istruzioni nel centro di documentazione di e-Series e SANtricity:
 

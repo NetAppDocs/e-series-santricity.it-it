@@ -12,7 +12,7 @@ summary: È possibile configurare System Manager in modo che invii avvisi di arr
 
 
 [role="lead"]
-È possibile configurare System Manager in modo che invii avvisi di array di storage tramite e-mail, trap SNMP e messaggi syslog.
+È possibile configurare SANtricity System Manager in modo da inviare avvisi agli storage array tramite email, trap SNMP e messaggi syslog.
 
 
 

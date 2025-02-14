@@ -12,7 +12,7 @@ summary: È possibile utilizzare Unified Manager per aggiornare il software SANt
 
 
 [role="lead"]
-È possibile utilizzare Unified Manager per aggiornare il software SANtricity OS su più array di storage dello stesso tipo a una versione più recente.
+È possibile utilizzare Gestione unificata di SANtricity per aggiornare il software del sistema operativo SANtricity su più array di storage dello stesso tipo a una versione più recente.
 
 
 

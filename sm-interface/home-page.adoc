@@ -11,7 +11,7 @@ summary: La home page fornisce una vista dashboard per la gestione quotidiana de
 
 
 [role="lead"]
-La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a System Manager, viene visualizzata la prima pagina iniziale.
+La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a Gestione di sistema SANtricity, viene visualizzata la prima schermata della pagina iniziale.
 
 La vista dashboard comprende quattro aree di riepilogo che contengono informazioni chiave sullo stato e lo stato dello storage array. Ulteriori informazioni sono disponibili nell'area di riepilogo.
 

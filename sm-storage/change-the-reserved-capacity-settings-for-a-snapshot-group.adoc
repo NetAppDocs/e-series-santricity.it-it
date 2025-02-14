@@ -12,7 +12,7 @@ summary: È possibile modificare le impostazioni di un gruppo di snapshot per mo
 
 
 [role="lead"]
-È possibile modificare le impostazioni di un gruppo di snapshot per modificarne il nome, le impostazioni di eliminazione automatica, il numero massimo di immagini snapshot consentite, il punto percentuale in cui System Manager invia una notifica di avviso di capacità riservata o il criterio da utilizzare quando la capacità riservata raggiunge la percentuale massima definita.
+È possibile modificare le impostazioni di un gruppo di snapshot per modificarne il nome, eliminare automaticamente le impostazioni, il numero massimo di immagini snapshot consentite, il punto percentuale in cui Gestione sistema SANtricity invia una notifica di avviso sulla capacità riservata o il criterio da utilizzare quando la capacità riservata raggiunge la percentuale massima definita.
 
 Durante la creazione di un gruppo di snapshot, viene creata una capacità riservata per memorizzare i dati di tutte le immagini di snapshot contenute nel gruppo.
 

@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Gestione di array multipli con Unified Manager 7
+  title: Gestione di array multipli con SANtricity Unified Manager 7
   summary: La documentazione del software SANtricity consente di installare, configurare
     e gestire lo storage array.
   keywords: santricity, install, setup, maintain, storage array
@@ -9,7 +9,7 @@ indexpage:
   tiles:
   - title: Configurazione
     links:
-    - title: Panoramica dell'interfaccia di Unified Manager
+    - title: Panoramica dell'interfaccia di SANtricity Unified Manager
       url: "../um-admin/overview-interface-unified.html"
     - title: Impostare la password admin
       url: "../um-admin/administrator-password-protection-unified.html"

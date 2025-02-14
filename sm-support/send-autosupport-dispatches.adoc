@@ -12,7 +12,7 @@ summary: System Manager consente di inviare le spedizioni AutoSupport al support
 
 
 [role="lead"]
-System Manager consente di inviare le spedizioni AutoSupport al supporto tecnico, senza attendere un invio pianificato.
+Gestione di sistema di SANtricity consente di inviare spedizioni AutoSupport al supporto tecnico, senza dover attendere una spedizione programmata.
 
 .Prima di iniziare
 La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella pagina AutoSupport.

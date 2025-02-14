@@ -12,7 +12,7 @@ summary: 'Se il protocollo NTP (Network Time Protocol) non è attivato, è possi
 
 
 [role="lead"]
-Se il protocollo NTP (Network Time Protocol) non è attivato, è possibile impostare manualmente gli orologi sui controller in modo che siano sincronizzati con il client di gestione (il sistema utilizzato per eseguire il browser che accede a System Manager).
+Se il protocollo NTP (Network Time Protocol) non è attivato, è possibile impostare manualmente gli orologi sui controller in modo che siano sincronizzati con il client di gestione (il sistema utilizzato per eseguire il browser che accede a Gestore di sistema di SANtricity).
 
 .A proposito di questa attività
 La sincronizzazione garantisce che i timbri dell'ora dell'evento nel registro eventi corrispondano ai timestamp scritti nei file di registro dell'host. Durante il processo di sincronizzazione, i controller rimangono disponibili e operativi.

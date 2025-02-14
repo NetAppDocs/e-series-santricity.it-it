@@ -12,7 +12,7 @@ summary: 'La creazione del pool viene avviata automaticamente quando System Mana
 
 
 [role="lead"]
-La creazione del pool viene avviata automaticamente quando System Manager rileva dischi non assegnati nell'array di storage. È possibile utilizzare la creazione automatica del pool per configurare facilmente tutte le unità non assegnate nell'array di storage in un unico pool e per aggiungere unità nei pool esistenti.
+La creazione del pool viene avviata automaticamente quando SANtricity System Manager rileva unità non assegnate nell'array di storage. È possibile utilizzare la creazione automatica del pool per configurare facilmente tutte le unità non assegnate nell'array di storage in un unico pool e per aggiungere unità nei pool esistenti.
 
 .Prima di iniziare
 È possibile avviare la finestra di dialogo Configurazione automatica pool quando si verifica una delle seguenti condizioni:

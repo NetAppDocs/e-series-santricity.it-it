@@ -11,7 +11,7 @@ summary: System Manager riporta diversi stati per i dischi.
 
 
 [role="lead"]
-System Manager riporta diversi stati per i dischi.
+Gestione di sistema SANtricity riporta vari stati per le unità.
 
 
 

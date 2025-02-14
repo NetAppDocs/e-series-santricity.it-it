@@ -11,7 +11,7 @@ summary: 'Le funzionalità RBAC (role-based access control) includono utenti pre
 
 
 [role="lead"]
-Le funzionalità RBAC (role-based access control) includono utenti predefiniti con uno o più ruoli mappati. Ogni ruolo include le autorizzazioni per l'accesso alle attività in Unified Manager.
+Le funzionalità RBAC (role-based access control) includono utenti predefiniti con uno o più ruoli mappati. Ogni ruolo include le autorizzazioni per l'accesso alle attività in Gestione unificata di SANtricity.
 
 I ruoli forniscono agli utenti l'accesso alle attività, come segue:
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access System Manager 
 summary: 'Per accedere all"interfaccia utente di System Manager, puntare un browser verso l"indirizzo IP del controller. L"installazione guidata consente di iniziare a configurare il sistema.' 
 ---
-= Accedere a System Manager
+= Accedere a Gestore di sistema di SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 'Per accedere all"interfaccia utente di System Manager, puntare un brow
 
 
 [role="lead"]
-Per accedere all'interfaccia utente di System Manager, puntare un browser verso l'indirizzo IP del controller. L'installazione guidata consente di iniziare a configurare il sistema.
+Per accedere all'interfaccia utente di SANtricity System Manager, occorre puntare un browser all'indirizzo IP del controller. L'installazione guidata consente di iniziare a configurare il sistema.
 
 .Prima di iniziare
 * Installare e configurare l'hardware, come descritto in una delle guide di configurazione rapide:

@@ -11,7 +11,7 @@ summary: Prima di poter visualizzare e gestire le risorse di storage, Unified Ma
 
 
 [role="lead"]
-Prima di poter visualizzare e gestire le risorse di storage, Unified Manager deve rilevare gli array di storage che si desidera gestire nella rete aziendale. È possibile rilevare più array o un singolo array.
+Prima di poter visualizzare e gestire le risorse di storage, SANtricity deve rilevare gli array di storage che si desidera gestire nella rete aziendale. È possibile rilevare più array o un singolo array.
 
 
 

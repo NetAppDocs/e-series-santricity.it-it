@@ -11,7 +11,7 @@ summary: 'System Manager utilizza icone e diversi altri metodi per notificare l"
 
 
 [role="lead"]
-System Manager utilizza icone e diversi altri metodi per notificare l'esistenza di problemi con lo storage array.
+Gestione di sistema di SANtricity utilizza le icone e diversi altri metodi per notificare l'esistenza di problemi con lo storage array.
 
 
 

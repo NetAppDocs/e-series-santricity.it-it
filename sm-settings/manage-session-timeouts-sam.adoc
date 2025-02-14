@@ -12,7 +12,7 @@ summary: È possibile configurare i timeout in Gestore di sistema di SANtricity,
 
 
 [role="lead"]
-È possibile configurare i timeout in System Manager, in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo.
+È possibile configurare i timeout in Gestore di sistema di SANtricity, in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo.
 
 .A proposito di questa attività
 Per impostazione predefinita, il timeout della sessione per System Manager è di 30 minuti. È possibile regolare l'orario oppure disattivare completamente i timeout della sessione.

@@ -11,7 +11,7 @@ summary: Scopri come si applicano i termini di gestione degli accessi a SANtrici
 
 
 [role="lead"]
-Scopri come si applicano i termini di Access Management a Unified Manager.
+Scopri come si applicano i termini di gestione degli accessi a SANtricity Unified Manager.
 
 [cols="25h,~"]
 |===

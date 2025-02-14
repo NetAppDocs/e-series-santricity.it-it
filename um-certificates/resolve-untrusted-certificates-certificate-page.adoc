@@ -12,7 +12,7 @@ summary: I certificati non attendibili si verificano quando un array di storage 
 
 
 [role="lead"]
-I certificati non attendibili si verificano quando uno storage array tenta di stabilire una connessione sicura a Unified Manager, ma la connessione non viene confermata come sicura.
+I certificati non attendibili si verificano quando un array di storage tenta di stabilire una connessione sicura a Gestione unificata di SANtricity, ma la connessione non viene confermata come sicura.
 
 Dalla pagina Certificate (certificato), è possibile risolvere i certificati non attendibili importando un certificato autofirmato dall'array di storage o importando un certificato dell'autorità di certificazione (CA) emesso da una terza parte attendibile.
 

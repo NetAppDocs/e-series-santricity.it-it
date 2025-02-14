@@ -12,7 +12,7 @@ summary: System Manager crea automaticamente una pianificazione predefinita per 
 
 
 [role="lead"]
-System Manager crea automaticamente una pianificazione predefinita per le spedizioni AutoSupport. Se preferisci, puoi specificare la tua pianificazione.
+Gestione di sistema di SANtricity crea automaticamente una pianificazione predefinita per le spedizioni di AutoSupport. Se preferisci, puoi specificare la tua pianificazione.
 
 .Prima di iniziare
 La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella pagina AutoSupport.

@@ -11,7 +11,7 @@ summary: Le hot spare fungono da unità di standby in gruppi di volumi RAID 1, R
 
 
 [role="lead"]
-Le hot spare fungono da unità di standby in gruppi di volumi RAID 1, RAID 5 o RAID 6 per System Manager.
+Gli hot spare fungono da unità di standby nei gruppi di volumi RAID 1, RAID 5 o RAID 6 per SANtricity System Manager.
 
 Si tratta di dischi completamente funzionanti che non contengono dati. Se un disco si guasta nel gruppo di volumi, il controller ricostruisce automaticamente i dati dal disco guasto a un disco assegnato come hot spare.
 

@@ -12,7 +12,7 @@ summary: È possibile modificare le impostazioni di un volume membro del gruppo 
 
 
 [role="lead"]
-È possibile modificare le impostazioni di un volume membro del gruppo di coerenza per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata di un volume membro è quasi piena e per modificare il criterio da utilizzare quando la capacità riservata raggiunge il valore massimo definito percentuale.
+È possibile modificare le impostazioni di un volume membro di un gruppo di coerenza per regolare il punto percentuale in cui SANtricity System Manager invia una notifica di avviso quando la capacità riservata di un volume membro è quasi piena e per modificare il criterio da utilizzare quando la capacità riservata raggiunge la percentuale massima definita.
 
 .A proposito di questa attività
 La modifica delle impostazioni di capacità riservata per un singolo volume membro modifica anche le impostazioni di capacità riservata per tutti i volumi membri associati a un gruppo di coerenza.

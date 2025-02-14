@@ -11,7 +11,7 @@ summary: È possibile accedere a SANtricity Unified Manager da diversi tipi di b
 
 
 [role="lead"]
-È possibile accedere a Unified Manager da diversi tipi di browser.
+È possibile accedere a SANtricity Unified Manager da diversi tipi di browser.
 
 Sono supportati i seguenti browser e versioni.
 

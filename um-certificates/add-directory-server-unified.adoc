@@ -11,7 +11,7 @@ summary: 'Per configurare l"autenticazione per la gestione degli accessi, è nec
 
 
 [role="lead"]
-Per configurare l'autenticazione per la gestione degli accessi, è necessario stabilire le comunicazioni tra un server LDAP e l'host che esegue il proxy dei servizi Web per Unified Manager. Quindi, associare i gruppi di utenti LDAP ai ruoli utente locali.
+Per configurare l'autenticazione per la gestione degli accessi, è necessario stabilire le comunicazioni tra un server LDAP e l'host che esegue il proxy dei servizi Web per la gestione unificata di SANtricity. Quindi, associare i gruppi di utenti LDAP ai ruoli utente locali.
 
 .Prima di iniziare
 * È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.

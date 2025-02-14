@@ -11,7 +11,7 @@ summary: System Manager definisce i limiti per il numero di dischi che è possib
 
 
 [role="lead"]
-System Manager definisce i limiti per il numero di dischi che è possibile rimuovere da un pool.
+Gestione sistema SANtricity imposta i limiti per il numero di dischi che è possibile rimuovere da un pool.
 
 * Non è possibile ridurre il numero di dischi in un pool a meno di 11 dischi.
 * Non è possibile rimuovere le unità se nel pool non è disponibile una capacità libera sufficiente per contenere i dati delle unità rimosse quando tali dati vengono ridistribuiti alle altre unità del pool.

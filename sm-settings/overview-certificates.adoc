@@ -11,7 +11,7 @@ summary: 'È possibile utilizzare System Manager per creare CSR (Certificate Sig
 
 
 [role="lead"]
-È possibile utilizzare System Manager per creare CSR (Certificate Signing Request), importare certificati e gestire i certificati esistenti.
+È possibile utilizzare Gestione di sistema di SANtricity per creare richieste di firma dei certificati (CSR), importare certificati e gestire certificati esistenti.
 
 
 

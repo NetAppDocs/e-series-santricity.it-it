@@ -11,7 +11,7 @@ summary: 'I componenti aggiuntivi sono funzionalità non incluse nella configura
 
 
 [role="lead"]
-I componenti aggiuntivi sono funzionalità non incluse nella configurazione standard di System Manager e potrebbero richiedere una chiave per l'attivazione. Una funzione aggiuntiva può essere una singola funzionalità premium o un pacchetto di funzionalità.
+I componenti aggiuntivi sono funzioni non incluse nella configurazione standard di Gestione sistema di SANtricity e potrebbero richiedere una chiave per l'attivazione. Una funzione aggiuntiva può essere una singola funzionalità premium o un pacchetto di funzionalità.
 
 I seguenti passaggi forniscono una panoramica sull'attivazione di una funzionalità Premium o Feature Pack:
 

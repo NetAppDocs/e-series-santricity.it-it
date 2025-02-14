@@ -11,7 +11,7 @@ summary: Se si riceve un errore durante il tentativo di accesso a System Manager
 
 
 [role="lead"]
-Se si riceve un errore durante il tentativo di accesso a System Manager, esaminare queste possibili cause.
+Se si riceve un errore durante il tentativo di accesso a Gestione di sistema di SANtricity, esaminare le possibili cause.
 
 Gli errori di accesso a System Manager possono verificarsi per uno dei seguenti motivi:
 

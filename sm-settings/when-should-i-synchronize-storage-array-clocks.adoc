@@ -11,7 +11,7 @@ summary: 'È necessario sincronizzare manualmente gli orologi del controller nel
 
 
 [role="lead"]
-È necessario sincronizzare manualmente gli orologi del controller nell'array di storage se si nota che gli indicatori di data e ora visualizzati in System Manager non sono allineati con quelli visualizzati nel client di gestione (il computer che accede a System Manager tramite il browser). Questa attività è necessaria solo se NTP (Network Time Protocol) non è attivato in System Manager.
+È necessario sincronizzare manualmente gli orologi del controller nell'array di archiviazione se si nota che gli indicatori di data e ora visualizzati in Gestione di sistema di SANtricity non sono allineati con gli indicatori di data e ora visualizzati nel client di gestione (il computer che accede a Gestione di sistema di SANtricity tramite il browser). Questa operazione è necessaria solo se il protocollo NTP (Network Time Protocol) non è attivato in Gestione sistema di SANtricity.
 
 [NOTE]
 ====

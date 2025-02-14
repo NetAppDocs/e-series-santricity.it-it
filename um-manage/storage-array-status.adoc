@@ -11,7 +11,7 @@ summary: Unified Manager visualizza lo stato di ciascun array di storage rilevat
 
 
 [role="lead"]
-Unified Manager visualizza lo stato di ciascun array di storage rilevato.
+SANtricity Unified Manager visualizza lo stato di ciascun storage array rilevato.
 
 Accedere alla pagina *Gestisci - tutto*. Da questa pagina è possibile visualizzare lo stato della connessione tra il proxy dei servizi Web e l'array di storage.
 

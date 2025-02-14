@@ -12,7 +12,7 @@ summary: È possibile configurare System Manager per alcune impostazioni general
 
 
 [role="lead"]
-È possibile configurare System Manager per alcune impostazioni generali degli array e funzionalità aggiuntive.
+È possibile configurare Gestore di sistema di SANtricity per alcune impostazioni generali dell'array e per alcune funzioni aggiuntive.
 
 
 

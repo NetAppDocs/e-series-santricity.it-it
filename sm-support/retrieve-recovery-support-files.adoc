@@ -12,7 +12,7 @@ summary: Il supporto tecnico può utilizzare i file di supporto per il ripristin
 
 
 [role="lead"]
-Il supporto tecnico può utilizzare i file di supporto per il ripristino per risolvere i problemi. System Manager salva automaticamente questi file.
+Il supporto tecnico può utilizzare i file di supporto per il ripristino per risolvere i problemi. Gestione di sistema di SANtricity salva automaticamente questi file.
 
 .Prima di iniziare
 Il supporto tecnico ha richiesto l'invio di file aggiuntivi per la risoluzione dei problemi.

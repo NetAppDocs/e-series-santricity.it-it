@@ -12,7 +12,7 @@ summary: 'È possibile ottenere certificati con firma CA per comunicazioni sicur
 
 
 [role="lead"]
-È possibile ottenere certificati con firma CA per comunicazioni sicure tra i controller e il browser utilizzato per l'accesso a System Manager.
+È possibile ottenere certificati firmati dalla CA per comunicazioni protette tra i controller e il browser utilizzato per accedere a Gestione di sistema di SANtricity.
 
 .Prima di iniziare
 * È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni del certificato non vengono visualizzate.

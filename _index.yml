@@ -11,9 +11,9 @@ indexpage:
   tiles:
   - title: Inizia subito
     links:
-    - title: Interfaccia di System Manager
+    - title: Interfaccia Gestione di sistema di SANtricity
       url: /sm-interface/overview-interface-sam.html"
-    - title: Interfaccia di Unified Manager
+    - title: Interfaccia di SANtricity Unified Manager
       url: "/um-admin/overview-interface-unified.html"
     - title: Scheda informativa sul software SANtricity
       url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf

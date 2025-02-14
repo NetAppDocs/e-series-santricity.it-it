@@ -11,7 +11,7 @@ summary: 'Le coppie mirrorate vengono configurate nell"interfaccia di Unified Ma
 
 
 [role="lead"]
-Le coppie mirrorate vengono configurate nell'interfaccia di Unified Manager e quindi gestite in System Manager.
+È possibile configurare le coppie di mirroring nell'interfaccia di SANtricity Unified Manager, quindi gestire le coppie in SANtricity System Manager.
 
 Prima di creare una coppia mirrorata, attenersi alle seguenti linee guida:
 

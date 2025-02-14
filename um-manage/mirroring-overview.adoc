@@ -11,7 +11,7 @@ summary: Unified Manager include opzioni di configurazione per le funzionalità 
 
 
 [role="lead"]
-Unified Manager include opzioni di configurazione per le funzionalità di mirroring di SANtricity, che consentono agli amministratori di replicare i dati tra due array di storage per la protezione dei dati.
+SANtricity Unified Manager include opzioni di configurazione per le funzionalità di mirroring SANtricity, che consentono agli amministratori di replicare i dati tra due storage array per la protezione dei dati.
 
 [NOTE]
 ====

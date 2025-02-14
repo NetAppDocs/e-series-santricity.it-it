@@ -11,7 +11,7 @@ summary: È possibile navigare in System Manager utilizzando la sola tastiera.
 
 
 [role="lead"]
-È possibile navigare in System Manager utilizzando la sola tastiera.
+È possibile navigare in Gestione di sistema di SANtricity utilizzando la sola tastiera.
 
 
 
