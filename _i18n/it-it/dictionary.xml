@@ -8651,9 +8651,6 @@
   <block id="45dc1f6fb3b875c733e188121fcc647a" category="paragraph">Il file CSR (Certificate Signing Request) generato esternamente tramite coppie di chiavi private e pubbliche può ora essere importato tramite System Manager.</block>
   <block id="c0f4196deec20490ebf6989158642c34" category="paragraph">La funzione di blocco dell'accesso è ora disponibile per i servizi Web</block>
   <block id="a30347233ec617731633ca56f8f1b923" category="paragraph">Configurabile solo tramite l'API REST, è ora disponibile una nuova impostazione di blocco dell'accesso per i servizi Web incorporati e proxy.</block>
-  <block id="12256f91aad97dd547dda71e221d63ce" category="sidebar">Documenti di SANtricity 11.9</block>
-  <block id="320344fc6d13f7639d2b2c90f55506fa" category="sidebar">Il software SANtricity 11,90 ti consente di ottenere performance ottimali e utilizzare al meglio i flash array ibridi e-Series e gli array all-flash EF-Series usando applicazioni caratterizzate da carichi di lavoro intensi, tra cui data analytics, videosorveglianza, backup e recovery.</block>
-  <block id="b26c3f1c1c8d9eb65323b2750c4c349d" category="sidebar">Documentazione del software SANtricity 11.90</block>
   <block id="90e8ac6688c66ac3fc81de93ba27235a" category="sidebar">Gestore di sistema SANtricity e Gestore unificato</block>
   <block id="e95315401141b931451e32ea694b6d92" category="sidebar">Scheda informativa sul software SANtricity</block>
   <block id="421eeeca306bdf1873654f04f6d8e61e" category="sidebar">Documenti e-Series</block>
@@ -8742,4 +8739,7 @@
   <block id="4895fd90ba99a1644bbfaaa77bf80a43" category="sidebar">Gestione di array multipli con SANtricity Unified Manager 7</block>
   <block id="3089984c7abf64387bdc035943beae57" category="sidebar">Configurazione del Gestore di sistema di SANtricity</block>
   <block id="61ed698df3699989d8d782fe430d2755" category="sidebar">Configurazione di SANtricity Unified Manager</block>
+  <block id="3ff0cf51d8c2e66a61c1a36c2258ffb7" category="sidebar">Il software SANtricity 11,9 ti consente di ottenere performance ottimali e utilizzare al meglio i flash array ibridi e-Series e gli array all-flash EF-Series usando applicazioni caratterizzate da carichi di lavoro intensi, tra cui data analytics, videosorveglianza, backup e recovery.</block>
+  <block id="18ca0e475e67b79b5c1367dc3fece234" category="sidebar">Documentazione del software SANtricity 11,9</block>
+  <block id="1bde2299408b1369159daef73cb92e8b" category="sidebar">Documentazione del software SANtricity 11,9</block>
 </blocks>
