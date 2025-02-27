@@ -31,7 +31,7 @@ Per abilitare e configurare il mirroring tra due array, è necessario utilizzare
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sull'array di storage EF300 o EF600.
+Il mirroring sincrono non è disponibile sull'array di storage EF300/EF300C o EF600/EF600C.
 
 ====
 * È necessario disporre di due array di storage.

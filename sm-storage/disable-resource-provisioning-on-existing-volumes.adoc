@@ -20,6 +20,10 @@ Per impostazione predefinita, il provisioning delle risorse è attivato nei sist
 
 .Prima di iniziare
 * È necessario disporre di uno storage array EF300 o EF600.
++
+
+NOTE: Al momento, DULBE non è supportato dagli storage array EF300C o EF600C.
+
 * È necessario disporre di gruppi di volumi o pool SSD, in cui tutti i dischi supportano la funzionalità di ripristino degli errori NVMe Deallocated o Unwritten Logical Block Error Enable (DULBE). In caso contrario, l'opzione di provisioning delle risorse non è disponibile.
 
 

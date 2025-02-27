@@ -15,7 +15,7 @@ Utilizza le funzionalità di mirroring per replicare i dati tra uno storage arra
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sul sistema storage EF600 o EF300.
+Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
 
 ====
 

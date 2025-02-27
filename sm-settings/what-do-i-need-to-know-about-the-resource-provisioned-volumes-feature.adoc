@@ -2,7 +2,7 @@
 permalink: sm-settings/what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, resource-provisioned, volumes, feature, 
-summary: Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background. 
+summary: Il provisioning delle risorse è una funzione disponibile negli array di storage EF300, EF300C, EF600 e EF600C, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background. 
 ---
 = Cosa occorre sapere sulla funzionalità dei volumi con provisioning delle risorse?
 :allow-uri-read: 
@@ -19,3 +19,6 @@ Un volume con provisioning di risorse è un volume denso in un gruppo di volumi 
 I volumi con provisioning delle risorse sono supportati solo su gruppi di volumi e pool SSD, in cui tutti i dischi del gruppo o del pool supportano la funzionalità di ripristino degli errori NVMe Deallocated o Unwritten Logical Block Error Enable (DULBE). Quando viene creato un volume con provisioning di risorse, tutti i blocchi di dischi assegnati al volume vengono deallocati (non mappati). Inoltre, gli host possono deallocare i blocchi logici nel volume utilizzando il comando NVMe Dataset Management o il comando SCSI Unmap. La deallocazione dei blocchi può migliorare la durata dell'utilizzo degli SSD e aumentare le massime prestazioni di scrittura. Il miglioramento varia in base al modello e alla capacità di ciascun disco.
 
 Il provisioning delle risorse è attivato per impostazione predefinita nei sistemi in cui i dischi supportano DULBE. È possibile disattivare l'impostazione predefinita da *Pools & Volume Groups*.
+
+
+NOTE: Al momento, DULBE non è supportato dagli storage array EF300C o EF600C.

@@ -40,7 +40,7 @@ Volumi sottili
  a| 
 * I thin volumi vengono creati solo da un pool, non da un gruppo di volumi.
 * I volumi thin devono essere RAID 6.
-* I thin volumi non sono disponibili sul sistema storage EF600 o EF300.
+* I volumi thin non sono disponibili sul sistema storage EF600/EF600C o EF300/EF300C.
 * È necessario utilizzare la CLI per creare volumi thin.
 * A differenza dei volumi thick, lo spazio richiesto per il volume thin non viene allocato durante la creazione, ma viene fornito on-demand in un secondo momento.
 * Un volume sottile consente di allocarne le dimensioni in modo eccessivo. In altri termini, è possibile assegnare una dimensione del LUN superiore a quella del volume. È quindi possibile espandere il volume in base alle necessità (se necessario, aggiungendo dischi nel processo) senza espandere le dimensioni del LUN e quindi senza scollegare gli utenti.

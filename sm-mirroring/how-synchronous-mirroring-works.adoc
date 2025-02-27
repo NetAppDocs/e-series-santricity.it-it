@@ -15,7 +15,7 @@ Il mirroring sincrono replica i volumi di dati in tempo reale per garantire una 
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sull'array di storage EF600 o EF300.
+Il mirroring sincrono non è disponibile sull'array di storage EF600/EF600C o EF300/EF300C.
 
 ====
 Il mirroring sincrono raggiunge un obiettivo RPO (Recovery Point Objective) pari a zero dati persi grazie alla disponibilità di una copia dei dati importanti in caso di disastro su uno dei due array di storage. La copia è identica ai dati di produzione in ogni momento perché ogni volta che viene eseguita una scrittura nel volume primario, viene eseguita una scrittura nel volume secondario. L'host non riceve una conferma che la scrittura è riuscita fino a quando il volume secondario non viene aggiornato correttamente con le modifiche apportate sul volume primario.

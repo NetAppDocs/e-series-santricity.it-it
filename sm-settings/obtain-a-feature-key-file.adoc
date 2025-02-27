@@ -27,9 +27,6 @@ Questa attività descrive come raccogliere le informazioni necessarie per la fun
 . In System Manager, individuare Feature Enable Identifier. Accedere a menu:Impostazioni[sistema], quindi scorrere verso il basso fino a *componenti aggiuntivi*. Cercare *Feature Enable Identifier*. Annotare il numero per l'identificatore di abilitazione della funzione.
 . Individuare e registrare il codice per l'attivazione della funzione. Per i pacchetti di funzionalità, questo codice viene fornito nelle istruzioni appropriate per l'esecuzione della conversione.
 +
-Le istruzioni NetApp sono disponibili all'interno del sito https://www.netapp.com/support-and-training/documentation/eseries-santricity/["Centro di documentazione dei sistemi NetApp e-Series"^].
-
-+
 Per le funzioni Premium, è possibile accedere al codice di attivazione dal sito del supporto, come indicato di seguito:
 
 +

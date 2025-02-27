@@ -19,7 +19,7 @@ Il volume di accesso viene utilizzato nella seguente istanza:
 +
 [NOTE]
 ====
-La gestione in-band non è disponibile per i sistemi storage EF600 o EF300.
+La gestione in banda mediante il volume di accesso non è disponibile per i sistemi di storage E4000, EF600/EF600C o EF300/EF300C.
 
 ====
 

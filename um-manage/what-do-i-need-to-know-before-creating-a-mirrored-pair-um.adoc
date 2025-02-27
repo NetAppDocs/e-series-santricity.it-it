@@ -25,6 +25,6 @@ Prima di creare una coppia mirrorata, seguire queste linee guida.
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sul sistema storage EF600 o EF300.
+Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
 
 ====

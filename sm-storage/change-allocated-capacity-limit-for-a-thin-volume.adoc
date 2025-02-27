@@ -18,7 +18,7 @@ Per i thin volumi in grado di allocare lo spazio on-demand, è possibile modific
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Questa funzione non è disponibile nei sistemi di storage EF600/EF600C o EF300/EF300C.
 
 ====
 Il sistema espande automaticamente la capacità allocata in base al limite di capacità allocata. Il limite di capacità allocata consente di limitare la crescita automatica del thin volume al di sotto della capacità riportata. Quando la quantità di dati scritti si avvicina alla capacità allocata, è possibile modificare il limite di capacità allocata.

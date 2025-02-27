@@ -15,7 +15,7 @@ Lo stato di una coppia sincrona con mirroring indica se i dati sul volume primar
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Questa funzione non è disponibile nei sistemi di storage EF600/EF600C o EF300/EF300C.
 
 ====
 Le coppie sincrone mirrorate possono avere uno dei seguenti stati:

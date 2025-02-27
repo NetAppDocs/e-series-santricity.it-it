@@ -43,7 +43,7 @@ Il thin provisioning consente di evitare sprechi di capacità allocata e consent
 
 [NOTE]
 ====
-I sistemi storage EF600 e EF300 non supportano il thin provisioning.
+I sistemi storage EF600/EF600C e EF300/EF300C non supportano il thin provisioning.
 
 ====
 

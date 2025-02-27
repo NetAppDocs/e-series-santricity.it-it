@@ -15,7 +15,7 @@ summary: È possibile monitorare lo spazio dei thin volumi e generare avvisi app
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Questa funzione non è disponibile nei sistemi di storage EF600/EF600C o EF300/EF300C.
 
 ====
 [NOTE]

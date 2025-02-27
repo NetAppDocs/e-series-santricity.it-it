@@ -15,7 +15,7 @@ La funzione Synchronous Mirroring offre una replica dei dati online e in tempo r
 
 [NOTE]
 ====
-Questa funzione non è disponibile sui sistemi storage EF600 o EF300.
+Questa funzione non è disponibile nei sistemi di storage EF600/EF600C o EF300/EF300C.
 
 ====
 
