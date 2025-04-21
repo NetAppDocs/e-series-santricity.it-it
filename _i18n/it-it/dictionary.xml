@@ -6347,11 +6347,7 @@
   <block id="0cfdfbdd119415c6ddf275bed8ee837f" category="list-text">Selezionare menu:Manage Groups[Rename storage array group] (Gestisci gruppi[Rinomina gruppo array di storage])</block>
   <block id="3538cf726ba33bfc39560ec766baff55" category="list-text">Nel campo *Nome gruppo*, digitare un nuovo nome per il gruppo.</block>
   <block id="076bdbf907dc0e648d58e55744e09b52" category="list-text">Fare clic su *Rinomina.*</block>
-  <block id="7d63fa7b66beb048adb4cb5412f78f29" category="summary">È possibile utilizzare Unified Manager per aggiornare il software SANtricity OS su più array di storage dello stesso tipo a una versione più recente.</block>
-  <block id="35a02fabedaff63c9eea49354c0479c7" category="doc">Come funzionano gli aggiornamenti</block>
   <block id="5b416e1633d16aad217a2e0fc2d097f8" category="section-title">Workflow di upgrade</block>
-  <block id="37e1222cab25890a0cd0d01b19f4489d" category="paragraph">I seguenti passaggi forniscono un workflow di alto livello per l'esecuzione degli aggiornamenti software:</block>
-  <block id="bc2ada3b24f486f7b98ff3159828f426" category="list-text">È possibile scaricare il file software SANtricity OS più recente dal sito del supporto (un collegamento è disponibile da Unified Manager nella pagina *supporto*). Salvare il file sul sistema host di gestione (l'host in cui si accede a Unified Manager in un browser), quindi decomprimere il file.</block>
   <block id="a200f8c4b71a38169e50e4e1757c92f0" category="list-text">In Unified Manager, caricare il file del software del sistema operativo SANtricity e IL file NVSRAM nel repository (un'area del server proxy dei servizi Web in cui sono memorizzati i file). È possibile aggiungere file dal menu:Centro aggiornamenti[Aggiorna software SANtricity OS o dal Centro aggiornamenti &gt; Gestisci repository software].</block>
   <block id="d1ba3ebc5172c097a542cb59c46118f4" category="list-text">Una volta caricati i file nel repository, è possibile selezionare il file da utilizzare nell'aggiornamento. Dalla pagina Aggiorna software SANtricity OS (menu:Centro aggiornamenti[Aggiorna software SANtricity OS]), selezionare il file del software SANtricity OS e IL file NVSRAM. Dopo aver selezionato un file software, in questa pagina viene visualizzato un elenco di array di storage compatibili. Selezionare quindi gli array di storage che si desidera aggiornare con il nuovo software. (Non è possibile selezionare array incompatibili).</block>
   <block id="d07fed7a91e9b5ecf1b7a376a13d3c4e" category="list-text">È quindi possibile avviare un trasferimento e un'attivazione software immediati oppure scegliere di preparare i file per l'attivazione in un secondo momento. Durante il processo di aggiornamento, Unified Manager esegue le seguenti attività:</block>
@@ -8274,8 +8270,6 @@
   <block id="2691094954160d37ae4a945492ed79dc" category="list-text">Selezionare *Invia AutoSupport spedizione*.</block>
   <block id="4ebd83dae75ca11e33f268553f64b7a1" category="paragraph">Viene visualizzata la finestra di dialogo Invia AutoSupport di spedizione.</block>
   <block id="a8fdcab87c50d1c3326d999ec15dd4d9" category="list-text">Confermare l'operazione selezionando *Invia*.</block>
-  <block id="0053cb3da5cd9357da42c9285388e7c5" category="summary">In Gestore di sistema di SANtricity, è possibile aggiornare il software e il firmware del controller seguendo questa procedura.</block>
-  <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Workflow per l'aggiornamento del firmware e del software del controller</block>
   <block id="d8f0613c24af04e1cd5dd07eebb7e06a" category="summary">La funzione AutoSupport contiene tre tipi di spedizione standard: Spedizioni di eventi, spedizioni pianificate e spedizioni di diagnostica on-demand e remote.</block>
   <block id="75a790e3d1d1166d06a211f585c3b7fb" category="doc">Che tipo di dati vengono raccolti tramite la funzione AutoSupport?</block>
   <block id="b6073cf49219fff8a8dcd8afdbd8041d" category="paragraph">I dati AutoSupport non contengono dati utente.</block>
@@ -8620,7 +8614,6 @@
   <block id="22ec79b8668bcaf4a33eed694079e8b1" category="summary">La funzione AutoSupport supporta i protocolli HTTPS e SMTP per la distribuzione delle spedizioni AutoSupport al supporto tecnico.</block>
   <block id="dd0ab6e042458857b9d76ede295a637e" category="image-alt">Aggiornare le posizioni del firmware</block>
   <block id="da31bdea5b9fdfa2bf077a70c49a1d66" category="image-alt">Flusso di lavoro AutoSupport</block>
-  <block id="0ceabfdc68af97f8a0c7393faf135de8" category="image-alt">Flusso di lavoro di aggiornamento del software e del firmware del controller</block>
   <block id="ece14770330886bc2d41238acbfe48aa" category="summary">Gestore unificato SANtricity 7</block>
   <block id="3cd6f83d0a9a8330c077dfc98649ab8a" category="paragraph">È possibile configurare le impostazioni utilizzate tramite SANtricity Unified Manager.</block>
   <block id="0be150145c60047c6667d2bfbc4085d9" category="image-alt">Connessione out-of-band al client di gestione della rete con un browser Web.</block>
@@ -8713,7 +8706,6 @@
   <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">È possibile ottenere e importare certificati firmati dalla CA per un accesso sicuro al sistema di gestione che ospita SANtricity Unified Manager.</block>
   <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Prima di poter visualizzare e gestire le risorse di storage, SANtricity deve rilevare gli array di storage che si desidera gestire nella rete aziendale. È possibile rilevare più array o un singolo array.</block>
   <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">È possibile utilizzare Gestione unificata di SANtricity per importare le impostazioni da un array di storage a più array di storage. La funzione Import Settings (Impostazioni di importazione) è un'operazione batch che consente di risparmiare tempo quando è necessario configurare più array nella rete.</block>
-  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">È possibile utilizzare Gestione unificata di SANtricity per aggiornare il software del sistema operativo SANtricity su più array di storage dello stesso tipo a una versione più recente.</block>
   <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Considerazioni per l'accesso a Gestore di sistema di SANtricity</block>
   <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">È possibile configurare il mirroring asincrono o sincrono in SANtricity Unified Manager e utilizzare SANtricity System Manager per gestire le sincronizzazioni.</block>
   <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">SANtricity Unified Manager include opzioni di configurazione per le funzionalità di mirroring SANtricity, che consentono agli amministratori di replicare i dati tra due storage array per la protezione dei dati.</block>
@@ -8749,4 +8741,7 @@
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">Questa release introduce i sistemi storage All Flash NVMe EF300C e EF600C. I sistemi EF300C e EF600C sono versioni flash a elevata capacità dei sistemi storage EF300 e EF600 esistenti. I dischi SSD NVMe a elevata capacità di 30TB o 60TB dimensioni sono supportati con EF300C e EF600C. EF300C/EF600C è compatibile solo per l'utilizzo con Dynamic Disk Pool, senza supporto RAID legacy.</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Supporto per interfacce SAS 12GB su EF4000</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">Il controller E4000 ora supporta 12GB schede di interfaccia host SAS.</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">Nuove funzioni della versione 11.90R2</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Note sulla versione di e-Series 11,90</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">Questa versione contiene solo modifiche minori e nessuna nuova funzionalità. Per ulteriori informazioni sulle modifiche apportate a questa versione, fare riferimento alla<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block> .</block>
 </blocks>
