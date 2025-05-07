@@ -66,9 +66,17 @@ Quando SAML è attivato, gli utenti non possono rilevare o gestire lo storage pe
 Inoltre, i seguenti client non possono accedere ai servizi e alle risorse degli array di storage:
 
 * Finestra Enterprise Management (EMW)
-* Interfaccia a riga di comando (CLI)
 * Client Software Developer Kit (SDK)
 * Client in-band
-* Client REST API per l'autenticazione di base HTTP
 * Effettuare l'accesso utilizzando l'endpoint REST API standard
+
+
+
+
+=== Connettività limitata con SAML abilitato
+
+Le seguenti funzioni di storage array hanno una connettività limitata con l'autenticazione JSON Web Token ogni volta che SAML è abilitato.
+
+* Interfaccia a riga di comando (CLI)
+* Client REST API per l'autenticazione di base HTTP
 
