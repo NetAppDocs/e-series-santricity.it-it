@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, alerts, 
 summary: Per configurare gli avvisi syslog, è necessario immettere un indirizzo del server syslog e una porta UDP. Sono consentiti fino a cinque server syslog. 
 ---
-= Configurare il server syslog per gli avvisi
+= Configurare il server syslog per gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

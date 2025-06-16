@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, 
 summary: 'È possibile utilizzare System Manager per creare CSR (Certificate Signing Request), importare certificati e gestire i certificati esistenti.' 
 ---
-= Panoramica dei certificati
+= Scopri di più sui certificati in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

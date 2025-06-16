@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
 summary: È possibile configurare i timeout per Gestione unificata di SANtricity, in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo. 
 ---
-= Gestire i timeout delle sessioni
+= Gestire i timeout di sessione in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

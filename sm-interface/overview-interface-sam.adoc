@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: 'Si naviga nell"interfaccia principale per accedere alle funzioni e alle attività di System Manager.' 
 ---
-= Panoramica dell'interfaccia di SANtricity System Manager
+= Scopri di più sull'interfaccia di SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

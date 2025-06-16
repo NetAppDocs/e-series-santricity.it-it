@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, requirements, using, mirroring 
 summary: Se si prevede di configurare il mirroring, tenere presenti i seguenti requisiti. 
 ---
-= Requisiti per l'utilizzo del mirroring
+= Requisiti per l'utilizzo del mirroring in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, configuration data 
 summary: È possibile salvare i dati di configurazione RAID dal controller, che include tutti i dati per gruppi di volumi e pool di dischi. A questo punto, è possibile contattare il supporto tecnico per ottenere assistenza per il ripristino dei dati. 
 ---
-= Raccogliere i dati di configurazione
+= Raccogli i dati di configurazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

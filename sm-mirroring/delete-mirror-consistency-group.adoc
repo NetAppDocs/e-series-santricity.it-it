@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
 summary: 'È possibile eliminare gruppi di coerenza mirror che non sono più necessari sull"array di storage locale e sull"array di storage remoto.' 
 ---
-= Elimina gruppo di coerenza mirror
+= Elimina un gruppo di coerenza mirror in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

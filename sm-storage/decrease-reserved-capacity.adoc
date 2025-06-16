@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
 summary: 'L"opzione Riduci capacità consente di ridurre la capacità riservata per i seguenti oggetti di storage: Gruppo di snapshot, volume di snapshot e volume membro del gruppo di coerenza. È possibile ridurre la capacità riservata solo della quantità utilizzata per aumentarla.' 
 ---
-= Ridurre la capacità riservata
+= Ridurre la capacità riservata in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

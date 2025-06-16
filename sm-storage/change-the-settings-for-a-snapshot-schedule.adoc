@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
 summary: Per una pianificazione snapshot, è possibile modificare gli orari di raccolta automatica o la frequenza di raccolta. 
 ---
-= Modificare le impostazioni per una pianificazione snapshot
+= Modificare le impostazioni per una pianificazione di snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

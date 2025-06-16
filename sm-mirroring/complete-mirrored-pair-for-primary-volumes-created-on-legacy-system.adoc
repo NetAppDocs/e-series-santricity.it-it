@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
 summary: Se è stato creato un volume primario su un array di storage legacy che non può essere gestito da Gestore di sistema di SANtricity, è possibile creare il volume secondario su questo array con Gestore di sistema. 
 ---
-= Coppia mirrorata completa per volumi primari creati su sistemi legacy
+= Completare una coppia speculare per i volumi primari creati su un sistema legacy in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

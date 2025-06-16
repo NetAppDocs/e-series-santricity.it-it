@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, saml 
 summary: 'Per la gestione degli accessi, gli amministratori possono utilizzare le funzionalità SAML (Security Assertion Markup Language) 2.0 integrate nell"array.' 
 ---
-= Gestione degli accessi con SAML
+= Configurare la gestione degli accessi con SAML in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

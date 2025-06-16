@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, drive, firmware 
 summary: È possibile aggiornare il firmware dei dischi per assicurarsi di disporre di tutte le funzionalità più recenti e delle correzioni dei bug. 
 ---
-= Aggiornare il firmware del disco
+= Aggiornare il firmware dell'unità in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

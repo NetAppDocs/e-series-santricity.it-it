@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, groups 
 summary: 'È possibile gestire l"infrastruttura fisica e virtualizzata raggruppando un set di storage array. È possibile raggruppare gli array di storage per semplificare l"esecuzione dei processi di monitoraggio o reporting.' 
 ---
-= Gruppi di array di storage
+= Informazioni sui gruppi di array di archiviazione in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

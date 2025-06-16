@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, increase, reserved, capacity 
 summary: È possibile aumentare la capacità riservata, ovvero la capacità fisicamente allocata utilizzata per qualsiasi operazione di servizio di copia su un oggetto di storage. 
 ---
-= Aumentare la capacità riservata
+= Aumentare la capacità riservata in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

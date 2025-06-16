@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity,System Manager, E-Series, validate, security, key, 
 summary: È possibile convalidare la chiave di sicurezza per assicurarsi che non sia stata danneggiata e per verificare di disporre di una password corretta. 
 ---
-= Convalidare la chiave di sicurezza
+= Convalida la chiave di sicurezza in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

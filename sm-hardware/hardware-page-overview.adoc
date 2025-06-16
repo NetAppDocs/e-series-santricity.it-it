@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
 summary: 'La pagina hardware fornisce una rappresentazione grafica dei componenti fisici dell"array di storage. Da qui, è possibile controllare lo stato dei componenti ed eseguire alcune funzioni correlate a tali componenti.' 
 ---
-= Pagina hardware e componenti
+= Pagina hardware e componenti di SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

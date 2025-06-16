@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
 summary: Per impostazione predefinita, i controller vengono forniti con DHCP attivato su entrambe le porte di rete. È possibile assegnare indirizzi IP statici, utilizzare gli indirizzi IP statici predefiniti o utilizzare indirizzi IP assegnati da DHCP. È inoltre possibile utilizzare la configurazione automatica senza stato IPv6. 
 ---
-= Considerazioni per l'assegnazione degli indirizzi IP
+= Informazioni sull'assegnazione degli indirizzi IP per i controller della serie E
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

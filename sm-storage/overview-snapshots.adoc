@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshots 
 summary: La funzione Snapshot consente di creare immagini point-in-time dei volumi di array di storage da utilizzare per il backup o il test. 
 ---
-= Panoramica delle istantanee
+= Scopri di più sugli snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

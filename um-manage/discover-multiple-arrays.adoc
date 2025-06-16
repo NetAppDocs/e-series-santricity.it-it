@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
 summary: Vengono rilevati più array per rilevare tutti gli array di storage nella subnet in cui risiede il server di gestione e aggiungere automaticamente gli array rilevati al dominio di gestione. 
 ---
-= Scopri più array di storage
+= Scopri più array di storage in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

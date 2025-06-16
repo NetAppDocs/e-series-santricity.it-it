@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
 summary: È possibile modificare il ruolo tra i volumi in una coppia mirrorata. A tale scopo, è possibile eseguire il demoting del volume primario al ruolo secondario o promuovere il volume secondario al ruolo primario. 
 ---
-= Cambiamento di ruolo tra i volumi in una coppia mirrorata
+= Scopri di più sulle modifiche del ruolo del volume in una coppia speculare nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

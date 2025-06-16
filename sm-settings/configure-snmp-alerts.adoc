@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, snmp, alerts, 
 summary: 'Per configurare gli avvisi SNMP (Simple Network Management Protocol), è necessario identificare almeno un server in cui il monitor degli eventi dell"array di storage può inviare trap SNMP. La configurazione richiede un nome di comunità o un nome utente e un indirizzo IP per il server.' 
 ---
-= Configurare gli avvisi SNMP
+= Configurare gli avvisi SNMP in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

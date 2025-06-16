@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, capacity, pool, volume, group 
 summary: È possibile aggiungere dischi per espandere la capacità libera in un pool o un gruppo di volumi esistente. 
 ---
-= Aggiungere capacità a un pool o a un gruppo di volumi
+= Aggiungere capacità a un pool o a un gruppo di volumi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

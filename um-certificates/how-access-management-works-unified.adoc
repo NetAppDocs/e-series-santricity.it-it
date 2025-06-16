@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, authentication, users, roles, access management 
 summary: 'Utilizzare la gestione degli accessi per stabilire l"autenticazione dell"utente in Gestione unificata di SANtricity.' 
 ---
-= Come funziona Access Management
+= Come funziona la gestione degli accessi in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

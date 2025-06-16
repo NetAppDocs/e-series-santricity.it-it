@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller ownership, volume 
 summary: 'È possibile modificare la proprietà del controller preferito di un volume, in modo che l"i/o per le applicazioni host venga indirizzato attraverso il nuovo percorso.' 
 ---
-= Modificare la proprietà del controller di un volume
+= Modificare la proprietà del controller di un volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

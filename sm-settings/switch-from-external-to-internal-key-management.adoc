@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
 summary: 'È possibile modificare il metodo di gestione di Drive Security da un server di chiavi esterno al metodo interno utilizzato dall"array di storage. La chiave di sicurezza precedentemente definita per la gestione esterna delle chiavi viene quindi utilizzata per la gestione interna delle chiavi.' 
 ---
-= Passare dalla gestione delle chiavi esterna a quella interna
+= Passa dalla gestione delle chiavi esterne a quella interna in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

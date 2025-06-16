@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
 summary: È possibile modificare il ruolo tra coppie mirrorate in un gruppo di coerenza mirror. A tale scopo, è possibile eseguire il declassamento del gruppo di coerenza del mirror primario al ruolo secondario o promuovere il gruppo di coerenza del mirror secondario al ruolo primario. 
 ---
-= Modifica del ruolo di un gruppo di coerenza mirror
+= Modificare i ruoli del gruppo di coerenza dello specchio nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

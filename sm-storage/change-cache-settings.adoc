@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cache settings 
 summary: È possibile modificare le impostazioni della cache di lettura e di scrittura per influire sulle prestazioni i/o generali di un volume. 
 ---
-= Modificare le impostazioni della cache per un volume
+= Modificare le impostazioni della cache per un volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

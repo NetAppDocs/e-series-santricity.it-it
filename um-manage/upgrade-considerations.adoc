@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
 summary: 'Prima di utilizzare Unified Manager per l"aggiornamento di più array di storage, esaminare le considerazioni principali come parte della pianificazione.' 
 ---
-= Considerazioni sull'upgrade
+= Scopri come aggiornare più array di storage con SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

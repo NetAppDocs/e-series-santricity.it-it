@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, directory, server, settings, role, mappings, 
 summary: Se in precedenza è stato configurato un server di directory in Access Management, è possibile modificarne le impostazioni in qualsiasi momento. Le impostazioni includono le informazioni di connessione al server e i mapping gruppo-ruolo. 
 ---
-= Modificare le impostazioni del server di directory e le mappature dei ruoli
+= Modifica le impostazioni del server di directory e le mappature dei ruoli in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

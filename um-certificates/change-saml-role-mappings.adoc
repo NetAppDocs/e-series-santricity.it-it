@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, change, saml, role, mappings, 
 summary: 'Se in precedenza è stato configurato SAML per Access Management, è possibile modificare le mappature dei ruoli tra i gruppi IdP e i ruoli predefiniti dell"array di storage.' 
 ---
-= Modificare le mappature dei ruoli SAML
+= Modificare le mappature dei ruoli SAML in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

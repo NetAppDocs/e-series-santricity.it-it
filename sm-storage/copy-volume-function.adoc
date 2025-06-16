@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: 'La funzione Copy Volume (Copia volume) consente di creare una copia point-in-time di un volume creando due volumi separati, il volume di origine e il volume di destinazione, sullo stesso array di storage.' 
 ---
-= Panoramica del volume di copia
+= Informazioni su Copia volume in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

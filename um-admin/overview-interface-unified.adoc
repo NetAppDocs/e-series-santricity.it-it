@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, interface, GUI 
 summary: 'Unified Manager è un"interfaccia basata su web che consente di gestire più array di storage in una singola vista.' 
 ---
-= Panoramica dell'interfaccia di SANtricity Unified Manager
+= Scopri di più su SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

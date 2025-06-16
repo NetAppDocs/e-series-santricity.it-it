@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, remote, storage 
 summary: 'Per avviare un"importazione dello storage da un sistema remoto a un sistema storage e-Series locale, utilizzare la procedura guidata Importa storage remoto.' 
 ---
-= Importa storage remoto
+= Importazione di storage remoto in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

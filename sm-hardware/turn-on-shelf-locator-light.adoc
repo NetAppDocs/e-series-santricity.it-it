@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
 summary: Per individuare la posizione fisica di uno shelf mostrato nella pagina hardware, è possibile accendere la spia di posizionamento dello shelf. 
 ---
-= Accendere la luce di posizionamento degli scaffali
+= Accendi una luce di localizzazione dello scaffale in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
 summary: 'È possibile annullare un"immagine snapshot in sospeso prima del completamento. Gli snapshot vengono eseguiti in modo asincrono e lo stato dello snapshot rimane in sospeso fino al completamento dello snapshot. L"immagine snapshot viene completata al termine dell"operazione di sincronizzazione.' 
 ---
-= Annulla l'immagine snapshot in sospeso
+= Annullare un'immagine snapshot in sospeso in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

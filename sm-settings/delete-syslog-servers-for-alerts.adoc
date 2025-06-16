@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, syslog, servers, alerts, 
 summary: È possibile eliminare un server syslog in modo che non riceva più avvisi. 
 ---
-= Eliminare i server syslog per gli avvisi
+= Eliminare i server syslog per gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

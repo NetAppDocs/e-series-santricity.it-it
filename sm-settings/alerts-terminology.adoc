@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, alerts, terms, 
 summary: Scopri in che modo i termini degli avvisi si applicano al tuo array di storage. 
 ---
-= Terminologia degli avvisi
+= Scopri la terminologia degli avvisi nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

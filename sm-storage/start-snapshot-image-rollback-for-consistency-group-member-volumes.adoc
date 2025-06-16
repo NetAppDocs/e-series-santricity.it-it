@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
 summary: 'È possibile eseguire un"operazione di rollback per modificare il contenuto dei volumi membri del gruppo di coerenza snapshot in modo che corrisponda al contenuto salvato in un"immagine snapshot.' 
 ---
-= Avviare il rollback dell'immagine snapshot per i volumi membri del gruppo di coerenza snapshot
+= Avvia il rollback dell'immagine snapshot per i volumi membri del gruppo di coerenza snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

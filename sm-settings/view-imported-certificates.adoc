@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
 summary: 'Dalla pagina certificati, è possibile visualizzare il tipo di certificato, l"autorità di emissione e l"intervallo di date valido dei certificati per l"array di storage.' 
 ---
-= Visualizzare le informazioni sul certificato importato
+= Visualizza le informazioni sul certificato importato in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

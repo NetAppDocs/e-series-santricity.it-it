@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, resume, snapshot, image, rollback 
 summary: 'Se si verifica un errore durante un"operazione di rollback dell"immagine snapshot, l"operazione viene automaticamente messa in pausa. È possibile riprendere un"operazione di rollback in stato di pausa.' 
 ---
-= Riprendere il rollback dell'immagine snapshot
+= Riprendi un rollback di un'immagine snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

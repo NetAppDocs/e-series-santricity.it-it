@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, features, 
 summary: 'I componenti aggiuntivi sono funzionalità non incluse nella configurazione standard di System Manager e potrebbero richiedere una chiave per l"attivazione. Una funzione aggiuntiva può essere una singola funzionalità premium o un pacchetto di funzionalità.' 
 ---
-= Come funzionano le funzionalità aggiuntive
+= Come funzionano le funzionalità aggiuntive in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

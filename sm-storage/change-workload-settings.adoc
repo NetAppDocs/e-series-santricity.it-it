@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workload, settings 
 summary: È possibile modificare il nome di un workload e visualizzarne il tipo di applicazione associato. Modificare il nome di un workload quando il nome corrente non è più significativo o applicabile. 
 ---
-= Modificare le impostazioni del carico di lavoro
+= Modificare le impostazioni del carico di lavoro in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

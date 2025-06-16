@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, communities, snmpv2c, traps, 
 summary: È possibile aggiungere fino a 256 nomi di comunità per le trap SNMPv2c. 
 ---
-= Aggiungere community per le trap SNMPv2c
+= Aggiungere community per trap SNMPv2c in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, schedule 
 summary: Se non si desidera più raccogliere immagini snapshot, è possibile eliminare una pianificazione snapshot esistente. 
 ---
-= Elimina pianificazione snapshot
+= Eliminare una pianificazione di snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

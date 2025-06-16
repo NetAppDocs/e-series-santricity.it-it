@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, alert, settings 
 summary: È possibile importare configurazioni di avviso da uno storage array ad altri storage array. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete. 
 ---
-= Importare le impostazioni degli avvisi
+= Importare le impostazioni di avviso in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
 summary: 'Utilizzare l"operazione Clear Configuration (Cancella configurazione) per eliminare tutti i pool, i gruppi di volumi, i volumi, le definizioni degli host e le assegnazioni degli host dall"array di storage.' 
 ---
-= Configurazione chiara degli array di storage
+= Cancella la configurazione dell'array di archiviazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -108,4 +108,8 @@ X
 .Risultati
 * La configurazione corrente viene eliminata, distruggendo tutti i dati esistenti sull'array di storage.
 * Tutti i dischi non sono assegnati.
++
+
+NOTE: L'array di archiviazione entrerà in modalità di ripristino. È necessario disattivare la modalità di ripristino prima di utilizzare l'array di archiviazione. Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/e-series-santricity/sm-support/clear-recovery-mode.html["Cancellare la modalità di recovery"^] .
+
 

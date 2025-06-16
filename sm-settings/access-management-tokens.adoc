@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, tokens 
 summary: 'I token di accesso forniscono l"accesso all"array senza esporre il nome utente e la password.' 
 ---
-= Token di accesso
+= Scopri di più sui token di accesso e sul software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

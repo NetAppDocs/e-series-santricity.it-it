@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, os, operating system 
 summary: Aggiorna uno o più storage array con il software più recente e NVSRAM per assicurarti di disporre di tutte le funzionalità più recenti e delle correzioni dei bug. Controller NVSRAM è un file controller che specifica le impostazioni predefinite per i controller. 
 ---
-= Aggiornare il sistema operativo SANtricity
+= Aggiorna il sistema operativo SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

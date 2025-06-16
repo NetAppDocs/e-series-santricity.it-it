@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, edit tokens 
 summary: È possibile modificare le impostazioni per i token di accesso, che includono i tempi di scadenza e la possibilità di creare nuovi token. 
 ---
-= Modificare le impostazioni del token di accesso
+= Modifica le impostazioni del token di accesso in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller, states, 
 summary: 'È possibile posizionare un controller in tre stati diversi: Online, offline e service mode.' 
 ---
-= stati del controller
+= Scopri di più sugli stati del controller in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
 summary: È possibile rimuovere il software del sistema operativo in fasi per assicurarsi che una versione in sospeso non venga attivata inavvertitamente in un secondo momento. La rimozione del software del sistema operativo in fasi non influisce sulla versione corrente in esecuzione sugli array di storage. 
 ---
-= Software per sistemi operativi chiari e staged
+= Cancella il software del sistema operativo in stadi in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

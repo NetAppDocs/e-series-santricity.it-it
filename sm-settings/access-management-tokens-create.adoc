@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, create tokens 
 summary: 'È possibile creare token di accesso, che vengono utilizzati per l"autenticazione con l"API REST o l"interfaccia della riga di comando al posto di un nome utente e di una password.' 
 ---
-= Creare token di accesso
+= Crea token di accesso in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

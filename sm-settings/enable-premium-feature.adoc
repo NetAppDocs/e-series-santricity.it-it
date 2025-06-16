@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, premium, feature, 
 summary: 'Una funzione premium è un"opzione aggiuntiva che richiede una chiave per l"attivazione.' 
 ---
-= Abilitare una funzione premium
+= Abilita una funzionalità premium in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

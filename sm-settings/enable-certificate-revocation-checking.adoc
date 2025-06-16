@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, certificate, revocation checking, 
 summary: 'È possibile attivare i controlli automatici dei certificati revocati, in modo che un server OCSP (Online Certificate Status Protocol) blocchi gli utenti da connessioni non sicure.' 
 ---
-= Attiva il controllo della revoca del certificato
+= Abilitare il controllo della revoca del certificato in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

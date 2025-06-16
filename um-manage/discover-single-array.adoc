@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
 summary: 'Utilizzare l"opzione Add/Discover Single Storage Array (Aggiungi/rileva singolo array di storage) per rilevare e aggiungere manualmente un singolo array di storage alla rete aziendale.' 
 ---
-= Scopri un singolo array
+= Scopri un singolo array in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

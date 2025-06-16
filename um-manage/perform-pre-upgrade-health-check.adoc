@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, perform, pre-upgrade, health, check 
 summary: 'Un controllo dello stato di salute viene eseguito come parte del processo di aggiornamento, ma è anche possibile eseguire un controllo dello stato di salute separatamente prima di iniziare. Il controllo dello stato di salute valuta i componenti dello storage array per assicurarsi che l"aggiornamento possa continuare.' 
 ---
-= Eseguire un controllo dello stato di salute prima dell'aggiornamento
+= Eseguire un controllo di integrità pre-aggiornamento in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

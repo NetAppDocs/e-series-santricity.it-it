@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, directory, server, 
 summary: 'Per configurare l"autenticazione per la gestione degli accessi, è possibile stabilire le comunicazioni tra lo storage array e un server LDAP, quindi mappare i gruppi di utenti LDAP ai ruoli predefiniti dell"array.' 
 ---
-= Aggiungere un server di directory LDAP
+= Aggiungere un server di directory LDAP in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

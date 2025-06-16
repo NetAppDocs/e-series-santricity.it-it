@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, storage, configuration, settings 
 summary: È possibile importare la configurazione dello storage da uno storage array ad altri storage array. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete. 
 ---
-= Importare le impostazioni di configurazione dello storage
+= Importare le impostazioni di configurazione dell'archiviazione in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

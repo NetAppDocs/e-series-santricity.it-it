@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
 summary: Un volume thick viene sempre sottoposto a provisioning completo, il che significa che tutta la capacità viene allocata al momento della creazione del volume. Un thin volume viene sempre sottoposto a thin provisioning, il che significa che la capacità viene allocata durante la scrittura dei dati nel volume. 
 ---
-= Confronto tra volumi spessi e volumi thin
+= Scopri di più sui volumi spessi e sottili nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

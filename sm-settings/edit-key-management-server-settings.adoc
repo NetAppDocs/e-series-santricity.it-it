@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
 summary: Se è stata configurata la gestione esterna delle chiavi, è possibile visualizzare e modificare le impostazioni del server di gestione delle chiavi in qualsiasi momento. 
 ---
-= Modificare le impostazioni del server di gestione delle chiavi
+= Modifica le impostazioni del server di gestione delle chiavi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iscsi, authentication, 
 summary: 'Per una maggiore sicurezza in una rete iSCSI, è possibile impostare l"autenticazione tra controller (destinazioni) e host (iniziatori).' 
 ---
-= Configurare l'autenticazione iSCSI
+= Configurare l'autenticazione iSCSI in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

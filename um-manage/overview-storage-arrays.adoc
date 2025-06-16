@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
 summary: Per gestire le risorse di storage, è necessario prima rilevare gli array di storage nella rete. 
 ---
-= Panoramica del rilevamento
+= Scopri di più sulla scoperta in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

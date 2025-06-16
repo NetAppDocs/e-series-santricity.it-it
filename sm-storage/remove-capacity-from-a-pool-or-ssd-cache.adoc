@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, capacity, pool, ssd cache 
 summary: È possibile rimuovere i dischi per ridurre la capacità di un pool o di una cache SSD esistente. 
 ---
-= Rimuovere la capacità da un pool o da una cache SSD
+= Rimuovere la capacità da un pool o dalla cache SSD in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, volume 
 summary: In genere, i volumi vengono eliminati se sono stati creati con parametri o capacità errati, se non soddisfano più le esigenze di configurazione dello storage o se si tratta di immagini snapshot non più necessarie per il backup o il test delle applicazioni. 
 ---
-= Elimina volume
+= Eliminare un volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

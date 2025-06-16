@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access, management, 
 summary: 'La gestione degli accessi è un metodo per stabilire l"autenticazione dell"utente in Gestione di sistema di SANtricity. I metodi di autenticazione includono RBAC (role-based access control), Directory Services e SAML (Security Assertion Markup Language) 2.0.' 
 ---
-= Panoramica sulla gestione degli accessi
+= Scopri di più sulla gestione degli accessi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
 summary: 'Se il protocollo NTP (Network Time Protocol) non è attivato, è possibile impostare manualmente gli orologi sui controller in modo che siano sincronizzati con il client di gestione (il sistema utilizzato per eseguire il browser che accede a Gestore di sistema di SANtricity).' 
 ---
-= Sincronizzare gli orologi degli array di storage
+= Sincronizzare gli orologi degli array di archiviazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

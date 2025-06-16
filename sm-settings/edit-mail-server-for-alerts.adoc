@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
 summary: 'È possibile modificare l"indirizzo del server e-mail e l"indirizzo del mittente utilizzati per gli avvisi e-mail.' 
 ---
-= Modificare il server di posta per gli avvisi
+= Modifica il server di posta per gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

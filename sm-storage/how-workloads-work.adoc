@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, application, workloads, volume, 
 summary: 'Quando si crea un volume, si seleziona un carico di lavoro per personalizzare la configurazione dell"array di storage per un"applicazione specifica.' 
 ---
-= Come funzionano i carichi di lavoro
+= Come funzionano i carichi di lavoro nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

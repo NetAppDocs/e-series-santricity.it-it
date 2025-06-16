@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
 summary: System Manager crea automaticamente una pianificazione predefinita per le spedizioni AutoSupport. Se preferisci, puoi specificare la tua pianificazione. 
 ---
-= Pianifica le spedizioni AutoSupport
+= Pianificare le spedizioni di AutoSupport in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity terms 
 summary: Scopri come si applicano i termini di capacità al tuo storage array. 
 ---
-= Terminologia relativa alla capacità
+= Scopri la terminologia della capacità nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

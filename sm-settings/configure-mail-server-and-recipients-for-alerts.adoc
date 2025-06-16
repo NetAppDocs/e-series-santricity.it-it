@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
 summary: Per configurare gli avvisi e-mail, è necessario specificare un indirizzo del server di posta e gli indirizzi e-mail dei destinatari degli avvisi. Sono consentiti fino a 20 indirizzi e-mail. 
 ---
-= Configurare il server di posta e i destinatari per gli avvisi
+= Configurare il server di posta e i destinatari degli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

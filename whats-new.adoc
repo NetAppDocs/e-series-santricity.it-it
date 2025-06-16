@@ -16,6 +16,21 @@ La seguente tabella descrive le nuove funzionalità di Gestione di sistema di SA
 
 
 
+== Nuove funzioni della versione 11.90R3
+
+[cols="35h,~"]
+|===
+| Nuova funzionalità | Descrizione 
+
+
+ a| 
+Supporto del sistema operativo SANtricity per IOM12C e DCM3
+ a| 
+Il supporto per gli shelf SAS-3 IOM12C e DCM3 è ora disponibile per il firmware del controller 11.90R3 o superiore. Gli shelf IOM12C e DCM3 sostituiscono gli shelf IOM12B e DCM2.
+
+|===
+
+
 == Nuove funzioni della versione 11.90R2
 
 Questa versione contiene solo modifiche minori e nessuna nuova funzionalità. Per ulteriori informazioni sulle modifiche apportate a questa versione, fare riferimento alla https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["Note sulla versione di e-Series 11,90"^] .

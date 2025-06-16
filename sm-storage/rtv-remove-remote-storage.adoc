@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, remote, storage, 
 summary: 'Una volta completata l"importazione, è possibile rimuovere un oggetto di storage remoto se non si desidera più copiare i dati tra i dispositivi locali e remoti.' 
 ---
-= Rimuovere l'oggetto storage remoto
+= Rimuovere un oggetto di archiviazione remoto in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

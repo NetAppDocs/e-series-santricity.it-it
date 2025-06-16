@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
 summary: 'È possibile eliminare un indirizzo di destinazione trap in modo che il monitor eventi dell"array di storage non invii più trap SNMP a tale indirizzo.' 
 ---
-= Eliminare le destinazioni trap
+= Eliminare le destinazioni delle trappole in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

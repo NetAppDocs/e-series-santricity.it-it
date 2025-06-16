@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
 summary: 'È possibile modificare la priorità di sincronizzazione e il criterio di risincronizzazione utilizzati dalla coppia mirrorata per completare l"operazione di risincronizzazione dopo un"interruzione della comunicazione.' 
 ---
-= Modificare le impostazioni di sincronizzazione per una coppia mirrorata
+= Modificare le impostazioni di sincronizzazione per una coppia speculare in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

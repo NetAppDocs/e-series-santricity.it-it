@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, 
 summary: Unified Manager include opzioni di configurazione per le funzionalità di mirroring di SANtricity, che consentono agli amministratori di replicare i dati tra due array di storage per la protezione dei dati. 
 ---
-= Come funziona il mirroring
+= Scopri di più sul mirroring SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

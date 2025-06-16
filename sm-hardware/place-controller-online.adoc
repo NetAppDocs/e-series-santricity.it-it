@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, online 
 summary: Se un controller è in stato offline o in modalità di servizio, è possibile ripristinarlo online. 
 ---
-= Posizionare il controller online
+= Mettere un controller online in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

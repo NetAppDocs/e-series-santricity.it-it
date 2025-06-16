@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
 summary: 'Per configurare il mirroring asincrono, si crea una coppia mirrorata che include un volume primario sull"array locale e un volume secondario sull"array remoto.' 
 ---
-= Creare una coppia asincrona con mirroring
+= Creare una coppia speculare asincrona in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

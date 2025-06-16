@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, consolidate, free capacity, volume group 
 summary: 'Utilizzare l"opzione consolida capacità libera per consolidare le estensioni libere esistenti su un gruppo di volumi selezionato. Eseguendo questa azione, è possibile creare volumi aggiuntivi dalla quantità massima di capacità libera in un gruppo di volumi.' 
 ---
-= Consolidare la capacità libera per un gruppo di volumi
+= Consolidare la capacità libera per un gruppo di volumi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

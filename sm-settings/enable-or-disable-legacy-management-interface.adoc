@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
 summary: 'È possibile attivare o disattivare l"interfaccia di gestione legacy (Symbol), un metodo di comunicazione tra lo storage array e il client di gestione.' 
 ---
-= Attivare o disattivare l'interfaccia di gestione legacy
+= Abilitare o disabilitare l'interfaccia di gestione legacy in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hosts 
 summary: È possibile configurare host e cluster di host, che definiscono le connessioni tra lo storage array e i server di dati. 
 ---
-= Panoramica degli host e dei cluster di host
+= Scopri di più sugli host e sui cluster di host nel software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

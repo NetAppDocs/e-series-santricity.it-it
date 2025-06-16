@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ARVM, asynchronous, mirroring, firmware, 
 summary: La funzione di mirroring asincrono offre un meccanismo basato su firmware a livello di controller per la replica dei dati tra uno storage array locale e uno storage array remoto. 
 ---
-= Panoramica del mirroring asincrono
+= Scopri di più sul mirroring asincrono nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

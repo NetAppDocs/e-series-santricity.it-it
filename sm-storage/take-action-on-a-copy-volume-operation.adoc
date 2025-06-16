@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: 'È possibile visualizzare un"operazione Copy Volume (Copia volume) in corso e interrompere, modificare la priorità, eseguire nuovamente la copia o annullare un"operazione Copy Volume (Copia volume).' 
 ---
-= Eseguire un'operazione di copia del volume
+= Eseguire un'azione su un'operazione di copia del volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

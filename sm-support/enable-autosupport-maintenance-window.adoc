@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, autosupport, ASUP, maintenance window 
 summary: Attivare la finestra di manutenzione di AutoSupport per eliminare la creazione automatica di ticket in caso di eventi di errore. In modalità operativa normale, lo storage array utilizza AutoSupport per aprire un caso con il supporto in caso di problemi. 
 ---
-= Attiva la finestra di manutenzione AutoSupport
+= Abilitare la finestra di manutenzione AutoSupport in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: Se si dispone della funzione di storage remoto, è possibile importare i dati da un sistema di storage remoto. 
 ---
-= Panoramica delle funzionalità dello storage remoto
+= Scopri di più sulla funzionalità di archiviazione remota in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

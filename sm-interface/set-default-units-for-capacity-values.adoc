@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity values 
 summary: 'System Manager può visualizzare i valori di capacità in gibibyte (GiB) o tebibyte (TIB).' 
 ---
-= Impostare le unità predefinite per i valori di capacità
+= Imposta le unità predefinite per i valori di capacità in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

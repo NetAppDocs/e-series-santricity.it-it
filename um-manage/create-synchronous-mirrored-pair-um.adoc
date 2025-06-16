@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
 summary: 'Per configurare il mirroring sincrono, creare una coppia mirrorata che includa un volume primario sull"array locale e un volume secondario sull"array remoto.' 
 ---
-= Creare una coppia sincrona con mirroring
+= Creare una coppia speculare sincrona in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

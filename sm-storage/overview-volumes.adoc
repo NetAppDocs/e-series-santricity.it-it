@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: 'È possibile creare un volume come container in cui applicazioni, database e file system memorizzano i dati. Quando si crea un volume, è anche possibile selezionare un carico di lavoro per personalizzare la configurazione dello storage array per un"applicazione specifica.' 
 ---
-= Panoramica su volumi e carichi di lavoro
+= Scopri di più su volumi e carichi di lavoro in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

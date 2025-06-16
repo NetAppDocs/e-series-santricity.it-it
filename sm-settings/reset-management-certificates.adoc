@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reset, management, certificates, 
 summary: 'È possibile ripristinare i certificati sui controller dall"utilizzo dei certificati firmati dalla CA ai certificati autofirmati impostati in fabbrica.' 
 ---
-= Reimpostare i certificati di gestione
+= Reimposta i certificati di gestione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

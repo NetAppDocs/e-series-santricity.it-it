@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring 
 summary: Utilizza le funzionalità di mirroring per replicare i dati tra uno storage array locale e uno storage array remoto, in modo asincrono o sincrono. 
 ---
-= Panoramica del mirroring
+= Scopri di più sul mirroring in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

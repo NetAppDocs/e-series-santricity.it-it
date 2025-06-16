@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
 summary: 'Rimuovere una coppia mirrorata per rimuovere la relazione di mirroring dal volume primario sull"array di storage locale e dal volume secondario sull"array di storage remoto.' 
 ---
-= Rimuovere la relazione di mirroring asincrona
+= Rimuovere le relazioni mirror asincrone in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, workloads 
 summary: È possibile creare carichi di lavoro per qualsiasi tipo di applicazione. 
 ---
-= Creare carichi di lavoro
+= Creare carichi di lavoro in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
 summary: Le hot spare fungono da unità di standby in gruppi di volumi RAID 1, RAID 5 o RAID 6 per System Manager. 
 ---
-= Panoramica dei dischi hot spare
+= Scopri di più sulle unità hot spare in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, media scan settings, volume 
 summary: 'Una scansione dei supporti è un"operazione in background che esegue la scansione di tutti i dati e delle informazioni di ridondanza nel volume. Utilizzare questa opzione per attivare o disattivare le impostazioni di scansione dei supporti per uno o più volumi o per modificare la durata della scansione.' 
 ---
-= Modificare le impostazioni di scansione dei supporti per un volume
+= Modificare le impostazioni di scansione dei supporti per un volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
 summary: Lo stato di una coppia sincrona con mirroring indica se i dati sul volume primario e sul volume secondario sono sincronizzati. Lo stato di un mirror è indipendente dallo stato dei componenti dei volumi nella coppia mirrorata. 
 ---
-= Stato del mirroring sincrono
+= Informazioni sullo stato del mirroring sincrono in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

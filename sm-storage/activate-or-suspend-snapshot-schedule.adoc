@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot schedule 
 summary: 'È possibile sospendere temporaneamente la raccolta pianificata di immagini snapshot quando è necessario risparmiare spazio di storage. Questo metodo è più efficiente dell"eliminazione e della successiva ricreazione della pianificazione di snapshot.' 
 ---
-= Attivare e sospendere la pianificazione delle snapshot
+= Attivare e sospendere una pianificazione di snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

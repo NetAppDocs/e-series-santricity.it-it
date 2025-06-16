@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
 summary: È possibile disattivare il mirroring asincrono sugli array di storage locali e remoti per ristabilire il normale utilizzo delle porte dedicate sugli array di storage. 
 ---
-= Disattivare il mirroring asincrono
+= Disattivare il mirroring asincrono in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

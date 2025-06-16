@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
 summary: Scopri in che modo i termini delle funzionalità aggiuntive si applicano al tuo storage array. 
 ---
-= Terminologia delle funzionalità aggiuntive
+= Scopri la terminologia delle funzionalità aggiuntive nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

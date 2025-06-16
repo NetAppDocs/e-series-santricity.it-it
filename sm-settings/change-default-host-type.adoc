@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, default, host, type, 
 summary: 'Utilizzare l"impostazione Change Default host Operating System (Modifica sistema operativo host predefinito) per modificare il tipo di host predefinito a livello di array di storage. In genere, è necessario modificare il tipo di host predefinito prima di connettere gli host all"array di storage o quando si collegano altri host.' 
 ---
-= Modificare il tipo di host predefinito
+= Modificare il tipo di host predefinito in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

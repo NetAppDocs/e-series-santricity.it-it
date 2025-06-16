@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
 summary: Visualizzando i registri di controllo, gli utenti con autorizzazioni di amministratore della sicurezza possono monitorare le azioni degli utenti, gli errori di autenticazione, i tentativi di accesso non validi e la durata della sessione utente. 
 ---
-= Visualizzare l'attività del registro di audit
+= Visualizza l'attività del registro di controllo in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

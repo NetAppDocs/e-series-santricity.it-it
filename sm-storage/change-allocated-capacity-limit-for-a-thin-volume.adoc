@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
 summary: Per i thin volumi in grado di allocare lo spazio on-demand, è possibile modificare il limite che limita la capacità allocata alla quale un thin volume può espandersi automaticamente. 
 ---
-= Modificare il limite di capacità allocata per un volume sottile
+= Modificare il limite di capacità allocato per un volume sottile in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

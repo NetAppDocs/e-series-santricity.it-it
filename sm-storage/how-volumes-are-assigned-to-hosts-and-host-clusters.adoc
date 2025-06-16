@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
 summary: 'Affinché un host o un cluster host invii i/o a un volume, è necessario assegnare il volume all"host o al cluster host.' 
 ---
-= Modalità di assegnazione dei volumi agli host e ai cluster di host
+= Come vengono assegnati i volumi agli host e ai cluster di host nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

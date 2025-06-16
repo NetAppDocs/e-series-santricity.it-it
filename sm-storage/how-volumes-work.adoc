@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, copy, 
 summary: 'I volumi sono container di dati che gestiscono e organizzano lo spazio di storage sull"array di storage.' 
 ---
-= Come funzionano i volumi
+= Come funzionano i volumi nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

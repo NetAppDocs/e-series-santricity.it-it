@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: 'È possibile selezionare uno o più array di storage e utilizzare l"opzione di avvio per aprire Gestione di sistema SANtricity quando si desidera configurare e gestire gli array di storage.' 
 ---
-= Considerazioni per l'accesso a Gestore di sistema di SANtricity
+= Scopri come accedere a SANtricity System Manager da Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

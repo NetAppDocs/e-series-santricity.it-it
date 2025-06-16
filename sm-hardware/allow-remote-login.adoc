@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, login, 
 summary: 'L"accesso remoto consente agli utenti esterni alla rete locale di avviare una sessione SSH e modificare le impostazioni del controller.' 
 ---
-= Configurare l'accesso remoto (SSH)
+= Configurare l'accesso remoto (SSH) in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

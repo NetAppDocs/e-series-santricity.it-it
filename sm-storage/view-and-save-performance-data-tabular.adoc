@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, save, tabular, performance, 
 summary: È possibile visualizzare e salvare i dati dei grafici delle prestazioni in formato tabulare. In questo modo è possibile filtrare i dati che si desidera visualizzare. 
 ---
-= Visualizzare e salvare i dati delle performance in formato tabulare
+= Visualizza e salva i dati sulle prestazioni tabulari in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, center 
 summary: Utilizzare il Centro di aggiornamento per scaricare il software e il firmware più recenti e aggiornare lo storage array per le funzionalità e le correzioni dei bug più recenti. 
 ---
-= Panoramica di Upgrade Center
+= Informazioni sull'aggiornamento del software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

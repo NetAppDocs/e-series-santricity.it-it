@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, configuration, workflow 
 summary: È possibile configurare il mirroring asincrono o sincrono in Unified Manager, quindi utilizzare System Manager per gestire le sincronizzazioni. 
 ---
-= Flusso di lavoro di configurazione del mirroring
+= Flussi di lavoro di configurazione Mirror SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

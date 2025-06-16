@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, rename, storage, array, group 
 summary: È possibile modificare il nome di un gruppo di array di storage quando il nome corrente non è più significativo o applicabile. 
 ---
-= Rinominare il gruppo di array di storage
+= Rinominare un gruppo di array di archiviazione in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

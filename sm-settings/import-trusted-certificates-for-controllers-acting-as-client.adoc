@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Se il controller rifiuta una connessione perché non è in grado di convalidare la catena di trust per un server di rete, è possibile importare un certificato dalla scheda Trusted che consente al controller (che agisce come client) di accettare le comunicazioni da quel server.' 
 ---
-= Importare i certificati per i controller quando agiscono come client
+= Importare certificati per i controller quando agiscono come client in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

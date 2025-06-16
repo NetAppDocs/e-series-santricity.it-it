@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unassign, volumes 
 summary: 'Annullare l"assegnazione dei volumi dagli host o dai cluster di host se non è più necessario l"accesso i/o a tale volume dall"host o dal cluster di host.' 
 ---
-= Annullare l'assegnazione dei volumi
+= Annulla l'assegnazione dei volumi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

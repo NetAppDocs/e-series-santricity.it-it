@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, recovery, support files 
 summary: Il supporto tecnico può utilizzare i file di supporto per il ripristino per risolvere i problemi. System Manager salva automaticamente questi file. 
 ---
-= Recuperare i file di supporto per il ripristino
+= Recupera i file di supporto al ripristino in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

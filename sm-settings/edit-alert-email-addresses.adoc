@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
 summary: È possibile modificare gli indirizzi e-mail dei destinatari che ricevono gli avvisi e-mail. 
 ---
-= Modificare gli indirizzi e-mail per gli avvisi
+= Modifica gli indirizzi email per gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

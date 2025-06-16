@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
 summary: 'È possibile modificare le impostazioni di sincronizzazione e le soglie di avviso utilizzate dal gruppo di coerenza del mirror sull"array di storage locale quando i dati vengono inizialmente sincronizzati o quando i dati vengono nuovamente sincronizzati durante le operazioni di mirroring asincrono.' 
 ---
-= Modificare le impostazioni di sincronizzazione per un gruppo di coerenza mirror
+= Modificare le impostazioni di sincronizzazione per un gruppo di coerenza mirror in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

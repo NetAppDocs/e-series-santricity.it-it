@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, increase, capacity, volume 
 summary: 'È possibile aumentare la capacità riportata (la capacità riportata agli host) di un volume utilizzando la capacità libera disponibile nel pool o nel gruppo di volumi.' 
 ---
-= Aumentare la capacità di un volume
+= Aumentare la capacità di un volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

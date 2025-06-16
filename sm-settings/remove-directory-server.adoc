@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: Per interrompere la connessione tra un server di directory e lo storage array, è possibile rimuovere le informazioni sul server dalla pagina Access Management. È possibile eseguire questa attività se è stato configurato un nuovo server e si desidera rimuovere quello precedente. 
 ---
-= Rimuovere il server di directory
+= Rimuovere il server di directory in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

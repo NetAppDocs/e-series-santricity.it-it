@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, time, graphs 
 summary: 'È possibile modificare l"intervallo di tempo predefinito mostrato dai grafici delle prestazioni.' 
 ---
-= Impostare l'intervallo di tempo predefinito per i grafici delle prestazioni
+= Imposta l'intervallo di tempo predefinito per i grafici delle prestazioni in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

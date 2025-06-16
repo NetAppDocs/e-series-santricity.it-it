@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
 summary: 'È possibile rivedere un"immagine dello stato di salute del controller. Un"immagine di integrità è un dump di dati raw della memoria del processore del controller che il supporto tecnico può utilizzare per diagnosticare un problema con un controller.' 
 ---
-= Recuperare l'immagine di integrità
+= Recupera l'immagine sanitaria in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

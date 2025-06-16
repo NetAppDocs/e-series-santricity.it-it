@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
 summary: 'Se l"array di storage include dischi con diversi tipi di attributi fisici e logici, la pagina hardware fornisce campi di filtro che consentono di limitare la visualizzazione del disco e individuare dischi specifici.' 
 ---
-= Limitare la vista del disco
+= Filtra la visualizzazione dell'unità in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

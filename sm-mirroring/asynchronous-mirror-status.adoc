@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirror, status, consistency, group, 
 summary: Lo stato del mirror definisce lo stato dei gruppi di coerenza mirror e delle coppie di volumi mirrorati. 
 ---
-= Stato del mirror asincrono
+= Visualizza lo stato del mirror asincrono in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

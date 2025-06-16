@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access volumes 
 summary: 'Un volume di accesso è un volume configurato in fabbrica sull"array di storage utilizzato per la comunicazione con l"array di storage e l"host attraverso la connessione i/o dell"host. Il volume di accesso richiede un LUN (Logical Unit Number).' 
 ---
-= Volumi di accesso
+= Volumi di accesso in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

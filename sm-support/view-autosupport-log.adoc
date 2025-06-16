@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
 summary: Il registro AutoSupport fornisce informazioni sullo stato, la cronologia delle spedizioni e gli errori riscontrati durante la consegna delle spedizioni AutoSupport. 
 ---
-= Visualizza il registro AutoSupport
+= Visualizza il registro di AutoSupport in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

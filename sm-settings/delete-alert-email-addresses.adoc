@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mail, server, email, addresses, alerts, 
 summary: È possibile rimuovere il server di posta precedentemente definito in modo che gli avvisi non vengano più inviati agli indirizzi di posta elettronica oppure rimuovere singoli indirizzi di posta elettronica. 
 ---
-= Eliminare gli indirizzi e-mail o i server di posta per gli avvisi
+= Eliminare il server di posta o gli indirizzi e-mail per gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

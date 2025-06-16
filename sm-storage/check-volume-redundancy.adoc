@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, check, volume, redundancy 
 summary: Sotto la guida del supporto tecnico o secondo le istruzioni del Recovery Guru, è possibile controllare la ridondanza su un volume in un pool o un gruppo di volumi per determinare se i dati su quel volume sono coerenti. I dati di ridondanza vengono utilizzati per ricostruire rapidamente le informazioni su un disco sostitutivo in caso di guasto di uno dei dischi del pool o del gruppo di volumi. 
 ---
-= Controllare la ridondanza del volume
+= Controllare la ridondanza del volume in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

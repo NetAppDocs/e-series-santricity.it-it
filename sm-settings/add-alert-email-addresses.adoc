@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, email, addresses, alerts, 
 summary: È possibile aggiungere fino a 20 destinatari per gli avvisi e-mail. 
 ---
-= Aggiungere indirizzi e-mail per gli avvisi
+= Aggiungere indirizzi email per gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

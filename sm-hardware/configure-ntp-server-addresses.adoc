@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, ntp, server, addresses, network, time, protocol, 
 summary: 'È possibile configurare una connessione al server NTP (Network Time Protocol) in modo che il controller interroga periodicamente il server NTP per aggiornare l"orologio interno dell"ora del giorno.' 
 ---
-= Configurare gli indirizzi del server NTP
+= Configurare gli indirizzi del server NTP in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
 summary: 'È possibile indicare al controller che è stata intrapresa un"azione correttiva per il ripristino da una condizione di errato cablaggio.' 
 ---
-= Riattivare le porte delle unità
+= Riattivare le porte dell'unità in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume groups 
 summary: 'È possibile creare capacità di storage logico da un sottoinsieme di unità non assegnate nell"array di storage. Questa capacità logica può assumere la forma di un pool o di un gruppo di volumi, a seconda delle esigenze dell"ambiente.' 
 ---
-= Panoramica su pool e gruppi di volumi
+= Informazioni su pool e gruppi di volumi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

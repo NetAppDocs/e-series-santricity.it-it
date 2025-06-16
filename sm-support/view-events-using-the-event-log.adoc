@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, events, 
 summary: È possibile visualizzare il registro eventi, che fornisce un record storico degli eventi che si sono verificati sullo storage array. 
 ---
-= Visualizzare gli eventi utilizzando il registro eventi
+= Visualizzare gli eventi utilizzando il registro eventi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

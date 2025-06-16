@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
 summary: 'Se in precedenza è stata disattivata la funzionalità predefinita per il provisioning delle risorse, è possibile accedere a Settings (Impostazioni) e riattivarla per i nuovi gruppi di volumi o pool SSD creati. È anche possibile disattivare nuovamente l"impostazione.' 
 ---
-= Attivare o disattivare il provisioning delle risorse per nuovi gruppi di volumi o pool
+= Abilitare o disabilitare il provisioning delle risorse per nuovi gruppi di volumi o pool in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

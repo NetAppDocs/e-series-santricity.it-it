@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, obtain, feature, key, file, 
 summary: 'Per attivare una funzionalità o un Feature Pack premium sull"array di storage, è necessario prima ottenere un file delle chiavi delle funzioni. Una chiave è associata a un solo array di storage.' 
 ---
-= Ottenere un file delle chiavi di funzione
+= Ottieni un file chiave di funzionalità in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

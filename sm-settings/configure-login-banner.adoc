@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, login, banner, 
 summary: È possibile creare un banner di accesso che viene presentato agli utenti prima di stabilire le sessioni in Gestore di sistema di SANtricity. Il banner può includere un avviso e un messaggio di consenso. 
 ---
-= Configurare il banner di accesso
+= Configurare il banner di accesso in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
 summary: 'L"ID dello shelf è un numero che identifica in modo univoco uno shelf nell"array di storage. Gli shelf sono numerati consecutivamente, a partire da 00 o 01, nella parte superiore sinistra di ciascuna vista.' 
 ---
-= Modificare gli ID degli shelf
+= Modificare gli ID degli scaffali in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

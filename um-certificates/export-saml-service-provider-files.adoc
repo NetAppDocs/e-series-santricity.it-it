@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
 summary: 'Se necessario, è possibile esportare i metadati del service provider per l"array di storage e reimportare il file nel sistema IdP (Identity Provider).' 
 ---
-= Esportare i file del provider di servizi SAML
+= Esportare i file del fornitore di servizi SAML in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

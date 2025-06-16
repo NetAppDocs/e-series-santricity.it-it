@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
 summary: 'È possibile visualizzare la quantità di dati non sincronizzati tra i gruppi di coerenza mirror sull"array di storage locale e sull"array di storage remoto. Mentre il gruppo di coerenza mirror si trova in uno stato non sincronizzato, non viene eseguita alcuna attività di mirroring.' 
 ---
-= Visualizzare la quantità di dati non sincronizzati tra gruppi di coerenza mirror
+= Visualizza la quantità di dati non sincronizzati tra i gruppi di coerenza mirror in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

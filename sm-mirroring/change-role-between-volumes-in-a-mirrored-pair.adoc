@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
 summary: 'È possibile eseguire un"inversione di ruolo tra i due volumi di una coppia mirrorata che partecipano al mirroring sincrono per scopi amministrativi o in caso di disastro sull"array di storage locale.' 
 ---
-= Cambiare ruolo tra i volumi in una coppia mirrorata
+= Modificare il ruolo tra i volumi in una coppia con mirroring in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

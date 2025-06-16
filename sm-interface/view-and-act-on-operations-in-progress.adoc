@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, act, operations, progress, 
 summary: 'Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata, utilizzare la pagina Operations in Progress (operazioni in corso).' 
 ---
-= Visualizzare e agire sulle operazioni in corso
+= Visualizza e agisci sulle operazioni in corso in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

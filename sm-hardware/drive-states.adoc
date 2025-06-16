@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, drive, states, 
 summary: System Manager riporta diversi stati per i dischi. 
 ---
-= stati del disco
+= Informazioni sugli stati delle unità in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

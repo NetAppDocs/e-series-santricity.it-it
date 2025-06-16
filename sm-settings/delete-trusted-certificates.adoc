@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trusted, certificates, 
 summary: 'È possibile eliminare i certificati installati dall"utente precedentemente importati dalla scheda Trusted.' 
 ---
-= Eliminare i certificati attendibili
+= Elimina i certificati attendibili in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

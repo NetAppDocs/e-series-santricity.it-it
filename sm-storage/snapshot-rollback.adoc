@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
 summary: 'Un"operazione di rollback riporta un volume di base a uno stato precedente, determinato dallo snapshot selezionato.' 
 ---
-= Rollback di Snapshot
+= Scopri di più sul rollback degli snapshot nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

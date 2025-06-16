@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
 summary: Se si desidera archiviare i registri di controllo su un server syslog esterno, è possibile configurare le comunicazioni tra tale server e lo storage array. Una volta stabilita la connessione, i registri di controllo vengono salvati automaticamente nel server syslog. 
 ---
-= Configurare il server syslog per i registri di controllo
+= Configurare il server syslog per i log di controllo in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

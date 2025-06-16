@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, authentication 
 summary: 'La gestione degli accessi è un metodo per configurare l"autenticazione degli utenti in Gestione unificata di SANtricity.' 
 ---
-= Panoramica sulla gestione degli accessi
+= Scopri di più sulla gestione degli accessi di SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

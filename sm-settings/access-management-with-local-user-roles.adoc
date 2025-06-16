@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
 summary: 'Per la gestione degli accessi, gli amministratori possono utilizzare le funzionalità RBAC (role-based access control) applicate nell"array di storage. Queste funzionalità sono definite ruoli utente locali.' 
 ---
-= Gestione degli accessi con ruoli utente locali
+= Configurare la gestione degli accessi con ruoli utente locali in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

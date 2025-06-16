@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, thin, volume, monitoring 
 summary: È possibile monitorare lo spazio dei thin volumi e generare avvisi appropriati per evitare condizioni di capacità insufficiente. 
 ---
-= Monitoraggio di volumi sottili
+= Scopri di più sul monitoraggio dei volumi sottili nel software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
 summary: 'È possibile modificare l"ordine degli shelf visualizzati nella pagina hardware in modo che corrisponda all"ordine fisico degli shelf in un cabinet.' 
 ---
-= Modificare l'ordine di visualizzazione degli shelf
+= Modificare l'ordine di visualizzazione degli scaffali in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, alarm, alerts, 
 summary: Gli avvisi informano gli amministratori degli eventi importanti che si verificano sullo storage array. Gli avvisi possono essere inviati tramite e-mail, trap SNMP e syslog. 
 ---
-= Come funzionano gli avvisi
+= Come funzionano gli avvisi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
 summary: È possibile salvare le informazioni di configurazione di uno storage array in un file di script per risparmiare tempo durante la configurazione di storage array aggiuntivi con la stessa configurazione. 
 ---
-= Salvare la configurazione dello storage array
+= Salva la configurazione dell'array di archiviazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

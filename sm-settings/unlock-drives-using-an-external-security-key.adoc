@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, external, key, management, 
 summary: Se è stata configurata la gestione delle chiavi esterne e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi. 
 ---
-= Sbloccare i dischi quando si utilizza la gestione esterna delle chiavi
+= Sblocca le unità quando si utilizza la gestione delle chiavi esterne in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

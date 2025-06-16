@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
 summary: 'È possibile annullare un rollback attivo in corso (copia attiva dei dati), un rollback in sospeso (in una coda in attesa di avvio delle risorse) o un rollback che è stato sospeso a causa di un errore.' 
 ---
-= Annulla il rollback dell'immagine snapshot
+= Annullare il rollback dell'immagine snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

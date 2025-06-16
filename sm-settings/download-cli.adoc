@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, download, command line interface, CLI, 
 summary: 'Da System Manager è possibile scaricare il pacchetto dell"interfaccia a riga di comando (CLI).' 
 ---
-= Scaricare l'interfaccia a riga di comando (CLI)
+= Scarica l'interfaccia della riga di comando (CLI) di SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

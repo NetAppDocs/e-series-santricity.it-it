@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, external, security, key, 
 summary: 'Per utilizzare la funzione Drive Security con un server di gestione delle chiavi, è necessario creare una chiave esterna condivisa dal server di gestione delle chiavi e dalle unità sicure nell"array di storage.' 
 ---
-= Creare una chiave di sicurezza esterna
+= Crea una chiave di sicurezza esterna in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

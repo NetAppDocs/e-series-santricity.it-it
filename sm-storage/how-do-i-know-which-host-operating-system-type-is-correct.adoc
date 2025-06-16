@@ -84,13 +84,6 @@ Supporta i sistemi operativi Windows che utilizzano un driver multipathing per l
 
 
  a| 
-FlexArray (ALUA)
- a| 
-Supporta un sistema NetApp FlexArray che utilizza ALUA per il multipathing.
-
-
-
- a| 
 SVC IBM
  a| 
 Supporta una configurazione IBM SAN Volume Controller.

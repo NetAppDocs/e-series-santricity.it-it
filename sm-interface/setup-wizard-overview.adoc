@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, setup wizard 
 summary: Utilizzare la procedura guidata di installazione per configurare lo storage array, inclusi hardware, host, applicazioni, carichi di lavoro, Pool, avvisi e AutoSupport. 
 ---
-= Panoramica dell'installazione guidata
+= Scopri di più sulla procedura guidata di installazione di SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

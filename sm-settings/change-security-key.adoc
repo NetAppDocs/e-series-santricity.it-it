@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, security, key, 
 summary: 'In qualsiasi momento, è possibile sostituire una chiave di sicurezza con una nuova. Potrebbe essere necessario modificare una chiave di sicurezza nei casi in cui si verifica una potenziale violazione della sicurezza presso l"azienda e si desidera assicurarsi che il personale non autorizzato non possa accedere ai dati dei dischi.' 
 ---
-= Modificare la chiave di sicurezza
+= Modificare una chiave di sicurezza in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

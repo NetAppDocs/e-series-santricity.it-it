@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, pool, automatically 
 summary: 'La creazione del pool viene avviata automaticamente quando System Manager rileva dischi non assegnati nell"array di storage. È possibile utilizzare la creazione automatica del pool per configurare facilmente tutte le unità non assegnate nell"array di storage in un unico pool e per aggiungere unità nei pool esistenti.' 
 ---
-= Crea pool automaticamente
+= Crea automaticamente un pool in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

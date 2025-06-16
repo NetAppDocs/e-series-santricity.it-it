@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
 summary: Normalmente, la ricostruzione del disco viene avviata automaticamente dopo la sostituzione di un disco. Se la ricostruzione del disco non viene avviata automaticamente, è possibile avviare la ricostruzione manualmente. 
 ---
-= Ricostruire il disco manualmente
+= Ricostruisci manualmente un'unità in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

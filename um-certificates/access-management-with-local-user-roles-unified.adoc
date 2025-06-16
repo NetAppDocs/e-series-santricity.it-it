@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, local, user, roles 
 summary: 'Gli amministratori possono utilizzare le funzionalità RBAC (role-based access control) applicate in Gestione unificata di SANtricity. Queste funzionalità sono definite ruoli utente locali.' 
 ---
-= Gestione degli accessi con ruoli utente locali
+= Gestione degli accessi con ruoli utente locali in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

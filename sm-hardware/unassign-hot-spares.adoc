@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
 summary: È possibile modificare un hot spare in un disco non assegnato. 
 ---
-= Annulla assegnazione hot spare
+= Annulla l'assegnazione degli hot spare in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

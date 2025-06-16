@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, consistency group, member volume 
 summary: È possibile modificare le impostazioni di un volume membro del gruppo di coerenza per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata di un volume membro è quasi piena e per modificare il criterio da utilizzare quando la capacità riservata raggiunge il valore massimo definito percentuale. 
 ---
-= Modificare le impostazioni di capacità riservata per un volume membro del gruppo di coerenza
+= Modificare le impostazioni della capacità riservata per un volume membro del gruppo di coerenza in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

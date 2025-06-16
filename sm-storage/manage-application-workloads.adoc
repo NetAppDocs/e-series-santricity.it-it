@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, applications, workloads 
 summary: 'È possibile gestire applicazioni e carichi di lavoro per visualizzare tutti i volumi esistenti nell"array di storage raggruppati per nome del carico di lavoro e tipo di applicazione. È inoltre possibile aggiungere volumi a un workload esistente o nuovo, modificare le impostazioni di un workload esistente e creare nuovi volumi e carichi di lavoro.' 
 ---
-= Gestire applicazioni e carichi di lavoro
+= Gestisci applicazioni e carichi di lavoro in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

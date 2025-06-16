@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, terms 
 summary: Scopri come si applicano i termini di Access Management al tuo storage array. 
 ---
-= Terminologia per la gestione degli accessi
+= Scopri la terminologia di gestione degli accessi nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

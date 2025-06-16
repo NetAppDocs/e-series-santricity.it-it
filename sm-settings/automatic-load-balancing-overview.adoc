@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
 summary: Il bilanciamento automatico del carico offre una migliore gestione delle risorse di i/o reagendo in modo dinamico alle variazioni di carico nel tempo e regolando automaticamente la proprietà del controller del volume per correggere eventuali problemi di sbilanciamento del carico quando i carichi di lavoro si spostano tra i controller. 
 ---
-= Panoramica del bilanciamento automatico del carico
+= Scopri di più sul bilanciamento automatico del carico nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

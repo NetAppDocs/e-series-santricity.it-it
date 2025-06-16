@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
 summary: È possibile visualizzare lo stato e le impostazioni delle unità, ad esempio il tipo di supporto, il tipo di interfaccia e la capacità. 
 ---
-= Visualizzare lo stato e le impostazioni del disco
+= Visualizza lo stato e le impostazioni dell'unità in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

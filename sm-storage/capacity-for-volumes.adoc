@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
 summary: 'I dischi dell"array di storage forniscono la capacità fisica dello storage per i dati. Prima di iniziare a memorizzare i dati, è necessario configurare la capacità allocata in componenti logici noti come pool o gruppi di volumi. Questi oggetti storage vengono utilizzati per configurare, memorizzare, gestire e conservare i dati sull"array di storage.' 
 ---
-= Come viene allocata la capacità per i volumi
+= Come viene allocata la capacità per i volumi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

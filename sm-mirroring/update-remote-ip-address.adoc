@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
 summary: 'È possibile aggiornare l"indirizzo IP iSCSI dell"array di storage remoto per ristabilire la connessione con l"array di storage locale.' 
 ---
-= Aggiornare l'indirizzo IP remoto
+= Aggiornare gli indirizzi IP degli array di archiviazione remota in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

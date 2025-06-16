@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, software, firmware, upgrade, errors 
 summary: 'Possono verificarsi errori durante l"aggiornamento del software del controller o del firmware del disco.' 
 ---
-= Esaminare i possibili errori di aggiornamento del software e del firmware
+= Scopri gli errori di aggiornamento del software e del firmware SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

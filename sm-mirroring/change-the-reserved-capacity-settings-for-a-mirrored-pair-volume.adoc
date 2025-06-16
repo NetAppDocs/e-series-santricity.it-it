@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, reserved, capacity, settings, mirrored, pair, volume, 
 summary: È possibile modificare le impostazioni di un volume di coppia mirrorata per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per un volume di coppia mirrorata è quasi piena. 
 ---
-= Modificare le impostazioni di capacità riservata per un volume di coppia mirrorata
+= Modificare le impostazioni di capacità riservata per un volume di coppia con mirroring in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

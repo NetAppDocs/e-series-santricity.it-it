@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
 summary: Prima di poter visualizzare e gestire le risorse di storage, Unified Manager deve rilevare gli array di storage che si desidera gestire nella rete aziendale. È possibile rilevare più array o un singolo array. 
 ---
-= Considerazioni per il rilevamento degli array
+= Scopri come scoprire array di storage in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

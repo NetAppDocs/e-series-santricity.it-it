@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, security, key, management, 
 summary: 'Quando si implementa la funzione Drive Security, i dischi abilitati alla protezione (FIPS o FDE) richiedono una chiave di sicurezza per l"accesso ai dati. Una chiave di sicurezza è una stringa di caratteri condivisa tra questi tipi di dischi e i controller di un array di storage.' 
 ---
-= Come funziona la gestione delle chiavi di sicurezza
+= Come funziona la gestione delle chiavi di sicurezza in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

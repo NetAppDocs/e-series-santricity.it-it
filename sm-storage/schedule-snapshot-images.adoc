@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
 summary: Viene creata una pianificazione di snapshot per abilitare il ripristino in caso di problemi con il volume di base ed eseguire backup pianificati. È possibile creare snapshot di volumi di base o gruppi di coerenza snapshot in base a una pianificazione giornaliera, settimanale o mensile, in qualsiasi momento della giornata. 
 ---
-= Programmare le immagini snapshot
+= Pianificare le immagini snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

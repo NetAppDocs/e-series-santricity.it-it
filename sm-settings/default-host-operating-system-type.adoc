@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
 summary: 'Il tipo di host predefinito viene utilizzato dall"array di storage quando gli host sono inizialmente connessi. Definisce il modo in cui i controller dell"array di storage funzionano con il sistema operativo dell"host quando si accede ai volumi.' 
 ---
-= Tipo di sistema operativo host predefinito
+= Scopri di più sul tipo di sistema operativo host predefinito nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

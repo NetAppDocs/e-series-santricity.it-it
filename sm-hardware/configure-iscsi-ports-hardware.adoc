@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iscsi, ports, 
 summary: Se il controller include una connessione host iSCSI, è possibile configurare le impostazioni della porta iSCSI dalla pagina hardware. 
 ---
-= Configurare le porte iSCSI
+= Configurare le porte iSCSI in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

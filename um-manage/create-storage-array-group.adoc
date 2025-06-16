@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, storage, array, group 
 summary: È possibile creare gruppi di storage e quindi aggiungere array di storage ai gruppi. Il gruppo di storage definisce quali dischi forniscono lo storage che costituisce il volume. 
 ---
-= Configurare il gruppo di array di storage
+= Configurare un gruppo di array di archiviazione in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

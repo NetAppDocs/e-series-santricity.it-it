@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
 summary: 'È possibile utilizzare l"opzione Erase (Cancella) per preparare un"unità non assegnata per la rimozione dal sistema. Questa procedura rimuove in modo permanente i dati, garantendo che non possano essere letti di nuovo.' 
 ---
-= Cancellare i dischi
+= Cancellare le unità in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

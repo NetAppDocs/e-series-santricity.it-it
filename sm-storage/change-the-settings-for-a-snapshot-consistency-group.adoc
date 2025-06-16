@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
 summary: Modificare le impostazioni di un gruppo di coerenza snapshot quando si desidera modificarne il nome, le impostazioni di eliminazione automatica o il numero massimo di immagini snapshot consentite. 
 ---
-= Modificare le impostazioni di un gruppo di coerenza snapshot
+= Modificare le impostazioni per un gruppo di coerenza snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
 summary: 'La gestione degli accessi è un metodo per stabilire l"autenticazione dell"utente in Gestione di sistema di SANtricity.' 
 ---
-= Come funziona Access Management
+= Come funziona la gestione degli accessi in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

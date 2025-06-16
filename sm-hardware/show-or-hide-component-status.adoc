@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, show, hide, component, status, 
 summary: È possibile visualizzare le descrizioni dello stato di dischi, controller, ventole e alimentatori. 
 ---
-= Mostra o nasconde lo stato del componente
+= Mostra o nascondi lo stato del componente in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, add, directory, server 
 summary: 'Per configurare l"autenticazione per la gestione degli accessi, è necessario stabilire le comunicazioni tra un server LDAP e l"host che esegue il proxy dei servizi Web per la gestione unificata di SANtricity. Quindi, associare i gruppi di utenti LDAP ai ruoli utente locali.' 
 ---
-= Aggiungere il server di directory
+= Aggiungere il server di directory in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

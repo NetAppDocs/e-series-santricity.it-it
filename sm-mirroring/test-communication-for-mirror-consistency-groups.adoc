@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
 summary: 'È possibile verificare il collegamento di comunicazione per diagnosticare eventuali problemi di comunicazione tra l"array di storage locale e l"array di storage remoto associato a un gruppo di coerenza mirror.' 
 ---
-= Verificare la comunicazione per i gruppi di coerenza mirror
+= Testare la comunicazione per i gruppi di coerenza mirror in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

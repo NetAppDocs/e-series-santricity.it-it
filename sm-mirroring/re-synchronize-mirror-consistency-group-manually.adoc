@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
 summary: 'È possibile avviare manualmente la risincronizzazione per tutte le coppie mirrorate all"interno di un gruppo di coerenza mirror.' 
 ---
-= Risincronizzare manualmente il gruppo di coerenza mirror
+= Risincronizzare manualmente i gruppi di coerenza mirror in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

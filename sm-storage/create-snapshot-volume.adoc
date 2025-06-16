@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, snapshot, volume 
 summary: 'Si crea un volume di snapshot per fornire l"accesso host a un"immagine di snapshot di un volume o di un gruppo di coerenza di snapshot. È possibile designare il volume di snapshot come di sola lettura o di lettura/scrittura.' 
 ---
-= Creare un volume di snapshot
+= Creare un volume snapshot in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

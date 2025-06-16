@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
 summary: 'Per tutti i volumi nell"array di storage, è possibile regolare le impostazioni della memoria cache per lo spurgo e le dimensioni dei blocchi.' 
 ---
-= Modificare le impostazioni della cache per lo storage array
+= Modificare le impostazioni della cache dell'array di archiviazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

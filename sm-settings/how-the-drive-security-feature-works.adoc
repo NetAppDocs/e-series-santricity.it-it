@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Drive Security, 
 summary: 'Drive Security è una funzionalità di storage array che offre un ulteriore livello di sicurezza con dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).' 
 ---
-= Funzionamento della funzione Drive Security
+= Come funziona la funzionalità Drive Security in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

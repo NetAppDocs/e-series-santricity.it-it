@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, notifications 
 summary: 'System Manager utilizza icone e diversi altri metodi per notificare l"esistenza di problemi con lo storage array.' 
 ---
-= Panoramica delle notifiche dei problemi
+= Scopri di più sulle notifiche dei problemi di SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

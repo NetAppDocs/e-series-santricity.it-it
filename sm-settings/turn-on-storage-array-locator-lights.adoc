@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, locator, lights, 
 summary: Per individuare la posizione fisica di un array di storage in un cabinet, è possibile accendere i relativi indicatori LED. 
 ---
-= Accendere le spie di localizzazione degli array di storage
+= Accendere le luci di localizzazione dell'array di archiviazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
 summary: La pagina hardware fornisce lo stato e le impostazioni dei componenti dello shelf, inclusi alimentatori, ventole e batterie. 
 ---
-= Visualizzare lo stato e le impostazioni dei componenti dello shelf
+= Visualizza lo stato e le impostazioni dei componenti dello scaffale in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

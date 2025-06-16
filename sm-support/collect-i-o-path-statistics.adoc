@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
 summary: 'È possibile salvare il file delle statistiche del percorso i/o e inviarlo al supporto tecnico per l"analisi.' 
 ---
-= Raccogliere le statistiche del percorso di i/O.
+= Raccogli le statistiche del percorso I/O in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

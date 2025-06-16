@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, terminology 
 summary: Scopri come si applicano i termini di mirroring al tuo storage array. 
 ---
-= Terminologia mirrorata
+= Scopri la terminologia del mirroring in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

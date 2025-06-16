@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, redistribute, volumes 
 summary: 'Ridistribuisci i volumi per spostarli di nuovo nei proprietari di controller preferiti. In genere, i driver multipath spostano i volumi dal proprietario del controller preferito quando si verifica un problema lungo il percorso dei dati tra l"host e l"array di storage.' 
 ---
-= Ridistribuire i volumi
+= Ridistribuire i volumi in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

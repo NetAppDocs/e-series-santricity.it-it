@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, storage array, name, 
 summary: 'È possibile modificare il nome dell"array di storage visualizzato nella barra del titolo di Gestore di sistema di SANtricity.' 
 ---
-= Modificare il nome dell'array di storage
+= Modifica il nome dell'array di archiviazione in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

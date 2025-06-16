@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, controller, settings 
 summary: È possibile visualizzare informazioni su un controller, ad esempio lo stato delle interfacce host, delle interfacce disco e delle porte di gestione. 
 ---
-= Visualizzare le impostazioni del controller
+= Visualizza le impostazioni del controller in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
 summary: È possibile attivare le impostazioni relative al rilevamento dei dispositivi di storage in una rete iSCSI. 
 ---
-= Abilitare le impostazioni di rilevamento iSCSI
+= Abilitare le impostazioni di rilevamento iSCSI in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, trace, buffers 
 summary: 'È possibile recuperare i buffer di traccia dai controller e inviare il file al supporto tecnico per l"analisi.' 
 ---
-= Recuperare i buffer di traccia
+= Recupera i buffer di traccia in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
