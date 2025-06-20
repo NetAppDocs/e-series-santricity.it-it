@@ -1,0 +1,132 @@
+---
+permalink: sm-storage/faq-snapshots.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sugli snapshot per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Perché non vedo tutti i miei volumi, host o cluster di host?
+
+I volumi Snapshot con un volume di base abilitato da non possono essere assegnati a un host che non supporta Data Assurance (da). È necessario disattivare il da sul volume di base prima di poter assegnare un volume snapshot a un host che non supporta il da.
+
+Prendere in considerazione le seguenti linee guida per l'host a cui si sta assegnando il volume di snapshot:
+
+* Un host non è in grado di supportare da se è collegato all'array di storage attraverso un'interfaccia i/o che non è in grado di supportare da.
+* Un cluster host non è in grado di supportare da se ha almeno un membro host che non è in grado di supportare da.
+
+
+[NOTE]
+====
+Non è possibile disattivare il da su un volume associato a snapshot (gruppi di coerenza, gruppi di snapshot, immagini snapshot e volumi di snapshot), copie di volumi, e specchi. Tutti gli oggetti snapshot e capacità riservata associati devono essere cancellati prima che il da possa essere disattivato sul volume di base.
+
+====
+
+
+== Che cos'è un'immagine snapshot?
+
+Un'immagine snapshot è una copia logica del contenuto del volume, acquisita in un determinato momento. Le immagini Snapshot utilizzano uno spazio di storage minimo.
+
+I dati dell'immagine Snapshot vengono memorizzati come segue:
+
+* Quando viene creata un'immagine snapshot, questa corrisponde esattamente al volume di base. Dopo aver eseguito lo snapshot, quando si verifica la prima richiesta di scrittura per qualsiasi blocco o gruppo di blocchi sul volume di base, i dati originali vengono copiati nella capacità riservata dello snapshot prima che i nuovi dati vengano scritti nel volume di base.
+* Le snapshot successive includono solo i blocchi di dati modificati dopo la creazione della prima immagine snapshot. Ogni successiva operazione copy-on-write salva i dati originali che stanno per essere sovrascritti sul volume di base nella capacità riservata dello snapshot prima che i nuovi dati vengano scritti nel volume di base.
+
+
+
+
+== Perché utilizzare le immagini Snapshot?
+
+È possibile utilizzare le snapshot per proteggere e consentire il ripristino da perdite o danneggiamenti accidentali o dannosi dei dati.
+
+Selezionare un volume di base o un gruppo di volumi di base, denominato gruppo di coerenza snapshot, quindi acquisire le immagini snapshot in uno o più dei seguenti modi:
+
+* È possibile creare un'immagine snapshot di un singolo volume di base o di un gruppo di coerenza snapshot costituito da più volumi di base.
+* È possibile acquisire snapshot manualmente o creare una pianificazione per un volume di base o un gruppo di coerenza snapshot per acquisire automaticamente immagini snapshot periodiche.
+* È possibile creare un volume di snapshot accessibile dall'host di un'immagine snapshot.
+* È possibile eseguire un'operazione di rollback per ripristinare un'immagine snapshot.
+
+
+Il sistema conserva più immagini Snapshot come punti di ripristino che è possibile utilizzare per eseguire il rollback a set di dati sicuramente funzionanti in specifici momenti del tempo. La possibilità di eseguire il rollback offre protezione contro l'eliminazione accidentale dei dati e la corruzione dei dati.
+
+
+
+== Quali tipi di volumi possono essere utilizzati per le snapshot?
+
+I volumi standard e i volumi thin sono gli unici tipi di volumi che è possibile utilizzare per memorizzare le immagini snapshot. Non è possibile utilizzare volumi non standard. Il volume di base può risiedere in un pool o in un gruppo di volumi.
+
+
+
+== Perché dovrei creare un gruppo di coerenza delle snapshot?
+
+Si crea un gruppo di coerenza snapshot quando si desidera assicurarsi che le immagini snapshot vengano acquisite su più volumi contemporaneamente.
+
+Ad esempio, un database costituito da più volumi che devono rimanere coerenti per scopi di recovery richiederebbe un gruppo di coerenza snapshot per raccogliere snapshot coordinate di tutti i volumi e utilizzarli per ripristinare l'intero database.
+
+I volumi inclusi in un gruppo di coerenza snapshot sono denominati _volumi membro_.
+
+È possibile eseguire le seguenti operazioni di snapshot su un gruppo di coerenza di snapshot:
+
+* Creare un'immagine snapshot di un gruppo di coerenza snapshot per ottenere immagini simultanee dei volumi membri.
+* Creare una pianificazione per il gruppo di coerenza snapshot in modo da acquisire automaticamente le immagini simultanee periodiche dei volumi membri.
+* Creare un volume snapshot accessibile all'host di un'immagine di gruppo di coerenza snapshot.
+* Eseguire un'operazione di rollback per un gruppo di coerenza snapshot.
+
+
+
+
+== Che cos'è un volume snapshot e quando ha bisogno di capacità riservata?
+
+Un volume di snapshot consente all'host di accedere ai dati nell'immagine di snapshot. Il volume Snapshot contiene la propria capacità riservata, che salva eventuali modifiche al volume di base senza influire sull'immagine snapshot originale. Le immagini Snapshot non sono accessibili in lettura o scrittura agli host. Se si desidera leggere o scrivere nei dati di snapshot, creare un volume di snapshot e assegnarlo a un host.
+
+È possibile creare due tipi di volumi di snapshot. Il tipo di volume di snapshot determina se utilizza la capacità riservata.
+
+* *Sola lettura* -- Un volume di snapshot creato in sola lettura fornisce a un'applicazione host l'accesso in lettura a una copia dei dati contenuti nell'immagine snapshot. Un volume snapshot di sola lettura non utilizza la capacità riservata.
+* *Read-write* -- Un volume di snapshot creato come Read-write consente di apportare modifiche al volume di snapshot senza influire sull'immagine di snapshot a cui si fa riferimento. Un volume di snapshot in lettura/scrittura utilizza la capacità riservata per memorizzare queste modifiche. È possibile convertire un volume snapshot di sola lettura in lettura/scrittura in qualsiasi momento.
+
+
+
+
+== Che cos'è un gruppo di snapshot?
+
+Un gruppo di snapshot è un insieme di immagini snapshot point-in-time di un singolo volume di base associato.
+
+System Manager organizza le immagini snapshot in _gruppi di snapshot_. I gruppi di snapshot non richiedono alcuna azione da parte dell'utente, ma è possibile regolare la capacità riservata di un gruppo di snapshot in qualsiasi momento. Inoltre, potrebbe essere richiesto di creare capacità riservata quando vengono soddisfatte le seguenti condizioni:
+
+* Ogni volta che si crea uno snapshot di un volume di base che non dispone ancora di un gruppo di snapshot, System Manager crea automaticamente un gruppo di snapshot. In questo modo si crea una capacità riservata per il volume di base utilizzato per memorizzare le immagini snapshot successive.
+* Ogni volta che si crea una pianificazione di snapshot per un volume di base, System Manager crea automaticamente un gruppo di snapshot.
+
+
+
+
+== Perché è necessario disattivare un volume di snapshot?
+
+È possibile disattivare un volume di snapshot quando si desidera assegnare un volume di snapshot diverso all'immagine di snapshot. È possibile riservare il volume snapshot disattivato per un utilizzo successivo.
+
+Se il volume snapshot o il volume snapshot del gruppo di coerenza non sono più necessari e non si intende ricrearlo in un secondo momento, eliminare il volume invece di disattivarlo.
+
+
+
+== Che cos'è lo stato Disabled?
+
+Un volume di snapshot nello stato Disabled (Disattivato) non è attualmente assegnato a un'immagine di snapshot. Per attivare il volume di snapshot, è necessario utilizzare l'operazione di ricreazione per assegnare una nuova immagine di snapshot al volume di snapshot disattivato.
+
+Le caratteristiche del volume di snapshot sono definite dall'immagine snapshot ad esso assegnata. L'attività di lettura/scrittura viene sospesa su un volume di snapshot in stato Disabled (Disattivato).
+
+
+
+== Perché dovrei sospendere un programma di snapshot?
+
+Quando un programma viene sospeso, non vengono eseguite le creazioni dell'immagine snapshot pianificate. È possibile sospendere una pianificazione di snapshot per risparmiare spazio di storage e quindi riprendere le snapshot pianificate in un secondo momento.
+
+Se non è necessaria la pianificazione snapshot, è necessario eliminarla invece di sospenderla.

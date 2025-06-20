@@ -1,0 +1,231 @@
+---
+permalink: sm-mirroring/faq-sync-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sul mirroring della sincronizzazione per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== In che modo il mirroring asincrono differisce dal mirroring sincrono?
+
+La funzione di mirroring asincrono si differenzia dalla funzione di mirroring sincrono in un modo essenziale: Acquisisce lo stato del volume di origine in un determinato momento e copia solo i dati modificati dall'ultima acquisizione dell'immagine.
+
+Con il mirroring sincrono, lo stato del volume primario non viene acquisito in un determinato momento, ma riflette tutte le modifiche apportate sul volume primario al volume secondario. Il volume secondario è identico al volume primario in ogni momento perché, con questo tipo di mirror, ogni volta che viene eseguita una scrittura nel volume primario, viene eseguita una scrittura nel volume secondario. L'host non riceve una conferma che la scrittura è riuscita fino a quando il volume secondario non viene aggiornato correttamente con le modifiche apportate sul volume primario.
+
+Con il mirroring asincrono, l'array di storage remoto non è completamente sincronizzato con l'array di storage locale, quindi se l'applicazione deve passare all'array di storage remoto a causa di una perdita dell'array di storage locale, alcune transazioni potrebbero andare perse.
+
+Confronto tra le funzionalità di mirroring:
+
+[cols="1a,1a"]
+|===
+| Mirroring asincrono | Mirroring sincrono 
+
+
+ a| 
+*Metodo di replica*
+
+
+
+ a| 
+* *Point-in-Time*
++
+Il mirroring viene eseguito su richiesta o automaticamente in base a una pianificazione definita dall'utente. Le pianificazioni possono essere definite in base alla granularità dei minuti. Il tempo minimo tra le sincronizzazioni è di 10 minuti.
+
+
+ a| 
+* *Continuo*
++
+Il mirroring viene eseguito automaticamente in modo continuo, copiando i dati da ogni scrittura host.
+
+
+
+
+
+ a| 
+*Capacità riservata*
+
+
+
+ a| 
+* *Multiplo*
++
+Per ogni coppia mirrorata è necessario un volume di capacità riservato.
+
+
+ a| 
+* *Singolo*
++
+Per tutti i volumi mirrorati è necessario un singolo volume di capacità riservata.
+
+
+
+
+
+ a| 
+*Comunicazione*
+
+
+
+ a| 
+* *ISCSI e Fibre Channel*
++
+Supporta interfacce iSCSI e Fibre Channel tra array di storage.
+
+
+ a| 
+* *Fibre Channel*
++
+Supporta solo interfacce Fibre Channel tra array di storage.
+
+
+
+
+
+ a| 
+*Distanza*
+
+
+
+ a| 
+* *Senza limiti*
++
+Supporto di distanze virtualmente illimitate tra lo storage array locale e lo storage array remoto, con la distanza generalmente limitata solo dalle funzionalità della rete e dalla tecnologia di estensione del canale.
+
+
+ a| 
+* *Limitato*
++
+In genere, per soddisfare i requisiti di latenza e performance delle applicazioni, è necessario che l'array di storage locale si trovi entro circa 10 km (6.2 miglia).
+
+
+
+|===
+
+
+== Mirroring sincrono: perché non vedo tutti i miei volumi?
+
+Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei.
+
+I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è un volume standard, ad esempio un volume snapshot o un volume thin.
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+
+
+
+
+== Mirroring sincrono: perché non vedo tutti i volumi nell'array di archiviazione remoto?
+
+Quando si seleziona un volume secondario nell'array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.
+
+I volumi non idonei per l'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è un volume standard, ad esempio un volume snapshot o un volume thin.
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Se si utilizza Data Assurance (da), il volume primario e il volume secondario devono avere le stesse impostazioni da.
++
+** Se il volume primario è abilitato da, il volume secondario deve essere abilitato da.
+** Se il volume primario non è abilitato da, il volume secondario non deve essere abilitato da.
+
+
+
+
+
+
+== Mirroring sincrono - cosa occorre sapere prima di creare una coppia mirrorata?
+
+È possibile configurare le coppie di mirroring nell'interfaccia di SANtricity Unified Manager, quindi gestire le coppie in SANtricity System Manager.
+
+Prima di creare una coppia mirrorata, attenersi alle seguenti linee guida:
+
+* È necessario disporre di due array di storage.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* È necessario disporre di capacità libera sufficiente sull'array di storage remoto per creare un volume secondario uguale o superiore al volume primario che si desidera eseguire il mirroring.
+* Sono stati installati Web Services Proxy e Unified Manager. Le coppie mirrorate vengono configurate nell'interfaccia di Unified Manager.
+* I due array di storage vengono rilevati in Unified Manager.
+
+
+
+
+== Qual è l'impatto della priorità di sincronizzazione sulle velocità di sincronizzazione?
+
+La priorità di sincronizzazione definisce il tempo di elaborazione allocato per le attività di sincronizzazione in relazione alle prestazioni del sistema.
+
+Il proprietario del controller del volume primario esegue questa operazione in background. Allo stesso tempo, il proprietario del controller elabora le scritture i/o locali nel volume primario e le scritture remote associate nel volume secondario. Poiché la risincronizzazione distoglie le risorse di elaborazione del controller dall'attività di i/o, la risincronizzazione può avere un impatto sulle prestazioni dell'applicazione host.
+
+Tenere presenti queste linee guida per determinare il tempo necessario per una priorità di sincronizzazione e il modo in cui le priorità di sincronizzazione possono influire sulle prestazioni del sistema.
+
+.Informazioni sui tassi di priorità di sincronizzazione
+[%collapsible]
+====
+Sono disponibili i seguenti tassi di priorità:
+
+* Più basso
+* Basso
+* Medio
+* Alto
+* Massimo
+
+
+Il tasso di priorità più basso supporta le prestazioni del sistema, ma la risincronizzazione richiede più tempo. Il tasso di priorità più elevato supporta la risincronizzazione, ma le prestazioni del sistema potrebbero essere compromesse.
+
+====
+Queste linee guida approssimano le differenze tra le priorità.
+
+[cols="35h,~"]
+|===
+| Tasso di priorità per la sincronizzazione completa | Tempo trascorso rispetto alla massima velocità di sincronizzazione 
+
+
+ a| 
+Più basso
+ a| 
+Circa otto volte più a lungo rispetto al tasso di priorità più elevato.
+
+
+
+ a| 
+Basso
+ a| 
+Circa sei volte più a lungo rispetto al tasso di priorità più elevato.
+
+
+
+ a| 
+Medio
+ a| 
+Circa tre volte e mezzo fino al tasso di priorità più elevato.
+
+
+
+ a| 
+Alto
+ a| 
+Circa il doppio rispetto al tasso di priorità più elevato.
+
+|===
+Le dimensioni del volume e i carichi della velocità di i/o dell'host influiscono sui confronti dei tempi di sincronizzazione.
+
+
+
+== Perché si consiglia di utilizzare una policy di sincronizzazione manuale?
+
+La risincronizzazione manuale è consigliata perché consente di gestire il processo di risincronizzazione in modo da offrire la migliore opportunità di recupero dei dati.
+
+Se si utilizza un criterio di risincronizzazione automatica e si verificano problemi di comunicazione intermittente durante la risincronizzazione, i dati sul volume secondario potrebbero essere temporaneamente danneggiati. Una volta completata la risincronizzazione, i dati vengono corretti.

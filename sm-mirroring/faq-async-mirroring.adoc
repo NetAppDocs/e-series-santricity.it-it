@@ -1,0 +1,315 @@
+---
+permalink: sm-mirroring/faq-async-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sul mirroring asincrono per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== In che modo il mirroring asincrono differisce dal mirroring sincrono?
+
+La funzione di mirroring asincrono si differenzia dalla funzione di mirroring sincrono in un modo essenziale: Acquisisce lo stato del volume di origine in un determinato momento e copia solo i dati modificati dall'ultima acquisizione dell'immagine.
+
+Con il mirroring sincrono, lo stato del volume primario non viene acquisito in un determinato momento, ma riflette tutte le modifiche apportate sul volume primario al volume secondario. Il volume secondario è identico al volume primario in ogni momento perché, con questo tipo di mirror, ogni volta che viene eseguita una scrittura nel volume primario, viene eseguita una scrittura nel volume secondario. L'host non riceve una conferma che la scrittura è riuscita fino a quando il volume secondario non viene aggiornato correttamente con le modifiche apportate sul volume primario.
+
+Con il mirroring asincrono, l'array di storage remoto non è completamente sincronizzato con l'array di storage locale, quindi se l'applicazione deve passare all'array di storage remoto a causa di una perdita dell'array di storage locale, alcune transazioni potrebbero andare perse.
+
+Confronto tra le funzionalità di mirroring:
+
+[cols="1a,1a"]
+|===
+| Mirroring asincrono | Mirroring sincrono 
+
+
+ a| 
+*Metodo di replica*
+
+
+
+ a| 
+* *Point-in-Time*
++
+Il mirroring viene eseguito su richiesta o automaticamente in base a una pianificazione definita dall'utente. Le pianificazioni possono essere definite in base alla granularità dei minuti. Il tempo minimo tra le sincronizzazioni è di 10 minuti.
+
+
+ a| 
+* *Continuo*
++
+Il mirroring viene eseguito automaticamente in modo continuo, copiando i dati da ogni scrittura host.
+
+
+
+
+
+ a| 
+*Capacità riservata*
+
+
+
+ a| 
+* *Multiplo*
++
+Per ogni coppia mirrorata è necessario un volume di capacità riservato.
+
+
+ a| 
+* *Singolo*
++
+Per tutti i volumi mirrorati è necessario un singolo volume di capacità riservata.
+
+
+
+
+
+ a| 
+*Comunicazione*
+
+
+
+ a| 
+* *ISCSI e Fibre Channel*
++
+Supporta interfacce iSCSI e Fibre Channel tra array di storage.
+
+
+ a| 
+* *Fibre Channel*
++
+Supporta solo interfacce Fibre Channel tra array di storage.
+
+
+
+
+
+ a| 
+*Distanza*
+
+
+
+ a| 
+* *Senza limiti*
++
+Supporto di distanze virtualmente illimitate tra lo storage array locale e lo storage array remoto, con la distanza generalmente limitata solo dalle funzionalità della rete e dalla tecnologia di estensione del canale.
+
+
+ a| 
+* *Limitato*
++
+In genere, per soddisfare i requisiti di latenza e performance delle applicazioni, è necessario che l'array di storage locale si trovi entro circa 10 km (6.2 miglia).
+
+
+
+|===
+
+
+== Perché non riesco ad accedere alla funzione di mirroring scelta?
+
+Il mirroring è configurato nell'interfaccia di SANtricity Unified Manager.
+
+[NOTE]
+====
+Il mirroring sincrono non è disponibile sull'array di storage EF600/EF600C o EF300/EF300C.
+
+====
+Per abilitare e configurare il mirroring tra due array, verificare quanto segue:
+
+* Il servizio Web Services Proxy deve essere in esecuzione. (Unified Manager viene installato su un sistema host insieme al proxy dei servizi Web).
+* Unified Manager deve essere in esecuzione sull'host locale tramite una connessione HTTPS.
+* I due array di storage che si desidera utilizzare per il mirroring devono essere rilevati in Unified Manager.
+* Unified Manager deve disporre di certificati SSL validi per gli array di storage. È possibile accettare un certificato autofirmato o installare certificati CA firmati da Unified Manager.
+
+
+Per istruzioni sulla configurazione, consultare quanto segue:
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Creazione di coppia asincrona con mirroring (in Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Creazione di una coppia sincrona con mirroring (in Unified Manager)"]
+
+
+
+
+== Cosa è necessario sapere prima di creare un gruppo di coerenza mirror?
+
+Seguire queste linee guida prima di creare un gruppo di coerenza mirror.
+
+[NOTE]
+====
+Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
+
+====
+È possibile creare un gruppo di coerenza in Unified Manager nella procedura guidata Crea coppie mirrorate.
+
+Soddisfare i seguenti requisiti per Unified Manager:
+
+* Il servizio Web Services Proxy deve essere in esecuzione.
+* Unified Manager deve essere in esecuzione sull'host locale tramite una connessione HTTPS.
+* Unified Manager deve mostrare certificati SSL validi per lo storage array. È possibile accettare un certificato autofirmato o installare il proprio certificato di sicurezza utilizzando Unified Manager e accedere al menu:Certificate[Certificate Management] (Gestione certificati).
+
+
+Assicurarsi inoltre di soddisfare i seguenti requisiti per gli array di storage:
+
+* I due storage array devono essere rilevati in Unified Manager.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel o un'interfaccia iSCSI.
+
+
+
+
+== Mirroring asincrono - cosa occorre sapere prima di creare una coppia mirrorata?
+
+È possibile configurare le coppie di mirroring nell'interfaccia di SANtricity Unified Manager, quindi gestire le coppie in SANtricity System Manager.
+
+Prima di creare una coppia mirrorata, seguire queste linee guida.
+
+* È necessario disporre di due array di storage.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel o un'interfaccia iSCSI.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* È necessario disporre di capacità libera sufficiente sull'array di storage remoto per creare un volume secondario uguale o superiore al volume primario che si desidera eseguire il mirroring.
+* Sono stati installati Web Services Proxy e Unified Manager. Le coppie mirrorate vengono configurate nell'interfaccia di Unified Manager.
+* I due array di storage vengono rilevati in Unified Manager.
+* L'array di storage deve contenere almeno un gruppo di coerenza mirror. È possibile creare un gruppo di coerenza in Unified Manager nella procedura guidata Crea coppie mirrorate.
+
+
+
+
+== Cosa devo sapere prima di aumentare la mia capacità riservata su un volume a coppia mirrorata?
+
+In genere, è necessario aumentare la capacità riservata quando si riceve un avviso che indica che la capacità riservata per una coppia mirrorata sta diventando piena. È possibile aumentare la capacità riservata solo con incrementi di 8 GiB.
+
+Per le operazioni di mirroring asincrono, la capacità riservata è in genere il 20% del volume di base. Scegliere una capacità più ampia per la capacità riservata se si verifica una o entrambe le seguenti condizioni:
+
+* Si intende mantenere la coppia mirrorata per un lungo periodo di tempo.
+* Una grande percentuale di blocchi di dati cambierà sul volume primario a causa dell'intensa attività di i/O. Utilizzare dati storici sulle performance o altre utility del sistema operativo per determinare l'attività i/o tipica del volume primario.
+
+
+È possibile aumentare la capacità riservata per una coppia mirrorata eseguendo una delle seguenti operazioni:
+
+* Regolare la percentuale di capacità per un volume di coppia mirrorata selezionando menu:Storage[Pools and Volumes Groups] (Storage[gruppi di pool e volumi]), quindi facendo clic sulla scheda *Reserved Capacity* (capacità riservata).
+* Creare un nuovo volume utilizzando la capacità libera disponibile in un pool o in un gruppo di volumi.
++
+Se non esiste capacità libera in alcun pool o gruppo di volumi, è possibile aggiungere capacità non configurata sotto forma di unità inutilizzate a un pool o a un gruppo di volumi.
+
+
+
+
+
+== Perché non posso aumentare la capacità riservata con la quantità richiesta?
+
+È possibile aumentare la capacità riservata solo con incrementi di 4 GiB.
+
+Consultare le seguenti linee guida:
+
+* È necessario disporre di una capacità libera sufficiente nel pool o nel gruppo di volumi in modo da poterla espandere, se necessario.
++
+Se non esiste capacità libera in alcun pool o gruppo di volumi, è possibile aggiungere capacità non assegnata sotto forma di unità inutilizzate a un pool o a un gruppo di volumi.
+
+* Il volume nel pool o nel gruppo di volumi deve avere uno stato ottimale e non deve essere in alcun stato di modifica.
+* La capacità libera deve essere presente nel pool o nel gruppo di volumi che si desidera utilizzare per aumentare la capacità.
+
+
+Per le operazioni di mirroring asincrono, la capacità riservata è in genere il 20% del volume di base. Utilizzare una percentuale più elevata se si ritiene che il volume di base subirà molte modifiche o se la durata prevista per l'operazione di copia del servizio di un oggetto di storage sarà molto lunga.
+
+
+
+== Perché dovrei modificare questa percentuale?
+
+La capacità riservata corrisponde in genere al 40% del volume di base per le operazioni di snapshot e al 20% del volume di base per le operazioni di mirroring asincrono.
+
+Di solito questa capacità è sufficiente. La capacità necessaria varia in base alla frequenza e alle dimensioni delle scritture i/o nel volume di base e alla durata dell'utilizzo del servizio di copia dell'oggetto di storage.
+
+In generale, scegliere una percentuale maggiore per la capacità riservata se sussistono una o entrambe le seguenti condizioni:
+
+* Se la durata di un'operazione di copia del servizio di un oggetto di storage specifico sarà molto lunga.
+* Se una grande percentuale di blocchi di dati cambia sul volume di base a causa di un'intensa attività di i/O. Utilizza dati storici sulle performance o altre utility del sistema operativo per determinare l'attività i/o tipica del volume di base.
+
+
+
+
+== Perché vengono visualizzati più candidati con capacità riservata?
+
+Se in un pool o gruppo di volumi sono presenti più volumi che soddisfano la percentuale di capacità selezionata per l'oggetto di storage, verranno visualizzati più volumi candidati.
+
+È possibile aggiornare l'elenco dei candidati consigliati modificando la percentuale di spazio su disco fisico che si desidera riservare sul volume di base per le operazioni del servizio di copia. I candidati migliori vengono visualizzati in base alla selezione effettuata.
+
+
+
+== Perché nella tabella vengono visualizzati i valori non disponibili?
+
+La tabella elenca i valori non disponibili quando i dati presenti nell'array di storage remoto non sono disponibili per la visualizzazione.
+
+Per visualizzare i dati dell'array di storage remoto, avviare System Manager da Unified Manager.
+
+
+
+== Perché non vedo tutti i miei pool e gruppi di volumi?
+
+Quando si crea un volume secondario per la coppia con mirroring asincrono, il sistema visualizza un elenco di tutti i pool e gruppi di volumi idonei per la coppia con mirroring asincrono. Qualsiasi pool o gruppo di volumi non idoneo all'utilizzo non viene visualizzato nell'elenco.
+
+I pool o i gruppi di volumi potrebbero non essere idonei per uno dei seguenti motivi.
+
+* Le funzionalità di sicurezza di un pool o di un gruppo di volumi non corrispondono.
+* Un pool o un gruppo di volumi non si trova in uno stato ottimale.
+* La capacità di un pool o di un gruppo di volumi è troppo ridotta.
+
+
+
+
+== Mirroring asincrono: perché non vedo tutti i miei volumi?
+
+Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei.
+
+I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Per i volumi thin, è necessario attivare l'espansione automatica.
+
+
+
+NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia asincrona con mirroring devono corrispondere allo stesso protocollo, livello di vassoio, dimensione del segmento, tipo di sicurezza e livello RAID. Le coppie mirrorate asincrone non idonee non vengono visualizzate nell'elenco dei volumi disponibili.
+
+
+
+== Mirroring asincrono: perché non vedo tutti i volumi nell'array di archiviazione remoto?
+
+Quando si seleziona un volume secondario nell'array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.
+
+I volumi non idonei per l'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Gli attributi del volume thin tra il volume primario e il volume secondario non corrispondono.
+* Se si utilizza Data Assurance (da), il volume primario e il volume secondario devono avere le stesse impostazioni da.
++
+** Se il volume primario è abilitato da, il volume secondario deve essere abilitato da.
+** Se il volume primario non è abilitato da, il volume secondario non deve essere abilitato da.
+
+
+
+
+
+
+== Perché dovrei aggiornare l'indirizzo IP del mio array di archiviazione remoto?
+
+L'indirizzo IP dell'array di storage remoto viene aggiornato quando l'indirizzo IP di una porta iSCSI cambia e l'array di storage locale non è in grado di comunicare con l'array di storage remoto.
+
+Quando si stabilisce una relazione di mirroring asincrono con una connessione iSCSI, gli array di storage locale e remoto memorizzano un record dell'indirizzo IP dell'array di storage remoto nella configurazione di mirroring asincrono. Se l'indirizzo IP di una porta iSCSI cambia, l'array di storage remoto che sta tentando di utilizzare tale porta rileva un errore di comunicazione.
+
+L'array di storage con l'indirizzo IP modificato invia un messaggio a ciascun array di storage remoto associato ai gruppi di coerenza mirror configurati per il mirroring su una connessione iSCSI. Gli array di storage che ricevono questo messaggio aggiornano automaticamente l'indirizzo IP di destinazione remota.
+
+Se lo storage array con l'indirizzo IP modificato non riesce a inviare il messaggio inter-array a uno storage array remoto, il sistema invia un avviso relativo al problema di connettività. Utilizzare l'opzione Update Remote IP Address (Aggiorna indirizzo IP remoto) per ristabilire la connessione con lo storage array locale.

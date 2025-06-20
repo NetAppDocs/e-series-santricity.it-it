@@ -1,0 +1,193 @@
+---
+permalink: um-manage/faq-storage-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sul mirroring dello storage per SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Cosa è necessario sapere prima di creare un gruppo di coerenza mirror?
+
+Seguire queste linee guida prima di creare un gruppo di coerenza mirror.
+
+Soddisfare i seguenti requisiti per Unified Manager:
+
+* Il servizio Web Services Proxy deve essere in esecuzione.
+* Unified Manager deve essere in esecuzione sull'host locale tramite una connessione HTTPS.
+* Unified Manager deve mostrare certificati SSL validi per lo storage array. È possibile accettare un certificato autofirmato o installare il proprio certificato di sicurezza utilizzando Unified Manager e accedere al menu:Certificate[Certificate Management] (Gestione certificati).
+
+
+Assicurarsi inoltre di soddisfare i seguenti requisiti per gli array di storage:
+
+* I due storage array devono essere rilevati in Unified Manager.
+* Ogni array di storage deve avere due controller.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* Gli array di storage locali e remoti sono collegati tramite un fabric Fibre Channel o un'interfaccia iSCSI.
+
+
+[NOTE]
+====
+Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
+
+====
+
+
+== Cosa occorre sapere prima di creare una coppia mirrorata?
+
+Prima di creare una coppia mirrorata, seguire queste linee guida.
+
+* È necessario disporre di due array di storage.
+* Ogni array di storage deve avere due controller.
+* I due storage array devono essere rilevati in Unified Manager.
+* Ciascun controller dell'array primario e secondario deve disporre di una porta di gestione Ethernet configurata e deve essere collegato alla rete.
+* Gli array di storage dispongono di una versione firmware minima di 7.84. (Ciascuno di essi può eseguire diverse versioni del sistema operativo).
+* È necessario conoscere la password per gli array di storage locali e remoti.
+* È necessario disporre di capacità libera sufficiente sull'array di storage remoto per creare un volume secondario uguale o superiore al volume primario che si desidera eseguire il mirroring.
+* Il mirroring asincrono è supportato sui controller con porte host Fibre Channel (FC) o iSCSI, mentre il mirroring sincrono è supportato solo sui controller con porte host FC.
+
+
+[NOTE]
+====
+Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
+
+====
+
+
+== Perché dovrei modificare questa percentuale?
+
+La capacità riservata corrisponde in genere al 20% del volume di base per le operazioni di mirroring asincrono. Di solito questa capacità è sufficiente.
+
+La capacità necessaria varia in base alla frequenza e alle dimensioni delle scritture i/o nel volume di base e alla durata dell'utilizzo del servizio di copia dell'oggetto di storage. In generale, scegliere una percentuale maggiore per la capacità riservata se sussistono una o entrambe le seguenti condizioni:
+
+* Se la durata di un'operazione di copia del servizio di un oggetto di storage specifico sarà molto lunga.
+* Se una grande percentuale di blocchi di dati cambia sul volume di base a causa di un'intensa attività di i/O. Utilizza dati storici sulle performance o altre utility del sistema operativo per determinare l'attività i/o tipica del volume di base.
+
+
+
+
+== Perché vengono visualizzati più candidati con capacità riservata?
+
+Se in un pool o gruppo di volumi sono presenti più volumi che soddisfano la percentuale di capacità selezionata per l'oggetto di storage, verranno visualizzati più volumi candidati.
+
+È possibile aggiornare l'elenco dei candidati consigliati modificando la percentuale di spazio su disco fisico che si desidera riservare sul volume di base per le operazioni del servizio di copia. I candidati migliori vengono visualizzati in base alla selezione effettuata.
+
+
+
+== Perché non vedo tutti i miei volumi?
+
+Quando si seleziona un volume primario per una coppia mirrorata, un elenco mostra tutti i volumi idonei.
+
+I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Per il mirroring sincrono, i volumi primario e secondario di una coppia mirrorata devono essere volumi standard. Non possono essere volumi thin o volumi snapshot.
+* Per il mirroring asincrono, i thin volumi devono avere l'espansione automatica abilitata.
+
+
+
+NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia asincrona con mirroring devono corrispondere allo stesso protocollo, livello di vassoio, dimensione del segmento, tipo di sicurezza e livello RAID. Le coppie mirrorate asincrone non idonee non vengono visualizzate nell'elenco dei volumi disponibili.
+
+
+
+== Perché non vedo tutti i volumi nell'array di archiviazione remoto?
+
+Quando si seleziona un volume secondario nell'array di storage remoto, un elenco mostra tutti i volumi idonei per la coppia mirrorata.
+
+I volumi non idonei per l'utilizzo non vengono visualizzati nell'elenco. I volumi potrebbero non essere idonei per uno dei seguenti motivi:
+
+* Il volume non è un volume standard, ad esempio un volume snapshot.
+* Il volume non è ottimale.
+* Il volume sta già partecipando a una relazione di mirroring.
+* Per il mirroring asincrono, gli attributi del thin volume tra il volume primario e il volume secondario non corrispondono.
+* Se si utilizza Data Assurance (da), il volume primario e il volume secondario devono avere le stesse impostazioni da.
++
+** Se il volume primario è abilitato da, il volume secondario deve essere abilitato da.
+** Se il volume primario non è abilitato da, il volume secondario non deve essere abilitato da.
+
+
+* Per il mirroring asincrono, il volume primario e il volume secondario devono avere le stesse funzionalità di Drive Security.
++
+** Se il volume primario è in grado di supportare FIPS, il volume secondario deve essere in grado di supportare FIPS.
+** Se il volume primario è compatibile con FDE, il volume secondario deve essere compatibile con FDE.
+** Se il volume primario non utilizza Drive Security, il volume secondario non deve utilizzare Drive Security.
+
+
+
+
+
+
+== Qual è l'impatto della priorità di sincronizzazione sulle velocità di sincronizzazione?
+
+La priorità di sincronizzazione definisce il tempo di elaborazione allocato per le attività di sincronizzazione in relazione alle prestazioni del sistema.
+
+Il proprietario del controller del volume primario esegue questa operazione in background. Allo stesso tempo, il proprietario del controller elabora le scritture i/o locali nel volume primario e le scritture remote associate nel volume secondario. Poiché la risincronizzazione distoglie le risorse di elaborazione del controller dall'attività di i/o, la risincronizzazione può avere un impatto sulle prestazioni dell'applicazione host.
+
+Tenere presenti queste linee guida per determinare il tempo necessario per una priorità di sincronizzazione e il modo in cui le priorità di sincronizzazione possono influire sulle prestazioni del sistema.
+
+Sono disponibili i seguenti tassi di priorità:
+
+* Più basso
+* Basso
+* Medio
+* Alto
+* Massimo
+
+
+Il tasso di priorità più basso supporta le prestazioni del sistema, ma la risincronizzazione richiede più tempo. Il tasso di priorità più elevato supporta la risincronizzazione, ma le prestazioni del sistema potrebbero essere compromesse.
+
+Queste linee guida approssimano le differenze tra le priorità.
+
+[cols="45h,~"]
+|===
+| Tasso di priorità per la sincronizzazione completa | Tempo trascorso rispetto alla massima velocità di sincronizzazione 
+
+
+ a| 
+Più basso
+ a| 
+Circa otto volte più a lungo rispetto al tasso di priorità più elevato.
+
+
+
+ a| 
+Basso
+ a| 
+Circa sei volte più a lungo rispetto al tasso di priorità più elevato.
+
+
+
+ a| 
+Medio
+ a| 
+Circa tre volte e mezzo fino al tasso di priorità più elevato.
+
+
+
+ a| 
+Alto
+ a| 
+Circa il doppio rispetto al tasso di priorità più elevato.
+
+|===
+Le dimensioni del volume e i carichi della velocità di i/o dell'host influiscono sui confronti dei tempi di sincronizzazione.
+
+
+
+== Perché si consiglia di utilizzare una policy di sincronizzazione manuale?
+
+La risincronizzazione manuale è consigliata perché consente di gestire il processo di risincronizzazione in modo da offrire la migliore opportunità di recupero dei dati.
+
+Se si utilizza un criterio di risincronizzazione automatica e si verificano problemi di comunicazione intermittente durante la risincronizzazione, i dati sul volume secondario potrebbero essere temporaneamente danneggiati. Una volta completata la risincronizzazione, i dati vengono corretti.

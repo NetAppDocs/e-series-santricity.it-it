@@ -1,0 +1,183 @@
+---
+permalink: sm-storage/faq-volumes-workloads.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti su volumi e carichi di lavoro per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Che cos'è un volume?
+
+Un volume è un container in cui applicazioni, database e file system memorizzano i dati. Si tratta del componente logico creato per consentire all'host di accedere allo storage sull'array di storage.
+
+Un volume viene creato dalla capacità disponibile in un pool o in un gruppo di volumi. Un volume ha una capacità definita. Anche se un volume può essere costituito da più di un disco, un volume viene visualizzato come un componente logico per l'host.
+
+
+
+== Perché viene visualizzato un errore di overallocation della capacità quando si dispone di capacità libera sufficiente in un gruppo di volumi per creare volumi?
+
+Il gruppo di volumi selezionato potrebbe avere una o più aree a capacità libera. Un'area di capacità libera è la capacità libera che può derivare dall'eliminazione di un volume o dal mancato utilizzo di tutta la capacità disponibile durante la creazione del volume.
+
+Quando si crea un volume in un gruppo di volumi che dispone di una o più aree di capacità libera, la capacità del volume viene limitata alla maggiore area di capacità libera del gruppo di volumi. Ad esempio, se un gruppo di volumi ha una capacità libera totale di 15 GiB e l'area di capacità libera più grande è di 10 GiB, il volume più grande che è possibile creare è di 10 GiB.
+
+Se un gruppo di volumi dispone di aree di capacità libera, il grafico del gruppo di volumi contiene un link che indica il numero di aree di capacità libera esistenti. Selezionare il collegamento per visualizzare una finestra a comparsa che indica la capacità di ciascuna area.
+
+Consolidando la capacità libera, è possibile creare volumi aggiuntivi dalla quantità massima di capacità libera in un gruppo di volumi. È possibile consolidare la capacità libera esistente su un gruppo di volumi selezionato utilizzando uno dei seguenti metodi:
+
+* Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "consolidare la capacità libera" viene visualizzato nella home page dell'area di notifica. Fare clic sul collegamento *consolida capacità libera* per avviare la finestra di dialogo.
+* È inoltre possibile selezionare il menu:Pools & Volume Groups[Uncommon Tasks > consolida capacità libera del gruppo di volumi] per avviare la finestra di dialogo.
+
+
+Se si desidera utilizzare un'area di capacità libera specifica invece dell'area di capacità libera più grande, utilizzare l'interfaccia a riga di comando (CLI).
+
+
+
+== In che modo il carico di lavoro selezionato influisce sulla creazione di volumi?
+
+Durante la creazione del volume, vengono richieste informazioni sull'utilizzo di un carico di lavoro. Il sistema utilizza queste informazioni per creare una configurazione ottimale del volume, che può essere modificata in base alle esigenze. In alternativa, è possibile saltare questo passaggio nella sequenza di creazione del volume.
+
+Un workload è un oggetto storage che supporta un'applicazione. È possibile definire uno o più carichi di lavoro o istanze per applicazione. Per alcune applicazioni, il sistema configura il carico di lavoro in modo che contenga volumi con caratteristiche di volume sottostanti simili. Queste caratteristiche dei volumi sono ottimizzate in base al tipo di applicazione supportata dal carico di lavoro. Ad esempio, se si crea un carico di lavoro che supporta un'applicazione Microsoft SQL Server e successivamente si creano volumi per tale carico di lavoro, le caratteristiche del volume sottostante sono ottimizzate per supportare Microsoft SQL Server.
+
+* *Specifico dell'applicazione* -- quando si creano volumi utilizzando un carico di lavoro specifico dell'applicazione, il sistema consiglia una configurazione del volume ottimizzata per ridurre al minimo i conflitti tra i/o del carico di lavoro dell'applicazione e altro traffico dall'istanza dell'applicazione. Le caratteristiche del volume come il tipo di i/o, le dimensioni del segmento, la proprietà del controller e la cache di lettura e scrittura sono automaticamente consigliate e ottimizzate per i carichi di lavoro creati per i seguenti tipi di applicazioni.
++
+** Microsoft® SQL Server™
+** Microsoft® Exchange Server™
+** Applicazioni di videosorveglianza
+** VMware ESXi™ (per volumi da utilizzare con il file system della macchina virtuale)
++
+È possibile rivedere la configurazione del volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche consigliate dal sistema utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
+
+
+
+* *Altro* (o applicazioni senza supporto specifico per la creazione di volumi) -- Altri carichi di lavoro utilizzano una configurazione del volume che è necessario specificare manualmente quando si desidera creare un carico di lavoro non associato a un'applicazione specifica o se non esiste un'ottimizzazione integrata per l'applicazione che si intende utilizzare sull'array di storage. Specificare manualmente la configurazione del volume utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
+
+
+
+
+== Perché questi volumi non sono associati a un carico di lavoro?
+
+I volumi non sono associati a un carico di lavoro se sono stati creati utilizzando l'interfaccia della riga di comando (CLI) o se sono stati migrati (importati/esportati) da un array di storage diverso.
+
+
+
+== Perché non riesco a eliminare il carico di lavoro selezionato?
+
+Questo carico di lavoro è costituito da un gruppo di volumi creati utilizzando l'interfaccia della riga di comando (CLI) o migrati (importati/esportati) da un array di storage diverso. Di conseguenza, i volumi di questo carico di lavoro non sono associati a un carico di lavoro specifico dell'applicazione, pertanto non è possibile eliminare il carico di lavoro.
+
+
+
+== In che modo i carichi di lavoro specifici dell'applicazione mi aiutano a gestire lo storage array?
+
+Le caratteristiche del volume del carico di lavoro specifico dell'applicazione determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage e aiutano a determinare le performance dell'ambiente in una determinata configurazione.
+
+Un'applicazione è un software come SQL Server o Exchange. È possibile definire uno o più workload per supportare ciascuna applicazione.
+
+
+
+== In che modo fornire queste informazioni aiuta a creare storage?
+
+Le informazioni sul carico di lavoro vengono utilizzate per ottimizzare le caratteristiche del volume, ad esempio il tipo di i/o, la dimensione del segmento e la cache di lettura/scrittura per il carico di lavoro selezionato. Queste caratteristiche ottimizzate determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage.
+
+In base alle informazioni sul carico di lavoro fornite, System Manager crea i volumi appropriati e li inserisce nei pool o nei gruppi di volumi disponibili attualmente nel sistema. Il sistema crea i volumi e ne ottimizza le caratteristiche in base alle Best practice correnti per il carico di lavoro selezionato.
+
+Prima di completare la creazione dei volumi per un determinato carico di lavoro, è possibile rivedere la configurazione del volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche raccomandati dal sistema utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
+
+Per informazioni sulle Best practice, consultare la documentazione specifica dell'applicazione.
+
+
+
+== Cosa devo fare per riconoscere la capacità espansa?
+
+Se si aumenta la capacità di un volume, l'host potrebbe non riconoscere immediatamente l'aumento della capacità del volume.
+
+La maggior parte dei sistemi operativi riconosce la capacità del volume espanso e si espande automaticamente dopo l'avvio dell'espansione del volume. Tuttavia, alcuni potrebbero non farlo. Se il sistema operativo non riconosce automaticamente la capacità del volume espanso, potrebbe essere necessario eseguire una nuova scansione o un riavvio del disco.
+
+Una volta espansa la capacità del volume, è necessario aumentare manualmente le dimensioni del file system per ottenere la corrispondenza. Il modo in cui si esegue questa operazione dipende dal file system in uso.
+
+Per ulteriori informazioni, consultare la documentazione del sistema operativo host.
+
+
+
+== Perché non vedo tutti i miei pool e/o gruppi di volumi?
+
+Qualsiasi pool o gruppo di volumi in cui non è possibile spostare il volume non viene visualizzato nell'elenco.
+
+I pool o i gruppi di volumi non sono idonei per uno dei seguenti motivi:
+
+* Le funzionalità di Data Assurance (da) di un pool o di un gruppo di volumi non corrispondono.
+* Un pool o un gruppo di volumi non si trova in uno stato ottimale.
+* La capacità di un pool o di un gruppo di volumi è troppo ridotta.
+
+
+
+
+== Che cos'è la dimensione del segmento?
+
+Un segmento è la quantità di dati in kilobyte (KiB) memorizzati su un disco prima che l'array di storage passi al disco successivo nello stripe (gruppo RAID). Le dimensioni dei segmenti si applicano solo ai gruppi di volumi, non ai pool.
+
+La dimensione del segmento è definita dal numero di blocchi di dati in esso contenuti. Quando si determina la dimensione del segmento, è necessario conoscere il tipo di dati da memorizzare in un volume. Se un'applicazione utilizza generalmente IOPS (Random Read and Scritture) di piccole dimensioni, un segmento di dimensioni inferiori funziona meglio. In alternativa, se l'applicazione dispone di grandi letture e scritture sequenziali (throughput), una dimensione di segmento elevata è generalmente migliore.
+
+Sia che un'applicazione utilizzi piccole letture e scritture casuali o grandi letture e scritture sequenziali, l'array di storage offre prestazioni migliori se la dimensione del segmento è maggiore della dimensione tipica del blocco di dati. In genere, questo rende più semplice e rapido l'accesso dei dischi ai dati, il che è importante per migliorare le performance degli array di storage.
+
+
+
+=== Ambienti in cui le performance IOPS sono importanti
+
+In un ambiente IOPS (i/o Operations per second), lo storage array offre prestazioni migliori se si utilizza una dimensione di segmento superiore alla dimensione tipica del blocco di dati ("`chunk`") che viene letta/scritta su un disco. In questo modo, ogni chunk viene scritto su un singolo disco.
+
+
+
+=== Ambienti in cui il throughput è importante
+
+In un ambiente di throughput, la dimensione del segmento deve essere pari a una frazione del totale dei dischi per i dati e la dimensione tipica del blocco di dati (dimensione i/o). In questo modo, i dati vengono distribuiti come singolo stripe tra i dischi del gruppo di volumi, con conseguente velocità di lettura e scrittura.
+
+
+
+== Che cos'è la proprietà preferita del controller?
+
+Preferred controller ownership (proprietà preferita del controller): Definisce il controller designato come controller principale o proprietario del volume.
+
+La proprietà del controller è molto importante e deve essere pianificata con attenzione. I controller devono essere bilanciati il più possibile per l'i/o totale.
+
+Ad esempio, se un controller legge principalmente grandi blocchi di dati sequenziali e l'altro controller ha piccoli blocchi di dati con letture e scritture frequenti, i carichi sono molto diversi. La conoscenza dei volumi che contengono il tipo di dati consente di bilanciare i trasferimenti di i/o in modo uniforme su entrambi i controller.
+
+
+
+== Quando si desidera utilizzare la selezione dell'host di assegnazione in un secondo momento?
+
+Se si desidera accelerare il processo di creazione dei volumi, è possibile saltare la fase di assegnazione dell'host in modo che i volumi appena creati vengano inizializzati offline.
+
+I volumi appena creati devono essere inizializzati. Il sistema può inizializzarli utilizzando una delle due modalità, ovvero un processo di inizializzazione in background del formato IMMEDIATAMENTE disponibile (IAF) o un processo offline.
+
+Quando si esegue il mapping di un volume a un host, tutti i volumi di inizializzazione del gruppo vengono forzati a passare all'inizializzazione in background. Questo processo di inizializzazione in background consente l'i/o host simultaneo, che a volte può richiedere molto tempo.
+
+Quando nessuno dei volumi in un gruppo di volumi viene mappato, viene eseguita l'inizializzazione offline. Il processo offline è molto più veloce del processo in background.
+
+
+
+== Cosa occorre sapere sui requisiti relativi alle dimensioni dei blocchi host?
+
+Per i sistemi EF300 e EF600, è possibile impostare un volume in modo che supporti una dimensione di blocco di 512 byte o 4 KiB (chiamata anche "dimensione del settore"). È necessario impostare il valore corretto durante la creazione del volume. Se possibile, il sistema suggerisce il valore predefinito appropriato.
+
+Prima di impostare le dimensioni del blocco del volume, leggere le seguenti limitazioni e linee guida.
+
+* Alcuni sistemi operativi e macchine virtuali (in particolare VMware, al momento) richiedono una dimensione di blocco di 512 byte e non supportano 4KiB, quindi assicurarsi di conoscere i requisiti dell'host prima di creare un volume. In genere, è possibile ottenere le migliori prestazioni impostando un volume in modo che presenti una dimensione di blocco di 4 KiB; tuttavia, assicurarsi che l'host supporti blocchi da 4 KiB (o "`4Kn`").
+* Il tipo di dischi selezionati per il pool o il gruppo di volumi determina anche le dimensioni dei blocchi di volume supportate, come indicato di seguito:
++
+** Se si crea un gruppo di volumi utilizzando unità che scrivono su blocchi da 512 byte, è possibile creare solo volumi con blocchi da 512 byte.
+** Se si crea un gruppo di volumi utilizzando unità che scrivono su blocchi da 4 KiB, è possibile creare volumi con blocchi da 512 byte o 4 KiB.
+
+
+* Se l'array dispone di una scheda di interfaccia host iSCSI, tutti i volumi sono limitati a blocchi da 512 byte (indipendentemente dalla dimensione del blocco del gruppo di volumi). Ciò è dovuto a un'implementazione hardware specifica.
+* Una volta impostata, non è possibile modificare le dimensioni di un blocco. Se è necessario modificare le dimensioni di un blocco, è necessario eliminare il volume e ricrearlo.
+

@@ -1,0 +1,129 @@
+---
+permalink: sm-settings/faq-nvme-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sul protocollo NVMe per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Come si interpretano le statistiche NVMe sulle fabric?
+
+La finestra di dialogo View NVMe over Fabrics Statistics (Visualizza statistiche NVMe su fabric) visualizza le statistiche per il sottosistema NVMe e l'interfaccia RDMA. Tutte le statistiche sono di sola lettura e non possono essere impostate.
+
+* *NVMe Subsystem statistics* -- Mostra le statistiche del controller NVMe e della relativa coda. Il controller NVMe fornisce un percorso di accesso tra un host e gli spazi dei nomi nell'array di storage. È possibile esaminare le statistiche del sottosistema NVMe per elementi quali errori di connessione, ripristini e arresti. Per ulteriori informazioni su queste statistiche, fare clic su *Visualizza legenda per le intestazioni delle tabelle*.
+* *RDMA Interface statistics* -- fornisce statistiche per tutte le porte NVMe over Fabrics sull'interfaccia RDMA, che includono statistiche sulle performance e informazioni sugli errori di collegamento associate a ciascuna porta dello switch. Questa scheda viene visualizzata solo quando sono disponibili porte NVMe over Fabrics. Per ulteriori informazioni sulle statistiche, fare clic su *Visualizza legenda per le intestazioni delle tabelle*.
+
+
+È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline. Le statistiche raw sono tutte le statistiche raccolte dall'avvio dei controller. Le statistiche di riferimento sono statistiche point-in-time raccolte dall'ora di riferimento impostata.
+
+
+
+== Quali altre operazioni è necessario eseguire per configurare o diagnosticare NVMe su InfiniBand?
+
+La tabella seguente elenca le funzioni di SANtricity System Manager che puoi utilizzare per configurare e gestire le sessioni NVMe over InfiniBand.
+
+[NOTE]
+====
+Le impostazioni NVMe over InfiniBand sono disponibili solo se il controller dello storage array include una porta NVMe over InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Azione | Posizione 
+
+
+ a| 
+Configurare NVMe sulle porte InfiniBand
+ a| 
+. Selezionare *hardware*.
+. Selezionare la scheda *Controller e componenti*.
+. Selezionare un controller.
+. Selezionare *Configura NVMe su porte InfiniBand*.
+
+
+oppure
+
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *NVMe over InfiniBand settings*, quindi selezionare *Configure NVMe over InfiniBand Ports* (Configura NVMe su porte InfiniBand).
+
+
+
+
+ a| 
+Visualizza le statistiche NVMe su InfiniBand
+ a| 
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *NVMe over InfiniBand Settings*, quindi selezionare *View NVMe over Fabrics Statistics* (Visualizza statistiche NVMe over Fabrics).
+
+
+|===
+
+
+== Quali altre operazioni è necessario eseguire per configurare o diagnosticare NVMe su RoCE?
+
+È possibile configurare e gestire NVMe su RoCE dalle pagine hardware e impostazioni.
+
+[NOTE]
+====
+Le impostazioni NVMe over RoCE sono disponibili solo se il controller dello storage array include una porta NVMe over RoCE.
+
+====
+[cols="35h,~"]
+|===
+| Azione | Posizione 
+
+
+ a| 
+Configurare NVMe sulle porte RoCE
+ a| 
+. Selezionare *hardware*.
+. Selezionare la scheda *Controller e componenti*.
+. Selezionare un controller.
+. Selezionare *Configure NVMe over RoCE ports* (Configura NVMe su porte RoCE).
+
+
+oppure
+
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *NVMe over RoCE settings*, quindi selezionare *Configure NVMe over RoCE Ports* (Configura NVMe su porte RoCE).
+
+
+
+
+ a| 
+Visualizza le statistiche NVMe over Fabrics
+ a| 
+. Selezionare menu:Impostazioni[sistema].
+. Scorrere verso il basso fino a *NVMe over RoCE settings*, quindi selezionare *View NVMe over Fabrics Statistics* (Visualizza statistiche NVMe over Fabrics).
+
+
+|===
+
+
+== Perché sono presenti due indirizzi IP per una porta fisica?
+
+Lo storage array EF600 può includere due HICS, uno esterno e uno interno.
+
+In questa configurazione, l'HIC esterno è collegato a un HIC interno ausiliario. Ciascuna porta fisica a cui è possibile accedere dall'HIC esterno dispone di una porta virtuale associata dall'HIC interno.
+
+Per ottenere prestazioni massime di 200 GB, è necessario assegnare un indirizzo IP univoco per le porte fisiche e virtuali in modo che l'host possa stabilire connessioni a ciascuna porta. Se non si assegna un indirizzo IP alla porta virtuale, l'HIC funziona a circa la metà della velocità.
+
+
+
+== Perché esistono due set di parametri per una porta fisica?
+
+Lo storage array EF600 può includere due HICS, uno esterno e uno interno.
+
+In questa configurazione, l'HIC esterno è collegato a un HIC interno ausiliario. Ciascuna porta fisica a cui è possibile accedere dall'HIC esterno dispone di una porta virtuale associata dall'HIC interno.
+
+Per ottenere prestazioni massime di 200 GB, è necessario assegnare i parametri per le porte fisiche e virtuali in modo che l'host possa stabilire connessioni a ciascuna porta. Se non si assegnano parametri alla porta virtuale, l'HIC funziona a circa la metà della velocità.

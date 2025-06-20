@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, base volumes, reserved capacity, snapshot groups 
 summary: La funzione Snapshot utilizza volumi di base, capacità riservata e gruppi di snapshot. 
 ---
-= Volumi di base, capacità riservata e gruppi di snapshot
+= Informazioni su volumi di base, capacità riservata e gruppi di snapshot in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,0 +1,379 @@
+---
+permalink: sm-interface/faq-management-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sull'interfaccia di gestione per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Quali sono i browser supportati?
+
+SANtricity System Manager supporta queste versioni del browser.
+
+[cols="1a,1a"]
+|===
+| Browser | Versione minima 
+
+
+ a| 
+Google Chrome
+ a| 
+89
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+80
+
+
+
+ a| 
+Safari
+ a| 
+14
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+90
+
+|===
+
+
+== Quali sono i tasti di scelta rapida?
+
+È possibile navigare in Gestione di sistema di SANtricity utilizzando la sola tastiera.
+
+
+
+=== Navigazione generale
+
+[cols="1a,1a"]
+|===
+| Azione | Scelta rapida da tastiera 
+
+
+ a| 
+Passare all'elemento successivo.
+ a| 
+Scheda
+
+
+
+ a| 
+Consente di passare all'elemento precedente.
+ a| 
+Maiusc + Tab
+
+
+
+ a| 
+Selezionare un elemento.
+ a| 
+Invio
+
+
+
+ a| 
+Elenco a discesa - consente di passare all'elemento successivo o precedente.
+ a| 
+Freccia verso il basso o verso l'alto
+
+
+
+ a| 
+Casella di controllo--selezionare un elemento.
+ a| 
+Barra spaziatrice
+
+
+
+ a| 
+Pulsanti di opzione - consente di passare da un elemento all'altro.
+ a| 
+Freccia verso il basso o verso l'alto
+
+
+
+ a| 
+Testo espandibile: Consente di espandere o contrarre l'elemento.
+ a| 
+Invio
+
+|===
+
+
+=== Navigazione nella tabella
+
+[cols="1a,1a"]
+|===
+| Azione | Scelta rapida da tastiera 
+
+
+ a| 
+Selezionare una riga.
+ a| 
+Per selezionare una riga, quindi premere Invio
+
+
+
+ a| 
+Scorrere verso l'alto o verso il basso.
+ a| 
+Freccia verso il basso/freccia verso l'alto o pagina verso il basso/pagina verso l'alto
+
+
+
+ a| 
+Modificare l'ordinamento di una colonna.
+ a| 
+Per selezionare un'intestazione di colonna, quindi premere Invio
+
+|===
+
+
+=== Navigazione nel calendario
+
+[cols="1a,1a"]
+|===
+| Azione | Scelta rapida da tastiera 
+
+
+ a| 
+Passare al mese precedente.
+ a| 
+Pagina su
+
+
+
+ a| 
+Passare al mese successivo.
+ a| 
+Pagina giù
+
+
+
+ a| 
+Passare all'anno precedente.
+ a| 
+Ctrl + PagSu
+
+
+
+ a| 
+Passare all'anno successivo.
+ a| 
+Ctrl + pagina giù
+
+
+
+ a| 
+Aprire il selettore data, se chiuso.
+ a| 
+Control + Home
+
+
+
+ a| 
+Passare al mese corrente.
+ a| 
+Control / comando + Home
+
+
+
+ a| 
+Passare al giorno precedente.
+ a| 
+Control / comando + sinistra
+
+
+
+ a| 
+Passare al giorno successivo.
+ a| 
+Control / comando + destra
+
+
+
+ a| 
+Passare alla settimana precedente.
+ a| 
+Ctrl / comando + su
+
+
+
+ a| 
+Passare alla settimana successiva.
+ a| 
+Ctrl / comando + Giù
+
+
+
+ a| 
+Selezionare la data di riferimento.
+ a| 
+Invio
+
+
+
+ a| 
+Chiudere il selettore di data e cancellare la data.
+ a| 
+Control / comando + fine
+
+
+
+ a| 
+Chiudere il selettore di data senza selezionare.
+ a| 
+Fuga
+
+|===
+
+
+== In che modo le statistiche delle performance per i singoli volumi si riferiscono al totale?
+
+Le statistiche per pool e gruppi di volumi vengono calcolate aggregando tutti i volumi, inclusi i volumi di capacità riservati.
+
+La capacità riservata viene utilizzata internamente dal sistema di storage per supportare thin volumi, snapshot e mirroring asincrono e non è visibile agli host i/O. Di conseguenza, le statistiche del pool, del controller e dell'array di storage potrebbero non essere sommative per essere la somma dei volumi visualizzabili.
+
+Tuttavia, per le statistiche delle applicazioni e dei carichi di lavoro, vengono aggregati solo i volumi visibili.
+
+
+
+== Perché i dati vengono visualizzati come zero nei grafici e nella tabella?
+
+Quando viene visualizzato uno zero per un punto dati nei grafici e nella tabella, significa che non esiste alcuna attività i/o per l'oggetto per quel punto nel tempo. Questa situazione potrebbe verificarsi perché l'host non sta avviando l'i/o per quell'oggetto o potrebbe essere un problema con l'oggetto stesso.
+
+I dati storici dell'oggetto sono ancora disponibili per la visualizzazione. I grafici e la tabella mostrano dati diversi da zero una volta che inizia l'attività di i/o per l'oggetto.
+
+La tabella seguente elenca i motivi più comuni per cui un valore di punto dati potrebbe essere zero per un determinato oggetto.
+
+[cols="25h,~"]
+|===
+| Tipo di oggetto a livello di array | I dati del motivo vengono visualizzati come zero 
+
+
+ a| 
+Volume
+ a| 
+* Il volume non ha assegnato host.
+
+
+
+
+ a| 
+Gruppo di volumi
+ a| 
+* Importazione del gruppo di volumi in corso.
+* Il gruppo di volumi non contiene un volume assegnato a un host, il gruppo di volumi *_and_* non contiene alcuna capacità riservata.
+
+
+
+
+ a| 
+Disco
+ a| 
+* Il disco è guasto.
+* Il disco è stato rimosso.
+* Il disco si trova in uno stato sconosciuto.
+
+
+
+
+ a| 
+Controller
+ a| 
+* Controller offline.
+* Controller guasto.
+* Il controller è stato rimosso.
+* Il controller si trova in uno stato sconosciuto.
+
+
+
+
+ a| 
+Array di storage
+ a| 
+* Lo storage array non contiene volumi.
+
+
+|===
+
+
+== Cosa mostra il grafico della latenza?
+
+Il grafico della latenza fornisce statistiche di latenza, in millisecondi (ms), per volumi, gruppi di volumi, pool, applicazioni e carichi di lavoro. Questo grafico viene visualizzato nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro).
+
+La latenza si riferisce a qualsiasi ritardo che si verifica durante la lettura o la scrittura dei dati. Spostare il cursore su un punto del grafico per visualizzare i seguenti valori, in millisecondi (ms), per quel momento:
+
+* Tempo di lettura.
+* Tempo di scrittura.
+* Dimensione i/o media.
+
+
+
+
+== Cosa mostra il grafico IOPS?
+
+Il grafico IOPS visualizza le statistiche per le operazioni di input/output al secondo. Nella pagina iniziale, questo grafico visualizza le statistiche per l'array di storage. Nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro) del riquadro Performance (prestazioni), questo grafico visualizza le statistiche per array di storage, volumi, gruppi di volumi, pool, applicazioni, e carichi di lavoro.
+
+IOPS è l'abbreviazione di _operazioni di input/output (i/o) al secondo_. Spostare il cursore su un punto del grafico per visualizzare i seguenti valori per quel punto temporale:
+
+* Numero di operazioni di lettura.
+* Numero di operazioni di scrittura.
+* Operazioni totali di lettura e scrittura combinate.
+
+
+
+
+== Cosa mostra il grafico MiB/s?
+
+Il grafico MiB/s visualizza le statistiche della velocità di trasferimento in megibyte al secondo. Nella pagina iniziale, questo grafico visualizza le statistiche per l'array di storage. Nelle schede Logical View (Vista logica), Physical View (Vista fisica) e Applications & workload View (Vista applicazioni e carichi di lavoro) del riquadro Performance (prestazioni), questo grafico visualizza le statistiche per array di storage, volumi, gruppi di volumi, pool, applicazioni, e carichi di lavoro.
+
+MIB/s è l'abbreviazione di _mebibytes per second_ o 1,048,576 byte per secondo. Spostare il cursore su un punto del grafico per visualizzare i seguenti valori per quel punto temporale:
+
+* La quantità di dati letti.
+* La quantità di dati scritti.
+* La quantità totale combinata di dati letti e scritti.
+
+
+
+
+== Cosa mostra il grafico della CPU?
+
+Il grafico della CPU visualizza le statistiche della capacità di elaborazione per ciascun controller (controller A e controller B). CPU è l'abbreviazione di _Central Processing Unit_. Nella pagina iniziale, questo grafico visualizza le statistiche per l'array di storage. Nella scheda Physical View (Vista fisica) del riquadro Performance (prestazioni), questo grafico visualizza le statistiche per l'array di storage e i dischi.
+
+Il grafico della CPU mostra la percentuale di capacità di elaborazione della CPU utilizzata rispetto alle operazioni sull'array. Anche quando non si verifica alcun i/o esterno, la percentuale di utilizzo della CPU può essere diversa da zero perché il sistema operativo dello storage potrebbe eseguire operazioni e monitoring in background. Spostare il cursore su un punto del grafico per visualizzare una percentuale di capacità di elaborazione utilizzata in quel momento.
+
+
+
+== Cosa mostra il grafico headroom?
+
+Il grafico dello spazio di crescita è relativo alle restanti funzionalità delle performance per i controller degli array di storage. Questo grafico è visibile nella pagina iniziale e nella scheda Vista fisica del riquadro prestazioni.
+
+Il grafico dello spazio di crescita mostra le restanti capacità di performance degli oggetti fisici nel sistema di storage. Spostare il cursore su un punto del grafico per visualizzare le percentuali di capacità IOPS e MIB/s rimanenti per il controller A e per il controller B.
+
+
+
+== Dove si possono trovare ulteriori informazioni sulle preferenze di visualizzazione?
+
+Per trovare informazioni sulle opzioni di visualizzazione disponibili:
+
+* Per ulteriori informazioni sulle unità predefinite per la visualizzazione dei valori di capacità, vedere link:set-default-units-for-capacity-values.html["Impostare le unità predefinite per i valori di capacità"].
+* Per ulteriori informazioni sul periodo di tempo predefinito per la visualizzazione dei grafici delle prestazioni, vedere link:set-default-time-frame-for-performance-graphs.html["Impostare l'intervallo di tempo predefinito per i grafici delle prestazioni"].
+

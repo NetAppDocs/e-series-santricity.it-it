@@ -1,0 +1,99 @@
+---
+permalink: sm-storage/faq-storage-array-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sulle impostazioni dell'array di archiviazione per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Che cos'è il bilanciamento automatico del carico?
+
+La funzione di bilanciamento automatico del carico fornisce un bilanciamento i/o automatizzato e garantisce che il traffico i/o in entrata dagli host sia gestito e bilanciato dinamicamente tra entrambi i controller.
+
+La funzione di bilanciamento automatico del carico offre una migliore gestione delle risorse i/o, reagendo in modo dinamico alle variazioni di carico nel tempo e regolando automaticamente la proprietà dei controller di volume per correggere eventuali problemi di squilibrio del carico quando i carichi di lavoro si spostano tra i controller.
+
+Il carico di lavoro di ciascun controller viene costantemente monitorato e, grazie alla collaborazione dei driver multipath installati sugli host, può essere automaticamente bilanciato quando necessario. Quando il carico di lavoro viene riregolato automaticamente tra i controller, l'amministratore dello storage viene alleggerito dall'onere di regolare manualmente la proprietà del controller di volume per adattarsi alle modifiche di carico sull'array di storage.
+
+Quando il bilanciamento automatico del carico è attivato, esegue le seguenti funzioni:
+
+* Monitora e bilancia automaticamente l'utilizzo delle risorse dei controller.
+* Regola automaticamente la proprietà del controller del volume quando necessario, ottimizzando in tal modo la larghezza di banda i/o tra gli host e lo storage array.
+
+
+[NOTE]
+====
+Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non è idoneo per un trasferimento automatico del bilanciamento del carico.
+
+====
+
+
+== Che cos'è la cache del controller?
+
+La cache del controller è uno spazio di memoria fisica che ottimizza due tipi di operazioni di i/o (input/output): Tra controller e host e tra controller e dischi.
+
+Per i trasferimenti di dati in lettura e scrittura, gli host e i controller comunicano tramite connessioni ad alta velocità. Tuttavia, le comunicazioni dal back-end del controller ai dischi sono più lente, perché i dischi sono dispositivi relativamente lenti.
+
+Quando la cache del controller riceve i dati, il controller riconosce alle applicazioni host che i dati sono ora memorizzati. In questo modo, le applicazioni host non devono attendere che l'i/o venga scritto su disco. Le applicazioni possono invece continuare a lavorare. I dati memorizzati nella cache sono facilmente accessibili anche dalle applicazioni server, eliminando la necessità di letture aggiuntive del disco per accedere ai dati.
+
+La cache del controller influisce sulle prestazioni complessive dello storage array in diversi modi:
+
+* La cache funge da buffer, in modo che i trasferimenti di dati su host e disco non debbano essere sincronizzati.
+* I dati per un'operazione di lettura o scrittura dall'host potrebbero trovarsi nella cache di un'operazione precedente, eliminando così la necessità di accedere al disco.
+* Se viene utilizzato il caching in scrittura, l'host può inviare comandi di scrittura successivi prima che i dati di un'operazione di scrittura precedente vengano scritti su disco.
+* Se il prefetch della cache è attivato, l'accesso in lettura sequenziale è ottimizzato. Il prefetch della cache rende più probabile che un'operazione di lettura trovi i propri dati nella cache, invece di leggere i dati dal disco.
+
+
+[CAUTION]
+====
+*Possibile perdita di dati* -- se si attiva l'opzione *Write caching without batteries* e non si dispone di un alimentatore universale per la protezione, si potrebbero perdere i dati. Inoltre, è possibile perdere i dati se non si dispone di batterie del controller e si attiva l'opzione *Write caching without batteries*.
+
+====
+
+
+== Cos'è il vampate di cache?
+
+Quando la quantità di dati non scritti nella cache raggiunge un determinato livello, il controller scrive periodicamente i dati memorizzati nella cache su un disco. Questo processo di scrittura è chiamato "vampate".
+
+Il controller utilizza due algoritmi per il flushing della cache: Basato sulla domanda e basato sull'età. Il controller utilizza un algoritmo basato sulla domanda fino a quando la quantità di dati memorizzati nella cache non scende al di sotto della soglia di scaricamento della cache. Per impostazione predefinita, un'operazione di svuotamento inizia quando il 80% della cache è in uso.
+
+In System Manager, è possibile impostare la soglia "`Start demand cache flushing`" per supportare al meglio il tipo di i/o utilizzato nell'ambiente. In un ambiente che è principalmente operazioni di scrittura, è necessario impostare la percentuale "`Start demand cache wlushing`" alta per aumentare la probabilità che qualsiasi nuova richiesta di scrittura possa essere elaborata dalla cache senza dover passare al disco. Un'impostazione di percentuale elevata limita il numero di lavaggi della cache in modo che nella cache rimanga più dati, aumentando così la possibilità di più accessi alla cache.
+
+In un ambiente in cui l'i/o è irregolare (con burst di dati), è possibile utilizzare un basso flushing della cache in modo che il sistema scarichi frequentemente la cache tra burst di dati. In un ambiente i/o diverso che elabora una varietà di carichi, o quando il tipo di carichi non è noto, impostare la soglia al 50% come una buona base intermedia. Tenere presente che se si sceglie una percentuale iniziale inferiore al 80%, le prestazioni potrebbero essere ridotte perché i dati necessari per una lettura host potrebbero non essere disponibili. La scelta di una percentuale inferiore aumenta anche il numero di scritture su disco necessarie per mantenere il livello di cache, aumentando così l'overhead del sistema.
+
+L'algoritmo basato sull'età specifica il periodo di tempo durante il quale i dati di scrittura possono rimanere nella cache prima che possano essere trasferiti sui dischi. I controller utilizzano l'algoritmo basato sull'età fino al raggiungimento della soglia di scaricamento della cache. L'impostazione predefinita è 10 secondi, ma questo periodo di tempo viene conteggiato solo durante i periodi di inattività. Non è possibile modificare i tempi di scaricamento in System Manager; è invece necessario utilizzare il comando *Set Storage Array* nell'interfaccia della riga di comando (CLI).
+
+[CAUTION]
+====
+*Possibile perdita di dati* -- se si attiva l'opzione *Write caching without batteries* e non si dispone di un alimentatore universale per la protezione, si potrebbero perdere i dati. Inoltre, è possibile perdere i dati se non si dispone di batterie del controller e si attiva l'opzione *Write caching without batteries*.
+
+====
+
+
+== Che cos'è la dimensione del blocco della cache?
+
+Il controller dell'array di storage organizza la cache in "blocchi", ovvero blocchi di memoria che possono essere di 8, 16, 32 KiB. Tutti i volumi sul sistema storage condividono lo stesso spazio cache; pertanto, i volumi possono avere una sola dimensione del blocco cache.
+
+Le applicazioni utilizzano blocchi di dimensioni diverse, che possono avere un impatto sulle performance dello storage. Per impostazione predefinita, la dimensione del blocco in System Manager è 32 KiB, ma è possibile impostare il valore su 8, 16, 32 KiB. Una dimensione inferiore è una buona scelta per file system o applicazioni di database. Una dimensione maggiore è una buona scelta per le applicazioni che richiedono un grande trasferimento di dati, l'i/o sequenziale o un'elevata larghezza di banda, come ad esempio le applicazioni multimediali.
+
+
+
+== Quando è necessario sincronizzare gli orologi degli array di storage?
+
+È necessario sincronizzare manualmente gli orologi del controller nell'array di archiviazione se si nota che gli indicatori di data e ora visualizzati in Gestione di sistema di SANtricity non sono allineati con gli indicatori di data e ora visualizzati nel client di gestione (il computer che accede a Gestione di sistema di SANtricity tramite il browser). Questa operazione è necessaria solo se il protocollo NTP (Network Time Protocol) non è attivato in Gestione sistema di SANtricity.
+
+[NOTE]
+====
+Si consiglia vivamente di utilizzare un server NTP invece di sincronizzare manualmente gli orologi. NTP sincronizza automaticamente gli orologi con un server esterno utilizzando SNTP (Simple Network Time Protocol).
+
+====
+È possibile controllare lo stato della sincronizzazione dalla finestra di dialogo Synchronize Storage Array Blocks (Sincronizza blocchi array di storage), disponibile nella pagina System (sistema). Se gli orari visualizzati nella finestra di dialogo non corrispondono, eseguire una sincronizzazione. È possibile visualizzare periodicamente questa finestra di dialogo, che indica se le visualizzazioni dell'ora dei clock del controller sono state separate e non sono più sincronizzate.

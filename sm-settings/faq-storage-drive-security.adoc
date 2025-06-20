@@ -1,0 +1,141 @@
+---
+permalink: sm-settings/faq-storage-drive-security.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sulla sicurezza delle unità di archiviazione per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Cosa occorre sapere prima di creare una chiave di sicurezza?
+
+Una chiave di sicurezza viene condivisa da controller e dischi abilitati alla sicurezza all'interno di un array di storage. Se un disco abilitato alla protezione viene rimosso dall'array di storage, la chiave di sicurezza protegge i dati da accessi non autorizzati.
+
+È possibile creare e gestire le chiavi di sicurezza utilizzando uno dei seguenti metodi:
+
+* Gestione interna delle chiavi nella memoria persistente del controller.
+* Gestione esterna delle chiavi su un server di gestione delle chiavi esterno.
+
+
+
+
+=== Gestione interna delle chiavi
+
+Le chiavi interne vengono mantenute e "`nascoste`" in una posizione non accessibile sulla memoria persistente del controller. Prima di creare una chiave di sicurezza interna, eseguire le seguenti operazioni:
+
+. Installare unità sicure nell'array di storage. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).
+. Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+
+
+È quindi possibile creare una chiave di sicurezza interna, che implica la definizione di un identificatore e di una passphrase. L'identificatore è una stringa associata alla chiave di sicurezza e memorizzata sul controller e su tutti i dischi associati alla chiave. La password viene utilizzata per crittografare la chiave di sicurezza a scopo di backup. Al termine, la chiave di sicurezza viene memorizzata nel controller in una posizione non accessibile. È quindi possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.
+
+
+
+=== Gestione esterna delle chiavi
+
+Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato, utilizzando un protocollo KMIP (Key Management Interoperability Protocol). Prima di creare una chiave di sicurezza esterna, eseguire le seguenti operazioni:
+
+. Installare unità sicure nell'array di storage. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).
+. Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+. Ottenere un file di certificato client firmato. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste KMIP.
++
+.. Innanzitutto, completare e scaricare una richiesta di firma del certificato (CSR) del client. Accedere al menu:Impostazioni[certificati > Gestione chiavi > CSR completa].
+.. Successivamente, viene richiesto un certificato client firmato da una CA attendibile dal server di gestione delle chiavi. È inoltre possibile creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR scaricato.
+.. Una volta ottenuto un file di certificato client, copiarlo sull'host in cui si accede a System Manager.
+
+
+. Recuperare un file di certificato dal server di gestione delle chiavi, quindi copiarlo sull'host in cui si accede a System Manager. Un certificato del server di gestione delle chiavi convalida il server di gestione delle chiavi, in modo che lo storage array possa fidarsi del proprio indirizzo IP. È possibile utilizzare un certificato root, intermedio o server per il server di gestione delle chiavi.
+
+
+È quindi possibile creare una chiave esterna che preveda la definizione dell'indirizzo IP del server di gestione delle chiavi e del numero di porta utilizzato per le comunicazioni KMIP. Durante questo processo, vengono caricati anche i file dei certificati. Al termine, il sistema si connette al server di gestione delle chiavi con le credenziali immesse. È quindi possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.
+
+
+
+== Perché è necessario definire una passphrase?
+
+La password viene utilizzata per crittografare e decrittare il file della chiave di sicurezza memorizzato nel client di gestione locale. Senza la passphrase, la chiave di sicurezza non può essere decifrata e utilizzata per sbloccare i dati da un disco abilitato alla sicurezza se viene reinstallata in un altro array di storage.
+
+
+
+== Perché è importante registrare le informazioni sulle chiavi di sicurezza?
+
+Se si perdono le informazioni della chiave di sicurezza e non si dispone di un backup, si potrebbero perdere i dati durante la riassegnazione di dischi abilitati alla protezione o l'aggiornamento di un controller. È necessaria la chiave di sicurezza per sbloccare i dati sui dischi.
+
+Assicurarsi di registrare l'identificatore della chiave di sicurezza, la password associata e la posizione sull'host locale in cui è stato salvato il file della chiave di sicurezza.
+
+
+
+== Cosa occorre sapere prima di eseguire il backup di una chiave di sicurezza?
+
+Se la chiave di sicurezza originale viene danneggiata e non si dispone di un backup, l'accesso ai dati sui dischi viene perso se vengono migrati da uno storage array a un altro.
+
+Prima di eseguire il backup di una chiave di sicurezza, tenere presenti le seguenti linee guida:
+
+* Assicurarsi di conoscere l'identificatore della chiave di sicurezza e la password del file della chiave originale.
++
+[NOTE]
+====
+Solo le chiavi interne utilizzano identificatori. Quando è stato creato l'identificatore, sono stati generati automaticamente caratteri aggiuntivi e aggiunti ad entrambe le estremità della stringa di identificazione. I caratteri generati garantiscono che l'identificatore sia univoco.
+
+====
+* Viene creata una nuova password per il backup. Questa password non deve corrispondere alla password utilizzata al momento della creazione o dell'ultima modifica della chiave originale. La password viene applicata solo al backup che si sta creando.
++
+[NOTE]
+====
+La password per Drive Security non deve essere confusa con la password Administrator dell'array di storage. La password per Drive Security protegge i backup di una chiave di sicurezza. La password Administrator protegge l'intero array di storage da accessi non autorizzati.
+
+====
+* Il file della chiave di sicurezza di backup viene scaricato nel client di gestione. Il percorso del file scaricato potrebbe dipendere dalla posizione di download predefinita del browser. Assicurarsi di registrare la posizione in cui sono memorizzate le informazioni della chiave di sicurezza.
+
+
+
+
+== Cosa devo sapere prima di sbloccare dischi sicuri?
+
+Per sbloccare i dati da un disco abilitato alla protezione, è necessario importarne la chiave di sicurezza.
+
+Prima di sbloccare dischi sicuri, tenere presenti le seguenti linee guida:
+
+* Lo storage array deve già disporre di una chiave di sicurezza. I dischi migrati verranno ridimitati nell'array di storage di destinazione.
+* Per i dischi che si stanno migrando, è necessario conoscere l'identificatore della chiave di sicurezza e la passphrase che corrisponde al file della chiave di sicurezza.
+* Il file della chiave di sicurezza deve essere disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager).
+* Se si sta reimpostando un disco NVMe bloccato, è necessario inserire l'ID di sicurezza del disco. Per individuare l'ID di sicurezza, rimuovere fisicamente l'unità e individuare la stringa PSID (massimo 32 caratteri) sull'etichetta dell'unità. Assicurarsi che il disco sia reinstallato prima di avviare l'operazione.
+
+
+
+
+== Che cos'è l'accessibilità in lettura/scrittura?
+
+La finestra Drive Settings (Impostazioni disco) contiene informazioni sugli attributi Drive Security (protezione disco). "Read/Write Accessible" (lettura/scrittura accessibile) è uno degli attributi che viene visualizzato se i dati di un disco sono stati bloccati.
+
+Per visualizzare gli attributi Drive Security, accedere alla pagina hardware. Selezionare un'unità, fare clic su *Visualizza impostazioni*, quindi fare clic su *Mostra altre impostazioni*. Nella parte inferiore della pagina, il valore dell'attributo Read/Write Accessible (lettura/scrittura accessibile) è *Yes* (Sì) quando il disco è sbloccato. Il valore dell'attributo lettura/scrittura accessibile è *No, chiave di sicurezza non valida* quando l'unità è bloccata. È possibile sbloccare un'unità sicura importando una chiave di sicurezza (accedere a menu:Impostazioni[sistema > Sblocca unità protette]).
+
+
+
+== Cosa occorre sapere sulla convalida della chiave di sicurezza?
+
+Dopo aver creato una chiave di sicurezza, è necessario convalidare il file della chiave per assicurarsi che non sia corrotto.
+
+Se la convalida non riesce, procedere come segue:
+
+* Se l'identificatore della chiave di sicurezza non corrisponde all'identificatore sul controller, individuare il file della chiave di sicurezza corretto e riprovare la convalida.
+* Se il controller non riesce a decrittare la chiave di sicurezza per la convalida, è possibile che la password sia stata inserita in modo errato. Controllare due volte la password, immetterla di nuovo se necessario, quindi riprovare a eseguire la convalida. Se il messaggio di errore viene visualizzato di nuovo, selezionare un backup del file delle chiavi (se disponibile) e riprovare la convalida.
+* Se non si riesce ancora a convalidare la chiave di sicurezza, il file originale potrebbe essere danneggiato. Creare un nuovo backup della chiave e convalidare tale copia.
+
+
+
+
+== Qual è la differenza tra la chiave di sicurezza interna e la gestione esterna delle chiavi di sicurezza?
+
+Quando si implementa la funzione Drive Security, è possibile utilizzare una chiave di sicurezza interna o una chiave di sicurezza esterna per bloccare i dati quando un disco abilitato alla protezione viene rimosso dall'array di storage.
+
+Una chiave di sicurezza è una stringa di caratteri che viene condivisa tra i dischi abilitati alla protezione e i controller di un array di storage. Le chiavi interne vengono conservate nella memoria persistente del controller. Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato, utilizzando un protocollo KMIP (Key Management Interoperability Protocol).

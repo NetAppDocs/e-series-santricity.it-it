@@ -1,0 +1,202 @@
+---
+permalink: sm-settings/faq-user-access-mgmt-sm.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sulla gestione degli accessi utente per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Perché non riesco ad accedere?
+
+Se si riceve un errore durante il tentativo di accesso a Gestione di sistema di SANtricity, esaminare le possibili cause.
+
+Gli errori di accesso a System Manager possono verificarsi per uno dei seguenti motivi:
+
+* Il nome utente o la password immessi non sono corretti.
+* Privilegi insufficienti.
+* Il server di directory (se configurato) potrebbe non essere disponibile. In questo caso, provare ad accedere con un ruolo utente locale.
+* Si è tentato di accedere più volte senza successo, attivando la modalità di blocco. Attendere 10 minuti per eseguire nuovamente l'accesso.
+* È stata attivata una condizione di blocco e il registro di controllo potrebbe essere pieno. Accedere a Gestione accessi ed eliminare i vecchi eventi dal registro di controllo.
+* L'autenticazione SAML è attivata. Aggiornare il browser per accedere.
+
+
+Gli errori di accesso a un array di storage remoto per le attività di mirroring possono verificarsi per uno dei seguenti motivi:
+
+* La password immessa non è corretta.
+* Si è tentato di accedere più volte senza successo, attivando la modalità di blocco. Attendere 10 minuti per effettuare nuovamente l'accesso.
+* È stato raggiunto il numero massimo di connessioni client utilizzate sul controller. Verificare la presenza di più utenti o client.
+
+
+
+
+== Cosa occorre sapere prima di aggiungere un server di directory?
+
+Prima di aggiungere un server di directory in Access Management, assicurarsi di soddisfare i seguenti requisiti.
+
+* I gruppi di utenti devono essere definiti nel servizio di directory.
+* Le credenziali del server LDAP devono essere disponibili, inclusi il nome di dominio, l'URL del server e, facoltativamente, il nome utente e la password dell'account BIND.
+* Per i server LDAPS che utilizzano un protocollo sicuro, la catena di certificati del server LDAP deve essere installata sul computer locale.
+
+
+
+
+== Cosa occorre sapere sulla mappatura dei ruoli degli array di storage?
+
+Prima di mappare i gruppi ai ruoli, consultare le seguenti linee guida.
+
+Le funzionalità RBAC (role-based access control) integrate dello storage array includono i seguenti ruoli:
+
+* *Storage admin* -- accesso completo in lettura/scrittura agli oggetti di storage (ad esempio, volumi e pool di dischi), ma nessun accesso alla configurazione di sicurezza.
+* *Security admin* -- accesso alla configurazione della sicurezza in Access Management, gestione dei certificati, gestione dei registri di controllo e possibilità di attivare o disattivare l'interfaccia di gestione legacy (Symbol).
+* *Support admin* -- accesso a tutte le risorse hardware dello storage array, dati di guasto, eventi MEL e aggiornamenti del firmware del controller. Nessun accesso agli oggetti di storage o alla configurazione di sicurezza.
+* *Monitor* -- accesso in sola lettura a tutti gli oggetti di storage, ma nessun accesso alla configurazione di sicurezza.
+
+
+
+
+=== Servizi di directory
+
+Se si utilizza un server LDAP (Lightweight Directory Access Protocol) e servizi di directory, assicurarsi che:
+
+* Un amministratore ha definito i gruppi di utenti nel servizio di directory.
+* Si conoscono i nomi di dominio del gruppo per i gruppi di utenti LDAP. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. System Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
+
+
+
+=== SAML
+
+Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) integrate nell'array di storage, assicurarsi che:
+
+* Un amministratore del provider di identità (IdP) ha configurato gli attributi utente e l'appartenenza al gruppo nel sistema IdP.
+* Conosci i nomi dei membri del gruppo.
+* Si conosce il valore dell'attributo per il gruppo da mappare. Sono supportate le espressioni regolari. Questi caratteri speciali di espressione regolare devono essere escapati con una barra rovesciata (`\`) se non fanno parte di un modello di espressione regolare:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* Il ruolo Monitor è necessario per tutti gli utenti, incluso l'amministratore. System Manager non funzionerà correttamente per nessun utente senza il ruolo di monitoraggio presente.
+
+
+
+
+== Quali strumenti di gestione esterni potrebbero essere interessati da questa modifica?
+
+Quando si apportano determinate modifiche in Gestione sistema di SANtricity, ad esempio quando si cambia l'interfaccia di gestione o si utilizza SAML per un metodo di autenticazione, è possibile che alcuni strumenti e funzionalità esterni non vengano utilizzati.
+
+
+
+=== Interfaccia di gestione
+
+Gli strumenti che comunicano direttamente con l'interfaccia di gestione legacy (Symbol), come il provider SMI-S SANtricity o OnCommand Insight (OCI), non funzionano se non è attivata l'impostazione dell'interfaccia di gestione legacy. Inoltre, non è possibile utilizzare i comandi CLI legacy o eseguire operazioni di mirroring se questa impostazione è disattivata.
+
+Per ulteriori informazioni, contatta il supporto tecnico.
+
+
+
+=== Autenticazione SAML
+
+Quando SAML è attivato, i seguenti client non possono accedere ai servizi e alle risorse dell'array di storage:
+
+* Finestra Enterprise Management (EMW)
+* Interfaccia a riga di comando (CLI)
+* Client Software Developer Kit (SDK)
+* Client in-band
+* Client REST API per l'autenticazione di base HTTP
+* Effettuare l'accesso utilizzando l'endpoint REST API standard
+
+
+Per ulteriori informazioni, contatta il supporto tecnico.
+
+
+
+== Cosa occorre sapere prima di configurare e abilitare SAML?
+
+Prima di configurare e attivare le funzionalità SAML (Security Assertion Markup Language) per l'autenticazione, assicurarsi di soddisfare i seguenti requisiti e comprendere le restrizioni SAML.
+
+
+
+=== Requisiti
+
+Prima di iniziare, assicurarsi che:
+
+* Nella rete è configurato un provider di identità (IdP). Un IdP è un sistema esterno utilizzato per richiedere le credenziali a un utente e determinare se l'utente è autenticato correttamente. Il tuo team di sicurezza è responsabile della manutenzione dell'IdP.
+* Un amministratore IdP ha configurato gli attributi e i gruppi utente nel sistema IdP.
+* Un amministratore IdP ha garantito che IdP supporti la capacità di restituire un ID nome all'autenticazione.
+* Un amministratore ha garantito che i clock del server IdP e del controller siano sincronizzati (tramite un server NTP o regolando le impostazioni del clock del controller).
+* Un file di metadati IdP viene scaricato dal sistema IdP e disponibile sul sistema locale utilizzato per accedere a System Manager.
+* Si conosce l'indirizzo IP o il nome di dominio di ciascun controller dell'array di storage.
+
+
+
+
+=== Restrizioni
+
+Oltre ai requisiti sopra indicati, assicurati di comprendere le seguenti restrizioni:
+
+* Una volta abilitato SAML, non è possibile disattivarlo tramite l'interfaccia utente, né modificare le impostazioni IdP. Se è necessario disattivare o modificare la configurazione SAML, contattare il supporto tecnico per assistenza. Si consiglia di testare gli accessi SSO prima di attivare SAML nella fase finale di configurazione. (Il sistema esegue anche un test di accesso SSO prima di attivare SAML).
+* Se si disattiva SAML in futuro, il sistema ripristina automaticamente la configurazione precedente (ruoli utente locali e/o servizi di directory).
+* Se i servizi di directory sono attualmente configurati per l'autenticazione dell'utente, SAML sovrascrive tale configurazione.
+* Quando SAML è configurato, i seguenti client non possono accedere alle risorse degli array di storage:
++
+** Finestra Enterprise Management (EMW)
+** Interfaccia a riga di comando (CLI)
+** Client Software Developer Kit (SDK)
+** Client in-band
+** Client REST API per l'autenticazione di base HTTP
+** Effettuare l'accesso utilizzando l'endpoint REST API standard
+
+
+
+
+
+
+== Quali tipi di eventi vengono registrati nel registro di controllo?
+
+Il registro di controllo può registrare gli eventi di modifica o gli eventi di modifica e di sola lettura.
+
+A seconda delle impostazioni del criterio, vengono visualizzati i seguenti tipi di eventi:
+
+* *Eventi di modifica* -- azioni dell'utente da System Manager che comportano modifiche al sistema, come il provisioning dello storage.
+* *Eventi di modifica e sola lettura* -- azioni dell'utente che comportano modifiche al sistema, nonché eventi che comportano la visualizzazione o il download di informazioni, come la visualizzazione delle assegnazioni dei volumi.
+
+
+
+
+== Cosa occorre sapere prima di configurare un server syslog?
+
+È possibile archiviare i registri di controllo su un server syslog esterno.
+
+Prima di configurare un server syslog, tenere presenti le seguenti linee guida.
+
+* Assicurarsi di conoscere l'indirizzo del server, il protocollo e il numero della porta. L'indirizzo del server può essere un nome di dominio completo, un indirizzo IPv4 o un indirizzo IPv6.
+* Se il server utilizza un protocollo sicuro (ad esempio TLS), è necessario che nel sistema locale sia disponibile un certificato dell'autorità di certificazione (CA). I certificati CA identificano i proprietari dei siti Web per connessioni sicure tra server e client.
+* Dopo la configurazione, tutti i nuovi registri di controllo vengono inviati al server syslog. I registri precedenti non vengono trasferiti.
+* Le impostazioni dei criteri di sovrascrittura (disponibili in *View/Edit Settings*) non influiscono sulla gestione dei registri con una configurazione del server syslog.
+* I registri di controllo seguono il formato di messaggistica RFC 5424.
+
+
+
+
+== Il server syslog non riceve più registri di controllo. Cosa devo fare?
+
+Se è stato configurato un server syslog con un protocollo TLS, il server non può ricevere messaggi se il certificato non è valido per qualsiasi motivo. Nel registro di controllo viene visualizzato un messaggio di errore relativo al certificato non valido.
+
+Per risolvere questo problema, è necessario innanzitutto correggere il certificato per il server syslog. Una volta stabilita una catena di certificati valida, accedere al menu:Impostazioni[Registro audit > Configura server Syslog > Test tutti].

@@ -1,0 +1,45 @@
+---
+permalink: um-manage/faq-import-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sulle impostazioni di importazione per SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Quali impostazioni verranno importate?
+
+La funzione Import Settings (Impostazioni di importazione) è un'operazione batch che carica le configurazioni da un array di storage a più array di storage. Le impostazioni importate durante questa operazione dipendono dalla configurazione dell'array di storage di origine in Gestore di sistema di SANtricity.
+
+È possibile importare le seguenti impostazioni in più array di storage:
+
+* *Avvisi via email* -- le impostazioni includono un indirizzo del server di posta e gli indirizzi email dei destinatari degli avvisi.
+* *Syslog alerts* -- le impostazioni includono un indirizzo del server syslog e una porta UDP.
+* *SNMP alerts* -- le impostazioni includono un nome di comunità e un indirizzo IP per il server SNMP.
+* *AutoSupport* -- le impostazioni includono le funzioni separate (AutoSupport di base, AutoSupport on Demand e Diagnostica remota), la finestra di manutenzione, il metodo di erogazione, e pianificazione delle spedizioni.
+* *Directory Services* -- la configurazione include il nome di dominio e l'URL di un server LDAP (Lightweight Directory Access Protocol), oltre ai mapping dei gruppi di utenti del server LDAP ai ruoli predefiniti dell'array di storage.
+* *Configurazione dello storage* -- le configurazioni includono volumi (solo volumi thick e non repository), gruppi di volumi, pool e assegnazioni di dischi hot spare.
+* *Impostazioni di sistema* -- le configurazioni includono le impostazioni di scansione dei supporti per un volume, la cache SSD per i controller e il bilanciamento automatico del carico (non include il reporting della connettività host).
+
+
+
+
+== Perché non vedo tutti i miei array di archiviazione?
+
+Durante l'operazione Import Settings (Impostazioni di importazione), alcuni storage array potrebbero non essere disponibili nella finestra di dialogo di selezione della destinazione.
+
+Gli array di storage potrebbero non essere visualizzati per i seguenti motivi:
+
+* La versione del firmware è inferiore alla 8.50.
+* Lo storage array non è in linea.
+* Il sistema non è in grado di comunicare con tale array (ad esempio, l'array presenta problemi di certificato, password o rete).
+

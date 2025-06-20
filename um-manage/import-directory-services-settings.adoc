@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, directory, services, settings 
 summary: È possibile importare una configurazione di servizi di directory da un array di storage ad altri array di storage. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete. 
 ---
-= Importare le impostazioni dei servizi di directory
+= Importare le impostazioni dei servizi di directory in SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

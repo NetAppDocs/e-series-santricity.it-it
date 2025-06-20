@@ -1,0 +1,88 @@
+---
+permalink: sm-interface/faq-storage-system-setup.html 
+sidebar: sidebar 
+keywords:  
+summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
+---
+= Domande frequenti sulla configurazione del sistema di archiviazione per SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda.
+
+
+
+== Cosa succede se non vedo tutti i componenti hardware?
+
+Se non vengono visualizzati tutti i componenti hardware nella finestra di dialogo Verify hardware (verifica hardware), potrebbe indicare che uno shelf di dischi non è collegato correttamente o che uno shelf incompatibile è installato nell'array di storage.
+
+Verificare che tutti gli shelf di dischi siano collegati correttamente. In caso di dubbi sulla compatibilità degli shelf di dischi, contattare il supporto tecnico.
+
+
+
+== Cosa succede se non vedo tutti i miei host?
+
+Se gli host connessi non vengono visualizzati, il rilevamento automatico non è riuscito, gli host non sono collegati correttamente o non sono connessi host.
+
+Una volta completata la configurazione, è possibile configurare gli host in un secondo momento. È possibile creare gli host manualmente nel modo seguente:
+
+* È possibile creare manualmente gli host e associare gli identificatori di porta host appropriati accedendo al menu:Storage[hosts]. Gli host creati manualmente vengono visualizzati anche nella procedura guidata *Initial Setup*.
+* La destinazione e l'host devono essere configurati per il tipo di porta host (ad esempio, iSCSI o NVMe su RoCE) e una sessione per lo storage stabilita prima che il rilevamento automatico funzioni.
+
+
+
+
+== In che modo l'identificazione delle applicazioni mi aiuta a gestire lo storage array?
+
+Quando identifichi le applicazioni, SANtricity System Manager consiglia automaticamente una configurazione del volume che ottimizza lo storage in base al tipo di applicazione.
+
+L'ottimizzazione dei volumi per applicazione può rendere più efficienti le operazioni di storage dei dati. Caratteristiche come il tipo di i/o, la dimensione del segmento, la proprietà del controller e la cache di lettura e scrittura sono incluse nella configurazione del volume. Inoltre, è possibile visualizzare i dati delle performance per applicazione e per carico di lavoro per valutare la latenza, gli IOPS e i MiB/s delle applicazioni e i carichi di lavoro associati.
+
+
+
+== Che cos'è un carico di lavoro?
+
+Per alcune applicazioni della rete, ad esempio SQL Server o Exchange, è possibile definire un carico di lavoro che ottimizzi lo storage per tale applicazione.
+
+Un workload è un oggetto storage che supporta un'applicazione. È possibile definire uno o più carichi di lavoro o istanze per applicazione. Per alcune applicazioni, il sistema configura il carico di lavoro in modo che contenga volumi con caratteristiche di volume sottostanti simili. Queste caratteristiche dei volumi sono ottimizzate in base al tipo di applicazione supportata dal carico di lavoro. Ad esempio, se si crea un carico di lavoro che supporta un'applicazione Microsoft SQL Server e successivamente si creano volumi per tale carico di lavoro, le caratteristiche del volume sottostante sono ottimizzate per supportare Microsoft SQL Server.
+
+Durante la creazione del volume, il sistema richiede di rispondere alle domande sull'utilizzo di un carico di lavoro. Ad esempio, se si creano volumi per Microsoft Exchange, viene chiesto quante cassette postali sono necessarie, quali sono i requisiti medi di capacità delle caselle postali e quante copie del database si desidera. Il sistema utilizza queste informazioni per creare una configurazione ottimale del volume, che può essere modificata in base alle esigenze.
+
+
+
+== Come si configura il metodo di consegna per AutoSupport?
+
+Per accedere alle attività di configurazione per i metodi di erogazione AutoSupport, accedere al menu:supporto[Centro di assistenza], quindi fare clic sulla scheda *AutoSupport*.
+
+Sono supportati i seguenti protocolli: HTTPS e SMTP.
+
+
+
+== Come posso sapere se devo accettare la configurazione del pool consigliata?
+
+L'accettazione della configurazione del pool consigliata dipende da alcuni fattori.
+
+Determinare il tipo di storage più adatto alle proprie esigenze rispondendo alle seguenti domande:
+
+* Preferisci più pool di capacità inferiori, invece dei pool più grandi possibili?
+* Preferisci i gruppi di volumi RAID rispetto ai pool?
+* Preferisci eseguire il provisioning manuale dei dischi, invece di avere una configurazione consigliata per te?
+
+
+Se hai risposto Sì a una di queste domande, puoi rifiutare la configurazione del pool consigliata.
+
+
+
+== Gestore di sistema di SANtricity non ha rilevato host. Cosa devo fare?
+
+Se gli host connessi non vengono visualizzati, il rilevamento automatico non è riuscito, gli host non sono collegati correttamente o non sono connessi host.
+
+Una volta completata la configurazione, è possibile configurare gli host in un secondo momento. È possibile creare gli host manualmente nel modo seguente:
+
+* È possibile creare manualmente gli host e associare gli identificatori di porta host appropriati accedendo al menu:Storage[hosts]. Gli host creati manualmente vengono visualizzati anche nella procedura guidata *Initial Setup*.
+* La destinazione e l'host devono essere configurati per il tipo di porta host (ad esempio, iSCSI o NVMe su RoCE) e una sessione per lo storage stabilita prima che il rilevamento automatico funzioni.
+

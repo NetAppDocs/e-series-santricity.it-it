@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign hot spares 
 summary: 'È possibile assegnare un hot spare come unità di standby per una protezione dei dati aggiuntiva nei gruppi di volumi RAID 1, RAID 5 o RAID 6. Se un disco si guasta in uno di questi gruppi di volumi, il controller ricostruisce i dati dal disco guasto all"hot spare.' 
 ---
-= Assegnare hot spare
+= Assegnare hot spare in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
