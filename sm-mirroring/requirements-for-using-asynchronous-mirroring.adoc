@@ -85,6 +85,11 @@ Il mirroring asincrono utilizza le porte i/o lato host dell'array di storage per
 
 
 
+[NOTE]
+====
+E4000 non supporta il mirroring asincrono durante l'utilizzo del protocollo iSCSI.
+
+====
 
 
 == Volumi mirrorati candidati
