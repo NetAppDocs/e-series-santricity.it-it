@@ -109,6 +109,7 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 
 
 * I volumi primari e secondari devono condividere lo stesso tipo di disco. La combinazione di dischi NVMe e SAS tra volumi primari e secondari non è supportata.
+* I volumi primario e secondario non devono avere il partizionamento delle risorse abilitato.
 
 
 

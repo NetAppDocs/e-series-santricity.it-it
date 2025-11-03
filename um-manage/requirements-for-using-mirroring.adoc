@@ -57,6 +57,10 @@ Il mirroring tramite un'interfaccia iSCSI (solo asincrona) richiede quanto segue
 
 * A differenza di FC, iSCSI non richiede una porta dedicata. Quando si utilizza il mirroring asincrono in ambienti iSCSI, non è necessario dedicare alcuna delle porte iSCSI front-end dello storage array per l'utilizzo con il mirroring asincrono; tali porte sono condivise sia per il traffico mirror asincrono che per le connessioni i/o host-to-array.
 * Il controller mantiene un elenco di sistemi storage remoti con i quali l'iSCSI Initiator tenta di stabilire una sessione. La prima porta che stabilisce correttamente una connessione iSCSI viene utilizzata per tutte le comunicazioni successive con l'array di storage remoto. Se la comunicazione non riesce, viene tentata una nuova sessione utilizzando tutte le porte disponibili.
++
+
+NOTE: I controller E4000 non supportano il mirroring iSCSI.
+
 * Le porte iSCSI sono configurate a livello di array porta per porta. La comunicazione tra controller per la messaggistica di configurazione e il trasferimento dei dati utilizza le impostazioni globali, incluse le impostazioni per:
 +
 ** VLAN: Per comunicare, i sistemi locali e remoti devono avere la stessa impostazione VLAN
@@ -92,6 +96,7 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 ** Se il volume primario non utilizza Drive Security, il volume secondario non deve utilizzare Drive Security.
 
 
+* I volumi primario e secondario non devono avere il partizionamento delle risorse abilitato.
 
 
 
