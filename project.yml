@@ -17,7 +17,7 @@ settings:
   langs: it-it,us-en,de-de,es-es,fr-fr,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: SANtricity software 12.0 documentazione
+  - title: SANtricity software 12.00 documentazione
     url: "/index.html"
   - title: Note di rilascio
     entries:
