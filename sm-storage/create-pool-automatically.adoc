@@ -31,13 +31,13 @@ Tenere presente quanto segue:
 
 È possibile avviare la finestra di dialogo Configurazione automatica pool utilizzando uno dei seguenti metodi:
 
-* Quando viene rilevata una capacità non assegnata, la raccomandazione di configurazione automatica del pool viene visualizzata nella pagina iniziale dell'area di notifica. Fare clic su *View Pool Auto-Configuration* (Visualizza configurazione automatica pool) per avviare la finestra di dialogo.
+* Quando viene rilevata capacità non assegnata, il suggerimento Pool Auto-Configuration viene visualizzato nell'area Notifiche (icona a forma di campana nella parte superiore della finestra). Fare clic su *Visualizza Pool Auto-Configuration* per aprire la finestra di dialogo.
 * È inoltre possibile avviare la finestra di dialogo Configurazione automatica pool dalla pagina Pools and Volume Groups come descritto nella seguente attività.
 
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare menu:More[Avvia configurazione automatica del pool].
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Fai clic sull'icona menu:ellipsis [Launch pool auto-configuration].
 +
 La tabella dei risultati elenca i nuovi pool, i pool esistenti con le unità aggiunte o entrambi. Per impostazione predefinita, un nuovo pool viene denominato con un numero sequenziale.
 
@@ -51,8 +51,7 @@ System Manager esegue le seguenti operazioni:
 ** Aggiunge le unità dello stesso tipo di unità al pool esistente e utilizza gli altri tipi di unità per creare pool diversi se le nuove unità sono di tipi diversi di unità.
 
 
-. Per modificare il nome di un nuovo pool, fare clic sull'icona *Modifica* (la matita).
-. Per visualizzare ulteriori caratteristiche del pool, posizionare il cursore o toccare l'icona *Dettagli* (la pagina).
+. Per visualizzare ulteriori caratteristiche del pool, fare clic sul nome del pool visualizzato.
 +
 Vengono visualizzate informazioni relative al tipo di disco, alla funzionalità di sicurezza, alla funzione di data assurance (da), alla protezione contro la perdita di shelf e alla protezione contro la perdita di cassetto.
 

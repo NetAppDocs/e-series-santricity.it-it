@@ -17,7 +17,7 @@ Una volta avviato il processo di importazione, è possibile visualizzare e intra
 .A proposito di questa attività
 Per ogni operazione di importazione, la finestra di dialogo Operations in Progress (operazioni in corso) visualizza una percentuale di completamento e il tempo rimanente stimato. Le azioni includono la modifica della priorità di importazione, l'interruzione e la ripresa delle operazioni e la disconnessione dall'operazione.
 
-È inoltre possibile visualizzare le operazioni in corso dalla home page (menu:Home[Mostra operazioni in corso]).
+È inoltre possibile visualizzare Operations in Progress tramite menu:Storage[Operations in Progress].
 
 .Fasi
 . Dalla pagina Storage remoto, selezionare *View Operations* (Visualizza operazioni).

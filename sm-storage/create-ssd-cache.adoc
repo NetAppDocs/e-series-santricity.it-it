@@ -33,7 +33,7 @@ Per creare una nuova cache SSD, seguire queste linee guida.
 
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sul menu:Create[SSD cache] (Crea[cache SSD]).
 +
 Viene visualizzata la finestra di dialogo Create SSD cache (Crea cache SSD).

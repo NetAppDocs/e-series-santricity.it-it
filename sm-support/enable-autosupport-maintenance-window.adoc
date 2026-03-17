@@ -15,7 +15,7 @@ summary: Attivare la finestra di manutenzione di AutoSupport per eliminare la cr
 Attivare la finestra di manutenzione di AutoSupport per eliminare la creazione automatica di ticket in caso di eventi di errore. In modalità operativa normale, lo storage array utilizza AutoSupport per aprire un caso con il supporto in caso di problemi.
 
 .Fasi
-. Selezionare menu:scheda supporto[Centro di supporto > AutoSupport].
+. Dal pannello di sinistra, selezionare menu:Supporto [Support Center > AutoSupport] scheda.
 . Selezionare *attiva finestra manutenzione AutoSupport*.
 . Inserire l'indirizzo e-mail per ricevere una conferma dell'elaborazione della richiesta della finestra di manutenzione.
 +

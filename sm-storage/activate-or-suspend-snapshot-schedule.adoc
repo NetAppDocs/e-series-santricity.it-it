@@ -18,8 +18,8 @@ summary: 'È possibile sospendere temporaneamente la raccolta pianificata di imm
 Lo stato della pianificazione snapshot rimane sospeso fino a quando non si utilizza l'opzione *Activate* per riprendere l'attività snapshot pianificata.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
-. Se non è già visualizzato, fare clic sulla scheda *programmi*.
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
+. Se non è già visualizzata, fai clic sulla scheda *Programmi snapshot*.
 +
 I programmi sono elencati nella pagina.
 

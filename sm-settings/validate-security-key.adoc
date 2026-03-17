@@ -18,7 +18,7 @@ summary: È possibile convalidare la chiave di sicurezza per assicurarsi che non
 Questa attività descrive come convalidare la chiave di sicurezza creata in precedenza. Si tratta di un passaggio importante per assicurarsi che il file delle chiavi non sia corrotto e che la password sia corretta, in modo da poter accedere in seguito ai dati delle unità se si sposta un disco abilitato alla sicurezza da un array di storage a un altro.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *Validate Key* (convalida chiave).
 +
 Viene visualizzata la finestra di dialogo Validate Security Key (convalida chiave di protezione).

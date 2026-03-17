@@ -20,7 +20,7 @@ Lo hot spare deve essere in stato ottimale, Standby.
 Non è possibile annullare l'assegnazione di un hot spare che sta assumendo il controllo di un disco guasto. Se lo hot spare non si trova in uno stato ottimale, seguire le procedure Recovery Guru per correggere eventuali problemi prima di tentare di annullare l'assegnazione del disco.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.

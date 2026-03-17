@@ -37,7 +37,7 @@ Questa attività descrive come definire le variabili MIB per i trap SNMP. Queste
 
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *SNMP*.
 . Selezionare *Configure SNMP MIB variables* (Configura variabili SNMP MIB).
 +

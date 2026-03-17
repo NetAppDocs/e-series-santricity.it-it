@@ -17,8 +17,8 @@ SANtricity System Manager può visualizzare i valori di capacità in gibbyte (Gi
 Le preferenze vengono memorizzate nella memoria locale del browser, in modo che tutti gli utenti possano disporre delle proprie impostazioni.
 
 .Fasi
-. Selezionare menu:Preferenze[Imposta preferenze].
-. Fare clic sul pulsante di opzione *Gibytes* o *Tebytes* e confermare che si desidera eseguire l'operazione.
+. Fai clic sull'icona *User Settings* nell'angolo in alto a destra della finestra.
+. Nell'elenco a discesa Display capacity values in, seleziona *Gibibytes* o *Tebibytes*.
 +
 Per le abbreviazioni e i valori, consultare la tabella seguente.
 

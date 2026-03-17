@@ -18,7 +18,7 @@ summary: 'È possibile modificare la priorità di sincronizzazione e il criterio
 È possibile modificare le impostazioni di sincronizzazione per una coppia mirrorata solo sull'array di storage che contiene il volume primario.
 
 .Fasi
-. Selezionare menu:Storage[Synchronous Mirroring].
+. Dal pannello di sinistra, selezionare menu:Storage[Synchronous Mirroring].
 . Selezionare la coppia mirrorata che si desidera modificare, quindi selezionare menu:Altro[Modifica impostazioni].
 +
 Viene visualizzata la finestra di dialogo View/Edit Settings (Visualizza/Modifica impostazioni).

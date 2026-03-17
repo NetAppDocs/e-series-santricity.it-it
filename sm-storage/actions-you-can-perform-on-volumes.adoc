@@ -22,11 +22,11 @@ summary: 'È possibile eseguire diverse azioni su un volume: Aumento della capac
 
 * Utilizzare la capacità libera disponibile nel pool o nel gruppo di volumi.
 +
-Per aggiungere capacità a un volume, selezionare il menu:Storage[Pools and Volume Groups > Add Capacity] (Storage[Pools and Volume Groups > Add Capacity]).
+Aggiungi capacità a un volume selezionando menu:Storage[Volumes] dal pannello di sinistra e quindi selezionando il menu:ellipsis icon[Increase capacity] per il volume.
 
 * Aggiungere capacità non assegnata (sotto forma di unità inutilizzate) al pool o al gruppo di volumi del volume. Utilizzare questa opzione quando non esiste capacità libera nel pool o nel gruppo di volumi.
 +
-Per aggiungere capacità non assegnata al pool o al gruppo di volumi, selezionare menu:Storage[Pool e gruppi di volumi > Add Capacity] (Aggiungi capacità).
+Aggiungi capacità non assegnata al pool o al gruppo di volumi selezionando menu:Storage[Pools and Volume Groups > Add capacity].
 
 +
 Se la capacità libera non è disponibile nel pool o nel gruppo di volumi, non è possibile aumentare la capacità del volume. È necessario aumentare prima le dimensioni del pool o del gruppo di volumi o eliminare i volumi inutilizzati.
@@ -47,7 +47,7 @@ L'eliminazione dei volumi causa la perdita di tutti i dati su tali volumi. L'eli
 
 == Copia
 
-Quando si copiano i volumi, si crea una copia point-in-time di due volumi separati, il volume di origine e il volume di destinazione, sullo stesso array di storage. È possibile copiare i volumi selezionando il menu:Storage[Volumes > Copy Services > Copy volume].
+Quando si copiano i volumi, si crea una copia point-in-time di due volumi distinti, il volume di origine e il volume di destinazione, sullo stesso storage array. È possibile copiare i volumi selezionando menu:Storage[Volumes] e quindi selezionando il menu:ellipsis icon[Copy volume].
 
 
 
@@ -55,7 +55,7 @@ Quando si copiano i volumi, si crea una copia point-in-time di due volumi separa
 
 L'inizializzazione di un volume cancella tutti i dati dal volume. Un volume viene inizializzato automaticamente quando viene creato per la prima volta. Tuttavia, il Recovery Guru potrebbe consigliare di inizializzare manualmente un volume per eseguire il ripristino in seguito a determinate condizioni di errore. Quando si inizializza un volume, il volume mantiene le impostazioni relative a WWN, assegnazioni host, capacità allocata e capacità riservata. Inoltre, mantiene le stesse impostazioni di sicurezza e di Data Assurance (da).
 
-È possibile inizializzare i volumi selezionando menu:Storage[Volumes > More > Initialize Volumes] (Storage[volumi > Altro > Inizializza volumi]).
+È possibile inizializzare i volumi selezionando menu:Storage[Volumes > ellipsis icon > Initialize volumes].
 
 
 
@@ -65,15 +65,15 @@ Ridistribuisci i volumi per spostarli di nuovo nei proprietari di controller pre
 
 La maggior parte dei driver multipath host tenta di accedere a ciascun volume su un percorso verso il proprietario del controller preferito. Tuttavia, se questo percorso preferito non è disponibile, il driver multipath sull'host esegue il failover su un percorso alternativo. Questo failover potrebbe causare la modifica della proprietà del volume nel controller alternativo. Dopo aver risolto la condizione che ha causato il failover, alcuni host potrebbero spostare automaticamente la proprietà del volume nel proprietario del controller preferito, ma in alcuni casi potrebbe essere necessario ridistribuire manualmente i volumi.
 
-È possibile ridistribuire i volumi selezionando il menu:Storage[Volumes > More > redistribuisci volumi].
+È possibile ridistribuire i volumi selezionando menu:Storage[Volumes > ellipsis icon > Redistribute volumes].
 
 
 
 == Modificare la proprietà del volume
 
-La modifica della proprietà di un volume modifica la proprietà preferita del controller del volume. Il proprietario preferito del controller di un volume è elencato in menu:Storage[Volumes > View/Edit Settings > Advanced tab] (Storage[volumi > Visualizza/Modifica impostazioni > scheda Advanced]).
+La modifica della proprietà di un volume modifica il controller proprietario preferito del volume. Il controller proprietario preferito di un volume è elencato nel menu:Storage[Volumes > ellipsis icon > Edit settings].
 
-È possibile modificare la proprietà di un volume selezionando menu:Storage[Volumes > More > Change Ownership] (Storage[volumi > Altro > Modifica proprietà]).
+È possibile modificare la proprietà di un volume selezionando menu:Storage[Volumes > ellipsis icon > Change volume ownership].
 
 
 
@@ -101,7 +101,7 @@ La memoria cache è un'area di storage volatile temporaneo (RAM) sul controller 
 * I dati di scrittura vengono scritti inizialmente nella cache, consentendo all'applicazione di continuare invece di attendere la scrittura dei dati sul disco.
 
 
-Selezionare il menu:Storage[Volumes > More > Change cache settings] (Storage[volumi > Altro > Modifica impostazioni cache) per modificare le seguenti impostazioni della cache:
+Selezionare menu:Storage [Volumes > ellipsis icon > Change cache settings] per modificare le seguenti impostazioni della cache:
 
 * *Cache in lettura e scrittura* -- la cache in lettura è un buffer che memorizza i dati letti dai dischi. I dati di un'operazione di lettura potrebbero essere già presenti nella cache di un'operazione precedente, eliminando così la necessità di accedere ai dischi. I dati rimangono nella cache di lettura fino a quando non vengono scaricati.
 +

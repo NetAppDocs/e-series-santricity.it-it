@@ -21,7 +21,7 @@ summary: 'È possibile modificare le impostazioni del server syslog utilizzato p
 
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Dalla scheda Registro di controllo, selezionare *Configura server Syslog*.
 +
 I server syslog configurati vengono visualizzati nella pagina.

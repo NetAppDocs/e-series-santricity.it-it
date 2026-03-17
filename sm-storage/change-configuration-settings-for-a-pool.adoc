@@ -23,12 +23,12 @@ Non è possibile modificare il livello RAID di un pool utilizzando l'interfaccia
 
 ====
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare il pool che si desidera modificare, quindi fare clic su *Visualizza/Modifica impostazioni*.
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Seleziona il pool che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
 +
-Viene visualizzata la finestra di dialogo Pool Setting (impostazione pool).
+Viene visualizzata la finestra Edit pool Setting.
 
-. Selezionare la scheda *Impostazioni*, quindi modificare le impostazioni del pool in base alle esigenze.
+. Modifica le impostazioni del pool secondo necessità.
 +
 .Dettagli del campo
 [%collapsible]

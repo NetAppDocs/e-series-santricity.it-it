@@ -29,11 +29,11 @@ Consultare le seguenti linee guida:
 
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Selezionare l'oggetto di storage per il quale si desidera ridurre la capacità riservata, quindi fare clic su *Riduci capacità*.
+. Seleziona l'oggetto di storage per cui vuoi diminuire la capacità riservata, quindi fai clic sull'icona menu:ellipsis icon[Decrease Capacity].
 +
-Viene visualizzata la finestra di dialogo Riduci capacità riservata.
+Viene visualizzata la pagina Decrease Reserved Capacity.
 
 . Selezionare la capacità di cui si desidera ridurre la capacità riservata, quindi fare clic su *Riduci*.
 

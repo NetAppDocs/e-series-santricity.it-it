@@ -229,7 +229,7 @@ Uno shelf di dischi, chiamato anche shelf di espansione, contiene un set di disc
  a| 
 DULBE
  a| 
-Deallocated or Unwritten Logical Block Error (DULBE) è un'opzione sui dischi NVMe che consente allo storage array EF300 o EF600 di supportare volumi con provisioning delle risorse.
+Deallocated or Unwritten Logical Block Error (DULBE) è un'opzione sulle unità NVMe che consente all'array di storage EF80, EF50, EF300/EF300C o EF600/EF600C di supportare volumi con provisioning delle risorse.
 
 
 

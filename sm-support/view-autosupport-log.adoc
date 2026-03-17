@@ -22,7 +22,7 @@ Possono esistere più file di log. Quando il file di log corrente raggiunge i 20
 
 
 .Fasi
-. Selezionare menu:scheda supporto[Centro di supporto > AutoSupport].
+. Dal pannello di sinistra, selezionare menu:Supporto [Support Center > AutoSupport] scheda.
 . Selezionare *Visualizza log AutoSupport*.
 +
 Viene visualizzata una finestra di dialogo che elenca il registro AutoSupport corrente.

@@ -17,7 +17,11 @@ L'ID dello shelf è un numero che identifica in modo univoco uno shelf nell'arra
 Il firmware del controller assegna automaticamente l'ID dello shelf, ma è possibile modificarlo se si desidera creare un diverso schema di ordinazione.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
 . Selezionare l'elenco a discesa per lo shelf del controller o per lo shelf del disco, quindi selezionare *Change ID* (Modifica ID).
 . Nella finestra di dialogo Change Shelf ID (Modifica ID shelf), selezionare l'elenco a discesa per visualizzare i numeri disponibili.
 +

@@ -34,7 +34,7 @@ Questa attività descrive come assegnare manualmente un hot spare dalla pagina h
 
 ====
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.

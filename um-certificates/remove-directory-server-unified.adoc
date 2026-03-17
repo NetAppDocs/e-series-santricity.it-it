@@ -20,7 +20,7 @@ Per interrompere la connessione tra un server di directory e il proxy dei serviz
 Una volta completata questa attività, tutte le sessioni utente attive vengono terminate. Viene conservata solo la sessione utente corrente.
 
 .Fasi
-. Selezionare *Access Management*.
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *Directory Services*.
 . Dall'elenco, selezionare il server di directory che si desidera eliminare.
 . Fare clic su *Rimuovi*.

@@ -18,7 +18,7 @@ summary: 'È possibile modificare le impostazioni di sincronizzazione e le sogli
 La modifica delle impostazioni di sincronizzazione influisce sulle operazioni di sincronizzazione di tutte le coppie mirrorate all'interno del gruppo di coerenza mirror.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups*.
 +
 Viene visualizzata la tabella Mirrored Consistency Group (Gruppo di coerenza mirrorato) che mostra tutti i gruppi di coerenza mirror associati all'array di storage.

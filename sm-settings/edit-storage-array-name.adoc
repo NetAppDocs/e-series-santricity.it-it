@@ -15,7 +15,7 @@ summary: 'È possibile modificare il nome dell"array di storage visualizzato nel
 È possibile modificare il nome dell'array di storage visualizzato nella barra del titolo di Gestore di sistema di SANtricity.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Generale*, cercare il campo *Nome:*.
 +
 Se non è stato definito un nome di array di storage, in questo campo viene visualizzato "Sconosciuto".

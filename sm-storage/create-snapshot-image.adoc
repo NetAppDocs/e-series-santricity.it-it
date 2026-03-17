@@ -24,8 +24,8 @@ summary: 'È possibile creare manualmente un"immagine snapshot da un volume di b
 .Fasi
 . Per creare un'immagine istantanea, eseguire una delle seguenti operazioni:
 +
-** Selezionare menu:Storage[Volumes] (Storage[volumi]). Selezionare l'oggetto (volume di base o gruppo di coerenza snapshot), quindi selezionare menu:Copy Services[Create Instant snapshot].
-** Selezionare menu:Storage[Snapshot]. Selezionare la scheda *Snapshot Images*, quindi selezionare menu:Create[Instant snapshot].
+** Dal pannello di sinistra, selezionare menu:Storage[Volumes]. Selezionare l'oggetto (volume di base o snapshot consistency group), quindi fare clic sul menu:ellipsis icon[Create instant snapshot].
+** Dal pannello di sinistra, selezionare menu:Storage[Snapshots]. Selezionare la scheda *Snapshot Images* e quindi selezionare menu:Create[Instant snapshot Image].
 +
 Viene visualizzata la finestra di dialogo Create Snapshot Image (Crea immagine istantanea). Selezionare l'oggetto (volume di base o gruppo di coerenza dello snapshot), quindi fare clic su *Avanti*. Se è stata creata un'immagine snapshot precedente per il volume o il gruppo di coerenza snapshot, il sistema crea immediatamente l'istantanea. In caso contrario, se si crea per la prima volta un'immagine snapshot per il volume o il gruppo di coerenza snapshot, viene visualizzata la finestra di dialogo Confirm Create Snapshot Image (Conferma creazione immagine istantanea).
 

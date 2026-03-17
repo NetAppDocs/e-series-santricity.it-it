@@ -1,0 +1,213 @@
+---
+permalink: sm-support/use-script-editor.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
+summary: Utilizzare il Script editor per creare o modificare un file di script, salvare un file di script sul disco locale della stazione di gestione dello storage o caricare un file di script dal disco. 
+---
+= Utilizzo dell'editor di script
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare il Script editor per creare o modificare un file di script, salvare un file di script sul disco locale della stazione di gestione dello storage o caricare un file di script dal disco.
+
+.Prima di iniziare
+L'editor di script comunica con l'array di storage per consentire il controllo della sintassi degli script e l'esecuzione dei comandi. I comandi di script digitati nell'editor di script vengono generalmente eseguiti sull'array di storage.
+
+L'editor di script offre due visualizzazioni nella finestra:
+
+* Pannello dell'editor: fornisce un'area per l'inserimento o la modifica dei comandi dello script.
+* Riquadro di output – mostra i risultati della verifica o dell'esecuzione. Una barra di separazione divide la finestra tra il riquadro dell'editor e il riquadro di output.
+* L'editor di script non supporta i comandi che richiedono file di input, come il firmware del controller, la NVSRAM o gli aggiornamenti del firmware dell'unità.
+* L'editor di script supporta comandi che generano file di output.
+* Ci sono alcuni comandi che richiedono l'esecuzione sul client (comandi lato client).
++
+** Gli unici comandi lato client supportati per questa versione sono `on error stop` e `on error continue`.
+** L'editor di script genera un errore se si tenta di eseguire qualsiasi altro comando lato client.
+
+
+
+
+
+
+== Apri l'editor di script
+
+.Fasi
+. Dal pannello di sinistra, selezionare menu:Support[Script editor].
++
+La tabella seguente elenca le opzioni di file disponibili nell'editor di script:
+
++
+.Dettagli del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Attività | Azione 
+
+
+ a| 
+Apri un nuovo script
+ a| 
+.. Fai clic su *Carica file script* per caricare un file script esistente nell'editor di script.
++
+L'editor di script apre il file di script selezionato nel riquadro dell'editor.
+
+
+
+
+
+ a| 
+Verificare la sintassi del comando dello script
+ a| 
+.. Fai clic su *Verifica sintassi* per verificare la sintassi dello script corrente nel riquadro dell'editor.
++
+L'editor di script analizza le istruzioni presenti nel file di script, una riga alla volta, e verifica che abbiano la sintassi corretta. Eventuali errori di sintassi vengono visualizzati nel riquadro di output, che riporta il numero di riga dell'errore e una descrizione dell'errore.
+
++
+Se il Script editor rileva un errore di sintassi, non viene eseguita alcuna ulteriore verifica della sintassi sullo script.
+
++
+Correggi eventuali errori di sintassi ed esegui nuovamente *Syntax Check* per convalidare la correzione dell'errore e per verificare le restanti istruzioni nello script.
+
+
+
+
+
+ a| 
+Esegui script
+ a| 
+.. Fai clic su *Esegui script* per eseguire lo script corrente nel riquadro dell'editor.
++
+L'editor di script avvia un'operazione di controllo della sintassi, quindi per ogni comando dello script presente nel file di input, viene eseguita un'esecuzione del comando sul controller dell'array di storage.
+
++
+Se il Script editor rileva un errore di sintassi, interrompe l'esecuzione e visualizza un messaggio di errore.
+
++
+Correggi l'errore ed esegui nuovamente *Syntax check* per convalidare la correzione dell'errore.
+
++
+
+NOTE: Se si verifica un errore di esecuzione, lo script potrebbe non continuare a essere eseguito a seconda dell' `On Error`istruzione di script inclusa. L' `On Error Stop`istruzione interrompe lo script se si verifica un errore di esecuzione. L' `On Error
+Continue`istruzione consente allo script di continuare anche dopo aver riscontrato un errore di esecuzione. Questa istruzione è l'impostazione predefinita.
+
+
+
+
+
+ a| 
+Modifica uno script esistente
+ a| 
+.. Fai clic su *Carica file script* per caricare un file script esistente nell'editor di script.
+.. Nel riquadro dell'editor, apporta le modifiche necessarie allo script.
+
+
+
+
+ a| 
+Salva lo script in un file locale
+ a| 
+.. Fai clic su *Salva file script* per scaricare le modifiche nel riquadro dello script come nuovo file script.
+
+
+
+
+ a| 
+Cancella il testo nel riquadro dell'editor dello Script editor
+ a| 
+.. Fai clic su *Clear editor* per cancellare il testo nel riquadro dell'editor.
+
+
+
+
+ a| 
+Salva i risultati dell'output in un file locale
+ a| 
+.. Fai clic su *Salva results* per scaricare il contenuto del riquadro di output come nuovo file.
+
+
+|===
+====
+
+
+
+
+=== Scrivi script nell'editor di script
+
+.Prima di iniziare
+Quando si utilizza il Script editor per scrivere comandi script, assicurarsi di seguire queste linee guida: * Terminare tutte le istruzioni con un punto e virgola (;). * Separare ogni comando base e i relativi parametri primari e secondari con uno spazio. * I parametri non fanno distinzione tra maiuscole e minuscole quando vengono inseriti nel Script editor. * Posizionare ogni istruzione su una riga separata. * Aggiungere commenti agli script per facilitare la comprensione dello scopo delle istruzioni dei comandi da parte vostra e degli utenti futuri.
+
+.Fasi
+. Racchiudete i commenti su più righe tra i caratteri  `/*` e  `*/`.
++
+Se il motore di script non trova sia una notazione di commento iniziale che una notazione di commento finale, viene visualizzato un messaggio di errore e l'esecuzione dello script viene interrotta.
+
+. I commenti su una singola riga iniziano con due barre oblique (`//` e terminano con un carattere di fine riga, che si può inserire premendo *Invio*.
++
+Se il motore di script non trova un carattere di fine riga nello script dopo aver elaborato un commento, viene visualizzato un messaggio di errore e l'esecuzione dello script viene interrotta.
+
++
+Questo errore si verifica comunemente quando si inserisce un commento alla fine di uno script e si è dimenticato di premere *Enter*.
+
+. Utilizza l' `show`istruzione per inserire commenti in uno script che verranno visualizzati nel riquadro dell'editor durante l'esecuzione dello script.
++
+L' `show`istruzione è utile per il debug degli script.
+
++
+L'inserimento di una `show setting controller mode` istruzione nello script fa sì che la seguente riga appaia nel riquadro di output quando questa riga viene elaborata durante l'esecuzione dello script:
+
++
+[listing]
+----
+setting controller mode
+----
+
+
+
+
+=== Interpretare i risultati dell'esecuzione dello script
+
+Durante l'esecuzione dello script, nel riquadro di output vengono visualizzati messaggi che iniziano con:
+
+[listing]
+----
+Executing script...
+----
+Se si verifica un errore durante la fase di analisi sintattica, l'errore viene visualizzato nel riquadro di output, che indica il numero di riga, il numero di colonna e una descrizione dell'errore di sintassi. Di seguito è riportato un esempio di messaggio di errore di sintassi.
+
+Se digiti la seguente istruzione in uno script:
+
+`set controller[a] mod = passive;`
+
+Il riquadro di output visualizza l'errore di sintassi risultante come segue:
+
+[listing]
+----
+Encountered "mod" at line 2, column 19
+Was expecting one of...
+"mode"...
+"availability"...
+"NVSRAMbyte"...
+----
+Se si verifica un errore durante l'esecuzione di uno script, nel riquadro di output viene visualizzato un messaggio che indica che il comando non è riuscito e riporta una descrizione dell'errore.
+
+Ad esempio, se digiti la seguente istruzione in uno script:
+
+`set volume [three] userLabel="OneOne";`
+
+L'errore risultante viene visualizzato nel riquadro di output seguente. Il comando non può essere inviato all'array di storage perché si trova in uno stato non responsivo.
+
+[listing]
+----
+Unable to change the volume user label using the Set Volume command at line 1
+Error - 1 - Could not communicate with the storage array to complete this request.
+----
+
+NOTE: Alcuni errori di esecuzione, tra cui l'impossibilità di comunicare con l'array di archiviazione, causano sempre l'interruzione dell'esecuzione dello script. In questi casi, l'esecuzione si interrompe anche se si utilizza l'istruzione  `On Error Continue`.
+
+.Risultati
+Dopo aver eseguito uno script, esamina il riquadro di output per verificare il successo o la presenza di errori.

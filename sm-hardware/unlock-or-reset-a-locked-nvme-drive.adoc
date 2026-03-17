@@ -30,7 +30,7 @@ Se il disco è stato bloccato utilizzando un server di gestione delle chiavi est
 È possibile accedere alla funzione di sblocco dalla pagina hardware o dal menu:Impostazioni[sistema > Gestione chiavi di sicurezza]. L'attività seguente fornisce istruzioni dalla pagina hardware.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.

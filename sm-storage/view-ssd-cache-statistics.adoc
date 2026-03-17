@@ -19,8 +19,8 @@ Le statistiche nominali, che sono un sottoinsieme delle statistiche dettagliate,
 Durante la revisione e l'interpretazione delle statistiche, tenere presente che alcune interpretazioni derivano da una combinazione di statistiche.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare la cache SSD per la quale si desidera visualizzare le statistiche, quindi fare clic su menu:More[View SSD cache statistics] (Visualizza statistiche cache SSD).
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Seleziona la Cache SSD per cui desideri visualizzare le statistiche, quindi fai clic sull'icona menu:ellipsis [Visualizza statistiche].
 +
 Viene visualizzata la finestra di dialogo View SSD cache Statistics (Visualizza statistiche cache SSD) che visualizza le statistiche nominali per la cache SSD selezionata.
 

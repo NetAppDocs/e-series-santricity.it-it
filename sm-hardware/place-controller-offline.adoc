@@ -27,7 +27,7 @@ Non mettere un controller offline a meno che non venga richiesto dal Recovery Gu
 
 ====
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.

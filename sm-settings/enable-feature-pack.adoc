@@ -33,7 +33,7 @@ Il file del Feature Pack viene caricato sul client di gestione (il sistema con u
 Questa attività descrive come utilizzare System Manager per attivare un Feature Pack. Al termine, riavviare lo storage array.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *componenti aggiuntivi*, selezionare *Cambia Feature Pack*.
 . Fare clic su *Browse*, quindi selezionare il file delle chiavi.
 +

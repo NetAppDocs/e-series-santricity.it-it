@@ -26,14 +26,14 @@ I grafici disponibili nella vista delle performance dettagliate sono disposti in
 
 * *Vista logica* -- Visualizza i dati delle performance per gli oggetti logici raggruppati per gruppi di volumi e pool. Gli oggetti logici includono gruppi di volumi, pool e volumi.
 * *Physical View* -- Visualizza i dati relativi alle performance per controller, canali host, canali di dischi e dischi.
-* *Visualizzazione applicazioni e carichi di lavoro* -- Visualizza un elenco di oggetti logici (volumi) raggruppati in base ai tipi di applicazioni e ai carichi di lavoro definiti.
+* *Vista Applications and workloads* -- Visualizza un elenco di oggetti logici (volumi) raggruppati in base ai tipi di applicazione e ai carichi di lavoro che hai definito.
 
 
 .Fasi
 . Selezionare *Home*.
 . Per selezionare una vista a livello di array, fare clic sul pulsante IOPS, MiB/s o CPU.
 . Per ulteriori informazioni, fare clic su *Visualizza dettagli sulle prestazioni*.
-. Selezionare la scheda *Vista logica*, la scheda *Vista fisica* o la scheda *Vista applicazioni e carichi di lavoro*.
+. Seleziona la scheda *Logical View*, la scheda *Physical View* o la scheda *Applications and workloads View*.
 +
 A seconda del tipo di oggetto, in ciascuna scheda vengono visualizzati diversi grafici.
 
@@ -66,7 +66,7 @@ Vista fisica
 
 
  a| 
-Applicazioni e carichi di lavoro Visualizza
+Visualizzazione applicazioni e carichi di lavoro
  a| 
 ** *Storage array*: IOPS, MiB/s.
 ** *Applicazioni*: Latenza, IOPS, MiB/s.

@@ -18,7 +18,7 @@ summary: 'È possibile eseguire un"inversione di ruolo tra i due volumi di una c
 È possibile ridurre il volume primario al ruolo secondario o promuovere il volume secondario al ruolo primario. Tutti gli host che accedono al volume primario dispongono dell'accesso in lettura/scrittura al volume. Quando il volume primario diventa un volume secondario, nel volume vengono scritte solo le scritture remote avviate dal controller primario.
 
 .Fasi
-. Selezionare menu:Storage[Synchronous Mirroring].
+. Dal pannello di sinistra, selezionare menu:Storage[Synchronous Mirroring].
 . Selezionare la coppia mirrorata contenente i volumi per i quali si desidera modificare il ruolo, quindi selezionare menu:More[Change role] (Altro[Cambia ruolo]).
 +
 Il sistema visualizza una conferma.

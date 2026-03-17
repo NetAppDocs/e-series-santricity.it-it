@@ -21,7 +21,7 @@ summary: È possibile modificare il criterio di sovrascrittura e i tipi di event
 Questa attività descrive come modificare le impostazioni del registro di controllo, che includono il criterio per la sovrascrittura degli eventi precedenti e il criterio per la registrazione dei tipi di evento.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *Registro di controllo*.
 . Selezionare *Visualizza/Modifica impostazioni*.
 +

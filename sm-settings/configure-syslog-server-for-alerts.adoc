@@ -23,7 +23,7 @@ Per configurare gli avvisi syslog, è necessario immettere un indirizzo del serv
 Questa attività descrive come inserire l'indirizzo e la porta per il server syslog, quindi verificare l'indirizzo immesso.
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *Syslog*.
 +
 Se un server syslog non è ancora definito, nella pagina Avvisi viene visualizzato "Add Syslog Servers" (Aggiungi server Syslog).

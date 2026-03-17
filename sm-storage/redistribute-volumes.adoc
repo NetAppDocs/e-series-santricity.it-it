@@ -26,8 +26,8 @@ Se si desidera ridistribuire i volumi senza un driver multipath sugli host, tutt
 La maggior parte dei driver multipath host tenta di accedere a ciascun volume su un percorso verso il proprietario del controller preferito. Tuttavia, se questo percorso preferito non è disponibile, il driver multipath sull'host esegue il failover su un percorso alternativo. Questo failover potrebbe causare la modifica della proprietà del volume nel controller alternativo. Dopo aver risolto la condizione che ha causato il failover, alcuni host potrebbero spostare automaticamente la proprietà del volume nel proprietario del controller preferito, ma in alcuni casi potrebbe essere necessario ridistribuire manualmente i volumi.
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare il menu:More[redistribuisci volumi].
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Fai clic sull'icona menu:ellipsis [Redistribute volumes].
 +
 Viene visualizzata la finestra di dialogo redistribuisci volumi. In questa finestra di dialogo vengono visualizzati tutti i volumi dell'array di storage il cui proprietario preferito del controller non corrisponde al proprietario corrente.
 

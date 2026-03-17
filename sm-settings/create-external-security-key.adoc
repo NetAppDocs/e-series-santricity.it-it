@@ -37,7 +37,7 @@ Per ulteriori informazioni sul certificato del server, consultare la documentazi
 In questa attività, definire l'indirizzo IP del server di gestione delle chiavi e il numero di porta utilizzato, quindi caricare i certificati per la gestione delle chiavi esterne.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *Create External Key* (Crea chiave esterna).
 +
 [NOTE]
@@ -60,7 +60,7 @@ Viene visualizzata la finestra di dialogo Crea chiave di protezione esterna.
 NOTE: Viene utilizzato un solo server di chiavi alla volta. Se lo storage array non riesce a raggiungere il server principale delle chiavi, l'array contatterà il server delle chiavi di backup. Tenere presente che è necessario mantenere la parità su entrambi i server; in caso contrario, potrebbero verificarsi errori.
 
 ** *Select client certificate* -- fare clic sul primo pulsante *Browse* (Sfoglia) per selezionare il file di certificato per i controller dell'array di storage.
-** *Selezionare il file della chiave privata* -- se necessario, fare clic sul secondo pulsante *Browse* per selezionare un file della chiave privata per i controller dell'array di archiviazione.
+** *Seleziona il file della chiave privata* -- Se necessario, fai clic sul secondo pulsante *Browse* per selezionare un file di chiave privata per i controller dell'array di storage.
 ** *Selezionare il certificato del server di gestione delle chiavi* -- fare clic sul terzo pulsante *Browse* per selezionare il file di certificato per il server di gestione delle chiavi. È possibile scegliere un certificato root, intermedio o server per il server di gestione delle chiavi.
 
 

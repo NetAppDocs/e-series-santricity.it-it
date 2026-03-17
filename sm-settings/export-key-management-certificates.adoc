@@ -20,7 +20,7 @@ summary: È possibile salvare un certificato per un server di gestione delle chi
 
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Selezionare la scheda *Key Management* (Gestione chiavi).
 . Dalla tabella, selezionare il certificato che si desidera esportare, quindi fare clic su *Esporta*.
 +

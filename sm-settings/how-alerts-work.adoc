@@ -31,13 +31,7 @@ Il processo di notifica funziona come segue:
 
 == Configurazione degli avvisi
 
-È possibile configurare gli avvisi dalla configurazione guidata iniziale (solo per gli avvisi e-mail) o dalla pagina Avvisi. Per verificare la configurazione corrente, accedere al menu:Impostazioni[Avvisi].
-
-Il riquadro Avvisi visualizza la configurazione degli avvisi, che può essere una delle seguenti:
-
-* Non configurato.
-* Configurato; è impostato almeno un metodo di avviso. Per determinare quali metodi di avviso sono configurati, puntare il cursore sul riquadro.
-
+È possibile configurare gli avvisi dalla procedura guidata di configurazione iniziale (solo per gli avvisi email) oppure dalla pagina Alerts. Per accedere alla pagina Alerts, vai su menu:Settings[Alerts] dal pannello di sinistra.
 
 
 

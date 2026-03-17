@@ -23,7 +23,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 
 ====
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *Recupera buffer traccia*.
 . Selezionare la casella di controllo accanto a ciascun controller per il quale si desidera recuperare i buffer di traccia.
 +

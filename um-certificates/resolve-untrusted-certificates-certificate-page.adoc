@@ -37,7 +37,7 @@ Potrebbe essere necessario installare altri certificati CA attendibili se si ver
 
 
 .Fasi
-. Selezionare *Certificate Management* (Gestione certificati).
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Selezionare la scheda *Trusted*.
 +
 Questa pagina mostra tutti i certificati segnalati per gli array di storage.

@@ -118,7 +118,7 @@ Il mirroring è configurato nell'interfaccia di SANtricity Unified Manager.
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sull'array di storage EF600/EF600C o EF300/EF300C.
+Il mirroring sincrono non è disponibile sugli array di storage EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 Per abilitare e configurare il mirroring tra due array, verificare quanto segue:
@@ -143,7 +143,7 @@ Seguire queste linee guida prima di creare un gruppo di coerenza mirror.
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
+Il mirroring sincrono non è disponibile sui sistemi storage EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 È possibile creare un gruppo di coerenza in Unified Manager nella procedura guidata Crea coppie mirrorate.

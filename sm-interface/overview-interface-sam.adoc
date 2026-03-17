@@ -19,18 +19,11 @@ SANtricity System Manager è un'interfaccia basata sul web che ti consente di ge
 
 La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a System Manager, viene visualizzata la prima pagina iniziale.
 
-La vista dashboard comprende quattro aree di riepilogo che contengono informazioni chiave sullo stato e lo stato dello storage array. Ulteriori informazioni sono disponibili nell'area di riepilogo.
+La vista dalla dashboard comprende tre aree di riepilogo che contengono informazioni chiave sullo stato e l'integrità del tuo storage array. Puoi trovare ulteriori informazioni nell'area di riepilogo.
 
 [cols="25h,~"]
 |===
 | Area | Descrizione 
-
-
- a| 
-Notifiche
- a| 
-L'area Notifiche visualizza le notifiche dei problemi che indicano lo stato dello storage array e dei relativi componenti. Inoltre, questo portlet visualizza avvisi automatici che consentono di risolvere i problemi prima che influiscano su altre aree dell'ambiente di storage.
-
 
 
  a| 
@@ -55,40 +48,21 @@ L'area Storage Hierarchy (gerarchia di storage) offre una vista organizzata dei 
 |===
 
 
+== Area notifiche
+
+L'area Notifiche è accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra. L'area Notifiche visualizza notifiche relative ai problemi che indicano lo stato dell'array di storage e dei suoi componenti. Inoltre, questa sezione visualizza avvisi automatici che possono aiutare a risolvere i problemi prima che influiscano su altre aree dell'ambiente di storage.
+
+
+
 == Impostazioni dell'interfaccia
 
 È possibile modificare le preferenze di visualizzazione e altre impostazioni dall'interfaccia principale.
 
-[cols="25h,~"]
-|===
-| Impostazione | Descrizione 
-
-
- a| 
-Visualizzare le preferenze
- a| 
-Modificare i valori di capacità e i tempi dal menu a discesa Preferences (Preferenze) nell'angolo superiore destro dell'interfaccia.
-
-
-
- a| 
-Timeout della sessione
- a| 
-Configurare i timeout in modo che le sessioni inattive degli utenti vengano disconnesse dopo un determinato periodo di tempo.
-
-
-
- a| 
-Aiuto
- a| 
-Accedere alla documentazione della Guida e ad altre risorse dal menu a discesa nell'angolo superiore destro dell'interfaccia.
-
-|===
 
 
 == Login e password degli utenti
 
-L'utente corrente che ha effettuato l'accesso al sistema viene visualizzato nella parte superiore destra dell'interfaccia.
+L'utente attualmente connesso al sistema viene visualizzato nelle impostazioni utente.
 
 Per ulteriori informazioni su utenti e password, consulta:
 

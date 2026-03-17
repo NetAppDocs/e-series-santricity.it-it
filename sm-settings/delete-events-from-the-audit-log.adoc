@@ -18,7 +18,7 @@ summary: 'È possibile cancellare il registro di controllo degli eventi preceden
 È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *Registro di controllo*.
 . Selezionare *Delete* (Elimina).
 +

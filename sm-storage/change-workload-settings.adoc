@@ -15,14 +15,14 @@ summary: È possibile modificare il nome di un workload e visualizzarne il tipo 
 È possibile modificare il nome di un workload e visualizzarne il tipo di applicazione associato. Modificare il nome di un workload quando il nome corrente non è più significativo o applicabile.
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare la scheda *applicazioni e carichi di lavoro*.
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Seleziona la scheda *Applications and workloads*.
 +
-Viene visualizzata la vista applicazioni e carichi di lavoro.
+Viene visualizzata la vista Applications and workloads.
 
-. Selezionare il carico di lavoro che si desidera modificare, quindi selezionare *Visualizza/Modifica impostazioni*.
+. Seleziona il carico di lavoro che desideri modificare, quindi fai clic sull'icona menu:ellipsis [Edit Settings].
 +
-Viene visualizzata la finestra di dialogo Applications & workload Settings (Impostazioni applicazioni e carichi di lavoro).
+Viene visualizzata la finestra di dialogo Applications and workloads Settings.
 
 . *Opzionale:* modificare il nome del carico di lavoro fornito dall'utente.
 . Fare clic su *Save* (Salva).

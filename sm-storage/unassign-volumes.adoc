@@ -22,8 +22,8 @@ Tenere presenti queste linee guida quando si annulla l'assegnazione di un volume
 
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
-. Selezionare l'host o il cluster host che si desidera modificare, quindi fare clic su *Annulla assegnazione volumi*.
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
+. Seleziona l'host o il cluster host che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Annulla assegnazione volumi].
 +
 Viene visualizzata una finestra di dialogo che mostra tutti i volumi attualmente assegnati.
 

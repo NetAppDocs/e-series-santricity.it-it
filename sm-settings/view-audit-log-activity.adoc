@@ -18,7 +18,7 @@ Visualizzando i registri di controllo, gli utenti con autorizzazioni di amminist
 È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda **Registro audit**.
 +
 L'attività del registro di controllo viene visualizzata in formato tabulare, che include le seguenti colonne di informazioni:

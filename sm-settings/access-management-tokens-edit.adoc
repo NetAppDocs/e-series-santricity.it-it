@@ -15,7 +15,7 @@ summary: È possibile modificare le impostazioni per i token di accesso, che inc
 È possibile modificare le impostazioni per i token di accesso, che includono i tempi di scadenza e la possibilità di creare nuovi token.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *Access Token*.
 . Selezionare *View/Edit Access Token Settings* (Visualizza/Modifica impostazioni token di accesso).
 . Nella finestra di dialogo, è possibile eseguire una o entrambe le seguenti operazioni:

@@ -25,7 +25,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 
 ====
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *Collect i/o Path Statistics* (raccolta statistiche percorso i/o).
 . Confermare che si desidera eseguire l'operazione digitando `collect`, Quindi fare clic su *Collect*.
 +

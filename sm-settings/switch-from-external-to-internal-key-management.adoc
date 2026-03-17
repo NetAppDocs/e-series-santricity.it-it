@@ -18,7 +18,7 @@ summary: 'È possibile modificare il metodo di gestione di Drive Security da un 
 In questa attività, si disattiva la gestione delle chiavi esterne e si scarica una nuova copia di backup sull'host locale. La chiave esistente viene ancora utilizzata per Drive Security, ma verrà gestita internamente nell'array di storage.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *Disable External Key Management* (Disattiva gestione chiavi esterne).
 +
 Viene visualizzata la finestra di dialogo Disattiva gestione chiavi esterne.

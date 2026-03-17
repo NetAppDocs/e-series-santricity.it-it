@@ -18,7 +18,7 @@ summary: 'È possibile modificare il ruolo tra gruppi di coerenza mirror a scopo
 I gruppi di coerenza mirror creati sull'array di storage locale ricopriscono il ruolo principale. I gruppi di coerenza mirror creati sull'array di storage remoto ricopriscono il ruolo secondario. È possibile declassare il gruppo di coerenza mirror locale in un ruolo secondario o promuovere il gruppo di coerenza mirror remoto in un ruolo primario.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups*.
 +
 Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.

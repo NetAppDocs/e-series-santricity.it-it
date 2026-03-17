@@ -32,7 +32,7 @@ Esaminare i diversi protocolli:
 
 ====
 .Fasi
-. Selezionare menu:scheda supporto[Centro di supporto > AutoSupport].
+. Dal pannello di sinistra, selezionare menu:Supporto [Support Center > AutoSupport] scheda.
 . Selezionare *Configura metodo di erogazione AutoSupport*.
 +
 Viene visualizzata una finestra di dialogo in cui sono elencati i metodi di consegna dell'invio.

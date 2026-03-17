@@ -20,7 +20,7 @@ Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare l
 Gli utenti e le mappature non possono essere modificati. È possibile modificare solo le password.
 
 .Fasi
-. Selezionare *Access Management*.
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *ruoli utente locali*.
 +
 Gli utenti sono mostrati nella tabella:

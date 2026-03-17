@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.90 
+keywords: whats new, new features, SANtricity 12.0 
 summary: Nuove funzionalità di SANtricity OS. 
 ---
-= Novità di SANtricity OS 11.90
+= Novità in SANtricity OS 12.0
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,23 +12,14 @@ summary: Nuove funzionalità di SANtricity OS.
 
 
 [role="lead"]
-La seguente tabella descrive le nuove funzionalità di Gestione di sistema di SANtricity 11.9.
+La tabella seguente descrive le nuove funzionalità in SANtricity System Manager 12.0.
 
 
 
-== Nuove funzionalità in Version 11.90R5
-
-Questa versione contiene solo correzioni di errori e nessuna nuova funzionalità. Per ulteriori informazioni sulle modifiche in questa versione, consultare il README di E-Series SANtricity OS 11.90R5.
+== Nuove funzionalità in Version 12.0
 
 
-
-== Nuove funzionalità nella versione 11.90R4
-
-Questa versione contiene solo piccole modifiche e nessuna nuova funzionalità. Per ulteriori informazioni sulle modifiche in questa versione, consultare il README di E-Series SANtricity OS 11.90R4.
-
-
-
-== Nuove funzioni della versione 11.90R3
+NOTE: La release SANtricity OS 12.0 è compatibile solo con i nuovi sistemi storage all-flash EF80 e EF50. Se si utilizza SANtricity OS 11.9 o versioni precedenti, fare riferimento a link:known-issues.html["Problemi noti"] per un elenco delle nuove funzionalità delle release precedenti.
 
 [cols="35h,~"]
 |===
@@ -36,79 +27,41 @@ Questa versione contiene solo piccole modifiche e nessuna nuova funzionalità. P
 
 
  a| 
-Supporto del sistema operativo SANtricity per IOM12C e DCM3
+Nuovi modelli di sistema storage – sistemi di storage all-flash EF80 e EF50
  a| 
-Il supporto per gli shelf SAS-3 IOM12C e DCM3 è ora disponibile per il firmware del controller 11.90R3 o superiore. Gli shelf IOM12C e DCM3 sostituiscono gli shelf IOM12B e DCM2.
+Questa release introduce i sistemi di storage all-NVMe-flash EF80 e EF50. EF80 e EF50 supportano 24 unità SSD NVMe e una singola scheda di interfaccia verso gli host (HIC) per controller. Le interfacce verso gli host NVMe over Fabrics supportate includono NVMe over RoCE, NVMe over IB per EF80 e NVMe over FC per EF50. Le interfacce SCSI supportate includono Fibre Channel.
 
-|===
-
-
-== Nuove funzioni della versione 11.90R2
-
-Questa versione contiene solo modifiche minori e nessuna nuova funzionalità. Per ulteriori informazioni sulle modifiche apportate a questa versione, fare riferimento alla https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["Note sulla versione di e-Series 11,90"^] .
-
-
-
-== Nuove funzioni della versione 11.90R1
-
-[cols="35h,~"]
-|===
-| Nuova funzionalità | Descrizione 
-
-
- a| 
-Nuovi modelli di sistemi storage: EF300C e EF600C
- a| 
-Questa release introduce i sistemi storage All Flash NVMe EF300C e EF600C. I sistemi EF300C e EF600C sono versioni flash a elevata capacità dei sistemi storage EF300 e EF600 esistenti. I dischi SSD NVMe a elevata capacità di 30TB o 60TB dimensioni sono supportati con EF300C e EF600C. EF300C/EF600C è compatibile solo per l'utilizzo con Dynamic Disk Pool, senza supporto RAID legacy.
+Gli SSD NVMe ad alta capacità da 30TB o 60TB sono supportati anche con EF80 ed EF30. EF80 ed EF30 sono compatibili solo per l'uso con Dynamic Disk Pool, senza supporto RAID legacy.
 
 
 
  a| 
-Supporto per interfacce SAS 12GB su EF4000
+Nuova interfaccia utente per SANtricity System Manager
  a| 
-Il controller E4000 ora supporta 12GB schede di interfaccia host SAS.
-
-|===
+Per i nuovi controller EF80 e EF50, l'interfaccia utente di SANtricity System Manager è stata riprogettata per offrire un aspetto e un'esperienza più moderni. La nuova interfaccia include una navigazione tramite pannello a sinistra e una maggiore facilità d'uso per semplificare le attività di gestione.
 
 
-== Nuove funzionalità della versione 11.90
-
-[cols="35h,~"]
-|===
-| Nuova funzionalità | Descrizione 
-
-
- a| 
-Nuovo modello di sistema storage – E4000
- a| 
-Questa release introduce il sistema di storage a basso costo E4000. E4000 supporta unità da 12 e 60 GB e una singola scheda di interfaccia host (HIC) per controller. Per la versione iniziale, le schede di interfaccia host supportate includono iSCSI e Fibre Channel. In Unified Manager è possibile visualizzare e gestire i sistemi storage E4000 e altri sistemi storage e-Series.
+NOTE: La nuova interfaccia utente è attualmente disponibile solo per i sistemi storage EF80 e EF50 con la release SANtricity 12.0. Se si utilizza SANtricity 11.9 o versioni precedenti, fare riferimento a link:https://docs.netapp.com/us-en/e-series-santricity-119/system-manager/index.html["Gestore di sistema di SANtricity 11.9"] per le istruzioni sull'utilizzo dell'interfaccia utente precedente.
 
 
 
  a| 
-Maggiore capacità per Dynamic Disk Pools
+I nomi alternativi del soggetto (SAN) per il certificato server ora consentono solo lettere, cifre e trattini
  a| 
-La capacità dei Dynamic Disk Pools (DDP) è stata aumentata a 12 PB ogniqualvolta la capacità di ciascuno dei singoli dischi del pool è superiore a 23 TB. Se la capacità dei singoli dischi è inferiore a 23 TB, la capacità DDP è 6 PB.
-
-
-
- a| 
-Impostazioni di scansione dei supporti predefinite aumentate
- a| 
-La velocità di scansione predefinita dei supporti è stata aumentata a 120 giorni.
+Quando si crea o si modifica un certificato server in SANtricity System Manager o Unified Manager, il campo Subject Alternative Names (SANs) ora consente solo lettere, cifre e trattini. Questa modifica migliora la sicurezza e garantisce la compatibilità con gli standard di settore per i certificati SSL/TLS.
 
 
 
  a| 
-Chiave privata ora accettata per la gestione esterna delle chiavi
+La dimensione dei segmenti dei Dynamic Disk Pools ora è impostata di default a 32K per i sistemi basati su SSD e NVMe
  a| 
-Il file CSR (Certificate Signing Request) generato esternamente tramite coppie di chiavi private e pubbliche può ora essere importato tramite System Manager.
+Per i Dynamic Disk Pools su sistemi basati su SSD e NVMe, la dimensione predefinita del segmento è stata modificata a 32K. In precedenza, la dimensione predefinita del segmento dei Dynamic Disk Pools era fissata a 128K per questi sistemi. Questa modifica ottimizza le prestazioni per i carichi di lavoro che coinvolgono un mix di operazioni di I/O di piccole e grandi dimensioni.
 
 
 
  a| 
-La funzione di blocco dell'accesso è ora disponibile per i servizi Web
+L'editor di script è ora disponibile in SANtricity System Manager
  a| 
-Configurabile solo tramite l'API REST, è ora disponibile una nuova impostazione di blocco dell'accesso per i servizi Web incorporati e proxy.
+È ora disponibile un nuovo editor di script all'interno di SANtricity System Manager. L'editor di script consente di creare o modificare un file di script, salvare un file di script sul disco locale della stazione di gestione dello storage o caricare un file di script dal disco. L'editor di script offre funzionalità di controllo della sintassi ed esecuzione dei comandi per la gestione del sistema storage. Per ulteriori informazioni, vedere link:sm-support/use-script-editor.html["Utilizzo dell'editor di script"^].
 
 |===

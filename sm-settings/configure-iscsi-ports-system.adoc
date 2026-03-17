@@ -25,7 +25,7 @@ Le impostazioni e le funzioni iSCSI vengono visualizzate solo se lo storage arra
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *iSCSI Settings* (Impostazioni iSCSI), selezionare *Configure iSCSI Ports* (Configura porte iSCSI).
 +
 [NOTE]

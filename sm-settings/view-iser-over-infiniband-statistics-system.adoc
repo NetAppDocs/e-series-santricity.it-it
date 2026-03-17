@@ -24,7 +24,7 @@ System Manager mostra i seguenti tipi di statistiche iSER su InfiniBand. Tutte l
 È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline. Le statistiche raw sono tutte le statistiche raccolte dall'avvio dei controller. Le statistiche di riferimento sono statistiche point-in-time raccolte dall'ora di riferimento impostata.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . Selezionare *Visualizza statistiche iSER su InfiniBand*.
 . Fare clic su una scheda per visualizzare i diversi set di statistiche.
 . *Opzionale:* per impostare la linea di base, fare clic su *Imposta nuova linea di base*.

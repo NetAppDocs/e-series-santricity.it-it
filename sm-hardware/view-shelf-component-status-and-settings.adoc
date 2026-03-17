@@ -22,7 +22,7 @@ I componenti disponibili dipendono dal tipo di shelf:
 
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Selezionare l'elenco a discesa per lo shelf del controller o lo shelf dell'unità, quindi selezionare *View Settings* (Visualizza impostazioni).
 +
 Viene visualizzata la finestra di dialogo Shelf Components Settings (Impostazioni componenti shelf), con schede che mostrano lo stato e le impostazioni relative ai componenti dello shelf. A seconda del tipo di shelf selezionato, alcune schede descritte nella tabella potrebbero non essere visualizzate.

@@ -25,7 +25,7 @@ La funzione Collect Configuration Data salva le stesse informazioni del comando 
 Questa attività deve essere eseguita solo se richiesto da un'operazione Recovery Guru o dal supporto tecnico.
 
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *Collect Configuration Data* (raccolta dati di configurazione).
 . Nella finestra di dialogo, fare clic su *Collect* (Raccogli).
 +

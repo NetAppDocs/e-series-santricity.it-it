@@ -23,8 +23,8 @@ Tenere presenti queste linee guida quando si elimina un host o un cluster host:
 
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
-. Selezionare l'host o il cluster host che si desidera eliminare, quindi fare clic su *Delete* (Elimina).
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
+. Seleziona l'host o il cluster che desideri eliminare, quindi fai clic sull'icona menu:ellipsis icon[Delete].
 +
 Viene visualizzata la finestra di dialogo di conferma.
 

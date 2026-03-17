@@ -23,7 +23,7 @@ Esaminare le seguenti informazioni sulle coppie di mirroring orfane:
 
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *coppia mirrorata*.
 +
 Viene visualizzata la tabella delle coppie mirrorate, che mostra tutte le coppie mirrorate associate all'array di storage.

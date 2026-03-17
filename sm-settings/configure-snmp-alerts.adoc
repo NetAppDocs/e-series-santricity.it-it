@@ -36,7 +36,7 @@ Se non si dispone del file MIB, è possibile ottenerlo dal sito NetApp Support:
 Questa attività descrive come identificare il server SNMP per le destinazioni trap, quindi verificare la configurazione.
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *SNMP*.
 +
 Al primo setup, nella scheda SNMP viene visualizzato "Configure Communities/Users" (Configura community/utenti).

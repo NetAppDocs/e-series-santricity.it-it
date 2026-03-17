@@ -29,7 +29,7 @@ Non è possibile interrompere il processo di attivazione dopo l'avvio.
 
 ====
 .Fasi
-. Selezionare menu:Support[Upgrade Center].
+. Dal pannello di sinistra, selezionare il menu:Support[Upgrade Center].
 . Nell'area aggiornamento del software del controller del sistema operativo SANtricity, fare clic su *attiva* e confermare che si desidera eseguire l'operazione.
 +
 È possibile annullare l'operazione durante il controllo dello stato di salute prima dell'aggiornamento, ma non durante l'attivazione.

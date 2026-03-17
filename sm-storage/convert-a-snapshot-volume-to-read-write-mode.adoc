@@ -17,7 +17,7 @@ summary: È possibile convertire un volume snapshot di sola lettura o un volume 
 Un volume Snapshot convertito in accessibile in lettura/scrittura contiene la propria capacità riservata. Questa capacità viene utilizzata per salvare eventuali modifiche successive apportate dall'applicazione host al volume di base senza influire sull'immagine snapshot di riferimento.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Selezionare la scheda *Snapshot Volumes* (volumi snapshot).
 +
 Viene visualizzata la tabella Snapshot Volumes (volumi snapshot) che mostra tutti i volumi snapshot associati all'array di storage.

@@ -20,7 +20,7 @@ summary: È possibile ripristinare lo stato originale autofirmato del certificat
 Questa attività elimina il certificato di gestione corrente dal sistema host in cui sono installati Web Services Proxy e Unified Manager. Una volta ripristinato il certificato, il sistema host torna a utilizzare il certificato autofirmato.
 
 .Fasi
-. Selezionare *Impostazioni > certificati*.
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Selezionare la scheda *Array Management*, quindi selezionare *Reset*.
 +
 Viene visualizzata la finestra di dialogo Conferma ripristino certificato di gestione.

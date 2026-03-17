@@ -20,8 +20,8 @@ Per una pianificazione snapshot, è possibile modificare gli orari di raccolta a
 Poiché una pianificazione di snapshot è associata a un gruppo di snapshot o a un gruppo di coerenza di snapshot, la capacità riservata potrebbe essere influenzata dalle modifiche alle impostazioni di pianificazione.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
-. Fare clic sulla scheda *programmi*.
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
+. Fai clic sulla scheda *Snapshot Schedules*.
 . Selezionare il programma di snapshot che si desidera modificare, quindi fare clic su *Edit* (Modifica).
 +
 Viene visualizzata la finestra di dialogo Modifica pianificazione snapshot.

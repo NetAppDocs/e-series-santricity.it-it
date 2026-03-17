@@ -41,8 +41,8 @@ Impossibile inizializzare i seguenti tipi di volumi:
 Questo argomento si applica solo ai volumi standard creati da pool o gruppi di volumi.
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare un volume qualsiasi, quindi menu:More[Initialize Volumes] (Altro[Inizializza volumi]).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Fare clic sull'icona menu:ellipsis [Initialize volumes].
 +
 Viene visualizzata la finestra di dialogo Inizializza volumi. In questa finestra di dialogo vengono visualizzati tutti i volumi dell'array di storage.
 
@@ -56,4 +56,4 @@ System Manager esegue le seguenti operazioni:
 * Cancella gli indici dei blocchi, il che fa sì che i blocchi non scritti vengano letti come se fossero riempiti a zero (il volume sembra essere completamente vuoto).
 
 
-Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione di inizializzazione attualmente in esecuzione per il volume selezionato. Questa operazione può essere lunga e può influire sulle prestazioni del sistema.
+Selezionare menu:Storage[Operazioni in corso] per visualizzare l'avanzamento dell'operazione di inizializzazione attualmente in esecuzione per il volume selezionato. Questa operazione può essere lunga e potrebbe influire sulle prestazioni del sistema.

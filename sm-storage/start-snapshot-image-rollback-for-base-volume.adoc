@@ -31,7 +31,7 @@ L'host può accedere immediatamente al nuovo volume di base rollback, ma il volu
 
 ====
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Selezionare la scheda *Snapshot Images* (immagini istantanee).
 . Selezionare l'immagine istantanea, quindi selezionare menu:Rollback[Start].
 +
@@ -44,7 +44,7 @@ Viene visualizzata la finestra di dialogo aumenta capacità riservata.
 +
 .. Utilizzare la casella di selezione per regolare la percentuale di capacità.
 +
-Se la capacità libera non esiste nel pool o nel gruppo di volumi che contiene l'oggetto di storage selezionato e l'array di storage dispone di capacità non assegnata, è possibile aggiungere capacità. È possibile creare un nuovo pool o gruppo di volumi e riprovare a eseguire questa operazione utilizzando la nuova capacità libera del pool o del gruppo di volumi.
+Se non esiste capacità libera nel pool o nel gruppo di volumi che contiene l'oggetto di storage selezionato e l'array di storage dispone di Unassigned Capacity, puoi aggiungere capacità. Puoi creare un nuovo pool o gruppo di volumi e quindi riprovare questa operazione utilizzando la nuova capacità libera su quel pool o gruppo di volumi.
 
 .. Fare clic su *aumenta*.
 
@@ -60,6 +60,6 @@ System Manager esegue le seguenti operazioni:
 
 
 .Al termine
-Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione di rollback.
+Selezionare menu:Storage[Operations in Progress] per visualizzare lo stato di avanzamento dell'operazione di rollback.
 
 Se l'operazione di rollback non riesce, l'operazione viene interrotta. È possibile riprendere l'operazione in pausa e, se il problema persiste, seguire la procedura Recovery Guru per risolvere il problema o contattare il supporto tecnico.

@@ -21,7 +21,7 @@ Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare l
 I profili utente e le mappature non possono essere modificati. È possibile modificare solo le password.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *ruoli utente locali*.
 +
 I profili utente sono mostrati nella tabella:

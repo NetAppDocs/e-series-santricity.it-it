@@ -18,7 +18,7 @@ summary: 'È possibile visualizzare la quantità di dati non sincronizzati tra i
 È possibile eseguire questa attività quando il gruppo di coerenza mirror selezionato contiene coppie mirrorate e quando la sincronizzazione non è attualmente in corso.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups*.
 +
 Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.

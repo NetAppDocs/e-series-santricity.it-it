@@ -23,7 +23,7 @@ Se il controller rifiuta una connessione perché non è in grado di convalidare 
 Se si desidera consentire a un altro server di contattare i controller (ad esempio, un server LDAP o un server syslog che utilizza TLS), potrebbe essere necessario importare i certificati dalla scheda Trusted.
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Trusted (attendibile), selezionare *Import* (Importa).
 +
 Viene visualizzata una finestra di dialogo per l'importazione dei file di certificato attendibili.

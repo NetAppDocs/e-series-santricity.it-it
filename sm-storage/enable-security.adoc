@@ -27,8 +27,8 @@ Se si desidera utilizzare Drive Security, selezionare un pool o un gruppo di vol
 Una volta attivato il sistema di protezione, è possibile rimuoverlo solo eliminando il pool o il gruppo di volumi, quindi cancellando i dischi.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare il pool o il gruppo di volumi in cui si desidera attivare la protezione, quindi fare clic su menu:More[Enable Security] (Altro[attiva protezione]).
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Seleziona il pool o il gruppo di volumi su cui desideri abilitare la sicurezza, quindi fai clic su menu:icona con i puntini di sospensione[Abilita sicurezza].
 +
 Viene visualizzata la finestra di dialogo Conferma abilitazione protezione.
 

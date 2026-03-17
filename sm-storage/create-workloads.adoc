@@ -18,10 +18,10 @@ summary: È possibile creare carichi di lavoro per qualsiasi tipo di applicazion
 Un workload è un oggetto storage che supporta un'applicazione. È possibile definire uno o più carichi di lavoro o istanze per applicazione.
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
 . Selezionare menu:Create[workload] (Crea[carico di lavoro]).
 +
-Viene visualizzata la finestra di dialogo Create Application workload (Crea carico di lavoro applicazione).
+Viene visualizzata la pagina Create Application Workload.
 
 . Utilizzare l'elenco a discesa per selezionare il tipo di applicazione per cui si desidera creare il carico di lavoro, quindi digitare un nome per il carico di lavoro.
 . Fare clic su *Create* (Crea).

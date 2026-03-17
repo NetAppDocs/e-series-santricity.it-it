@@ -35,7 +35,7 @@ Queste azioni includono le scritture RAID 5 e RAID 6 che avrebbero avuto success
 
 ====
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *Visualizza/Cancella settori illeggibili*.
 . Per salvare il log dei settori illeggibili:
 +

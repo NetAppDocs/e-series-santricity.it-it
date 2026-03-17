@@ -20,7 +20,7 @@ Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e lin
 * Ogni immagine snapshot è associata esattamente a un gruppo di snapshot.
 * Un gruppo di snapshot viene creato la prima volta che si crea un'immagine snapshot pianificata o istantanea per un oggetto associato. In questo modo si crea capacità riservata.
 +
-È possibile visualizzare i gruppi di snapshot dalla pagina Pools & Volume Groups.
+È possibile visualizzare i gruppi di snapshot dalla pagina Pool e gruppi di volume.
 
 * Le immagini snapshot pianificate non si verificano quando lo storage array è offline o spento.
 * Se si elimina un gruppo di snapshot con una pianificazione di snapshot, viene eliminata anche la pianificazione di snapshot.

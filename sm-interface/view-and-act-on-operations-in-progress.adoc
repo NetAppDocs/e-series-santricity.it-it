@@ -17,7 +17,7 @@ Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata
 Per ciascuna operazione elencata nella pagina Operations in Progress (operazioni in corso), vengono visualizzate una percentuale di completamento e il tempo stimato rimanente per completare l'operazione. In alcuni casi, è possibile interrompere un'operazione o posizionarla con priorità più alta o più bassa. È inoltre possibile cancellare un'operazione di copia del volume completata dall'elenco.
 
 .Fasi
-. Nella pagina iniziale, selezionare *Mostra operazioni in corso*.
+. Dal pannello di sinistra, selezionare menu:Storage[Operations in Progress].
 +
 Viene visualizzata la pagina Operations in Progress (operazioni in corso).
 

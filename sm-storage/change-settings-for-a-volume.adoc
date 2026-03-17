@@ -21,12 +21,12 @@ Il volume che si desidera modificare si trova nello stato ottimale.
 NOTE: Alcune operazioni potrebbero non essere disponibili mentre sono in corso modifiche alle impostazioni del volume
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare il volume che si desidera modificare, quindi selezionare *Visualizza/Modifica impostazioni*.
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Seleziona il volume che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
 +
-Viene visualizzata la finestra di dialogo Volume Settings (Impostazioni volume). Le impostazioni di configurazione del volume selezionato vengono visualizzate in questa finestra di dialogo.
+Viene visualizzata la finestra Edit Volume Settings, che mostra le impostazioni di configurazione per il volume selezionato.
 
-. Selezionare la scheda *Basic* per modificare il nome del volume e l'assegnazione dell'host.
+. Configura le impostazioni del volume secondo necessità:
 +
 .Dettagli del campo
 [%collapsible]
@@ -44,22 +44,6 @@ Visualizza il nome del volume. Modificare il nome di un volume quando il nome co
 
 
  a| 
-Capacità
- a| 
-Visualizza la capacità riportata e allocata per il volume selezionato.
-
-La capacità riportata e la capacità allocata sono le stesse per i volumi spessi, ma sono diverse per i volumi thin. Per un volume spesso, lo spazio fisicamente allocato è uguale allo spazio che viene segnalato all'host. Per un volume thin, la capacità riportata è la capacità che viene segnalata agli host, mentre la capacità allocata è la quantità di spazio su disco attualmente allocato per la scrittura dei dati.
-
-
-
- a| 
-Gruppo pool/Volume
- a| 
-Visualizza il nome e il livello RAID del pool o del gruppo di volumi. Indica se il pool o il gruppo di volumi sono abilitati per la protezione e la protezione.
-
-
-
- a| 
 Host
  a| 
 Visualizza l'assegnazione del volume. Si assegna un volume a un cluster host o host in modo che sia possibile accedervi per le operazioni di i/O. Questa assegnazione consente a un host o a un cluster di host di accedere a un determinato volume o a una serie di volumi in un array di storage.
@@ -71,55 +55,6 @@ Visualizza l'assegnazione del volume. Si assegna un volume a un cluster host o h
 NOTE: Per le interfacce NVMe, questa colonna visualizza l'ID dello spazio dei nomi. Uno spazio dei nomi è uno storage NVM formattato per l'accesso a blocchi. È analogo a un'unità logica in SCSI, che si riferisce a un volume nell'array di storage. L'ID dello spazio dei nomi è l'identificatore univoco del controller NVMe per lo spazio dei nomi e può essere impostato su un valore compreso tra 1 e 255. È analogo a un numero di unità logica (LUN) in SCSI.
 
 
-
-
-
- a| 
-Identificatori
- a| 
-Visualizza gli identificatori del volume selezionato.
-
-** *WWID (World-Wide Identifier)* -- identificatore esadecimale univoco del volume.
-** *Extended Unique Identifier (EUI)* -- identificatore EUI-64 per il volume.
-** *SSID (Subsystem Identifier)* -- identificativo del sottosistema dell'array di storage di un volume.
-
-
-|===
-====
-. Selezionare la scheda *Avanzate* per modificare le impostazioni di configurazione aggiuntive per un volume in un pool o in un gruppo di volumi.
-+
-.Dettagli del campo
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Impostazione | Descrizione 
-
-
- a| 
-Informazioni su applicazioni e carichi di lavoro
- a| 
-Durante la creazione dei volumi, è possibile creare carichi di lavoro specifici dell'applicazione o altri carichi di lavoro. Se applicabile, il nome del carico di lavoro, il tipo di applicazione e il tipo di volume vengono visualizzati per il volume selezionato.
-
-Se lo si desidera, è possibile modificare il nome del carico di lavoro.
-
-
-
- a| 
-Impostazioni della qualità del servizio
- a| 
-*Disable data assurance (Disattiva data assurance) in modo permanente* -- questa impostazione viene visualizzata solo se il volume è abilitato per Data Assurance (da). DA controlla e corregge gli errori che potrebbero verificarsi durante il trasferimento dei dati attraverso i controller fino ai dischi. Utilizzare questa opzione per disattivare in modo permanente il da sul volume selezionato. Se disattivato, il da non può essere riattivato su questo volume.
-
-*Enable pre-Read Redundancy check* -- questa impostazione viene visualizzata solo se il volume è un volume spesso. I controlli di ridondanza di pre-lettura determinano se i dati su un volume sono coerenti ogni volta che viene eseguita una lettura. Un volume con questa funzione attivata restituisce errori di lettura se i dati risultano incoerenti dal firmware del controller.
-
-
-
- a| 
-Proprietà del controller
- a| 
-Definisce il controller designato come controller principale o proprietario del volume.
-
-La proprietà del controller è molto importante e deve essere pianificata con attenzione. I controller devono essere bilanciati il più possibile per l'i/o totale.
 
 
 
@@ -154,22 +89,6 @@ Spostare le barre di scorrimento per selezionare un livello di priorità.
 
 *Modifica dei tassi di priorità* -- il tasso di priorità più basso offre benefici alle prestazioni del sistema, ma l'operazione di modifica richiede più tempo. Il tasso di priorità più elevato è utile per l'operazione di modifica, ma le prestazioni del sistema potrebbero essere compromesse.
 
-
-
- a| 
-Caching
- a| 
-Mostra l'impostazione del caching, che è possibile modificare per influire sulle prestazioni i/o complessive di un volume.
-
-
-
- a| 
-Cache SSD
- a| 
-Mostra l'impostazione della cache SSD, che è possibile attivare sui volumi compatibili per migliorare le prestazioni di sola lettura. I volumi sono compatibili se condividono le stesse funzionalità di Drive Security e Data Assurance.
-
-*La funzione SSD cache utilizza uno o più dischi a stato solido (SSD) per implementare una cache di lettura*. Le performance applicative sono migliorate grazie ai tempi di lettura più rapidi per gli SSD. Poiché la cache di lettura si trova nell'array di storage, il caching viene condiviso tra tutte le applicazioni che utilizzano l'array di storage. È sufficiente selezionare il volume che si desidera memorizzare nella cache, quindi il caching è automatico e dinamico.
-
 |===
 ====
 . Fare clic su *Save* (Salva).
@@ -179,4 +98,4 @@ System Manager modifica le impostazioni del volume in base alle selezioni effett
 
 
 .Al termine
-Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento delle operazioni di modifica attualmente in esecuzione per il volume selezionato.
+Selezionare menu:Storage[Operations in Progress] per visualizzare lo stato di avanzamento delle operazioni di modifica attualmente in esecuzione per il volume selezionato.

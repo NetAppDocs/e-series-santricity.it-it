@@ -17,11 +17,11 @@ summary: È possibile modificare le impostazioni di un gruppo di snapshot per mo
 Durante la creazione di un gruppo di snapshot, viene creata una capacità riservata per memorizzare i dati di tutte le immagini di snapshot contenute nel gruppo.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Selezionare il gruppo di snapshot che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
+. Seleziona il gruppo di snapshot che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
 +
-Viene visualizzata la finestra di dialogo Snapshot Group Settings (Impostazioni gruppo snapshot).
+Viene visualizzata la finestra Edit snapshot group settings.
 
 . Modificare le impostazioni del gruppo di snapshot in base alle esigenze.
 +
@@ -46,7 +46,7 @@ Il nome del gruppo di snapshot. Specificare un nome per il gruppo di snapshot è
 
 
  a| 
-Eliminazione automatica
+Eliminazione automatica dell'immagine Snapshot
  a| 
 Un'impostazione che mantiene il numero totale di immagini snapshot nel gruppo pari o inferiore a un massimo definito dall'utente. Quando questa opzione è attivata, System Manager elimina automaticamente l'immagine snapshot meno recente nel gruppo ogni volta che viene creata una nuova istantanea, in modo da rispettare il numero massimo di immagini snapshot consentito per il gruppo.
 
@@ -56,13 +56,6 @@ Un'impostazione che mantiene il numero totale di immagini snapshot nel gruppo pa
 Limite dell'immagine Snapshot
  a| 
 Un valore configurabile che specifica il numero massimo di immagini snapshot consentite per un gruppo di snapshot.
-
-
-
- a| 
-Calendario di Snapshot
- a| 
-Se sì, viene impostata una pianificazione per la creazione automatica di snapshot.
 
 
 
@@ -88,25 +81,6 @@ Policy per la capacità massima riservata
 ** *Rimuovi l'immagine snapshot meno recente* -- System Manager rimuove automaticamente l'immagine snapshot meno recente nel gruppo di snapshot, che rilascia la capacità riservata dell'immagine snapshot per il riutilizzo all'interno del gruppo.
 ** *Rifiuta scritture nel volume di base* -- quando la capacità riservata raggiunge la massima percentuale definita, System Manager rifiuta qualsiasi richiesta di scrittura i/o nel volume di base che ha attivato l'accesso alla capacità riservata.
 
-
-
-
- a| 
-*Oggetti associati*
-
-
-
- a| 
-Volume di base
- a| 
-Il nome del volume di base utilizzato per il gruppo. Un volume di base è l'origine da cui viene creata un'immagine snapshot. Può essere un volume spesso o sottile e viene in genere assegnato a un host. Il volume di base può risiedere in un gruppo di volumi o in un pool di dischi.
-
-
-
- a| 
-Immagini Snapshot
- a| 
-Il numero di immagini create da questo gruppo. Un'immagine snapshot è una copia logica dei dati del volume, acquisita in un determinato momento. Come un punto di ripristino, le immagini Snapshot consentono di eseguire il rollback a un set di dati sicuramente funzionante. Sebbene l'host possa accedere all'immagine snapshot, non può leggerla o scriverla direttamente.
 
 |===
 ====

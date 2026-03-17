@@ -14,7 +14,7 @@ summary: È possibile visualizzare informazioni su un controller, ad esempio lo 
 È possibile visualizzare informazioni su un controller, ad esempio lo stato delle interfacce host, delle interfacce disco e delle porte di gestione.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.

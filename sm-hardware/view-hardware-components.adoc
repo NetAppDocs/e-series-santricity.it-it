@@ -14,7 +14,7 @@ summary: La pagina hardware offre funzioni di ordinamento e filtraggio che sempl
 La pagina hardware offre funzioni di ordinamento e filtraggio che semplificano la ricerca dei componenti.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Utilizzare le funzioni descritte nella seguente tabella per visualizzare i componenti hardware.
 
 

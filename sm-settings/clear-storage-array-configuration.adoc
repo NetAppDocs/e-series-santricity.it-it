@@ -98,8 +98,8 @@ X
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
-. Selezionare *Clear Storage Array Configuration* (Cancella configurazione array di storage).
+. Dal pannello di sinistra, selezionare menu:Settings[System].
+. In *Generale*, selezionare *Cancella configurazione array di storage*.
 . Nell'elenco a discesa, selezionare *Volume* o *Storage Array*.
 . *Opzionale:* se si desidera salvare la configurazione (non i dati), utilizzare i collegamenti nella finestra di dialogo.
 . Confermare che si desidera eseguire l'operazione.

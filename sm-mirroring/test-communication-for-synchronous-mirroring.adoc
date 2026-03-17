@@ -22,7 +22,7 @@ Vengono eseguiti due diversi test:
 
 
 .Fasi
-. Selezionare menu:Storage[Synchronous Mirroring].
+. Dal pannello di sinistra, selezionare il menu: Storage[Synchronous Mirroring].
 . Selezionare la coppia mirrorata che si desidera verificare, quindi selezionare *Test Communication* (verifica comunicazione).
 . Esaminare le informazioni visualizzate nella finestra dei risultati e, se necessario, seguire l'azione correttiva indicata.
 +

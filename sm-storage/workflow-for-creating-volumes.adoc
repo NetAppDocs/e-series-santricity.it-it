@@ -13,4 +13,4 @@ summary: In Gestore di sistema di SANtricity, è possibile creare volumi seguend
 [role="lead"]
 In Gestore di sistema di SANtricity, è possibile creare volumi seguendo questa procedura.
 
-image::../media/sam1130-flw-volumes-create.gif[Crea workflow di volumi]
+image::../media/sam12-flw-volumes-create.svg[Crea workflow di volumi]

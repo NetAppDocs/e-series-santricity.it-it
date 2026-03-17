@@ -40,7 +40,7 @@ Questa operazione _non_ salva queste impostazioni:
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . Selezionare *Save Storage Array Configuration* (Salva configurazione array di storage).
 . Selezionare gli elementi della configurazione che si desidera salvare:
 +

@@ -18,7 +18,7 @@ summary: 'È possibile aggiornare l"indirizzo IP iSCSI dell"array di storage rem
 Sia lo storage array locale che quello remoto devono essere configurati per il mirroring asincrono utilizzando una connessione iSCSI.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups*.
 +
 La tabella Mirror Consistency Group visualizza tutti i gruppi di coerenza mirror associati all'array di storage.

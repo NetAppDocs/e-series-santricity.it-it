@@ -32,7 +32,7 @@ In alternativa, è possibile generare un file CSR utilizzando uno strumento come
 
 ====
 .Fasi
-. Selezionare *Certificate Management* (Gestione certificati).
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Management (Gestione), selezionare *complete CSR* (completa CSR).
 . Inserire le seguenti informazioni, quindi fare clic su *Avanti*:
 +
@@ -92,7 +92,7 @@ Dopo aver ricevuto i certificati firmati dall'autorità di certificazione (CA), 
 
 
 .Fasi
-. Selezionare *Certificate Management* (Gestione certificati).
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Management (Gestione), selezionare *Import* (Importa).
 +
 Viene visualizzata una finestra di dialogo per l'importazione dei file dei certificati.

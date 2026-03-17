@@ -32,7 +32,7 @@ Le impostazioni e le funzioni iSCSI vengono visualizzate nella pagina Settings (
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *iSCSI settings* (Impostazioni iSCSI), fare clic su *View/Edit Target Discovery Settings* (Visualizza/Modifica impostazioni rilevamento destinazione).
 +
 Viene visualizzata la finestra di dialogo Target Discovery Settings (Impostazioni rilevamento destinazione). Sotto la voce *Enable iSNS server*... la finestra di dialogo indica se il controller è già registrato.

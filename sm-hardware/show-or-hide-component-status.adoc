@@ -14,7 +14,7 @@ summary: È possibile visualizzare le descrizioni dello stato di dischi, control
 È possibile visualizzare le descrizioni dello stato di dischi, controller, ventole e alimentatori.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Per visualizzare i componenti posteriori o anteriori:
 +
 ** Se si desidera visualizzare i componenti del controller e del filtro dell'alimentazione/ventola, ma le unità sono visualizzate, fare clic sulla scheda *Controller e componenti*.

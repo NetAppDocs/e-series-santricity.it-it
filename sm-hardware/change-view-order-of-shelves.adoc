@@ -14,6 +14,10 @@ summary: 'È possibile modificare l"ordine degli shelf visualizzati nella pagina
 È possibile modificare l'ordine degli shelf visualizzati nella pagina hardware in modo che corrisponda all'ordine fisico degli shelf in un cabinet.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
 . Nella parte superiore destra della vista di uno shelf, selezionare le frecce verso l'alto o verso il basso per riordinare l'ordine degli shelf mostrato nella pagina hardware.
 

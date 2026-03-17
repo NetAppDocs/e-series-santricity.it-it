@@ -18,7 +18,7 @@ summary: 'È possibile disattivare la funzione Synchronous Mirroring su uno stor
 È necessario eliminare tutte le relazioni mirror sincrone. Verificare che tutte le coppie mirrorate siano state eliminate dallo storage array.
 
 .Fasi
-. Selezionare menu:Storage[Synchronous Mirroring].
+. Dal pannello di sinistra, selezionare menu:Storage[Synchronous Mirroring].
 . Selezionare menu:attività non comuni[Disattiva].
 +
 Il sistema visualizza una conferma.

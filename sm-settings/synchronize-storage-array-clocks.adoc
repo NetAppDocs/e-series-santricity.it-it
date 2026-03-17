@@ -28,7 +28,7 @@ Dopo la sincronizzazione, si potrebbe notare che le statistiche delle performanc
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *General*, fare clic su *Synchronize Storage Array Clocks* (Sincronizza blocchi array di storage).
 +
 Viene visualizzata la finestra di dialogo Synchronize Storage Array Blocks (Sincronizza blocchi array di storage) Mostra la data e l'ora correnti dei controller e del computer utilizzato come client di gestione.

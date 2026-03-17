@@ -21,7 +21,7 @@ Se si desidera archiviare i registri di controllo su un server syslog esterno, Ã
 
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Dalla scheda Registro di controllo, selezionare *Configura server Syslog*.
 +
 Viene visualizzata la finestra di dialogo Configura server Syslog.

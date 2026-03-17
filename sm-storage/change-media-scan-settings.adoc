@@ -43,12 +43,12 @@ Le scansioni dei supporti rilevano e riparano gli errori dei supporti sui blocch
 
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare un volume qualsiasi, quindi menu:More[Change media scan settings] (Altro[Modifica impostazioni di scansione dei supporti]).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Fare clic sull'icona menu:ellipsis [Change volume media scan settings].
 +
-Viene visualizzata la finestra di dialogo Change Drive Media Scan Settings (Modifica impostazioni scansione supporti unità). In questa finestra di dialogo vengono visualizzati tutti i volumi dell'array di storage.
+Viene visualizzata la finestra "Modifica impostazioni scansione supporti unità". Tutti i volumi sullo storage array vengono visualizzati in questa finestra di dialogo.
 
-. Per attivare la scansione dei supporti, selezionare la casella di controllo *scansione supporti durante...*.
+. Per abilitare la scansione dei supporti, selezionare la check box *Media scan*.
 +
 La disattivazione della casella di controllo scansione supporti consente di sospendere tutte le impostazioni di scansione dei supporti.
 

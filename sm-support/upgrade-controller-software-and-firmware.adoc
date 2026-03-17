@@ -45,7 +45,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 ====
 .Fasi
 . Se l'array di storage contiene un solo controller o non si dispone di un driver multipath installato, interrompere l'attività i/o dell'array di storage per evitare errori dell'applicazione. Se lo storage array dispone di due controller e si dispone di un driver multipath installato, non è necessario interrompere l'attività di i/O.
-. Selezionare menu:Support[Upgrade Center].
+. Dal pannello di sinistra, selezionare il menu:Support[Upgrade Center].
 . Scaricare il nuovo file dal sito Support sul client di gestione.
 +
 .. Fare clic su *NetApp Support* per avviare il sito Web Support.

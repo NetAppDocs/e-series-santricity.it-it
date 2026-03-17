@@ -35,7 +35,7 @@ Gli avvisi e-mail possono essere configurati anche dalla procedura di installazi
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *Email*.
 +
 Se un server di posta elettronica non è ancora configurato, nella scheda e-mail viene visualizzato il messaggio "Configura server di posta".

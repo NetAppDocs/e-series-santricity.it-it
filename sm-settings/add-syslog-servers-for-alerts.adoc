@@ -20,7 +20,7 @@ summary: È possibile aggiungere un massimo di cinque server per gli avvisi sysl
 
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *Syslog*.
 . Selezionare *Aggiungi server Syslog*.
 +

@@ -22,7 +22,7 @@ Se tutti i dischi condividono gli stessi attributi fisici, il campo di filtro *M
 
 ====
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Nel primo campo del filtro (sotto *Mostra unità...*), fare clic sulla freccia a discesa per visualizzare i tipi di unità disponibili e gli attributi di sicurezza.
 +
 I tipi di dischi possono includere:

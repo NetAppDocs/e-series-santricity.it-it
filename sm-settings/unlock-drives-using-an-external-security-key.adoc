@@ -47,7 +47,7 @@ Una volta reinstallati i dischi abilitati per la protezione in un altro array, q
 Se nel nuovo array di storage sono installate altre unità abilitate alla protezione, potrebbero utilizzare una chiave di sicurezza diversa da quella che si sta importando. Durante il processo di importazione, la vecchia chiave di sicurezza viene utilizzata solo per sbloccare i dati dei dischi che si stanno installando. Quando il processo di sblocco ha esito positivo, i dischi appena installati vengono reinseriti nella chiave di sicurezza dell'array di storage di destinazione.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *Create External Key* (Crea chiave esterna).
 . Completare la procedura guidata con le informazioni di connessione e i certificati richiesti.
 . Fare clic su *Test Communication* (verifica comunicazione) per garantire l'accesso al server di gestione delle chiavi esterno.

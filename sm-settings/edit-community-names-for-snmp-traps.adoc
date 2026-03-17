@@ -18,7 +18,7 @@ summary: È possibile modificare i nomi di comunità per i trap SNMPv2c.
 È necessario creare un nome di comunità.
 
 .Fasi
-. Selezionare menu:impostazione[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Setting[Alerts].
 . Selezionare la scheda *SNMP*.
 +
 Le destinazioni trap e i nomi di comunità vengono visualizzati nella tabella.

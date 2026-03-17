@@ -35,32 +35,10 @@ Se un gruppo di volumi dispone di aree di capacità libera, il grafico del grupp
 Consolidando la capacità libera, è possibile creare volumi aggiuntivi dalla quantità massima di capacità libera in un gruppo di volumi. È possibile consolidare la capacità libera esistente su un gruppo di volumi selezionato utilizzando uno dei seguenti metodi:
 
 * Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "consolidare la capacità libera" viene visualizzato nella home page dell'area di notifica. Fare clic sul collegamento *consolida capacità libera* per avviare la finestra di dialogo.
-* È inoltre possibile selezionare il menu:Pools & Volume Groups[Uncommon Tasks > consolida capacità libera del gruppo di volumi] per avviare la finestra di dialogo.
+* È inoltre possibile accedere al menu:Storage[Pool e gruppi di volumi] dal pannello di sinistra e quindi selezionare il menu:ellipsis icon[Consolidate volume group free capacity] per avviare la finestra di dialogo.
 
 
 Se si desidera utilizzare un'area di capacità libera specifica invece dell'area di capacità libera più grande, utilizzare l'interfaccia a riga di comando (CLI).
-
-
-
-== In che modo il carico di lavoro selezionato influisce sulla creazione di volumi?
-
-Durante la creazione del volume, vengono richieste informazioni sull'utilizzo di un carico di lavoro. Il sistema utilizza queste informazioni per creare una configurazione ottimale del volume, che può essere modificata in base alle esigenze. In alternativa, è possibile saltare questo passaggio nella sequenza di creazione del volume.
-
-Un workload è un oggetto storage che supporta un'applicazione. È possibile definire uno o più carichi di lavoro o istanze per applicazione. Per alcune applicazioni, il sistema configura il carico di lavoro in modo che contenga volumi con caratteristiche di volume sottostanti simili. Queste caratteristiche dei volumi sono ottimizzate in base al tipo di applicazione supportata dal carico di lavoro. Ad esempio, se si crea un carico di lavoro che supporta un'applicazione Microsoft SQL Server e successivamente si creano volumi per tale carico di lavoro, le caratteristiche del volume sottostante sono ottimizzate per supportare Microsoft SQL Server.
-
-* *Specifico dell'applicazione* -- quando si creano volumi utilizzando un carico di lavoro specifico dell'applicazione, il sistema consiglia una configurazione del volume ottimizzata per ridurre al minimo i conflitti tra i/o del carico di lavoro dell'applicazione e altro traffico dall'istanza dell'applicazione. Le caratteristiche del volume come il tipo di i/o, le dimensioni del segmento, la proprietà del controller e la cache di lettura e scrittura sono automaticamente consigliate e ottimizzate per i carichi di lavoro creati per i seguenti tipi di applicazioni.
-+
-** Microsoft® SQL Server™
-** Microsoft® Exchange Server™
-** Applicazioni di videosorveglianza
-** VMware ESXi™ (per volumi da utilizzare con il file system della macchina virtuale)
-+
-È possibile rivedere la configurazione del volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche consigliate dal sistema utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
-
-
-
-* *Altro* (o applicazioni senza supporto specifico per la creazione di volumi) -- Altri carichi di lavoro utilizzano una configurazione del volume che è necessario specificare manualmente quando si desidera creare un carico di lavoro non associato a un'applicazione specifica o se non esiste un'ottimizzazione integrata per l'applicazione che si intende utilizzare sull'array di storage. Specificare manualmente la configurazione del volume utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
-
 
 
 
@@ -81,18 +59,6 @@ Questo carico di lavoro è costituito da un gruppo di volumi creati utilizzando 
 Le caratteristiche del volume del carico di lavoro specifico dell'applicazione determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage e aiutano a determinare le performance dell'ambiente in una determinata configurazione.
 
 Un'applicazione è un software come SQL Server o Exchange. È possibile definire uno o più workload per supportare ciascuna applicazione.
-
-
-
-== In che modo fornire queste informazioni aiuta a creare storage?
-
-Le informazioni sul carico di lavoro vengono utilizzate per ottimizzare le caratteristiche del volume, ad esempio il tipo di i/o, la dimensione del segmento e la cache di lettura/scrittura per il carico di lavoro selezionato. Queste caratteristiche ottimizzate determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage.
-
-In base alle informazioni sul carico di lavoro fornite, System Manager crea i volumi appropriati e li inserisce nei pool o nei gruppi di volumi disponibili attualmente nel sistema. Il sistema crea i volumi e ne ottimizza le caratteristiche in base alle Best practice correnti per il carico di lavoro selezionato.
-
-Prima di completare la creazione dei volumi per un determinato carico di lavoro, è possibile rivedere la configurazione del volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche raccomandati dal sistema utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
-
-Per informazioni sulle Best practice, consultare la documentazione specifica dell'applicazione.
 
 
 

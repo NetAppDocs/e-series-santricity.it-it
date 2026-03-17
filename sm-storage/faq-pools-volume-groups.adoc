@@ -93,11 +93,11 @@ I seguenti esempi descrivono il motivo per cui si desidera configurare manualmen
 È possibile assegnare solo uno o due volumi invece di assegnare il carico di lavoro a un pool di grandi dimensioni con molti volumi attraverso i quali distribuire i dati. La creazione manuale di un pool separato dedicato al carico di lavoro di un'applicazione specifica può consentire alle operazioni degli array di storage di funzionare più rapidamente, con meno conflitti.
 
 +
-Per creare manualmente un pool: Selezionare *Storage*, quindi selezionare *Pools & Volume Groups*. Dalla scheda All Capacity (tutte le capacità), fare clic su menu:Create[Pool] (Crea[Pool]).
+Per creare manualmente un pool: selezionare *Archiviazione*, quindi selezionare *Pool e gruppi di volumi*. Dalla scheda Tutta la capacità, fare clic su menu:Create[Pool].
 
 * Se sono presenti più pool dello stesso tipo di disco, viene visualizzato un messaggio che indica che System Manager non può consigliare automaticamente i dischi per un pool. Tuttavia, è possibile aggiungere manualmente le unità a un pool esistente.
 +
-Per aggiungere manualmente le unità a un pool esistente: Dalla pagina Pools & Volume Groups, selezionare il pool, quindi fare clic su *Add Capacity* (Aggiungi capacità).
+Per aggiungere manualmente unità a un pool esistente: dalla pagina Pools and volume groups, selezionare il pool e quindi fare clic su *Add capacity*.
 
 
 
@@ -122,7 +122,7 @@ Se sono stati creati volumi su tutta la capacità utilizzabile disponibile, potr
 
 La capacità di conservazione è la quantità di capacità (numero di dischi) riservata a un pool per supportare potenziali guasti del disco. Quando viene creato un pool, il sistema riserva automaticamente una quantità predefinita di capacità di conservazione in base al numero di dischi nel pool. Se sono stati creati volumi su tutta la capacità utilizzabile disponibile, non è possibile aumentare la capacità di conservazione senza aggiungere capacità al pool aggiungendo unità o eliminando volumi.
 
-È possibile modificare la capacità di conservazione da *Pools & Volume Groups*. Selezionare il pool che si desidera modificare. Fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni), quindi selezionare la scheda *Settings* (Impostazioni).
+È possibile modificare la capacità di conservazione da *Pools and volume groups*. Selezionare il pool che si desidera modificare. Fare clic sull'icona del menu:ellipsis [Edit Settings] e quindi selezionare la scheda *Settings*.
 
 [NOTE]
 ====
@@ -150,7 +150,7 @@ Sono supportati i seguenti tipi di supporti: Disco rigido (HDD) e disco a stato 
 
 == Perché alcuni dischi non vengono visualizzati?
 
-Nella finestra di dialogo Add Capacity (Aggiungi capacità), non tutti i dischi sono disponibili per l'aggiunta di capacità a un pool o a un gruppo di volumi esistente.
+Nella finestra di dialogo Aggiungi capacità, non tutte le unità sono disponibili per aggiungere capacità a un pool o a un volume group esistente.
 
 I dischi non sono idonei per uno dei seguenti motivi:
 
@@ -315,7 +315,7 @@ Selezionare un livello RAID in base alle seguenti informazioni.
 +
 ** Per RAID 1 sono necessari almeno due dischi: Un disco per i dati dell'utente e un disco per i dati mirrorati.
 ** Se si selezionano quattro o più dischi, RAID 10 viene configurato automaticamente nel gruppo di volumi: Due dischi per i dati dell'utente e due dischi per i dati mirrorati.
-** È necessario disporre di un numero pari di dischi nel gruppo di volumi. Se non si dispone di un numero pari di dischi e si dispone di altri dischi non assegnati, passare a *Pools & Volume Groups* per aggiungere ulteriori dischi al gruppo di volumi e riprovare l'operazione.
+** Il gruppo di volumi deve contenere un numero pari di unità. Se non hai un numero pari di unità e hai alcune unità non assegnate rimanenti, vai su *Pools and volume groups* per aggiungere altre unità al gruppo di volumi e riprova l'operazione.
 ** I gruppi di volumi RAID 1 e RAID 10 possono avere più di 30 dischi. È possibile creare un gruppo di volumi che includa tutte le unità dell'array di storage.
 
 
@@ -463,7 +463,7 @@ Le statistiche dettagliate possono essere visualizzate solo quando si esportano 
 
 === Statistiche nominali
 
-Per visualizzare le statistiche della cache SSD, selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups]). Selezionare la cache SSD per cui si desidera visualizzare le statistiche, quindi selezionare menu:More[View Statistics] (Visualizza statistiche). Le statistiche nominali vengono visualizzate nella finestra di dialogo View SSD cache Statistics (Visualizza statistiche cache SSD).
+Per visualizzare le statistiche della Cache SSD, seleziona menu:Storage[Pools and volume groups] dal pannello di sinistra. Seleziona la Cache SSD per cui desideri visualizzare le statistiche, quindi fai clic sull'icona menu:ellipsis icon[View statistics]. Le statistiche nominali vengono mostrate nella pagina View Statistics.
 
 L'elenco seguente include le statistiche nominali, che sono un sottoinsieme delle statistiche dettagliate.
 
@@ -669,26 +669,20 @@ Il dispositivo di scorrimento Additional Optimization Capacity (capacità di ott
 
 == Quali sono le funzionalità di provisioning delle risorse?
 
-Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.
+Il Resource Provisioning è una funzionalità disponibile negli array di storage EF80, EF50, EF300 e EF600, che consente di mettere in uso i volumi immediatamente senza alcun processo di inizializzazione in background.
 
 Un volume con provisioning di risorse è un volume denso in un gruppo di volumi o pool SSD, in cui la capacità del disco viene allocata (assegnata al volume) quando viene creato il volume, ma i blocchi disco vengono disallocati (non mappati). Per confronto, in un volume thick tradizionale, tutti i blocchi di dischi vengono mappati o allocati durante un'operazione di inizializzazione del volume in background per inizializzare i campi di informazioni di protezione Data Assurance e rendere i dati e la parità RAID coerenti in ogni stripe RAID. Con un volume con provisioning di risorse, non è prevista alcuna inizializzazione in background con time-bound. Al contrario, ogni stripe RAID viene inizializzata alla prima scrittura su un blocco di volume nello stripe.
 
 I volumi con provisioning delle risorse sono supportati solo su gruppi di volumi e pool SSD, in cui tutti i dischi del gruppo o del pool supportano la funzionalità di ripristino degli errori NVMe Deallocated o Unwritten Logical Block Error Enable (DULBE). Quando viene creato un volume con provisioning di risorse, tutti i blocchi di dischi assegnati al volume vengono deallocati (non mappati). Inoltre, gli host possono deallocare i blocchi logici nel volume utilizzando il comando NVMe Dataset Management o il comando SCSI Unmap. La deallocazione dei blocchi può migliorare la durata dell'utilizzo degli SSD e aumentare le massime prestazioni di scrittura. Il miglioramento varia in base al modello e alla capacità di ciascun disco.
-
-
-NOTE: Al momento, DULBE non è supportato dagli storage array EF300C o EF600C.
 
 
 
 == Cosa occorre sapere sulla funzionalità dei volumi con provisioning delle risorse?
 
-Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.
+Il Resource Provisioning è una funzionalità disponibile negli array di storage EF80, EF50, EF300 e EF600, che consente di mettere in uso i volumi immediatamente senza alcun processo di inizializzazione in background.
 
 Un volume con provisioning di risorse è un volume denso in un gruppo di volumi o pool SSD, in cui la capacità del disco viene allocata (assegnata al volume) quando viene creato il volume, ma i blocchi disco vengono disallocati (non mappati). Per confronto, in un volume thick tradizionale, tutti i blocchi di dischi vengono mappati o allocati durante un'operazione di inizializzazione del volume in background per inizializzare i campi di informazioni di protezione Data Assurance e rendere i dati e la parità RAID coerenti in ogni stripe RAID. Con un volume con provisioning di risorse, non è prevista alcuna inizializzazione in background con time-bound. Al contrario, ogni stripe RAID viene inizializzata alla prima scrittura su un blocco di volume nello stripe.
 
 I volumi con provisioning delle risorse sono supportati solo su gruppi di volumi e pool SSD, in cui tutti i dischi del gruppo o del pool supportano la funzionalità di ripristino degli errori NVMe Deallocated o Unwritten Logical Block Error Enable (DULBE). Quando viene creato un volume con provisioning di risorse, tutti i blocchi di dischi assegnati al volume vengono deallocati (non mappati). Inoltre, gli host possono deallocare i blocchi logici nel volume utilizzando il comando NVMe Dataset Management o il comando SCSI Unmap. La deallocazione dei blocchi può migliorare la durata dell'utilizzo degli SSD e aumentare le massime prestazioni di scrittura. Il miglioramento varia in base al modello e alla capacità di ciascun disco.
 
-Il provisioning delle risorse è attivato per impostazione predefinita nei sistemi in cui i dischi supportano DULBE. È possibile disattivare l'impostazione predefinita da *Pools & Volume Groups*.
-
-
-NOTE: Al momento, DULBE non è supportato dagli storage array EF300C o EF600C.
+Il provisioning delle risorse è abilitato per impostazione predefinita sui sistemi in cui le unità supportano DULBE. È possibile disabilitare questa impostazione predefinita da *Pools and volume groups*.

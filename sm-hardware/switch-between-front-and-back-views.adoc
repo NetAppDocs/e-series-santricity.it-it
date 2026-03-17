@@ -17,7 +17,7 @@ La pagina hardware può mostrare la vista frontale o posteriore degli scaffali.
 La vista posteriore mostra i controller/IOM e i contenitori delle ventole di alimentazione. La vista frontale mostra i dischi.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.

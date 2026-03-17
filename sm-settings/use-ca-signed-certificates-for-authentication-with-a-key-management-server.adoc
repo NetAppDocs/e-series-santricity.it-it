@@ -30,7 +30,7 @@ L'autenticazione tra i controller e un server di gestione delle chiavi è una pr
 NOTE: I file CSR generati esternamente tramite coppie di chiavi private e pubbliche possono essere importati tramite la finestra di dialogo Crea chiave di protezione esterna. Per ulteriori informazioni sull'importazione di un file CSR generato esternamente, vedere https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Fase 2: Importazione dei certificati per il server di gestione delle chiavi"].
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Key Management (Gestione chiavi), selezionare *complete CSR* (completa CSR).
 . Inserire le seguenti informazioni:
 +
@@ -72,7 +72,7 @@ Per ulteriori informazioni sul certificato del server, consultare la documentazi
 
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Key Management (Gestione chiavi), selezionare *Import* (Importa).
 +
 Viene visualizzata una finestra di dialogo per l'importazione dei file dei certificati.

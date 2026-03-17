@@ -28,7 +28,7 @@ Prima di importare un certificato sostitutivo, si potrebbe perdere l'accesso a u
 Questa attività descrive come eliminare i certificati installati dall'utente. I certificati autofirmati preinstallati non possono essere cancellati.
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Selezionare la scheda *Trusted*.
 +
 La tabella mostra i certificati attendibili dell'array di storage.

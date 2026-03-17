@@ -19,7 +19,7 @@ Se il controller include una connessione per NVMe su RoCE (RDMA over Converged E
 
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
 +
 Il grafico cambia per mostrare i controller invece dei dischi.

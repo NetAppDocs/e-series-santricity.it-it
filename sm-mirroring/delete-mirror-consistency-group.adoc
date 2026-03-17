@@ -18,7 +18,7 @@ summary: 'È possibile eliminare gruppi di coerenza mirror che non sono più nec
 Tutte le coppie mirrorate devono essere rimosse dal gruppo di coerenza mirror.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups*.
 +
 Viene visualizzata la tabella Mirror Consistency Group (Gruppo di coerenza mirror) che visualizza tutti i gruppi di coerenza mirror associati all'array di storage.

@@ -15,7 +15,7 @@ summary: Modificare le impostazioni di un gruppo di coerenza snapshot quando si 
 Modificare le impostazioni di un gruppo di coerenza snapshot quando si desidera modificarne il nome, le impostazioni di eliminazione automatica o il numero massimo di immagini snapshot consentite.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Fare clic sulla scheda *gruppi di coerenza Snapshot*.
 . Selezionare il gruppo di coerenza snapshot che si desidera modificare, quindi fare clic su *Visualizza/Modifica impostazioni*.
 +

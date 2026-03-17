@@ -22,7 +22,7 @@ Rimuovere una coppia mirrorata per rimuovere la relazione di mirroring dal volum
 
 
 .Fasi
-. Selezionare menu:Storage[Synchronous Mirroring].
+. Dal pannello di sinistra, selezionare menu:Storage[Synchronous Mirroring].
 . Selezionare la coppia mirrorata che si desidera rimuovere, quindi selezionare il menu:operazioni non comuni[Rimuovi].
 +
 Viene visualizzata la finestra di dialogo Rimuovi relazione mirror.

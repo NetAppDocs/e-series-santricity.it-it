@@ -15,10 +15,10 @@ summary: È possibile modificare il nome del cluster host oppure aggiungere o ri
 È possibile modificare il nome del cluster host oppure aggiungere o rimuovere host in un cluster host.
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
-. Selezionare il cluster host che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
+. Seleziona il cluster host che desideri modificare, quindi fai clic sull'icona menu:ellipsis [Edit Settings].
 +
-Viene visualizzata una finestra di dialogo che mostra le impostazioni correnti del cluster host.
+Viene visualizzata una finestra che mostra le impostazioni correnti del cluster host.
 
 . Modificare le impostazioni del cluster host in base alle esigenze.
 +

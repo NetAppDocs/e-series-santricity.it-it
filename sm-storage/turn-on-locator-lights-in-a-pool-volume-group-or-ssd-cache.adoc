@@ -15,8 +15,8 @@ summary: È possibile individuare le unità per identificare fisicamente tutte l
 È possibile individuare le unità per identificare fisicamente tutte le unità che comprendono un pool, un gruppo di volumi o una cache SSD selezionata. Un indicatore LED si accende su ogni disco nel pool, gruppo di volumi o cache SSD selezionato.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare il pool, il gruppo di volumi o la cache SSD che si desidera individuare, quindi fare clic su menu:More[Turn on locator lights] (attiva indicatori di ricerca).
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Seleziona il pool, il gruppo di volumi o la Cache SSD che desideri individuare, quindi fai clic sull'icona menu:ellipsis [Attiva le spie di localizzazione].
 +
 Viene visualizzata una finestra di dialogo che indica che le spie dei dischi che compongono il pool, il gruppo di volumi o la cache SSD selezionati sono accese.
 

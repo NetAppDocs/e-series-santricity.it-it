@@ -23,7 +23,7 @@ Se il gruppo di snapshot su cui risiede l'immagine snapshot presenta una o più 
 
 ====
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Fare clic sulla scheda *Snapshot Images* (immagini istantanee).
 . Selezionare il rollback attivo o in pausa, quindi selezionare menu:rollback[Annulla].
 +

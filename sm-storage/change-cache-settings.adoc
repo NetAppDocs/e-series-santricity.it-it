@@ -25,16 +25,13 @@ Questa azione potrebbe verificarsi quando una nuova batteria è in carica, quand
 
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare un volume qualsiasi, quindi menu:More[Change cache settings] (Altro[Modifica impostazioni cache]).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Fare clic sull'icona del menu:ellipsis [Change volume cache settings].
 +
-Viene visualizzata la finestra di dialogo Change cache Settings (Modifica impostazioni cache). In questa finestra di dialogo vengono visualizzati tutti i volumi dell'array di storage.
+Viene visualizzata la finestra "Modifica impostazioni cache volume". Tutti i volumi sull'array di storage vengono visualizzati in questa finestra di dialogo.
 
-. Selezionare la scheda *Basic* per modificare le impostazioni per il caching in lettura e il caching in scrittura.
+. Seleziona la casella accanto a ciascun volume per cui desideri modificare le impostazioni della cache oppure seleziona la casella nell'intestazione della tabella per selezionare tutti i volumi.
 +
-.Dettagli del campo
-[%collapsible]
-====
 [cols="25h,~"]
 |===
 | Impostazione della cache | Descrizione 
@@ -55,16 +52,6 @@ La cache di scrittura è un buffer che memorizza i dati dell'host che non sono a
 
 NOTE: La cache viene automaticamente scaricata dopo la disattivazione di *Write caching* per un volume.
 
-|===
-====
-. Selezionare la scheda *Advanced* (Avanzate) per modificare le impostazioni avanzate per i volumi spessi. Le impostazioni avanzate della cache sono disponibili solo per i volumi thick.
-+
-.Dettagli del campo
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Impostazione della cache | Descrizione 
 
 
  a| 
@@ -96,6 +83,5 @@ Il caching in scrittura con mirroring si verifica quando i dati scritti nella me
 Questa impostazione è disponibile solo se è stato attivato il caching in scrittura. Questa impostazione non è disponibile per i volumi thin.
 
 |===
-====
-. Fare clic su *Save* (Salva) per modificare le impostazioni della cache.
+. Fai clic su *Salva* per modificare le impostazioni della cache
 

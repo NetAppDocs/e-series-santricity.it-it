@@ -18,7 +18,7 @@ Dopo aver creato o modificato una chiave di sicurezza, è possibile creare una c
 Questa attività descrive come eseguire il backup di una chiave di sicurezza creata in precedenza. Durante questa procedura, viene creata una nuova passphrase per il backup. Questa password non deve corrispondere alla password utilizzata al momento della creazione o dell'ultima modifica della chiave originale. La password viene applicata solo al backup che si sta creando.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *Backup key*.
 +
 Viene visualizzata la finestra di dialogo Back Up Security Key (Esegui backup chiave di protezione).

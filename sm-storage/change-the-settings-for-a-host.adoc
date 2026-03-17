@@ -15,10 +15,10 @@ summary: È possibile modificare il nome, il tipo di sistema operativo host e i 
 È possibile modificare il nome, il tipo di sistema operativo host e i cluster host associati per un host.
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
-. Selezionare l'host che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
+. Seleziona l'host che desideri modificare, quindi fai clic su menu:ellipsis icon[Edit Settings].
 +
-Viene visualizzata una finestra di dialogo che mostra le impostazioni correnti dell'host.
+Viene visualizzata una finestra che mostra le impostazioni host correnti.
 
 . Se non è già selezionata, fare clic sulla scheda *Proprietà*.
 . Modificare le impostazioni in base alle esigenze.

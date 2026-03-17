@@ -332,7 +332,7 @@ Sì
 
 
  a| 
-Espansione della capacità (aggiunta di capacità)
+Espansione della capacità (Aggiunta capacità)
  a| 
 Sì
  a| 

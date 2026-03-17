@@ -18,7 +18,7 @@ summary: È possibile creare un banner di accesso che viene presentato agli uten
 Quando si crea un banner, questo viene visualizzato prima della schermata di accesso in una finestra di dialogo.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . Nella sezione Generale, selezionare *Configura banner di accesso*.
 +
 Viene visualizzata la finestra di dialogo Configura banner di accesso.

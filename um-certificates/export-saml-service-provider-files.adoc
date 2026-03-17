@@ -23,7 +23,7 @@ Se necessario, è possibile esportare i metadati del service provider per l'arra
 In questa attività, si esportano i metadati dal controller. L'IdP ha bisogno di questi metadati per stabilire una relazione di trust con il controller ed elaborare le richieste di autenticazione. Il file include informazioni come il nome di dominio del controller o l'indirizzo IP che IdP può utilizzare per l'invio delle richieste.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *SAML*.
 . Selezionare *Esporta*.
 +

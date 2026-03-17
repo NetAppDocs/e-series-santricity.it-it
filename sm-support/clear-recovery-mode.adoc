@@ -35,7 +35,7 @@ Non è possibile annullare l'operazione Clear Recovery Mode dopo l'avvio. La can
 
 ====
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *Clear Recovery Mode* (Cancella modalità di ripristino) e confermare che si desidera eseguire questa operazione.
 +
 Questa opzione viene visualizzata solo se lo storage array è in modalità di ripristino.

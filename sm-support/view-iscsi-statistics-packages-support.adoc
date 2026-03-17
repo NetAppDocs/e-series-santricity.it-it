@@ -32,7 +32,7 @@ NOTE: I tipi di statistiche visualizzati in System Manager si basano sulle stati
 È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline. Le statistiche raw sono tutte le statistiche raccolte dall'avvio dei controller. Le statistiche di riferimento sono statistiche point-in-time raccolte dall'ora di riferimento impostata.
 
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *View iSCSI Statistics Packages* (Visualizza pacchetti di statistiche iSCSI).
 . Fare clic su una scheda per visualizzare i diversi set di statistiche.
 . Per impostare la linea di base, fare clic su *Set new baseline* (Imposta nuova linea di base).

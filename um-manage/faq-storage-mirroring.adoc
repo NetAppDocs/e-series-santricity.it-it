@@ -39,7 +39,7 @@ Assicurarsi inoltre di soddisfare i seguenti requisiti per gli array di storage:
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
+Il mirroring sincrono non è disponibile sui sistemi storage EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 
@@ -60,7 +60,7 @@ Prima di creare una coppia mirrorata, seguire queste linee guida.
 
 [NOTE]
 ====
-Il mirroring sincrono non è disponibile sul sistema storage EF600/EF600C o EF300/EF300C.
+Il mirroring sincrono non è disponibile sui sistemi storage EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 

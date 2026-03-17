@@ -20,7 +20,7 @@ La sospensione e la ripresa della sincronizzazione sui gruppi contribuisce a rid
 Lo stato del gruppo di coerenza mirror e delle relative coppie mirrorate rimane sospeso fino a quando non si utilizza l'opzione Resume (Riprendi) per riprendere l'attività di sincronizzazione.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups*.
 +
 Viene visualizzata la tabella Mirrored Consistency Group (Gruppo di coerenza mirrorato) che mostra tutti i gruppi di coerenza mirror associati all'array di storage.

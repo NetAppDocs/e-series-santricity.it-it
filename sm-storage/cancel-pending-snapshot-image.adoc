@@ -22,8 +22,8 @@ Un'immagine snapshot si trova in uno stato in sospeso a causa delle seguenti con
 
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Selezionare il gruppo di snapshot per il quale si desidera annullare un'immagine snapshot in sospeso, quindi fare clic su menu:attività non comuni[Annulla immagine snapshot in sospeso].
+. Seleziona il gruppo di snapshot per cui desideri annullare un'immagine snapshot in sospeso, quindi fai clic sull'icona menu:ellipsis icon[Cancel pending snapshot image].
 . Fare clic su *Sì* per confermare che si desidera annullare l'immagine istantanea in sospeso.
 

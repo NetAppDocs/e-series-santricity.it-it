@@ -26,7 +26,7 @@ La funzione di cancellazione non supporta alcuni modelli di dischi meno recenti.
 
 ====
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
@@ -42,12 +42,12 @@ La vista shelf mostra solo i dischi non assegnati; tutti gli altri sono disattiv
 *Possibile perdita di dati* -- l'operazione di cancellazione non può essere annullata. Assicurarsi di selezionare le unità corrette durante la procedura.
 
 ====
-. Dal menu di scelta rapida, selezionare *Erase* (Cancella).
+. Dal menu contestuale, seleziona *Cancella unità*.
 +
 Viene visualizzata la finestra di dialogo Erase Drives (Cancella unità), che mostra tutte le unità idonee per un'operazione di cancellazione.
 
 . Se lo si desidera, selezionare altri dischi dalla tabella. Non è possibile selezionare _tutti_ dischi; assicurarsi che un disco rimanga deselezionato.
-. Confermare l'operazione digitando `erase`, Quindi fare clic su *Erase* (Cancella).
+. Conferma l'operazione digitando `erase`, quindi fai clic su *Cancella unità*.
 +
 [CAUTION]
 ====
@@ -58,7 +58,7 @@ Continuare con questa operazione. Una volta fatto clic su Yes (Sì) nella finest
 
 
 .Risultati
-L'operazione di cancellazione potrebbe richiedere alcuni minuti o diverse ore. È possibile visualizzare lo stato nel menu:Home[Visualizza operazioni in corso]. Al termine dell'operazione di cancellazione, i dischi sono disponibili per l'utilizzo in un altro gruppo di volumi o pool di dischi o in un altro array di storage.
+L'operazione di cancellazione potrebbe richiedere da diversi minuti a diverse ore. Puoi visualizzare lo stato in menu:Storage[Operazioni in corso]. Quando l'operazione di cancellazione è completata, le unità sono disponibili per l'uso in un altro gruppo di volumi o pool di dischi, oppure in un altro storage array.
 
 .Al termine
 Se si desidera utilizzare nuovamente il disco, è necessario inizializzarlo. A tale scopo, selezionare *Inizializza* dal menu di scelta rapida del disco.

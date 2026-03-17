@@ -24,7 +24,7 @@ System Manager mostra questi tipi di statistiche NVMe over Fabrics. Tutte le sta
 È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline. Le statistiche raw sono tutte le statistiche raccolte dall'avvio dei controller. Le statistiche di riferimento sono statistiche point-in-time raccolte dall'ora di riferimento impostata.
 
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *View NVMe over Fabrics Statistics* (Visualizza statistiche NVMe over Fabrics).
 . Per impostare la linea di base, fare clic su *Set new baseline* (Imposta nuova linea di base).
 +

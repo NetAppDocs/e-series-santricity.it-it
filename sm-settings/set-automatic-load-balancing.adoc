@@ -28,7 +28,7 @@ Quando il bilanciamento automatico del carico è attivato, esegue le seguenti fu
 
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . Scorrere verso il basso fino a *Additional Settings* (Impostazioni aggiuntive), quindi fare clic su *Enable/Disable Automatic Load Balancing* (attiva/Disattiva bilanciamento automatico del carico).
 +
 Il testo sotto questa opzione indica se la funzione è attualmente attivata o disattivata.

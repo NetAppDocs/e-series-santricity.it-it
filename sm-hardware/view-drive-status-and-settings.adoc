@@ -14,7 +14,7 @@ summary: È possibile visualizzare lo stato e le impostazioni delle unità, ad e
 È possibile visualizzare lo stato e le impostazioni delle unità, ad esempio il tipo di supporto, il tipo di interfaccia e la capacità.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.
@@ -215,7 +215,7 @@ Indica se la funzione Data Assurance (da) è attivata (Sì) o meno (No). Data As
  a| 
 Compatibile con DULBE
  a| 
-Indica se l'opzione Deallocated o Unwritten Logical Block Error (DULBE) è attivata (Sì) o meno (No). DULBE è un'opzione sui dischi NVMe che consente allo storage array EF300 o EF600 di supportare volumi con provisioning di risorse.
+Indica se l'opzione per Deallocated or Unwritten Logical Block Error (DULBE) è abilitata (Sì) o no (No). DULBE è un'opzione sulle unità NVMe che consente all'array di storage EF80, EF50, EF300 o EF600 di supportare volumi con provisioning delle risorse.
 
 |===
 ====

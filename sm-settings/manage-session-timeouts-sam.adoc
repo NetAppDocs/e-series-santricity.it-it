@@ -23,7 +23,7 @@ Se Access Management viene configurato utilizzando le funzionalità SAML (Securi
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . Nella sezione General (Generale), selezionare *Enable/Disable Session Timeout* (attiva/Disattiva timeout sessione).
 +
 Viene visualizzata la finestra di dialogo attiva/Disattiva timeout sessione.

@@ -15,7 +15,7 @@ summary: È possibile visualizzare il registro eventi, che fornisce un record st
 È possibile visualizzare il registro eventi, che fornisce un record storico degli eventi che si sono verificati sullo storage array.
 
 .Fasi
-. Selezionare menu:Support[Event Log] (supporto[Registro eventi]).
+. Dal pannello di sinistra, selezionare menu:Support[Event Log].
 +
 Viene visualizzata la pagina Registro eventi.
 

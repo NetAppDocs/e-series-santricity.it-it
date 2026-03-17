@@ -37,7 +37,7 @@ In alternativa, è possibile generare un file CSR utilizzando uno strumento come
 
 ====
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Array Management (Gestione array), selezionare *complete CSR* (completa CSR).
 +
 [NOTE]
@@ -114,7 +114,7 @@ Una volta ricevuti i certificati firmati dall'autorità di certificazione (CA), 
 
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati]
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates]
 . Dalla scheda Array Management (Gestione array), selezionare *Import* (Importa).
 +
 Viene visualizzata una finestra di dialogo per l'importazione dei file di certificato.

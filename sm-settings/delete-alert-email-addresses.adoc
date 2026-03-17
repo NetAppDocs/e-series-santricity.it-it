@@ -15,7 +15,7 @@ summary: È possibile rimuovere il server di posta precedentemente definito in m
 È possibile rimuovere il server di posta precedentemente definito in modo che gli avvisi non vengano più inviati agli indirizzi di posta elettronica oppure rimuovere singoli indirizzi di posta elettronica.
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *Email*.
 . Dalla tabella, eseguire una delle seguenti operazioni:
 +

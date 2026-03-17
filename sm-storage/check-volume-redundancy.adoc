@@ -41,8 +41,11 @@ L'esecuzione immediata di un controllo di ridondanza sullo stesso pool o gruppo 
 
 ====
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare menu:operazioni non comuni[controllare la ridondanza del volume].
+
+NOTE: La funzione Check Volume Redundancy è attualmente disponibile solo per le operazioni nell'interfaccia Legacy System Manager.
+
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Fai clic sull'icona menu:ellipsis [Check volume redundancy] per il pool o volume group che desideri controllare.
 +
 Viene visualizzata la finestra di dialogo Check Redundancy (verifica ridondanza).
 

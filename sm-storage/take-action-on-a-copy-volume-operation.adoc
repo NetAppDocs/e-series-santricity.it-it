@@ -15,7 +15,7 @@ summary: 'È possibile visualizzare un"operazione Copy Volume (Copia volume) in 
 È possibile visualizzare un'operazione Copy Volume (Copia volume) in corso e interrompere, modificare la priorità, eseguire nuovamente la copia o annullare un'operazione Copy Volume (Copia volume).
 
 .Fasi
-. Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso).
+. Dal pannello di sinistra, selezionare menu:Storage[Operations in Progress].
 +
 Viene visualizzata la finestra di dialogo Operations in Progress (operazioni in corso).
 

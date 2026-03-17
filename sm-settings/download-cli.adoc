@@ -20,7 +20,7 @@ La CLI fornisce un metodo basato su testo per la configurazione e il monitoraggi
 Sul sistema di gestione in cui si intende eseguire i comandi CLI deve essere disponibile Java Runtime Environment (JRE), versione 8 e successive.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *componenti aggiuntivi*, selezionare *interfaccia riga di comando*.
 +
 Il pacchetto ZIP viene scaricato nel browser.

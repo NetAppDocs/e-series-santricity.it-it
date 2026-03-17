@@ -20,7 +20,7 @@ Questo sito descrive come utilizzare le seguenti interfacce di gestione SANtrici
 
 
 
-NOTE: Gli array di storage EF600/EF600C e EF300/EF300C non supportano il mirroring sincrono o i volumi thin.
+NOTE: Gli array di storage EF80, EF50, EF600/EF600C e EF300/EF300C non supportano il mirroring sincrono o i volumi thin.
 
 
 
@@ -92,7 +92,7 @@ Visualizza i dati diagnostici, gestisci gli aggiornamenti e configura AutoSuppor
 
 == Gestore unificato SANtricity
 
-Unified Manager è un software basato sul web utilizzato per gestire l'intero dominio. Da una vista centrale, è possibile visualizzare lo stato di tutti gli array e-Series ed EF-Series più recenti, come E4000, E2800, EF280, EF300, E5700, EF570, EF600, EF300C e EF600C. È inoltre possibile eseguire operazioni batch su array di storage selezionati.
+Unified Manager è un software basato sul web utilizzato per gestire l'intero dominio. Da una vista centrale, puoi vedere lo stato di tutti i più recenti array E-Series ed EF-Series, come EF80, EF50, E4000, E2800, EF280, EF300, E5700, EF570, EF600, EF300C ed EF600C. Puoi anche eseguire operazioni batch sugli array di storage selezionati.
 
 Unified Manager viene installato su un server di gestione insieme al proxy dei servizi Web. Per accedere a Unified Manager, aprire un browser e immettere l'URL che punta al server in cui è installato il proxy dei servizi Web.
 

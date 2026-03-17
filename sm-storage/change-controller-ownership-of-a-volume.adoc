@@ -21,10 +21,10 @@ Se non si utilizza un driver multipath, tutte le applicazioni host che attualmen
 È possibile modificare la proprietà del controller per uno o più volumi in un pool o un gruppo di volumi.
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare un volume qualsiasi, quindi menu:More[Change ownership] (Altro[Modifica proprietà]).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Fai clic sull'icona menu:ellipsis [Change volume ownership].
 +
-Viene visualizzata la finestra di dialogo Change Volume Ownership (Modifica proprietà volume). In questa finestra di dialogo vengono visualizzati tutti i volumi dell'array di storage.
+Viene visualizzata la finestra Cambia proprietario del volume. Tutti i volumi presenti sul sistema storage vengono visualizzati in questa finestra di dialogo.
 
 . Utilizzare l'elenco a discesa *Preferred Owner* (Proprietario preferito) per modificare il controller preferito per ciascun volume che si desidera modificare e confermare che si desidera eseguire l'operazione.
 

@@ -28,7 +28,7 @@ Se si desidera disattivare una funzione Premium, è necessario utilizzare il com
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *componenti aggiuntivi*, selezionare *attiva funzionalità Premium*.
 +
 Viene visualizzata la finestra di dialogo Enable a Premium Feature (attiva una funzione Premium).

@@ -23,7 +23,7 @@ summary: È possibile aggiornare il firmware dei dischi per assicurarsi di dispo
 
 
 .Fasi
-. Selezionare menu:Support[Upgrade Center].
+. Dal pannello di sinistra, selezionare il menu:Support[Upgrade Center].
 . Scaricare i nuovi file dal sito Support sul client di gestione.
 . In aggiornamento del firmware del disco, fare clic su *Avvia aggiornamento*.
 +

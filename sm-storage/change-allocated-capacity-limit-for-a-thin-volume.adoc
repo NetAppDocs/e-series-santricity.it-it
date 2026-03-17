@@ -18,7 +18,7 @@ Per i thin volumi in grado di allocare lo spazio on-demand, è possibile modific
 
 [NOTE]
 ====
-Questa funzione non è disponibile nei sistemi di storage EF600/EF600C o EF300/EF300C.
+Questa funzione non è disponibile sui sistemi storage EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 Il sistema espande automaticamente la capacità allocata in base al limite di capacità allocata. Il limite di capacità allocata consente di limitare la crescita automatica del thin volume al di sotto della capacità riportata. Quando la quantità di dati scritti si avvicina alla capacità allocata, è possibile modificare il limite di capacità allocata.
@@ -26,7 +26,7 @@ Il sistema espande automaticamente la capacità allocata in base al limite di ca
 Quando si modifica il limite di capacità allocata e la soglia di avviso di un volume sottile, è necessario tenere conto dello spazio che deve essere consumato dai dati utente e dai dati dei servizi di copia del volume.
 
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
 . Selezionare la scheda *Thin Volume Monitoring*.
 +
 Viene visualizzata la vista Thin Volume Monitoring (monitoraggio volume sottile).

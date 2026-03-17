@@ -43,10 +43,10 @@ Un'operazione Copy Volume sovrascrive i dati sul volume di destinazione e non ri
 
 ====
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare il volume che si desidera utilizzare come origine per l'operazione Copy Volume (Copia volume), quindi selezionare menu:Copy Services[Copy volume] (Copia volume).
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Seleziona il volume che desideri utilizzare come origine per l'operazione Copy Volume, quindi fai clic sull'icona menu:ellipsis icon[Copy volume].
 +
-Viene visualizzata la finestra di dialogo Copy Volume-Select Target (Copia destinazione selezione volume).
+Viene visualizzata la finestra Copy Volume.
 
 . Selezionare il volume di destinazione in cui si desidera copiare i dati.
 +
@@ -97,4 +97,4 @@ Allocare la capacità riservata utilizzando le seguenti linee guida:
 System Manager copia tutti i dati dal volume di origine al volume di destinazione. Al termine dell'operazione Copy Volume (Copia volume), il volume di destinazione diventa automaticamente di sola lettura per gli host.
 
 .Al termine
-Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione Copy Volume (Copia volume). Questa operazione può essere lunga e può influire sulle prestazioni del sistema.
+Selezionare menu:Storage[Operations in Progress] per visualizzare l'avanzamento dell'operazione Copy Volume. Questa operazione può essere lunga e potrebbe influire sulle prestazioni del sistema.

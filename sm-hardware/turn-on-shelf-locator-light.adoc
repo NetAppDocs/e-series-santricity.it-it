@@ -14,7 +14,11 @@ summary: Per individuare la posizione fisica di uno shelf mostrato nella pagina 
 Per individuare la posizione fisica di uno shelf mostrato nella pagina hardware, è possibile accendere la luce di localizzazione dello shelf.
 
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
+. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
 . Selezionare l'elenco a discesa per lo shelf del controller o lo shelf dell'unità, quindi selezionare *accendere la luce di localizzazione*.
 +
 La spia di posizionamento dello scaffale si accende.

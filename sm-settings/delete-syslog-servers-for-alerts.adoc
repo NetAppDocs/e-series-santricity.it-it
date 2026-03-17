@@ -15,7 +15,7 @@ summary: È possibile eliminare un server syslog in modo che non riceva più avv
 È possibile eliminare un server syslog in modo che non riceva più avvisi.
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *Syslog*.
 . Selezionare un indirizzo del server syslog, quindi fare clic su *Remove* (Rimuovi) dall'alto a destra.
 +

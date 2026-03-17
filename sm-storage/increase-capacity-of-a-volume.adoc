@@ -33,25 +33,25 @@ L'aumento della capacità di un volume è supportato solo su alcuni sistemi oper
 
 ====
 .Fasi
-. Selezionare menu:Storage[Volumes] (Storage[volumi]).
-. Selezionare il volume per il quale si desidera aumentare la capacità, quindi selezionare *aumenta capacità*.
+. Dal pannello di sinistra, selezionare il menu:Storage[Volumes].
+. Seleziona il volume per cui desideri aumentare la capacità, quindi fai clic sull'icona menu:ellipsis icon[Increase Capacity].
 +
-Viene visualizzata la finestra di dialogo Conferma aumento capacità.
+Viene visualizzata la pagina Confirm Increase Capacity.
 
 . Selezionare *Sì* per continuare.
 +
-Viene visualizzata la finestra di dialogo aumenta capacità riportata.
+Viene visualizzata la pagina Increase Reported Capacity.
 
 +
-Questa finestra di dialogo visualizza la capacità corrente del volume riportata e la capacità libera disponibile nel gruppo di volumi o pool associato al volume.
+Questa pagina visualizza la capacità attualmente registrata del volume e la capacità libera disponibile nel pool o gruppo di volumi associato al volume.
 
-. Utilizzare la casella *aumenta capacità segnalata aggiungendo...* per aggiungere capacità alla capacità corrente disponibile indicata. È possibile modificare il valore della capacità in modo che venga visualizzato in megibyte (MiB), gibibyte (GiB) o tebibyte (TIB).
+. Utilizza la casella *Aumenta la capacità segnalata aggiungendo...* per aggiungere capacità alla capacità segnalata attualmente disponibile. Puoi modificare il valore della capacità da visualizzare in mebibyte (MiB), gibibyte (GiB) o tebibyte (TiB).
 . Fare clic su *aumenta*.
 
 
 .Risultati
 * System Manager aumenta la capacità del volume in base alla selezione effettuata.
-* Selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione di aumento della capacità attualmente in esecuzione per il volume selezionato. Questa operazione può essere lunga e può influire sulle prestazioni del sistema.
+* Selezionare menu:Storage[Operations in Progress] per visualizzare lo stato di avanzamento dell'operazione di aumento della capacità attualmente in esecuzione per il volume selezionato. Questa operazione può richiedere molto tempo e potrebbe influire sulle prestazioni del sistema.
 
 
 .Al termine

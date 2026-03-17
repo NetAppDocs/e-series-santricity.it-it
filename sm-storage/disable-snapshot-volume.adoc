@@ -30,7 +30,7 @@ Se il volume snapshot o il volume snapshot del gruppo di coerenza snapshot fa pa
 
 ====
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Selezionare la scheda *Snapshot Volumes* (volumi snapshot).
 +
 System Manager visualizza tutti i volumi di snapshot associati all'array di storage.

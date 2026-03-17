@@ -25,12 +25,12 @@ summary: 'È possibile eliminare un pool o un gruppo di volumi per creare una ma
 
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Selezionare un pool o un gruppo di volumi dall'elenco.
 +
 È possibile selezionare un solo pool o gruppo di volumi alla volta. Scorrere l'elenco per visualizzare altri pool o gruppi di volumi.
 
-. Selezionare menu:attività non comuni[Elimina] e confermare.
+. Seleziona menu:icona ellissi [Delete] e conferma.
 
 
 .Risultati

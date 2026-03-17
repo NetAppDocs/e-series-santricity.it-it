@@ -23,7 +23,7 @@ summary: È possibile disattivare il mirroring asincrono sugli array di storage 
 Quando si disattiva il mirroring asincrono, non può verificarsi alcuna attività di mirroring sugli array di storage locali e remoti.
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare menu:attività non comuni[Disattiva].
 +
 Il sistema visualizza una conferma.

@@ -43,8 +43,8 @@ Durante questa attività vengono visualizzati tutti i volumi non assegnati, ma l
 
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
-. Selezionare l'host o il cluster host a cui si desidera assegnare i volumi, quindi fare clic su *Assign Volumes* (Assegna volumi).
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
+. Seleziona l'host o host cluster a cui desideri assegnare i volumi, quindi fai clic sull'icona menu:ellipsis icon[Assign Volumes].
 +
 Viene visualizzata una finestra di dialogo che elenca tutti i volumi che è possibile assegnare. È possibile ordinare qualsiasi colonna o digitare qualcosa nella casella *Filter* per semplificare la ricerca di volumi specifici.
 

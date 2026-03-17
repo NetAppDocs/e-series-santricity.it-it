@@ -18,11 +18,11 @@ summary: È possibile modificare le impostazioni di un volume membro del gruppo 
 La modifica delle impostazioni di capacità riservata per un singolo volume membro modifica anche le impostazioni di capacità riservata per tutti i volumi membri associati a un gruppo di coerenza.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Selezionare il volume membro del gruppo di coerenza che si desidera modificare, quindi fare clic su *Visualizza/Modifica impostazioni*.
+. Seleziona il volume del membro del gruppo di coerenza che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
 +
-Viene visualizzata la finestra di dialogo Member Volume Reserved Capacity Settings (Impostazioni capacità riservata volume membro).
+Viene visualizzata la finestra Modifica volume membro del gruppo di coerenza.
 
 . Modificare le impostazioni di capacità riservata per il volume membro in base alle esigenze.
 +
@@ -35,9 +35,9 @@ Viene visualizzata la finestra di dialogo Member Volume Reserved Capacity Settin
 
 
  a| 
-Avvisami quando...
+Soglia di allarme capacità riservata piena
  a| 
-Utilizzare la casella di selezione per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per un volume membro è quasi piena.
+Utilizzare la barra per regolare il punto percentuale in cui System Manager invia una notifica di avviso quando la capacità riservata per un volume membro sta per esaurirsi.
 
 Quando la capacità riservata per il volume membro supera la soglia specificata, System Manager invia un avviso, consentendo di aumentare la capacità riservata o di eliminare oggetti non necessari.
 

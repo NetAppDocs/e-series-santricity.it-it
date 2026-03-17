@@ -18,7 +18,7 @@ summary: 'È possibile creare token di accesso, che vengono utilizzati per l"aut
 NOTE: I token non dispongono di password, pertanto è necessario gestirle con attenzione.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *Access Token*.
 . Selezionare *View/Edit Access Token Settings* (Visualizza/Modifica impostazioni token di accesso). Nella finestra di dialogo, assicurarsi che la casella di controllo *Enable access token* (attiva token di accesso) sia selezionata. Fare clic su *Save* (Salva) per chiudere la finestra di dialogo.
 . Selezionare *Create Access Token* (Crea token di accesso).

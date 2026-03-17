@@ -31,7 +31,7 @@ Selezionare i membri per specificare una raccolta di volumi che comprendono il g
 I volumi dei membri devono essere ottimali.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Fare clic sulla scheda *gruppi di coerenza Snapshot*.
 . Selezionare il menu:Create[Snapshot Consistency group] (Crea[Gruppo di coerenza snapshot]
 +

@@ -24,7 +24,7 @@ summary: È possibile aggiungere un nuovo volume membro a un gruppo di coerenza 
 È possibile aggiungere volumi standard o thin al gruppo di coerenza snapshot. Il volume di base può risiedere in un pool o in un gruppo di volumi.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Selezionare la scheda *Snapshot Consistency Groups* (gruppi di coerenza snapshot).
 +
 Viene visualizzata la tabella che mostra tutti i gruppi di coerenza snapshot associati all'array di storage.

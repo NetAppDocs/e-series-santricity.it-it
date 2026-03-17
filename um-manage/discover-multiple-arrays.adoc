@@ -17,7 +17,7 @@ Vengono rilevati più array per rilevare tutti gli array di storage nella subnet
 .Prima di iniziare
 * È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore della sicurezza.
 * Lo storage array deve essere configurato e configurato correttamente.
-* Le password degli array di storage devono essere impostate utilizzando il riquadro Access Management di System Manager.
+* Le password per gli array di storage devono essere configurate tramite la pagina Gestione accessi di System Manager.
 * Per risolvere i certificati non attendibili, è necessario disporre di file di certificati attendibili provenienti da un'autorità di certificazione (CA) e che i file di certificati siano disponibili nel sistema locale.
 
 

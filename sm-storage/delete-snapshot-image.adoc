@@ -20,7 +20,7 @@ Le immagini snapshot vengono eliminate per eliminare l'immagine snapshot meno re
 Non è possibile eliminare un'immagine snapshot se non si tratta dell'immagine snapshot meno recente per il volume di base o il gruppo di coerenza snapshot associato.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Fare clic sulla scheda *Snapshot Images* (immagini istantanee).
 . Selezionare l'immagine istantanea che si desidera eliminare e confermare che si desidera eseguire l'operazione.
 +

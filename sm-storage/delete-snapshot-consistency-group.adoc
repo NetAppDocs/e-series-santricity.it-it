@@ -21,7 +21,7 @@ Verificare che le immagini per tutti i volumi membri non siano più necessarie p
 Questa operazione elimina tutte le immagini snapshot o i programmi associati al gruppo di coerenza snapshot.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Selezionare la scheda *Snapshot Consistency Groups* (gruppi di coerenza snapshot).
 . Selezionare il gruppo di coerenza snapshot che si desidera eliminare, quindi selezionare menu:attività non comuni[Elimina].
 +

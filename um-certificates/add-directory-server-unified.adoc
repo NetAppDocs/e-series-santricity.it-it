@@ -24,7 +24,7 @@ Per configurare l'autenticazione per la gestione degli accessi, è necessario st
 L'aggiunta di un server di directory è un processo in due fasi. Immettere innanzitutto il nome di dominio e l'URL. Se il server utilizza un protocollo sicuro, è necessario caricare anche un certificato CA per l'autenticazione se è firmato da un'autorità di firma non standard. Se si dispone delle credenziali per un account BIND, è anche possibile immettere il nome e la password dell'account utente. Quindi, mappare i gruppi di utenti del server LDAP ai ruoli utente locali.
 
 .Fasi
-. Selezionare *Access Management*.
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Dalla scheda *Directory Services*, selezionare *Add Directory Server* (Aggiungi server di directory).
 +
 Viene visualizzata la finestra di dialogo Add Directory Server (Aggiungi server di directory).

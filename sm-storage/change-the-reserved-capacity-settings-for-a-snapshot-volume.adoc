@@ -15,11 +15,11 @@ summary: È possibile modificare le impostazioni di un volume di snapshot per re
 È possibile modificare le impostazioni di un volume di snapshot per regolare il punto percentuale in cui il sistema invia una notifica di avviso quando la capacità riservata di un volume di snapshot è quasi piena.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Selezionare il volume di snapshot che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
+. Seleziona il volume Snapshot che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
 +
-Viene visualizzata la finestra di dialogo Snapshot Volume Reserved Capacity Settings (Impostazioni capacità riservata volume snapshot).
+Viene visualizzata la finestra Modifica impostazioni capacità riservata volume Snapshot.
 
 . Modificare le impostazioni di capacità riservata per il volume di snapshot in base alle esigenze.
 +

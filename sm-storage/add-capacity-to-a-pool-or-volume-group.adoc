@@ -23,8 +23,8 @@ L'espansione consente di includere ulteriore capacità libera nel pool o nel gru
 * Il numero massimo di volumi consentito in un gruppo di volumi è 256.
 * Il numero massimo di volumi consentiti in un pool dipende dal modello di sistema di storage:
 +
-** 2,048 volumi (serie EF600 ed E5700)
-** 1,024 volumi (EF300)
+** 2,048 volumi (EF80, EF600 e E5700 series)
+** 1,024 volumi (EF50 e EF300)
 ** 512 volumi (serie E4000 ed E2800)
 
 
@@ -44,16 +44,16 @@ Con l'aggiunta di dischi, potrebbe essere necessario aumentare la capacità di c
 ====
 [NOTE]
 ====
-Evitare di utilizzare dischi che siano in grado di aggiungere capacità a un pool o a un gruppo di volumi che non sono in grado di supportare da. Il pool o il gruppo di volumi non può sfruttare le funzionalità del disco da-capable. Prendere in considerazione l'utilizzo di dischi che non sono in grado di supportare da in questa situazione.
+Evitate di utilizzare unità compatibili con Data Assurance (DA) per aggiungere capacità a un pool o a un gruppo di volumi non compatibile con DA. Il pool o il gruppo di volumi non può sfruttare le funzionalità dell'unità compatibile con DA. Considerate l'utilizzo di unità non compatibili con DA in questa situazione.
 
 ====
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
-. Selezionare il pool o il gruppo di volumi a cui si desidera aggiungere le unità, quindi fare clic su *Add Capacity* (Aggiungi capacità).
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
+. Seleziona il pool o il gruppo di volumi a cui desideri aggiungere unità, quindi fai clic sull'icona menu:ellipsis icon[Aggiungi capacità].
 +
-Viene visualizzata la finestra di dialogo Add Capacity (Aggiungi capacità). Vengono visualizzate solo le unità non assegnate compatibili con il pool o il gruppo di volumi.
+Viene visualizzata la finestra di dialogo Aggiungi capacità. Vengono visualizzate solo le unità non assegnate compatibili con il pool o il gruppo di volumi.
 
-. In *Select drives to add Capacity...* (Seleziona dischi per aggiungere capacità), selezionare una o più unità che si desidera aggiungere al pool o al gruppo di volumi esistente.
+. In *Select drives to Add capacity...*, seleziona una o più unità che desideri aggiungere al pool o al gruppo di volumi esistente.
 +
 Il firmware del controller dispone le unità non assegnate con le opzioni migliori elencate in alto. La capacità libera totale aggiunta al pool o al gruppo di volumi viene visualizzata sotto l'elenco in *capacità totale selezionata*.
 
@@ -111,8 +111,8 @@ Compatibile CON DA
  a| 
 Indica se il disco è compatibile con Data Assurance (da).
 
-** Si sconsiglia l'utilizzo di dischi che non sono in grado di aggiungere capacità a un pool o a un gruppo di volumi con funzionalità da. Il pool o il gruppo di volumi non dispone più delle funzionalità da e non è più possibile attivare il da sui volumi appena creati all'interno del pool o del gruppo di volumi.
-** Si sconsiglia l'utilizzo di dischi in grado di aggiungere capacità a un pool o a un gruppo di volumi non compatibili con da, in quanto tale pool o gruppo di volumi non può sfruttare le funzionalità del disco compatibile con da (gli attributi del disco non corrispondono). Considerare l'utilizzo di dischi non compatibili con da in questa situazione.
+** Si sconsiglia di utilizzare unità non compatibili con Data Assurance (DA) per aggiungere capacità a un pool o a un gruppo di volumi compatibile con DA. Il pool o il gruppo di volumi non avrà più funzionalità DA e non sarà più possibile abilitare DA sui volumi appena creati all'interno del pool o del gruppo di volumi.
+** L'utilizzo di unità che sono Data Assurance (DA) capable per aggiungere capacità a un pool o a un gruppo di volumi che non è DA-capable non è raccomandato, perché quel pool o gruppo di volumi non può sfruttare le capacità dell'unità DA-capable (gli attributi dell'unità non corrispondono). Considera di utilizzare unità che non sono DA-capable in questa situazione.
 
 
 
@@ -120,7 +120,7 @@ Indica se il disco è compatibile con Data Assurance (da).
  a| 
 Compatibile con DULBE
  a| 
-Indica se il disco dispone dell'opzione Deallocated (disallocato) o Unwritten Logical Block Error (DULBE). DULBE è un'opzione sui dischi NVMe che consente allo storage array EF300 o EF600 di supportare volumi con provisioning di risorse.
+Indica se l'unità dispone dell'opzione per Deallocated or Unwritten Logical Block Error (DULBE). DULBE è un'opzione presente sulle unità NVMe che consente all'array di storage EF80, EF50, EF300 o EF600 di supportare volumi resource-provisioned.
 
 |===
 ====

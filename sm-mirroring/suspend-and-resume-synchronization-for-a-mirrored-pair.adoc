@@ -18,7 +18,7 @@ summary: 'È possibile utilizzare l"opzione Sospendi e l"opzione Riprendi per co
 Se una coppia mirrorata viene sospesa manualmente, la coppia mirrorata non viene sincronizzata fino a quando non viene ripresa manualmente.
 
 .Fasi
-. Selezionare menu:Storage[Synchronous Mirroring].
+. Dal pannello di sinistra, selezionare menu:Storage[Synchronous Mirroring].
 . Selezionare la coppia mirrorata che si desidera sospendere o riprendere, quindi selezionare menu:More[Suspend] (Altro[sospensione]) o menu:More[Resume] (Altro[Riprendi]).
 +
 Il sistema visualizza una conferma.

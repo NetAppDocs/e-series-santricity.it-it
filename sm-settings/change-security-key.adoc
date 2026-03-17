@@ -15,7 +15,7 @@ summary: 'In qualsiasi momento, è possibile sostituire una chiave di sicurezza 
 In qualsiasi momento, è possibile sostituire una chiave di sicurezza con una nuova. Potrebbe essere necessario modificare una chiave di sicurezza nei casi in cui si verifica una potenziale violazione della sicurezza presso l'azienda e si desidera assicurarsi che il personale non autorizzato non possa accedere ai dati dei dischi.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *Change Key* (Cambia chiave).
 +
 Viene visualizzata la finestra di dialogo Change Security Key (Modifica chiave di protezione).

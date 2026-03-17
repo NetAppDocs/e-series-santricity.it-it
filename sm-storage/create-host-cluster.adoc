@@ -29,7 +29,7 @@ Se una delle connessioni host sui controller dello storage array non supporta il
 
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
 . Selezionare menu:Create[host Cluster] (Crea[cluster host]).
 +
 Viene visualizzata la finestra di dialogo Create host Cluster (Crea cluster host).

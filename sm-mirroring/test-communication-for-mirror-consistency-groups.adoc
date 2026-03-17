@@ -27,7 +27,7 @@ Il gruppo di coerenza mirror che si desidera testare deve esistere sugli array d
 
 
 .Fasi
-. Selezionare menu:Storage[Mirroring asincrono].
+. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
 . Selezionare la scheda *Mirror Consistency Groups* (gruppi di coerenza mirror), quindi selezionare il gruppo di coerenza mirror che si desidera sottoporre a test.
 . Selezionare *Test di comunicazione*.
 +

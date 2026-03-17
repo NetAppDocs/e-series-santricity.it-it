@@ -23,17 +23,13 @@ Quando si modificano gli identificatori delle porte host, tenere presenti le seg
 
 
 .Fasi
-. Selezionare menu:Storage[Hosts] (Storage[host]).
-. Selezionare l'host a cui associare le porte, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
+. Dal pannello di sinistra, selezionare menu:Storage[Hosts].
+. Seleziona l'host a cui saranno associate le porte, quindi fai clic sull'icona menu:ellipsis [Edit Settings].
 +
-Se si desidera aggiungere porte a un host in un cluster di host, espandere il cluster di host e selezionare l'host desiderato. Non è possibile aggiungere porte a livello di cluster host.
+Se si desidera aggiungere porte a un host in un cluster di host, selezionare l'host desiderato. Non è possibile aggiungere porte a livello di cluster di host.
 
 +
-Viene visualizzata una finestra di dialogo che mostra le impostazioni correnti dell'host.
-
-. Fare clic sulla scheda *host Ports* (Porte host).
-+
-La finestra di dialogo mostra gli identificatori di porta host correnti.
+Viene visualizzata una schermata Edit host settings che mostra le impostazioni host correnti.
 
 . Modificare le impostazioni dell'identificatore della porta host in base alle esigenze.
 +
@@ -47,8 +43,8 @@ Porta host
  a| 
 È possibile scegliere una delle seguenti opzioni:
 
-** *Add* -- utilizzare Add per associare un nuovo identificatore di porta host all'host. La lunghezza del nome dell'identificatore della porta host è determinata dalla tecnologia dell'interfaccia host. I nomi degli identificatori delle porte host Fibre Channel e Infiniband devono contenere 16 caratteri. I nomi degli identificatori delle porte host iSCSI hanno un massimo di 223 caratteri. La porta deve essere univoca. Un numero di porta già configurato non è consentito.
-** *Delete* -- utilizzare Delete per rimuovere (disassociare) un identificatore di porta host. L'opzione Delete (Elimina) non rimuove fisicamente la porta host. Questa opzione rimuove l'associazione tra la porta host e l'host. A meno che non si rimuovano host bus adapter o iSCSI Initiator, la porta host viene ancora riconosciuta dal controller.
+** *Aggiungi porta host* -- Fare clic su *Aggiungi porta host* per associare un nuovo identificatore di porta host all'host. La lunghezza del nome dell'identificatore di porta host è determinata dalla tecnologia dell'interfaccia verso gli host. I nomi degli identificatori di porta host Fibre Channel e Infiniband devono avere 16 caratteri. I nomi degli identificatori di porta host iSCSI hanno un massimo di 223 caratteri. La porta deve essere univoca. Non è consentito un numero di porta già configurato.
+** *Elimina (icona X)* -- Fare clic sull'icona *X* per rimuovere (disassociare) un identificatore di porta host. L'opzione di eliminazione non rimuove fisicamente la porta host. Questa opzione rimuove l'associazione tra la porta host e l'host. A meno che non si rimuova l'adattatore bus host o l'iSCSI initiator, la porta host viene comunque riconosciuta dal controller.
 +
 [NOTE]
 ====
@@ -60,9 +56,9 @@ Se si elimina un identificatore di porta host, questo non viene più associato a
 
 
  a| 
-Etichetta
+Nome
  a| 
-Per modificare il nome dell'etichetta della porta, fare clic sull'icona *Modifica* (matita). Il nome dell'etichetta della porta deve essere univoco. Un nome di etichetta già configurato non è consentito.
+Se necessario, è possibile modificare il nome dell'etichetta della porta. Il nome dell'etichetta della porta deve essere univoco. Non è consentito utilizzare un nome di etichetta già configurato.
 
 
 

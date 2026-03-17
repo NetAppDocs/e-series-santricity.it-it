@@ -15,7 +15,7 @@ summary: Se è stata configurata la gestione esterna delle chiavi, è possibile 
 Se è stata configurata la gestione esterna delle chiavi, è possibile visualizzare e modificare le impostazioni del server di gestione delle chiavi in qualsiasi momento.
 
 .Fasi
-. Selezionare menu:Impostazioni[sistema].
+. Dal pannello di sinistra, selezionare menu:Settings[System].
 . In *Security key management*, selezionare *View/Edit Key Management Server Settings* (Visualizza/Modifica impostazioni del server di gestione delle chiavi).
 . Modificare le informazioni nei seguenti campi:
 +

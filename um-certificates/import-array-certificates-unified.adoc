@@ -20,7 +20,7 @@ Se necessario, è possibile importare i certificati per gli array di storage in 
 
 
 .Fasi
-. Selezionare *Certificate Management* (Gestione certificati).
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Selezionare la scheda *Trusted*.
 +
 Questa pagina mostra tutti i certificati segnalati per gli array di storage.

@@ -18,9 +18,9 @@ Si elimina un gruppo di snapshot quando si desidera eliminarne definitivamente i
 Quando si elimina un gruppo di snapshot, vengono eliminate anche tutte le immagini snapshot del gruppo.
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Selezionare il gruppo di snapshot che si desidera eliminare, quindi fare clic su menu:attività non comuni[Elimina gruppo di snapshot].
+. Seleziona il gruppo di snapshot che desideri eliminare, quindi fai clic sull'icona menu:ellipsis icon[Delete].
 +
 Viene visualizzata la finestra di dialogo Confirm Delete Snapshot Group.
 

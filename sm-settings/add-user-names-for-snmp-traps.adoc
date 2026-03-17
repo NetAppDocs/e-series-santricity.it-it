@@ -15,7 +15,7 @@ summary: È possibile aggiungere fino a 256 utenti per i trap SNMPv3.
 È possibile aggiungere fino a 256 utenti per i trap SNMPv3.
 
 .Fasi
-. Selezionare menu:Impostazioni[Avvisi].
+. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
 . Selezionare la scheda *SNMP*.
 +
 Le destinazioni trap e i nomi utente vengono visualizzati nella tabella.

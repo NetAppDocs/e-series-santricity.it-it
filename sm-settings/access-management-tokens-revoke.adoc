@@ -17,7 +17,7 @@ summary: È possibile revocare tutti i token di accesso se si stabilisce che un 
 Questa operazione rigenera le chiavi utilizzate per firmare i token. Una volta ripristinate le chiavi, i token emessi da _all_ vengono immediatamente invalidati. Poiché lo storage array non tiene traccia dei token, i singoli token non possono essere revocati.
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *Access Token*.
 . Selezionare *revoca tutti i token di accesso*.
 . Nella finestra di dialogo, fare clic su *Sì*.

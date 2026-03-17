@@ -21,9 +21,9 @@ Se in precedenza è stato configurato SAML per Access Management, è possibile m
 
 
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Selezionare la scheda *SAML*.
-. Selezionare *mappatura ruolo*.
+. Seleziona *Map System Manager roles*.
 +
 Viene visualizzata la finestra di dialogo mappatura ruoli.
 

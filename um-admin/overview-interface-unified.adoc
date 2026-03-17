@@ -33,7 +33,7 @@ Quando si accede a Unified Manager, la pagina principale si apre su *Gestisci - 
  a| 
 Gestire
  a| 
-Scopri gli array di storage nella tua rete, avvia Gestore di sistema SANtricity per un array, importa le impostazioni da un array a più array e gestisci i gruppi di array. Selezionare le caselle di controllo accanto ai nomi degli array per eseguire operazioni su di essi, ad esempio l'importazione delle impostazioni e la creazione di gruppi di array. I puntini di sospensione alla fine di ogni riga forniscono un menu in linea per le operazioni su un singolo array, ad esempio la ridenominazione.
+Scopri gli array di storage nella tua rete, avvia SANtricity System Manager per un array, importa le impostazioni da un array a più array e gestisci i gruppi di array. Seleziona le caselle di controllo accanto ai nomi degli array per eseguire operazioni su di essi, come importare le impostazioni e creare gruppi di array. I puntini di sospensione alla fine di ogni riga forniscono un menu inline per le operazioni su un singolo array, come la ridenominazione.
 
 
 
@@ -79,7 +79,7 @@ Nella parte superiore destra dell'interfaccia, è possibile accedere alla Guida 
 
 == Login e password degli utenti
 
-L'utente corrente che ha effettuato l'accesso al sistema viene visualizzato nella parte superiore destra dell'interfaccia.
+L'utente attualmente connesso al sistema viene visualizzato nelle impostazioni utente.
 
 Per ulteriori informazioni su utenti e password, consulta:
 

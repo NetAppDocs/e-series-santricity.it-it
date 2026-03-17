@@ -18,7 +18,7 @@ summary: È possibile visualizzare le proprietà, lo stato, la capacità riserva
 Gli oggetti associati a un'immagine snapshot includono il volume di base o il gruppo di coerenza dello snapshot per il quale l'immagine snapshot è un punto di ripristino, il gruppo di snapshot associato ed eventuali volumi di snapshot creati dall'immagine snapshot. Utilizzare le impostazioni di snapshot per determinare se si desidera copiare o convertire l'immagine di snapshot.
 
 .Fasi
-. Selezionare menu:Storage[Snapshot].
+. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
 . Fare clic sulla scheda *Snapshot Images* (immagini istantanee).
 . Selezionare l'immagine istantanea che si desidera visualizzare, quindi fare clic su *View Settings* (Impostazioni vista).
 +

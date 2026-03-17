@@ -16,7 +16,7 @@ Per configurare il mirroring sincrono, creare una coppia mirrorata che includa u
 
 [NOTE]
 ====
-Questa funzione non è disponibile nei sistemi di storage EF600/EF600C o EF300/EF300C.
+Questa funzione non è disponibile sui sistemi storage EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 .Prima di iniziare
@@ -145,4 +145,4 @@ La capacità di ciascun volume è di 128 MiB. Tuttavia, se i volumi sono colloca
 
 
 .Al termine
-Accedere a System Manager e selezionare menu:Home[View Operations in Progress] (Visualizza operazioni in corso) per visualizzare l'avanzamento dell'operazione di mirroring sincrono. Questa operazione può essere lunga e può influire sulle prestazioni del sistema.
+Accedere a System Manager e al menu:Storage[Operazioni in corso] per visualizzare lo stato di avanzamento dell'operazione di mirroring sincrono. Questa operazione può essere lunga e potrebbe influire sulle prestazioni del sistema.

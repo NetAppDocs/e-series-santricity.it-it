@@ -16,7 +16,7 @@ Utilizzare l'opzione Add/Discover Single Storage Array (Aggiungi/rileva singolo 
 
 .Prima di iniziare
 * Lo storage array deve essere configurato e configurato correttamente.
-* Le password degli array di storage devono essere impostate utilizzando il riquadro Access Management di System Manager.
+* Le password per gli array di storage devono essere configurate tramite la pagina Gestione accessi di System Manager.
 
 
 .Fasi

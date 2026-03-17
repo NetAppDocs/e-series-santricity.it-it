@@ -33,7 +33,7 @@ Prima di creare un gruppo di volumi, consultare le seguenti linee guida:
 
 
 .Fasi
-. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
 . Fare clic sul menu:Create[Volume group] (Crea[gruppo di volumi]).
 +
 Viene visualizzata la finestra di dialogo Create Volume Group (Crea gruppo di volumi).
@@ -132,9 +132,9 @@ Un gruppo di volumi può contenere dischi che supportano da o non da, ma tutti i
 
 
  a| 
-Funzionalità di provisioning delle risorse (solo EF300 e EF600)
+Resource Provisioning Capable (solo EF80, EF50, EF300 e EF600)
  a| 
-Mostra se il provisioning delle risorse è disponibile per questo gruppo. Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.
+Indica se Resource Provisioning è disponibile per questo gruppo. Resource Provisioning è una funzionalità disponibile negli array di storage EF80, EF50, EF300 e EF600, che consente di mettere in uso i volumi immediatamente senza alcun processo di inizializzazione in background.
 
 
 
@@ -273,9 +273,9 @@ Mostra le dimensioni del blocco che è possibile creare per i volumi nel gruppo:
 
 
  a| 
-Funzionalità di provisioning delle risorse (solo EF300 e EF600)
+Resource Provisioning Capable (solo EF80, EF50, EF300 e EF600)
  a| 
-Mostra se il provisioning delle risorse è disponibile per questo gruppo. Il provisioning delle risorse è una funzionalità disponibile negli array di storage EF300 e EF600, che consente di utilizzare immediatamente i volumi senza alcun processo di inizializzazione in background.
+Indica se Resource Provisioning è disponibile per questo gruppo. Resource Provisioning è una funzionalità disponibile negli array di storage EF80, EF50, EF300 e EF600, che consente di mettere in uso i volumi immediatamente senza alcun processo di inizializzazione in background.
 
 |===
 ====

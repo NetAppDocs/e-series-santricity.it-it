@@ -23,8 +23,8 @@ Questa attività descrive come raccogliere le informazioni necessarie per la fun
 
 
 .Fasi
-. In System Manager, individuare e registrare il numero di serie dello chassis. Per visualizzare questo numero di serie, passare il mouse sul riquadro Support Center.
-. In System Manager, individuare Feature Enable Identifier. Accedere a menu:Impostazioni[sistema], quindi scorrere verso il basso fino a *componenti aggiuntivi*. Cercare *Feature Enable Identifier*. Annotare il numero per l'identificatore di abilitazione della funzione.
+. In System Manager, individuare e annotare il numero di serie dello chassis. Dal pannello di sinistra, andare su menu:Support[Support Center] e scorrere verso il basso fino a *View top storage array properties* per visualizzare il numero di serie dello chassis.
+. In System Manager, individua il Feature Enable Identifier. Dal pannello di sinistra, vai al menu:Impostazioni[Sistema], quindi scorri verso il basso fino a *Add-ons*. Cerca il *Feature Enable Identifier*. Annota il numero per il Feature Enable Identifier.
 . Individuare e registrare il codice per l'attivazione della funzione. Per i pacchetti di funzionalità, questo codice viene fornito nelle istruzioni appropriate per l'esecuzione della conversione.
 +
 Per le funzioni Premium, è possibile accedere al codice di attivazione dal sito del supporto, come indicato di seguito:

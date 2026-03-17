@@ -24,7 +24,7 @@ Utilizzare l'operazione di inizializzazione del disco quando si sposta un singol
 
 ====
 .Fasi
-. Selezionare *hardware*.
+. Dal pannello di sinistra, selezionare *Hardware*.
 . Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
 +
 Il grafico cambia per mostrare i dischi al posto dei controller.

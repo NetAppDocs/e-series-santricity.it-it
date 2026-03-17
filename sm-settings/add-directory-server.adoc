@@ -30,7 +30,7 @@ Durante la procedura di aggiunta di un server LDAP, l'interfaccia di gestione le
 
 ====
 .Fasi
-. Selezionare menu:Impostazioni[Gestione accessi].
+. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
 . Dalla scheda Directory Services (servizi directory), selezionare *Add Directory Server* (Aggiungi server directory).
 +
 Viene visualizzata la finestra di dialogo Add Directory Server (Aggiungi server di directory).

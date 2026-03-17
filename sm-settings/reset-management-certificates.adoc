@@ -23,7 +23,7 @@ summary: 'È possibile ripristinare i certificati sui controller dall"utilizzo d
 La funzione Reset elimina i file di certificato firmati dalla CA corrente da ciascun controller. I controller torneranno quindi a utilizzare certificati autofirmati.
 
 .Fasi
-. Selezionare il menu:Impostazioni[certificati].
+. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
 . Dalla scheda Array Management (Gestione array), selezionare *Reset* (Ripristina).
 +
 Viene visualizzata la finestra di dialogo Conferma ripristino certificati di gestione.

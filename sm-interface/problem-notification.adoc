@@ -53,8 +53,7 @@ Attenzione
 |===
 System Manager visualizza queste icone in diverse posizioni.
 
-* L'area Notifiche della pagina iniziale visualizza l'icona di errore e un messaggio.
-* L'icona della pagina iniziale nell'area di navigazione visualizza l'icona di errore.
+* Area delle notifiche (icona a forma di campana nella parte superiore della finestra)
 * Nella pagina dei componenti, i grafici per i dischi e i controller visualizzano l'icona del guasto.
 
 

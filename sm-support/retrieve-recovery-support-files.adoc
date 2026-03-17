@@ -29,7 +29,7 @@ I file di supporto per il ripristino includono i seguenti tipi di file:
 
 
 .Fasi
-. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
 . Selezionare *Recupera file di supporto ripristino*.
 +
 Una finestra di dialogo elenca tutti i file di supporto per il ripristino raccolti dall'array di storage. Per trovare file specifici, è possibile ordinare qualsiasi colonna o digitare caratteri nella casella *Filter*.
