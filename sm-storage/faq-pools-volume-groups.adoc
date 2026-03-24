@@ -647,7 +647,7 @@ Quando viene creato un pool, viene generata una capacità di ottimizzazione cons
 
 [NOTE]
 ====
-Il dispositivo di scorrimento Additional Optimization Capacity (capacità di ottimizzazione aggiuntiva) è disponibile solo per i sistemi storage EF600 e EF300.
+Il cursore Additional Optimization Capacity è disponibile solo per i sistemi di storage EF80, EF50, EF600 e EF300.
 
 ====
 
@@ -662,7 +662,7 @@ Quando viene creato un gruppo di volumi, viene generata una capacità di ottimiz
 
 [NOTE]
 ====
-Il dispositivo di scorrimento Additional Optimization Capacity (capacità di ottimizzazione aggiuntiva) è disponibile solo per i sistemi storage EF600 e EF300.
+Il cursore Additional Optimization Capacity è disponibile solo per i sistemi di storage EF80, EF50, EF600 e EF300.
 
 ====
 

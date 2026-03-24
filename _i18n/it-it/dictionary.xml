@@ -1375,7 +1375,6 @@
   <block id="f220b79cc4513584ba7d4bae43c90357" category="doc">Che cos'è la capacità di ottimizzazione per i pool?</block>
   <block id="672f98d79305b073b8d6566d14c8bc16" category="paragraph">Per i dischi associati a un pool, la capacità non allocata è costituita dalla capacità di conservazione di un pool, dalla capacità libera (capacità non utilizzata dai volumi) e da una parte della capacità utilizzabile come capacità di ottimizzazione aggiuntiva. La capacità di ottimizzazione aggiuntiva garantisce un livello minimo di capacità di ottimizzazione riducendo la capacità utilizzabile e, come tale, non è disponibile per la creazione di volumi.</block>
   <block id="45c5490b8f9ad55e093507d717bd2f32" category="paragraph">Quando viene creato un pool, viene generata una capacità di ottimizzazione consigliata che offre un equilibrio tra performance, durata del disco e capacità disponibile. Il dispositivo di scorrimento Additional Optimization Capacity (capacità di ottimizzazione aggiuntiva) nella finestra di dialogo Pool Settings (Impostazioni pool) consente di regolare la capacità di ottimizzazione del pool. La regolazione del dispositivo di scorrimento garantisce migliori prestazioni e durata del disco a scapito della capacità disponibile o di capacità aggiuntiva disponibile a scapito delle prestazioni e della durata del disco.</block>
-  <block id="ba85db8eaa03f65889fdd8e78af14efd" category="paragraph">Il dispositivo di scorrimento Additional Optimization Capacity (capacità di ottimizzazione aggiuntiva) è disponibile solo per i sistemi storage EF600 e EF300.</block>
   <block id="29d7996b2976c1f055a281f550665aae" category="summary">Per avviare un'importazione dello storage da un sistema remoto a un sistema storage e-Series locale, utilizzare la procedura guidata Importa storage remoto.</block>
   <block id="173abb70dc8f543ad8111989dca9effc" category="doc">Importa storage remoto</block>
   <block id="f5de33a887a161e1fec8b168d645719a" category="list-text">Il sistema storage e-Series deve essere configurato per comunicare con il sistema storage remoto.</block>
@@ -9105,4 +9104,5 @@
   <block id="4304224086372505f40ff85886d04942" category="sidebar">Documentazione software SANtricity 12.00</block>
   <block id="9dfc00eb4df11a45ce48523995f27cd5" category="sidebar">Gestione di un singolo array con SANtricity System Manager 12.00</block>
   <block id="ec5103775143b601241e8ddefaff5a2f" category="sidebar">SANtricity software 12.00 documentazione</block>
+  <block id="578bcdf9f5107955b69cf51095e173c5" category="paragraph">Il cursore Additional Optimization Capacity è disponibile solo per i sistemi di storage EF80, EF50, EF600 e EF300.</block>
 </blocks>
