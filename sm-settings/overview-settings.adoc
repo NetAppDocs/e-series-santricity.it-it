@@ -21,7 +21,7 @@ summary: È possibile configurare System Manager per alcune impostazioni general
 Le impostazioni dell'array includono:
 
 * link:cache-settings-and-performance.html["Performance e impostazioni della cache"]
-* link:automatic-load-balancing-overview.html"["Bilanciamento automatico del carico"]
+* link:automatic-load-balancing-overview.html["Bilanciamento automatico del carico"]
 * link:how-add-on-features-work.html["Funzionalità add-on"]
 * link:overview-drive-security.html["Sicurezza dei dischi"]
 
