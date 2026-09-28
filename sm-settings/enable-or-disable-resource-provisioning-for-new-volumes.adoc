@@ -2,7 +2,7 @@
 permalink: sm-settings/enable-or-disable-resource-provisioning-for-new-volumes.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
-summary: 'Se in precedenza è stata disattivata la funzionalità predefinita per il provisioning delle risorse, è possibile accedere a Settings (Impostazioni) e riattivarla per i nuovi gruppi di volumi o pool SSD creati. È anche possibile disattivare nuovamente l"impostazione.' 
+summary: 'Se in precedenza avevi disabilitato la funzionalità predefinita per il provisioning delle risorse, puoi andare in System e riattivarla per qualsiasi nuovo gruppo o pool di volumi SSD che crei. Puoi anche disabilitare di nuovo l"impostazione.' 
 ---
 = Abilitare o disabilitare il provisioning delle risorse per nuovi gruppi di volumi o pool in SANtricity System Manager
 :allow-uri-read: 
@@ -28,7 +28,7 @@ NOTE: Per impostazione predefinita, il provisioning delle risorse è attivato ne
 Quando si riattiva il provisioning delle risorse per nuovi gruppi di volumi o pool, vengono influenzati solo i gruppi di volumi e i pool appena creati. Tutti i gruppi di volumi e i pool esistenti con provisioning delle risorse abilitato rimarranno invariati.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
+. Dal pannello di sinistra, seleziona *Sistema*.
 . Scorrere verso il basso fino a *Additional Settings* (Impostazioni aggiuntive), quindi fare clic su *Enable/Disable Resource-Provised Volumes* (attiva/Disattiva volumi con provisioning delle risorse
 +
 La descrizione dell'impostazione indica se il provisioning delle risorse è attualmente attivato o disattivato.

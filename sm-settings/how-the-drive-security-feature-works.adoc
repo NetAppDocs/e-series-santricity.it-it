@@ -17,6 +17,7 @@ Quando questi dischi vengono utilizzati con la funzione Drive Security, richiedo
 
 
 
+[[how-to-implement-drive-security]]
 == Come implementare Drive Security
 
 Per implementare Drive Security, attenersi alla seguente procedura.
@@ -33,6 +34,7 @@ Per implementare Drive Security, attenersi alla seguente procedura.
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 == Funzionamento di Drive Security a livello di unità
 
 Un disco sicuro, FDE o FIPS, crittografa i dati durante la scrittura e decrta i dati durante la lettura. La crittografia e la decrittografia non influiscono sulle prestazioni o sul flusso di lavoro dell'utente. Ogni disco dispone di una propria chiave di crittografia univoca, che non può mai essere trasferita dal disco.
@@ -41,6 +43,7 @@ La funzione Drive Security offre un ulteriore livello di protezione con dischi s
 
 
 
+[[how-drive-security-works-at-the-storage-array-level]]
 == Funzionamento di Drive Security a livello di storage array
 
 Con la funzione Drive Security, è possibile creare una chiave di sicurezza condivisa tra i dischi e i controller abilitati alla protezione in un array di storage. Ogni volta che si spegne e si riaccende l'alimentazione dei dischi, i dischi abilitati alla protezione cambiano in uno stato di sicurezza bloccato fino a quando il controller non applica la chiave di sicurezza.
@@ -54,6 +57,7 @@ Per la gestione interna delle chiavi, la chiave di sicurezza effettiva viene mem
 ====
 
 
+[[how-drive-security-works-at-the-volume-level]]
 == Funzionamento di Drive Security a livello di volume
 
 Quando si crea un pool o un gruppo di volumi da dischi con funzionalità di protezione, è anche possibile attivare Drive Security per tali pool o gruppi di volumi. L'opzione Drive Security (protezione disco) rende sicuri i dischi e i gruppi di volumi e i pool associati-_enabled_.

@@ -15,6 +15,7 @@ Scopri le restrizioni relative all'utilizzo della cache SSD sull'array di storag
 
 
 
+[[restrictions]]
 == Restrizioni
 
 * Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non è idoneo per un trasferimento automatico del bilanciamento del carico.
@@ -27,6 +28,7 @@ Scopri le restrizioni relative all'utilizzo della cache SSD sull'array di storag
 
 
 
+[[restrictions-with-drive-security]]
 == Restrizioni con Drive Security
 
 * È possibile attivare la sicurezza su SSD cache solo quando si crea la cache SSD. Non è possibile attivare la protezione in un secondo momento, come su un volume.

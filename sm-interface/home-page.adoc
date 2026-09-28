@@ -2,22 +2,18 @@
 permalink: sm-interface/home-page.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, home page 
-summary: La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a System Manager, viene visualizzata la prima pagina iniziale. 
+summary: La Dashboard fornisce una panoramica riassuntiva per la gestione quotidiana del tuo array di storage. Quando accedi a System Manager, la Dashboard è la prima schermata visualizzata. 
 ---
-= Scopri di più sulla home page di SANtricity System Manager
+= Scopri la dashboard di SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a Gestione di sistema SANtricity, viene visualizzata la prima schermata della pagina iniziale.
+La Dashboard fornisce una panoramica riassuntiva per la gestione quotidiana del tuo array di storage. Quando accedi a SANtricity System Manager, la Dashboard è la prima schermata visualizzata.
 
-La vista dashboard comprende quattro aree di riepilogo che contengono informazioni chiave sullo stato e lo stato dello storage array. Ulteriori informazioni sono disponibili nell'area di riepilogo.
-
-* *Notifiche*
-+
-L'area Notifiche visualizza le notifiche dei problemi che indicano lo stato dello storage array e dei relativi componenti. Inoltre, questo portlet visualizza avvisi automatici che consentono di risolvere i problemi prima che influiscano su altre aree dell'ambiente di storage.
+La vista dalla dashboard comprende tre aree di riepilogo che contengono informazioni chiave sullo stato e l'integrità del tuo storage array. Puoi trovare ulteriori informazioni nell'area di riepilogo.
 
 * *Prestazioni*
 +

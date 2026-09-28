@@ -20,8 +20,7 @@ Se in precedenza è stato configurato un server di directory in Access Managemen
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Selezionare la scheda *Directory Services*.
+. Dal pannello di sinistra, seleziona menu:Autenticazione[Directory services].
 . Se sono stati definiti più server, selezionare il server che si desidera modificare dalla tabella.
 . Selezionare *Visualizza/Modifica impostazioni*.
 +

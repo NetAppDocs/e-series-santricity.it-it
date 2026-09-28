@@ -15,6 +15,7 @@ I certificati sono file digitali che identificano entità online, come siti Web 
 
 
 
+[[signed-certificates]]
 == Certificati firmati
 
 I certificati garantiscono che le comunicazioni web vengano trasmesse in forma crittografata, privatamente e inalterate, solo tra il server e il client specificati. Con Unified Manager, è possibile gestire i certificati per il browser su un sistema di gestione host e i controller negli array di storage rilevati.
@@ -39,6 +40,7 @@ La CA esegue le operazioni necessarie per verificare l'identità dell'utente dur
 
 
 
+[[self-signed-certificates]]
 == Certificati autofirmati
 
 Ogni controller dell'array di storage include un certificato preinstallato e autofirmato. Un certificato autofirmato è simile a un certificato firmato dalla CA, ad eccezione del fatto che è convalidato dal proprietario dell'entità anziché da una terza parte. Come un certificato firmato dalla CA, un certificato autofirmato contiene una propria chiave privata e garantisce inoltre che i dati siano crittografati e inviati tramite una connessione HTTPS tra un server e un client.
@@ -47,12 +49,14 @@ I certificati autofirmati non sono "`trusted`" dai browser. Ogni volta che si te
 
 
 
+[[certificates-for-unified-manager]]
 == Certificati per Unified Manager
 
 L'interfaccia di Unified Manager viene installata con il proxy dei servizi Web su un sistema host. Quando si apre un browser e si tenta di connettersi a Unified Manager, il browser tenta di verificare che l'host sia un'origine attendibile verificando la presenza di un certificato digitale. Se il browser non individua un certificato firmato dalla CA per il server, viene visualizzato un messaggio di avviso. Da qui, è possibile accedere al sito Web per accettare il certificato autofirmato per la sessione. In alternativa, è possibile ottenere certificati digitali firmati da una CA in modo da non visualizzare più il messaggio di avviso.
 
 
 
+[[certificates-for-controllers]]
 == Certificati per i controller
 
 Durante una sessione di Unified Manager, potrebbero essere visualizzati ulteriori messaggi di sicurezza quando si tenta di accedere a un controller che non dispone di un certificato firmato dalla CA. In questo caso, è possibile considerare attendibile in modo permanente il certificato autofirmato oppure importare i certificati firmati dalla CA per i controller in modo che il server Web Services Proxy possa autenticare le richieste client in entrata da questi controller.

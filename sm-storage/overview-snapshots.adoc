@@ -16,6 +16,7 @@ La funzione Snapshot consente di creare immagini point-in-time dei volumi di arr
 
 
 
+[[what-are-snapshot-images]]
 == Cosa sono le immagini Snapshot?
 
 Una _immagine snapshot_ è una copia logica dei dati del volume, acquisita in un determinato momento. Come un punto di ripristino, le immagini Snapshot consentono di eseguire il rollback a un set di dati sicuramente funzionante. Sebbene l'host possa accedere all'immagine snapshot, non può leggerla o scriverla direttamente.
@@ -31,9 +32,10 @@ Scopri di più:
 
 
 
+[[how-do-i-create-snapshots]]
 == Come si creano le istantanee?
 
-È possibile creare manualmente un'immagine snapshot da un volume di base o da un gruppo di coerenza snapshot. Questa procedura è disponibile dal menu:Storage[Snapshot].
+Puoi creare manualmente un'immagine Snapshot da un volume di base o da un gruppo di coerenza Snapshot. Questa procedura è disponibile dal menu:Snapshots[Snapshot images].
 
 Scopri di più:
 
@@ -47,9 +49,10 @@ Scopri di più:
 
 
 
+[[how-do-i-roll-back-data-from-a-snapshot]]
 == Come faccio a eseguire il rollback dei dati da uno snapshot?
 
-Un _rollback_ è il processo che consente di riportare i dati di un volume di base a un punto temporale precedente. È possibile eseguire il rollback dei dati snapshot dal menu:Storage[Snapshot].
+Il _rollback_ è il processo di ripristino dei dati di un volume di base a un punto precedente nel tempo. Puoi ripristinare i dati degli snapshot da menu:Snapshots[Snapshot images].
 
 Scopri di più:
 
@@ -60,6 +63,7 @@ Scopri di più:
 
 
 
+[[related-information]]
 == Informazioni correlate
 
 Scopri di più sulle attività correlate alle snapshot:

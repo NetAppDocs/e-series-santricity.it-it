@@ -34,18 +34,14 @@ Questa attività descrive come assegnare manualmente un hot spare dalla pagina h
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Selezionare un'unità non assegnata (visualizzata in grigio) che si desidera utilizzare come hot spare.
 +
 Viene visualizzato il menu di scelta rapida del disco.
 
 . Selezionare *Assegna hot spare*.
 +
-Se l'unità è abilitata per la cancellazione sicura, viene visualizzata la finestra di dialogo. Per utilizzare un disco abilitato alla protezione come hot spare, è necessario eseguire un'operazione di cancellazione sicura per rimuovere tutti i dati e reimpostare gli attributi di sicurezza.
+Se l'unità è abilitata per la protezione, si apre la finestra di dialogo Secure erase drive. Per usare un'unità abilitata per la protezione come hot spare, devi prima eseguire un'operazione di Secure Erase per rimuovere tutti i dati e reimpostare i suoi attributi di sicurezza.
 
 +
 [CAUTION]
@@ -54,7 +50,7 @@ Se l'unità è abilitata per la cancellazione sicura, viene visualizzata la fine
 
 ====
 +
-Se il disco è abilitato *non* alla protezione, viene visualizzata la finestra di dialogo Confirm Assign Hot Spare Drive (Conferma assegnazione unità hot spare).
+Se l'unità *non* è abilitata per la modalità protetta, si apre la finestra di dialogo Assegna hot spare.
 
 . Esaminare il testo nella finestra di dialogo, quindi confermare l'operazione.
 +

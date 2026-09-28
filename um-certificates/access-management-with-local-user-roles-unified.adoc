@@ -15,6 +15,7 @@ Gli amministratori possono utilizzare le funzionalità RBAC (role-based access c
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 I ruoli utente locali sono preconfigurati nel sistema. Per utilizzare i ruoli utente locali per l'autenticazione, gli amministratori possono:
@@ -33,6 +34,7 @@ Il `admin` l'utente ha accesso completo a tutte le funzioni del sistema.
 
 
 
+[[management]]
 == Gestione
 
 Quando si utilizzano solo ruoli utente locali per l'autenticazione, gli amministratori possono eseguire le seguenti attività di gestione:

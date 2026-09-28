@@ -25,13 +25,13 @@ Il processo di creazione di un volume di snapshot è una procedura a più fasi.
 
 
 
+[[step-1-review-members-for-a-snapshot-volume]]
 == Fase 1: Esaminare i membri per un volume di snapshot
 
 Selezionare un'immagine snapshot di un volume di base o un gruppo di coerenza snapshot. Se si seleziona un'immagine snapshot del gruppo di coerenza snapshot, i volumi membri del gruppo di coerenza snapshot vengono visualizzati per la revisione.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
-. Selezionare la scheda *Snapshot Volumes* (volumi snapshot).
+. Dal pannello di sinistra, seleziona menu:Snapshots[Snapshot volumes].
 . Selezionare *Crea*.
 +
 Viene visualizzata la finestra di dialogo Create Snapshot Volume (Crea volume snapshot).
@@ -48,6 +48,7 @@ Nella finestra di dialogo Review Members (membri revisione), esaminare l'elenco 
 
 
 
+[[step-2-assign-snapshot-volume-to-host]]
 == Fase 2: Assegnare il volume snapshot all'host
 
 Selezionare un host o un cluster host specifico per assegnarlo al volume di snapshot. Questa assegnazione concede a un host o a un cluster host l'accesso al volume di snapshot. Se necessario, è possibile scegliere di assegnare un host in un secondo momento.
@@ -90,6 +91,7 @@ L'assegnazione di un volume a un host non riesce se si tenta di assegnare un vol
 
 
 
+[[step-3-reserve-capacity-for-a-snapshot-volume]]
 == Fase 3: Riservare la capacità per un volume di snapshot
 
 Associare la capacità riservata a un volume snapshot di lettura/scrittura. System Manager suggerisce i volumi e la capacità in base alle proprietà del volume di base o del gruppo di coerenza dello snapshot. È possibile accettare la configurazione di capacità riservata consigliata o personalizzare lo storage allocato.
@@ -130,6 +132,7 @@ Allocare la capacità riservata utilizzando le seguenti linee guida.
 
 
 
+[[step-4-edit-settings-for-a-snapshot-volume]]
 == Fase 4: Modificare le impostazioni di un volume di snapshot
 
 Modificare le impostazioni di un volume di snapshot, ad esempio il nome, il caching, le soglie di avviso della capacità riservata e così via.
@@ -156,7 +159,7 @@ Modificare le impostazioni di un volume di snapshot, ad esempio il nome, il cach
  a| 
 Nome
  a| 
-Specificare il nome del volume di snapshot.
+Specifica il nome per il volume Snapshot. I nomi dei volumi possono avere una lunghezza massima di 30 caratteri. Il nome deve essere univoco.
 
 
 

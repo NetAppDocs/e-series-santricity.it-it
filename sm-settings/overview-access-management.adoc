@@ -16,6 +16,7 @@ La gestione degli accessi è un metodo per stabilire l'autenticazione dell'utent
 
 
 
+[[what-authentication-methods-are-available]]
 == Quali metodi di autenticazione sono disponibili?
 
 I metodi di autenticazione includono RBAC (role-based access control), Directory Services e Security Assertion Markup Language (SAML):
@@ -37,9 +38,10 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-authentication]]
 == Come si configura l'autenticazione?
 
-Lo storage array è preconfigurato per l'utilizzo di ruoli utente locali, un'implementazione delle funzionalità RBAC. Se si desidera configurare un metodo diverso, accedere al menu:Impostazioni[Gestione accessi].
+L'array di storage è preconfigurato per utilizzare i ruoli utente locali, che rappresentano un'implementazione delle funzionalità RBAC. Se vuoi configurare un metodo diverso, vai su menu:Authentication[].
 
 Scopri di più:
 
@@ -49,6 +51,7 @@ Scopri di più:
 
 
 
+[[related-information]]
 == Informazioni correlate
 
 Scopri di più sulle attività correlate alla gestione degli accessi:

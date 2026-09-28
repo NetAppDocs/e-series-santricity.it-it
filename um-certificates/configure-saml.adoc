@@ -40,6 +40,7 @@ La configurazione dell'autenticazione SAML è una procedura multi-step.
 
 
 
+[[step-1-upload-the-idp-metadata-file]]
 == Fase 1: Caricare il file di metadati IdP
 
 Per fornire allo storage array le informazioni di connessione IdP, importare i metadati IdP in Unified Manager. Il sistema IdP ha bisogno di questi metadati per reindirizzare le richieste di autenticazione all'URL corretto e per validare le risposte ricevute.
@@ -63,6 +64,7 @@ Dopo aver selezionato il file, viene visualizzato l'ID entità IdP.
 
 
 
+[[step-2-export-service-provider-files]]
 == Fase 2: Esportare i file del provider di servizi
 
 Per stabilire una relazione di trust tra IdP e l'array di storage, importare i metadati del service provider nell'IdP. L'IdP ha bisogno di questi metadati per stabilire una relazione di trust con il controller ed elaborare le richieste di autorizzazione. Il file include informazioni come il nome di dominio del controller o l'indirizzo IP, in modo che l'IdP possa comunicare con i service provider.
@@ -82,6 +84,7 @@ Dopo aver fatto clic su *Esporta*, i metadati del provider di servizi vengono sc
 
 
 
+[[step-3-map-roles]]
 == Fase 3: Mappare i ruoli
 
 Per fornire agli utenti l'autorizzazione e l'accesso a Unified Manager, è necessario mappare gli attributi utente IdP e le appartenenze ai gruppi ai ruoli predefiniti dell'array di storage.
@@ -159,6 +162,7 @@ I mapping dei ruoli possono essere modificati dopo l'attivazione di SAML.
 
 
 
+[[step-4-test-sso-login]]
 == Fase 4: Verifica dell'accesso SSO
 
 Per garantire che il sistema IdP e lo storage array possano comunicare, è possibile eseguire un test di accesso SSO. Questo test viene eseguito anche durante la fase finale per l'abilitazione di SAML.
@@ -191,6 +195,7 @@ Se il test non viene completato correttamente, viene visualizzato un messaggio d
 
 
 
+[[step-5-enable-saml]]
 == Fase 5: Abilitare SAML
 
 Il passaggio finale consiste nel completare la configurazione SAML per l'autenticazione dell'utente. Durante questo processo, il sistema richiede anche di verificare un accesso SSO. Il processo di test di accesso SSO è descritto nel passaggio precedente.

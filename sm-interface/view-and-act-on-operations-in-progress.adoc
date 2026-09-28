@@ -17,7 +17,7 @@ Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata
 Per ciascuna operazione elencata nella pagina Operations in Progress (operazioni in corso), vengono visualizzate una percentuale di completamento e il tempo stimato rimanente per completare l'operazione. In alcuni casi, è possibile interrompere un'operazione o posizionarla con priorità più alta o più bassa. È inoltre possibile cancellare un'operazione di copia del volume completata dall'elenco.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Operations in Progress].
+. Dal pannello di sinistra, seleziona menu:Monitoraggio[Operazioni in corso].
 +
 Viene visualizzata la pagina Operations in Progress (operazioni in corso).
 
@@ -33,7 +33,7 @@ Leggere tutto il testo di avviso fornito nelle finestre di dialogo, in particola
 
 . Una volta completata l'operazione di copia di un volume, selezionare *Clear* per rimuoverlo dall'elenco.
 +
-Al termine di un'operazione, nella parte superiore della pagina iniziale vengono visualizzati un messaggio informativo e l'icona della chiave gialla. Questo messaggio include un collegamento che consente di annullare l'operazione dalla pagina Operations in Progress (operazioni in corso).
+Al termine di un'operazione, nell'area Notifiche, accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra, compare un messaggio informativo accompagnato da un'icona a forma di chiave inglese gialla. Questo messaggio include un collegamento che ti permette di cancellare l'operazione dalla pagina Operazioni in corso.
 
 
 

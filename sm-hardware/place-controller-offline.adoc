@@ -27,11 +27,7 @@ Non mettere un controller offline a meno che non venga richiesto dal Recovery Gu
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller che si desidera mettere offline.
 +
 Viene visualizzato il menu di scelta rapida del controller.

@@ -21,8 +21,7 @@ Per SANtricity versione 11.74 e successive, è anche possibile configurare l'aut
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 +
 Il grafico cambia per mostrare i controller invece dei dischi.
 
@@ -32,7 +31,7 @@ Viene visualizzato il menu di scelta rapida del controller.
 
 . Selezionare *Configura accesso remoto (SSH)*. (Per SANtricity versione 11.73 e precedenti, questa voce di menu è *Modifica accesso remoto*.)
 +
-Viene visualizzata la finestra di dialogo per l'abilitazione dell'accesso remoto.
+Si apre la pagina Configura accesso remoto (SSH).
 
 . Selezionare la casella di controllo *Enable remote login* (attiva accesso remoto).
 +
@@ -44,12 +43,12 @@ Questa impostazione fornisce l'accesso remoto con tre opzioni per l'autorizzazio
 ** *Sia password che chiave SSH*. Per questa opzione, selezionare la casella di controllo *Richiedi chiave pubblica autorizzata e password per l'accesso remoto* e passare alla fase successiva.
 
 
-. Compilare il campo *Authorized public key* (chiave pubblica autorizzata). Questo campo contiene un elenco di chiavi pubbliche autorizzate, nel formato del file OpenSSH *authized_keys*.
+. Compila il campo *Authorized public keys*. Questo campo contiene un elenco di chiavi pubbliche autorizzate, nel formato del file *authorized_keys* di OpenSSH.
 +
-Durante la compilazione del campo *Authorized public key*, tenere presenti le seguenti linee guida:
+Quando compili il campo *Chiavi pubbliche autorizzate*, tieni presente le seguenti linee guida:
 
 +
-** Il campo *Authorized public key* (chiave pubblica autorizzata) si applica a entrambi i controller e deve essere configurato solo sul primo controller.
+** Il campo *Chiavi pubbliche autorizzate* si applica a entrambi i controller e devi configurarlo solo sul primo controller.
 ** Il file *authized_keys* deve contenere una sola chiave per riga. Le righe che iniziano con n. e vuote vengono ignorate. Per ulteriori informazioni sul formato del file, vedere link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Configurazione delle chiavi autorizzate per OpenSSH"^].
 ** Un file *authized_keys* dovrebbe avere un aspetto simile al seguente esempio:
 +
@@ -62,7 +61,7 @@ AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg
 
 . Al termine, fare clic su *Save* (Salva).
 . Per i sistemi duplex, è possibile attivare l'accesso remoto sul secondo controller seguendo la procedura descritta in precedenza. Se si sta configurando l'opzione sia per una password che per una chiave SSH, assicurarsi di selezionare nuovamente la casella di controllo *Richiedi chiave pubblica autorizzata e password per l'accesso remoto*.
-. Al termine della risoluzione dei problemi, è possibile disattivare l'accesso remoto tornando alla finestra di dialogo Configura accesso remoto e deselezionando la casella di controllo *attiva accesso remoto*. Se l'accesso remoto è attivato su un secondo controller, viene visualizzata una finestra di dialogo di conferma che consente di disattivare l'accesso remoto anche sul secondo controller.
+. Dopo che il supporto tecnico ha finito di risolvere i problemi, puoi disabilitare l'accesso remoto tornando alla pagina Configura accesso remoto (SSH) e deselezionando la casella di controllo *Abilita accesso remoto*. Se l'accesso remoto è abilitato su un secondo controller, si apre una finestra di dialogo di conferma che ti permette di disabilitare l'accesso remoto anche su quest'ultimo.
 +
 La disattivazione dell'accesso remoto termina tutte le sessioni SSH correnti e rifiuta le nuove richieste di accesso.
 

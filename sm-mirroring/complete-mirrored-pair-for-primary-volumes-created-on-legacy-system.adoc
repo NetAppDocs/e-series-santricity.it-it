@@ -22,7 +22,7 @@ Se è stato creato un volume primario su un array di storage legacy che non può
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare il menu:Storage[Asynchronous Mirroring].
+. Dal pannello di sinistra, seleziona il menu:Mirroring[Coppie mirror asincrone].
 . Selezionare la scheda *coppia mirrorata*.
 +
 Viene visualizzata la tabella delle coppie mirrorate, che mostra tutte le coppie mirrorate associate all'array di storage.

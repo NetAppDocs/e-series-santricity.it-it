@@ -16,6 +16,7 @@ La pagina Support (Assistenza) fornisce l'accesso alle risorse di supporto tecni
 
 
 
+[[what-support-tasks-are-available]]
 == Quali attività di supporto sono disponibili?
 
 In Assistenza, è possibile visualizzare i contatti del supporto tecnico, eseguire la diagnostica, configurare AutoSupport, visualizzare il registro eventi ed eseguire gli aggiornamenti del software.
@@ -24,11 +25,12 @@ Scopri di più:
 
 * link:autosupport-feature-overview.html["Panoramica delle funzionalità di AutoSupport"]
 * link:overview-event-log.html["Panoramica del registro eventi"]
-* link:overview-upgrade-center.html["Panoramica di Upgrade Center"]
+* link:overview-upgrade-center.html["Panoramica del centro di aggiornamento"]
 
 
 
 
+[[how-do-i-contact-technical-support]]
 == Come posso contattare il supporto tecnico?
 
-Dalla pagina principale, fare clic su menu:Support[Support Center > scheda Support Resources]. Le informazioni di contatto del supporto tecnico sono elencate nella parte superiore destra dell'interfaccia.
+Dalla pagina principale, fai clic su menu:Support[Support resources]. Le informazioni di contatto del supporto tecnico sono elencate in alto a destra dell'interfaccia.

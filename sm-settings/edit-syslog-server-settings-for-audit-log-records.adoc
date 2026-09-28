@@ -21,8 +21,7 @@ summary: 'È possibile modificare le impostazioni del server syslog utilizzato p
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Dalla scheda Registro di controllo, selezionare *Configura server Syslog*.
+. Dal pannello di sinistra, seleziona menu:Monitoring[Audit log], e poi seleziona *Configure Syslog Servers*.
 +
 I server syslog configurati vengono visualizzati nella pagina.
 

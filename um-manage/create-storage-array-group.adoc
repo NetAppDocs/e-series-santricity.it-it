@@ -18,6 +18,7 @@ La configurazione dei gruppi è una procedura in due fasi.
 
 
 
+[[step-1-create-group]]
 == Fase 1: Creare un gruppo
 
 Si crea prima un gruppo. Il gruppo di storage definisce quali dischi forniscono lo storage che costituisce il volume.
@@ -31,6 +32,7 @@ Si crea prima un gruppo. Il gruppo di storage definisce quali dischi forniscono 
 
 
 
+[[step-2-add-storage-array-to-group]]
 == Fase 2: Aggiungere un array di storage al gruppo
 
 È possibile aggiungere uno o più array di storage a un gruppo creato dall'utente.

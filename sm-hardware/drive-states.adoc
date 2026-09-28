@@ -15,6 +15,7 @@ Gestione di sistema SANtricity riporta vari stati per le unità.
 
 
 
+[[accessibility-states]]
 == stati di accessibilità
 
 [cols="25h,~"]
@@ -63,6 +64,7 @@ Il disco non risponde ai comandi.
 |===
 
 
+[[role-states]]
 == stati dei ruoli
 
 [cols="25h,~"]
@@ -85,7 +87,7 @@ Il disco viene attualmente utilizzato come sostituto di un disco guasto. Le hot 
 
 
  a| 
-Hot spare in standby
+hot spare in standby
  a| 
 Il disco è pronto per essere utilizzato come sostituto di un disco guasto. Le hot spare vengono utilizzate solo nei gruppi di volumi, non nei pool.
 
@@ -99,6 +101,7 @@ Il disco non è membro di un pool o di un gruppo di volumi.
 |===
 
 
+[[availability-states]]
 == stati di disponibilità
 
 [cols="25h,~"]
@@ -114,7 +117,7 @@ Il disco non funziona. I dati sul disco non sono disponibili.
 
 
  a| 
-Guasto imminente
+guasto imminente
  a| 
 È stato rilevato che il disco potrebbe guastarsi presto. I dati sul disco sono ancora disponibili.
 

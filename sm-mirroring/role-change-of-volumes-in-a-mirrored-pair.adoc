@@ -28,6 +28,7 @@ Esaminare le seguenti informazioni sull'operazione di cambiamento di ruolo:
 
 
 
+[[force-role-change]]
 == Forza il cambiamento di ruolo
 
 È possibile forzare una modifica del ruolo tra i volumi in una coppia mirrorata quando un problema di comunicazione tra l'array di storage locale e l'array di storage remoto impedisce la promozione del volume secondario o la riduzione del volume primario.
@@ -41,6 +42,7 @@ Una volta ripristinato l'array di storage remoto e risolti eventuali problemi di
 ====
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Quando è consentita e non è consentita una promozione forzata?
 
 La promozione forzata di un volume in una coppia mirrorata non è consentita nelle seguenti condizioni:
@@ -51,6 +53,7 @@ La promozione forzata di un volume in una coppia mirrorata non è consentita nel
 
 
 
+[[role-change-in-progress-state]]
 == Stato in corso del cambiamento di ruolo
 
 Se due array di storage in una configurazione di mirroring si disconnettono e il volume primario di una coppia mirrorata viene forzato a un ruolo secondario e il volume secondario di una coppia mirrorata viene forzato a un ruolo primario, Quindi, quando viene ripristinata la comunicazione, i volumi su entrambi gli array di storage vengono posizionati nello stato role-Change-in-progress.

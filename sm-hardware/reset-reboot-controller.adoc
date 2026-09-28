@@ -19,11 +19,7 @@ Alcuni problemi richiedono un ripristino del controller (riavvio). È possibile 
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller che si desidera ripristinare.
 +
 Viene visualizzato il menu di scelta rapida del controller.

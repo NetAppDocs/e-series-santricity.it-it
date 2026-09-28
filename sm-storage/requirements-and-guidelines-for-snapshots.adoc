@@ -15,6 +15,7 @@ Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e lin
 
 
 
+[[snapshot-images-and-snapshot-groups]]
 == Immagini Snapshot e gruppi di snapshot
 
 * Ogni immagine snapshot è associata esattamente a un gruppo di snapshot.
@@ -29,6 +30,7 @@ Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e lin
 
 
 
+[[snapshot-consistency-group]]
 == Gruppo di coerenza Snapshot
 
 * Un gruppo di coerenza di snapshot contiene un gruppo di snapshot per ogni volume membro del gruppo di coerenza di snapshot.
@@ -39,6 +41,7 @@ Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e lin
 
 
 
+[[base-volume]]
 == Volume di base
 
 * Un volume Snapshot deve avere le stesse impostazioni di sicurezza e Data Assurance (da) del volume di base associato.
@@ -49,6 +52,7 @@ Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e lin
 
 
 
+[[reserved-capacity]]
 == Capacità riservata
 
 * La capacità riservata è associata a un solo volume di base.
@@ -58,6 +62,7 @@ Quando si creano e si utilizzano snapshot, consultare i seguenti requisiti e lin
 
 
 
+[[pending-snapshot-images]]
 == Immagini snapshot in sospeso
 
 La creazione di un'immagine Snapshot potrebbe rimanere in sospeso nelle seguenti condizioni:
@@ -68,6 +73,7 @@ La creazione di un'immagine Snapshot potrebbe rimanere in sospeso nelle seguenti
 
 
 
+[[maximum-number-of-snapshot-images]]
 == Numero massimo di immagini snapshot
 
 * Se un volume è membro di un gruppo di coerenza snapshot, System Manager crea un gruppo di snapshot per quel volume membro. Questo gruppo di snapshot conta per il numero massimo consentito di gruppi di snapshot per volume di base.
@@ -81,12 +87,14 @@ La creazione di un'immagine Snapshot potrebbe rimanere in sospeso nelle seguenti
 
 
 
+[[auto-deletion]]
 == Eliminazione automatica
 
 Se il gruppo di snapshot o il gruppo di coerenza snapshot è abilitato per l'eliminazione automatica, System Manager elimina l'immagine snapshot meno recente quando il sistema ne crea una nuova per il gruppo.
 
 
 
+[[rollback-operation]]
 == Operazione di rollback
 
 * Non è possibile eseguire le seguenti azioni quando è in corso un'operazione di rollback:

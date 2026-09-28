@@ -15,12 +15,14 @@ SANtricity Unified Manager è un'interfaccia basata sul web che ti consente di g
 
 
 
+[[main-page]]
 == Pagina principale
 
 Quando si accede a Unified Manager, la pagina principale si apre su *Gestisci - tutto*. Da questa pagina è possibile scorrere un elenco degli array di storage rilevati nella rete, visualizzarne lo stato ed eseguire operazioni su un singolo array o su un gruppo di array.
 
 
 
+[[navigation-sidebar]]
 == Barra laterale di navigazione
 
 È possibile accedere alle funzioni e alle funzioni di Unified Manager dalla barra laterale di navigazione.
@@ -71,12 +73,14 @@ Visualizza le opzioni di supporto tecnico, le risorse e i contatti.
 |===
 
 
+[[interface-settings-and-help]]
 == Impostazioni dell'interfaccia e guida
 
 Nella parte superiore destra dell'interfaccia, è possibile accedere alla Guida e ad altra documentazione. È inoltre possibile accedere alle opzioni di amministrazione, disponibili dal menu a discesa accanto al proprio nome di accesso.
 
 
 
+[[user-logins-and-passwords]]
 == Login e password degli utenti
 
 L'utente attualmente connesso al sistema viene visualizzato nelle impostazioni utente.

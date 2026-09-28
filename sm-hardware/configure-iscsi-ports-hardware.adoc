@@ -24,11 +24,7 @@ Le impostazioni e le funzioni iSCSI vengono visualizzate solo se lo storage arra
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller con le porte iSCSI che si desidera configurare.
 +
 Viene visualizzato il menu di scelta rapida del controller.
@@ -58,7 +54,7 @@ Per visualizzare tutte le impostazioni della porta, fare clic sul collegamento *
 
 
  a| 
-Velocità della porta ethernet configurata (visualizzata solo per alcuni tipi di schede di interfaccia host)
+Velocità della porta Ethernet configurata (visualizzata solo per alcuni tipi di interfacce verso gli host)
  a| 
 Selezionare la velocità che corrisponde alla velocità del modulo SFP sulla porta.
 
@@ -144,7 +140,7 @@ Selezionare questa opzione per attivare una VLAN e inserire il relativo ID. Una 
 
 
  a| 
-Abilitare la priorità ethernet (disponibile facendo clic su *Mostra altre impostazioni*).
+Abilita la priorità Ethernet (disponibile facendo clic su *Mostra altre impostazioni*).
  a| 
 Selezionare questa opzione per attivare il parametro che determina la priorità di accesso alla rete. Utilizzare il dispositivo di scorrimento per selezionare una priorità compresa tra 1 (più bassa) e 7 (più alta).
 

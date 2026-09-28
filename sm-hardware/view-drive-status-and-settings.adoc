@@ -14,20 +14,16 @@ summary: È possibile visualizzare lo stato e le impostazioni delle unità, ad e
 È possibile visualizzare lo stato e le impostazioni delle unità, ad esempio il tipo di supporto, il tipo di interfaccia e la capacità.
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Selezionare l'unità per la quale si desidera visualizzare lo stato e le impostazioni.
 +
 Viene visualizzato il menu di scelta rapida del disco.
 
 . Selezionare *Visualizza impostazioni*.
 +
-Viene visualizzata la finestra di dialogo Drive Settings (Impostazioni disco).
+Si apre il pannello delle impostazioni dell'unità.
 
-. Per visualizzare tutte le impostazioni, fare clic su *Mostra altre impostazioni* nella parte superiore destra della finestra di dialogo.
+. Per visualizzare tutte le impostazioni, scorri il pannello delle impostazioni di Drive.
 +
 .Dettagli del campo
 [%collapsible]

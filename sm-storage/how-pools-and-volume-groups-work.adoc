@@ -36,6 +36,7 @@ Quando viene implementato un sistema storage, il primo passo consiste nel presen
 
 
 
+[[pools]]
 == Piscine
 
 I pool sono progettati per aggregare i dischi rigidi fisici in un ampio spazio di storage e fornire una protezione RAID avanzata per l'IT. Un pool crea molti set RAID virtuali dal numero totale di dischi assegnati al pool e distribuisce i dati in modo uniforme tra tutti i dischi partecipanti. In caso di perdita o aggiunta di un disco, System Manager ribilancia dinamicamente i dati su tutti i dischi attivi.
@@ -44,15 +45,17 @@ I pool funzionano come un altro livello RAID, virtualizzando l'architettura RAID
 
 
 
+[[drive-matching]]
 === Corrispondenza dei dischi
 
-È possibile scegliere tra HDD o SSD da utilizzare nei pool; tuttavia, come per i gruppi di volumi, tutti i dischi nel pool devono utilizzare la stessa tecnologia. I controller selezionano automaticamente i dischi da includere, quindi è necessario assicurarsi di disporre di un numero sufficiente di dischi per la tecnologia scelta.
+Puoi scegliere tra HDD o SSD da utilizzare nei pool; tuttavia, come per i gruppi di volumi, tutte le unità del pool devono utilizzare la stessa tecnologia. I controller selezionano automaticamente quali unità includere, quindi devi assicurarti di avere un numero sufficiente di unità per la tecnologia che scegli. Nei sistemi EF80 ed EF50, le unità SSD NVMe Performance e Capacity sono considerate tipi di unità separati; possono coesistere nello stesso storage array, ma devono essere in pool separati.
 
 
 
+[[managing-failed-drives]]
 === Gestione dei dischi guasti
 
-I pool hanno una capacità minima di 11 dischi; tuttavia, la capacità di un disco è riservata alla capacità di riserva in caso di guasto di un disco. Questa capacità di riserva è denominata "`capacità di conservazione`".
+I pool hanno una capacità minima di 11 unità; tuttavia, la capacità di un'unità è riservata come capacità di riserva in caso di guasto di un'unità. Questa capacità di riserva è chiamata "preservation capacity". Sui sistemi EF80 ed EF50, i pool Performance richiedono un minimo di 6 unità e i pool Capacity richiedono un minimo di 12 unità. Per i pool Capacity-DDP, la protezione RAID1-DDP viene utilizzata fino a 10 unità, poi passa a RAID6-DDP con 11 o più unità, con una dimensione minima del pool Capacity-DDP di 8 unità.
 
 Quando vengono creati i pool, viene preservata una certa quantità di capacità per l'utilizzo in caso di emergenza. Questa capacità è espressa in termini di un numero di dischi in System Manager, ma l'implementazione effettiva è distribuita nell'intero pool di dischi. La quantità predefinita di capacità conservata si basa sul numero di dischi nel pool.
 
@@ -60,6 +63,70 @@ Una volta creato il pool, è possibile modificare il valore della capacità di c
 
 
 
+[[maximum-capacity]]
+=== Capacità massima
+
+La capacità massima del Dynamic Disk Pool (DDP) supportata per ciascun array di storage dipende dal modello del controller e dalla versione del sistema operativo SANtricity installata.
+
+[cols="18,13,13,10,13,13,10,10"]
+|===
+| Versione OS | EF50 | EF80 | E4000 | EF300 | EF600 | E280x | E5700 
+
+
+| 11.90 R6 e versioni precedenti | _Non applicabile_ | _Non applicabile_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+| 6 | 6 
+
+
+| 11,90 R7 | _Non applicabile_ | _Non applicabile_ | 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6 | 8 
+
+
+| 12.00 GA | 12 | 12 | _Non applicabile_ | _Non applicabile_ | _Non applicabile_ | _Non applicabile_ | _Non applicabile_ 
+
+
+| 12.10 e successive  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| 6  a| 
+* 12 (NVMe)
+* 6 (SAS)
+
+ a| 
+* 16 (NVMe)
+* 8 (SAS)
+
+| _Non applicabile_ | _Non applicabile_ 
+
+
+ a| 
+[NOTE]
+====
+Per le celle con due numeri, il primo numero si riferisce al ripiano NVMe e il secondo ai ripiani di espansione SAS. Le capacità massime DDP di SAS e NVMe non sono additive. La capacità DDP nel vassoio di base viene sottratta dalla capacità massima nei ripiani di espansione SAS e viceversa.
+
+====
+|===
+
+
+[[volume-groups]]
 == Gruppi di volumi
 
 I gruppi di volumi definiscono il modo in cui la capacità viene assegnata ai volumi nel sistema di storage. I dischi sono organizzati in gruppi RAID e i volumi risiedono tra i dischi di un gruppo RAID. Pertanto, le impostazioni di configurazione dei gruppi di volumi identificano i dischi che fanno parte del gruppo e il livello RAID utilizzato.
@@ -68,14 +135,16 @@ Quando si crea un gruppo di volumi, i controller selezionano automaticamente le 
 
 
 
+[[drive-matching]]
 === Corrispondenza dei dischi
 
 Per le dimensioni e le prestazioni, è necessario associare le unità del gruppo di volumi. Se nel gruppo di volumi sono presenti dischi più piccoli e più grandi, tutti i dischi vengono riconosciuti come la capacità più piccola. Se nel gruppo di volumi sono presenti dischi più lenti e veloci, tutti i dischi vengono riconosciuti alla velocità più bassa. Questi fattori influiscono sulle performance e sulla capacità complessiva del sistema storage.
 
-Non è possibile combinare diverse tecnologie di dischi (dischi HDD e SSD). RAID 3, 5 e 6 sono limitati a un massimo di 30 dischi. RAID 1 e RAID 10 utilizzano il mirroring, pertanto questi gruppi di volumi devono avere un numero pari di dischi.
+Non puoi combinare tecnologie di unità diverse (HDD e SSD). Nei sistemi EF80 ed EF50, le unità SSD NVMe Performance e Capacity sono tipi di unità diversi e non possono essere mescolate nello stesso gruppo di volumi; il numero minimo di unità è 6 per Performance e 12 per Capacity. RAID 3, 5 e 6 sono limitati a un massimo di 30 unità. RAID 1 e RAID 10 usano il mirroring, quindi questi gruppi di volumi devono avere un numero pari di dischi.
 
 
 
+[[managing-failed-drives]]
 === Gestione dei dischi guasti
 
 I gruppi di volumi utilizzano i dischi hot spare come standby nel caso in cui un disco si guasti in volumi RAID 1/10, RAID 3, RAID 5 o RAID 6 contenuti in un gruppo di volumi. Un'unità hot spare non contiene dati e aggiunge un altro livello di ridondanza all'array di storage.

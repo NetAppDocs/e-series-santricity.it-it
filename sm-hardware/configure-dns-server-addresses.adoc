@@ -27,18 +27,13 @@ Se le porte di gestione dello storage array sono già state configurate con il p
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
-. Selezionare il controller da configurare.
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 +
 Viene visualizzato il menu di scelta rapida del controller.
 
 . Selezionare *Configura server DNS*.
 +
-Viene visualizzata la finestra di dialogo Configura server DNS (Domain Name System).
+Si apre la pagina Configura server DNS (domain name system).
 
 . Selezionare una delle seguenti opzioni:
 +
@@ -57,4 +52,4 @@ Se lo storage array è impostato per utilizzare un indirizzo DNS statico, non vi
 
 
 .Risultati
-La configurazione DNS viene visualizzata nella scheda delle impostazioni del controller, *DNS / NTP*.
+La configurazione DNS viene visualizzata nelle impostazioni del controller, nella sezione *Impostazioni del server del sistema dei nomi di dominio (DNS)*.

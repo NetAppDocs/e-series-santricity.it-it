@@ -24,16 +24,18 @@ Le impostazioni predefinite della cache soddisfano i requisiti della maggior par
 
 
 
+[[storage-array-cache-settings]]
 == Impostazioni della cache dell'array di storage
 
 Per tutti i volumi nell'array di storage, è possibile specificare i seguenti valori dalla pagina System (sistema):
 
-* *Valore iniziale per il flushing* -- la percentuale di dati non scritti nella cache che attiva un flush della cache (scrittura su disco). Quando la cache contiene la percentuale iniziale specificata di dati non scritti, viene attivato un flusso. Per impostazione predefinita, il controller avvia lo svuotamento della cache quando la cache raggiunge il 80% di memoria piena.
+* *Avvio dello svuotamento della cache su richiesta* -- la percentuale di dati non scritti nella cache che attiva uno svuotamento della cache (scrittura su disco). Quando la cache contiene la percentuale iniziale specificata di dati non scritti, viene attivato uno svuotamento. Per impostazione predefinita, il controller avvia lo svuotamento della cache quando la cache raggiunge l'80% di riempimento.
 * *Cache block size* -- dimensione massima di ciascun blocco di cache, un'unità organizzativa per la gestione della cache. La dimensione predefinita del blocco della cache è 8 KiB, ma può essere impostata su 4, 8, 16 o 32 KiB. Idealmente, la dimensione del blocco della cache dovrebbe essere impostata sulla dimensione i/o predominante delle applicazioni. I file system o le applicazioni di database utilizzano generalmente dimensioni inferiori, mentre le dimensioni maggiori sono adatte per le applicazioni che richiedono un trasferimento di dati di grandi dimensioni o l'i/o sequenziale
 
 
 
 
+[[volume-cache-settings]]
 == Impostazioni della cache del volume
 
 Per i singoli volumi in un array di storage, è possibile specificare i seguenti valori dalla pagina Volumes (menu:Storage[Volumes]):

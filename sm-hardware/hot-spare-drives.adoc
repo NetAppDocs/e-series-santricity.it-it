@@ -24,12 +24,14 @@ Le hot spare non sono dedicate a gruppi di volumi specifici. Possono essere util
 
 
 
+[[how-to-identify-hot-spares]]
 == Come identificare le hot spare
 
 È possibile assegnare hot spare tramite l'installazione guidata iniziale o dalla pagina hardware. Per determinare se sono assegnati hot spare, andare alla pagina hardware e cercare eventuali alloggiamenti per unità indicati in rosa.
 
 
 
+[[how-hot-spare-coverage-works]]
 == Come funziona la copertura hot spare
 
 La copertura hot spare funziona come segue:
@@ -49,6 +51,7 @@ Le hot spare non possono essere utilizzate per i pool che hanno un metodo divers
 
 
 
+[[considerations-for-hot-spare-drive-capacity]]
 == Considerazioni sulla capacità del disco hot spare
 
 Selezionare un'unità con una capacità uguale o superiore alla capacità totale dell'unità che si desidera proteggere. Ad esempio, se si dispone di un disco da 18 GB con capacità configurata di 8 GB, è possibile utilizzare un disco da 9 GB o superiore come hot spare. In genere, non assegnare un disco come hot spare a meno che la sua capacità non sia uguale o superiore alla capacità del disco più grande dell'array di storage.
@@ -60,12 +63,14 @@ Se non sono disponibili hot spare con la stessa capacità fisica, è possibile u
 ====
 
 
+[[considerations-for-media-and-interface-types]]
 == Considerazioni sui tipi di supporti e di interfaccia
 
 L'unità utilizzata come hot spare deve condividere lo stesso tipo di supporto e tipo di interfaccia delle unità che proteggerà. Ad esempio, un'unità HDD non può fungere da hot spare per le unità SSD.
 
 
 
+[[considerations-for-secure-capable-drives]]
 == Considerazioni per dischi sicuri
 
 Un disco sicuro, come FDE o FIPS, può fungere da hot spare per dischi con o senza funzionalità di sicurezza. Tuttavia, un disco non sicuro non può fungere da hot spare per dischi con funzionalità di sicurezza.
@@ -79,6 +84,7 @@ Quando si attiva la funzione Drive Security e si crea un pool o un gruppo di vol
 ====
 
 
+[[recommended-number-of-hot-spare-drives]]
 == Numero consigliato di dischi hot spare
 
 Se si è utilizzata l'installazione guidata iniziale per creare automaticamente hot spare, System Manager crea un hot spare ogni 30 dischi di un tipo di supporto e di interfaccia specifici. In caso contrario, è possibile creare manualmente dischi hot spare tra i gruppi di volumi nell'array di storage.

@@ -30,6 +30,7 @@ Le funzioni delle performance consentono di eseguire queste attività:
 
 
 
+[[characteristics-of-performance-data-formats]]
 == Caratteristiche dei formati di dati delle performance
 
 [cols="1a,1a,1a,1a,1a"]
@@ -93,6 +94,7 @@ Sì
 |===
 
 
+[[guidelines-for-viewing-performance-data]]
 == Linee guida per la visualizzazione dei dati sulle performance
 
 * La raccolta dei dati sulle performance è sempre attiva. Non esiste alcuna opzione per disattivarla.

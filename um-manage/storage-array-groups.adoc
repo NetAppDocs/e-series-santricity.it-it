@@ -15,6 +15,7 @@ summary: 'È possibile gestire l"infrastruttura fisica e virtualizzata raggruppa
 
 
 
+[[types-of-storage-array-groups]]
 == Tipi di gruppi di array di storage
 
 * *Tutti i gruppi*

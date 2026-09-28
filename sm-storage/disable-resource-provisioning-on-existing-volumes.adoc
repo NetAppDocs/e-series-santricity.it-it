@@ -29,7 +29,7 @@ Quando si attiva il provisioning delle risorse per gruppi di volumi e pool esist
 Quando si disattiva il provisioning delle risorse per gruppi di volumi o pool esistenti, un'operazione in background riscrive tutti i blocchi logici in ogni volume. I dati esistenti rimangono intatti. Le scritture mappano o forniscono i blocchi sui dischi associati al gruppo di volumi o al pool.
 
 
-NOTE: Per i nuovi gruppi di volumi e pool, è possibile attivare o disattivare il provisioning delle risorse dal menu:Impostazioni[sistema > Impostazioni aggiuntive > attiva/Disattiva volumi con provisioning delle risorse].
+NOTE: Per i nuovi gruppi e pool di volumi, puoi abilitare o disabilitare il provisioning delle risorse dal menu:System[Impostazioni aggiuntive > Configura volumi con provisioning delle risorse].
 
 .Fasi
 . Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].

@@ -15,6 +15,7 @@ La gestione degli accessi è un metodo per configurare l'autenticazione degli ut
 
 
 
+[[what-authentication-methods-are-available]]
 == Quali metodi di autenticazione sono disponibili?
 
 Sono disponibili i seguenti metodi di autenticazione:
@@ -34,6 +35,7 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-access-management]]
 == Come si configura Access Management?
 
 Il software SANtricity è preconfigurato per l'utilizzo dei ruoli utente locali. Se si desidera utilizzare LDAP, è possibile configurarlo nella pagina Gestione accessi.

@@ -15,6 +15,7 @@ Per la gestione degli accessi, gli amministratori possono utilizzare un server L
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 Se nella rete vengono utilizzati un server LDAP e un servizio di directory, la configurazione funziona come segue:
@@ -35,6 +36,7 @@ Il `admin` l'utente ha accesso completo a tutte le funzioni del sistema.
 
 
 
+[[management]]
 == Gestione
 
 Quando si utilizzano i servizi di directory per l'autenticazione, gli amministratori possono eseguire le seguenti attività di gestione:

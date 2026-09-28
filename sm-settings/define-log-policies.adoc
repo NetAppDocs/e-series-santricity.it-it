@@ -21,8 +21,7 @@ summary: È possibile modificare il criterio di sovrascrittura e i tipi di event
 Questa attività descrive come modificare le impostazioni del registro di controllo, che includono il criterio per la sovrascrittura degli eventi precedenti e il criterio per la registrazione dei tipi di evento.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Selezionare la scheda *Registro di controllo*.
+. Dal pannello di sinistra, seleziona menu:Monitoring[Audit log].
 . Selezionare *Visualizza/Modifica impostazioni*.
 +
 Viene visualizzata la finestra di dialogo Audit Log Settings (Impostazioni registro di controllo).

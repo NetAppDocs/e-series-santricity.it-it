@@ -24,6 +24,7 @@ Ad esempio, un volume primario è di proprietà del controller A, quindi si camb
 
 
 
+[[controller-resets]]
 == Il controller viene ripristinato
 
 Una reimpostazione del controller determina una modifica della proprietà del volume sul lato primario, dal proprietario del controller preferito al controller alternativo nell'array di storage.

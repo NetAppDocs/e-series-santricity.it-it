@@ -15,6 +15,7 @@ summary: 'È possibile aggiungere un volume alla cache SSD per migliorare le per
 
 
 
+[[volumes]]
 == Volumi
 
 Semplici meccanismi di i/o dei volumi vengono utilizzati per spostare i dati da e verso la cache SSD. Dopo che i dati sono stati memorizzati nella cache e memorizzati negli SSD, le successive letture di tali dati vengono eseguite sulla cache SSD, eliminando così la necessità di accedere al volume HDD.
@@ -34,6 +35,7 @@ Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non �
 ====
 
 
+[[drive-security-feature]]
 == Funzione di protezione del disco
 
 Per utilizzare la cache SSD su un volume che utilizza anche Drive Security (è abilitato per la protezione), le funzionalità di protezione del disco del volume e della cache SSD devono corrispondere. Se non corrispondono, il volume non sarà abilitato alla protezione.

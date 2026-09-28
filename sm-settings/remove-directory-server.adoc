@@ -2,7 +2,7 @@
 permalink: sm-settings/remove-directory-server.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
-summary: Per interrompere la connessione tra un server di directory e lo storage array, è possibile rimuovere le informazioni sul server dalla pagina Access Management. È possibile eseguire questa attività se è stato configurato un nuovo server e si desidera rimuovere quello precedente. 
+summary: 'Per interrompere la connessione tra un server di directory e l"array di storage, puoi rimuovere le informazioni del server dalla pagina Directory services. Potresti voler eseguire questa operazione se hai configurato un nuovo server e poi vuoi rimuovere quello vecchio.' 
 ---
 = Rimuovere il server di directory in SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: Per interrompere la connessione tra un server di directory e lo storage
 
 
 [role="lead"]
-Per interrompere la connessione tra un server di directory e lo storage array, è possibile rimuovere le informazioni sul server dalla pagina Access Management. È possibile eseguire questa attività se è stato configurato un nuovo server e si desidera rimuovere quello precedente.
+Per interrompere la connessione tra un server di directory e l'array di storage, puoi rimuovere le informazioni del server dalla pagina Directory services. Potresti voler eseguire questa operazione se hai configurato un nuovo server e poi vuoi rimuovere quello vecchio.
 
 .Prima di iniziare
 È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
@@ -21,8 +21,7 @@ Per interrompere la connessione tra un server di directory e lo storage array, �
 Una volta completata questa attività, tutte le sessioni utente attive vengono terminate. Viene conservata solo la sessione utente corrente.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Selezionare la scheda *Directory Services*.
+. Dal pannello di sinistra, seleziona menu:Autenticazione[Directory services].
 . Dall'elenco, selezionare il server di directory che si desidera eliminare.
 . Fare clic su *Rimuovi*.
 +

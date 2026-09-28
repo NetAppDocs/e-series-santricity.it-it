@@ -1,8 +1,8 @@
 ---
 permalink: sm-support/collect-i-o-path-statistics.html 
 sidebar: sidebar 
-keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
-summary: 'È possibile salvare il file delle statistiche del percorso i/o e inviarlo al supporto tecnico per l"analisi.' 
+keywords: SANtricity, System Manager, E-Series, collect, io path, statistics 
+summary: 'Puoi salvare il file delle statistiche del percorso I/O e inviarlo al supporto tecnico per l"analisi.' 
 ---
 = Raccogli le statistiche del percorso I/O in SANtricity System Manager
 :allow-uri-read: 
@@ -25,7 +25,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
+. Dal pannello di sinistra, seleziona menu:Support[Diagnostics].
 . Selezionare *Collect i/o Path Statistics* (raccolta statistiche percorso i/o).
 . Confermare che si desidera eseguire l'operazione digitando `collect`, Quindi fare clic su *Collect*.
 +

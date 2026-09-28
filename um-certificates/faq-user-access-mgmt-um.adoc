@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[why-cant-i-log-in]]
 == Perché non riesco ad accedere?
 
 Se si riceve un errore durante il tentativo di accesso, esaminare queste possibili cause.
@@ -30,6 +31,7 @@ Gli errori di accesso possono verificarsi per uno dei seguenti motivi:
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == Cosa occorre sapere prima di aggiungere un server di directory?
 
 Prima di aggiungere un server di directory in Access Management, è necessario soddisfare determinati requisiti.
@@ -41,6 +43,7 @@ Prima di aggiungere un server di directory in Access Management, è necessario s
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == Cosa occorre sapere sulla mappatura dei ruoli degli array di storage?
 
 Prima di mappare i gruppi ai ruoli, rivedere le linee guida.
@@ -66,6 +69,7 @@ Se si utilizza un server LDAP (Lightweight Directory Access Protocol) e servizi 
 
 
 
+[[saml]]
 === SAML
 
 Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) integrate nell'array di storage, assicurarsi che:
@@ -83,12 +87,14 @@ Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) inte
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == Cosa occorre sapere prima di configurare e abilitare SAML?
 
 Prima di configurare e attivare le funzionalità SAML (Security Assertion Markup Language) per l'autenticazione, assicurarsi di soddisfare i seguenti requisiti e comprendere le restrizioni SAML.
 
 
 
+[[requirements]]
 === Requisiti
 
 Prima di iniziare, assicurarsi che:
@@ -103,6 +109,7 @@ Prima di iniziare, assicurarsi che:
 
 
 
+[[restrictions]]
 === Restrizioni
 
 Oltre ai requisiti sopra indicati, assicurati di comprendere le seguenti restrizioni:
@@ -124,6 +131,7 @@ Oltre ai requisiti sopra indicati, assicurati di comprendere le seguenti restriz
 
 
 
+[[what-are-the-local-users]]
 == Quali sono gli utenti locali?
 
 Gli utenti locali sono predefiniti nel sistema e includono autorizzazioni specifiche.

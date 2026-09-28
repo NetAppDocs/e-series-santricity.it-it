@@ -24,6 +24,7 @@ Esaminare le seguenti informazioni sull'operazione di cambiamento di ruolo:
 
 
 
+[[force-role-change]]
 == Forza il cambiamento di ruolo
 
 È possibile forzare una modifica del ruolo tra gruppi di coerenza mirror quando un problema di comunicazione tra l'array di storage locale e l'array di storage remoto impedisce la promozione dei volumi membri all'interno del gruppo di coerenza mirror secondario o la demozione dei volumi membri all'interno della coerenza mirror primaria gruppo.
@@ -32,6 +33,7 @@ Esaminare le seguenti informazioni sull'operazione di cambiamento di ruolo:
 
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == Quando è consentita e non è consentita una promozione forzata?
 
 La promozione forzata di un gruppo di coerenza mirror è consentita solo se tutti i volumi membri del gruppo di coerenza mirror sono stati sincronizzati e dispongono di punti di ripristino coerenti.
@@ -46,6 +48,7 @@ La promozione forzata di un gruppo di coerenza mirror non è consentita nelle se
 
 
 
+[[mirror-group-role-conflict]]
 == Conflitto di ruoli del gruppo mirror
 
 Quando viene risolto un problema di comunicazione tra gli array di storage locali e remoti, si verifica una condizione di conflitto di ruolo di Mirror Group. Utilizzare Recovery Guru per risolvere questo errore. Una promozione forzata non è consentita quando si risolve un conflitto a doppio ruolo.
@@ -54,6 +57,7 @@ Per evitare la condizione di conflitto di ruolo del gruppo di mirroring e le suc
 
 
 
+[[role-change-in-progress-state]]
 == Stato in corso del cambiamento di ruolo
 
 Se due array di storage in una configurazione di mirroring si disconnettono e il lato primario di un gruppo di coerenza di mirroring viene sottoposto a demartazione forzata su un ruolo secondario e il lato secondario di un gruppo di coerenza di mirroring viene promosso forzatamente a un ruolo primario, Quindi, quando viene ripristinata la comunicazione, i gruppi di coerenza mirror su entrambi gli array di storage vengono posizionati nello stato role-Change-in-Progress.

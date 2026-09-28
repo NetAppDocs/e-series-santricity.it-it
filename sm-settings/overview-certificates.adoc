@@ -15,6 +15,7 @@ summary: 'È possibile utilizzare System Manager per creare CSR (Certificate Sig
 
 
 
+[[what-are-certificates]]
 == Cosa sono i certificati?
 
 I _certificati_ sono file digitali che identificano entità online, come siti Web e server, per comunicazioni sicure su Internet. Esistono due tipi di certificati: Un _certificato firmato_ viene validato da un'autorità di certificazione (CA) e un _certificato autofirmato_ viene validato dal proprietario dell'entità anziché da una terza parte.
@@ -27,6 +28,7 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-signed-certificates]]
 == Come si configurano i certificati firmati?
 
 È possibile generare una richiesta di firma da System Manager o esternamente utilizzando una coppia di chiavi private e pubbliche. La richiesta di firma viene inviata a una CA per generare i file di certificato. Una volta che la CA restituisce i file di certificato, è possibile importarli utilizzando System Manager.
@@ -39,6 +41,7 @@ Scopri di più:
 
 
 
+[[related-information]]
 == Informazioni correlate
 
 Scopri di più sulle attività correlate ai certificati:

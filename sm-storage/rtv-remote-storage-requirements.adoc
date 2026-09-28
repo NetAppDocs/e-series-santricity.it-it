@@ -15,6 +15,7 @@ Prima di utilizzare la funzione di storage remoto, esaminare i seguenti requisit
 
 
 
+[[supported-protocols]]
 == Protocolli supportati
 
 Sono supportati i seguenti protocolli:
@@ -27,6 +28,7 @@ Per informazioni aggiornate sul supporto e-Series e sulla configurazione, consul
 
 
 
+[[hardware-requirements]]
 == Requisiti hardware
 
 Il sistema storage e-Series deve includere:
@@ -44,6 +46,7 @@ Il sistema remoto può essere un sistema storage e-Series o un sistema di un alt
 
 
 
+[[restrictions]]
 == Restrizioni
 
 La funzione di storage remoto presenta le seguenti restrizioni:

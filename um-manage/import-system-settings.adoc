@@ -16,7 +16,7 @@ summary: È possibile importare la configurazione di sistema da uno storage arra
 
 .Prima di iniziare
 * Le impostazioni di sistema sono configurate in System Manager per lo storage array che si desidera utilizzare come origine.
-* Il backup della configurazione esistente per gli array di storage di destinazione viene eseguito in System Manager (menu:Impostazioni[sistema > Salva configurazione array di storage]).
+* La configurazione esistente per gli array di storage di destinazione viene salvata in System Manager (menu:System[Save storage array configuration]).
 
 
 .A proposito di questa attività

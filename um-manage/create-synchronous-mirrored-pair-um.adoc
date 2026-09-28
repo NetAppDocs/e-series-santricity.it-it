@@ -46,6 +46,7 @@ Il processo per creare coppie sincrone mirrorate è una procedura multi-step.
 
 
 
+[[step-1-select-the-primary-volume]]
 == Fase 1: Selezionare il volume principale
 
 In questa fase, selezionare il volume primario da utilizzare nella relazione di mirroring sincrono. Quando si seleziona un volume primario sull'array di storage locale, il sistema visualizza un elenco di tutti i volumi idonei per la coppia mirrorata. I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. Il volume selezionato contiene il ruolo principale nella relazione mirror.
@@ -62,6 +63,7 @@ Viene visualizzata la procedura guidata Create Synchronous Mirrored Pair.
 
 
 
+[[step-2-select-the-secondary-volume]]
 == Fase 2: Selezionare il volume secondario
 
 In questa fase, selezionare il volume secondario da utilizzare nella relazione di mirroring. Quando si seleziona un volume secondario sull'array di storage remoto, il sistema visualizza un elenco di tutti i volumi idonei per la coppia mirrorata. I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco. Il volume selezionato avrà il ruolo secondario nella relazione mirror.
@@ -91,6 +93,7 @@ Se si sceglie un volume secondario con una capacità superiore a quella del volu
 
 
 
+[[step-3-select-synchronization-settings]]
 == Fase 3: Selezionare le impostazioni di sincronizzazione
 
 In questa fase, selezionare le impostazioni che determinano la modalità di sincronizzazione dei dati dopo un'interruzione della comunicazione. È possibile impostare la priorità con cui il proprietario del controller del volume primario sincronizza i dati con il volume secondario dopo un'interruzione della comunicazione. È inoltre necessario selezionare il criterio di risincronizzazione, manuale o automatico.
@@ -101,7 +104,7 @@ In questa fase, selezionare le impostazioni che determinano la modalità di sinc
 La priorità di sincronizzazione determina la quantità di risorse di sistema utilizzate per completare la sincronizzazione iniziale e l'operazione di risincronizzazione dopo un'interruzione della comunicazione rispetto alle richieste di i/o del servizio.
 
 +
-La priorità impostata in questa finestra di dialogo si applica sia al volume primario che al volume secondario. È possibile modificare la velocità sul volume primario in un secondo momento accedendo a System Manager e selezionando il menu:Storage[Synchronous Mirroring > More > Edit Settings] (Storage[mirroring sincrono > Altro > Modifica impostazioni).
+La priorità impostata in questa finestra di dialogo si applica sia al volume primario che al volume secondario. Puoi modificare la velocità sul volume primario in un secondo momento andando su System Manager e selezionando menu:Mirroring[Mirroring sincrono > icona con i tre puntini > Modifica impostazioni].
 
 +
 Sono disponibili cinque tassi di priorità di sincronizzazione:
@@ -122,7 +125,7 @@ Se la priorità di sincronizzazione è impostata sul tasso più basso, l'attivit
 ** *Manuale* (opzione consigliata) -- selezionare questa opzione per richiedere la ripresa manuale della sincronizzazione dopo il ripristino della comunicazione su una coppia mirrorata. Questa opzione offre la migliore opportunità per il ripristino dei dati.
 ** *Automatico* -- selezionare questa opzione per avviare la risincronizzazione automaticamente dopo il ripristino della comunicazione su una coppia mirrorata.
 +
-Per riprendere manualmente la sincronizzazione, accedere a System Manager e selezionare menu:Storage[Synchronous Mirroring], evidenziare la coppia mirrorata nella tabella e selezionare *Resume* sotto *More*.
+Per riprendere manualmente la sincronizzazione, vai a System Manager e seleziona menu:Mirroring[Mirroring sincrono], evidenzia la coppia di mirror nella tabella e seleziona *Riprendi* sotto *Altro*.
 
 
 
@@ -145,4 +148,4 @@ La capacità di ciascun volume è di 128 MiB. Tuttavia, se i volumi sono colloca
 
 
 .Al termine
-Accedere a System Manager e al menu:Storage[Operazioni in corso] per visualizzare lo stato di avanzamento dell'operazione di mirroring sincrono. Questa operazione può essere lunga e potrebbe influire sulle prestazioni del sistema.
+Vai su System Manager e menu:Monitoring[Operazioni in corso] per visualizzare l'avanzamento dell'operazione di mirroring sincrono. Questa operazione può richiedere molto tempo e potrebbe influire sulle performance del sistema.

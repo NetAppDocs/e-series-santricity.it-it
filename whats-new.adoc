@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 12.00 
+keywords: whats new, new features, SANtricity 12.10 
 summary: Nuove funzionalità di SANtricity OS. 
 ---
-= Novità in SANtricity OS 12.00
+= Novità in SANtricity OS 12.10
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,16 +12,79 @@ summary: Nuove funzionalità di SANtricity OS.
 
 
 [role="lead"]
-La tabella seguente descrive le nuove funzionalità in SANtricity System Manager 12.0.
+La tabella seguente descrive le nuove funzionalità in SANtricity System Manager 12.10.
 
 
 
+[[new-features-in-version-12-10]]
+== Nuove funzionalità in Version 12.10
+
+[cols="35h,~"]
+|===
+| Nuova funzionalità | Descrizione 
+
+
+ a| 
+Supporto per l'espansione SAS per i sistemi storage EF50 e EF80
+ a| 
+I sistemi di storage EF50 e EF80 ora supportano l'espansione SAS, consentendo una maggiore capacità e flessibilità di storage. Con l'espansione SAS, puoi collegare enclosure di storage aggiuntivi ai sistemi EF50 e EF80, così puoi scalare l'ambiente di storage secondo le tue esigenze. Questa funzionalità è particolarmente vantaggiosa per le organizzazioni che richiedono soluzioni di storage a elevata capacità e vogliono massimizzare il loro investimento nelle piattaforme EF50 e EF80.
+
+
+
+ a| 
+Supporto NVMe su TCP per storage E-Series
+ a| 
+I sistemi storage E-Series ora supportano NVMe su TCP, offrendo un'ulteriore opzione di interfaccia verso gli host per un accesso allo storage dalle performance elevate. NVMe su TCP consente una comunicazione efficiente e a bassa latenza tra il sistema storage e gli host connessi, sfruttando i vantaggi del protocollo NVMe sulle reti TCP/IP standard. Questo supporto aumenta la versatilità dei sistemi E-Series, permettendo alle organizzazioni di implementarli in ambienti in cui NVMe su TCP è preferito o richiesto.
+
+
+
+ a| 
+Miglioramenti all'interfaccia utente per SANtricity System Manager
+ a| 
+L'interfaccia utente di SANtricity System Manager ha ricevuto ulteriori miglioramenti per ottimizzare la navigazione, l'usabilità e l'esperienza utente complessiva. Questi miglioramenti includono un layout e un'organizzazione aggiornati delle attività di gestione e flussi di lavoro più intuitivi per le operazioni comuni di gestione dello storage.
+
+
+
+ a| 
+Supporto esteso della piattaforma E-Series per la nuova interfaccia utente di SANtricity System Manager
+ a| 
+La nuova interfaccia utente di SANtricity System Manager, introdotta nella release SANtricity 12.00 per i sistemi storage EF80 e EF50, è stata ampliata per supportare ulteriori piattaforme storage E-Series. Questo significa che gli utenti che gestiscono una gamma più ampia di sistemi storage E-Series possono ora beneficiare dell'interfaccia modernizzata e delle funzionalità di usabilità migliorate. Il supporto ampliato include la compatibilità con alcuni modelli di sistemi storage E-Series, permettendo agli utenti di sfruttare la navigazione migliorata e le attività di gestione semplificate su una parte maggiore della propria infrastruttura di storage.
+
+
+
+ a| 
+Supporto per drive a prestazioni e capacità miste per sistemi EF80 e EF50
+ a| 
+I sistemi di storage EF80 e EF50 ora supportano unità SSD NVMe Performance e Capacity nello stesso array di storage, nel rispetto del numero minimo di unità (6 per Performance, 12 per Capacity). Le unità Performance e Capacity devono rimanere in pool e gruppi di volumi separati.
+
+
+
+ a| 
+Aumento del limite di caratteri per i nomi dei volumi standard e thin
+ a| 
+Il limite di caratteri per i nomi dei volumi standard e thin è stato aumentato da 30 a 60 caratteri.
+
+
+NOTE: Il downgrade alla versione 11.90 o precedente del software SANtricity OS non è supportato se esistono volumi standard o thin con nomi più lunghi di 30 caratteri. Se hai intenzione di eseguire il downgrade alla versione 11.90 o precedente del software SANtricity OS, cambia i nomi di tutti i volumi standard o thin con nomi più lunghi di 30 caratteri prima di procedere.
+
+
+
+ a| 
+Il limite minimo di timeout per inattività dell'interfaccia utente di SANtricity System Manager è ora di 10 minuti
+ a| 
+Il limite di timeout per inattività dell'interfaccia utente di SANtricity System Manager è stato aggiornato a un minimo di 10 minuti. In precedenza, il limite minimo di timeout per inattività era di 15 minuti. Questa modifica aiuta a migliorare la sicurezza assicurando che l'interfaccia utente esca automaticamente dopo 10 minuti di inattività.
+
+|===
+
+
+[[new-features-in-version-12-0r1]]
 == Nuove funzionalità in Version 12.0R1
 
 Questa versione contiene solo modifiche minori e nessuna nuova funzionalità. Per ulteriori informazioni sulle modifiche in questa versione, consultare il README di E-Series SANtricity OS 12.0R1.
 
 
 
+[[new-features-in-version-12-0]]
 == Nuove funzionalità in Version 12.0
 
 

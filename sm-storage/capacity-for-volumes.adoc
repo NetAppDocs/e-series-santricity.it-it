@@ -16,6 +16,7 @@ I dischi dell'array di storage forniscono la capacità fisica dello storage per 
 
 
 
+[[using-capacity-to-create-and-expand-volumes]]
 == Utilizzo della capacità per creare ed espandere i volumi
 
 È possibile creare volumi dalla capacità non assegnata o dalla capacità libera in un pool o un gruppo di volumi.
@@ -28,6 +29,7 @@ Dopo aver espanso la capacità del volume, è necessario aumentare manualmente l
 
 
 
+[[capacity-types-for-thick-volumes-and-thin-volumes]]
 == Tipi di capacità per volumi thick e thin
 
 È possibile creare volumi thick o thin. La capacità riportata e la capacità allocata sono le stesse per i volumi spessi, ma sono diverse per i volumi thin.
@@ -49,6 +51,7 @@ Gestore di sistema di SANtricity non fornisce un'opzione per creare volumi thin.
 ====
 
 
+[[capacity-limits-for-thick-volumes]]
 == Limiti di capacità per i volumi spessi
 
 La capacità minima per un volume spesso è di 1 MiB e la capacità massima è determinata dal numero e dalla capacità delle unità nel pool o nel gruppo di volumi.
@@ -65,6 +68,7 @@ Quando si crea un volume, viene preallocata una certa capacità aggiuntiva per l
 
 
 
+[[capacity-limits-for-thin-volumes]]
 == Limiti di capacità per i volumi thin
 
 È possibile creare volumi thin con una grande capacità segnalata e una capacità allocata relativamente piccola, il che è vantaggioso per l'utilizzo e l'efficienza dello storage. I thin volumi possono contribuire a semplificare l'amministrazione dello storage, in quanto la capacità allocata può aumentare in base alle esigenze dell'applicazione, senza interrompere l'applicazione, consentendo un migliore utilizzo dello storage.
@@ -99,6 +103,6 @@ Per un volume sottile, se è stata raggiunta la capacità massima di 256 TIB, no
 
 Il sistema espande automaticamente la capacità allocata in base al limite di capacità allocata. Il limite di capacità allocata consente di limitare la crescita automatica del thin volume al di sotto della capacità riportata. Quando la quantità di dati scritti si avvicina alla capacità allocata, è possibile modificare il limite di capacità allocata.
 
-Per modificare il limite di capacità allocata, selezionare menu:Storage[Volumes > Thin Volume Monitoring tab > Change Limit] (Storage[volumi > scheda monitoraggio volume sottile > Modifica limite]).
+Per modificare il limite di capacità allocata, seleziona menu:Storage[Monitoraggio thin volume > Cambia limite].
 
 Poiché System Manager non assegna la capacità completa quando crea un volume thin, nel pool potrebbe esistere una capacità libera insufficiente. Lo spazio insufficiente può bloccare le scritture nel pool, non solo per i volumi thin, ma anche per altre operazioni che richiedono capacità dal pool (ad esempio, immagini di snapshot o volumi di snapshot). Tuttavia, è comunque possibile eseguire operazioni di lettura dal pool. Se si verifica questa situazione, viene visualizzato un avviso relativo alla soglia.

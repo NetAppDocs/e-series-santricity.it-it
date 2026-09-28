@@ -16,6 +16,7 @@ Se si prevede di utilizzare il mirroring asincrono, tenere presenti i seguenti r
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Per abilitare e configurare il mirroring tra due array, è necessario utilizzare l'interfaccia di Unified Manager. Unified Manager viene installato su un sistema host insieme al proxy dei servizi Web.
@@ -27,6 +28,7 @@ Per abilitare e configurare il mirroring tra due array, è necessario utilizzare
 
 
 
+[[storage-arrays]]
 == Storage array
 
 * È necessario disporre di due array di storage.
@@ -41,6 +43,7 @@ Per abilitare e configurare il mirroring tra due array, è necessario utilizzare
 
 
 
+[[supported-connections]]
 == Connessioni supportate
 
 Il mirroring asincrono può utilizzare connessioni FC o iSCSI o entrambe per la comunicazione tra sistemi storage locali e remoti. Al momento della creazione di un gruppo di coerenza mirror, l'amministratore può selezionare FC o iSCSI per quel gruppo se entrambi sono connessi all'array di storage remoto. Non esiste un failover da un tipo di canale all'altro.
@@ -71,6 +74,12 @@ Le porte iSCSI sono configurate a livello di array porta per porta. La comunicaz
 ** VLAN: Per comunicare, i sistemi locali e remoti devono avere la stessa impostazione VLAN
 ** Porta di ascolto iSCSI
 ** Frame jumbo
++
+[NOTE]
+====
+Si consiglia di utilizzare Jumbo Frames per migliorare le prestazioni della CPU, il throughput e la stabilità funzionale.
+
+====
 ** Priorità Ethernet
 +
 [NOTE]
@@ -92,6 +101,7 @@ E4000 non supporta il mirroring asincrono durante l'utilizzo del protocollo iSCS
 ====
 
 
+[[mirrored-volume-candidates]]
 == Volumi mirrorati candidati
 
 * Il livello RAID, i parametri di caching e le dimensioni dei segmenti possono essere diversi sui volumi primario e secondario di una coppia di mirroring asincrono.
@@ -109,11 +119,12 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 
 
 * I volumi primari e secondari devono condividere lo stesso tipo di disco. La combinazione di dischi NVMe e SAS tra volumi primari e secondari non è supportata.
-* I volumi primario e secondario non devono avere il partizionamento delle risorse abilitato.
+* I volumi primari e secondari non devono avere Resource Provisioning abilitato.
 
 
 
 
+[[reserved-capacity]]
 == Capacità riservata
 
 * Un volume a capacità riservata è necessario per un volume primario e per un volume secondario in una coppia mirrorata per la registrazione delle informazioni di scrittura per il ripristino da ripristini del controller e altre interruzioni temporanee.
@@ -128,6 +139,7 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 
 
 
+[[drive-security-feature]]
 == Funzione di protezione del disco
 
 * Se si utilizzano dischi sicuri, il volume primario e il volume secondario devono disporre di impostazioni di sicurezza compatibili. Questa restrizione non viene applicata; pertanto, è necessario verificarla da soli.

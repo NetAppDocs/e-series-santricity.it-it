@@ -15,6 +15,7 @@ Prima di importare una configurazione dello storage da uno storage array a un al
 
 
 
+[[shelves]]
 == Shelf
 
 * Gli shelf in cui risiedono i controller devono essere identici sugli array di origine e di destinazione.
@@ -24,9 +25,10 @@ Prima di importare una configurazione dello storage da uno storage array a un al
 
 
 
+[[controllers]]
 == Controller
 
-* Il tipo di controller può essere diverso tra gli array di origine e di destinazione (ad esempio, l'importazione da E2800 a E5700), ma il tipo di enclosure RBOD deve essere identico.
+* Il tipo di controller può essere diverso tra gli array di origine e di destinazione (ad esempio, importando da un EF300 a un EF80), ma il tipo di enclosure RBOD deve essere identico.
 * L'HICS, incluse le funzionalità da dell'host, deve essere identico tra gli array di origine e di destinazione.
 * L'importazione da una configurazione duplex a una facciata singola non è supportata; tuttavia, è consentita l'importazione da una facciata singola a una facciata fronte/retro.
 * Le impostazioni FDE non sono incluse nel processo di importazione.
@@ -34,6 +36,7 @@ Prima di importare una configurazione dello storage da uno storage array a un al
 
 
 
+[[status]]
 == Stato
 
 * Gli array di destinazione devono essere nello stato ottimale.
@@ -42,6 +45,7 @@ Prima di importare una configurazione dello storage da uno storage array a un al
 
 
 
+[[storage]]
 == Storage
 
 * La capacità del disco può variare tra gli array di origine e di destinazione, a condizione che la capacità del volume sulla destinazione sia superiore a quella dell'origine. (Un array di destinazione potrebbe disporre di unità più recenti e di capacità maggiore che non sarebbero completamente configurate nei volumi dall'operazione di replica).

@@ -15,12 +15,14 @@ Prima di poter visualizzare e gestire le risorse di storage, SANtricity deve ril
 
 
 
+[[discovering-multiple-storage-arrays]]
 == Rilevamento di più array di storage
 
 Se si sceglie di rilevare più array, immettere un intervallo di indirizzi IP di rete e Unified Manager tenta di stabilire connessioni individuali a ciascun indirizzo IP dell'intervallo. Qualsiasi array di storage raggiunto correttamente viene visualizzato nella pagina Discover e può essere aggiunto al dominio di gestione.
 
 
 
+[[discovering-a-single-storage-array]]
 == Rilevamento di un singolo storage array
 
 Se si sceglie di rilevare un singolo array, inserire il singolo indirizzo IP per uno dei controller nell'array di storage e quindi aggiungere il singolo array di storage.
@@ -32,12 +34,14 @@ Unified Manager rileva e visualizza solo il singolo indirizzo IP o indirizzo IP 
 ====
 
 
+[[user-credentials]]
 == Credenziali dell'utente
 
 Nell'ambito del processo di rilevamento, è necessario fornire la password di amministratore per ciascun array di storage che si desidera aggiungere.
 
 
 
+[[web-services-certificates]]
 == Certificati di servizi Web
 
 Nell'ambito del processo di rilevamento, Unified Manager verifica che gli array di storage rilevati utilizzino certificati da un'origine attendibile. Unified Manager utilizza due tipi di autenticazione basata su certificati per tutte le connessioni stabilite con il browser:

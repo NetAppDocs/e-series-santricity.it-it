@@ -56,4 +56,4 @@ System Manager esegue le seguenti operazioni:
 * Cancella gli indici dei blocchi, il che fa sì che i blocchi non scritti vengano letti come se fossero riempiti a zero (il volume sembra essere completamente vuoto).
 
 
-Selezionare menu:Storage[Operazioni in corso] per visualizzare l'avanzamento dell'operazione di inizializzazione attualmente in esecuzione per il volume selezionato. Questa operazione può essere lunga e potrebbe influire sulle prestazioni del sistema.
+Seleziona menu:Monitoring[Operations in progress] per visualizzare l'avanzamento dell'operazione di inizializzazione attualmente in esecuzione per il volume selezionato. Questa operazione può richiedere molto tempo e potrebbe influire sulle performance del sistema.

@@ -40,14 +40,14 @@ Questa operazione _non_ salva queste impostazioni:
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. Selezionare *Save Storage Array Configuration* (Salva configurazione array di storage).
+. Dal pannello di sinistra, seleziona *Sistema*.
+. Seleziona *Salva configurazione array di archiviazione*.
 . Selezionare gli elementi della configurazione che si desidera salvare:
 +
 ** Impostazioni dello storage array
 ** Configurazione del volume
 ** Configurazione dell'host
-** Assegnazioni host-to-volume
+** Assegnazioni host-volume (richiedono la configurazione del volume e dell'host)
 
 
 +

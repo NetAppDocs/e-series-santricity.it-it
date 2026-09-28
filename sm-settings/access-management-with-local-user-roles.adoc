@@ -15,6 +15,7 @@ Per la gestione degli accessi, gli amministratori possono utilizzare le funziona
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 I ruoli utente locali sono preconfigurati per lo storage array. Per utilizzare i ruoli utente locali per l'autenticazione, gli amministratori possono:
@@ -33,6 +34,7 @@ Il `admin` l'utente ha accesso completo a tutte le funzioni del sistema.
 
 
 
+[[management]]
 == Gestione
 
 Quando si utilizzano solo ruoli utente locali per l'autenticazione, gli amministratori possono eseguire le seguenti attività di gestione:

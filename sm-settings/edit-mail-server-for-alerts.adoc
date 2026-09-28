@@ -23,8 +23,7 @@ Per utilizzare un nome di dominio completo, è necessario configurare un server 
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *Email*.
+. Dal pannello di sinistra, seleziona menu:Alerts[Email alerts].
 . Selezionare *Configura server di posta*.
 +
 Viene visualizzata la finestra di dialogo Configura server di posta.

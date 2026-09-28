@@ -15,8 +15,7 @@ summary: 'È possibile modificare le impostazioni di un volume snapshot o di un 
 È possibile modificare le impostazioni di un volume snapshot o di un volume snapshot di coerenza snapshot per rinominarlo, attivare o disattivare il caching SSD o modificare l'assegnazione di host, cluster host o LUN (Logical Unit Number).
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
-. Fare clic sulla scheda *Snapshot Volumes*.
+. Dal pannello di sinistra, seleziona menu:Snapshots[Snapshot volumes].
 . Selezionare il volume di snapshot che si desidera modificare, quindi fare clic su *View/Edit Settings* (Visualizza/Modifica impostazioni).
 +
 Viene visualizzata la finestra di dialogo Snapshot Volume Settings (Impostazioni volume snapshot).
@@ -39,7 +38,7 @@ Viene visualizzata la finestra di dialogo Snapshot Volume Settings (Impostazioni
  a| 
 Nome
  a| 
-È possibile modificare il nome del volume di snapshot.
+Puoi cambiare il nome del volume Snapshot. I nomi dei volumi possono avere una lunghezza massima di 30 caratteri. Il nome deve essere univoco.
 
 
 

@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-is-automatic-load-balancing]]
 == Che cos'è il bilanciamento automatico del carico?
 
 La funzione di bilanciamento automatico del carico fornisce un bilanciamento i/o automatizzato e garantisce che il traffico i/o in entrata dagli host sia gestito e bilanciato dinamicamente tra entrambi i controller.
@@ -37,6 +38,7 @@ Qualsiasi volume assegnato per l'utilizzo della cache SSD di un controller non �
 ====
 
 
+[[what-is-controller-cache]]
 == Che cos'è la cache del controller?
 
 La cache del controller è uno spazio di memoria fisica che ottimizza due tipi di operazioni di i/o (input/output): Tra controller e host e tra controller e dischi.
@@ -60,6 +62,7 @@ La cache del controller influisce sulle prestazioni complessive dello storage ar
 ====
 
 
+[[what-is-cache-flushing]]
 == Cos'è il vampate di cache?
 
 Quando la quantità di dati non scritti nella cache raggiunge un determinato livello, il controller scrive periodicamente i dati memorizzati nella cache su un disco. Questo processo di scrittura è chiamato "vampate".
@@ -79,6 +82,7 @@ L'algoritmo basato sull'età specifica il periodo di tempo durante il quale i da
 ====
 
 
+[[what-is-cache-block-size]]
 == Che cos'è la dimensione del blocco della cache?
 
 Il controller dell'array di storage organizza la cache in "blocchi", ovvero blocchi di memoria che possono essere di 8, 16, 32 KiB. Tutti i volumi sul sistema storage condividono lo stesso spazio cache; pertanto, i volumi possono avere una sola dimensione del blocco cache.
@@ -87,6 +91,7 @@ Le applicazioni utilizzano blocchi di dimensioni diverse, che possono avere un i
 
 
 
+[[when-should-i-synchronize-storage-array-clocks]]
 == Quando è necessario sincronizzare gli orologi degli array di storage?
 
 È necessario sincronizzare manualmente gli orologi del controller nell'array di archiviazione se si nota che gli indicatori di data e ora visualizzati in Gestione di sistema di SANtricity non sono allineati con gli indicatori di data e ora visualizzati nel client di gestione (il computer che accede a Gestione di sistema di SANtricity tramite il browser). Questa operazione è necessaria solo se il protocollo NTP (Network Time Protocol) non è attivato in Gestione sistema di SANtricity.

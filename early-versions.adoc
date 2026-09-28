@@ -15,6 +15,7 @@ Consultare i collegamenti riportati di seguito per accedere alla documentazione 
 
 
 
+[[hardware-documentation-for-earlier-releases]]
 == Documentazione hardware per le release precedenti
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["Installare i vassoi dei dischi controller E2712, E2724, E5612, E5624 e i vassoi dei dischi di espansione DE1600 e DE5600"^]
@@ -30,10 +31,12 @@ Consultare i collegamenti riportati di seguito per accedere alla documentazione 
 
 
 
+[[software-documentation-for-earlier-releases]]
 == Documentazione software per le release precedenti
 
 
 
+[[santricity-release-11-8]]
 === SANtricity versione 11.8
 
 * https://docs.netapp.com/us-en/e-series-santricity-118/index.html["Guida di System Manager"^]
@@ -42,6 +45,7 @@ Consultare i collegamenti riportati di seguito per accedere alla documentazione 
 
 
 
+[[santricity-release-11-7]]
 === SANtricity versione 11.7
 
 * https://docs.netapp.com/us-en/e-series-santricity-117/index.html["Guida di System Manager"^]
@@ -50,6 +54,7 @@ Consultare i collegamenti riportati di seguito per accedere alla documentazione 
 
 
 
+[[santricity-release-11-6]]
 === SANtricity versione 11.6
 
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["Guida di System Manager"^]
@@ -58,6 +63,7 @@ Consultare i collegamenti riportati di seguito per accedere alla documentazione 
 
 
 
+[[santricity-release-11-5]]
 === SANtricity versione 11.5
 
 * https://docs.netapp.com/us-en/e-series-santricity-115/index.html["Guida di System Manager"^]
@@ -65,6 +71,7 @@ Consultare i collegamenti riportati di seguito per accedere alla documentazione 
 
 
 
+[[santricity-release-11-4]]
 === SANtricity versione 11.4
 
 * https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["AMW (E2700, E5600/EF560)"^]

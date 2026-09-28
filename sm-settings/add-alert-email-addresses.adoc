@@ -15,8 +15,7 @@ summary: È possibile aggiungere fino a 20 destinatari per gli avvisi e-mail.
 È possibile aggiungere fino a 20 destinatari per gli avvisi e-mail.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *Email*.
+. Dal pannello di sinistra, seleziona menu:Alerts[Email alerts].
 . Selezionare *Aggiungi email*.
 +
 Viene visualizzata la finestra di dialogo Aggiungi e-mail.
@@ -26,4 +25,4 @@ Viene visualizzata la finestra di dialogo Aggiungi e-mail.
 
 
 .Risultati
-Nella scheda Email della pagina Alerts (Avvisi) vengono visualizzati i nuovi indirizzi e-mail.
+La pagina degli avvisi email visualizza i nuovi indirizzi email.

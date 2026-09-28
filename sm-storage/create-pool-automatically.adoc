@@ -51,6 +51,13 @@ System Manager esegue le seguenti operazioni:
 ** Aggiunge le unità dello stesso tipo di unità al pool esistente e utilizza gli altri tipi di unità per creare pool diversi se le nuove unità sono di tipi diversi di unità.
 
 
+
+
+[NOTE]
+====
+Sui sistemi EF80 ed EF50, le unità SSD NVMe Performance e Capacity vengono trattate come tipi di unità separati. System Manager crea pool distinti per le unità Performance e Capacity e non le mescola nello stesso pool. La dimensione minima del pool è di 6 unità per Performance e di 12 unità per Capacity.
+
+====
 . Per visualizzare ulteriori caratteristiche del pool, fare clic sul nome del pool visualizzato.
 +
 Vengono visualizzate informazioni relative al tipo di disco, alla funzionalità di sicurezza, alla funzione di data assurance (da), alla protezione contro la perdita di shelf e alla protezione contro la perdita di cassetto.

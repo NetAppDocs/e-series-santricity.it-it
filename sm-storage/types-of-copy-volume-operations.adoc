@@ -19,6 +19,7 @@ Di seguito sono descritte le operazioni del volume di copia offline e online.
 
 
 
+[[offline-copy-volume-operation]]
 == Operazione di copia del volume offline
 
 La relazione del volume di copia offline è tra un volume di origine e un volume di destinazione. Una copia offline legge i dati dal volume di origine e li copia in un volume di destinazione, sospendendo tutti gli aggiornamenti al volume di origine con la copia in corso. Tutti gli aggiornamenti del volume di origine vengono sospesi per evitare la creazione di incoerenze cronologiche nel volume di destinazione.
@@ -49,6 +50,7 @@ Journaling file system
 |===
 
 
+[[online-copy-volume-operation]]
 == Operazione di copia online del volume
 
 La relazione del volume di copia online è tra un volume di snapshot e un volume di destinazione. È possibile avviare un'operazione Copy Volume (Copia volume) mentre il volume di origine è online e disponibile per la scrittura dei dati. Questa funzione si ottiene creando uno snapshot del volume e utilizzando lo snapshot come volume di origine effettivo per la copia.

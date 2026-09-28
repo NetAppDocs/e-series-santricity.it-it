@@ -21,7 +21,7 @@ summary: È possibile scegliere di attivare i file di aggiornamento immediatamen
 * *Tipo di pacchetto* -- si consiglia di testare il nuovo software e firmware su un array di storage prima di aggiornare i file su altri array di storage.
 
 
-Se il software o il firmware è stato trasferito ma non attivato, viene visualizzata una notifica nell'area Notifiche della home page di System Manager e nella pagina Upgrade Center.
+Quando hai software o firmware trasferiti ma non attivati, vedi una notifica nell'area Notifiche (accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra) e anche nella pagina del Centro aggiornamenti.
 
 [CAUTION]
 ====
@@ -29,8 +29,8 @@ Non è possibile interrompere il processo di attivazione dopo l'avvio.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare il menu:Support[Upgrade Center].
-. Nell'area aggiornamento del software del controller del sistema operativo SANtricity, fare clic su *attiva* e confermare che si desidera eseguire l'operazione.
+. Dal pannello di sinistra, seleziona menu:Support[Upgrade center].
+. Nell'area denominata SANtricity OS software upgrade, fai clic su *Attiva aggiornamento graduale* e conferma che vuoi eseguire l'operazione.
 +
 È possibile annullare l'operazione durante il controllo dello stato di salute prima dell'aggiornamento, ma non durante l'attivazione.
 
@@ -40,7 +40,7 @@ Viene avviato il controllo dello stato di salute prima dell'aggiornamento. Se il
 +
 Una volta completato correttamente il controllo dello stato di salute prima dell'aggiornamento, si verifica l'attivazione. Il tempo necessario per l'attivazione dipende dalla configurazione dello storage array e dai componenti che si stanno attivando.
 
-. *Opzionale:* per visualizzare un elenco degli aggiornamenti, fare clic su *Salva registro*.
+. *Facoltativo:* Per vedere un elenco di ciò che è stato aggiornato, clicca su *Salva registro*.
 +
 Il file viene salvato nella cartella Download del browser con il nome `drive_upgrade_log-timestamp.txt`.
 
@@ -48,6 +48,6 @@ Il file viene salvato nella cartella Download del browser con il nome `drive_upg
 
 .Al termine
 * Verificare che tutti i componenti siano visualizzati nella pagina hardware.
-* Verificare le nuove versioni software e firmware selezionando la finestra di dialogo Software and firmware Inventory (selezionare menu:Support[Upgrade Center], quindi fare clic sul collegamento *Software and firmware Inventory*).
+* Verifica le nuove versioni del software e del firmware consultando la pagina dell'inventario del software e del firmware (vai al menu:Supporto[Upgrade center] e poi fai clic sul collegamento per *software and firmware inventory*).
 * Se IL controller NVSRAM è stato aggiornato, tutte le impostazioni personalizzate applicate all'NVSRAM esistente andranno perse durante il processo di attivazione. Al termine del processo di attivazione, è necessario applicare nuovamente le impostazioni personalizzate A NVSRAM.
 

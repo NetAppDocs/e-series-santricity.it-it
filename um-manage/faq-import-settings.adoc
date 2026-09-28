@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-settings-will-be-imported]]
 == Quali impostazioni verranno importate?
 
 La funzione Import Settings (Impostazioni di importazione) è un'operazione batch che carica le configurazioni da un array di storage a più array di storage. Le impostazioni importate durante questa operazione dipendono dalla configurazione dell'array di storage di origine in Gestore di sistema di SANtricity.
@@ -33,6 +34,7 @@ La funzione Import Settings (Impostazioni di importazione) è un'operazione batc
 
 
 
+[[why-dont-i-see-all-of-my-storage-arrays]]
 == Perché non vedo tutti i miei array di archiviazione?
 
 Durante l'operazione Import Settings (Impostazioni di importazione), alcuni storage array potrebbero non essere disponibili nella finestra di dialogo di selezione della destinazione.

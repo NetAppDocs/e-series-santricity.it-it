@@ -16,6 +16,7 @@ summary: È possibile configurare System Manager per alcune impostazioni general
 
 
 
+[[what-settings-can-i-configure]]
 == Quali impostazioni è possibile configurare?
 
 Le impostazioni dell'array includono:
@@ -28,6 +29,7 @@ Le impostazioni dell'array includono:
 
 
 
+[[related-tasks]]
 == Attività correlate
 
 Scopri di più sulle attività correlate alle impostazioni di sistema:

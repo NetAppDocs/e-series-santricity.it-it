@@ -26,11 +26,7 @@ La funzione di cancellazione non supporta alcuni modelli di dischi meno recenti.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . In alternativa, è possibile utilizzare i campi di filtro per visualizzare tutti i dischi non assegnati nello shelf. Dall'elenco a discesa *Mostra unità che sono...*, selezionare *non assegnate*.
 +
 La vista shelf mostra solo i dischi non assegnati; tutti gli altri sono disattivati.
@@ -42,23 +38,23 @@ La vista shelf mostra solo i dischi non assegnati; tutti gli altri sono disattiv
 *Possibile perdita di dati* -- l'operazione di cancellazione non può essere annullata. Assicurarsi di selezionare le unità corrette durante la procedura.
 
 ====
-. Dal menu contestuale, seleziona *Cancella unità*.
+. Dal menu contestuale, seleziona *Erase*.
 +
-Viene visualizzata la finestra di dialogo Erase Drives (Cancella unità), che mostra tutte le unità idonee per un'operazione di cancellazione.
+Si apre la pagina Cancella unità, che mostra tutte le unità idonee per un'operazione di cancellazione.
 
 . Se lo si desidera, selezionare altri dischi dalla tabella. Non è possibile selezionare _tutti_ dischi; assicurarsi che un disco rimanga deselezionato.
-. Conferma l'operazione digitando `erase`, quindi fai clic su *Cancella unità*.
+. Conferma l'operazione digitando `erase`, quindi fai clic su *Cancella*.
 +
 [CAUTION]
 ====
 Continuare con questa operazione. Una volta fatto clic su Yes (Sì) nella finestra di dialogo successiva, l'operazione non può essere interrotta.
 
 ====
-. Nella finestra di dialogo Estimated Completion Time (tempo di completamento stimato), fare clic su *Yes* (Sì) per continuare con l'operazione di cancellazione.
+. Nella finestra di dialogo Tempo stimato di completamento dell'operazione di cancellazione delle unità, clicca su *Cancella* per continuare con l'operazione di cancellazione.
 
 
 .Risultati
-L'operazione di cancellazione potrebbe richiedere da diversi minuti a diverse ore. Puoi visualizzare lo stato in menu:Storage[Operazioni in corso]. Quando l'operazione di cancellazione è completata, le unità sono disponibili per l'uso in un altro gruppo di volumi o pool di dischi, oppure in un altro storage array.
+L'operazione di cancellazione potrebbe richiedere da diversi minuti a diverse ore. Puoi visualizzare lo stato in menu:Monitoraggio[Operazioni in corso]. Quando l'operazione di cancellazione è completata, le unità sono disponibili per l'uso in un altro gruppo di volumi o pool di dischi, oppure in un altro array di storage.
 
 .Al termine
 Se si desidera utilizzare nuovamente il disco, è necessario inizializzarlo. A tale scopo, selezionare *Inizializza* dal menu di scelta rapida del disco.

@@ -27,7 +27,7 @@ Per utilizzare un nome di dominio completo, è necessario configurare un server 
 
 
 .A proposito di questa attività
-Questa attività descrive come configurare il server di posta, inserire gli indirizzi e-mail per il mittente e i destinatari e verificare tutti gli indirizzi e-mail immessi nella pagina Avvisi.
+Questa procedura descrive come configurare il mail server, inserire gli indirizzi email del mittente e dei destinatari e testare tutti gli indirizzi email inseriti dalla pagina Email alerts.
 
 [NOTE]
 ====
@@ -35,10 +35,9 @@ Gli avvisi e-mail possono essere configurati anche dalla procedura di installazi
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *Email*.
+. Dal pannello di sinistra, seleziona menu:Alerts[Email alerts].
 +
-Se un server di posta elettronica non è ancora configurato, nella scheda e-mail viene visualizzato il messaggio "Configura server di posta".
+Se non è ancora configurato un server di posta elettronica, la pagina visualizza "Configura server di posta".
 
 . Selezionare *Configura server di posta*.
 +
@@ -58,7 +57,7 @@ Per utilizzare un nome di dominio completo, è necessario configurare un server 
 ** *Nome utente e password* -- se necessario, immettere un nome utente e una password per l'autenticazione con il mittente e il server di posta in uscita.
 ** *Include contact information in email* -- per includere le informazioni di contatto del mittente nel messaggio di avviso, selezionare questa opzione, quindi inserire un nome e un numero di telefono.
 +
-Dopo aver fatto clic su *Salva*, gli indirizzi e-mail vengono visualizzati nella scheda e-mail della pagina Avvisi.
+Dopo che clicchi su *Salva*, gli indirizzi email appaiono nella pagina Avvisi email.
 
 
 
@@ -68,7 +67,7 @@ Viene visualizzata la finestra di dialogo Aggiungi e-mail.
 
 . Inserire uno o più indirizzi e-mail per i destinatari degli avvisi, quindi fare clic su *Aggiungi*.
 +
-Gli indirizzi e-mail vengono visualizzati nella pagina Avvisi.
+Gli indirizzi e-mail vengono visualizzati nella pagina Avvisi e-mail.
 
 . Se si desidera assicurarsi che gli indirizzi e-mail siano validi, fare clic su *Test all emails* (verifica tutte le e-mail) per inviare i messaggi di prova ai destinatari.
 

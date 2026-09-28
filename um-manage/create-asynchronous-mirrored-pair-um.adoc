@@ -40,6 +40,7 @@ Il processo per creare una coppia asincrona con mirroring è una procedura multi
 
 
 
+[[step-1-create-or-select-a-mirror-consistency-group]]
 == Fase 1: Creare o selezionare un gruppo di coerenza mirror
 
 In questo passaggio, creare un nuovo gruppo di coerenza mirror o selezionarne uno esistente. Un gruppo di coerenza mirror è un contenitore per i volumi primario e secondario (la coppia mirrorata) e specifica il metodo di risincronizzazione desiderato (manuale o automatico) per tutte le coppie del gruppo.
@@ -59,7 +60,7 @@ Per creare un nuovo gruppo, procedere come segue:
 
 +
 .. Selezionare *Un nuovo gruppo di coerenza mirror*, quindi fare clic su *Avanti*.
-.. Immettere un nome univoco che descriva meglio i dati sui volumi che verranno mirrorati tra i due array di storage. Un nome può essere composto solo da lettere, numeri e caratteri speciali di sottolineatura (_), trattino (-) e il segno hash ( n.). Un nome non può superare i 30 caratteri e non può contenere spazi.
+.. Inserisci un nome univoco che descriva al meglio i dati presenti sui volumi che verranno replicati tra i due array di storage. Un nome può contenere solo lettere, numeri e i caratteri speciali underscore (_), trattino (-) e cancelletto (#). Un nome non può superare i 60 caratteri e non può contenere spazi.
 .. Selezionare l'array di storage remoto su cui si desidera stabilire una relazione mirror con l'array di storage locale.
 +
 [NOTE]
@@ -69,7 +70,7 @@ Se lo storage array remoto è protetto da password, il sistema richiede una pass
 ====
 .. Scegliere se sincronizzare le coppie mirrorate manualmente o automaticamente:
 +
-*** *Manuale* -- selezionare questa opzione per avviare manualmente la sincronizzazione per tutte le coppie mirrorate all'interno di questo gruppo. Tenere presente che per eseguire una risincronizzazione in un secondo momento, è necessario avviare System Manager per l'array di storage primario, quindi andare al menu:Storage[Asynchronous Mirroring], selezionare il gruppo dalla scheda *Mirror Consistency Groups*, quindi selezionare menu:More[Manually resincronize].
+*** *Manuale* -- Seleziona questa opzione per avviare manualmente la sincronizzazione per tutte le coppie replicate all'interno di questo gruppo. Nota che quando vuoi eseguire una risincronizzazione in un secondo momento, devi avviare System Manager per lo storage array primario, poi andare su menu:Mirroring[Gruppi di coerenza mirror asincroni], selezionare il gruppo e poi selezionare menu:Altro[Risincronizza manualmente].
 *** *Automatico* -- selezionare l'intervallo desiderato in *minuti*, *ore* o *giorni*, dall'inizio dell'aggiornamento precedente all'inizio dell'aggiornamento successivo. Ad esempio, se l'intervallo di sincronizzazione è impostato su 30 minuti e il processo di sincronizzazione inizia alle 16:00, il processo successivo inizia alle 16:30
 
 
@@ -95,6 +96,7 @@ Se Unified Manager crea correttamente il gruppo di coerenza mirror sull'array di
 
 
 
+[[step-2-select-the-primary-volume]]
 == Fase 2: Selezionare il volume principale
 
 In questa fase, selezionare il volume primario da utilizzare nella relazione di mirroring e allocare la capacità riservata. Quando si seleziona un volume primario sull'array di storage locale, il sistema visualizza un elenco di tutti i volumi idonei per la coppia mirrorata. I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco.
@@ -123,6 +125,7 @@ Tenere presenti le seguenti linee guida:
 
 
 
+[[step-3-select-the-secondary-volume]]
 == Fase 3: Selezionare il volume secondario
 
 In questa fase, selezionare il volume secondario da utilizzare nella relazione di mirroring e allocare la capacità riservata. Quando si seleziona un volume secondario sull'array di storage remoto, il sistema visualizza un elenco di tutti i volumi idonei per la coppia mirrorata. I volumi non idonei all'utilizzo non vengono visualizzati nell'elenco.

@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[why-does-the-cannot-access-other-controller-dialog-box-appear]]
 == Perché viene visualizzata la finestra di dialogo Impossibile accedere ad altri controller?
 
 Quando si eseguono determinate operazioni relative ai certificati CA (ad esempio, l'importazione di un certificato), potrebbe essere visualizzata una finestra di dialogo che richiede di accettare un certificato autofirmato per il secondo controller.
@@ -32,6 +33,7 @@ Se questa finestra di dialogo viene visualizzata di nuovo e non è possibile com
 
 
 
+[[how-do-i-know-what-certificates-need-to-be-uploaded-to-santricity-system-manager-for-external-key-management]]
 == Come è possibile sapere quali certificati devono essere caricati in Gestione sistema di SANtricity per la gestione delle chiavi esterne?
 
 Per la gestione esterna delle chiavi, vengono importati due tipi di certificati per l'autenticazione tra lo storage array e il server di gestione delle chiavi in modo che le due entità possano fidarsi l'una dell'altra.
@@ -46,6 +48,7 @@ Un certificato del server di gestione delle chiavi convalida il server di gestio
 
 
 
+[[what-do-i-need-to-know-about-certificate-revocation-checking]]
 == Cosa devo sapere sulla verifica della revoca dei certificati?
 
 Gestione di sistema di SANtricity consente di controllare i certificati revocati utilizzando un server OCSP (Online Certificate Status Protocol), anziché caricare gli elenchi di revoche di certificati (CRL).
@@ -61,6 +64,7 @@ Se si specifica un indirizzo del responder OCSP in System Manager o nell'interfa
 ====
 
 
+[[what-types-of-servers-will-revocation-checking-be-enabled-for]]
 == Per quali tipi di server verrà attivato il controllo delle revoche?
 
 Lo storage array esegue il controllo delle revoche ogni volta che si connette a un server AutoSupport, a un server EKMS (External Key Management Server), a un server LDAPS (Lightweight Directory Access Protocol over SSL) o a un server Syslog.

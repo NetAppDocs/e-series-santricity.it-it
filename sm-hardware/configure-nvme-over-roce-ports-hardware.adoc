@@ -19,18 +19,14 @@ Se il controller include una connessione per NVMe su RoCE (RDMA over Converged E
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller con la porta NVMe over RoCE che si desidera configurare.
 +
 Viene visualizzato il menu di scelta rapida del controller.
 
 . Selezionare *Configure NVMe over RoCE ports* (Configura NVMe su porte RoCE).
 +
-Viene visualizzata la finestra di dialogo Configure NVMe over RoCE Ports (Configura porte NVMe su RoCE).
+Si apre la finestra di dialogo Configura porte NVMe su RoCE.
 
 . Nell'elenco a discesa, selezionare la porta HIC che si desidera configurare.
 . Fare clic su *Avanti*.

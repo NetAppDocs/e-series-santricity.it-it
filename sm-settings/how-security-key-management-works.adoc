@@ -24,19 +24,21 @@ Ogni volta che si spegne e si riaccende l'alimentazione dei dischi, i dischi abi
 
 
 
+[[internal-key-management]]
 == Gestione interna delle chiavi
 
 Le chiavi interne vengono mantenute e "`nascoste`" in una posizione non accessibile sulla memoria persistente del controller. Per implementare la gestione interna delle chiavi, attenersi alla seguente procedura:
 
 . Installare unità sicure nell'array di storage. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).
 . Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
-. Creare una chiave di sicurezza interna, che implica la definizione di un identificatore e di una passphrase. L'identificatore è una stringa associata alla chiave di sicurezza e memorizzata sul controller e su tutti i dischi associati alla chiave. La password viene utilizzata per crittografare la chiave di sicurezza a scopo di backup. Per creare una chiave interna, accedere al menu:Impostazioni[sistema > Gestione chiave di sicurezza > Crea chiave interna].
+. Crea una chiave di sicurezza interna, che prevede la definizione di un identificatore e di una pass phrase. L'identificatore è una stringa associata alla chiave di sicurezza, ed è memorizzato sul controller e su tutte le unità associate alla chiave. La pass phrase viene utilizzata per crittografare la chiave di sicurezza per scopi di backup. Per creare una chiave interna, vai su menu:System[Crea chiave di sicurezza interna].
 
 
 La chiave di sicurezza viene memorizzata nel controller in una posizione nascosta e non accessibile. È quindi possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.
 
 
 
+[[external-key-management]]
 == Gestione esterna delle chiavi
 
 Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato, utilizzando un protocollo KMIP (Key Management Interoperability Protocol). Per implementare la gestione esterna delle chiavi, attenersi alla seguente procedura:
@@ -45,14 +47,14 @@ Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato
 . Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
 . Ottenere un file di certificato client firmato. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste KMIP.
 +
-.. Innanzitutto, completare e scaricare una richiesta di firma del certificato (CSR) del client. Accedere al menu:Impostazioni[certificati > Gestione chiavi > CSR completa].
+.. Per prima cosa, completi e scarichi una richiesta di firma del certificato (CSR) del client. Vai al menu:Certificates[Key management certificates], e poi seleziona *Complete CSR*.
 .. Successivamente, viene richiesto un certificato client firmato da una CA attendibile dal server di gestione delle chiavi. È inoltre possibile creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR.
 .. Una volta ottenuto un file di certificato client, copiarlo sull'host in cui si accede a System Manager.
 .. In alternativa, è possibile generare una richiesta di firma del certificato esternamente utilizzando una coppia di chiavi privata e pubblica.
 
 
 . Recuperare un file di certificato dal server di gestione delle chiavi, quindi copiarlo sull'host in cui si accede a System Manager. Un certificato del server di gestione delle chiavi convalida il server di gestione delle chiavi, in modo che lo storage array possa fidarsi del proprio indirizzo IP. È possibile utilizzare un certificato root, intermedio o server per il server di gestione delle chiavi.
-. Creare una chiave esterna che preveda la definizione dell'indirizzo IP del server di gestione delle chiavi e del numero di porta utilizzato per le comunicazioni KMIP. Durante questo processo, vengono caricati anche i file dei certificati. Per creare una chiave esterna, accedere al menu:Impostazioni[sistema > Gestione chiave di sicurezza > Crea chiave esterna].
+. Crea una chiave esterna, che prevede la definizione dell'indirizzo IP del server di gestione delle chiavi e del numero di porta utilizzato per le comunicazioni KMIP. Durante questo processo, carichi anche i file del certificato. Per creare una chiave esterna, vai su menu:System[Crea chiave di sicurezza esterna].
 
 
 Il sistema si connette al server di gestione delle chiavi con le credenziali immesse. È quindi possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.

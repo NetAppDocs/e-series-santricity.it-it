@@ -33,13 +33,13 @@ Il file del Feature Pack viene caricato sul client di gestione (il sistema con u
 Questa attività descrive come utilizzare System Manager per attivare un Feature Pack. Al termine, riavviare lo storage array.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. In *componenti aggiuntivi*, selezionare *Cambia Feature Pack*.
+. Dal pannello di sinistra, seleziona *Sistema*.
+. Nella sezione *Componenti aggiuntivi*, seleziona *Cambia pacchetto di funzionalità*.
 . Fare clic su *Browse*, quindi selezionare il file delle chiavi.
 +
 Il nome del file viene visualizzato nella finestra di dialogo.
 
-. Tipo `change` sul campo.
+. Digita  `CHANGE` nel campo.
 . Fare clic su *Cambia*.
 +
 Viene avviata la migrazione dei Feature Pack e i controller vengono riavviati. I dati della cache non scritti vengono cancellati, il che garantisce l'assenza di attività i/O. Entrambi i controller si riavviano automaticamente per rendere effettivo il nuovo Feature Pack. Una volta completato il riavvio, lo storage array torna allo stato di risposta.

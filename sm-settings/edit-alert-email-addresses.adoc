@@ -15,11 +15,10 @@ summary: È possibile modificare gli indirizzi e-mail dei destinatari che ricevo
 È possibile modificare gli indirizzi e-mail dei destinatari che ricevono gli avvisi e-mail.
 
 .Prima di iniziare
-L'indirizzo di posta elettronica che si desidera modificare deve essere definito nella scheda Email della pagina Alerts.
+L'indirizzo email che vuoi modificare deve essere definito nella pagina Avvisi via email.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *Email*.
+. Dal pannello di sinistra, seleziona menu:Alerts[Email alerts].
 . Nella tabella *Indirizzo email*, selezionare l'indirizzo che si desidera modificare, quindi fare clic sull'icona *Modifica* (matita) all'estrema destra.
 +
 La riga diventa un campo modificabile.
@@ -34,4 +33,4 @@ Per annullare le modifiche, selezionare l'icona *Annulla* (X).
 
 
 .Risultati
-La scheda Email della pagina Alerts (Avvisi) visualizza gli indirizzi e-mail aggiornati.
+La pagina degli avvisi email mostra gli indirizzi email aggiornati.

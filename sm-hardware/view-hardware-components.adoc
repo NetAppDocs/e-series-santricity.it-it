@@ -26,7 +26,7 @@ La pagina hardware offre funzioni di ordinamento e filtraggio che semplificano l
  a| 
 Viste di dischi, controller e componenti
  a| 
-Per passare dalla vista anteriore a quella posteriore, selezionare *Drives* (unità) o *Controllers & Components* (Controller e componenti) dall'estrema destra (il collegamento visualizzato dipende dalla vista corrente). La vista *Drives* mostra i dischi e gli eventuali alloggiamenti vuoti. La vista *Controller & Components* mostra i controller, i moduli IOM (ESM), i contenitori di alimentazione/ventole o gli alloggiamenti dei controller vuoti. Nella parte inferiore della pagina, è anche possibile selezionare *Mostra tutti i dischi*.
+Per passare dalla visualizzazione delle unità a quella dei controller, seleziona menu:Hardware[Drives] o menu:Hardware[Controllers and components] dal pannello di sinistra. La visualizzazione *Drives* mostra le unità e gli alloggiamenti vuoti per le unità. La visualizzazione *Controllers and components* mostra i controller, eventuali moduli IOM (ESM), contenitori di alimentazione/ventole o alloggiamenti vuoti per i controller. Nella visualizzazione Drives, puoi anche selezionare *Show all drives*.
 
 
 

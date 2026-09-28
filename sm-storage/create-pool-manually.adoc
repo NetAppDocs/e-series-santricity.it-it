@@ -17,7 +17,7 @@ summary: 'È possibile creare un pool manualmente (da un set di candidati) se la
 Un pool fornisce la capacità di storage logico necessaria per creare singoli volumi che possono essere utilizzati per ospitare le applicazioni.
 
 .Prima di iniziare
-* È necessario disporre di un minimo di 11 dischi con lo stesso tipo di disco (HDD o SSD).
+* Devi avere un numero minimo di unità dello stesso tipo. Per i sistemi EF80 ed EF50, il minimo è di 6 unità per i pool Performance o 12 unità per i pool Capacity; negli array misti Performance e Capacity, Capacity richiede un minimo di 12 unità e Performance richiede un minimo di 2 unità. Per tutti gli altri sistemi, il minimo è 11 unità.
 * La protezione contro la perdita di shelf richiede che i dischi che compongono il pool si trovino in almeno sei diversi shelf di dischi e che non vi siano più di due dischi in un singolo shelf di dischi.
 * La protezione contro la perdita di cassetto richiede che le unità che compongono il pool siano collocate in almeno cinque cassetti diversi e che il pool includa un numero uguale di shelf di dischi da ciascun cassetto.
 * Quando si configura uno storage array EF600 o EF300, assicurarsi che ciascun controller abbia accesso a un numero uguale di dischi nei primi 12 slot e a un numero uguale di dischi negli ultimi 12 slot. Questa configurazione aiuta i controller a utilizzare entrambi i bus PCIe lato disco in modo più efficace. Attualmente, System Manager consente la selezione del disco nella funzione Advanced (Avanzate) quando si crea un gruppo di volumi. Per la creazione del pool, si consiglia di utilizzare tutti i dischi dell'array di storage.
@@ -34,7 +34,7 @@ Viene visualizzata la finestra di dialogo Create Pool (Crea pool).
 +
 La tabella dei risultati elenca tutti i pool possibili che è possibile creare.
 
-. Selezionare il pool candidato che si desidera utilizzare in base alle seguenti caratteristiche, quindi fare clic su *Create* (Crea).
+. Individua il candidato del pool che vuoi utilizzare in base alle seguenti caratteristiche, quindi fai clic su *Crea*.
 +
 [cols="25h,~"]
 |===
@@ -81,6 +81,9 @@ Indica se il pool candidato è costituito interamente da dischi con funzionalit�
 ** Se si desidera creare un pool solo FDE, cercare *Yes - FDE* nella colonna Secure-capable. Se si desidera creare un pool solo FIPS, cercare *Sì - FIPS* o *Sì - FIPS (misto)*. "Misto" indica una combinazione di dischi di livello 140-2 e 140-3. Se si utilizza una combinazione di questi livelli, tenere presente che il pool funzionerà al livello di sicurezza inferiore (140-2).
 ** È possibile creare un pool composto da dischi che possono o non possono essere sicuri o che sono una combinazione di livelli di sicurezza. Se i dischi del pool includono dischi che non sono sicuri, non è possibile rendere il pool sicuro.
 
+
+
+NOTE: Non è supportata la combinazione di unità FDE e FIPS all'interno dello stesso array di storage. Tutte le unità con funzionalità di sicurezza presenti nel sistema devono essere dello stesso tipo.
 
 
 

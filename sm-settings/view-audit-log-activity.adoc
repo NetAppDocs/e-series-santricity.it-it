@@ -18,8 +18,7 @@ Visualizzando i registri di controllo, gli utenti con autorizzazioni di amminist
 È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Selezionare la scheda **Registro audit**.
+. Dal pannello di sinistra, seleziona menu:Monitoring[Audit log].
 +
 L'attività del registro di controllo viene visualizzata in formato tabulare, che include le seguenti colonne di informazioni:
 
@@ -33,7 +32,7 @@ L'attività del registro di controllo viene visualizzata in formato tabulare, ch
 ** *Descrizione* -- ulteriori informazioni sull'evento, se applicabile.
 
 
-. Utilizzare le selezioni nella pagina Registro audit per visualizzare e gestire gli eventi.
+. Utilizza le selezioni nella pagina del registro di controllo per visualizzare e gestire gli eventi.
 +
 .Dettagli della selezione
 [%collapsible]
@@ -99,7 +98,7 @@ Fare clic sull'icona *Mostra/Nascondi* colonna image:../media/sam-1140-ss-access
  a| 
 Attiva/disattiva filtri colonna
  a| 
-Fare clic sull'icona *Alterna* image:../media/sam-1140-ss-access-toggle.gif["Attiva/Disattiva"]per aprire i campi di filtraggio per ciascuna colonna. Immettere i caratteri all'interno di un campo colonna per limitare gli eventi visualizzati da tali caratteri. Fare nuovamente clic sull'icona per chiudere i campi di filtraggio.
+Fai clic sull'icona *Toggle* image:../media/sam-1140-ss-access-toggle.gif["Attiva/Disattiva"] per aprire i campi di filtro per ciascuna colonna. Inserisci caratteri in un campo di colonna per limitare gli eventi visualizzati da quei caratteri. Fai nuovamente clic sull'icona per chiudere i campi di filtro.
 
 
 

@@ -22,11 +22,7 @@ System Manager monitora i dischi nell'array di storage. Quando rileva che un dis
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Fare clic sull'unità che si desidera guastare.
 +
 Viene visualizzato il menu di scelta rapida del disco.

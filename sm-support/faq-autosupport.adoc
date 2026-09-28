@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-data-am-i-collecting]]
 == Quali dati vengono raccolti?
 
 La funzionalità AutoSupport e la raccolta manuale dei dati di supporto consentono di raccogliere i dati in un pacchetto di assistenza clienti per la risoluzione dei problemi e l'analisi dei problemi in remoto da parte del supporto tecnico.
@@ -24,6 +25,7 @@ Il bundle di assistenza clienti raccoglie tutti i tipi di informazioni sull'arra
 
 
 
+[[what-does-unreadable-sectors-data-show-me]]
 == Cosa mostrano i dati dei settori illeggibili?
 
 È possibile visualizzare dati dettagliati sui settori illeggibili rilevati sui dischi dello storage array.
@@ -104,6 +106,7 @@ Mostra uno dei seguenti tipi di errore:
 |===
 
 
+[[what-is-a-health-image]]
 == Che cos'è un'immagine sanitaria?
 
 Un'immagine di integrità è un dump di dati raw della memoria del processore del controller che il supporto tecnico può utilizzare per diagnosticare un problema con un controller.
@@ -112,6 +115,7 @@ Il firmware genera automaticamente un'immagine dello stato di salute quando rile
 
 
 
+[[what-do-the-autosupport-features-do]]
 == Quali sono le funzioni di AutoSupport?
 
 La funzione AutoSupport è composta da tre funzioni individuali che vengono attivate separatamente.
@@ -123,6 +127,7 @@ La funzione AutoSupport è composta da tre funzioni individuali che vengono atti
 
 
 
+[[what-type-of-data-is-collected-through-the-autosupport-feature]]
 == Che tipo di dati vengono raccolti tramite la funzione AutoSupport?
 
 La funzione AutoSupport contiene tre tipi di spedizione standard: Spedizioni di eventi, spedizioni pianificate e spedizioni di diagnostica on-demand e remote.
@@ -157,6 +162,7 @@ La funzione AutoSupport invia automaticamente diverse spedizioni in base a una p
 
 
 
+[[how-do-i-configure-the-delivery-method-for-the-autosupport-feature]]
 == Come si configura il metodo di consegna per la funzione AutoSupport?
 
 La funzione AutoSupport supporta i protocolli HTTPS e SMTP per la distribuzione delle spedizioni AutoSupport al supporto tecnico.
@@ -179,7 +185,7 @@ Esaminare i diversi protocolli:
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Supporto [Support Center > AutoSupport] scheda.
+. Dal pannello di sinistra, seleziona menu:Support[AutoSupport].
 . Selezionare *Configura metodo di erogazione AutoSupport*.
 +
 Viene visualizzata una finestra di dialogo in cui sono elencati i metodi di consegna dell'invio.
@@ -213,6 +219,7 @@ Se il test di configurazione non riesce, controllare le impostazioni di configur
 
 
 
+[[what-is-configuration-data]]
 == Che cosa sono i dati di configurazione?
 
 Quando si seleziona Collect Configuration Data (Raccogli dati di configurazione), il sistema salva lo stato corrente del database di configurazione RAID.
@@ -221,6 +228,7 @@ Il database di configurazione RAID include tutti i dati relativi ai gruppi di vo
 
 
 
+[[what-do-i-need-to-know-before-upgrading-the-santricity-os-software]]
 == Cosa occorre sapere prima di aggiornare il software SANtricity OS?
 
 Prima di aggiornare il software e il firmware del controller, tenere presente questi elementi.
@@ -268,6 +276,7 @@ CAUTION: Non apportare modifiche allo storage array durante l'aggiornamento.
 
 
 
+[[what-do-i-need-to-know-before-suspending-iom-auto-synchronization]]
 == Cosa occorre sapere prima di sospendere la sincronizzazione automatica IOM?
 
 La sospensione della sincronizzazione automatica IOM impedisce l'aggiornamento del firmware IOM al successivo aggiornamento del software del controller del sistema operativo SANtricity.
@@ -276,6 +285,7 @@ Normalmente, il software del controller e il firmware IOM vengono aggiornati com
 
 
 
+[[why-is-my-firmware-upgrade-progressing-so-slowly]]
 == Perché l'aggiornamento del firmware procede così lentamente?
 
 L'avanzamento dell'aggiornamento del firmware dipende dal carico complessivo del sistema.
@@ -284,6 +294,7 @@ Durante un aggiornamento online del firmware del disco, se si verifica un trasfe
 
 
 
+[[what-do-i-need-to-know-before-upgrading-drive-firmware]]
 == Cosa occorre sapere prima di aggiornare il firmware del disco?
 
 Prima di aggiornare il firmware del disco, tenere presente questi elementi.
@@ -298,6 +309,7 @@ Prima di aggiornare il firmware del disco, tenere presente questi elementi.
 
 
 
+[[how-do-i-choose-which-type-of-upgrade-to-perform]]
 == Come si sceglie il tipo di aggiornamento da eseguire?
 
 È possibile scegliere il tipo di aggiornamento da eseguire sul disco in base allo stato del pool o del gruppo di volumi.

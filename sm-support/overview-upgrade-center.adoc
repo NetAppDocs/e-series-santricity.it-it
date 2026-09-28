@@ -12,16 +12,18 @@ summary: Utilizzare il Centro di aggiornamento per scaricare il software e il fi
 
 
 [role="lead"]
-Utilizzare il Centro di aggiornamento per scaricare il software e il firmware più recenti e per aggiornare i controller e le unità.
+Utilizza il Centro aggiornamenti per scaricare il software e il firmware più recenti e per aggiornare i controller e i dischi.
 
 
 
+[[controller-upgrade-overview]]
 == Panoramica sull'aggiornamento del controller
 
 È possibile aggiornare il software e il firmware dello storage array per ottenere le ultime funzionalità e correzioni di bug.
 
 
 
+[[components-included-in-the-os-controller-upgrade]]
 === Componenti inclusi nell'aggiornamento del controller del sistema operativo
 
 Diversi componenti dello storage array contengono software o hardware che è possibile aggiornare occasionalmente.
@@ -37,18 +39,20 @@ image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Aggiornare le posizio
 
 ^1^ shelf del controller; ^2^ shelf del disco; ^3^ Software, firmware del controller, NVSRAM del controller, Software del supervisore; ^4^ firmware del disco; ^5^ firmware IOM; ^6^ firmware del disco
 
-È possibile visualizzare le versioni software e firmware correnti nella finestra di dialogo Software and firmware Inventory (inventario software e firmware). Accedere al menu:Support[Upgrade Center], quindi fare clic sul collegamento *Software and firmware Inventory* (inventario software e firmware).
+Puoi visualizzare le versioni correnti del software e del firmware nella pagina di inventario del software e del firmware. Vai al menu:Supporto[Upgrade center], e poi fai clic sul link *software e firmware inventory*.
 
 Come parte del processo di aggiornamento, potrebbe essere necessario aggiornare anche il driver multipath/failover e/o HBA dell'host in modo che l'host possa interagire correttamente con i controller. Per determinare se questo è il caso, consultare la https://imt.netapp.com/matrix/#welcome["Tool di matrice di interoperabilità NetApp"^].
 
 
 
+[[when-to-stop-io]]
 === Quando interrompere i/O.
 
 Se lo storage array contiene due controller e si dispone di un driver multipath installato, lo storage array può continuare l'elaborazione dell'i/o durante l'aggiornamento. Durante l'aggiornamento, il controller A esegue il failover di tutti i volumi nel controller B, esegue l'upgrade, recupera i volumi e tutti i volumi del controller B, quindi aggiorna il controller B.
 
 
 
+[[pre-upgrade-health-check]]
 === Verifica dello stato di salute prima dell'aggiornamento
 
 Durante il processo di aggiornamento viene eseguito un controllo dello stato di salute prima dell'aggiornamento. Il controllo dello stato di salute prima dell'aggiornamento valuta tutti i componenti dell'array di storage per assicurarsi che l'aggiornamento possa continuare. Le seguenti condizioni potrebbero impedire l'aggiornamento:
@@ -68,12 +72,14 @@ Durante il processo di aggiornamento viene eseguito un controllo dello stato di 
 
 
 
+[[drive-upgrade-overview]]
 == Panoramica sull'aggiornamento del disco
 
 Il firmware del disco controlla le caratteristiche operative di basso livello di un disco. Periodicamente, i produttori di dischi rilasciano aggiornamenti al firmware del disco per aggiungere nuove funzionalità, migliorare le prestazioni e correggere i difetti.
 
 
 
+[[online-and-offline-drive-firmware-upgrades]]
 === Aggiornamenti del firmware del disco online e offline
 
 Esistono due tipi di metodi di aggiornamento del firmware del disco: Online e offline.
@@ -113,6 +119,7 @@ I seguenti dischi DEVONO utilizzare il metodo offline:
 
 
 
+[[compatibility]]
 === Compatibilità
 
 Ciascun file del firmware del disco contiene informazioni sul tipo di disco su cui viene eseguito il firmware. È possibile scaricare il file del firmware specificato solo su un'unità compatibile. System Manager verifica automaticamente la compatibilità durante il processo di aggiornamento.

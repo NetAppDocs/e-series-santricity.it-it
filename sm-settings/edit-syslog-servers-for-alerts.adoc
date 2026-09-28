@@ -15,8 +15,7 @@ summary: 'È possibile modificare l"indirizzo del server utilizzato per ricevere
 È possibile modificare l'indirizzo del server utilizzato per ricevere gli avvisi syslog.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *Syslog*.
+. Dal pannello di sinistra, seleziona menu:Alerts[Syslog alerts].
 . Dalla tabella, selezionare un indirizzo server syslog, quindi fare clic sull'icona *Edit* (matita) a destra.
 +
 La riga diventa un campo modificabile.

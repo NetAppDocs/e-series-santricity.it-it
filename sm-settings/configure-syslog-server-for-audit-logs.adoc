@@ -21,8 +21,7 @@ Se si desidera archiviare i registri di controllo su un server syslog esterno, �
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Dalla scheda Registro di controllo, selezionare *Configura server Syslog*.
+. Dal pannello di sinistra, seleziona menu:Monitoring[Audit log], e poi seleziona *Configure Syslog Servers*.
 +
 Viene visualizzata la finestra di dialogo Configura server Syslog.
 
@@ -38,7 +37,7 @@ Viene visualizzata la finestra di dialogo Add Syslog Server (Aggiungi server Sys
 +
 [NOTE]
 ====
-Se il certificato diventa non valido in un secondo momento, l'handshake TLS avrà esito negativo. Di conseguenza, un messaggio di errore viene inviato al registro di controllo e i messaggi non vengono più inviati al server syslog. Per risolvere questo problema, è necessario correggere il certificato sul server syslog e accedere al menu:Impostazioni[Registro audit > Configura server Syslog > Test tutti].
+Se in seguito il certificato diventa non valido, la stretta di mano TLS fallirà. Di conseguenza, viene registrato un messaggio di errore nel registro di controllo e i messaggi non vengono più inviati al syslog server. Per risolvere questo problema, devi correggere il certificato sul syslog server e poi andare su menu:Monitoring[Audit log > Configure Syslog Servers > Test All].
 
 ====
 ** *Port* -- inserire il numero di porta del ricevitore syslog. Dopo aver fatto clic su *Add* (Aggiungi), viene visualizzata la finestra di dialogo Configure Syslog Servers (Configura server Syslog) e il server syslog configurato.

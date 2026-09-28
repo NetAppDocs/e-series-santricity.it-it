@@ -18,7 +18,7 @@ summary: 'È possibile assegnare un hot spare come unità di standby per una pro
 * Deve essere disponibile un'unità che soddisfi i seguenti criteri:
 +
 ** Non assegnato, con stato ottimale.
-** Stesso tipo di supporto dei dischi nel gruppo di volumi (ad esempio, SSD).
+** Stesso tipo di supporto e di unità delle unità presenti nel gruppo di volumi (ad esempio, SSD). Nei sistemi EF80 e EF50, gli hot spare devono anche corrispondere al tipo di unità Capacity.
 ** Stesso tipo di interfaccia dei dischi nel gruppo di volumi (ad esempio, SAS).
 ** Capacità uguale o superiore alla capacità utilizzata dei dischi nel gruppo di volumi.
 
@@ -34,11 +34,7 @@ Questa attività descrive come assegnare manualmente un hot spare dalla pagina h
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Selezionare un'unità non assegnata (visualizzata in grigio) che si desidera utilizzare come hot spare.
 +
 Viene visualizzato il menu di scelta rapida del disco.
@@ -64,6 +60,7 @@ Il disco viene visualizzato in rosa nella pagina hardware, che indica che si tra
 
 
 
+[[results]]
 == Risultati
 
 Se un disco all'interno di un gruppo di volumi RAID 1, RAID 5 o RAID 6 si guasta, il controller utilizza automaticamente i dati di ridondanza per ricostruire i dati dal disco guasto all'hot spare.

@@ -14,79 +14,100 @@ summary: È possibile visualizzare informazioni su un controller, ad esempio lo 
 È possibile visualizzare informazioni su un controller, ad esempio lo stato delle interfacce host, delle interfacce disco e delle porte di gestione.
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Per visualizzare le impostazioni del controller, eseguire una delle seguenti operazioni:
 +
 ** Fare clic sul controller per visualizzare il menu di scelta rapida, quindi selezionare *View settings* (Visualizza impostazioni).
 ** Selezionare l'icona del controller (accanto all'elenco a discesa *Shelf*). Per le configurazioni duplex, selezionare *Controller A* o *Controller B* dalla finestra di dialogo, quindi fare clic su *Avanti*.
 +
-Viene visualizzata la finestra di dialogo Controller Settings (Impostazioni controller).
+Si apre il menu a scorrimento delle impostazioni del controller.
 
 
 
-. Selezionare le schede per spostarsi tra le impostazioni delle proprietà.
-+
-Alcune schede dispongono di un collegamento per *Mostra altre impostazioni* in alto a destra.
-
+. Esamina le sezioni per passare da un'impostazione all'altra delle proprietà del controller.
 +
 .Dettagli del campo
 [%collapsible]
 ====
 [cols="25h,~"]
 |===
-| Scheda | Descrizione 
+| Sezione | Descrizione 
 
 
  a| 
-Base
+Dettagli
  a| 
-Mostra lo stato del controller, il nome del modello, il codice ricambio, la versione corrente del firmware e la versione DELLA memoria ad accesso casuale statica non volatile (NVSRAM).
-
-
-
- a| 
-Cache
- a| 
-Mostra le impostazioni della cache del controller, che includono la cache dei dati, la cache del processore e la periferica di backup della cache. La periferica di backup della cache viene utilizzata per eseguire il backup dei dati nella cache in caso di perdita di alimentazione al controller. Lo stato può essere ottimale, non riuscito, rimosso, sconosciuto, protetto da scrittura, O incompatibile.
+Mostra lo stato del controller, la data/ora, il nome del modello e il codice del pezzo di ricambio.
 
 
 
  a| 
-Interfacce host
+Configurazione attuale
  a| 
-Mostra le informazioni sull'interfaccia host e lo stato del collegamento di ciascuna porta. L'interfaccia host è la connessione tra il controller e l'host, ad esempio Fibre Channel o iSCSI.
-
-
-NOTE: La posizione della scheda di interfaccia host (HIC) si trova nella scheda base o in uno slot (alloggiamento). "Baseboard" indica che le porte HIC sono integrate nel controller. Le porte "slot" si trovano sull'HIC opzionale.
+Mostra la versione corrente del firmware e la versione della NVRAM.
 
 
 
  a| 
-Interfacce del disco
+cache dei dati
  a| 
-Mostra le informazioni sull'interfaccia del disco e lo stato del collegamento di ciascuna porta. L'interfaccia del disco è la connessione tra il controller e i dischi, ad esempio SAS.
-
-
-
- a| 
-Porte di gestione
- a| 
-Mostra i dettagli della porta di gestione, ad esempio il nome host utilizzato per accedere al controller e se è stato attivato un accesso remoto. La porta di gestione collega il controller e il client di gestione, che è il punto in cui viene installato un browser per l'accesso a System Manager.
+Mostra i totali della cache dei dati.
 
 
 
  a| 
-DNS/NTP
+Moduli di cache dati
  a| 
-Mostra il metodo di indirizzamento e gli indirizzi IP per il server DNS e il server NTP, se questi server sono stati configurati in System Manager.
+Mostra la posizione, lo stato e la capacità del modulo cache.
 
-DNS (Domain Name System) è un sistema di denominazione per i dispositivi connessi a Internet o a una rete privata. Il server DNS mantiene una directory di nomi di dominio e li converte in indirizzi IP (Internet Protocol).
 
-Network Time Protocol (NTP) è un protocollo di rete per la sincronizzazione del clock tra sistemi di computer in reti di dati.
+
+ a| 
+cache del processore
+ a| 
+Mostra i totali della cache del processore.
+
+
+
+ a| 
+Dispositivi di backup della cache
+ a| 
+Mostra la posizione, lo stato e la capacità del dispositivo di backup della cache.
+
+
+
+ a| 
+Interfacce verso gli host
+ a| 
+Mostra le informazioni sull'interfaccia verso gli host e lo stato del collegamento per ciascuna porta.
+
+
+
+ a| 
+Interfacce dei dischi
+ a| 
+Mostra le informazioni sull'interfaccia dell'unità e lo stato del collegamento per ciascuna porta.
+
+
+
+ a| 
+Impostazioni della porta di gestione
+ a| 
+Mostra i dettagli della porta di gestione, inclusi il nome host del controller, l'accesso remoto e le impostazioni di rete IP.
+
+
+
+ a| 
+Impostazioni del server DNS (Domain Name System)
+ a| 
+Mostra la configurazione DNS, il DNS server primario e il DNS server di backup.
+
+
+
+ a| 
+Impostazioni del server network time protocol (NTP)
+ a| 
+Mostra i dettagli di configurazione del servizio NTP e del server NTP.
 
 |===
 ====

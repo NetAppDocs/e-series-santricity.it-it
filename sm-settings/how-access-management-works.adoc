@@ -22,7 +22,7 @@ La configurazione e l'autenticazione dell'utente funzionano come segue:
 Per il primo accesso, il nome utente `admin` viene visualizzato automaticamente e non può essere modificato. Il `admin` l'utente ha accesso completo a tutte le funzioni del sistema.
 
 ====
-. L'amministratore accede a Access Management nell'interfaccia utente. Lo storage array è preconfigurato per l'utilizzo dei ruoli utente locali, ovvero un'implementazione delle funzionalità RBAC (role-based access control).
+. L'amministratore accede alla sezione Autenticazione nell'interfaccia utente. L'array di storage è preconfigurato per utilizzare i ruoli utente locali, che rappresentano un'implementazione delle funzionalità RBAC (controllo degli accessi in base al ruolo).
 . L'amministratore configura uno o più dei seguenti metodi di autenticazione:
 +
 ** *Ruoli utente locali* -- l'autenticazione viene gestita tramite funzionalità RBAC applicate nell'array di storage. I ruoli utente locali includono profili utente predefiniti e ruoli con autorizzazioni di accesso specifiche. Gli amministratori possono utilizzare questi ruoli utente locali come singolo metodo di autenticazione o in combinazione con un servizio di directory. Non è necessaria alcuna configurazione, ad eccezione dell'impostazione delle password per gli utenti.
@@ -52,6 +52,7 @@ Durante l'accesso, il sistema esegue le seguenti attività in background:
 
 
 
+[[tasks-available-in-system-manager]]
 == Attività disponibili in System Manager
 
 L'accesso alle attività dipende dai ruoli assegnati a un utente, che includono:
@@ -66,6 +67,7 @@ Un'attività non disponibile viene visualizzata in grigio o non viene visualizza
 
 
 
+[[limitations-in-unified-manager-and-storage-manager]]
 == Limitazioni di Unified Manager e Storage Manager
 
 Se SAML è configurato per un array di storage, gli utenti non possono rilevare o gestire lo storage per tale array da Unified Manager o dalle interfacce precedenti di Storage Manager.

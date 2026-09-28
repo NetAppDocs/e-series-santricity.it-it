@@ -24,6 +24,7 @@ Sebbene i certificati firmati dalla CA forniscano una migliore protezione di sic
 ====
 
 
+[[signed-certificates]]
 == Certificati firmati
 
 Un certificato firmato viene convalidato da un'autorità di certificazione (CA), un'organizzazione di terze parti fidata. I certificati firmati includono i dettagli sul proprietario dell'entità (in genere, un server o un sito Web), la data di emissione e scadenza del certificato, i domini validi per l'entità e una firma digitale composta da lettere e numeri.
@@ -39,6 +40,7 @@ La CA esegue le operazioni necessarie per verificare l'identità dell'utente dur
 
 
 
+[[self-signed-certificates]]
 == Certificati autofirmati
 
 Ogni controller dell'array di storage include un certificato preinstallato e autofirmato. Un certificato autofirmato è simile a un certificato firmato dalla CA, ad eccezione del fatto che è convalidato dal proprietario dell'entità anziché da una terza parte. Come un certificato firmato dalla CA, un certificato autofirmato contiene una propria chiave privata e garantisce inoltre che i dati siano crittografati e inviati tramite una connessione HTTPS tra un server e un client. Tuttavia, un certificato autofirmato non utilizza la stessa catena di attendibilità di un certificato firmato dalla CA.
@@ -47,6 +49,7 @@ I certificati autofirmati non sono "`trusted`" dai browser. Ogni volta che si te
 
 
 
+[[certificates-used-for-key-management-server]]
 == Certificati utilizzati per il server di gestione delle chiavi
 
 Se si utilizza un server di gestione delle chiavi esterno con la funzione Drive Security, è anche possibile gestire i certificati per l'autenticazione tra il server e i controller.

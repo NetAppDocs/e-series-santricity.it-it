@@ -16,6 +16,7 @@ Se si prevede di utilizzare il mirroring sincrono, tenere presenti i seguenti re
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Per abilitare e configurare il mirroring tra due array, è necessario utilizzare l'interfaccia di Unified Manager. Unified Manager viene installato su un sistema host insieme al proxy dei servizi Web.
@@ -27,6 +28,7 @@ Per abilitare e configurare il mirroring tra due array, è necessario utilizzare
 
 
 
+[[storage-arrays]]
 == Storage array
 
 [NOTE]
@@ -46,6 +48,7 @@ Il mirroring sincrono non è disponibile sugli array di storage EF80, EF50, EF30
 
 
 
+[[supported-connections]]
 == Connessioni supportate
 
 La comunicazione per il mirroring sincrono è supportata solo sui controller con porte host Fibre Channel (FC).
@@ -54,6 +57,7 @@ Il mirroring sincrono utilizza la porta host con il numero più alto su ciascun 
 
 
 
+[[mirrored-volume-candidates]]
 == Volumi mirrorati candidati
 
 * Il livello RAID, i parametri di caching e le dimensioni dei segmenti possono essere diversi sui volumi primario e secondario di una coppia di mirroring sincrono.
@@ -66,6 +70,7 @@ Il mirroring sincrono utilizza la porta host con il numero più alto su ciascun 
 
 
 
+[[reserved-capacity]]
 == Capacità riservata
 
 * La capacità riservata è necessaria per un volume primario e per un volume secondario per la registrazione delle informazioni di scrittura per il ripristino da ripristini del controller e altre interruzioni temporanee.
@@ -74,6 +79,7 @@ Il mirroring sincrono utilizza la porta host con il numero più alto su ciascun 
 
 
 
+[[drive-security-feature]]
 == Funzione di protezione del disco
 
 * Se si utilizzano dischi sicuri, il volume primario e il volume secondario devono disporre di impostazioni di sicurezza compatibili. Questa restrizione non viene applicata; pertanto, è necessario verificarla da soli.

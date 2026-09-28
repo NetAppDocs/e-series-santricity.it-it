@@ -32,10 +32,7 @@ Questa attività descrive come creare una pianificazione di snapshot per un grup
 +
 Selezionare l'oggetto (volume o gruppo di coerenza snapshot) per questa pianificazione snapshot, quindi selezionare menu:Copy Services[Create snapshot schedule].
 
-** Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
-+
-Seleziona la scheda *Snapsshot schedules* e poi fai clic su *Crea*.
-
+** Dal pannello di sinistra, seleziona menu:Snapshots[Snapshot schedules] e poi fai clic su *Crea*.
 
 
 . Selezionare l'oggetto (volume o gruppo di coerenza dello snapshot) per questa pianificazione dello snapshot, quindi fare clic su *Avanti*.

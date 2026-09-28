@@ -15,6 +15,7 @@ summary: È possibile configurare il mirroring asincrono o sincrono in Unified M
 
 
 
+[[asynchronous-mirroring-workflow]]
 == Workflow di mirroring asincrono
 
 Il mirroring asincrono coinvolge il seguente flusso di lavoro:
@@ -45,6 +46,7 @@ Poiché la replica asincrona è periodica, il sistema può consolidare i blocchi
 
 
 
+[[synchronous-mirroring-workflow]]
 == Workflow di mirroring sincrono
 
 Il mirroring sincrono include il seguente flusso di lavoro:

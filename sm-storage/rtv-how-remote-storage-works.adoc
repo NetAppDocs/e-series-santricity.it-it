@@ -18,6 +18,7 @@ Per configurare la funzione di storage remoto, è necessario configurare l'hardw
 
 
 
+[[hardware-setup]]
 == Configurazione dell'hardware
 
 Utilizzare il seguente flusso di lavoro per preparare le connessioni hardware.
@@ -31,7 +32,7 @@ Sul sistema storage e-Series locale:
 
 . Assicurarsi che ciascun controller disponga di una connessione iSCSI al sistema di storage remoto. Con questa connessione, il sistema locale e-Series agisce come un iniziatore iSCSI che può essere configurato come host sul sistema remoto.
 . Creare un volume di destinazione per l'operazione di importazione. Assicurarsi che il volume abbia una capacità uguale o superiore al volume di origine sul sistema di storage remoto, abbia una dimensione di blocco corrispondente e non sia mappato. Vedere link:create-volumes.html["Creare volumi"].
-. Ottenere il nome qualificato iSCSI (IQN) per il sistema e-Series locale dalla relativa interfaccia di System Manager. L'IQN verrà utilizzato in seguito per configurare il sistema locale e-Series come host sul sistema di storage remoto. In System Manager, andare a: Menu:Impostazioni[sistema > Impostazioni iSCSI > IQN di destinazione].
+. Recupera l'iSCSI Qualified Name (IQN) del sistema E-Series dalla sua interfaccia System Manager. L'IQN verrà utilizzato in seguito per configurare il sistema E-Series come host sul sistema storage remoto. In System Manager, vai a: menu:System[iSCSI settings > Target IQN].
 
 
 Sul sistema di storage remoto:
@@ -55,6 +56,7 @@ Sul sistema di storage remoto:
 
 
 
+[[system-manager-setup]]
 == Configurazione di System Manager
 
 Utilizzare il seguente flusso di lavoro per creare un oggetto storage remoto per l'importazione:

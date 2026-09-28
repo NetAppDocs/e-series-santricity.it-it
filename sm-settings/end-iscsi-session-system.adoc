@@ -22,8 +22,8 @@ summary: È possibile terminare una sessione iSCSI che non è più necessaria. L
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. In *impostazioni iSCSI*, selezionare *Visualizza/Termina sessioni iSCSI*.
+. Dal pannello di sinistra, seleziona *Sistema*.
+. In *impostazioni iSCSI*, seleziona *Visualizza/termina sessioni iSCSI*.
 +
 Viene visualizzato un elenco delle sessioni iSCSI correnti.
 

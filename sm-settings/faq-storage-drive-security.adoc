@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-do-i-need-to-know-before-creating-a-security-key]]
 == Cosa occorre sapere prima di creare una chiave di sicurezza?
 
 Una chiave di sicurezza viene condivisa da controller e dischi abilitati alla sicurezza all'interno di un array di storage. Se un disco abilitato alla protezione viene rimosso dall'array di storage, la chiave di sicurezza protegge i dati da accessi non autorizzati.
@@ -28,6 +29,7 @@ Una chiave di sicurezza viene condivisa da controller e dischi abilitati alla si
 
 
 
+[[internal-key-management]]
 === Gestione interna delle chiavi
 
 Le chiavi interne vengono mantenute e "`nascoste`" in una posizione non accessibile sulla memoria persistente del controller. Prima di creare una chiave di sicurezza interna, eseguire le seguenti operazioni:
@@ -40,6 +42,7 @@ Le chiavi interne vengono mantenute e "`nascoste`" in una posizione non accessib
 
 
 
+[[external-key-management]]
 === Gestione esterna delle chiavi
 
 Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato, utilizzando un protocollo KMIP (Key Management Interoperability Protocol). Prima di creare una chiave di sicurezza esterna, eseguire le seguenti operazioni:
@@ -48,7 +51,7 @@ Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato
 . Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
 . Ottenere un file di certificato client firmato. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste KMIP.
 +
-.. Innanzitutto, completare e scaricare una richiesta di firma del certificato (CSR) del client. Accedere al menu:Impostazioni[certificati > Gestione chiavi > CSR completa].
+.. Per prima cosa, completi e scarichi una richiesta di firma del certificato (CSR) del client. Vai al menu:Certificates[Key management certificates], e poi seleziona *Complete CSR*.
 .. Successivamente, viene richiesto un certificato client firmato da una CA attendibile dal server di gestione delle chiavi. È inoltre possibile creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR scaricato.
 .. Una volta ottenuto un file di certificato client, copiarlo sull'host in cui si accede a System Manager.
 
@@ -60,12 +63,14 @@ Le chiavi esterne vengono gestite su un server di gestione delle chiavi separato
 
 
 
+[[why-do-i-need-to-define-a-pass-phrase]]
 == Perché è necessario definire una passphrase?
 
 La password viene utilizzata per crittografare e decrittare il file della chiave di sicurezza memorizzato nel client di gestione locale. Senza la passphrase, la chiave di sicurezza non può essere decifrata e utilizzata per sbloccare i dati da un disco abilitato alla sicurezza se viene reinstallata in un altro array di storage.
 
 
 
+[[why-is-it-important-to-record-security-key-information]]
 == Perché è importante registrare le informazioni sulle chiavi di sicurezza?
 
 Se si perdono le informazioni della chiave di sicurezza e non si dispone di un backup, si potrebbero perdere i dati durante la riassegnazione di dischi abilitati alla protezione o l'aggiornamento di un controller. È necessaria la chiave di sicurezza per sbloccare i dati sui dischi.
@@ -74,6 +79,7 @@ Assicurarsi di registrare l'identificatore della chiave di sicurezza, la passwor
 
 
 
+[[what-do-i-need-to-know-before-backing-up-a-security-key]]
 == Cosa occorre sapere prima di eseguire il backup di una chiave di sicurezza?
 
 Se la chiave di sicurezza originale viene danneggiata e non si dispone di un backup, l'accesso ai dati sui dischi viene perso se vengono migrati da uno storage array a un altro.
@@ -99,6 +105,7 @@ La password per Drive Security non deve essere confusa con la password Administr
 
 
 
+[[what-do-i-need-to-know-before-unlocking-secure-drives]]
 == Cosa devo sapere prima di sbloccare dischi sicuri?
 
 Per sbloccare i dati da un disco abilitato alla protezione, è necessario importarne la chiave di sicurezza.
@@ -113,14 +120,16 @@ Prima di sbloccare dischi sicuri, tenere presenti le seguenti linee guida:
 
 
 
+[[what-is-readwrite-accessibility]]
 == Che cos'è l'accessibilità in lettura/scrittura?
 
 La finestra Drive Settings (Impostazioni disco) contiene informazioni sugli attributi Drive Security (protezione disco). "Read/Write Accessible" (lettura/scrittura accessibile) è uno degli attributi che viene visualizzato se i dati di un disco sono stati bloccati.
 
-Per visualizzare gli attributi Drive Security, accedere alla pagina hardware. Selezionare un'unità, fare clic su *Visualizza impostazioni*, quindi fare clic su *Mostra altre impostazioni*. Nella parte inferiore della pagina, il valore dell'attributo Read/Write Accessible (lettura/scrittura accessibile) è *Yes* (Sì) quando il disco è sbloccato. Il valore dell'attributo lettura/scrittura accessibile è *No, chiave di sicurezza non valida* quando l'unità è bloccata. È possibile sbloccare un'unità sicura importando una chiave di sicurezza (accedere a menu:Impostazioni[sistema > Sblocca unità protette]).
+Per visualizzare gli attributi di sicurezza dell'unità, vai alla pagina Hardware. Seleziona un'unità, fai clic su *Visualizza impostazioni* e poi su *Mostra altre impostazioni*. In fondo alla pagina, il valore dell'attributo Accessibilità in lettura/scrittura è *Sì* quando l'unità è sbloccata. Il valore dell'attributo Accessibilità in lettura/scrittura è *No, chiave di sicurezza non valida* quando l'unità è bloccata. Puoi sbloccare un'unità protetta importando una chiave di sicurezza (vai al menu:System[Sblocca unità protette]).
 
 
 
+[[what-do-i-need-to-know-about-validating-the-security-key]]
 == Cosa occorre sapere sulla convalida della chiave di sicurezza?
 
 Dopo aver creato una chiave di sicurezza, è necessario convalidare il file della chiave per assicurarsi che non sia corrotto.
@@ -134,6 +143,7 @@ Se la convalida non riesce, procedere come segue:
 
 
 
+[[what-is-the-difference-between-internal-security-key-and-external-security-key-management]]
 == Qual è la differenza tra la chiave di sicurezza interna e la gestione esterna delle chiavi di sicurezza?
 
 Quando si implementa la funzione Drive Security, è possibile utilizzare una chiave di sicurezza interna o una chiave di sicurezza esterna per bloccare i dati quando un disco abilitato alla protezione viene rimosso dall'array di storage.

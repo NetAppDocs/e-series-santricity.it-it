@@ -23,18 +23,20 @@ Il processo di notifica funziona come segue:
 ** *Syslog* -- i messaggi vengono inviati a un server syslog.
 
 
-. Quando il monitor degli eventi dello storage array rileva un problema, scrive le informazioni relative a tale problema nel registro eventi (disponibile dal menu:Support[Event Log]). Ad esempio, i problemi possono includere eventi come un guasto alla batteria, un componente che passa da ottimale a offline o errori di ridondanza nel controller.
+. Quando il monitor degli eventi dell'array di storage rileva un problema, scrive le informazioni relative a tale problema nel registro eventi (disponibile dal menu:Monitoring[Event log]). Ad esempio, i problemi possono includere eventi come un guasto della batteria, un componente che passa da Ottimale a Offline o errori di ridondanza nel controller.
 . Se il monitor degli eventi determina che l'evento è "allertabile", invia una notifica utilizzando i metodi di avviso configurati (e-mail, SNMP e/o syslog). Tutti gli eventi critici sono considerati "allertabili", insieme ad alcuni eventi di avviso e informativi.
 
 
 
 
+[[alerts-configuration]]
 == Configurazione degli avvisi
 
-È possibile configurare gli avvisi dalla procedura guidata di configurazione iniziale (solo per gli avvisi email) oppure dalla pagina Alerts. Per accedere alla pagina Alerts, vai su menu:Settings[Alerts] dal pannello di sinistra.
+Puoi configurare gli avvisi dalla procedura guidata di configurazione iniziale (solo per gli avvisi email) oppure dalla pagina Avvisi. Per accedere alla pagina Avvisi, vai su menu:Avvisi[] dal pannello di sinistra.
 
 
 
+[[alerts-information]]
 == Informazioni sugli avvisi
 
 Gli avvisi possono includere i seguenti tipi di informazioni:

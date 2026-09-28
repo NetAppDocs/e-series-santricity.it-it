@@ -28,7 +28,7 @@ System Manager mostra questi tipi di statistiche iSCSI. Tutte le statistiche son
 È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline. Le statistiche raw sono tutte le statistiche raccolte dall'avvio dei controller. Le statistiche di riferimento sono statistiche point-in-time raccolte dall'ora di riferimento impostata.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
+. Dal pannello di sinistra, seleziona *Sistema*.
 . Selezionare *Visualizza iSCSI Statistics*.
 . Fare clic su una scheda per visualizzare i diversi set di statistiche.
 . *Opzionale:* per impostare la linea di base, fare clic su *Imposta nuova linea di base*.
@@ -41,6 +41,7 @@ Per ulteriori informazioni sui diversi tipi di statistiche, consultare le sezion
 
 
 
+[[mac-transmit-and-mac-receive-statistics]]
 == STATISTICHE DI trasmissione MAC e ricezione MAC
 
 Quando si seleziona Ethernet MAC statistics (Statistiche MAC Ethernet), vengono visualizzate le statistiche di ricezione e trasmissione. È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline.
@@ -273,6 +274,7 @@ Conteggio errori di rilevamento portante
 ====
 
 
+[[ethernet-tcpip-statistics]]
 == Statistiche Ethernet TCP/IP
 
 Quando si seleziona Ethernet TCP/IP statistics (Statistiche TCP/IP Ethernet), vengono visualizzate entrambe le statistiche TCP e IP. È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline.
@@ -463,6 +465,7 @@ Errore di riassemblaggio Datagram, conteggio timeout
 ====
 
 
+[[iscsi-target-statistics-and-local-initiator-statistics]]
 == Statistiche di destinazione iSCSI e statistiche degli iniziatori locali
 
 Quando si selezionano le statistiche Target (protocollo) o Local Initiator (protocollo), vengono visualizzate le statistiche iSCSI. È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline.
@@ -547,6 +550,7 @@ Numero di terminate della connessione iSCSI imprevisto
 ====
 
 
+[[dcbx-operational-state-statistics]]
 == Statistiche dello stato operativo DCBX
 
 Quando si seleziona Data Center Bridging Exchange (DCBX) Operational state Statistics (Statistiche stato operativo DCBX), vengono visualizzate le statistiche DCBX.
@@ -606,6 +610,7 @@ NOTE: Nel file di cattura dello stato sono disponibili ulteriori statistiche sul
 
 
 
+[[lldp-tlv-statistics]]
 == Statistiche LLDP TLV
 
 Quando si seleziona link Layer Discovery Protocol (LLDP) Type Length Value (TLV) Statistics, vengono visualizzate due serie di statistiche: Una per il dispositivo locale e una per il dispositivo remoto. Il dispositivo locale si riferisce al controller. Il dispositivo remoto si riferisce al dispositivo peer a cui è collegato il controller, in genere uno switch.
@@ -665,6 +670,7 @@ NOTE: È possibile trovare ulteriori statistiche LLDP TLV nel file di cattura de
 
 
 
+[[dcbx-tlv-statistics]]
 == Statistiche TLV DCBX
 
 Quando si seleziona Data Center Bridging Exchange (DCBX) Type Length Value (TLV) Statistics, vengono visualizzate le seguenti statistiche:

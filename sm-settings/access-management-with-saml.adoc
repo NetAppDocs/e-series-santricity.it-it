@@ -15,6 +15,7 @@ Per la gestione degli accessi, gli amministratori possono utilizzare le funziona
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 La configurazione SAML funziona come segue:
@@ -26,7 +27,7 @@ La configurazione SAML funziona come segue:
 Il `admin` L'utente ha accesso completo a tutte le funzioni di System Manager.
 
 ====
-. L'amministratore accede alla scheda *SAML* in Gestione accessi.
+. L'amministratore va alla pagina *SAML* sotto Autenticazione.
 . Un amministratore configura le comunicazioni con il provider di identità (IdP). Un IdP è un sistema esterno utilizzato per richiedere le credenziali a un utente e determinare se l'utente è autenticato correttamente. Per configurare le comunicazioni con lo storage array, l'amministratore scarica il file di metadati IdP dal sistema IdP, quindi utilizza System Manager per caricare il file nello storage array.
 . Un amministratore stabilisce una relazione di trust tra il service provider e l'IdP. Un service provider controlla l'autorizzazione dell'utente; in questo caso, il controller nell'array di storage agisce come service provider. Per configurare le comunicazioni, l'amministratore utilizza System Manager per esportare un file di metadati del service provider per ciascun controller. Dal sistema IdP, l'amministratore importa i file di metadati nell'IdP.
 +
@@ -49,6 +50,7 @@ Una volta abilitato SAML, non è possibile disattivarlo tramite l'interfaccia ut
 
 
 
+[[management]]
 == Gestione
 
 Quando si utilizza SAML per l'autenticazione, gli amministratori possono eseguire le seguenti attività di gestione:
@@ -59,6 +61,7 @@ Quando si utilizza SAML per l'autenticazione, gli amministratori possono eseguir
 
 
 
+[[access-restrictions]]
 == Restrizioni di accesso
 
 Quando SAML è attivato, gli utenti non possono rilevare o gestire lo storage per quell'array da Unified Manager o dall'interfaccia precedente di Storage Manager.
@@ -73,6 +76,7 @@ Inoltre, i seguenti client non possono accedere ai servizi e alle risorse degli 
 
 
 
+[[limited-connectivity-with-saml-enabled]]
 === Connettività limitata con SAML abilitato
 
 Le seguenti funzioni di storage array hanno una connettività limitata con l'autenticazione JSON Web Token ogni volta che SAML è abilitato.

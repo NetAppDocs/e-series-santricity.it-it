@@ -34,13 +34,13 @@ Il processo per avviare il rollback di un'immagine snapshot di un gruppo di coer
 
 
 
+[[step-1-select-members]]
 == Fase 1: Selezionare i membri
 
 È necessario selezionare i volumi membro da ripristinare.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
-. Selezionare la scheda *Snapshot Images* (immagini istantanee).
+. Dal pannello di sinistra, seleziona menu:Snapshots[Snapshot images].
 . Selezionare l'immagine snapshot del gruppo di coerenza snapshot, quindi selezionare menu:Rollback[Start].
 +
 Viene visualizzata la finestra di dialogo Avvia ripristino.
@@ -56,6 +56,7 @@ Viene visualizzata la finestra di dialogo Avvia ripristino.
 
 
 
+[[step-2-review-capacity]]
 == Fase 2: Rivedere la capacità
 
 Se sono stati selezionati volumi membro associati a più di un oggetto di capacità riservata, come un gruppo di snapshot e un volume di capacità riservata, è possibile rivedere e aumentare la capacità riservata per i volumi di rollback.
@@ -77,6 +78,7 @@ Viene visualizzata la finestra di dialogo Edit Priority (Modifica priorità).
 
 
 
+[[step-3-edit-priority]]
 == Fase 3: Modificare la priorità
 
 Se necessario, è possibile modificare la priorità dell'operazione di rollback.
@@ -97,6 +99,6 @@ System Manager esegue le seguenti operazioni:
 
 
 .Al termine
-Selezionare menu:Storage[Operations in Progress] per visualizzare lo stato di avanzamento dell'operazione di rollback.
+Seleziona menu:Monitoring[Operations in progress] per vedere l'avanzamento dell'operazione di rollback.
 
 Se l'operazione di rollback non riesce, l'operazione viene interrotta. È possibile riprendere l'operazione in pausa e, se il problema persiste, seguire la procedura Recovery Guru per risolvere il problema o contattare il supporto tecnico.

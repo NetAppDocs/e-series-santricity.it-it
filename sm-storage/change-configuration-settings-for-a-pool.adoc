@@ -24,7 +24,7 @@ Non è possibile modificare il livello RAID di un pool utilizzando l'interfaccia
 ====
 .Fasi
 . Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
-. Seleziona il pool che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
+. Individua il pool che vuoi modificare, quindi fai clic sull'icona del menu:ellipsis [Edit Settings].
 +
 Viene visualizzata la finestra Edit pool Setting.
 
@@ -50,7 +50,7 @@ Avvisi di capacità
  a| 
 È possibile inviare notifiche di avviso quando la capacità libera di un pool raggiunge o supera una determinata soglia. Quando i dati memorizzati nel pool superano la soglia specificata, System Manager invia un messaggio, consentendo di aggiungere più spazio di storage o di eliminare oggetti non necessari.
 
-Gli avvisi vengono visualizzati nell'area Notifiche della dashboard e possono essere inviati dal server agli amministratori tramite messaggi e-mail e messaggi trap SNMP.
+Gli avvisi vengono visualizzati nell'area Notifiche, accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra, e possono essere inviati dal server agli amministratori tramite email e messaggi SNMP trap.
 
 È possibile definire i seguenti avvisi di capacità:
 

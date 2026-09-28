@@ -16,7 +16,7 @@ summary: È possibile individuare le unità per identificare fisicamente tutte l
 
 .Fasi
 . Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
-. Seleziona il pool, il gruppo di volumi o la Cache SSD che desideri individuare, quindi fai clic sull'icona menu:ellipsis [Attiva le spie di localizzazione].
+. Individua il pool, il gruppo di volumi o la Cache SSD che vuoi localizzare, quindi fai clic sull'icona menu:ellipsis [Attiva le spie di localizzazione].
 +
 Viene visualizzata una finestra di dialogo che indica che le spie dei dischi che compongono il pool, il gruppo di volumi o la cache SSD selezionati sono accese.
 

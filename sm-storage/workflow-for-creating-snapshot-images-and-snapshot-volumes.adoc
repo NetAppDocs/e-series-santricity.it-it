@@ -15,12 +15,14 @@ In Gestione sistema di SANtricity, è possibile creare immagini snapshot e volum
 
 
 
+[[workflow-for-creating-snapshot-images]]
 == Workflow per la creazione di immagini snapshot
 
 image::../media/sam1130-flw-snapshots-create-ss-images.gif[Creare un flusso di lavoro di immagini snapshot]
 
 
 
+[[workflow-for-creating-snapshot-volumes]]
 == Workflow per la creazione di volumi di snapshot
 
 image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Crea workflow di volumi snapshot]

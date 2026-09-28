@@ -15,8 +15,8 @@ summary: È possibile importare configurazioni di avviso da uno storage array ad
 È possibile importare configurazioni di avviso da uno storage array ad altri storage array. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete.
 
 .Prima di iniziare
-* Gli avvisi sono configurati in System Manager per lo storage array che si desidera utilizzare come origine (menu:Impostazioni[Avvisi]).
-* Il backup della configurazione esistente per gli array di storage di destinazione viene eseguito in System Manager (menu:Impostazioni[sistema > Salva configurazione array di storage]).
+* Gli avvisi sono configurati in System Manager per l'array di storage che vuoi usare come origine.
+* La configurazione esistente per gli array di storage di destinazione viene salvata in System Manager (menu:System[Save storage array configuration]).
 
 
 .A proposito di questa attività

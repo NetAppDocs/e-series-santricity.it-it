@@ -15,6 +15,7 @@ La funzionalità SSD cache è una soluzione basata su controller che memorizza n
 
 
 
+[[ssd-cache-versus-primary-cache]]
 == Cache SSD rispetto alla cache primaria
 
 La cache SSD è una cache secondaria da utilizzare con la cache primaria nella DRAM (Dynamic Random-Access Memory) del controller.
@@ -35,6 +36,7 @@ I volumi RAID interni vengono utilizzati per l'elaborazione della cache interna.
 
 
 
+[[how-ssd-cache-is-used]]
 == Come viene utilizzata la cache SSD
 
 Il caching intelligente inserisce i dati in un'unità a latenza inferiore, in modo che le risposte alle richieste future di tali dati possano avvenire molto più velocemente. Se un programma richiede dati che si trovano nella cache (chiamata "`cache Hit`"), l'unità a latenza inferiore può servire quella transazione. In caso contrario, si verifica un "`cache miss`" (errore cache) e l'accesso ai dati deve essere effettuato dal disco originale più lento. Man mano che si verificano più accessi alla cache, le performance complessive migliorano.
@@ -52,6 +54,7 @@ Quando la CPU deve elaborare i dati di lettura, segue la procedura riportata di 
 
 
 
+[[improved-performance]]
 == Performance migliorate
 
 La copia dei dati più accessibili (hot spot) nella cache SSD consente un funzionamento più efficiente del disco rigido, una latenza ridotta e velocità di lettura e scrittura accelerate. L'utilizzo di SSD dalle performance elevate per la cache dei dati dai volumi HDD migliora le performance di i/o e i tempi di risposta.
@@ -60,12 +63,14 @@ Semplici meccanismi di i/o dei volumi vengono utilizzati per spostare i dati da 
 
 
 
+[[ssd-cache-and-the-drive-security-feature]]
 == SSD cache e la funzione Drive Security
 
 Per utilizzare la cache SSD su un volume che utilizza anche Drive Security (è abilitato per la protezione), le funzionalità di protezione del disco del volume e della cache SSD devono corrispondere. Se non corrispondono, il volume non sarà abilitato alla protezione.
 
 
 
+[[implement-ssd-cache]]
 == Implementare la cache SSD
 
 Per implementare la cache SSD, procedere come segue:

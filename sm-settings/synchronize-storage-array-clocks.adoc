@@ -28,10 +28,10 @@ Dopo la sincronizzazione, si potrebbe notare che le statistiche delle performanc
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. In *General*, fare clic su *Synchronize Storage Array Clocks* (Sincronizza blocchi array di storage).
+. Dal pannello di sinistra, seleziona *Sistema*.
+. Nella sezione *Generale*, fai clic su *Sincronizza gli orologi dell'array di archiviazione*.
 +
-Viene visualizzata la finestra di dialogo Synchronize Storage Array Blocks (Sincronizza blocchi array di storage) Mostra la data e l'ora correnti dei controller e del computer utilizzato come client di gestione.
+Si apre la finestra di dialogo Sincronizza gli orologi dell'array di storage. Mostra la data e l'ora correnti del/dei controller e del computer utilizzato come client di gestione.
 
 +
 [NOTE]

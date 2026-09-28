@@ -28,25 +28,25 @@ Se il server iSNS utilizza un indirizzo IP statico, tale indirizzo deve essere d
 
 [NOTE]
 ====
-Le impostazioni e le funzioni iSCSI vengono visualizzate nella pagina Settings (Impostazioni) solo se lo storage array supporta iSCSI.
+Le impostazioni e le funzioni iSCSI vengono visualizzate nella pagina System solo se il tuo array di storage supporta iSCSI.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. In *iSCSI settings* (Impostazioni iSCSI), fare clic su *View/Edit Target Discovery Settings* (Visualizza/Modifica impostazioni rilevamento destinazione).
+. Dal pannello di sinistra, seleziona *Sistema*.
+. In *impostazioni iSCSI*, fai clic su *Configura impostazioni di rilevamento della destinazione*.
 +
-Viene visualizzata la finestra di dialogo Target Discovery Settings (Impostazioni rilevamento destinazione). Sotto la voce *Enable iSNS server*... la finestra di dialogo indica se il controller è già registrato.
+Viene visualizzata la pagina Configura le impostazioni di rilevamento iSCSI target. Sotto il campo *Abilita server iSNS*..., la pagina indica se il controller è già registrato.
 
 . Per registrare il controller, selezionare *Enable iSNS server to register my target*, quindi selezionare una delle seguenti opzioni:
 +
-** *Ottieni automaticamente la configurazione dal server DHCP* -- selezionare questa opzione se si desidera configurare il server iSNS utilizzando un server DHCP (Dynamic host Configuration Protocol). Tenere presente che se si utilizza questa opzione, tutte le porte iSCSI del controller devono essere configurate per utilizzare anche DHCP. Se necessario, aggiornare le impostazioni della porta iSCSI del controller per attivare questa opzione.
+** *Ottieni automaticamente l'indirizzo IPv4 del server dal server DHCP* -- Seleziona questa opzione se vuoi configurare il server iSNS usando un server DHCP (Dynamic Host Configuration Protocol). Tieni presente che se usi questa opzione, tutte le porte iSCSI sul controller devono essere configurate per usare anche il DHCP. Se necessario, aggiorna le impostazioni della porta iSCSI del controller per abilitare questa opzione.
 +
 [NOTE]
 ====
 Affinché il server DHCP fornisca l'indirizzo del server iSNS, è necessario configurare il server DHCP in modo che utilizzi l'opzione 43 -- "`Vendor Specific Information`". Questa opzione deve contenere l'indirizzo IPv4 del server iSNS nei byte di dati 0xa-0xd (10-13).
 
 ====
-** *Specificare manualmente la configurazione statica* -- selezionare questa opzione se si desidera inserire un indirizzo IP statico per il server iSNS. (Se lo si desidera, è possibile tagliare e incollare gli indirizzi nei campi). Nel campo, immettere un indirizzo IPv4 o IPv6. Se sono stati configurati entrambi, IPv4 è l'impostazione predefinita. Immettere anche una porta TCP in attesa (utilizzare il valore predefinito 3205 o immettere un valore compreso tra 49152 e 65535).
+** *Specifica manualmente l'indirizzo IPv4 del server* -- Seleziona questa opzione se vuoi immettere un indirizzo IP statico per il server iSNS. (Se vuoi, puoi copiare e incollare gli indirizzi nei campi.) Nel campo, inserisci un indirizzo IPv4 o un indirizzo IPv6. Se hai configurato entrambi, IPv4 è quello predefinito. Inserisci anche una porta di ascolto TCP (usa il valore predefinito di 3205 o inserisci un valore tra 49152 e 65535).
 
 
 . Per consentire allo storage array di partecipare a sessioni di rilevamento senza nome, selezionare *Enable unnamed Discovery sessions* (attiva sessioni di rilevamento senza nome).

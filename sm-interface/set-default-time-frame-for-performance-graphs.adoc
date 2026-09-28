@@ -15,7 +15,7 @@ summary: 'È possibile modificare l"intervallo di tempo predefinito mostrato dai
 È possibile modificare l'intervallo di tempo predefinito mostrato dai grafici delle prestazioni.
 
 .A proposito di questa attività
-I grafici delle performance mostrati nella pagina iniziale e nella pagina delle performance mostrano inizialmente un intervallo di tempo di 1 ora. Le preferenze vengono memorizzate nella memoria locale del browser, in modo che tutti gli utenti possano disporre delle proprie impostazioni.
+I grafici delle prestazioni visualizzati nella Dashboard e nella pagina Prestazioni inizialmente mostrano un intervallo di tempo di 1 ora. Le preferenze vengono memorizzate nella memoria locale del browser, così ogni utente può avere le proprie impostazioni.
 
 .Fasi
 . Fai clic sull'icona *User Settings* nell'angolo in alto a destra della finestra.

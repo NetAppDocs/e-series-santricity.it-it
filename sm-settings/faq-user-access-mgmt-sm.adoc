@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[why-cant-i-log-in]]
 == Perché non riesco ad accedere?
 
 Se si riceve un errore durante il tentativo di accesso a Gestione di sistema di SANtricity, esaminare le possibili cause.
@@ -26,7 +27,7 @@ Gli errori di accesso a System Manager possono verificarsi per uno dei seguenti 
 * Privilegi insufficienti.
 * Il server di directory (se configurato) potrebbe non essere disponibile. In questo caso, provare ad accedere con un ruolo utente locale.
 * Si è tentato di accedere più volte senza successo, attivando la modalità di blocco. Attendere 10 minuti per eseguire nuovamente l'accesso.
-* È stata attivata una condizione di blocco e il registro di controllo potrebbe essere pieno. Accedere a Gestione accessi ed eliminare i vecchi eventi dal registro di controllo.
+* Si è verificata una condizione di blocco e il registro di controllo potrebbe essere pieno. Vai su Monitoraggio > Registro di controllo ed elimina gli eventi obsoleti dal registro di controllo.
 * L'autenticazione SAML è attivata. Aggiornare il browser per accedere.
 
 
@@ -39,6 +40,7 @@ Gli errori di accesso a un array di storage remoto per le attività di mirroring
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == Cosa occorre sapere prima di aggiungere un server di directory?
 
 Prima di aggiungere un server di directory in Access Management, assicurarsi di soddisfare i seguenti requisiti.
@@ -50,6 +52,7 @@ Prima di aggiungere un server di directory in Access Management, assicurarsi di 
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == Cosa occorre sapere sulla mappatura dei ruoli degli array di storage?
 
 Prima di mappare i gruppi ai ruoli, consultare le seguenti linee guida.
@@ -64,6 +67,7 @@ Le funzionalità RBAC (role-based access control) integrate dello storage array 
 
 
 
+[[directory-services]]
 === Servizi di directory
 
 Se si utilizza un server LDAP (Lightweight Directory Access Protocol) e servizi di directory, assicurarsi che:
@@ -80,6 +84,7 @@ Se si utilizza un server LDAP (Lightweight Directory Access Protocol) e servizi 
 
 
 
+[[saml]]
 === SAML
 
 Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) integrate nell'array di storage, assicurarsi che:
@@ -97,12 +102,14 @@ Se si utilizzano le funzionalità SAML (Security Assertion Markup Language) inte
 
 
 
+[[which-external-management-tools-may-be-affected-by-this-change]]
 == Quali strumenti di gestione esterni potrebbero essere interessati da questa modifica?
 
 Quando si apportano determinate modifiche in Gestione sistema di SANtricity, ad esempio quando si cambia l'interfaccia di gestione o si utilizza SAML per un metodo di autenticazione, è possibile che alcuni strumenti e funzionalità esterni non vengano utilizzati.
 
 
 
+[[management-interface]]
 === Interfaccia di gestione
 
 Gli strumenti che comunicano direttamente con l'interfaccia di gestione legacy (Symbol), come il provider SMI-S SANtricity o OnCommand Insight (OCI), non funzionano se non è attivata l'impostazione dell'interfaccia di gestione legacy. Inoltre, non è possibile utilizzare i comandi CLI legacy o eseguire operazioni di mirroring se questa impostazione è disattivata.
@@ -111,6 +118,7 @@ Per ulteriori informazioni, contatta il supporto tecnico.
 
 
 
+[[saml-authentication]]
 === Autenticazione SAML
 
 Quando SAML è attivato, i seguenti client non possono accedere ai servizi e alle risorse dell'array di storage:
@@ -127,12 +135,14 @@ Per ulteriori informazioni, contatta il supporto tecnico.
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == Cosa occorre sapere prima di configurare e abilitare SAML?
 
 Prima di configurare e attivare le funzionalità SAML (Security Assertion Markup Language) per l'autenticazione, assicurarsi di soddisfare i seguenti requisiti e comprendere le restrizioni SAML.
 
 
 
+[[requirements]]
 === Requisiti
 
 Prima di iniziare, assicurarsi che:
@@ -147,6 +157,7 @@ Prima di iniziare, assicurarsi che:
 
 
 
+[[restrictions]]
 === Restrizioni
 
 Oltre ai requisiti sopra indicati, assicurati di comprendere le seguenti restrizioni:
@@ -168,6 +179,7 @@ Oltre ai requisiti sopra indicati, assicurati di comprendere le seguenti restriz
 
 
 
+[[what-types-of-events-are-recorded-in-the-audit-log]]
 == Quali tipi di eventi vengono registrati nel registro di controllo?
 
 Il registro di controllo può registrare gli eventi di modifica o gli eventi di modifica e di sola lettura.
@@ -180,6 +192,7 @@ A seconda delle impostazioni del criterio, vengono visualizzati i seguenti tipi 
 
 
 
+[[what-do-i-need-to-know-before-configuring-a-syslog-server]]
 == Cosa occorre sapere prima di configurare un server syslog?
 
 È possibile archiviare i registri di controllo su un server syslog esterno.
@@ -195,8 +208,9 @@ Prima di configurare un server syslog, tenere presenti le seguenti linee guida.
 
 
 
+[[the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do]]
 == Il server syslog non riceve più registri di controllo. Cosa devo fare?
 
 Se è stato configurato un server syslog con un protocollo TLS, il server non può ricevere messaggi se il certificato non è valido per qualsiasi motivo. Nel registro di controllo viene visualizzato un messaggio di errore relativo al certificato non valido.
 
-Per risolvere questo problema, è necessario innanzitutto correggere il certificato per il server syslog. Una volta stabilita una catena di certificati valida, accedere al menu:Impostazioni[Registro audit > Configura server Syslog > Test tutti].
+Per risolvere questo problema, devi prima correggere il certificato per il syslog server. Una volta che una catena di certificati valida è presente, vai su menu:Monitoring[Audit log > Configure Syslog Servers > Test All].

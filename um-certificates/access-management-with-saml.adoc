@@ -15,6 +15,7 @@ Per la gestione degli accessi, gli amministratori possono utilizzare le funziona
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 La configurazione SAML funziona come segue:
@@ -49,6 +50,7 @@ Una volta abilitato SAML, non è possibile disattivarlo tramite l'interfaccia ut
 
 
 
+[[management]]
 == Gestione
 
 Quando si utilizza SAML per l'autenticazione, gli amministratori possono eseguire le seguenti attività di gestione:
@@ -59,6 +61,7 @@ Quando si utilizza SAML per l'autenticazione, gli amministratori possono eseguir
 
 
 
+[[access-restrictions]]
 == Restrizioni di accesso
 
 Quando SAML è attivato, gli utenti non possono rilevare o gestire lo storage per quell'array dall'interfaccia precedente di Storage Manager.

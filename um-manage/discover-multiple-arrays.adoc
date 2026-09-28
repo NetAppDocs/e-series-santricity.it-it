@@ -17,7 +17,7 @@ Vengono rilevati più array per rilevare tutti gli array di storage nella subnet
 .Prima di iniziare
 * È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore della sicurezza.
 * Lo storage array deve essere configurato e configurato correttamente.
-* Le password per gli array di storage devono essere configurate tramite la pagina Gestione accessi di System Manager.
+* Le password degli array di storage devono essere configurate utilizzando la categoria Autenticazione di System Manager.
 * Per risolvere i certificati non attendibili, è necessario disporre di file di certificati attendibili provenienti da un'autorità di certificazione (CA) e che i file di certificati siano disponibili nel sistema locale.
 
 
@@ -25,6 +25,7 @@ Il rilevamento degli array è una procedura multi-step.
 
 
 
+[[step-1-enter-network-address]]
 == Fase 1: Inserire l'indirizzo di rete
 
 Immettere un intervallo di indirizzi di rete per la ricerca nella sottorete locale. Qualsiasi array di storage raggiunto correttamente viene visualizzato nella pagina Discover e potrebbe essere aggiunto al dominio di gestione.
@@ -57,6 +58,7 @@ Unified Manager esegue un controllo delle credenziali su ciascun array che si st
 
 
 
+[[step-2-resolve-self-signed-certificates-during-discovery]]
 == Fase 2: Risoluzione dei certificati autofirmati durante il rilevamento
 
 Nell'ambito del processo di rilevamento, il sistema verifica che gli array di storage stiano utilizzando certificati da un'origine attendibile.
@@ -73,6 +75,7 @@ Nell'ambito del processo di rilevamento, il sistema verifica che gli array di st
 
 
 
+[[step-3-resolve-untrusted-certificates-during-discovery]]
 == Fase 3: Risoluzione dei certificati non attendibili durante il rilevamento
 
 I certificati non attendibili si verificano quando uno storage array tenta di stabilire una connessione sicura a Unified Manager, ma la connessione non viene confermata come sicura. Durante il processo di rilevamento dell'array, è possibile risolvere i certificati non attendibili importando un certificato CA (Certificate Authority) (o certificato firmato da CA) emesso da una terza parte attendibile.
@@ -109,6 +112,7 @@ Qualsiasi array di storage con problemi di certificato non attendibili che non s
 
 
 
+[[step-4-provide-passwords]]
 == Fase 4: Fornire le password
 
 È necessario immettere le password per gli array di storage che si desidera aggiungere al dominio di gestione.

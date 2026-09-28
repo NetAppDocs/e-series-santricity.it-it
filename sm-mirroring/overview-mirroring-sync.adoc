@@ -20,6 +20,7 @@ Questa funzione non è disponibile sui sistemi storage EF80, EF50, EF600/EF600C 
 ====
 
 
+[[what-is-synchronous-mirroring]]
 == Che cos'è il mirroring sincrono?
 
 _Mirroring sincrono_ replica i volumi di dati in tempo reale per garantire la disponibilità continua. I controller degli array di storage gestiscono l'operazione di mirroring, che è trasparente per i computer host e le applicazioni software.
@@ -37,6 +38,7 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-synchronous-mirroring]]
 == Come si configura il mirroring sincrono?
 
 È necessario utilizzare l'interfaccia di Unified Manager per eseguire la configurazione iniziale del mirroring tra gli array. Una volta configurato, è possibile gestire le coppie mirrorate in System Manager.
@@ -50,6 +52,7 @@ Scopri di più:
 
 
 
+[[related-information]]
 == Informazioni correlate
 
 Scopri di più sui concetti relativi al mirroring sincrono:

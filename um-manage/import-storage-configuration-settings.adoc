@@ -16,7 +16,7 @@ summary: È possibile importare la configurazione dello storage da uno storage a
 
 .Prima di iniziare
 * Lo storage viene configurato in Gestore di sistema di SANtricity per l'array di storage che si desidera utilizzare come origine.
-* Il backup della configurazione esistente per gli array di storage di destinazione viene eseguito in System Manager (menu:Impostazioni[sistema > Salva configurazione array di storage]).
+* La configurazione esistente per gli array di storage di destinazione viene salvata in System Manager (menu:System[Save storage array configuration]).
 * Gli array di origine e di destinazione devono soddisfare i seguenti requisiti:
 +
 ** Gli shelf in cui risiedono i controller devono essere identici.

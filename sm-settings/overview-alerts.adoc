@@ -16,6 +16,7 @@ summary: È possibile configurare System Manager in modo che invii avvisi di arr
 
 
 
+[[what-are-alerts]]
 == Cosa sono gli avvisi?
 
 _Alerts_ notifica agli amministratori gli eventi importanti che si verificano sullo storage array. Gli eventi possono includere problemi come un guasto alla batteria, uno spostamento di un componente da ottimale a offline o errori di ridondanza nel controller. Tutti gli eventi critici sono considerati "allertabili", insieme ad alcuni eventi di avviso e informativi.
@@ -28,9 +29,10 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-alerts]]
 == Come si configurano gli avvisi?
 
-È possibile configurare gli avvisi in modo che vengano inviati come messaggio a uno o più indirizzi e-mail, come trap SNMP a un server SNMP o come messaggio a un server syslog. La configurazione degli avvisi è disponibile dal menu:Impostazioni[Avvisi].
+Puoi configurare gli avvisi da inviare come messaggio a uno o più indirizzi email, come trap SNMP a un server SNMP o come messaggio a un syslog server. La configurazione degli avvisi è disponibile dal menu:Alerts[].
 
 Scopri di più:
 
@@ -41,6 +43,7 @@ Scopri di più:
 
 
 
+[[related-information]]
 == Informazioni correlate
 
 Scopri di più sui concetti relativi agli avvisi:

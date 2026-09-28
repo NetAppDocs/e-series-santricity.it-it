@@ -25,7 +25,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
+. Dal pannello di sinistra, seleziona menu:Support[Diagnostics].
 . Selezionare *Recupera immagine salute*.
 +
 Prima di scaricare il file, consultare la sezione dei dettagli per visualizzare le dimensioni dell'immagine sanitaria.

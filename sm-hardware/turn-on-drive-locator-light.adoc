@@ -17,14 +17,14 @@ Dalla pagina hardware, è possibile accendere la spia di localizzazione per indi
 È possibile individuare singoli dischi o più dischi visualizzati nella pagina hardware.
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Per individuare una o più unità, effettuare una delle seguenti operazioni:
 +
-** *Disco singolo* -- dal grafico dello shelf, individuare il disco che si desidera individuare fisicamente nell'array. (Se la figura mostra i controller, fare clic sulla scheda *Drives*.) Fare clic sull'unità per visualizzare il relativo menu di scelta rapida, quindi selezionare *attiva luce localizzatore*.
+** *Unità singola* -- Dalla rappresentazione grafica dello scaffale, individua l'unità che desideri posizionare fisicamente nell'array. Fai clic sull'unità per visualizzare il relativo menu contestuale, quindi seleziona *Attiva la spia di localizzazione*.
 +
 La spia di localizzazione del disco si accende. Una volta individuato il disco, tornare alla finestra di dialogo e selezionare *Spegni*.
 
-** *Dischi multipli* -- nei campi dei filtri, selezionare un tipo di disco fisico dall'elenco a discesa a sinistra e un tipo di disco logico dall'elenco a discesa a destra. Il numero di dischi che corrispondono ai criteri specificati viene visualizzato all'estrema destra dei campi. Quindi, è possibile fare clic su *accendere le luci di individuazione* o selezionare *individuare tutte le unità filtrate* dal menu di scelta rapida. Una volta individuati i dischi, tornare alla finestra di dialogo e selezionare *Spegni*.
+** *Unità multiple* -- Nel campo filtro, seleziona un tipo di unità fisica e un tipo di unità logica. Il numero di unità che corrispondono ai tuoi criteri viene mostrato all'estrema destra del campo. Poi, fai clic su *attiva spie di localizzazione*. Quando hai individuato fisicamente le unità, torna alla finestra di dialogo e seleziona *Disattiva*.
 
 
 

@@ -45,7 +45,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 ====
 .Fasi
 . Se l'array di storage contiene un solo controller o non si dispone di un driver multipath installato, interrompere l'attività i/o dell'array di storage per evitare errori dell'applicazione. Se lo storage array dispone di due controller e si dispone di un driver multipath installato, non è necessario interrompere l'attività di i/O.
-. Dal pannello di sinistra, selezionare il menu:Support[Upgrade Center].
+. Dal pannello di sinistra, seleziona menu:Support[Upgrade center].
 . Scaricare il nuovo file dal sito Support sul client di gestione.
 +
 .. Fare clic su *NetApp Support* per avviare il sito Web Support.
@@ -60,17 +60,17 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 Il firmware con firma digitale è richiesto nella versione 8.42 e successive. Se si tenta di scaricare il firmware senza firma, viene visualizzato un errore e il download viene interrotto.
 
 ====
-. Se NON si desidera aggiornare il firmware IOM, fare clic su *Sospendi sincronizzazione automatica IOM*.
+. Se in questo momento hai bisogno di modificare il comportamento del firmware IOM, fai clic su *Configura la sincronizzazione automatica IOM*.
 +
 Se si dispone di uno storage array con un singolo controller, il firmware IOM non viene aggiornato.
 
-. Nella sezione aggiornamento software SANtricity OS, fare clic su *Avvia aggiornamento*.
+. In Aggiornamento del software SANtricity OS, fai clic su *Avvia aggiornamento del software SANtricity OS*.
 +
-Viene visualizzata la finestra di dialogo Aggiorna software SANtricity OS.
+Viene visualizzata la pagina aggiornamento del software SANtricity OS.
 
 . Selezionare uno o più file per avviare il processo di aggiornamento:
 +
-.. Selezionare il file del software SANtricity OS facendo clic su *Sfoglia* e selezionando il file del software del sistema operativo scaricato dal sito Web del supporto.
+.. Seleziona il file del software SANtricity OS facendo clic su *Sfoglia* e navigando fino al file del software che hai scaricato dal sito web di supporto.
 .. Selezionare il file NVSRAM del controller facendo clic su *Browse* (Sfoglia) e selezionando il file NVSRAM scaricato dal sito di supporto. I file NVSRAM del controller hanno un nome file simile a. `N2800-830000-000.dlp`.
 
 
@@ -82,12 +82,12 @@ Si verificano queste azioni:
 ** Quando si seleziona un file per l'aggiornamento, vengono visualizzati il nome e le dimensioni del file.
 
 
-. *Opzionale:* se è stato selezionato un file del software SANtricity OS da aggiornare, è possibile trasferire i file sul controller senza attivarli selezionando la casella di controllo *Trasferisci file ora, ma non eseguire l'aggiornamento (attiva l'aggiornamento in seguito)*.
+. *Opzionale:* Se hai selezionato un file software SANtricity OS da aggiornare, puoi trasferire i file al controller senza attivarli selezionando la check box *Trasferisci ora i file, ma non avviare l'aggiornamento (attiva in seguito)*.
 . Fare clic su *Start* e confermare che si desidera eseguire l'operazione.
 +
 È possibile annullare l'operazione durante il controllo dello stato di salute prima dell'aggiornamento, ma non durante il trasferimento o l'attivazione.
 
-. *Opzionale:* per visualizzare un elenco degli aggiornamenti, fare clic su *Salva registro*.
+. *Facoltativo:* Per vedere un elenco di ciò che è stato aggiornato, clicca su *Salva registro*.
 +
 Il file viene salvato nella cartella Download del browser con il nome `drive_upgrade_log-timestamp.txt`.
 
@@ -95,6 +95,6 @@ Il file viene salvato nella cartella Download del browser con il nome `drive_upg
 
 .Al termine
 * Verificare che tutti i componenti siano visualizzati nella pagina hardware.
-* Verificare le nuove versioni software e firmware selezionando la finestra di dialogo Software and firmware Inventory (selezionare menu:Support[Upgrade Center], quindi fare clic sul collegamento *Software and firmware Inventory*).
+* Verifica le nuove versioni del software e del firmware consultando la pagina dell'inventario del software e del firmware (vai al menu:Supporto[Upgrade center] e poi fai clic sul collegamento per *software and firmware inventory*).
 * Se IL controller NVSRAM è stato aggiornato, tutte le impostazioni personalizzate applicate all'NVSRAM esistente andranno perse durante il processo di attivazione. Al termine del processo di attivazione, è necessario applicare nuovamente le impostazioni personalizzate A NVSRAM.
 

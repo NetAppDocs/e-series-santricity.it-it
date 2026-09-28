@@ -15,7 +15,7 @@ summary: 'Se si inseriscono una o più unità NVMe o FIPS bloccate in un array d
 Se si inseriscono una o più unità NVMe o FIPS bloccate in un array di storage, è possibile sbloccare i dati dell'unità aggiungendo il file della chiave di sicurezza associato alle unità. Se non si dispone di una chiave di sicurezza, è possibile eseguire un ripristino su ciascuna unità bloccata inserendo il proprio ID di sicurezza fisico (PSID) per ripristinare i propri attributi di sicurezza e cancellare i dati dell'unità.
 
 .Prima di iniziare
-* Per l'opzione Unlock (Sblocca), assicurarsi che il file della chiave di sicurezza (con un'estensione di `.slk`) È disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager). È inoltre necessario conoscere la password associata alla chiave.
+* Per l'opzione Sblocca, assicurati che il file della chiave di sicurezza (con estensione `.slk`) sia disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager). Devi inoltre conoscere la passphrase associata alla chiave.
 * Per l'opzione Reset (Ripristina), è necessario trovare il PSID su ciascun disco che si desidera reimpostare. Per individuare il PSID, rimuovere fisicamente l'unità e individuare la stringa PSID (massimo 32 caratteri) sull'etichetta dell'unità, quindi reinstallare l'unità.
 
 
@@ -24,17 +24,13 @@ Questa attività descrive come sbloccare i dati nei dischi NVMe o FIPS importand
 
 [NOTE]
 ====
-Se il disco è stato bloccato utilizzando un server di gestione delle chiavi esterno, selezionare menu:Impostazioni[sistema > Gestione delle chiavi di sicurezza] in System Manager per configurare la gestione delle chiavi esterne e sbloccare il disco.
+Se l'unità è stata bloccata tramite un server di gestione delle chiavi esterno, seleziona menu:System[Security key management] in System Manager per configurare la gestione delle chiavi esterne e sbloccare l'unità.
 
 ====
-È possibile accedere alla funzione di sblocco dalla pagina hardware o dal menu:Impostazioni[sistema > Gestione chiavi di sicurezza]. L'attività seguente fornisce istruzioni dalla pagina hardware.
+Puoi accedere alla funzione di sblocco dalla pagina Hardware oppure dal menu:System[Security key management]. La procedura seguente fornisce istruzioni dalla pagina Hardware.
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Selezionare l'unità NVMe o FIPS che si desidera sbloccare o ripristinare.
 +
 Viene visualizzato il menu di scelta rapida del disco.
@@ -51,8 +47,8 @@ Durante un'operazione di ripristino, tutti i dati vengono cancellati. Eseguire u
 ====
 . Effettuare una delle seguenti operazioni:
 +
-.. *Unlock*: Nella finestra di dialogo *Unlock Secure Drive*, fare clic su *Browse*, quindi selezionare il file della chiave di sicurezza corrispondente al disco che si desidera sbloccare. Quindi, immettere la password, quindi fare clic su *Unlock* (Sblocca).
-.. *Reset*: Nella finestra di dialogo *Reset Locked Drive*, immettere la stringa PSID nel campo, quindi digitare `RESET` per confermare. Fare clic su *Reset* (Ripristina).
+.. *Sblocca*: Nella pagina *Sblocca unità protette*, seleziona il file della chiave di sicurezza corrispondente all'unità che desideri sbloccare. Quindi, inserisci la passphrase e fai clic su *Sblocca*.
+.. *Ripristina*: Nella finestra di dialogo *Ripristina unità bloccata*, inserisci la stringa PSID nel campo e poi digita  `RESET` per confermare. Fai clic su *Ripristina*.
 +
 Per un'operazione di sblocco, è necessario eseguire questa operazione una sola volta per sbloccare tutti i dischi NVMe o FIPS. Per eseguire un'operazione di ripristino, è necessario selezionare singolarmente ogni disco che si desidera ripristinare.
 

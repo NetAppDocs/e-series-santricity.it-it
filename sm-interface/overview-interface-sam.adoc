@@ -15,9 +15,10 @@ SANtricity System Manager è un'interfaccia basata sul web che ti consente di ge
 
 
 
-== Pagina iniziale
+[[dashboard]]
+== Pannello di controllo
 
-La home page fornisce una vista dashboard per la gestione quotidiana dello storage array. Quando si accede a System Manager, viene visualizzata la prima pagina iniziale.
+La Dashboard fornisce una panoramica riassuntiva per la gestione quotidiana del tuo array di storage. Quando accedi a System Manager, la Dashboard è la prima schermata visualizzata.
 
 La vista dalla dashboard comprende tre aree di riepilogo che contengono informazioni chiave sullo stato e l'integrità del tuo storage array. Puoi trovare ulteriori informazioni nell'area di riepilogo.
 
@@ -48,18 +49,21 @@ L'area Storage Hierarchy (gerarchia di storage) offre una vista organizzata dei 
 |===
 
 
+[[notifications-area]]
 == Area notifiche
 
 L'area Notifiche è accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra. L'area Notifiche visualizza notifiche relative ai problemi che indicano lo stato dell'array di storage e dei suoi componenti. Inoltre, questa sezione visualizza avvisi automatici che possono aiutare a risolvere i problemi prima che influiscano su altre aree dell'ambiente di storage.
 
 
 
+[[interface-settings]]
 == Impostazioni dell'interfaccia
 
 È possibile modificare le preferenze di visualizzazione e altre impostazioni dall'interfaccia principale.
 
 
 
+[[user-logins-and-passwords]]
 == Login e password degli utenti
 
 L'utente attualmente connesso al sistema viene visualizzato nelle impostazioni utente.

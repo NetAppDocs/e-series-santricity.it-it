@@ -23,14 +23,14 @@ Se Access Management viene configurato utilizzando le funzionalità SAML (Securi
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
+. Dal pannello di sinistra, seleziona *Sistema*.
 . Nella sezione General (Generale), selezionare *Enable/Disable Session Timeout* (attiva/Disattiva timeout sessione).
 +
 Viene visualizzata la finestra di dialogo attiva/Disattiva timeout sessione.
 
 . Utilizzare i comandi per aumentare o diminuire il tempo in minuti.
 +
-Il timeout minimo che è possibile impostare per System Manager è di 15 minuti.
+Il timeout minimo che puoi impostare per System Manager è di 10 minuti.
 
 +
 [NOTE]

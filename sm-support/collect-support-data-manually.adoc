@@ -19,7 +19,7 @@ summary: 'È possibile raccogliere diversi tipi di dati di inventario, stato e p
 
 [NOTE]
 ====
-Se la funzione AutoSupport è attivata, è anche possibile raccogliere questi dati accedendo alla scheda *AutoSupport* e selezionando *Send AutoSupport spedizione*.
+Se la funzione AutoSupport è abilitata, puoi raccogliere questi dati anche andando su menu:Support[AutoSupport] e selezionando *Invia AutoSupport Dispatch*.
 
 ====
 È possibile eseguire una sola operazione di raccolta alla volta. Se si tenta di avviare un'altra operazione, viene visualizzato un messaggio di errore.
@@ -30,7 +30,7 @@ Eseguire questa operazione solo se richiesto dal supporto tecnico.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
+. Dal pannello di sinistra, seleziona menu:Support[Diagnostics].
 . Selezionare *Collect Support Data*.
 . Fare clic su *Collect*.
 +

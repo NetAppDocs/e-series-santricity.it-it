@@ -15,6 +15,7 @@ La creazione di un host è una delle operazioni necessarie per consentire all'ar
 
 
 
+[[manual-creation]]
 == Creazione manuale
 
 La creazione manuale dell'host consente di garantire che gli identificatori delle porte host rilevati dai controller dell'array di storage siano associati correttamente agli host.

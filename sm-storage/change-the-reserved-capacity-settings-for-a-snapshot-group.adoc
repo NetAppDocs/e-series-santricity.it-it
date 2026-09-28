@@ -17,9 +17,8 @@ summary: È possibile modificare le impostazioni di un gruppo di snapshot per mo
 Durante la creazione di un gruppo di snapshot, viene creata una capacità riservata per memorizzare i dati di tutte le immagini di snapshot contenute nel gruppo.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
-. Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Seleziona il gruppo di snapshot che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
+. Dal pannello di sinistra, seleziona menu:Storage[Reserved capacity].
+. Seleziona il gruppo di snapshot che vuoi modificare, poi fai clic sull'icona menu:ellipsis icon[Edit settings].
 +
 Viene visualizzata la finestra Edit snapshot group settings.
 

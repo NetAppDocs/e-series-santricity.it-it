@@ -33,7 +33,7 @@ La password per Drive Security è indipendente dalla password Administrator dell
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
+. Dal pannello di sinistra, seleziona *Sistema*.
 . In *Security key management*, selezionare *Create Internal Key* (Crea chiave interna).
 +
 Se non è stata ancora generata una chiave di protezione, viene visualizzata la finestra di dialogo Crea chiave di protezione.

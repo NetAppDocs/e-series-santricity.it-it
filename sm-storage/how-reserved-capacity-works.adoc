@@ -17,6 +17,7 @@ Lo scopo della capacità riservata è memorizzare le modifiche dei dati su quest
 
 
 
+[[copy-service-objects-that-use-reserved-capacity]]
 == Copiare gli oggetti del servizio che utilizzano la capacità riservata
 
 La capacità riservata è il meccanismo di storage sottostante utilizzato dai seguenti oggetti del servizio di copia:
@@ -31,6 +32,7 @@ Quando si creano o si espandono questi oggetti del servizio di copia, è necessa
 
 
 
+[[thin-volumes-and-reserved-capacity]]
 == Thin volumi e capacità riservata
 
 Per un volume sottile, se è stata raggiunta la capacità massima di 256 TIB, non è possibile aumentarla. Assicurarsi che la capacità riservata del volume thin sia impostata su una dimensione superiore alla capacità massima indicata. (Un thin volume viene sempre sottoposto a thin provisioning, il che significa che la capacità viene allocata durante la scrittura dei dati nel volume).
@@ -43,6 +45,7 @@ Se si crea capacità riservata utilizzando un volume thin in un pool, esaminare 
 
 
 
+[[capacity-alerts]]
 == Avvisi di capacità
 
 L'oggetto del servizio di copia dispone di un avviso di capacità configurabile e di una soglia di avviso, nonché di una risposta configurabile quando la capacità riservata è piena.
@@ -51,16 +54,18 @@ Quando la capacità riservata di un volume di oggetto del servizio di copia si a
 
 
 
+[[orphaned-reserved-capacity-volumes]]
 == Volumi di capacità riservati orfani
 
 Un volume di capacità riservata orfano è un volume che non memorizza più i dati per le operazioni del servizio di copia in quanto l'oggetto del servizio di copia associato è stato eliminato. Quando l'oggetto del servizio di copia è stato eliminato, anche il volume di capacità riservata doveva essere eliminato. Tuttavia, non è stato possibile eliminare il volume con capacità riservata.
 
 Poiché i volumi di capacità riservati orfani non sono accessibili da alcun host, sono candidati per la richiesta di recupero. Eliminare manualmente il volume di capacità riservata orfano in modo da poterne utilizzare la capacità per altre operazioni.
 
-System Manager avvisa l'utente dei volumi di capacità riservati orfani con un messaggio "recuperare capacità inutilizzata" nell'area Notifiche della home page. È possibile fare clic su *recuperare capacità inutilizzata* per visualizzare la finestra di dialogo recuperare capacità inutilizzata, in cui è possibile eliminare il volume di capacità riservata orfano.
+System Manager ti avvisa della presenza di volumi di capacità riservata orfani con un messaggio "Recupera capacità inutilizzata" nell'area Notifiche, accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra. Puoi fare clic su *Recupera capacità inutilizzata* per visualizzare la finestra di dialogo Recupera capacità inutilizzata, dove puoi eliminare il volume di capacità riservata orfano.
 
 
 
+[[characteristics-of-reserved-capacity]]
 == Caratteristiche della capacità riservata
 
 * La capacità allocata alla capacità riservata deve essere presa in considerazione durante la creazione del volume per mantenere una capacità libera sufficiente.

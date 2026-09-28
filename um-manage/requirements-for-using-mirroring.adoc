@@ -16,6 +16,7 @@ Se si prevede di configurare il mirroring, tenere presenti i seguenti requisiti.
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 * Il servizio Web Services Proxy deve essere in esecuzione.
@@ -25,6 +26,7 @@ Se si prevede di configurare il mirroring, tenere presenti i seguenti requisiti.
 
 
 
+[[storage-arrays]]
 == Storage array
 
 [NOTE]
@@ -44,6 +46,7 @@ Il mirroring sincrono non è disponibile sugli array di storage EF80, EF50, EF60
 
 
 
+[[connectivity-requirements]]
 == Requisiti di connettività
 
 Il mirroring tramite un'interfaccia FC (asincrona o sincrona) richiede quanto segue:
@@ -66,9 +69,16 @@ NOTE: I controller E4000 non supportano il mirroring iSCSI.
 ** VLAN: Per comunicare, i sistemi locali e remoti devono avere la stessa impostazione VLAN
 ** Porta di ascolto iSCSI
 ** Frame jumbo
-** Priorità Ethernet
 
 
+
+
+[NOTE]
+====
+Si consiglia di usare i Jumbo Frame per migliorare le prestazioni della CPU e il throughput.
+
+====
+* Priorità Ethernet
 
 
 [NOTE]
@@ -78,6 +88,7 @@ La comunicazione tra controller iSCSI deve utilizzare una porta di connessione h
 ====
 
 
+[[mirrored-volume-candidates]]
 == Volumi mirrorati candidati
 
 * Il livello RAID, i parametri di caching e le dimensioni dei segmenti possono essere diversi sui volumi primari e secondari di una coppia mirrorata.
@@ -96,11 +107,12 @@ NOTE: Per i controller EF600 e EF300, i volumi primari e secondari di una coppia
 ** Se il volume primario non utilizza Drive Security, il volume secondario non deve utilizzare Drive Security.
 
 
-* I volumi primario e secondario non devono avere il partizionamento delle risorse abilitato.
+* I volumi primari e secondari non devono avere Resource Provisioning abilitato.
 
 
 
 
+[[reserved-capacity]]
 == Capacità riservata
 
 Mirroring asincrono:
@@ -117,6 +129,7 @@ Mirroring sincrono:
 
 
 
+[[drive-security-feature]]
 == Funzione di protezione del disco
 
 * Se si utilizzano dischi sicuri, il volume primario e il volume secondario devono disporre di impostazioni di sicurezza compatibili. Questa restrizione non viene applicata; pertanto, è necessario verificarla da soli.

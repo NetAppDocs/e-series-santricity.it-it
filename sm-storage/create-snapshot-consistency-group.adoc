@@ -23,6 +23,7 @@ Il processo per creare un gruppo di coerenza snapshot è una procedura multi-ste
 
 
 
+[[step-1-add-members-to-snapshot-consistency-group]]
 == Fase 1: Aggiunta di membri al gruppo di coerenza snapshot
 
 Selezionare i membri per specificare una raccolta di volumi che comprendono il gruppo di coerenza snapshot. Tutte le azioni eseguite sul gruppo di coerenza snapshot si estendono uniformemente ai volumi membro selezionati.
@@ -31,18 +32,18 @@ Selezionare i membri per specificare una raccolta di volumi che comprendono il g
 I volumi dei membri devono essere ottimali.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
-. Fare clic sulla scheda *gruppi di coerenza Snapshot*.
+. Dal pannello di sinistra, seleziona menu:Snapshots[Snapshot consistency groups].
 . Selezionare il menu:Create[Snapshot Consistency group] (Crea[Gruppo di coerenza snapshot]
 +
 Viene visualizzata la finestra di dialogo Create Snapshot Consistency Group.
 
-. Selezionare i volumi da aggiungere come volumi membri al gruppo di coerenza snapshot.
+. Individua il/i volume/i da aggiungere come volumi membri al gruppo di coerenza Snapshot.
 . Fare clic su *Avanti* e passare a. <<Fase 2: Riservare la capacità per il gruppo di coerenza snapshot>>.
 
 
 
 
+[[step-2-reserve-capacity-for-snapshot-consistency-group]]
 == Fase 2: Riservare la capacità per il gruppo di coerenza snapshot
 
 Associare la capacità riservata al gruppo di coerenza snapshot. System Manager suggerisce i volumi e la capacità in base alle proprietà del gruppo di coerenza snapshot. È possibile accettare la configurazione di capacità riservata consigliata o personalizzare lo storage allocato.
@@ -74,6 +75,7 @@ Allocare la capacità riservata utilizzando le seguenti linee guida.
 
 
 
+[[step-3-edit-settings-for-snapshot-consistency-group]]
 == Fase 3: Modificare le impostazioni per il gruppo di coerenza snapshot
 
 Accettare o scegliere le impostazioni di eliminazione automatica e le soglie di avviso della capacità riservata per il gruppo di coerenza snapshot.

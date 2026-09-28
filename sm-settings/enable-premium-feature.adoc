@@ -28,10 +28,10 @@ Se si desidera disattivare una funzione Premium, è necessario utilizzare il com
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. In *componenti aggiuntivi*, selezionare *attiva funzionalità Premium*.
+. Dal pannello di sinistra, seleziona *Sistema*.
+. Nella sezione *Componenti aggiuntivi*, seleziona *Abilita funzionalità premium*.
 +
-Viene visualizzata la finestra di dialogo Enable a Premium Feature (attiva una funzione Premium).
+Si apre la finestra di dialogo "Abilita una funzionalità premium".
 
 . Fare clic su *Browse*, quindi selezionare il file delle chiavi.
 +

@@ -19,6 +19,7 @@ I dati AutoSupport includono informazioni sulla configurazione, lo stato, le per
 
 
 
+[[key-benefits]]
 == Vantaggi principali
 
 Alcuni dei vantaggi principali della funzione AutoSupport includono:
@@ -33,6 +34,7 @@ Alcuni dei vantaggi principali della funzione AutoSupport includono:
 
 
 
+[[individual-autosupport-features]]
 == Funzionalità di Individual AutoSupport
 
 La funzione AutoSupport è composta da tre funzioni individuali che vengono attivate separatamente.
@@ -44,6 +46,7 @@ La funzione AutoSupport è composta da tre funzioni individuali che vengono atti
 
 
 
+[[difference-between-autosupport-and-collect-support-data]]
 == Differenza tra AutoSupport e Collect dati di supporto
 
 Nello storage array esistono due metodi per raccogliere i dati di supporto:

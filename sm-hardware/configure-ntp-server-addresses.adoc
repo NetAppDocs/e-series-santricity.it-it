@@ -32,22 +32,18 @@ Non è necessario configurare NTP su entrambi i controller; tuttavia, in questo 
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller che si desidera configurare.
 +
 Viene visualizzato il menu di scelta rapida del controller.
 
 . Selezionare *Configure NTP server* (Configura server NTP).
 +
-Viene visualizzata la finestra di dialogo Configura server NTP (Network Time Protocol).
+Si apre la pagina Configura server NTP (Network Time Protocol).
 
-. Selezionare *i want to enable NTP on Controller* (*A* or *B*).
+. Seleziona la casella di controllo *Abilita NTP*.
 +
-Nella finestra di dialogo vengono visualizzate ulteriori selezioni.
+Ulteriori opzioni vengono visualizzate nella pagina.
 
 . Selezionare una delle seguenti opzioni:
 +
@@ -66,4 +62,4 @@ Se lo storage array è impostato per utilizzare un indirizzo NTP statico, non vi
 
 
 .Risultati
-La configurazione del server NTP viene visualizzata nella scheda delle impostazioni del controller, *DNS / NTP*.
+La configurazione del server NTP viene visualizzata nelle impostazioni del controller, nella sezione *Impostazioni del server Network time protocol (NTP)*.

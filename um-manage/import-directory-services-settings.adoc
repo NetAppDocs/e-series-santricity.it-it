@@ -15,8 +15,8 @@ summary: È possibile importare una configurazione di servizi di directory da un
 È possibile importare una configurazione di servizi di directory da un array di storage ad altri array di storage. Questa operazione batch consente di risparmiare tempo quando è necessario configurare più array nella rete.
 
 .Prima di iniziare
-* I servizi di directory sono configurati in System Manager per lo storage array che si desidera utilizzare come origine (menu:Impostazioni[Gestione accessi]).
-* Il backup della configurazione esistente per gli array di storage di destinazione viene eseguito in System Manager (menu:Impostazioni[sistema > Salva configurazione array di storage]).
+* I servizi di directory vengono configurati in System Manager per l'array di storage che vuoi usare come origine (menu:Authentication[Directory services]).
+* La configurazione esistente per gli array di storage di destinazione viene salvata in System Manager (menu:System[Save storage array configuration]).
 
 
 .A proposito di questa attività
@@ -47,6 +47,7 @@ La pagina Operations (operazioni) visualizza i risultati dell'operazione di impo
 
 
 
+[[results]]
 == Risultati
 
 Gli array di storage di destinazione sono ora configurati con gli stessi servizi di directory dell'array di origine.

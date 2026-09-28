@@ -15,12 +15,12 @@ summary: Per individuare la posizione fisica di un array di storage in un cabine
 Per individuare la posizione fisica di un array di storage in un cabinet, è possibile accendere i relativi indicatori LED.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
-. In *General*, fare clic su *Turn on Storage Array Locator Lights*.
+. Dal pannello di sinistra, seleziona *Sistema*.
+. In *Generale*, fai clic su *Attiva le spie di localizzazione dell'array di storage*.
 +
-Viene visualizzata la finestra di dialogo attiva indicatori Storage Array Locator e si accendono le spie di localizzazione dell'array di storage corrispondente.
+Si apre la finestra di dialogo "Attiva le spie di localizzazione" e le spie di localizzazione dell'array di storage corrispondente si accendono.
 
-. Una volta individuato fisicamente lo storage array, tornare alla finestra di dialogo e selezionare *Spegni*.
+. Quando hai individuato fisicamente l'array di storage, torna alla finestra di dialogo e seleziona *Turn off*.
 
 
 .Risultati

@@ -24,12 +24,14 @@ Questo tipo di mirroring è ideale per scopi di business continuity come il disa
 
 
 
+[[synchronous-mirroring-relationship]]
 == Relazione di mirroring sincrono
 
 Una relazione di mirroring sincrono è costituita da un volume primario e da un volume secondario su storage array separati. L'array di storage contenente il volume primario si trova in genere nel sito primario e serve gli host attivi. L'array di storage contenente il volume secondario si trova in genere in un sito secondario e contiene una replica dei dati. Il volume secondario viene utilizzato se l'array di storage del volume primario non è disponibile a causa, ad esempio, di un'interruzione dell'alimentazione completa, di un incendio o di un guasto hardware nel sito primario.
 
 
 
+[[synchronous-mirroring-session]]
 == Sessione di mirroring sincrono
 
 Il processo di configurazione del mirroring sincrono prevede la configurazione dei volumi in coppie. Dopo aver creato una coppia mirrorata, costituita da un volume primario su un array di storage e da un volume secondario su un altro array di storage, è possibile avviare il mirroring sincrono. Di seguito sono illustrate le fasi del mirroring sincrono.
@@ -49,6 +51,7 @@ Poiché l'applicazione host deve attendere che la scrittura avvenga sull'array d
 
 
 
+[[disaster-recovery]]
 == Disaster recovery
 
 Il mirroring sincrono mantiene una copia dei dati fisicamente distanti dal sito in cui risiedono i dati. Se si verifica un disastro nel sito primario, ad esempio un'interruzione dell'alimentazione o un flusso, è possibile accedere rapidamente ai dati dal sito secondario.
@@ -57,6 +60,7 @@ Il volume secondario non è disponibile per ospitare le applicazioni durante l'o
 
 
 
+[[synchronization-settings]]
 == Impostazioni di sincronizzazione
 
 Quando si crea una coppia mirrorata, si definiscono anche la priorità di sincronizzazione e il criterio di risincronizzazione utilizzati dalla coppia mirrorata per completare l'operazione di risincronizzazione dopo un'interruzione della comunicazione.
@@ -69,6 +73,7 @@ La risincronizzazione automatica dei dati dipende dalla policy di risincronizzaz
 
 
 
+[[unsynchronized-data]]
 == Dati non sincronizzati
 
 I volumi primario e secondario non vengono sincronizzati quando l'array di storage del volume primario non è in grado di scrivere i dati nel volume secondario. Ciò può essere causato dai seguenti problemi:
@@ -80,6 +85,7 @@ I volumi primario e secondario non vengono sincronizzati quando l'array di stora
 
 
 
+[[orphaned-mirrored-pair]]
 == Coppia mirrorata orfana
 
 Un volume di coppia di mirroring orfano esiste quando un volume membro è stato rimosso da un lato (lato primario o secondario) ma non dall'altro.
@@ -90,6 +96,7 @@ I volumi di coppia di mirroring orfani vengono rilevati quando viene ripristinat
 
 
 
+[[configuration-and-management]]
 == Configurazione e gestione
 
 Per abilitare e configurare il mirroring tra due array, è necessario utilizzare l'interfaccia di Unified Manager. Una volta attivato il mirroring, è possibile gestire le coppie mirrorate e le impostazioni di sincronizzazione in System Manager.

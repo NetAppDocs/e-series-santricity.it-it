@@ -36,10 +36,9 @@ Se non si dispone del file MIB, è possibile ottenerlo dal sito NetApp Support:
 Questa attività descrive come identificare il server SNMP per le destinazioni trap, quindi verificare la configurazione.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *SNMP*.
+. Dal pannello di sinistra, seleziona menu:Alerts[SNMP alerts].
 +
-Al primo setup, nella scheda SNMP viene visualizzato "Configure Communities/Users" (Configura community/utenti).
+Durante la prima configurazione, la pagina visualizza "Configura comunità/utenti".
 
 . Selezionare *Configura community/utenti*.
 +
@@ -62,7 +61,7 @@ A seconda della selezione effettuata, viene visualizzata la finestra di dialogo 
 
 
 
-. Dalla pagina Avvisi con la scheda SNMP selezionata, fare clic su *Aggiungi destinazioni trap*.
+. Fai clic su *Aggiungi destinazioni trap*.
 +
 Viene visualizzata la finestra di dialogo Add Trap Destinations (Aggiungi destinazioni trap).
 
@@ -70,7 +69,7 @@ Viene visualizzata la finestra di dialogo Add Trap Destinations (Aggiungi destin
 +
 ** *Destinazione trap* -- immettere un indirizzo IPv4 o IPv6 del server che esegue un servizio SNMP.
 ** *Nome di comunità o Nome utente* -- dal menu a discesa, selezionare il nome di comunità (SNMPv2c) o il nome utente (SNMPv3) per questa destinazione trap. (Se ne è stata definita una sola, il nome viene già visualizzato in questo campo).
-** *Send Authentication Failure Trap* -- selezionare questa opzione (la casella di controllo) se si desidera avvisare la destinazione trap ogni volta che una richiesta SNMP viene rifiutata a causa di un nome di comunità o di un nome utente non riconosciuto. Dopo aver fatto clic su *Aggiungi*, le destinazioni trap e i nomi associati vengono visualizzati nella scheda *SNMP* della pagina *Avvisi*.
+** *Invia trap di errore di autenticazione* -- Seleziona questa opzione (la casella di controllo) se vuoi avvisare la destinazione della trap ogni volta che una richiesta SNMP viene rifiutata a causa di un nome di community o di un nome utente non riconosciuto. Dopo che fai clic su *Aggiungi*, le destinazioni trap e i nomi associati appaiono nella pagina *Avvisi SNMP*.
 
 
 . Per assicurarsi che un trap sia valido, selezionare una destinazione trap dalla tabella, quindi fare clic su *Test Trap Destination* (destinazione trap test) per inviare un trap di test all'indirizzo configurato.

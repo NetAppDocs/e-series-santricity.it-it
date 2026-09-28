@@ -16,6 +16,7 @@ summary: 'La gestione delle chiavi di sicurezza è disponibile nella pagina Syst
 
 
 
+[[what-is-drive-security]]
 == Che cos'è Drive Security?
 
 _Drive Security_ è una funzione che impedisce l'accesso non autorizzato ai dati su dischi abilitati alla sicurezza quando vengono rimossi dallo storage array. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard). Quando i dischi FDE o FIPS vengono fisicamente rimossi dall'array, non possono funzionare fino a quando non vengono installati in un altro array. A questo punto, i dischi si trovano in uno stato di sicurezza bloccato fino a quando non viene fornita la chiave di sicurezza corretta. Una _chiave di sicurezza_ è una stringa di caratteri condivisa tra questi tipi di dischi e i controller di un array di storage.
@@ -29,9 +30,10 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-key-management]]
 == Come si configura la gestione delle chiavi?
 
-Per implementare Drive Security, è necessario che nell'array siano installati dischi FDE o FIPS. Per configurare la gestione delle chiavi per questi dischi, accedere al menu:Impostazioni[sistema > Gestione delle chiavi di sicurezza] dove è possibile creare una chiave interna dalla memoria persistente del controller o una chiave esterna da un server di gestione delle chiavi. Infine, è possibile attivare Drive Security per pool e gruppi di volumi selezionando "Secure-capable" nelle impostazioni del volume.
+Per implementare Drive Security, devi avere installate nell'array unità FDE o FIPS. Per configurare la gestione delle chiavi per queste unità, vai su menu:System[Security key management] dove puoi creare una chiave interna dalla memoria persistente del controller oppure una chiave esterna da un server di gestione delle chiavi. Infine, abiliti Drive Security per pool e gruppi di volumi selezionando "secure-capable" nelle impostazioni del volume.
 
 Scopri di più:
 
@@ -43,6 +45,7 @@ Scopri di più:
 
 
 
+[[how-do-i-unlock-drives]]
 == Come faccio a sbloccare i dischi?
 
 Se è stata configurata la gestione delle chiavi e successivamente sono state spostate le unità abilitate alla protezione da un array di storage a un altro, è necessario riassegnare la chiave di sicurezza al nuovo array di storage per accedere ai dati crittografati sui dischi.
@@ -55,6 +58,7 @@ Scopri di più:
 
 
 
+[[related-information]]
 == Informazioni correlate
 
 Scopri di più sulle attività correlate alla gestione delle chiavi:

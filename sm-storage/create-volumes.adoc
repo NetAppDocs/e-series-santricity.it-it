@@ -21,6 +21,7 @@ Il processo di creazione di un volume è una procedura a più fasi.
 
 
 
+[[step-1-select-host-for-a-volume]]
 == Fase 1: Selezionare l'host per un volume
 
 È possibile creare volumi per aggiungere capacità di storage a un carico di lavoro specifico dell'applicazione e rendere visibili i volumi creati a un host o a un cluster host specifico. Inoltre, la sequenza di creazione dei volumi offre opzioni per allocare quantità specifiche di capacità a ciascun volume che si desidera creare.
@@ -61,6 +62,7 @@ Viene visualizzata la finestra di dialogo Select workload (Seleziona carico di l
 
 
 
+[[step-2-select-a-workload-for-a-volume]]
 == Fase 2: Selezionare un carico di lavoro per un volume
 
 Selezionare un carico di lavoro per personalizzare la configurazione dell'array di storage per un'applicazione specifica, ad esempio Microsoft SQL Server, Microsoft Exchange, applicazioni di videosorveglianza o VMware. È possibile selezionare "Other application" (altra applicazione) se l'applicazione che si desidera utilizzare su questo array di storage non è elencata.
@@ -68,8 +70,8 @@ Selezionare un carico di lavoro per personalizzare la configurazione dell'array 
 .A proposito di questa attività
 Questa attività descrive come creare volumi per un carico di lavoro esistente.
 
-* _Quando si creano volumi utilizzando un carico di lavoro specifico dell'applicazione_, il sistema potrebbe consigliare una configurazione del volume ottimizzata per ridurre al minimo i conflitti tra i/o del carico di lavoro dell'applicazione e altro traffico proveniente dall'istanza dell'applicazione. È possibile rivedere la configurazione del volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche consigliate dal sistema utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
-* _Quando si creano volumi utilizzando "altre"_ applicazioni (o applicazioni senza supporto specifico per la creazione di volumi), si specifica manualmente la configurazione del volume utilizzando la finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi).
+* Quando crei volumi utilizzando un carico di lavoro specifico per un'applicazione, il sistema potrebbe consigliarti una configurazione di volume ottimizzata per ridurre al minimo la contesa tra l'I/O del carico di lavoro dell'applicazione e altro traffico dalla tua istanza dell'applicazione. Puoi esaminare la configurazione di volume consigliata e modificare, aggiungere o eliminare i volumi e le caratteristiche consigliati dal sistema usando la pagina Aggiungi volumi.
+* Quando crei volumi utilizzando applicazioni "Altro" (o applicazioni senza supporto specifico per la creazione di volumi), specifichi manualmente la configurazione del volume tramite la pagina Aggiungi volumi.
 
 
 .Fasi
@@ -93,18 +95,17 @@ Selezionare una delle "altre" voci se l'applicazione che si desidera utilizzare 
 
 
 
+[[step-3-add-volumes]]
 == Passaggio 3: Aggiungi volumi
-
-System Manager potrebbe suggerire una configurazione del volume in base all'applicazione o al carico di lavoro selezionato. Questa configurazione del volume è ottimizzata in base al tipo di applicazione supportata dal carico di lavoro. È possibile accettare la configurazione del volume consigliata o modificarla in base alle esigenze. Se è stata selezionata una delle "altre" applicazioni, è necessario specificare manualmente i volumi e le caratteristiche che si desidera creare.
 
 .Prima di iniziare
 * I pool o i gruppi di volumi devono disporre di capacità libera sufficiente.
 * Il numero massimo di volumi consentito in un gruppo di volumi è 256.
 * Il numero massimo di volumi consentiti in un pool dipende dal modello di sistema di storage:
 +
-** 2.048 volumi (EF80, EF600, EF600C e serie E5700)
+** 2.048 volumi (EF80, EF600 e EF600C)
 ** 1.024 volumi (EF50, EF300 e EF300C)
-** 512 volumi (serie E4000 ed E2800)
+** 512 volumi (E4000)
 
 
 * Per creare un volume abilitato per Data Assurance (da), la connessione host che si intende utilizzare deve supportare da.
@@ -135,14 +136,10 @@ Un pool o un gruppo di volumi può contenere dischi sicuri e non sicuri, ma tutt
 
 
 .A proposito di questa attività
-I volumi vengono creati da pool o gruppi di volumi. La finestra di dialogo Add/Edit Volumes (Aggiungi/Modifica volumi) mostra tutti i pool e i gruppi di volumi idonei nell'array di storage. Per ciascun pool e gruppo di volumi idonei, vengono visualizzati il numero di dischi disponibili e la capacità libera totale.
-
-Per alcuni carichi di lavoro specifici dell'applicazione, ciascun pool o gruppo di volumi idoneo mostra la capacità proposta in base alla configurazione del volume suggerita e la capacità libera rimanente in GiB. Per gli altri carichi di lavoro, la capacità proposta viene visualizzata quando si aggiungono volumi a un pool o a un gruppo di volumi e si specifica la capacità riportata.
+Crei volumi da pool o gruppi di volumi. La pagina Aggiungi volumi mostra tutti i pool e i gruppi di volumi idonei sull'array di storage. Per ogni pool e gruppo di volumi idoneo, vengono visualizzati il numero di drive disponibili e la capacità libera totale.
 
 .Fasi
-. Scegliere una di queste azioni in base alla selezione di un altro carico di lavoro o di un carico di lavoro specifico dell'applicazione:
-+
-** *Altro* -- fare clic su *Aggiungi nuovo volume* in ogni pool o gruppo di volumi che si desidera utilizzare per creare uno o più volumi.
+. Fai clic su *Aggiungi nuovo volume* in ogni pool o gruppo di volumi che vuoi usare per creare uno o più volumi.
 +
 .Dettagli del campo
 [%collapsible]
@@ -155,7 +152,10 @@ Per alcuni carichi di lavoro specifici dell'applicazione, ciascun pool o gruppo 
  a| 
 Volume Name (Nome volume)
  a| 
-System Manager assegna un nome predefinito a un volume durante la sequenza di creazione del volume. È possibile accettare il nome predefinito o fornire un nome descrittivo che indichi il tipo di dati memorizzati nel volume.
+System Manager assegna un nome predefinito a un volume durante la sequenza di creazione del volume. Puoi accettare il nome predefinito oppure fornire un nome più descrittivo che indichi il tipo di dati memorizzati nel volume. I nomi dei volumi standard e thin possono avere una lunghezza massima di 60 caratteri. Solo i volumi standard e thin possono avere nomi più lunghi di 30 caratteri. Il nome deve essere univoco.
+
+
+NOTE: Il downgrade alla versione 11.90 o precedente del software SANtricity OS non è supportato se esistono volumi standard o thin con nomi superiori a 30 caratteri. Se hai intenzione di eseguire il downgrade alla versione 11.90 o precedente del software SANtricity OS, cambia i nomi di tutti i volumi standard o thin che hanno nomi superiori a 30 caratteri prima di procedere.
 
 
 
@@ -175,8 +175,8 @@ Dimensione blocco volume (solo EF300 e EF600)
  a| 
 Mostra le dimensioni del blocco che è possibile creare per il volume:
 
-*** 512 -- 512 byte
-*** 4K -- 4,096 byte
+** 512 -- 512 byte
+** 4K -- 4,096 byte
 
 
 
@@ -192,11 +192,11 @@ Mostra l'impostazione per il dimensionamento dei segmenti, che viene visualizzat
 
 *Tempo necessario per modificare le dimensioni dei segmenti* -- il tempo necessario per modificare le dimensioni dei segmenti di un volume dipende dalle seguenti variabili:
 
-*** Il carico di i/o dall'host
-*** La priorità di modifica del volume
-*** Il numero di dischi nel gruppo di volumi
-*** Il numero di canali del disco
-*** La potenza di elaborazione dei controller degli array di storage
+** Il carico di i/o dall'host
+** La priorità di modifica del volume
+** Il numero di dischi nel gruppo di volumi
+** Il numero di canali del disco
+** La potenza di elaborazione dei controller degli array di storage
 
 
 Quando si modificano le dimensioni dei segmenti di un volume, le prestazioni i/o vengono compromesse, ma i dati rimangono disponibili.
@@ -230,6 +230,7 @@ Risorsa allocata (EF80, EF50, EF300 e EF600 solo)
 
 |===
 ====
++
 ** *Carico di lavoro specifico dell'applicazione* -- Fare clic su *Modifica volumi* per modificare, aggiungere o eliminare i volumi e le caratteristiche consigliati dal sistema per il workload selezionato.
 +
 .Dettagli del campo
@@ -243,7 +244,10 @@ Risorsa allocata (EF80, EF50, EF300 e EF600 solo)
  a| 
 Volume Name (Nome volume)
  a| 
-System Manager assegna un nome predefinito a un volume durante la sequenza di creazione del volume. È possibile accettare il nome predefinito o fornire un nome descrittivo che indichi il tipo di dati memorizzati nel volume.
+System Manager assegna un nome predefinito a un volume durante la sequenza di creazione del volume. Puoi accettare il nome predefinito oppure fornire un nome più descrittivo che indichi il tipo di dati memorizzati nel volume. I nomi dei volumi standard e thin possono avere una lunghezza massima di 60 caratteri. Il nome deve essere univoco. Solo i volumi standard e thin possono avere nomi più lunghi di 30 caratteri.
+
+
+NOTE: Il downgrade alla versione 11.90 o precedente del software SANtricity OS non è supportato se esistono volumi standard o thin con nomi superiori a 30 caratteri. Se hai intenzione di eseguire il downgrade alla versione 11.90 o precedente del software SANtricity OS, cambia i nomi di tutti i volumi standard o thin che hanno nomi superiori a 30 caratteri prima di procedere.
 
 
 
@@ -330,6 +334,7 @@ Risorsa allocata (EF80, EF50, EF300 e EF600 solo)
 
 
 
+[[step-4-review-volume-configuration]]
 == Fase 4: Esaminare la configurazione del volume
 
 Esaminare un riepilogo dei volumi che si intende creare e apportare le modifiche necessarie.
@@ -346,6 +351,6 @@ System Manager crea i nuovi volumi nei pool e nei gruppi di volumi selezionati, 
 * Eseguire tutte le modifiche del sistema operativo necessarie sull'host dell'applicazione in modo che le applicazioni possano utilizzare il volume.
 * Eseguire l'utilità specifica del sistema operativo (disponibile presso un fornitore di terze parti), quindi eseguire il comando SMcli `-identifyDevices` per correlare i nomi dei volumi con i nomi degli array di archiviazione host.
 +
-SMcli è disponibile direttamente tramite SANtricity System Manager. Questa versione scaricabile di SMcli è disponibile su EF80, EF50, E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 e EF280 controller. Per scaricare SMcli all'interno di SANtricity System Manager, selezionare *Impostazioni* > *Sistema* e *Componenti aggiuntivi* > *Interfaccia a riga di comando*.
+SMcli è disponibile direttamente tramite SANtricity System Manager. Questa versione scaricabile di SMcli è disponibile sui controller EF80, EF50, E4000, EF600, EF600C, EF300 e EF300C. Per scaricare SMcli all'interno di SANtricity System Manager, seleziona *Sistema* e *Componenti aggiuntivi* > *Scarica interfaccia a riga di comando*.
 
 

@@ -18,8 +18,7 @@ Se non si desidera più raccogliere immagini snapshot, è possibile eliminare un
 Quando si elimina una pianificazione di snapshot, le immagini di snapshot associate non vengono eliminate insieme ad essa. Se si ritiene che la raccolta di immagini snapshot possa essere ripresa a un certo punto, è necessario sospendere la pianificazione delle istantanee piuttosto che eliminarla.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Snapshots].
-. Fai clic sulla scheda *Snapshots Schedules*.
+. Dal pannello di sinistra, seleziona menu:Snapshots[Snapshot schedules].
 . Seleziona la pianificazione degli snapshot che desideri eliminare, fai clic su *Delete* e conferma l'operazione.
 
 

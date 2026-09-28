@@ -2,7 +2,7 @@
 permalink: sm-hardware/controller-states.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, controller, states, 
-summary: 'È possibile posizionare un controller in tre stati diversi: Online, offline e service mode.' 
+summary: Puoi impostare un controller in tre stati diversi. Online, offline e modalità di servizio. 
 ---
 = Scopri di più sugli stati del controller in SANtricity System Manager
 :allow-uri-read: 
@@ -15,6 +15,7 @@ summary: 'È possibile posizionare un controller in tre stati diversi: Online, o
 
 
 
+[[online-state]]
 == Stato online
 
 Lo stato online è il normale stato operativo del controller. Significa che il controller funziona normalmente ed è disponibile per le operazioni di i/O.
@@ -23,6 +24,7 @@ Quando si posiziona un controller online, lo stato viene impostato su ottimale.
 
 
 
+[[offline-state]]
 == Stato offline
 
 Lo stato offline viene in genere utilizzato per preparare un controller per la sostituzione quando vi sono due controller nell'array di storage. Un controller può entrare nello stato offline in due modi: È possibile eseguire un comando esplicito o il controller potrebbe non funzionare. Un controller può uscire dallo stato offline solo emettendo un altro comando esplicito o sostituendo il controller guasto. È possibile posizionare un controller offline solo se sono presenti due controller nell'array di storage.
@@ -37,6 +39,7 @@ Quando un controller si trova nello stato offline, si verificano le seguenti con
 
 
 
+[[service-mode]]
 == Modalità di servizio
 
 La modalità Service viene generalmente utilizzata solo dal supporto tecnico per spostare tutti i volumi di array di storage in un controller in modo che sia possibile eseguire la diagnosi dell'altro controller. Un controller deve essere inserito manualmente in modalità di servizio e deve essere riportato manualmente online una volta completata l'operazione di servizio.

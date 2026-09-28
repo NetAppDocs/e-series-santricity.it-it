@@ -20,6 +20,7 @@ Il mirroring sincrono non è disponibile sui sistemi storage EF80, EF50, EF600/E
 ====
 
 
+[[what-is-mirroring]]
 == Che cos'è il mirroring?
 
 Le applicazioni SANtricity includono due tipi di mirroring: Asincrono e sincrono. Il mirroring asincrono copia i volumi di dati su richiesta o in base a una pianificazione, riducendo al minimo o evitando i downtime che potrebbero derivare da danneggiamento o perdita dei dati. Il mirroring sincrono replica i volumi di dati in tempo reale per garantire una disponibilità continua.
@@ -32,6 +33,7 @@ Scopri di più:
 
 
 
+[[how-do-i-configure-mirroring]]
 == Come si configura il mirroring?
 
 È possibile configurare il mirroring asincrono o sincrono in Unified Manager, quindi utilizzare System Manager per gestire le sincronizzazioni.

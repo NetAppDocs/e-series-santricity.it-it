@@ -15,8 +15,7 @@ summary: È possibile aggiungere fino a 256 nomi di comunità per le trap SNMPv2
 È possibile aggiungere fino a 256 nomi di comunità per le trap SNMPv2c.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *SNMP*.
+. Dal pannello di sinistra, seleziona menu:Alerts[SNMP alerts].
 +
 Le destinazioni trap e i nomi di comunità vengono visualizzati nella tabella.
 
@@ -29,4 +28,4 @@ Viene visualizzata la finestra di dialogo Configura comunità.
 
 
 .Risultati
-Il nuovo nome di comunità viene visualizzato nella scheda SNMP della pagina Avvisi.
+Il nuovo nome della community appare nella pagina degli avvisi SNMP.

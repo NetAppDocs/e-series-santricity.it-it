@@ -16,12 +16,13 @@ Utilizzare la procedura guidata di installazione per configurare lo storage arra
 
 
 
+[[first-time-setup]]
 == Configurazione iniziale
 
 Quando si apre System Manager per la prima volta, viene avviata l'installazione guidata. L'installazione guidata richiede di eseguire le attività di configurazione di base, ad esempio assegnare un nome allo storage array, configurare gli host, selezionare le applicazioni e creare pool di storage.
 
 
-NOTE: Prima di continuare con la configurazione iniziale, accedere al Centro aggiornamenti (menu:supporto[Centro aggiornamenti]) e assicurarsi che il software del sistema operativo SANtricity sia aggiornato. Se necessario, eseguire l'aggiornamento alla versione più recente e aggiornare il browser per continuare la configurazione. Per ulteriori informazioni, vedere link:../sm-support/overview-upgrade-center.html["Panoramica di Upgrade Center"].
+NOTE: Prima di continuare con la configurazione iniziale, vai al Upgrade center (menu:Support[Upgrade center]) e assicurati che il software SANtricity OS sia aggiornato. Se necessario, aggiorna alla versione più recente e aggiorna il browser per continuare la configurazione. Per ulteriori informazioni, vedi link:../sm-support/overview-upgrade-center.html["Panoramica di Upgrade Center"].
 
 Se si annulla la procedura guidata, non è possibile avviarla di nuovo manualmente. La procedura guidata viene riavviata automaticamente quando si apre System Manager o si aggiorna il browser e viene soddisfatta almeno una delle seguenti condizioni:
 
@@ -32,6 +33,7 @@ Se si annulla la procedura guidata, non è possibile avviarla di nuovo manualmen
 
 
 
+[[terminology]]
 == Terminologia
 
 L'installazione guidata utilizza i seguenti termini.

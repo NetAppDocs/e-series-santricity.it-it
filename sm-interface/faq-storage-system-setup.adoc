@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-if-i-dont-see-all-of-my-hardware-components]]
 == Cosa succede se non vedo tutti i componenti hardware?
 
 Se non vengono visualizzati tutti i componenti hardware nella finestra di dialogo Verify hardware (verifica hardware), potrebbe indicare che uno shelf di dischi non è collegato correttamente o che uno shelf incompatibile è installato nell'array di storage.
@@ -24,6 +25,7 @@ Verificare che tutti gli shelf di dischi siano collegati correttamente. In caso 
 
 
 
+[[what-if-i-dont-see-all-of-my-hosts]]
 == Cosa succede se non vedo tutti i miei host?
 
 Se gli host connessi non vengono visualizzati, il rilevamento automatico non è riuscito, gli host non sono collegati correttamente o non sono connessi host.
@@ -36,12 +38,14 @@ Una volta completata la configurazione, è possibile configurare gli host in un 
 
 
 
+[[how-does-identifying-applications-help-me-manage-my-storage-array]]
 == In che modo l'identificazione delle applicazioni mi aiuta a gestire lo storage array?
 
 È possibile visualizzare i dati sulle prestazioni per applicazione e per carico di lavoro per valutare la latenza, gli IOPS e i MiB/s delle applicazioni e dei relativi carichi di lavoro per ottimizzare le prestazioni. Caratteristiche quali il tipo di I/O, la dimensione del segmento, la proprietà del controller e la cache di lettura e scrittura sono incluse nella configurazione del volume.
 
 
 
+[[what-is-a-workload]]
 == Che cos'è un carico di lavoro?
 
 Per alcune applicazioni della rete, ad esempio SQL Server o Exchange, è possibile definire un carico di lavoro che ottimizzi lo storage per tale applicazione.
@@ -52,14 +56,16 @@ Durante la creazione del volume, il sistema richiede di rispondere alle domande 
 
 
 
+[[how-do-i-configure-the-delivery-method-for-autosupport]]
 == Come si configura il metodo di consegna per AutoSupport?
 
-Per accedere alle attività di configurazione per i metodi di erogazione AutoSupport, accedere al menu:supporto[Centro di assistenza], quindi fare clic sulla scheda *AutoSupport*.
+Per accedere alle attività di configurazione per i metodi di consegna di AutoSupport, vai al menu:Support[AutoSupport].
 
 Sono supportati i seguenti protocolli: HTTPS e SMTP.
 
 
 
+[[how-do-i-know-if-i-should-accept-the-recommended-pool-configuration]]
 == Come posso sapere se devo accettare la configurazione del pool consigliata?
 
 L'accettazione della configurazione del pool consigliata dipende da alcuni fattori.
@@ -75,6 +81,7 @@ Se hai risposto Sì a una di queste domande, puoi rifiutare la configurazione de
 
 
 
+[[santricity-system-manager-has-not-detected-any-hosts-what-do-i-do]]
 == Gestore di sistema di SANtricity non ha rilevato host. Cosa devo fare?
 
 Se gli host connessi non vengono visualizzati, il rilevamento automatico non è riuscito, gli host non sono collegati correttamente o non sono connessi host.

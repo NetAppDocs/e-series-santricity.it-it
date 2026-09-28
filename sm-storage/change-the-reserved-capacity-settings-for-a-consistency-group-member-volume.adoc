@@ -18,9 +18,8 @@ summary: È possibile modificare le impostazioni di un volume membro del gruppo 
 La modifica delle impostazioni di capacità riservata per un singolo volume membro modifica anche le impostazioni di capacità riservata per tutti i volumi membri associati a un gruppo di coerenza.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
-. Fare clic sulla scheda *Reserved Capacity* (capacità riservata).
-. Seleziona il volume del membro del gruppo di coerenza che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
+. Dal pannello di sinistra, seleziona menu:Storage[Reserved capacity].
+. Seleziona il volume del membro del gruppo di coerenza che vuoi modificare, poi fai clic sull'icona menu:ellipsis [Modifica impostazioni].
 +
 Viene visualizzata la finestra Modifica volume membro del gruppo di coerenza.
 

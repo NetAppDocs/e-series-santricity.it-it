@@ -20,6 +20,7 @@ Il mirroring sincrono non è disponibile sui sistemi storage EF80, EF50, EF600/E
 ====
 
 
+[[types-of-mirroring]]
 == Tipi di mirroring
 
 Le applicazioni SANtricity includono due tipi di mirroring: Asincrono e sincrono.
@@ -30,6 +31,7 @@ Il mirroring sincrono replica i volumi di dati in tempo reale per garantire una 
 
 
 
+[[differences-between-mirroring-types]]
 == Differenze tra i tipi di mirroring
 
 La seguente tabella descrive le principali differenze tra i due tipi di mirroring.

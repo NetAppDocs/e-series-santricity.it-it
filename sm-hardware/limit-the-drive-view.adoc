@@ -18,11 +18,11 @@ I filtri dei dischi possono limitare la visualizzazione solo a determinati tipi 
 
 [NOTE]
 ====
-Se tutti i dischi condividono gli stessi attributi fisici, il campo di filtro *Mostra dischi che sono...* non viene visualizzato. Se tutti i dischi condividono gli stessi attributi logici, il campo *Anywhere in the storage array* filter non viene visualizzato.
+Se tutte le unità condividono gli stessi attributi fisici, il campo filtro *Mostra unità che sono...* non viene visualizzato. Se tutte le unità condividono gli stessi attributi logici, le opzioni di posizione logica non vengono visualizzate nel campo filtro.
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Nel primo campo del filtro (sotto *Mostra unità...*), fare clic sulla freccia a discesa per visualizzare i tipi di unità disponibili e gli attributi di sicurezza.
 +
 I tipi di dischi possono includere:
@@ -46,7 +46,7 @@ Quando si seleziona un'opzione dal campo, le unità che non corrispondono ai cri
 
 
 
-. Nella seconda casella di filtro, fare clic sulla freccia a discesa per visualizzare le posizioni logiche disponibili per i dischi.
+. Nello stesso campo filtro, fai clic sulla freccia a discesa per visualizzare le posizioni logiche disponibili per le unità.
 +
 [NOTE]
 ====
@@ -67,7 +67,7 @@ Quando si seleziona un'opzione dal campo, le unità che non corrispondono ai cri
 
 
 
-. In alternativa, è possibile selezionare *accendere le luci di individuazione* all'estrema destra dei campi dei filtri per attivare le luci di individuazione dei dischi visualizzati.
+. Facoltativamente, puoi selezionare *attiva le luci di localizzazione* all'estrema destra del campo filtro per accendere le luci di localizzazione delle unità visualizzate.
 +
 Questa azione consente di individuare fisicamente le unità nell'array di storage.
 

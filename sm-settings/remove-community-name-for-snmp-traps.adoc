@@ -15,10 +15,9 @@ summary: È possibile rimuovere un nome di comunità per i trap SNMPv2c.
 È possibile rimuovere un nome di comunità per i trap SNMPv2c.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *SNMP*.
+. Dal pannello di sinistra, seleziona menu:Alerts[SNMP alerts].
 +
-Le destinazioni trap e i nomi di comunità vengono visualizzati nella pagina *Avvisi*.
+Le destinazioni delle trap e i nomi delle community appaiono nella pagina *Avvisi SNMP*.
 
 . Selezionare *Configura community*.
 +
@@ -32,4 +31,4 @@ Se le destinazioni trap sono associate a questo nome di comunità, la finestra d
 
 
 .Risultati
-Il nome di comunità e la destinazione trap associata vengono rimossi dalla pagina Avvisi.
+Il nome della community e la relativa destinazione trap vengono rimossi dalla pagina degli avvisi SNMP.

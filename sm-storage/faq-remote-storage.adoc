@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-do-i-need-to-know-before-creating-a-remote-storage-connection]]
 == Cosa occorre sapere prima di creare una connessione di storage remoto?
 
 Per configurare la funzione di storage remoto, è necessario collegare direttamente il dispositivo remoto e i sistemi storage di destinazione tramite iSCSI.
@@ -28,6 +29,7 @@ Per impostare la connessione al sistema iSCSI, fare riferimento a:
 
 
 
+[[why-am-i-being-prompted-to-remove-my-remote-volumes]]
 == Perché viene richiesto di rimuovere i volumi remoti?
 
 Quando raggiunge il numero massimo di volumi remoti, il sistema di storage rileva automaticamente eventuali volumi remoti inutilizzati e richiede di rimuoverli.
@@ -36,6 +38,7 @@ In alcuni casi, i volumi remoti non utilizzati non vengono ripuliti durante il p
 
 
 
+[[why-dont-i-see-all-my-volumes-on-my-destination-array]]
 == Perché non vedo tutti i miei volumi nell'array di destinazione?
 
 Quando si configura un'importazione per la funzione di storage remoto, alcuni volumi potrebbero non essere visualizzati nell'elenco dei candidati di destinazione a causa delle dimensioni del blocco, della capacità o della disponibilità del volume.
@@ -57,6 +60,7 @@ I volumi candidati sono esclusi dall'elenco se hanno:
 
 
 
+[[what-do-i-need-to-know-about-the-remote-volume-in-an-import]]
 == Cosa occorre sapere sul volume remoto in un'importazione?
 
 Quando si utilizza la funzione di storage remoto, tenere presente che il volume remoto è l'origine dei dati.
@@ -65,19 +69,21 @@ Quando l'importazione è in corso, i dati vengono trasferiti dal volume remoto a
 
 
 
+[[what-do-i-need-to-know-before-starting-a-remote-storage-import]]
 == Cosa occorre sapere prima di avviare un'importazione dello storage remoto?
 
 La funzione di storage remoto consente di copiare i dati da un sistema di storage remoto a un volume su un sistema di storage e-Series locale. Prima di utilizzare questa funzione, consultare le seguenti linee guida.
 
 
 
+[[configuration]]
 === Configurazione
 
 Prima di creare l'importazione dello storage remoto, è necessario completare le seguenti azioni e verificare le seguenti condizioni:
 
 * Assicurarsi che ciascun controller del sistema storage locale e-Series disponga di una connessione iSCSI al sistema storage remoto.
 * Nel sistema storage e-Series locale, creare un volume di destinazione per l'operazione di importazione. Assicurarsi che il volume abbia una capacità uguale o superiore al volume di origine, abbia una dimensione del blocco corrispondente al volume di origine e non sia mappato. Vedere link:create-volumes.html["Creare volumi"].
-* Configurare il sistema storage e-Series locale come host sul sistema remoto utilizzando il nome iSCSI qualificato (IQN). È possibile visualizzare l'IQN dal menu:Impostazioni[sistema > Impostazioni iSCSI > IQN di destinazione]. Inoltre, assicurarsi di impostare il tipo di host appropriato in base al sistema in uso.
+* Configura il sistema storage E-Series come host sul sistema remoto utilizzando il suo iSCSI Qualified Name (IQN). Puoi visualizzare l'IQN dal menu: System[iSCSI settings > Target IQN]. Assicurati anche di impostare il tipo di host appropriato in base al sistema che stai usando.
 * Arrestare tutti i sistemi i/o, smontare i file system e rimuovere eventuali assegnazioni agli host o alle applicazioni per il volume selezionato sul sistema di storage remoto.
 * Assegnare il volume al sistema di storage remoto all'host del sistema di storage e-Series locale appena creato.
 * Raccogliere le seguenti informazioni dal sistema di storage remoto in modo da poter creare l'importazione:
@@ -92,6 +98,7 @@ Prima di creare l'importazione dello storage remoto, è necessario completare le
 
 
 
+[[import-process]]
 === Processo di importazione
 
 La procedura seguente illustra il processo di importazione.
@@ -114,6 +121,7 @@ Una volta disconnessa l'importazione, le prestazioni della destinazione locale t
 
 
 
+[[restrictions]]
 === Restrizioni
 
 La funzione di storage remoto presenta le seguenti restrizioni:
@@ -132,6 +140,7 @@ La funzione di storage remoto presenta le seguenti restrizioni:
 
 
 
+[[additional-information]]
 === Ulteriori informazioni
 
 Per ulteriori informazioni sulla funzione di storage remoto, visitare il sito https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Report tecnico sullo storage remoto"^].

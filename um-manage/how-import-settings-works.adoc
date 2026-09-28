@@ -15,6 +15,7 @@ summary: 'È possibile utilizzare Unified Manager per importare le impostazioni 
 
 
 
+[[settings-available-for-import]]
 == Impostazioni disponibili per l'importazione
 
 È possibile importare le seguenti configurazioni in più array:
@@ -40,6 +41,7 @@ summary: 'È possibile utilizzare Unified Manager per importare le impostazioni 
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 Per importare le impostazioni, seguire questo flusso di lavoro:

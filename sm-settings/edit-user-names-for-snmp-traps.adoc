@@ -18,8 +18,7 @@ summary: È possibile modificare le definizioni utente per i trap SNMPv3.
 È necessario creare un utente per la trap SNMPv3.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Alerts].
-. Selezionare la scheda *SNMP*.
+. Dal pannello di sinistra, seleziona menu:Alerts[SNMP alerts].
 +
 Le destinazioni trap e i nomi utente vengono visualizzati nella tabella.
 
@@ -36,4 +35,4 @@ Le destinazioni trap e i nomi utente vengono visualizzati nella tabella.
 
 
 .Risultati
-La scheda SNMP della pagina Avvisi visualizza le impostazioni aggiornate.
+La pagina degli avvisi SNMP visualizza le impostazioni aggiornate.

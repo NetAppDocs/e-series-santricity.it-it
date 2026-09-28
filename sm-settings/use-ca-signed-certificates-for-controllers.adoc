@@ -24,6 +24,7 @@ L'utilizzo dei certificati firmati dalla CA è una procedura in tre fasi.
 
 
 
+[[step-1-complete-csrs-for-the-controllers]]
 == Fase 1: Completare gli CSR per i controller
 
 È necessario innanzitutto generare un file CSR (Certificate Signing Request) per ciascun controller dell'array di storage.
@@ -37,8 +38,7 @@ In alternativa, è possibile generare un file CSR utilizzando uno strumento come
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
-. Dalla scheda Array Management (Gestione array), selezionare *complete CSR* (completa CSR).
+. Dal pannello di sinistra, seleziona menu:Certificates[Array management certificates] e poi seleziona *Complete CSR*.
 +
 [NOTE]
 ====
@@ -85,6 +85,7 @@ Per un singolo controller, un file CSR viene scaricato nel sistema locale. Per i
 
 
 
+[[step-2-submit-the-csr-files]]
 == Fase 2: Inviare i file CSR
 
 Dopo aver creato i file CSR (Certificate Signing Request), inviare i file a un'autorità di certificazione (CA). I sistemi e-Series richiedono il formato PEM (codifica ASCII Base64) per i certificati firmati, che include i seguenti tipi di file: pem, .crt, .cer o .key.
@@ -103,6 +104,7 @@ Dopo aver creato i file CSR (Certificate Signing Request), inviare i file a un'a
 
 
 
+[[step-3-import-signed-certificates-for-controllers]]
 == Fase 3: Importazione dei certificati firmati per i controller
 
 Una volta ricevuti i certificati firmati dall'autorità di certificazione (CA), importare i file per i controller.
@@ -114,8 +116,7 @@ Una volta ricevuti i certificati firmati dall'autorità di certificazione (CA), 
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Certificates]
-. Dalla scheda Array Management (Gestione array), selezionare *Import* (Importa).
+. Dal pannello di sinistra, seleziona menu:Certificates[Array management certificates] e poi seleziona *Import*.
 +
 Viene visualizzata una finestra di dialogo per l'importazione dei file di certificato.
 

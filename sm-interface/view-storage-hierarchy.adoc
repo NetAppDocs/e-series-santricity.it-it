@@ -13,10 +13,11 @@ summary: 'La gerarchia di storage sull"interfaccia principale fornisce una vista
 [role="lead"]
 La gerarchia di storage sull'interfaccia principale fornisce una vista organizzata dei vari componenti hardware e oggetti storage gestiti dall'array di storage.
 
-Per visualizzare la gerarchia dello storage, accedere alla home page e fare clic sulla freccia a discesa di un componente o di un oggetto storage dell'array di storage. Un array di storage è costituito da un insieme di componenti fisici e logici.
+Per visualizzare la gerarchia di archiviazione, vai alla Dashboard e fai clic sulla freccia a discesa su un componente dell'array di archiviazione o su un oggetto di archiviazione. Un array di archiviazione è costituito da una raccolta di componenti sia fisici che logici.
 
 
 
+[[physical-components]]
 == Componenti fisici
 
 I componenti fisici di un array di storage sono descritti in questa tabella.
@@ -81,6 +82,7 @@ Un client di gestione è il computer in cui è installato un browser per acceder
 |===
 
 
+[[logical-components]]
 == Componenti logici
 
 I dischi dell'array di storage forniscono la capacità fisica dello storage per i dati. Utilizzare System Manager per configurare la capacità fisica in componenti logici, come pool, gruppi di volumi e volumi. Questi componenti sono gli strumenti utilizzati per configurare, memorizzare, gestire e conservare i dati sull'array di storage. I componenti logici di un array di storage sono descritti in questa tabella.

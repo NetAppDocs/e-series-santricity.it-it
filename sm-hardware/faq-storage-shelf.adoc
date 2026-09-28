@@ -16,12 +16,14 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-is-shelf-loss-protection-and-drawer-loss-protection]]
 == Che cos'è la protezione contro la perdita di shelf e la perdita di cassetto?
 
 La protezione contro le perdite di shelf e la protezione contro le perdite di cassetto sono attributi di pool e gruppi di volumi che consentono di mantenere l'accesso ai dati in caso di guasto di un singolo shelf o cassetto.
 
 
 
+[[shelf-loss-protection]]
 === Protezione contro la perdita di shelf
 
 Uno shelf è l'enclosure che contiene i dischi o i dischi e il controller. La protezione contro la perdita di shelf garantisce l'accessibilità ai dati sui volumi di un pool o di un gruppo di volumi se si verifica una perdita totale di comunicazione con un singolo shelf di dischi. Un esempio di perdita totale di comunicazione potrebbe essere la perdita di alimentazione dello shelf di dischi o il guasto di entrambi i moduli i/o (IOM).
@@ -84,6 +86,7 @@ Non applicabile
 |===
 
 
+[[drawer-loss-protection]]
 === Protezione in caso di perdita del cassetto
 
 Un cassetto è uno dei compartimenti di uno shelf che si tira per accedere ai dischi. Solo gli scaffali ad alta capacità dispongono di cassetti. La protezione contro la perdita dei cassetti garantisce l'accessibilità ai dati sui volumi di un pool o di un gruppo di volumi se si verifica una perdita totale di comunicazione con un singolo cassetto. Un esempio di perdita totale di comunicazione potrebbe essere la perdita di alimentazione del cassetto o il guasto di un componente interno del cassetto.
@@ -150,6 +153,7 @@ Non applicabile
 |===
 
 
+[[what-are-battery-learn-cycles]]
 == Quali sono i cicli di apprendimento della batteria?
 
 Un ciclo di apprendimento è un ciclo automatico per la calibrazione dell'indicatore della batteria Smart.

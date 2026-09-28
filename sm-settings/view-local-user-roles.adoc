@@ -2,7 +2,7 @@
 permalink: sm-settings/view-local-user-roles.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
-summary: 'Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature dei profili utente ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nell"array di storage.' 
+summary: 'Dalla pagina Ruoli utente locali, puoi visualizzare le mappature dei profili utente ai ruoli predefiniti. Queste mappature fanno parte dei controlli di accesso in base al ruolo (RBAC) applicati nel sistema storage.' 
 ---
 = Visualizza i ruoli degli utenti locali in SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Dalla scheda Local User Roles (ruoli utente locali), è possibile visu
 
 
 [role="lead"]
-Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature dei profili utente ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nell'array di storage.
+Dalla pagina Ruoli utente locali, puoi visualizzare le mappature dei profili utente ai ruoli predefiniti. Queste mappature fanno parte dei controlli di accesso in base al ruolo (RBAC) applicati nel sistema storage.
 
 .Prima di iniziare
 È necessario effettuare l'accesso con un profilo utente che includa le autorizzazioni di amministratore di sicurezza. In caso contrario, le funzioni di gestione degli accessi non vengono visualizzate.
@@ -21,8 +21,7 @@ Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare l
 I profili utente e le mappature non possono essere modificati. È possibile modificare solo le password.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Access Management].
-. Selezionare la scheda *ruoli utente locali*.
+. Dal pannello di sinistra, seleziona menu:Authentication[Local user roles].
 +
 I profili utente sono mostrati nella tabella:
 

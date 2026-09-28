@@ -21,7 +21,7 @@ La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella p
 Questa operazione raccoglie i dati di supporto e li invia automaticamente al supporto tecnico, in modo che possano risolvere i problemi.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Supporto [Support Center > AutoSupport] scheda.
+. Dal pannello di sinistra, seleziona menu:Support[AutoSupport].
 . Selezionare *Invia AutoSupport spedizione*.
 +
 Viene visualizzata la finestra di dialogo Invia AutoSupport di spedizione.

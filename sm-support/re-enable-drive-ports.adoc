@@ -15,7 +15,7 @@ summary: 'È possibile indicare al controller che è stata intrapresa un"azione 
 È possibile indicare al controller che è stata intrapresa un'azione correttiva per il ripristino da una condizione di errato cablaggio.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Support[Support Center > Diagnostics] tab.
+. Dal pannello di sinistra, seleziona menu:Support[Diagnostics].
 . Selezionare *Riabilitare Drive Ports* e confermare che si desidera eseguire l'operazione.
 +
 Questa opzione viene visualizzata solo quando le porte dei dischi sono disattivate per lo storage array.

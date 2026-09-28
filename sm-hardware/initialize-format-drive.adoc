@@ -24,11 +24,7 @@ Utilizzare l'operazione di inizializzazione del disco quando si sposta un singol
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se la figura mostra i controller, fare clic sulla scheda *Drives* (unità).
-+
-Il grafico cambia per mostrare i dischi al posto dei controller.
-
+. Dal pannello di sinistra, seleziona menu:Hardware[Drives].
 . Fare clic sull'unità che si desidera inizializzare.
 +
 Viene visualizzato il menu di scelta rapida del disco.

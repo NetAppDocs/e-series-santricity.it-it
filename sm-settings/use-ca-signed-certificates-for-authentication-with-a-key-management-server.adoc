@@ -22,6 +22,7 @@ L'autenticazione tra i controller e un server di gestione delle chiavi è una pr
 
 
 
+[[step-1-complete-and-submit-csr-for-authentication-with-a-key-management-server]]
 == Fase 1: Completare e inviare la CSR per l'autenticazione con un server di gestione delle chiavi
 
 È necessario innanzitutto generare un file CSR (Certificate Signing Request), quindi utilizzare la CSR per richiedere un certificato client firmato a un'autorità di certificazione (CA) attendibile dal server di gestione delle chiavi. È inoltre possibile creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR scaricato. Un certificato client convalida i controller dello storage array, in modo che il server di gestione delle chiavi possa considerare attendibili le richieste del protocollo KMIP (Key Management Interoperability Protocol).
@@ -30,8 +31,7 @@ L'autenticazione tra i controller e un server di gestione delle chiavi è una pr
 NOTE: I file CSR generati esternamente tramite coppie di chiavi private e pubbliche possono essere importati tramite la finestra di dialogo Crea chiave di protezione esterna. Per ulteriori informazioni sull'importazione di un file CSR generato esternamente, vedere https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Fase 2: Importazione dei certificati per il server di gestione delle chiavi"].
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
-. Dalla scheda Key Management (Gestione chiavi), selezionare *complete CSR* (completa CSR).
+. Dal pannello di sinistra, seleziona menu:Certificates[Key management certificates], e poi seleziona *Complete CSR*.
 . Inserire le seguenti informazioni:
 +
 ** *Nome comune* -- Un nome che identifica il client. È pratica comune abbinare ciò che è nel nome comune ai requisiti del server KMS per le convenzioni di denominazione dei certificati client. Il nome comune in genere aiuta il KMS a identificare il certificato del client quando viene presentato durante un handshake.
@@ -56,6 +56,7 @@ NOTE: È comune che il server di gestione delle chiavi disponga di una struttura
 
 
 
+[[step-2-import-certificates-for-the-key-management-server]]
 == Fase 2: Importazione dei certificati per il server di gestione delle chiavi
 
 Come fase successiva, importare i certificati per l'autenticazione tra lo storage array e il server di gestione delle chiavi. Esistono due tipi di certificati: Il certificato client convalida i controller dello storage array, mentre il certificato del server di gestione delle chiavi convalida il server. È necessario caricare sia il file di certificato del client per i controller che il file di certificato del server per il server di gestione delle chiavi.
@@ -72,8 +73,7 @@ Per ulteriori informazioni sul certificato del server, consultare la documentazi
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
-. Dalla scheda Key Management (Gestione chiavi), selezionare *Import* (Importa).
+. Dal pannello di sinistra, seleziona menu:Certificates[Key management certificates], e poi seleziona *Importa*.
 +
 Viene visualizzata una finestra di dialogo per l'importazione dei file dei certificati.
 

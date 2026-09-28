@@ -20,7 +20,7 @@ Tenere presenti queste linee guida quando si assegnano volumi agli host:
 * È possibile assegnare un volume a un solo host o cluster di host alla volta.
 * I volumi assegnati vengono condivisi tra i controller dell'array di storage.
 * Lo stesso numero di unità logica (LUN) non può essere utilizzato due volte da un host o da un cluster host per accedere a un volume. È necessario utilizzare un LUN univoco.
-* Per i nuovi gruppi di volumi, se si attende la creazione e l'inizializzazione di tutti i volumi prima di assegnarli a un host, il tempo di inizializzazione del volume viene ridotto. Tenere presente che una volta mappato un volume associato al gruppo di volumi, _tutti_ i volumi torneranno all'inizializzazione più lenta. È possibile controllare l'avanzamento dell'inizializzazione dal menu:Home[operazioni in corso].
+* Per i nuovi gruppi di volumi, se aspetti che tutti i volumi siano stati creati e inizializzati prima di assegnarli a un host, il tempo di inizializzazione dei volumi si riduce. Tieni presente che, una volta mappato un volume associato al gruppo di volumi, _tutti_ i volumi torneranno alla procedura di inizializzazione più lenta. Puoi controllare l'avanzamento dell'inizializzazione dal menu:Monitoring[Operations in progress].
 
 
 L'assegnazione di un volume non riesce nelle seguenti condizioni:

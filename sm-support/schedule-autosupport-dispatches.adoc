@@ -24,7 +24,7 @@ La funzione AutoSupport deve essere attivata. Puoi vedere se è attivato nella p
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Supporto [Support Center > AutoSupport] scheda.
+. Dal pannello di sinistra, seleziona menu:Support[AutoSupport].
 . Selezionare *Schedule AutoSupport Dispatches*.
 +
 Viene visualizzata la procedura guidata Schedule AutoSupport Dispatches.

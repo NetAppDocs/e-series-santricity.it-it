@@ -29,6 +29,7 @@ Tenere presenti queste linee guida quando si crea un host:
 +
 Viene visualizzata la finestra di dialogo Create host (Crea host).
 
+. Fai clic su *+Aggiungi porta host* per accedere al campo Porte host e aggiungere gli identificatori di porta host per l'host. Puoi aggiungere uno o più identificatori di porta host da associare all'host.
 . Selezionare le impostazioni per l'host in base alle esigenze.
 +
 .Dettagli del campo

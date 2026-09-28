@@ -23,11 +23,11 @@ summary: È possibile aggiornare il firmware dei dischi per assicurarsi di dispo
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare il menu:Support[Upgrade Center].
+. Dal pannello di sinistra, seleziona menu:Support[Upgrade center].
 . Scaricare i nuovi file dal sito Support sul client di gestione.
-. In aggiornamento del firmware del disco, fare clic su *Avvia aggiornamento*.
+. In Aggiornamento del firmware del disco, fai clic su *Avvia aggiornamento del firmware del disco*.
 +
-Viene visualizzata una finestra di dialogo che elenca i file del firmware del disco attualmente in uso.
+Viene visualizzata la pagina di aggiornamento del firmware del disco, che elenca i file del firmware del disco attualmente in uso.
 
 . Estrarre (decomprimere) i file scaricati dal sito del supporto.
 . Fare clic su *Browse* (Sfoglia) e selezionare i nuovi file del firmware del disco scaricati dal sito di supporto.
@@ -39,7 +39,7 @@ I file del firmware del disco hanno un nome file simile a. `D_HUC101212CSS600_30
 
 . Fare clic su *Avanti*.
 +
-Viene visualizzata la finestra di dialogo *Select Drives* (Seleziona unità), che elenca le unità che è possibile aggiornare con i file selezionati.
+Viene visualizzato il passaggio *Seleziona unità*, che elenca le unità che puoi aggiornare con i file selezionati.
 
 +
 Vengono visualizzati solo i dischi compatibili.
@@ -49,8 +49,8 @@ Il firmware selezionato per il disco viene visualizzato nell'area Proposed firmw
 
 . Selezionare il tipo di aggiornamento che si desidera eseguire:
 +
-** *Online (impostazione predefinita)* -- Mostra i dischi in grado di supportare il download del firmware _mentre lo storage array sta elaborando i/O. Quando si seleziona questo metodo di aggiornamento, non è necessario interrompere l'i/o dei volumi associati utilizzando questi dischi. Questi dischi vengono aggiornati uno alla volta mentre lo storage array sta elaborando i/o su tali dischi.
-** *Offline (Parallel)* -- Mostra i dischi che possono supportare il download del firmware _solo quando l'attività di i/o viene interrotta_ su qualsiasi volume che utilizza i dischi. Quando si seleziona questo metodo di aggiornamento, è necessario interrompere tutte le attività di i/o su tutti i volumi che utilizzano i dischi che si stanno aggiornando. I dischi che non hanno ridondanza devono essere elaborati come operazioni offline. Questo requisito include qualsiasi disco associato alla cache SSD, un gruppo di volumi RAID 0 o qualsiasi pool o gruppo di volumi degradati. L'aggiornamento offline (parallelo) è in genere più rapido rispetto al metodo online (predefinito).
+** *Aggiorna tutte le unità online* -- Mostra le unità che possono supportare un download del firmware _mentre l'array di storage sta elaborando I/O_. Non devi interrompere l'I/O sui volumi associati che usano queste unità quando scegli questo metodo di aggiornamento. Queste unità vengono aggiornate una alla volta mentre l'array di storage sta elaborando I/O su di esse.
+** *Aggiorna tutte le unità offline (in parallelo)* -- Mostra le unità che possono supportare un download del firmware _solo mentre tutte le attività di I/O sono interrotte_ su qualsiasi volume che utilizza le unità. Devi interrompere tutte le attività di I/O su qualsiasi volume che utilizza le unità che stai aggiornando quando scegli questo metodo di aggiornamento. Le unità che non hanno ridondanza devono essere gestite come un'operazione offline. Questo requisito include qualsiasi unità associata alla Cache SSD, a un gruppo di volumi RAID 0 o a qualsiasi pool o gruppo di volumi degradato. L'aggiornamento offline (in parallelo) è di solito più veloce del metodo online.
 
 
 . Nella prima colonna della tabella, selezionare il disco o i dischi che si desidera aggiornare.
@@ -64,7 +64,7 @@ Per interrompere l'aggiornamento, fare clic su *Stop*. Tutti i download del firm
 L'interruzione dell'aggiornamento del firmware del disco potrebbe causare la perdita di dati o la mancata disponibilità dei dischi.
 
 ====
-. *Opzionale:* per visualizzare un elenco degli aggiornamenti, fare clic su *Salva registro*.
+. *Facoltativo:* Per vedere un elenco di ciò che è stato aggiornato, clicca su *Salva registro*.
 +
 Il file viene salvato nella cartella Download del browser con il nome `drive_upgrade_log-timestamp.txt`.
 

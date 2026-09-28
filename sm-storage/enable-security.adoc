@@ -28,7 +28,7 @@ Una volta attivato il sistema di protezione, è possibile rimuoverlo solo elimin
 
 .Fasi
 . Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
-. Seleziona il pool o il gruppo di volumi su cui desideri abilitare la sicurezza, quindi fai clic su menu:icona con i puntini di sospensione[Abilita sicurezza].
+. Individua il pool o il gruppo di volumi su cui vuoi abilitare la sicurezza, quindi fai clic su menu:ellipsis icon[Abilita sicurezza].
 +
 Viene visualizzata la finestra di dialogo Conferma abilitazione protezione.
 

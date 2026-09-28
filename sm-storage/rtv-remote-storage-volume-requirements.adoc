@@ -15,6 +15,7 @@ I volumi utilizzati per le importazioni devono soddisfare i requisiti di dimensi
 
 
 
+[[remote-storage-volume]]
 == Volume di storage remoto
 
 Il volume di origine di un'importazione viene chiamato "volume di storage remoto". Questo volume deve soddisfare i seguenti criteri:
@@ -41,6 +42,7 @@ Ogni volume di storage remoto è associato a un solo oggetto di storage remoto; 
 
 
 
+[[target-volume-candidates]]
 == Candidati al volume di destinazione
 
 Il volume di destinazione è il volume di destinazione sul sistema e-Series locale. Il volume di destinazione deve soddisfare i seguenti criteri:

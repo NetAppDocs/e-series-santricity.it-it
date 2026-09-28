@@ -15,9 +15,8 @@ summary: È possibile modificare le impostazioni di un volume di coppia mirrorat
 È possibile modificare le impostazioni di un volume di coppia di mirroring per regolare il punto percentuale in cui SANtricity System Manager invia una notifica di avviso quando la capacità riservata per un volume di coppia di mirroring si sta avvicinando al completo.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Storage[Pool e gruppi di volumi].
-. Selezionare la scheda *capacità riservata*.
-. Seleziona il volume della coppia speculare che desideri modificare, quindi fai clic sull'icona menu:ellipsis icon[Edit Settings].
+. Dal pannello di sinistra, seleziona menu:Storage[Reserved capacity].
+. Seleziona il volume della coppia speculare che vuoi modificare, quindi fai clic sull'icona menu:ellipsis icon[Modifica impostazioni].
 +
 Viene visualizzata la finestra di dialogo Impostazioni capacità riservata volume coppia mirrorata.
 

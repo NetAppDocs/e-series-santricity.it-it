@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[why-dont-i-see-all-my-volumes-hosts-or-host-clusters]]
 == Perché non vedo tutti i miei volumi, host o cluster di host?
 
 I volumi Snapshot con un volume di base abilitato da non possono essere assegnati a un host che non supporta Data Assurance (da). È necessario disattivare il da sul volume di base prima di poter assegnare un volume snapshot a un host che non supporta il da.
@@ -33,6 +34,7 @@ Non è possibile disattivare il da su un volume associato a snapshot (gruppi di 
 ====
 
 
+[[what-is-a-snapshot-image]]
 == Che cos'è un'immagine snapshot?
 
 Un'immagine snapshot è una copia logica del contenuto del volume, acquisita in un determinato momento. Le immagini Snapshot utilizzano uno spazio di storage minimo.
@@ -45,6 +47,7 @@ I dati dell'immagine Snapshot vengono memorizzati come segue:
 
 
 
+[[why-use-snapshot-images]]
 == Perché utilizzare le immagini Snapshot?
 
 È possibile utilizzare le snapshot per proteggere e consentire il ripristino da perdite o danneggiamenti accidentali o dannosi dei dati.
@@ -61,12 +64,14 @@ Il sistema conserva più immagini Snapshot come punti di ripristino che è possi
 
 
 
+[[what-kinds-of-volumes-can-be-used-for-snapshots]]
 == Quali tipi di volumi possono essere utilizzati per le snapshot?
 
 I volumi standard e i volumi thin sono gli unici tipi di volumi che è possibile utilizzare per memorizzare le immagini snapshot. Non è possibile utilizzare volumi non standard. Il volume di base può risiedere in un pool o in un gruppo di volumi.
 
 
 
+[[why-would-i-create-a-snapshot-consistency-group]]
 == Perché dovrei creare un gruppo di coerenza delle snapshot?
 
 Si crea un gruppo di coerenza snapshot quando si desidera assicurarsi che le immagini snapshot vengano acquisite su più volumi contemporaneamente.
@@ -85,6 +90,7 @@ I volumi inclusi in un gruppo di coerenza snapshot sono denominati _volumi membr
 
 
 
+[[what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity]]
 == Che cos'è un volume snapshot e quando ha bisogno di capacità riservata?
 
 Un volume di snapshot consente all'host di accedere ai dati nell'immagine di snapshot. Il volume Snapshot contiene la propria capacità riservata, che salva eventuali modifiche al volume di base senza influire sull'immagine snapshot originale. Le immagini Snapshot non sono accessibili in lettura o scrittura agli host. Se si desidera leggere o scrivere nei dati di snapshot, creare un volume di snapshot e assegnarlo a un host.
@@ -97,6 +103,7 @@ Un volume di snapshot consente all'host di accedere ai dati nell'immagine di sna
 
 
 
+[[what-is-a-snapshot-group]]
 == Che cos'è un gruppo di snapshot?
 
 Un gruppo di snapshot è un insieme di immagini snapshot point-in-time di un singolo volume di base associato.
@@ -109,6 +116,7 @@ System Manager organizza le immagini snapshot in _gruppi di snapshot_. I gruppi 
 
 
 
+[[why-would-i-disable-a-snapshot-volume]]
 == Perché è necessario disattivare un volume di snapshot?
 
 È possibile disattivare un volume di snapshot quando si desidera assegnare un volume di snapshot diverso all'immagine di snapshot. È possibile riservare il volume snapshot disattivato per un utilizzo successivo.
@@ -117,6 +125,7 @@ Se il volume snapshot o il volume snapshot del gruppo di coerenza non sono più 
 
 
 
+[[what-is-the-disabled-state]]
 == Che cos'è lo stato Disabled?
 
 Un volume di snapshot nello stato Disabled (Disattivato) non è attualmente assegnato a un'immagine di snapshot. Per attivare il volume di snapshot, è necessario utilizzare l'operazione di ricreazione per assegnare una nuova immagine di snapshot al volume di snapshot disattivato.
@@ -125,6 +134,7 @@ Le caratteristiche del volume di snapshot sono definite dall'immagine snapshot a
 
 
 
+[[why-would-i-suspend-a-snapshot-schedule]]
 == Perché dovrei sospendere un programma di snapshot?
 
 Quando un programma viene sospeso, non vengono eseguite le creazioni dell'immagine snapshot pianificate. È possibile sospendere una pianificazione di snapshot per risparmiare spazio di storage e quindi riprendere le snapshot pianificate in un secondo momento.

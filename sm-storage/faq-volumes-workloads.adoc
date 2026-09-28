@@ -16,6 +16,7 @@ Queste FAQ possono essere utili se stai cercando una risposta rapida a una doman
 
 
 
+[[what-is-a-volume]]
 == Che cos'è un volume?
 
 Un volume è un container in cui applicazioni, database e file system memorizzano i dati. Si tratta del componente logico creato per consentire all'host di accedere allo storage sull'array di storage.
@@ -24,6 +25,7 @@ Un volume viene creato dalla capacità disponibile in un pool o in un gruppo di 
 
 
 
+[[why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes]]
 == Perché viene visualizzato un errore di overallocation della capacità quando si dispone di capacità libera sufficiente in un gruppo di volumi per creare volumi?
 
 Il gruppo di volumi selezionato potrebbe avere una o più aree a capacità libera. Un'area di capacità libera è la capacità libera che può derivare dall'eliminazione di un volume o dal mancato utilizzo di tutta la capacità disponibile durante la creazione del volume.
@@ -34,7 +36,7 @@ Se un gruppo di volumi dispone di aree di capacità libera, il grafico del grupp
 
 Consolidando la capacità libera, è possibile creare volumi aggiuntivi dalla quantità massima di capacità libera in un gruppo di volumi. È possibile consolidare la capacità libera esistente su un gruppo di volumi selezionato utilizzando uno dei seguenti metodi:
 
-* Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "consolidare la capacità libera" viene visualizzato nella home page dell'area di notifica. Fare clic sul collegamento *consolida capacità libera* per avviare la finestra di dialogo.
+* Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "Consolida capacità libera" viene visualizzato nell'area Notifiche, accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra. Fai clic sul collegamento *Consolida capacità libera* per aprire la finestra di dialogo.
 * È inoltre possibile accedere al menu:Storage[Pool e gruppi di volumi] dal pannello di sinistra e quindi selezionare il menu:ellipsis icon[Consolidate volume group free capacity] per avviare la finestra di dialogo.
 
 
@@ -42,18 +44,21 @@ Se si desidera utilizzare un'area di capacità libera specifica invece dell'area
 
 
 
+[[why-arent-these-volumes-associated-with-a-workload]]
 == Perché questi volumi non sono associati a un carico di lavoro?
 
 I volumi non sono associati a un carico di lavoro se sono stati creati utilizzando l'interfaccia della riga di comando (CLI) o se sono stati migrati (importati/esportati) da un array di storage diverso.
 
 
 
+[[why-cant-i-delete-the-selected-workload]]
 == Perché non riesco a eliminare il carico di lavoro selezionato?
 
 Questo carico di lavoro è costituito da un gruppo di volumi creati utilizzando l'interfaccia della riga di comando (CLI) o migrati (importati/esportati) da un array di storage diverso. Di conseguenza, i volumi di questo carico di lavoro non sono associati a un carico di lavoro specifico dell'applicazione, pertanto non è possibile eliminare il carico di lavoro.
 
 
 
+[[how-do-application-specific-workloads-help-me-manage-my-storage-array]]
 == In che modo i carichi di lavoro specifici dell'applicazione mi aiutano a gestire lo storage array?
 
 Le caratteristiche del volume del carico di lavoro specifico dell'applicazione determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage e aiutano a determinare le performance dell'ambiente in una determinata configurazione.
@@ -62,6 +67,7 @@ Un'applicazione è un software come SQL Server o Exchange. È possibile definire
 
 
 
+[[what-do-i-need-to-do-to-recognize-the-expanded-capacity]]
 == Cosa devo fare per riconoscere la capacità espansa?
 
 Se si aumenta la capacità di un volume, l'host potrebbe non riconoscere immediatamente l'aumento della capacità del volume.
@@ -74,6 +80,7 @@ Per ulteriori informazioni, consultare la documentazione del sistema operativo h
 
 
 
+[[why-dont-i-see-all-my-pools-andor-volume-groups]]
 == Perché non vedo tutti i miei pool e/o gruppi di volumi?
 
 Qualsiasi pool o gruppo di volumi in cui non è possibile spostare il volume non viene visualizzato nell'elenco.
@@ -87,6 +94,7 @@ I pool o i gruppi di volumi non sono idonei per uno dei seguenti motivi:
 
 
 
+[[what-is-segment-size]]
 == Che cos'è la dimensione del segmento?
 
 Un segmento è la quantità di dati in kilobyte (KiB) memorizzati su un disco prima che l'array di storage passi al disco successivo nello stripe (gruppo RAID). Le dimensioni dei segmenti si applicano solo ai gruppi di volumi, non ai pool.
@@ -97,18 +105,21 @@ Sia che un'applicazione utilizzi piccole letture e scritture casuali o grandi le
 
 
 
+[[environments-where-iops-performance-is-important]]
 === Ambienti in cui le performance IOPS sono importanti
 
 In un ambiente IOPS (i/o Operations per second), lo storage array offre prestazioni migliori se si utilizza una dimensione di segmento superiore alla dimensione tipica del blocco di dati ("`chunk`") che viene letta/scritta su un disco. In questo modo, ogni chunk viene scritto su un singolo disco.
 
 
 
+[[environments-where-throughput-is-important]]
 === Ambienti in cui il throughput è importante
 
 In un ambiente di throughput, la dimensione del segmento deve essere pari a una frazione del totale dei dischi per i dati e la dimensione tipica del blocco di dati (dimensione i/o). In questo modo, i dati vengono distribuiti come singolo stripe tra i dischi del gruppo di volumi, con conseguente velocità di lettura e scrittura.
 
 
 
+[[what-is-preferred-controller-ownership]]
 == Che cos'è la proprietà preferita del controller?
 
 Preferred controller ownership (proprietà preferita del controller): Definisce il controller designato come controller principale o proprietario del volume.
@@ -119,6 +130,7 @@ Ad esempio, se un controller legge principalmente grandi blocchi di dati sequenz
 
 
 
+[[when-would-i-want-to-use-the-assign-host-later-selection]]
 == Quando si desidera utilizzare la selezione dell'host di assegnazione in un secondo momento?
 
 Se si desidera accelerare il processo di creazione dei volumi, è possibile saltare la fase di assegnazione dell'host in modo che i volumi appena creati vengano inizializzati offline.
@@ -131,6 +143,7 @@ Quando nessuno dei volumi in un gruppo di volumi viene mappato, viene eseguita l
 
 
 
+[[what-do-i-need-to-know-about-host-block-size-requirements]]
 == Cosa occorre sapere sui requisiti relativi alle dimensioni dei blocchi host?
 
 Per i sistemi EF300 e EF600, è possibile impostare un volume in modo che supporti una dimensione di blocco di 512 byte o 4 KiB (chiamata anche "dimensione del settore"). È necessario impostare il valore corretto durante la creazione del volume. Se possibile, il sistema suggerisce il valore predefinito appropriato.

@@ -19,11 +19,7 @@ Se il controller include una porta iSER su InfiniBand, è possibile configurare 
 
 
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller con la porta iSER su InfiniBand che si desidera configurare.
 +
 Viene visualizzato il menu di scelta rapida del controller.
@@ -33,6 +29,6 @@ Viene visualizzato il menu di scelta rapida del controller.
 Viene visualizzata la finestra di dialogo Configura porte iSER su InfiniBand.
 
 . Nell'elenco a discesa, selezionare la porta HIC che si desidera configurare, quindi immettere l'indirizzo IP dell'host.
-. Fare clic su *Configura*.
+. Fare clic su *Save* (Salva).
 . Completare la configurazione, quindi reimpostare iSER sulla porta InfiniBand facendo clic su *Sì*.
 

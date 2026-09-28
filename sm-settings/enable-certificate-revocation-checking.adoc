@@ -26,12 +26,11 @@ Il controllo automatico della revoca è utile nei casi in cui la CA ha emesso un
 Durante questa attività, è possibile configurare un server OCSP o utilizzare il server specificato nel file del certificato. Il server OCSP determina se la CA ha revocato i certificati prima della data di scadenza pianificata, quindi impedisce all'utente di accedere a un sito se il certificato viene revocato.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[Certificates].
-. Selezionare la scheda *Trusted*.
+. Dal pannello di sinistra, seleziona menu:Certificates[Trusted certificates].
 +
 [NOTE]
 ====
-È inoltre possibile attivare il controllo delle revoche dalla scheda *Gestione chiavi*.
+Puoi anche abilitare il controllo di revoca dalla pagina *Key management certificates*.
 
 ====
 . Fare clic su *attività non comuni*, quindi selezionare *attiva verifica revoca* dal menu a discesa.

@@ -15,6 +15,7 @@ Utilizzare la gestione degli accessi per stabilire l'autenticazione dell'utente 
 
 
 
+[[configuration-workflow]]
 == Workflow di configurazione
 
 La configurazione di Access Management funziona come segue:
@@ -47,6 +48,7 @@ Per il primo accesso, il nome utente `admin` viene visualizzato automaticamente 
 
 
 
+[[functions-available-in-unified-manager]]
 == Funzioni disponibili in Unified Manager
 
 L'accesso alle funzioni dipende dai ruoli assegnati a un utente, che includono:

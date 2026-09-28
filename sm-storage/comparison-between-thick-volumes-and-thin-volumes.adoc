@@ -50,6 +50,7 @@ Volumi sottili
 |===
 
 
+[[thin-volume-restrictions]]
 == Limitazioni dei volumi sottili
 
 I thin volumi supportano tutte le operazioni come thick volumi, con le seguenti eccezioni:

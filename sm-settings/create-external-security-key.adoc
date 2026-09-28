@@ -37,7 +37,7 @@ Per ulteriori informazioni sul certificato del server, consultare la documentazi
 In questa attività, definire l'indirizzo IP del server di gestione delle chiavi e il numero di porta utilizzato, quindi caricare i certificati per la gestione delle chiavi esterne.
 
 .Fasi
-. Dal pannello di sinistra, selezionare menu:Settings[System].
+. Dal pannello di sinistra, seleziona *Sistema*.
 . In *Security key management*, selezionare *Create External Key* (Crea chiave esterna).
 +
 [NOTE]

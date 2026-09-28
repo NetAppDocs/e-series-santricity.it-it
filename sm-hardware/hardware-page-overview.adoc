@@ -15,6 +15,7 @@ La pagina hardware fornisce una rappresentazione grafica dei componenti fisici d
 
 
 
+[[shelves]]
 == Shelf
 
 Uno shelf è un componente che contiene l'hardware per lo storage array (controller, alimentatori/ventole e dischi). Esistono due tipi di shelf:
@@ -25,7 +26,7 @@ Uno shelf è un componente che contiene l'hardware per lo storage array (control
 
 Gli shelf sono disponibili in tre dimensioni per ospitare fino a 12, 24 o 60 dischi. Ogni shelf include un numero ID assegnato dal firmware del controller. L'ID viene visualizzato in alto a sinistra nella vista dello shelf.
 
-La vista shelf nella pagina hardware mostra i componenti anteriori o posteriori. È possibile passare da una vista all'altra selezionando le schede *Drives* (unità) o *Controller* (Controller) nella parte superiore destra della vista scaffale. È inoltre possibile selezionare *Mostra tutto in primo piano* o *Mostra tutto in secondo piano* dalla parte inferiore della pagina. Le viste anteriore e posteriore mostrano quanto segue:
+La visualizzazione a scaffale nella pagina Hardware mostra i componenti anteriori o posteriori. Puoi passare da una visualizzazione all'altra selezionando le schede *Unità* o *Controller e componenti* in alto a destra della visualizzazione a scaffale. Puoi anche selezionare *Mostra tutto il frontale* o *Mostra tutto il posteriore* in fondo alla pagina. Le visualizzazioni anteriore e posteriore mostrano quanto segue:
 
 * *Componenti anteriori* -- dischi e alloggiamenti vuoti.
 * *Componenti posteriori* -- Controller e alimentatori/ventole (per shelf di controller) o IOM e alimentatori/ventole (per shelf di dischi).
@@ -41,6 +42,7 @@ La vista shelf nella pagina hardware mostra i componenti anteriori o posteriori.
 
 
 
+[[controllers]]
 == Controller
 
 Un controller è l'hardware e il firmware combinati che implementa le funzioni di storage array e gestione. Include la memoria cache, il supporto del disco e il supporto dell'interfaccia host.
@@ -57,6 +59,7 @@ Un controller è l'hardware e il firmware combinati che implementa le funzioni d
 
 
 
+[[drives]]
 == Dischi
 
 Lo storage array può includere dischi rigidi (HDD) o dischi a stato solido (SSD). A seconda delle dimensioni dello shelf, è possibile installare fino a 12, 24 o 60 dischi nello shelf.

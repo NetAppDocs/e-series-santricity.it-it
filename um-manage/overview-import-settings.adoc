@@ -15,6 +15,7 @@ La funzione Import Settings (Impostazioni importazione) consente di eseguire un'
 
 
 
+[[what-settings-can-be-imported]]
 == Quali impostazioni è possibile importare?
 
 È possibile importare metodi di avviso, configurazioni AutoSupport, configurazioni dei servizi directory, configurazioni dello storage (come gruppi di volumi e pool) e impostazioni di sistema (come il bilanciamento automatico del carico).
@@ -27,6 +28,7 @@ Scopri di più:
 
 
 
+[[how-do-i-perform-a-batch-import]]
 == Come si esegue un'importazione in batch?
 
 Su uno storage array da utilizzare come origine, aprire System Manager e configurare le impostazioni desiderate. Quindi, da Unified Manager, accedere alla pagina Manage (Gestione) e importare le impostazioni in uno o più array.

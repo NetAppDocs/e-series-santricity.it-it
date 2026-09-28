@@ -23,18 +23,14 @@ Non utilizzare la porta 2 su entrambi i controller. La porta 2 è riservata al s
 
 ====
 .Fasi
-. Dal pannello di sinistra, selezionare *Hardware*.
-. Se l'immagine mostra le unità, fare clic sulla scheda *Controller e componenti*.
-+
-Il grafico cambia per mostrare i controller invece dei dischi.
-
+. Dal pannello di sinistra, selezionare menu:Hardware[Controllers and components].
 . Fare clic sul controller con la porta di gestione che si desidera configurare.
 +
 Viene visualizzato il menu di scelta rapida del controller.
 
 . Selezionare *Configura porte di gestione*.
 +
-Viene visualizzata la finestra di dialogo Configura porte di gestione.
+Si apre la pagina Configura management ports.
 
 . Verificare che sia visualizzata la porta 1, quindi fare clic su *Avanti*.
 . Selezionare le impostazioni della porta di configurazione, quindi fare clic su *Avanti*.
@@ -62,7 +58,7 @@ Selezionare una o entrambe le opzioni per abilitare il supporto per le reti IPv4
 |===
 ====
 +
-Se si seleziona *Enable IPv4* (attiva IPv4), dopo aver fatto clic su *Next* (Avanti) viene visualizzata una finestra di dialogo per la selezione delle impostazioni IPv4. Se si seleziona *Enable IPv6* (attiva IPv6*), dopo aver fatto clic su *Next* (Avanti) viene visualizzata una finestra di dialogo per la selezione delle impostazioni IPv6. Se si selezionano entrambe le opzioni, viene visualizzata prima la finestra di dialogo per le impostazioni IPv4, quindi dopo aver fatto clic su *Avanti*, viene visualizzata la finestra di dialogo per le impostazioni IPv6.
+Se selezioni *Abilita IPv4*, la fase *Configura IPv4* appare dopo che fai clic su *Avanti*. Se selezioni *Abilita IPv6*, la fase *Configura IPv6* appare dopo che fai clic su *Avanti*. Se selezioni entrambe le opzioni, la fase *Configura IPv4* appare per prima e poi, dopo che fai clic su *Avanti*, appare la fase *Configura IPv6*.
 
 . Configurare le impostazioni IPv4 e/o IPv6, automaticamente o manualmente.
 +
@@ -95,4 +91,4 @@ NOTE: Se si modifica la configurazione dell'indirizzo IP, si perde il percorso d
 
 
 .Risultati
-La configurazione della porta di gestione viene visualizzata nelle impostazioni del controller, scheda Management Ports (Porte di gestione).
+La configurazione della porta di gestione viene visualizzata nelle impostazioni del controller, sezione *Impostazioni porta di gestione*.

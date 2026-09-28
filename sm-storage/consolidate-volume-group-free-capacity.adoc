@@ -25,7 +25,7 @@ Non è possibile annullare l'operazione dopo l'inizio. I dati rimangono accessib
 
 È possibile avviare la finestra di dialogo consolida capacità libera utilizzando uno dei seguenti metodi:
 
-* Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "consolidare la capacità libera" viene visualizzato nella home page dell'area di notifica. Fare clic sul collegamento *consolida capacità libera* per avviare la finestra di dialogo.
+* Quando viene rilevata almeno un'area di capacità libera per un gruppo di volumi, il suggerimento "Consolida capacità libera" viene visualizzato nell'area Notifiche, accessibile tramite l'icona a forma di campana nell'angolo in alto della finestra. Fai clic sul collegamento *Consolida capacità libera* per aprire la finestra di dialogo.
 * È inoltre possibile avviare la finestra di dialogo Consolidate Free Capacity dalla pagina Pools e gruppi di volumi, come descritto nell'attività seguente.
 
 
@@ -53,4 +53,4 @@ System Manager inizia a consolidare (deframmentare) le aree di capacità libera 
 
 
 .Al termine
-Selezionare menu:Storage[Operations in Progress] per visualizzare l'avanzamento dell'operazione Consolidate Free Capacity. Questa operazione può essere lunga e potrebbe influire sulle prestazioni del sistema.
+Seleziona menu:Monitoring[Operations in progress] per visualizzare l'avanzamento dell'operazione Consolidate Free Capacity. Questa operazione può richiedere molto tempo e potrebbe influire sulle performance del sistema.
