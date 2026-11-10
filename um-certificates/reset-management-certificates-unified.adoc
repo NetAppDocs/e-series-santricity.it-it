@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, reset, management, certificates 
 summary: È possibile ripristinare lo stato originale autofirmato del certificato di gestione. 
 ---
-= Reimpostare i certificati di gestione
+= Reimpostare i certificati di gestione in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

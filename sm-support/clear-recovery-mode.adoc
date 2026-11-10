@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
 summary: 'Dopo aver ripristinato la configurazione di un array di storage, utilizzare l"operazione Clear Recovery Mode per ripristinare l"i/o sullo storage array e ripristinare le normali operazioni.' 
 ---
-= Cancella la modalità di ripristino nel software SANtricity
+= Cancella la modalità di ripristino in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
 summary: Prima di utilizzare la funzione di storage remoto, esaminare i seguenti requisiti e limitazioni. 
 ---
-= Scopri i requisiti delle funzionalità di archiviazione remota nel software SANtricity
+= Requisiti della funzione Remote Storage nel software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

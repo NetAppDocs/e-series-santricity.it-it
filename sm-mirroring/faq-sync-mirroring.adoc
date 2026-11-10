@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Queste FAQ possono essere utili se stai cercando una risposta rapida a una domanda. 
 ---
-= Domande frequenti sul mirroring della sincronizzazione per SANtricity System Manager
+= Domande frequenti sul mirroring sincrono per SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

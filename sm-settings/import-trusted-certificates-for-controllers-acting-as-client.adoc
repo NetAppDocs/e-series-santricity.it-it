@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Se il controller rifiuta una connessione perché non riesce a convalidare la catena di fiducia per un server di rete, puoi importare un certificato dalla pagina Certificati attendibili che permette al controller (agendo come client) di accettare comunicazioni da quel server.' 
 ---
-= Importare certificati per i controller quando agiscono come client in SANtricity System Manager
+= Importare certificati attendibili per i controller client in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

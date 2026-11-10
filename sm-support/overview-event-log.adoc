@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, event, log 
 summary: 'Utilizzare il registro eventi per visualizzare una cronologia delle modifiche e degli eventi verificatisi nell"array di storage.' 
 ---
-= Scopri di più sul registro eventi nel software SANtricity
+= Scopri di più sul registro eventi in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

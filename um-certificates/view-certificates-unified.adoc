@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, view certificates 
 summary: 'È possibile visualizzare informazioni riepilogative per un certificato, che includono l"organizzazione che utilizza il certificato, l"autorità che ha emesso il certificato, il periodo di validità e le impronte digitali (identificatori univoci).' 
 ---
-= Visualizzare i certificati
+= Visualizza i certificati in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, permissions, mapped, roles 
 summary: 'Le funzionalità RBAC (role-based access control) includono utenti predefiniti con uno o più ruoli mappati. Ogni ruolo include le autorizzazioni per l"accesso alle attività in Gestione unificata di SANtricity.' 
 ---
-= Autorizzazioni per i ruoli mappati
+= Autorizzazioni per i ruoli mappati in SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

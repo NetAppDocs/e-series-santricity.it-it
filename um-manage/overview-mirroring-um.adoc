@@ -40,7 +40,7 @@ Scopri di più:
 
 Scopri di più:
 
-* link:mirroring-configuration-workflow.html["Flusso di lavoro di configurazione del mirroring"]
+* link:mirroring-configuration-workflow.html["Workflow di configurazione del mirroring"]
 * link:requirements-for-using-mirroring.html["Requisiti per l'utilizzo del mirroring"]
 * link:create-asynchronous-mirrored-pair-um.html["Creare una coppia asincrona con mirroring"]
 * link:create-synchronous-mirrored-pair-um.html["Creare una coppia sincrona con mirroring"]
