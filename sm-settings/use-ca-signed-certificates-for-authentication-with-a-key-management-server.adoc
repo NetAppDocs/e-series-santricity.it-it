@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
 summary: Per comunicazioni sicure tra un server di gestione delle chiavi e i controller degli array di storage, è necessario configurare i set di certificati appropriati. 
 ---
-= Usa certificati firmati da CA per l'autenticazione del server di gestione delle chiavi in SANtricity System Manager
+= Utilizzare certificati firmati da CA per l'autenticazione con un key management server in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

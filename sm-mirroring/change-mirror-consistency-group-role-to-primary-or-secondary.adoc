@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
 summary: 'È possibile modificare il ruolo tra gruppi di coerenza mirror a scopo amministrativo o in caso di disastro nell"array di storage locale.' 
 ---
-= Cambia il ruolo del gruppo di coerenza mirror in SANtricity System Manager
+= Modifica il ruolo del gruppo di coerenza mirror in primario o secondario in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

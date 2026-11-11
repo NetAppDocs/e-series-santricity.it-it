@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, storage hierarchy 
 summary: 'La gerarchia di storage sull"interfaccia principale fornisce una vista organizzata dei vari componenti hardware e oggetti storage gestiti dall"array di storage.' 
 ---
-= Gerarchia dello storage in SANtricity System Manager
+= Visualizza la gerarchia dello storage in SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

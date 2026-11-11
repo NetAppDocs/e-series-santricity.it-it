@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, resolve, untrusted, certificates 
 summary: I certificati non attendibili si verificano quando un array di storage tenta di stabilire una connessione sicura a Gestione unificata di SANtricity, ma la connessione non viene confermata come sicura. 
 ---
-= Risolvere i problemi relativi ai certificati non attendibili in SANtricity Unified Manager
+= Risolvi i certificati non attendibili
 :allow-uri-read: 
 :experimental: 
 :icons: font

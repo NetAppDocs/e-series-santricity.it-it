@@ -83,6 +83,9 @@ Indica se il pool candidato è costituito interamente da dischi con funzionalit�
 
 
 
+NOTE: Non è supportata la combinazione di unità FDE e FIPS all'interno dello stesso array di storage. Tutte le unità con funzionalità di sicurezza presenti nel sistema devono essere dello stesso tipo.
+
+
 
  a| 
 Abilitare la sicurezza?

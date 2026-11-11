@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirrored, pair, 
 summary: 'È possibile utilizzare l"opzione Sospendi e l"opzione Riprendi per controllare quando sincronizzare i dati sul volume primario e sul volume secondario in una coppia mirrorata.' 
 ---
-= Sospendi o riprendi la sincronizzazione della coppia mirror in SANtricity System Manager
+= Sospendere e riprendere la sincronizzazione per coppie mirrorate in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

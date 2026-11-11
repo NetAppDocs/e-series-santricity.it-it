@@ -64,6 +64,9 @@ Dischi sicuri
 I dischi che supportano la protezione possono essere dischi con crittografia completa del disco (FDE) o dischi FIPS (Federal Information Processing Standard), che crittografano i dati durante la scrittura e decrittare i dati durante la lettura. Questi dischi sono considerati sicuri-_capaci_ perché possono essere utilizzati per una maggiore sicurezza utilizzando la funzione Drive Security. Se la funzione Drive Security è attivata per i gruppi di volumi e i pool utilizzati con questi dischi, i dischi diventano sicuri-_abilitati_.
 
 
+NOTE: Non è supportata la combinazione di unità FDE e FIPS all'interno dello stesso array di storage. Tutte le unità con funzionalità di sicurezza presenti nel sistema devono essere dello stesso tipo.
+
+
 
  a| 
 Dischi sicuri

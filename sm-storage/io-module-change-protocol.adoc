@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF50, EF80 
 summary: È possibile modificare il protocollo sui moduli I/O host dei controller quando è necessario un protocollo diverso sui moduli I/O esistenti, come parte di un aggiornamento dei moduli I/O, o quando il protocollo predefinito sui nuovi controller come parte di una nuova installazione del sistema storage o di un aggiornamento del controller non è il protocollo desiderato. 
 ---
-= Modifica il protocollo del modulo I/O host in SANtricity System Manager
+= Modificare il protocollo del modulo I/O host
 :allow-uri-read: 
 :experimental: 
 :icons: font

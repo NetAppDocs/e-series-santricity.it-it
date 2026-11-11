@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, lights, LEDs 
 summary: È possibile individuare le unità per identificare fisicamente tutte le unità che comprendono un pool, un gruppo di volumi o una cache SSD selezionata. Un indicatore LED si accende su ogni disco nel pool, gruppo di volumi o cache SSD selezionato. 
 ---
-= Attiva le spie di localizzazione per un pool, un gruppo di volumi o una SSD cache in SANtricity System Manager
+= Attiva le spie di localizzazione in un pool, un gruppo di volumi o Cache SSD in SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, view, local, user, roles 
 summary: 'Dalla scheda Local User Roles (ruoli utente locali), è possibile visualizzare le mappature degli utenti ai ruoli predefiniti. Questi mapping fanno parte del RBAC (role-based access control) applicato nel proxy dei servizi Web per il gestore unificato di SANtricity.' 
 ---
-= Visualizza i ruoli degli utenti locali in SANtricity Unified Manager
+= Visualizzare i ruoli utente locali
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
